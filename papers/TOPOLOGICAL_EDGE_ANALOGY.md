@@ -2,8 +2,8 @@
 
 **Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
 **Date:** July 2026  
-**Status:** Analogy + reduction (not a claim that the cosmos is a Hall bar)  
-**Pairs with:** [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) · [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · [`NARROW_PATH.md`](NARROW_PATH.md)
+**Status:** Analogy only — **not** a condensed-matter derivation of dark energy  
+**Pairs with:** [`FOR_REFEREES.md`](FOR_REFEREES.md) · [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) · [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md)
 
 ---
 

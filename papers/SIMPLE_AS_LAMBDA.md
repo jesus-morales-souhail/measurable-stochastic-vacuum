@@ -2,8 +2,8 @@
 
 **Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
 **Date:** July 2026  
-**Status:** Pedagogical + verified reduction of the full programme  
-**Gate:** `pytest -q` · library `scripts/lib_verified.py` · details in `VERIFIED_RESULTS.md`  
+**Status:** Minimal public model (English) — pedagogical reduction of the verified core  
+**Gate:** `pytest -q` (34 tests) · `scripts/lib_verified.py` · [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · [`FOR_REFEREES.md`](FOR_REFEREES.md)  
 
 ---
 
@@ -152,8 +152,8 @@ Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha\
 | Choice | $\sigma$ | $\ell_*$ ($d=3$) | $\mathrm{RMS}\sim\sigma^{2/3}$ | DESI residual |
 |:-------|:---------|:-----------------|:-------------------------------|:--------------|
 | Planck mythology | $10^{-61}$ | $L_P$ | $\sim 10^{-41}$ (invisible) | trivially OK |
-| Minimal NP-A | $10^{-5}$ | $\approx 2.1\,\mathrm{Mpc}$ | $\sim 2\times 10^{-4}$ | OK |
-| NP-B soft $G\approx 20$ | seed $\sim 5\times 10^{-6}$ $\to$ $\sigma_{\mathrm{res}}\sim 10^{-4}$ | $\sim$ Mpc | $\sim 10^{-3}$ | OK if $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ |
+| Minimal NP-A | $10^{-5}$ | $\approx 2.07\,\mathrm{Mpc}$ | $\sim 4.6\times 10^{-4}$ (simple); path $\sim 3.5\times 10^{-4}$ | OK |
+| NP-B soft $G\approx 20$ | seed $5\times 10^{-6}$ $\to$ $\sigma_{\mathrm{res}}=10^{-4}$ | $\approx 1.30\,\mathrm{Mpc}$ | $\sim 2\times 10^{-3}$ (simple); path $\sim 4.4\times 10^{-3}$ | OK ($\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$) |
 
 Exact path formula (verified library) gives the same **order**: few $\times 10^{-4}$ to few $\times 10^{-3}$ in the DESI-safe window — not $0.1$ and not $10^{-60}$.
 
