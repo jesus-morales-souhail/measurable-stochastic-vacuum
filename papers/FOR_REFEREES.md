@@ -125,7 +125,7 @@ $$
 | C4 | Local slip formula under stated GR assumptions | §3.5 + tests |
 | C5 | Path $\mathrm{RMS}=s\sqrt{N}$ for iid zero-mean patches | MC + tests |
 | C6 | Path + soft open **cannot** rescue Sorkin | combined tests |
-| C7 | DESI-safe windows NP-A / NP-B exist with $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ | `NARROW_PATH` + tests |
+| C7 | DESI-safe windows NP-A / NP-B exist as **hand-placed** kinematics with $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ | `NARROW_PATH` + tests |
 | C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | sister repo |
 | C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
 | C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_*$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
@@ -143,6 +143,9 @@ $$
 | N6 | Entropy of the universe does **not** “stop”; only local backscattering of a protected channel is suppressed (analogy) |
 | N7 | Not peer reviewed |
 | N8 | $\ell_*=R_8$ is **not** derived; S$_8$ is **not** explained; $d=3$ proximity is **tolerated**, not preferred by fit |
+| N9 | NP-B is **not** a derived prediction; detection of $\mathrm{RMS}\sim 10^{-3}$ is **not** automatic DE texture |
+| N10 | Null lensing at $\sim 10^{-3}$ does **not** kill the whole model — only the tested $(\ell_*,G_O,\varepsilon)$ corner |
+| N11 | Stage-IV sensitivity to **this** path-RMS statistic at $10^{-3}$ is **not** claimed established |
 
 ---
 
@@ -184,8 +187,9 @@ It is **not** a condensed-matter derivation of dark energy.
 2. Is the DESI number used only as a bound, never to fit $\ell_{*}$? 
 3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$? 
 4. Are free $10^{56}$, $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls**? 
-5. Are open problems (N1–N3, N8) stated without hype — especially the R1 open kernel? 
-6. Is any $R_8$ / S$_8$ discussion limited to scale class + non-claim (C11 / N8)?
+5. Are open problems (N1–N3, N8–N11) stated without hype — especially the R1 open kernel? 
+6. Is any $R_8$ / S$_8$ discussion limited to scale class + non-claim (C11 / N8)? 
+7. Is NP-B / $\mathrm{RMS}\sim 10^{-3}$ free of binary “discovery / model death” language (N9–N11; `NARROW_PATH` §5.1)?
 
 ---
 

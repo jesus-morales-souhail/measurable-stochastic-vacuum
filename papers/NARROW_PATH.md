@@ -163,10 +163,12 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 | Label | Definition | Role |
 |:------|:-----------|:-----|
 | **NP-A** | Mesoscopic seed, $G_O=1$, $\sigma_0\sim 10^{-5}$ | Safest vs DESI residual; path RMS $\sim$ few $\times 10^{-4}$ |
-| **NP-B** | Mesoscopic seed + soft $r\sim 1.5$ with $\sigma_0\lesssim 7.5\times 10^{-6}$ | DESI-safe residual; path RMS $\sim$ few $\times 10^{-3}$ |
+| **NP-B** | Mesoscopic seed + soft $r\sim 1.5$ with $\sigma_0\lesssim 7.5\times 10^{-6}$ | **Illustrative** DESI-safe branch; path RMS $\sim$ few $\times 10^{-3}$ |
 | **NP-C** | Same residual $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ but $\varepsilon<1$ | Reduces slip RMS proportionally; needs $\varepsilon$ from theory |
 
 **NP-user sketch** ($\sigma_0=10^{-5}$, $r=1.5$) is the right *shape* of the narrow path but must be **clipped** into NP-B (or NP-A) to stay consistent with the DESI residual null/ceiling.
+
+**Status of NP-B (read carefully):** $\sigma_0$ and $r$ in NP-B are **not derived**. They are a **hand-placed** point in the DESI-safe window used to read order-of-magnitude path RMS **if** a mesoscopic seed and soft $G_O\sim\mathcal{O}(10)$ existed. Fitting $\ell_*$ or $r$ to DESI is forbidden ([`BOUNDARY.md`](../BOUNDARY.md)). NP-B is architecture kinematics, not a prediction of the open kernel.
 
 ---
 
@@ -188,7 +190,40 @@ $$
 $$
 
 
-That is a **conditional** prediction for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_*$.
+That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_*$.
+
+### 5.1 Forbidden binary (same discipline as the $R_8$ honesty lock)
+
+**Do not write or imply:**
+
+> If deep lensing finds $\mathrm{RMS}_{\mathrm{path}}\sim 10^{-3}$, we have discovered the texture of dark energy; if not, the model is mathematically discarded with no excuses.
+
+That sentence fails on **both** sides.
+
+| Broken claim | Why it fails |
+|:-------------|:-------------|
+| Detection $\Rightarrow$ “texture of DE” | $\mathrm{RMS}\sim 10^{-3}$ in the table is the **NP-B hand point**, not a derived open-kernel prediction. Even a real excess at that band must first survive **baryonic feedback, photo-$z$ errors, intrinsic alignments, and shape systematics** — standard weak-lensing contaminants that can raise RMS without any vacuum grain. |
+| Null $\Rightarrow$ “model discarded without excuses” | A null at that sensitivity excludes the **specific** $(\ell_*,G_O,\varepsilon)$ corner that was tested (e.g. NP-B), **not** the whole programme. While the R1 principle is still **absent (declared)**, smaller $\ell_*$ or smaller $G_O$ can sit below the threshold. That is the meaning of an open kernel, not a loophole. |
+
+**Sustained wording (use this):**
+
+> If a lensing analysis finds an excess of path-integrated slip RMS compatible with this band, **and** it survives control of baryonic feedback, photo-$z$, and intrinsic alignments, it would be the **first positive evidence** the programme has ever had — and still would not by itself prove a mesoscopic DE grain. If it does **not** detect such an excess, that **excludes NP-B (or the tested corner) specifically**, tightening the region where the still-open counting kernel could live — it does **not** close the kernel or the whole model.
+
+Same emotion, binary fixed. Matches the $d=3$–specificity lock: no over-read of a positive coincidence, no over-read of a null.
+
+### 5.2 Sensitivity is **not** established in-repo (check before any paper claim)
+
+| Fact | Scale | Source |
+|:-----|:------|:-------|
+| Path RMS at NP-B (this repo, kinematics) | $\sim 4\times 10^{-3}$ at $z_s=1.5$ | `lib_verified` / light-cone atlas |
+| Path RMS at NP-A | $\sim 3.5\times 10^{-4}$ | same |
+| Indicative mean-slip floor used earlier in programme | $\sigma_{\mathrm{exp}}\sim 0.03$ | Option 0 / wall notes (order-of-magnitude) |
+| Current published DESI-era slip (Maus et al.) | $\gamma=1.17\pm 0.11$ $\Rightarrow$ $\lvert\gamma-1\rvert$ uncertainty $\mathcal{O}(0.1)$ | arXiv:2505.20656 |
+
+**Reading:** $\mathcal{O}(10^{-3})$ path RMS is **far below** current published slip errors ($\mathcal{O}(0.1)$). Stage-IV surveys (Euclid, LSST/Rubin) aim at percent-level growth/lensing and multiplicative-bias control near $10^{-3}$ in **shear calibration**, but that is **not** the same statement as “the survey measures *this* path-RMS statistic of stochastic slip wrinkles at $10^{-3}$.”
+
+**Open experimental question (must be answered before marketing detection):**  
+Does any Stage-III/IV pipeline constrain a **stochastic, path-accumulated** $\mathrm{RMS}(\lvert\gamma-1\rvert)$ (or a well-defined proxy) at $\sim 10^{-3}$ after the systematics list above? **Not answered in this repository.** Until a forecast or analysis map exists, treat $10^{-3}$ as a **theory-side OOM target**, not as an established survey capability.
 
 ---
 
@@ -230,17 +265,20 @@ R2 anisotropic stress → light
 | Element | Status |
 |:--------|:-------|
 | Algebra of the narrow path | **Verified** (`lib_verified` + tests) |
-| DESI-safe window NP-A / NP-B | **Verified** numerically |
-| Principle fixing $\ell_*$ | **Open** (R1a/b/c) |
+| DESI-safe window NP-A / NP-B numbers | **Verified** as kinematics of **hand-placed** points |
+| NP-B as derived prediction | **Not claimed** ($\sigma_0$, $r$ not fixed by principle) |
+| Principle fixing $\ell_*$ | **Open** (R1a/b/c/d; [`r1-open-kernel.md`](r1-open-kernel.md)) |
 | Microphysical $r=\mathcal{O}(1)$ from horizon bath | **Open** (soft $r$ is only a kinematic allowance) |
 | $\varepsilon$ from SDiff | **Open** |
-| Detection | **Not claimed** |
+| Detection / “texture of DE” | **Not claimed** |
+| Null $\Rightarrow$ full model death | **Not claimed** (null tightens tested corner only) |
+| Stage-IV reach of this RMS statistic at $10^{-3}$ | **Not established in-repo** (§5.2) |
 
 ---
 
 ## 9. One-sentence thesis
 
-> The only soft-regime, physically constrained route to a telescope-visible stochastic DE imprint is a **mesoscopic counting seed**, optionally dressed by **$\mathcal{O}(10)$ open gain**, read out through **anisotropic stress and light-path accumulation** at $\mathrm{RMS}(\gamma-1)\sim 10^{-4}$–$10^{-3}$, while keeping the isotropic residual under the DESI ceiling — not a rescue of $10^{-61}$ by unphysical amplifiers.
+> The only soft-regime, physically constrained route to a *conditionally* telescope-visible stochastic DE imprint is a **mesoscopic counting seed**, optionally dressed by **$\mathcal{O}(10)$ open gain**, read out through **anisotropic stress and light-path accumulation** at $\mathrm{RMS}(\gamma-1)\sim 10^{-4}$–$10^{-3}$ **if** that corner is realised, while keeping the isotropic residual under the DESI ceiling — not a rescue of $10^{-61}$ by unphysical amplifiers, and not a binary discovery/death test of the whole programme.
 
 ---
 

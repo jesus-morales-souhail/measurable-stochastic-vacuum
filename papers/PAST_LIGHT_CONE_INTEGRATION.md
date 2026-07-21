@@ -175,9 +175,10 @@ Full table: `results/light_cone_integration_table.csv` (64 rows).
 
 **Assessment**
 
-- Path integration **softens** the wall: moves the signal from $\sim 10^{-5}$–$10^{-4}$ toward $\sim 10^{-3}$. 
-- It does **not** open a clean Euclid detection of $\lvert\gamma-1\rvert\sim 0.03$ under the DESI residual ceiling. 
-- It **does** place the signal at the **technical frontier** of deep multi-bin lensing tomography and cross-correlations — the only physically constrained place left to look. 
+- Path integration **softens** the wall: moves the signal from $\sim 10^{-5}$–$10^{-4}$ toward $\sim 10^{-3}$ **for the hand-placed NP-A/B corners**. 
+- It does **not** open a clean detection of $\lvert\gamma-1\rvert\sim 0.03$ under the DESI residual ceiling. 
+- It places those corners near a **possible** technical frontier of multi-bin lensing / cross-correlations — **if** a survey can actually constrain this statistic after systematics (baryons, photo-$z$, IA). That experimental reach is **not established in-repo** (see [`NARROW_PATH.md`](NARROW_PATH.md) §5.1–5.2). 
+- A detection at $\sim 10^{-3}$ would be **first positive evidence only after systematics**, not automatic “texture of DE.” A null **excludes the tested corner** (e.g. NP-B), not the open R1 kernel. 
 - Sorkin remains dead even with path integration.
 
 ---

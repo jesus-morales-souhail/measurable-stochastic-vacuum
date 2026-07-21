@@ -204,7 +204,9 @@ Comoving distance $\chi(1.5)\approx 4.5\times 10^{3} \mathrm{Mpc}$ (trapezoidal 
 To lift Sorkin local slip to a floor $|\gamma-1|\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_*=1 \mathrm{Mpc}$.
 
 **Verified reading:** geometric “universe as telescope” along the path is $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — useful, **not** a $10^{56}$ amplifier. 
-**Not verified:** that DESI/Euclid *will* detect slip from DE noise; only that the OOM can approach $10^{-3}$ if $\sigma\sim 10^{-5}$–$10^{-4}$.
+**Not verified:** that DESI/Euclid *will* detect slip from DE noise; only that the OOM can approach $10^{-3}$ if $\sigma\sim 10^{-5}$–$10^{-4}$ at **hand-placed** NP corners.  
+**Not verified:** that Stage-IV surveys constrain *this* path-RMS statistic at $10^{-3}$ after baryons / photo-$z$ / IA.  
+**Not claimed:** detection $\Leftrightarrow$ “texture of DE”; null $\Leftrightarrow$ full model death (see [`NARROW_PATH.md`](NARROW_PATH.md) §5.1).
 
 ### 4.4 Physical interpretation (tight)
 
