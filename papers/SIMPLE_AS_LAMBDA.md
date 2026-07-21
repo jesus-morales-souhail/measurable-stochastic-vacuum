@@ -193,14 +193,26 @@ Keep jargon only in technical appendices (`VERIFIED_RESULTS`, `NARROW_PATH`).
 ## 8. One slide / one blackboard
 
 ```text
-Λ CDM:     H² = H₀² [Ω_m (1+z)³ + Ω_Λ]          ← keep
+Λ CDM:     H² = H₀² [Ω_m (1+z)³ + Ω_Λ]          ← keep  (BULK)
 
-Grain:     σ = (ℓ*/L_H)^{3/2}                    ← one number σ
+Grain:     σ = (ℓ*/L_H)^{3/2}                    ← one number σ  (EDGE)
 
-Light:     RMS(γ−1) ~ σ^{2/3}                    ← one prediction
+Light:     RMS(γ−1) ~ σ^{2/3}                    ← one prediction  (EDGE CURRENT)
 
 Bound:     σ ≲ 10^{-4}                           ← DESI (isotropic)
 ```
+
+Hall-chip translation (see [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md)):
+
+```text
+BULK  = Λ          (insulator / smooth mean vacuum)
+EDGE  = σ          (Laughlin-like collective grain, not Planck electron)
+PROTECT = no “backscatter” of free-lunch 10^{-61} into telescopes
+SIGNAL  = one-way light path  (like chiral edge current)
+```
+
+**Entropy:** local *backscattering* of the protected channel is suppressed —  
+**not** “entropy of the universe stops”.
 
 That is the entire public model.
 

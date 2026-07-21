@@ -14,6 +14,7 @@ Independent research on *when* late-time stochastic vacuum / dark-energy noise c
 | Priority | Document | Role |
 |:---------|:---------|:-----|
 | **0** | [`papers/SIMPLE_AS_LAMBDA.md`](papers/SIMPLE_AS_LAMBDA.md) | **Blackboard model — as simple as $\Lambda$** |
+| **0b** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Hall/Laughlin analogy: bulk $\Lambda$ vs edge $\sigma$ |
 | **1** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | **Publication spine — hard claims only** |
 | **2** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | Only soft-regime coherent architecture (NP-A / NP-B) |
 | **3** | [`tests/test_verified.py`](tests/test_verified.py) | Gate: `pytest -q` (31 tests) |
