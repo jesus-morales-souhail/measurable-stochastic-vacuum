@@ -19,6 +19,7 @@ WP notes are expansions, not independent hard-claim sources.
 | WP4 | Joint table + zeros | **Done** | [`wp4-joint-predictions-and-zeros.md`](../papers/wp4-joint-predictions-and-zeros.md) |
 | WP5 | Falsification | **Done** | [`wp5-falsification.md`](../papers/wp5-falsification.md) |
 | — | Narrow path (NP-A/B) | **Done** | [`NARROW_PATH.md`](../papers/NARROW_PATH.md) |
+| — | Lensing RMS vs real data | **Done (OOM gate)** | [`lensing-rms-forecast-real-data.md`](../papers/lensing-rms-forecast-real-data.md) |
 
 ---
 
@@ -87,6 +88,7 @@ pytest -q
 python scripts/lib_verified.py
 python scripts/r1_counting_landscape.py
 python scripts/r1_open_kernel_scales.py
+python scripts/lensing_rms_real_data_compare.py
 python scripts/r3_open_horizon_map.py
 python scripts/r2_light_path_accumulation.py
 ```

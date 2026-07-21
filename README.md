@@ -19,15 +19,17 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 | **4** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | Documented results only (unit-tested) |
 | **5** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
 | **5b** | [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) | **Walls vs open kernel** (R1 load-bearing gap) |
+| **5c** | [`papers/lensing-rms-forecast-real-data.md`](papers/lensing-rms-forecast-real-data.md) | **RMS vs Maus / Sakr / DESI MG (real data)** |
 | **6** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
 
 ```bash
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git
 cd measurable-stochastic-vacuum
 pip install -r requirements.txt
-pytest -q # expect: 49 passed
+pytest -q # expect: 54 passed
 python scripts/simple_as_lambda.py
 python scripts/r1_open_kernel_scales.py
+python scripts/lensing_rms_real_data_compare.py
 ```
 
 **Sister empirical corpus (DESI bounds):** 

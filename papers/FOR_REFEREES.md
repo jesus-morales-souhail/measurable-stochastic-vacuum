@@ -6,7 +6,7 @@
 **Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum 
 **Date:** July 2026 
 **Status:** Independent research — **not peer reviewed** 
-**Automated gate:** `pytest -q` must report **all tests passed** (expect **49** with R1 open-kernel scale checks)
+**Automated gate:** `pytest -q` must report **all tests passed** (expect **54** with open-kernel + real-data lensing checks)
 
 ---
 
@@ -37,6 +37,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, unit-tested claims** |
 | 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
 | 5b | [`r1-open-kernel.md`](r1-open-kernel.md) | **Walls vs open kernel; R1d scale class (not a derivation)** |
+| 5c | [`lensing-rms-forecast-real-data.md`](lensing-rms-forecast-real-data.md) | **Path RMS vs Maus / Sakr / DESI MG / Stage-IV (real data)** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
@@ -130,6 +131,7 @@ $$
 | C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
 | C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_*$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
 | C11 | Scale arithmetic: $R_8=8/h$; $\ell_*(\sigma,d)$ and $\sigma(R_8,d)$ under counting; **$R_8$ proximity is $d=3$-specific** | `lib_verified` + `r1_open_kernel_scales.py` + tests |
+| C12 | Path RMS (NP-A/B) vs published Maus/Sakr/DESI-MG errors: mean slip still $\sim 10$–$25\times$ above NP-B | `lensing-rms-forecast-real-data.md` + script + tests |
 
 ### 4.2 Non-claims
 

@@ -322,6 +322,56 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestLensingRealDataCompare:
+    """Anchors from papers/lensing-rms-forecast-real-data.md (published numbers)."""
+
+    def test_maus_error_above_np_b_path_rms(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from lensing_rms_real_data_compare import (  # noqa: E402
+            MAUS_GAMMA_ERR,
+            programme_path_rms,
+        )
+
+        np_b = programme_path_rms("NP-B", 5e-6, 1.5)
+        assert 3e-3 < np_b["rms_path"] < 6e-3
+        assert MAUS_GAMMA_ERR / np_b["rms_path"] > 15  # ~25×
+
+    def test_sakr_5pct_still_above_np_b(self):
+        from lensing_rms_real_data_compare import (  # noqa: E402
+            SAKR_ETA_CONST_FRAC,
+            programme_path_rms,
+        )
+
+        np_b = programme_path_rms("NP-B", 5e-6, 1.5)
+        assert SAKR_ETA_CONST_FRAC / np_b["rms_path"] > 8  # ~11×
+
+    def test_stage4_mbias_not_equal_to_path_rms_claim(self):
+        """m~2e-3 is same OOM as NP-B numerically — test documents the hazard."""
+        from lensing_rms_real_data_compare import (  # noqa: E402
+            STAGE4_M_MULT_BIAS_OOM,
+            programme_path_rms,
+        )
+
+        np_b = programme_path_rms("NP-B", 5e-6, 1.5)
+        # same decade; must NOT be used as detection (paper N-L4)
+        assert 0.2 < STAGE4_M_MULT_BIAS_OOM / np_b["rms_path"] < 1.0
+
+    def test_published_anchors_match_cited_values(self):
+        from lensing_rms_real_data_compare import (  # noqa: E402
+            DESI_MG_SIGMA0_ERR,
+            MAUS_GAMMA,
+            MAUS_GAMMA_ERR,
+            SAKR_ETA_CONST_FRAC,
+            SAKR_ETA_ZK_FRAC,
+        )
+
+        assert MAUS_GAMMA == pytest.approx(1.17)
+        assert MAUS_GAMMA_ERR == pytest.approx(0.11)
+        assert SAKR_ETA_CONST_FRAC == pytest.approx(0.05)
+        assert SAKR_ETA_ZK_FRAC == pytest.approx(0.30)
+        assert DESI_MG_SIGMA0_ERR == pytest.approx(0.045)
+
+
 class TestR1OpenKernelScales:
     """
     Scale anchors for papers/r1-open-kernel.md.

@@ -223,7 +223,19 @@ Same emotion, binary fixed. Matches the $d=3$–specificity lock: no over-read o
 **Reading:** $\mathcal{O}(10^{-3})$ path RMS is **far below** current published slip errors ($\mathcal{O}(0.1)$). Stage-IV surveys (Euclid, LSST/Rubin) aim at percent-level growth/lensing and multiplicative-bias control near $10^{-3}$ in **shear calibration**, but that is **not** the same statement as “the survey measures *this* path-RMS statistic of stochastic slip wrinkles at $10^{-3}$.”
 
 **Open experimental question (must be answered before marketing detection):**  
-Does any Stage-III/IV pipeline constrain a **stochastic, path-accumulated** $\mathrm{RMS}(\lvert\gamma-1\rvert)$ (or a well-defined proxy) at $\sim 10^{-3}$ after the systematics list above? **Not answered in this repository.** Until a forecast or analysis map exists, treat $10^{-3}$ as a **theory-side OOM target**, not as an established survey capability.
+Does any Stage-III/IV pipeline constrain a **stochastic, path-accumulated** $\mathrm{RMS}(\lvert\gamma-1\rvert)$ (or a well-defined proxy) at $\sim 10^{-3}$ after the systematics list above?
+
+**Partial answer with real published data** (not a full likelihood):  
+[`lensing-rms-forecast-real-data.md`](lensing-rms-forecast-real-data.md) · `python scripts/lensing_rms_real_data_compare.py`
+
+| External (cited) | Scale | vs NP-B path RMS \(\sim 4.4\times 10^{-3}\) |
+|:-----------------|:------|:-------------------------------------------|
+| Maus $\sigma(\gamma)=0.11$ (arXiv:2505.20656) | measured mean slip | \(\sim 25\times\) coarser |
+| Sakr constant $\eta\sim 5\%$ (arXiv:2501.07477) | Euclid+DESI-like **forecast** | \(\sim 11\times\) coarser |
+| DESI MG $\sigma(\Sigma_0)=0.045$ (arXiv:2411.12026) | measured | \(\sim 10\times\) coarser |
+| Stage-IV $m\sim 2\times 10^{-3}$ (SRD/Euclid) | **calibration**, wrong operator | must not be rebranded as path-RMS reach |
+
+Until a dedicated forecast maps **this** statistic into survey likelihoods, treat $10^{-3}$ as a **theory-side OOM target**, not an established survey capability.
 
 ---
 
