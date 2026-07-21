@@ -13,7 +13,7 @@
 
 We record three families of **verified** relations relevant to whether late-time stochastic dark-energy noise can be telescope-measurable:
 
-1. **Counting seeds (R1 kinematics):** under the hypothesis $N_{\mathrm{eff}}=(L/\ell_*)^d$, one has $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$ exactly. The holographic Sorkin case $(d=2,\ell_*=L_P)$ gives $\sigma_0=L_P/L_H\sim 10^{-61}$. Inverting for a target $\sigma=10^{-5}$ forces $\ell_*$ at the **$0.04$–$14\,\mathrm{Mpc}$** scale depending on $d\in\{2,3,4\}$.
+1. **Counting seeds (R1 kinematics):** under the hypothesis $N_{\mathrm{eff}}=(L/\ell_*)^d$, one has $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$ exactly. The holographic Sorkin case $(d=2,\ell_*=L_P)$ gives $\sigma_0=L_P/L_H\sim 10^{-61}$. Inverting for a target $\sigma=10^{-5}$ forces $\ell_*$ at the **$0.04$–$14 \mathrm{Mpc}$** scale depending on $d\in\{2,3,4\}$.
 
 2. **Soft open gain (R3 kinematics):** a squeeze factor $e^{2r}$ with $r=\mathcal{O}(1)$ yields $G_O=\mathcal{O}(10)$. Lifting Sorkin $\sigma_0$ to $10^{-5}$ would require $r\sim 64$, i.e. a **new scale**, not a soft open map.
 
@@ -54,7 +54,7 @@ $$
 ### 2.2 Inversion
 
 $$
-\ell_* = L\,\sigma_{0,\mathrm{eff}}^{2/d}.
+\ell_* = L \sigma_{0,\mathrm{eff}}^{2/d}.
 $$
 
 **Status:** exact inverse of §2.1 (tested for $d\in\{2,3,4\}$ and several $\sigma$).
@@ -67,7 +67,7 @@ $$
 N_{\mathrm{BH}} = \left(\frac{L_H}{L_P}\right)^{2},
 \qquad
 \sigma_0 = \frac{L_P}{L_H} \sim 1.2\times 10^{-61}
-\quad (H_0=67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}).
+\quad (H_0=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
 $$
 
 **Status:** identity under that count. Matches the “Sorkin/Bekenstein” seed used as UV motivation in the sister corpus.
@@ -78,9 +78,9 @@ With $L=L_H$ and $\sigma_{0,\mathrm{eff}}=10^{-5}$:
 
 | $d$ | $\ell_*$ (exact inverse) | Character |
 |:----|:-------------------------|:----------|
-| 2 | $L_H\times 10^{-5}\approx 0.044\,\mathrm{Mpc}$ | mesoscopic |
-| 3 | $\approx 2.1\,\mathrm{Mpc}$ | mesoscopic |
-| 4 | $\approx 14\,\mathrm{Mpc}$ | mesoscopic |
+| 2 | $L_H\times 10^{-5}\approx 0.044 \mathrm{Mpc}$ | mesoscopic |
+| 3 | $\approx 2.1 \mathrm{Mpc}$ | mesoscopic |
+| 4 | $\approx 14 \mathrm{Mpc}$ | mesoscopic |
 
 **Verified reading:** *if* the residual is to sit near $10^{-5}$ by counting alone, the counting cell cannot be Planckian.  
 **Not verified:** a dynamical principle that forces $\ell_*$ into that band.
@@ -110,7 +110,7 @@ At $r=1.5$, $G_O = e^{3}\approx 20.086$ (exact).
 ### 3.2 Soft residual map (definition used in programme)
 
 $$
-\sigma_{\mathrm{res}} = G_U\, G_F\, G_O\, \sigma_{0,\mathrm{eff}},
+\sigma_{\mathrm{res}} = G_U  G_F  G_O  \sigma_{0,\mathrm{eff}},
 $$
 
 with defaults $G_F=1$ (freeze-out preserves amplitude; consistent with sister-repo OU freeze scans) and $G_U=1$ (late-time $\Delta x=\mathcal{O}(1)$ stretch is not $e^{60}$).
@@ -140,7 +140,7 @@ k^{2}\Psi = -4\pi G a^{2}\rho_m\delta_m,
 \qquad
 k^{2}(\Phi-\Psi)=8\pi G a^{2}\pi_T,
 \qquad
-\pi_T = \varepsilon\,\sigma\,\rho_X,
+\pi_T = \varepsilon \sigma \rho_X,
 $$
 
 one obtains
@@ -165,15 +165,15 @@ $$
 
 ### 4.3 Numerical anchors ($z_s=1.5$, fiducial cosmology)
 
-Comoving distance $\chi(1.5)\approx 4.5\times 10^{3}\,\mathrm{Mpc}$ (trapezoidal integral of $c/H(z)$; convergence tested).
+Comoving distance $\chi(1.5)\approx 4.5\times 10^{3} \mathrm{Mpc}$ (trapezoidal integral of $c/H(z)$; convergence tested).
 
 | Seed | Local $\|\gamma-1\|$ ($\varepsilon=\delta_m=1$, $z\sim 0.8$) | $\sqrt{N}$ (example $\ell_*$) | Path RMS |
 |:-----|:--------------------------------------------------------------|:------------------------------|:---------|
-| Sorkin | $\sim 10^{-61}$ | $\sim 67$ ($\ell_*=1\,\mathrm{Mpc}$) | $\sim 10^{-60}$ |
-| $\sigma=10^{-5}$, $\ell_*=2.1\,\mathrm{Mpc}$ | $\sim 7\times 10^{-6}$ | $\sim 46$ | $\sim 3\times 10^{-4}$ |
-| $\sigma=1.5\times 10^{-4}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$ ($\ell_*=10\,\mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
+| Sorkin | $\sim 10^{-61}$ | $\sim 67$ ($\ell_*=1 \mathrm{Mpc}$) | $\sim 10^{-60}$ |
+| $\sigma=10^{-5}$, $\ell_*=2.1 \mathrm{Mpc}$ | $\sim 7\times 10^{-6}$ | $\sim 46$ | $\sim 3\times 10^{-4}$ |
+| $\sigma=1.5\times 10^{-4}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$ ($\ell_*=10 \mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
 
-To lift Sorkin local slip to a floor $|\gamma-1|\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_*=1\,\mathrm{Mpc}$.
+To lift Sorkin local slip to a floor $|\gamma-1|\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_*=1 \mathrm{Mpc}$.
 
 **Verified reading:** geometric “universe as telescope” along the path is $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — useful, **not** a $10^{56}$ amplifier.  
 **Not verified:** that DESI/Euclid *will* detect slip from DE noise; only that the OOM can approach $10^{-3}$ if $\sigma\sim 10^{-5}$–$10^{-4}$.
@@ -192,11 +192,11 @@ If Sorkin rescues are discarded, the only coherent soft-regime architecture is:
 
 $$
 \ell_*\sim\mathrm{Mpc}
-\;\Rightarrow\;
+ \Rightarrow 
 \sigma_{0,\mathrm{eff}}\sim 10^{-6}\text{–}10^{-5}
-\;\xrightarrow{G_O=e^{2r},\;r=\mathcal{O}(1)}\;
+ \xrightarrow{G_O=e^{2r}, r=\mathcal{O}(1)} 
 \sigma_{\mathrm{res}}\le 1.5\times 10^{-4}
-\;\xrightarrow{\pi_T}\;
+ \xrightarrow{\pi_T} 
 \mathrm{RMS}_{\mathrm{path}}(|\gamma-1|)\sim 10^{-4}\text{–}10^{-3}.
 $$
 
@@ -220,7 +220,7 @@ $$
 \sigma_{\mathrm{res}}^{\mathrm{(soft)}} = e^{2r}\sigma_{0,\mathrm{eff}}
 \quad (r=\mathcal{O}(1)),
 \qquad
-\mathrm{RMS}_{\gamma}^{\mathrm{(path)}} \sim |\gamma-1|(\sigma_{\mathrm{res}})\,\sqrt{\chi/\ell_*}.
+\mathrm{RMS}_{\gamma}^{\mathrm{(path)}} \sim |\gamma-1|(\sigma_{\mathrm{res}}) \sqrt{\chi/\ell_*}.
 $$
 
 **Theorem (soft regime, in-repo):**  

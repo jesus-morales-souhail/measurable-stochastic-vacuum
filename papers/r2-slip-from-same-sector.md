@@ -24,7 +24,7 @@ This is the correct **operator** for the SDiff gap (shear not cancelled by $T_{\
 ## 2. Local map (standard sub-horizon GR)
 
 $$
-\pi_T = \varepsilon\,\sigma\,\rho_X,
+\pi_T = \varepsilon \sigma \rho_X,
 \qquad
 |\gamma-1| = 2\varepsilon\sigma\frac{\rho_X}{\rho_m|\delta_m|}.
 $$
@@ -42,7 +42,7 @@ N_{\mathrm{pat}}=\frac{\chi}{\ell_*},
 \quad\text{(iid zero-mean patches)}.
 $$
 
-For $z_s=1.5$, $\chi\sim 4.5\times 10^{3}\,\mathrm{Mpc}$, Mpc-scale cells give $\sqrt{N}=\mathcal{O}(10$–$10^{2})$.
+For $z_s=1.5$, $\chi\sim 4.5\times 10^{3} \mathrm{Mpc}$, Mpc-scale cells give $\sqrt{N}=\mathcal{O}(10$–$10^{2})$.
 
 **Not** $10^{56}$. Path geometry is a modest multiplier.
 
@@ -53,7 +53,7 @@ For $z_s=1.5$, $\chi\sim 4.5\times 10^{3}\,\mathrm{Mpc}$, Mpc-scale cells give $
 | Case | Path RMS (OOM) |
 |:-----|:---------------|
 | Sorkin | $\ll 10^{-50}$ — structural null |
-| $\sigma=10^{-5}$, $\ell_*\sim 2\,\mathrm{Mpc}$ | $\sim 3\times 10^{-4}$ |
+| $\sigma=10^{-5}$, $\ell_*\sim 2 \mathrm{Mpc}$ | $\sim 3\times 10^{-4}$ |
 | DESI residual ceiling a posteriori | $\sim 10^{-3}$ order |
 
 Galaxy formation is **not** an analogy for lifting $10^{-61}$: it used post-inflation $\zeta\sim 10^{-5}$.

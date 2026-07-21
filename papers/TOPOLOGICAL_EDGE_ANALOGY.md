@@ -75,7 +75,7 @@ The analogy only enforces **bulk vs edge** and **local vs topological protection
 ### 3.1 Bulk = $\Lambda$ (unchanged)
 
 $$
-\boxed{G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G\,T_{\mu\nu}^{\mathrm{(mean)}}}
+\boxed{G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G T_{\mu\nu}^{\mathrm{(mean)}}}
 $$
 
 or equivalently
@@ -91,7 +91,7 @@ This is the **bulk insulator**: smooth, isotropic, no free residual.
 Isotropic vacuum stress of the form
 
 $$
-T_{\mu\nu}^{\mathrm{(iso)}} = V\, g_{\mu\nu}
+T_{\mu\nu}^{\mathrm{(iso)}} = V  g_{\mu\nu}
 $$
 
 is the piece that volume-preserving / unimodular structure treats as **pure trace** (bulk).  
@@ -110,7 +110,7 @@ $$
 ### 3.4 Edge current = light sees shear
 
 $$
-\pi_T \sim \sigma\,\rho_X,
+\pi_T \sim \sigma \rho_X,
 \qquad
 |\gamma-1| \sim \sigma,
 \qquad

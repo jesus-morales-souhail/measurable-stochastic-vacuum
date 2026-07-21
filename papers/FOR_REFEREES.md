@@ -55,7 +55,7 @@ N_{\mathrm{eff}}=\Bigl(\frac{L_{H}}{\ell_{*}}\Bigr)^{3},
 \qquad
 \sigma=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2},
 \qquad
-\ell_{*}=L_{H}\,\sigma^{2/3},
+\ell_{*}=L_{H} \sigma^{2/3},
 $$
 
 with $L_{H}=c/H_{0}$.
@@ -64,7 +64,7 @@ with $L_{H}=c/H_{0}$.
 
 $$
 \sigma_{0}=\frac{L_{P}}{L_{H}}\sim 1.18\times 10^{-61}
-\quad(H_{0}=67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}).
+\quad(H_{0}=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
 $$
 
 ### 3.4 Soft open map (optional, bounded)
@@ -72,7 +72,7 @@ $$
 $$
 G_{O}=e^{2r},
 \qquad
-\sigma_{\mathrm{res}}=G_{O}\,\sigma
+\sigma_{\mathrm{res}}=G_{O} \sigma
 \quad(r=\mathcal{O}(1);\ e.g.\ r=1.5\Rightarrow G_{O}\approx 20.09).
 $$
 
@@ -81,7 +81,7 @@ $$
 ### 3.5 Local gravitational slip (sub-horizon GR)
 
 $$
-\pi_{T}=\varepsilon\,\sigma_{\mathrm{res}}\,\rho_{X},
+\pi_{T}=\varepsilon \sigma_{\mathrm{res}} \rho_{X},
 \qquad
 \lvert\gamma-1\rvert
 =
@@ -105,9 +105,9 @@ $$
 $$
 \mathrm{RMS}_{\mathrm{path}}
 \sim
-\alpha\,\sigma\sqrt{\frac{L_{H}}{\ell_{*}}}
+\alpha \sigma\sqrt{\frac{L_{H}}{\ell_{*}}}
 =
-\alpha\,\sigma^{2/3}.
+\alpha \sigma^{2/3}.
 $$
 
 **Warning:** $\sigma\times G_{O}\times\sqrt{N}\neq\mathrm{RMS}_{\mathrm{path}}$ in general (prefactor $\alpha$ and operator order).
@@ -145,13 +145,13 @@ $$
 
 ## 5. Numerical anchors (reproducible)
 
-Fiducial: $H_{0}=67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$, $\Omega_{m}=0.315$, $\Omega_{\Lambda}=0.685$, $z_{s}=1.5$.
+Fiducial: $H_{0}=67.4 \mathrm{km s^{-1} Mpc^{-1}}$, $\Omega_{m}=0.315$, $\Omega_{\Lambda}=0.685$, $z_{s}=1.5$.
 
 | Scenario | $\sigma$ (seed) | $G_{O}$ | $\sigma_{\mathrm{res}}$ | $\ell_{*}$ ($d=3$) | $\mathrm{RMS}_{\mathrm{path}}$ (exact path formula) |
 |:---------|:----------------|:--------|:------------------------|:-------------------|:-----------------------------------------------------|
 | Sorkin | $1.18\times 10^{-61}$ | 1 | same | (Planck / holographic) | $\ll 10^{-40}$ |
-| NP-A | $10^{-5}$ | 1 | $10^{-5}$ | $\approx 2.07\,\mathrm{Mpc}$ | $\approx 3.5\times 10^{-4}$ |
-| NP-B | $5\times 10^{-6}$ | $\approx 20.1$ | $10^{-4}$ | $\approx 1.30\,\mathrm{Mpc}$ | $\approx 4.4\times 10^{-3}$ |
+| NP-A | $10^{-5}$ | 1 | $10^{-5}$ | $\approx 2.07 \mathrm{Mpc}$ | $\approx 3.5\times 10^{-4}$ |
+| NP-B | $5\times 10^{-6}$ | $\approx 20.1$ | $10^{-4}$ | $\approx 1.30 \mathrm{Mpc}$ | $\approx 4.4\times 10^{-3}$ |
 
 ```bash
 pip install -r requirements.txt

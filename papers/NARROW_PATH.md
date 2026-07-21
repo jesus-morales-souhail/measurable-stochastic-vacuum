@@ -45,16 +45,16 @@ N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_*}\right)^{d},
 \qquad
 \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_*}{L_H}\right)^{d/2},
 \qquad
-\ell_* = L_H\,\sigma_{0,\mathrm{eff}}^{2/d}.
+\ell_* = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
 $$
 
 **For $\sigma_{0,\mathrm{eff}}=10^{-5}$ and $L_H=c/H_0$ ($H_0=67.4$):**
 
 | $d$ | $\ell_*$ |
 |:----|:---------|
-| 2 | $0.0445\,\mathrm{Mpc}$ |
-| 3 | $2.065\,\mathrm{Mpc}$ (cluster / large-group scale) |
-| 4 | $14.07\,\mathrm{Mpc}$ |
+| 2 | $0.0445 \mathrm{Mpc}$ |
+| 3 | $2.065 \mathrm{Mpc}$ (cluster / large-group scale) |
+| 4 | $14.07 \mathrm{Mpc}$ |
 
 **Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$.  
 **Still open (not claimed):** which principle fixes $\ell_*$ (R1a/b/c).
@@ -66,7 +66,7 @@ $$
 **Identity:** $G_O=e^{2r}$. For $r=1.5$, $G_O=e^{3}\approx 20.086$.
 
 $$
-\sigma_{\mathrm{res}} = G_U\, G_F\, G_O\, \sigma_{0,\mathrm{eff}}
+\sigma_{\mathrm{res}} = G_U  G_F  G_O  \sigma_{0,\mathrm{eff}}
 \quad\text{with soft defaults }G_U=G_F=1.
 $$
 
@@ -87,12 +87,12 @@ It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual 
 Source anisotropic stress and read light:
 
 $$
-\pi_T = \varepsilon\,\sigma_{\mathrm{res}}\,\rho_X,
+\pi_T = \varepsilon \sigma_{\mathrm{res}} \rho_X,
 \qquad
 |\gamma-1|_{\mathrm{loc}}
 =
 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m|\delta_m|}
-\quad (k\gg aH,\;\mu=1).
+\quad (k\gg aH, \mu=1).
 $$
 
 **Path accumulation (iid patches):**
@@ -102,10 +102,10 @@ N_{\mathrm{pat}} = \frac{\chi(z_s)}{\ell_*},
 \qquad
 \mathrm{RMS}_{\mathrm{path}}
 =
-|\gamma-1|_{\mathrm{loc}}\,\sqrt{N_{\mathrm{pat}}}.
+|\gamma-1|_{\mathrm{loc}} \sqrt{N_{\mathrm{pat}}}.
 $$
 
-For $z_s=1.5$, $\chi\approx 4482\,\mathrm{Mpc}$ (fiducial cosmology).
+For $z_s=1.5$, $\chi\approx 4482 \mathrm{Mpc}$ (fiducial cosmology).
 
 ---
 
@@ -133,7 +133,7 @@ $$
 \underbrace{20}_{G_O}
 \times
 \underbrace{46}_{\sqrt{N}}
-\;\not=\;
+ \not= 
 \mathrm{RMS}_{\mathrm{path}}.
 $$
 
@@ -143,7 +143,7 @@ That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch
 
 | Quantity | Value |
 |:---------|:------|
-| $\ell_*$ | $2.065\,\mathrm{Mpc}$ |
+| $\ell_*$ | $2.065 \mathrm{Mpc}$ |
 | $G_O$ | $20.086$ |
 | $\sigma_{\mathrm{res}}$ | $2.009\times 10^{-4}$ |
 | $\|\gamma-1\|_{\mathrm{loc}}$ | $1.498\times 10^{-4}$ |

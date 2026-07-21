@@ -21,15 +21,15 @@ $$
 \sigma_{0,\mathrm{eff}}
 =
 \left(\frac{\ell_*}{L}\right)^{d/2}
-\quad\xrightarrow{\;G_O=e^{2r}\;}
+\quad\xrightarrow{ G_O=e^{2r} }
 \sigma_{\mathrm{res}}
 =
-G_U G_F G_O\,\sigma_{0,\mathrm{eff}}
-\quad\xrightarrow{\;\pi_T=\varepsilon\sigma_{\mathrm{res}}\rho_X\;}
+G_U G_F G_O \sigma_{0,\mathrm{eff}}
+\quad\xrightarrow{ \pi_T=\varepsilon\sigma_{\mathrm{res}}\rho_X }
 |\gamma-1|_{\mathrm{loc}}
 =
 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m|\delta_m|}
-\quad\xrightarrow{\;\mathrm{iid\;path}\;}
+\quad\xrightarrow{ \mathrm{iid path} }
 \mathrm{RMS}_{\mathrm{path}}
 =
 |\gamma-1|_{\mathrm{loc}}\sqrt{\frac{\chi}{\ell_*}}.

@@ -12,7 +12,7 @@
 | | Cosmological constant $\Lambda$ | This programme (reduced) |
 |:--|:--------------------------------|:-------------------------|
 | Background expansion | **One** number ($\Lambda$ or $\Omega_\Lambda$) | **Same** — keep $\Lambda$CDM |
-| Einstein equation | $G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G\,T_{\mu\nu}$ | **Unchanged** for the mean |
+| Einstein equation | $G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G T_{\mu\nu}$ | **Unchanged** for the mean |
 | Extra physics | None | **One** grain parameter $\sigma$ |
 | Extra prediction | None | One light-path number $\mathrm{RMS}$ |
 | Free lunch $10^{-61}\to 10^{-5}$ | Not needed | **Forbidden** (already killed) |
@@ -52,7 +52,7 @@ No new expansion history. DESI residual analysis prefers this smoothness.
 $$
 \sigma = \left(\frac{\ell_*}{L_H}\right)^{3/2}
 \quad\Leftrightarrow\quad
-\ell_* = L_H\,\sigma^{2/3}.
+\ell_* = L_H \sigma^{2/3}.
 $$
 
 - $\sigma$: dimensionless noise amplitude of the dark-energy sector (our only extra constant, like $\Omega_\Lambda$ is the only vacuum constant in flat $\Lambda$CDM).  
@@ -78,8 +78,8 @@ More carefully (same content, one prefactor $\mathcal{O}(1)$):
 
 $$
 \mathrm{RMS}(|\gamma-1|)
-\;\approx\;
-\alpha\,\sigma\sqrt{\frac{\chi}{\ell_*}},
+ \approx 
+\alpha \sigma\sqrt{\frac{\chi}{\ell_*}},
 \qquad
 \alpha \equiv 2\varepsilon\frac{\rho_X}{\rho_m|\delta_m|}\sim\mathcal{O}(1).
 $$
@@ -88,8 +88,8 @@ With $\ell_*=L_H\sigma^{2/3}$ and $\chi\sim L_H$:
 
 $$
 \mathrm{RMS}
-\;\sim\;
-\alpha\,\sigma^{2/3}.
+ \sim 
+\alpha \sigma^{2/3}.
 $$
 
 **That is the whole theory** at $\Lambda$-level simplicity:
@@ -107,7 +107,7 @@ $$
 ### Cosmological constant
 
 $$
-\boxed{G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G\,T_{\mu\nu}}
+\boxed{G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G T_{\mu\nu}}
 $$
 
 Parameters: $\Lambda$ (or $\Omega_\Lambda$).  
@@ -131,7 +131,7 @@ Prediction: small gravitational slip along the line of sight; **not** a new $H(z
 Optional soft open factor (still simple):
 
 $$
-\sigma_{\mathrm{res}} = G\,\sigma,
+\sigma_{\mathrm{res}} = G \sigma,
 \qquad G\sim 1\text{–}20
 \quad(r=\mathcal{O}(1)),
 $$
@@ -143,7 +143,7 @@ $$
 \quad\text{(DESI residual ceiling)}.
 $$
 
-Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha\,\sigma_{\mathrm{res}}\sqrt{\chi/\ell_*}$ with $\ell_*$ from Line B using $\sigma$ (seed) or using $\sigma_{\mathrm{res}}$ if grain is read after open map — see NP-A / NP-B in `NARROW_PATH.md`.
+Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha \sigma_{\mathrm{res}}\sqrt{\chi/\ell_*}$ with $\ell_*$ from Line B using $\sigma$ (seed) or using $\sigma_{\mathrm{res}}$ if grain is read after open map — see NP-A / NP-B in `NARROW_PATH.md`.
 
 ---
 
@@ -152,8 +152,8 @@ Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha\
 | Choice | $\sigma$ | $\ell_*$ ($d=3$) | $\mathrm{RMS}\sim\sigma^{2/3}$ | DESI residual |
 |:-------|:---------|:-----------------|:-------------------------------|:--------------|
 | Planck mythology | $10^{-61}$ | $L_P$ | $\sim 10^{-41}$ (invisible) | trivially OK |
-| Minimal NP-A | $10^{-5}$ | $\approx 2.07\,\mathrm{Mpc}$ | $\sim 4.6\times 10^{-4}$ (simple); path $\sim 3.5\times 10^{-4}$ | OK |
-| NP-B soft $G\approx 20$ | seed $5\times 10^{-6}$ $\to$ $\sigma_{\mathrm{res}}=10^{-4}$ | $\approx 1.30\,\mathrm{Mpc}$ | $\sim 2\times 10^{-3}$ (simple); path $\sim 4.4\times 10^{-3}$ | OK ($\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$) |
+| Minimal NP-A | $10^{-5}$ | $\approx 2.07 \mathrm{Mpc}$ | $\sim 4.6\times 10^{-4}$ (simple); path $\sim 3.5\times 10^{-4}$ | OK |
+| NP-B soft $G\approx 20$ | seed $5\times 10^{-6}$ $\to$ $\sigma_{\mathrm{res}}=10^{-4}$ | $\approx 1.30 \mathrm{Mpc}$ | $\sim 2\times 10^{-3}$ (simple); path $\sim 4.4\times 10^{-3}$ | OK ($\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$) |
 
 Exact path formula (verified library) gives the same **order**: few $\times 10^{-4}$ to few $\times 10^{-3}$ in the DESI-safe window — not $0.1$ and not $10^{-60}$.
 
