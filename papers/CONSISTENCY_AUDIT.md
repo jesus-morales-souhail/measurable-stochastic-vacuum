@@ -24,7 +24,7 @@
 | Sorkin holographic seed | $\sigma_0 = L_P/L_H \approx 1.18\times 10^{-61}$ | `lib_verified.sorkin_holographic` |
 | Soft open $r=1.5$ | $G_O=e^{3}\approx 20.086$ | `lib_verified.soft_squeeze_gain` |
 | $r$ to lift Sorkin to $10^{-5}$ | $\approx 64.4$ | algebra |
-| $\ell_*$ for $\sigma=10^{-5}$, $d=3$ | $\approx 2.065\,\mathrm{Mpc}$ | `ell_for_target_sigma` |
+| $\ell_*$ for $\sigma=10^{-5}$, $d=3$ | $\approx 2.065 \mathrm{Mpc}$ | `ell_for_target_sigma` |
 | Slip wall $z=0$, $\varepsilon=1$, $\sigma_X=1.5\times 10^{-4}$ | $\lvert\gamma-1\rvert\approx 6.52\times 10^{-4}$ | `slip_deviation` |
 | Path RMS NP-A $z_s=1.5$ | $\approx 3.5\times 10^{-4}$ | light-cone atlas |
 | Path RMS NP-B $z_s=1.5$ | $\approx 4.4\times 10^{-3}$ | light-cone atlas |
@@ -58,7 +58,7 @@ $$
 
 | Fix | Action |
 |:----|:-------|
-| GitHub KaTeX thin spaces `\,` | Removed across all three repos |
+| GitHub KaTeX thin spaces ` ` | Removed across all three repos |
 | Multi-line `$$` with lone `=` | Collapsed to single-line displays |
 | Broken `\boxed{...}` after cleanup | Removed; equations left plain |
 | Broken `\tag{W}}` | Fixed to `\tag{W}` |
