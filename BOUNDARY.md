@@ -2,7 +2,7 @@
 
 ```
 stochastic-dark-energy-ou EMPIRICAL CLAIM SET
- │ nulls, bounds, no free amplification
+ │ nulls, bounds, amplification gap
  │ cited a posteriori
  ▼
 measurable-stochastic-vacuum THEORY + VERIFIED KINEMATICS
