@@ -146,18 +146,37 @@ R1d is singled out **only** because its natural scale sits in the same mesoscopi
 
 Define the conventional length \(R_8=8/h\,\mathrm{Mpc}\) with \(h=H_0/100\), so \(R_8\approx 11.87\,\mathrm{Mpc}\) at this \(H_0\).
 
-| Input | Output under counting | Comment |
-|:------|:----------------------|:--------|
-| Fix \(\sigma=10^{-5}\), \(d=3\) | \(\ell_*\approx 2.07\,\mathrm{Mpc}\) | Below \(R_8\) |
-| Fix \(\sigma=10^{-5}\), \(d=4\) | \(\ell_*\approx 14.1\,\mathrm{Mpc}\) | Near \(R_8\) |
-| Fix \(\sigma=1.5\times 10^{-4}\), \(d=3\) | \(\ell_*\approx 12.56\,\mathrm{Mpc}\) | Within \(\sim 6\%\) of \(R_8\) |
-| Fix \(\ell_*=R_8\), \(d=3\) | \(\sigma\approx 1.38\times 10^{-4}\) | Sits at DESI ceiling order |
-| Fix \(\ell_*=R_8\), \(d=4\) | \(\sigma\approx 7.12\times 10^{-6}\) | Near \(10^{-5}\) band |
+| Input | Output under counting | \(\lvert\ell_*/R_8-1\rvert\) or note |
+|:------|:----------------------|:--------------------------------------|
+| Fix \(\sigma=10^{-5}\), \(d=2\) | \(\ell_*\approx 0.044\,\mathrm{Mpc}\) | \(\sim 99.6\%\) off \(R_8\) |
+| Fix \(\sigma=10^{-5}\), \(d=3\) | \(\ell_*\approx 2.07\,\mathrm{Mpc}\) | \(\sim 83\%\) off \(R_8\) |
+| Fix \(\sigma=10^{-5}\), \(d=4\) | \(\ell_*\approx 14.1\,\mathrm{Mpc}\) | \(\sim 18\%\) off \(R_8\) |
+| Fix \(\sigma=1.5\times 10^{-4}\), \(d=2\) | \(\ell_*\approx 0.67\,\mathrm{Mpc}\) | \(\sim 94\%\) off \(R_8\) |
+| Fix \(\sigma=1.5\times 10^{-4}\), \(d=3\) | \(\ell_*\approx 12.56\,\mathrm{Mpc}\) | \(\sim 5.8\%\) of \(R_8\) (**near**) |
+| Fix \(\sigma=1.5\times 10^{-4}\), \(d=4\) | \(\ell_*\approx 54.5\,\mathrm{Mpc}\) | \(\sim 359\%\) off \(R_8\) |
+| Fix \(\ell_*=R_8\), \(d=3\) | \(\sigma\approx 1.378\times 10^{-4}\) | DESI-ceiling **order** |
+| Fix \(\ell_*=R_8\), \(d=2\) | \(\sigma\approx 2.67\times 10^{-3}\) | Far above residual band |
+| Fix \(\ell_*=R_8\), \(d=4\) | \(\sigma\approx 7.12\times 10^{-6}\) | Near \(10^{-5}\) band only |
 
 Reproducible: `python scripts/r1_open_kernel_scales.py` · identities in `scripts/lib_verified.py`.
 
-**Legitimate use of the table:** motivate *which* principle classes are worth deriving (those that land \(\ell_*\) near Mpc–tens of Mpc).  
-**Illegitimate use:** pick the row that matches DESI or S\(_8\) and call it a principle.
+#### Fragility in \(d\) (must be stated)
+
+**The near-coincidence with \(R_8\) is specific to \(d=3\) at the a-posteriori DESI residual ceiling.**  
+It does **not** survive a change of counting exponent:
+
+| \(d\) at \(\sigma=1.5\times 10^{-4}\) | \(\lvert\ell_*/R_8-1\rvert\) | Reads as |
+|:-------------------------------------|:----------------------------|:---------|
+| 2 | \(\sim 0.94\) | no proximity |
+| **3** | \(\sim 0.058\) | proximity |
+| 4 | \(\sim 3.59\) | no proximity |
+
+That is **honesty about the finding**, not a flaw in reporting it. A robust multi-angle physical pattern would be expected to reappear under reasonable changes of \(d\); this one does not. Volume counting \(d=3\) remains the most natural geometric default (not a dial chosen after seeing \(R_8\)), but natural \(\neq\) derived, and natural \(\neq\) multi-\(d\) robust.
+
+**Status under pattern hygiene:** the coincidence has an equation (counting), units (Mpc vs dimensionless \(\sigma\)), and a clear answer to “do data *prefer* this or only *tolerate* it?” — **tolerate only**. No likelihood preferred \(d=3\) and \(R_8\) over other combinations; the row was read off arithmetic after the landscape existed, not searched for to match S\(_8\).
+
+**Legitimate use of the table:** motivate *which* principle classes are worth deriving (those that land \(\ell_*\) near Mpc–tens of Mpc), with \(d\)-fragility kept visible.  
+**Illegitimate use:** pick the single near row (\(d=3\), DESI ceiling) and call it a principle.
 
 ### 6.3 S\(_8\) / growth (non-claim with a shared target)
 
@@ -170,6 +189,9 @@ A publishable link would require at least:
 3. a posteriori comparison to S\(_8\) and to \(\sigma_X\).
 
 Until (1)–(2) exist, **S\(_8\) is not a claim of this repository**. The honest status is: two open questions may share a scale; they do not yet share a theory.
+
+**Sharpened open question (not an answer):**  
+*If a mesoscopic DE counting grain exists, why does its \(d=3\) inverse at residual-band amplitudes sit so close to the scale where an unresolved growth tension already lives — and why does that proximity fail for \(d\neq 3\)?*
 
 ---
 
@@ -226,6 +248,9 @@ That channel does **not** close R1: it does not fix \(\ell_*\) for the DE residu
 **One-sentence summary for referees:**
 
 > Soft amplifiers of a Planck counting seed are closed by measurement; the remaining soft-regime question is whether a mesoscopic DE counting cell is fixed by a principle — a question the programme states and has not answered.
+
+**Closing stance for this note:**  
+not an answer, but the sharpest open question the soft-regime map currently admits — with the lock that neither DESI nor S\(_8\) may be used to *derive* \(\ell_*\), and with the \(d=3\)-specificity of the \(R_8\) proximity stated so it cannot be misread as multi-angle robustness.
 
 ---
 

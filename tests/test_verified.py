@@ -353,14 +353,20 @@ class TestR1OpenKernelScales:
         """d=3 inverse at DESI ceiling lands near R_8 (scale coincidence)."""
         ell = ell_mpc_for_sigma(1.5e-4, 3)
         R8 = r8_mpc()
-        assert ell == pytest.approx(12.6, rel=0.05)
-        assert abs(ell / R8 - 1.0) < 0.15  # within ~15%
+        assert ell == pytest.approx(12.557, rel=0.01)
+        assert abs(ell / R8 - 1.0) < 0.10  # ~5.8%
 
-    def test_ell_for_1e_5_d4_near_r8(self):
-        ell = ell_mpc_for_sigma(1e-5, 4)
+    def test_r8_proximity_is_specific_to_d3(self):
+        """Honesty lock: d=2 and d=4 at DESI ceiling are FAR from R_8."""
         R8 = r8_mpc()
+        for d, min_frac in ((2, 0.5), (4, 1.0)):
+            ell = ell_mpc_for_sigma(1.5e-4, d)
+            assert abs(ell / R8 - 1.0) > min_frac
+
+    def test_ell_for_1e_5_d4_order_of_structure_scale(self):
+        """d=4 at 1e-5 is O(10 Mpc); not the same claim as d=3@DESI ceiling."""
+        ell = ell_mpc_for_sigma(1e-5, 4)
         assert 12.0 < ell < 16.0
-        assert abs(ell / R8 - 1.0) < 0.25
 
     def test_planck_not_near_r8(self):
         """Sanity: Sorkin seed is not a mesoscopic R8 story."""

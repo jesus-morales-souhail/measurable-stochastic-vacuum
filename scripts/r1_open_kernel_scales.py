@@ -60,17 +60,23 @@ def main() -> None:
         print(f"  d={d}: sigma_0,eff = {s:.4e}")
     print()
 
-    # Highlight the near-coincidence rows used in the note (not selected by fit)
-    ell_desi_d3 = ell_mpc_for_sigma(DESI_CEILING, 3)
-    ell_1e5_d4 = ell_mpc_for_sigma(SIGMA_TARGET, 4)
+    # Near row + d-fragility (honesty: proximity is not multi-d robust)
+    print("Proximity to R_8 at sigma = DESI ceiling (fragility in d):")
+    for d in (2, 3, 4):
+        ell = ell_mpc_for_sigma(DESI_CEILING, d)
+        frac = abs(ell / R8 - 1.0)
+        tag = "NEAR" if frac < 0.10 else "FAR"
+        print(f"  d={d}: ell_* = {ell:.3f} Mpc  |ell_*/R_8-1| = {frac:.3f}  -> {tag}")
+    print("  Honesty: near-coincidence is SPECIFIC to d=3; d=2 and d=4 do not reproduce it.")
+    print()
+
     s_r8_d3 = sigma_for_cell_mpc(R8, 3)
-    print("Near-coincidence rows (scale class only; not a principle):")
-    print(f"  d=3, sigma=DESI ceiling -> ell_* = {ell_desi_d3:.3f} Mpc  vs R_8 = {R8:.3f} Mpc")
-    print(f"  d=4, sigma=1e-5         -> ell_* = {ell_1e5_d4:.3f} Mpc  vs R_8 = {R8:.3f} Mpc")
-    print(f"  d=3, ell_*=R_8          -> sigma = {s_r8_d3:.3e}  vs DESI ceiling {DESI_CEILING:.1e}")
+    print("If ell_*=R_8 and d=3 (hypothesis class R1d — NOT derived):")
+    print(f"  sigma = {s_r8_d3:.6e}  vs DESI ceiling {DESI_CEILING:.1e}  (tolerate, not prefer)")
     print()
     print("OPEN KERNEL (unchanged): principle fixing ell_* is ABSENT (declared).")
     print("Illegal: choose the row that matches DESI/S8 and call it derived.")
+    print("Illegal: treat d=3 proximity as multi-d robustness.")
     print("See papers/r1-open-kernel.md")
 
 

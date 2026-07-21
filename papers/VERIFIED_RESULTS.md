@@ -97,14 +97,17 @@ Define $R_8=8/h\,\mathrm{Mpc}$ with $h=H_0/100$. At $H_0=67.4$, $R_8\approx 11.8
 
 Under the counting hypothesis alone (no fit):
 
-| Specification | Result |
-|:--------------|:-------|
-| $\ell_*=R_8$, $d=3$ | $\sigma_{0,\mathrm{eff}}\approx 1.38\times 10^{-4}$ |
-| $\ell_*=R_8$, $d=4$ | $\sigma_{0,\mathrm{eff}}\approx 7.12\times 10^{-6}$ |
-| $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_*\approx 12.56\,\mathrm{Mpc}$ ($\sim 6\%$ from $R_8$) |
+| Specification | Result | Near $R_8$? |
+|:--------------|:-------|:------------|
+| $\ell_*=R_8$, $d=3$ | $\sigma_{0,\mathrm{eff}}\approx 1.378\times 10^{-4}$ | (by construction) |
+| $\ell_*=R_8$, $d=4$ | $\sigma_{0,\mathrm{eff}}\approx 7.12\times 10^{-6}$ | — |
+| $\sigma=1.5\times 10^{-4}$, $d=2$ | $\ell_*\approx 0.67\,\mathrm{Mpc}$ | **no** ($\sim 94\%$ off) |
+| $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_*\approx 12.56\,\mathrm{Mpc}$ | **yes** ($\sim 5.8\%$ off) |
+| $\sigma=1.5\times 10^{-4}$, $d=4$ | $\ell_*\approx 54.5\,\mathrm{Mpc}$ | **no** ($\sim 359\%$ off) |
 
-**Verified:** the arithmetic above.  
-**Not verified / not claimed:** $\ell_*=R_8$; any explanation of S$_8$.  
+**Verified:** the arithmetic above; **proximity to $R_8$ is specific to $d=3$** at this residual scale.  
+**Not verified / not claimed:** $\ell_*=R_8$; multi-$d$ robustness; any explanation of S$_8$.  
+Data **tolerate** the $d=3$ row; nothing in-repo **prefers** it by fit.  
 Programme discussion: [`r1-open-kernel.md`](r1-open-kernel.md) · `scripts/r1_open_kernel_scales.py`.
 
 ---

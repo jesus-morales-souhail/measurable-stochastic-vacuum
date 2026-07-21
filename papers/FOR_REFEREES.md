@@ -129,7 +129,7 @@ $$
 | C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | sister repo |
 | C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
 | C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_*$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
-| C11 | Scale arithmetic: $R_8=8/h$; $\ell_*(\sigma,d)$ and $\sigma(R_8,d)$ under counting | `lib_verified` + `r1_open_kernel_scales.py` + tests |
+| C11 | Scale arithmetic: $R_8=8/h$; $\ell_*(\sigma,d)$ and $\sigma(R_8,d)$ under counting; **$R_8$ proximity is $d=3$-specific** | `lib_verified` + `r1_open_kernel_scales.py` + tests |
 
 ### 4.2 Non-claims
 
@@ -142,7 +142,7 @@ $$
 | N5 | Cosmos is **not** asserted to be a fractional Hall bar (analogy only) |
 | N6 | Entropy of the universe does **not** “stop”; only local backscattering of a protected channel is suppressed (analogy) |
 | N7 | Not peer reviewed |
-| N8 | $\ell_*=R_8$ is **not** derived; S$_8$ is **not** explained by this programme |
+| N8 | $\ell_*=R_8$ is **not** derived; S$_8$ is **not** explained; $d=3$ proximity is **tolerated**, not preferred by fit |
 
 ---
 
