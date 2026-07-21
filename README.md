@@ -14,10 +14,11 @@ Independent research on *when* late-time stochastic vacuum / dark-energy noise c
 | Priority | Document | Role |
 |:---------|:---------|:-----|
 | **1** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | **Publication spine — hard claims only** |
-| **2** | [`tests/test_verified.py`](tests/test_verified.py) | Gate: `pytest -q` must pass (25 tests) |
-| **3** | [`scripts/lib_verified.py`](scripts/lib_verified.py) | Verified identities library |
-| 4 | [`papers/wp4-joint-predictions-and-zeros.md`](papers/wp4-joint-predictions-and-zeros.md) | Joint table + structural zeros |
-| 5 | [`papers/wp5-falsification.md`](papers/wp5-falsification.md) | How the programme dies or narrows |
+| **2** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | Only soft-regime coherent architecture (NP-A / NP-B) |
+| **3** | [`tests/test_verified.py`](tests/test_verified.py) | Gate: `pytest -q` (31 tests) |
+| 4 | [`scripts/lib_verified.py`](scripts/lib_verified.py) | Verified identities library |
+| 5 | [`papers/wp4-joint-predictions-and-zeros.md`](papers/wp4-joint-predictions-and-zeros.md) | Joint table + structural zeros |
+| 6 | [`papers/wp5-falsification.md`](papers/wp5-falsification.md) | Falsification criteria |
 
 ```bash
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git

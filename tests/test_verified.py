@@ -214,3 +214,62 @@ class TestNoFreeLunchCombined:
         s20 = residual_soft_map(1e-5, r=1.5)
         # e^{3}*1e-5 ~ 2e-4, near DESI ceiling
         assert 1e-4 < s20 < 5e-4
+
+
+class TestNarrowPath:
+    """DESI-safe mesoscopic architecture (NP-A / NP-B)."""
+
+    def test_d3_cell_for_1e_5_is_cluster_scale(self):
+        L_H, _, _ = sorkin_holographic()
+        mpc = 3.085677581e22
+        ell_mpc = ell_for_target_sigma(1e-5, L_H, 3) / mpc
+        assert 1.5 < ell_mpc < 3.0
+
+    def test_user_chain_r15_exceeds_desi_ceiling(self):
+        """sigma0=1e-5 and r=1.5 => sigma_res > 1.5e-4 (must be clipped to NP-B)."""
+        sres = residual_soft_map(1e-5, r=1.5)
+        assert sres > 1.5e-4
+
+    def test_np_b_on_desi_ceiling(self):
+        """sigma0 = 1.5e-4 / e^{3} keeps residual on the DESI ceiling."""
+        g = soft_squeeze_gain(1.5)
+        s0 = 1.5e-4 / g
+        sres = residual_soft_map(s0, r=1.5)
+        assert sres == pytest.approx(1.5e-4, rel=1e-10)
+
+    def test_np_a_path_rms_order(self):
+        """G_O=1, sigma0=1e-5, d=3 cell: path RMS ~ few x 10^{-4}."""
+        L_H, _, _ = sorkin_holographic()
+        mpc = 3.085677581e22
+        ell_mpc = ell_for_target_sigma(1e-5, L_H, 3) / mpc
+        sres = residual_soft_map(1e-5, r=0.0)
+        slip = slip_deviation(1.0, sres, 0.8)
+        chi = comoving_distance_mpc(1.5)
+        rms = rms_incoherent(slip, n_patches(chi, ell_mpc))
+        assert 1e-4 < rms < 1e-3
+
+    def test_np_b_path_rms_order(self):
+        """DESI-safe soft open: path RMS ~ few x 10^{-3}."""
+        L_H, _, _ = sorkin_holographic()
+        mpc = 3.085677581e22
+        g = soft_squeeze_gain(1.5)
+        s0 = 1.0e-4 / g  # residual 1e-4 < ceiling
+        ell_mpc = ell_for_target_sigma(s0, L_H, 3) / mpc
+        sres = residual_soft_map(s0, r=1.5)
+        assert sres <= 1.5e-4
+        slip = slip_deviation(1.0, sres, 0.8)
+        rms = rms_incoherent(slip, n_patches(comoving_distance_mpc(1.5), ell_mpc))
+        assert 1e-3 < rms < 1e-2
+
+    def test_naive_product_is_not_rms(self):
+        L_H, _, _ = sorkin_holographic()
+        mpc = 3.085677581e22
+        s0, r = 1e-5, 1.5
+        ell_mpc = ell_for_target_sigma(s0, L_H, 3) / mpc
+        sres = residual_soft_map(s0, r=r)
+        slip = slip_deviation(1.0, sres, 0.8)
+        n = n_patches(comoving_distance_mpc(1.5), ell_mpc)
+        rms = rms_incoherent(slip, n)
+        naive = s0 * soft_squeeze_gain(r) * math.sqrt(n)
+        assert rms != pytest.approx(naive, rel=0.01)
+        assert rms < naive  # prefactor 2(ρX/ρm)/δm < 1 at z=0.8 typically... actually ~1.5e-4*sqrtN vs 2e-4*sqrtN

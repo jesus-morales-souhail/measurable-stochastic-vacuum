@@ -18,6 +18,7 @@ WP notes are expansions, not independent hard-claim sources.
 | WP3 | R2 slip + path | **Partial** | [`r2-slip-from-same-sector.md`](../papers/r2-slip-from-same-sector.md) |
 | WP4 | Joint table + zeros | **Done** | [`wp4-joint-predictions-and-zeros.md`](../papers/wp4-joint-predictions-and-zeros.md) |
 | WP5 | Falsification | **Done** | [`wp5-falsification.md`](../papers/wp5-falsification.md) |
+| — | Narrow path (NP-A/B) | **Done** | [`NARROW_PATH.md`](../papers/NARROW_PATH.md) |
 
 ---
 

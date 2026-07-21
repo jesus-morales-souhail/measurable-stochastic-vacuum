@@ -186,7 +186,33 @@ To lift Sorkin local slip to a floor $|\gamma-1|\sim 0.05$ by $\sqrt{N}$ alone r
 
 ---
 
-## 5. Combined no-free-lunch statement (verified)
+## 5. Narrow path (soft regime) — architecture only
+
+If Sorkin rescues are discarded, the only coherent soft-regime architecture is:
+
+$$
+\ell_*\sim\mathrm{Mpc}
+\;\Rightarrow\;
+\sigma_{0,\mathrm{eff}}\sim 10^{-6}\text{–}10^{-5}
+\;\xrightarrow{G_O=e^{2r},\;r=\mathcal{O}(1)}\;
+\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}
+\;\xrightarrow{\pi_T}\;
+\mathrm{RMS}_{\mathrm{path}}(|\gamma-1|)\sim 10^{-4}\text{–}10^{-3}.
+$$
+
+| Label | Definition | Residual vs DESI ceiling | Path RMS (OOM, $d=3$, $\varepsilon=1$) |
+|:------|:-----------|:-------------------------|:----------------------------------------|
+| **NP-A** | $\sigma_0=10^{-5}$, $G_O=1$ | OK ($10^{-5}$) | $\sim 3.5\times 10^{-4}$ |
+| **NP-B** | $\sigma_0\lesssim 7.5\times 10^{-6}$, $r=1.5$ | OK (on/under ceiling) | $\sim$ few $\times 10^{-3}$ |
+| NP-user ($\sigma_0=10^{-5}$, $r=1.5$) | same shape | **Tension** ($\sigma_{\mathrm{res}}\approx 2.0\times 10^{-4}$) | $\sim 7\times 10^{-3}$ |
+
+**Verified:** algebra and numbers for NP-A/B; naive product $\sigma_0\times G_O\times\sqrt{N}\neq\mathrm{RMS}$.  
+**Not verified:** a principle that realises mesoscopic $\ell_*$, or a bath that realises $r=\mathcal{O}(1)$.  
+Full write-up: [`NARROW_PATH.md`](NARROW_PATH.md).
+
+---
+
+## 6. Combined no-free-lunch statement (verified)
 
 Define the soft residual after open kinematics and before/with path geometry as appropriate. Then:
 
@@ -203,7 +229,7 @@ If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1
 
 ---
 
-## 6. Relation to DESI empirical claims (sister repo)
+## 7. Relation to DESI empirical claims (sister repo)
 
 | Sister claim (DESI corpus) | Role here |
 |:---------------------------|:----------|
