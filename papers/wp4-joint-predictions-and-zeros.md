@@ -1,41 +1,29 @@
 # WP4 — Joint predictions and structural zeros
 
-**Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Programme:** measurable-stochastic-vacuum  
-**Status:** Synthesis of verified maps only  
-**Date:** July 2026  
-**Hard claims:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q`  
+**Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
+**Programme:** measurable-stochastic-vacuum 
+**Status:** Synthesis of verified maps only 
+**Date:** July 2026 
+**Hard claims:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` 
 
 ---
 
 ## 1. Purpose
 
-Combine R1 (seed), R3 (soft gain), and R2 (slip + path) into a **single prediction table** and an explicit list of **structural zeros**.  
+Combine R1 (seed), R3 (soft gain), and R2 (slip + path) into a **single prediction table** and an explicit list of **structural zeros**. 
 No new free parameters. No DESI dial.
 
 ---
 
 ## 2. Master map (verified chain)
 
+
 $$
-\sigma_{0,\mathrm{eff}}
-=
-\left(\frac{\ell_*}{L}\right)^{d/2}
-\quad\xrightarrow{ G_O=e^{2r} }
-\sigma_{\mathrm{res}}
-=
-G_U G_F G_O \sigma_{0,\mathrm{eff}}
-\quad\xrightarrow{ \pi_T=\varepsilon\sigma_{\mathrm{res}}\rho_X }
-|\gamma-1|_{\mathrm{loc}}
-=
-2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m|\delta_m|}
-\quad\xrightarrow{ \mathrm{iid path} }
-\mathrm{RMS}_{\mathrm{path}}
-=
-|\gamma-1|_{\mathrm{loc}}\sqrt{\frac{\chi}{\ell_*}}.
+\sigma_{0,\mathrm{eff}} = \left(\frac{\ell_*}{L}\right)^{d/2} \quad\xrightarrow{ G_O=e^{2r} } \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}} \quad\xrightarrow{ \pi_T=\varepsilon\sigma_{\mathrm{res}}\rho_X } |\gamma-1|_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m|\delta_m|} \quad\xrightarrow{ \mathrm{iid path} } \mathrm{RMS}_{\mathrm{path}} = |\gamma-1|_{\mathrm{loc}}\sqrt{\frac{\chi}{\ell_*}}.
 $$
 
-**Defaults used for soft regime (stated, not fitted):**  
+
+**Defaults used for soft regime (stated, not fitted):** 
 $G_U=1$, $G_F=1$, $r\le 1.5$ $\Rightarrow$ $G_O\le e^{3}\approx 20$, $\varepsilon\le 1$, $\delta_m\sim 1$, $L=L_H=c/H_0$.
 
 ---
@@ -51,7 +39,7 @@ $G_U=1$, $G_F=1$, $r\le 1.5$ $\Rightarrow$ $G_O\le e^{3}\approx 20$, $\varepsilo
 | Mesoscopic + soft open | $10^{-5}$ | 20 | $\sim 2\times 10^{-4}$ | $\sim 1.5\times 10^{-4}$ | $\sim 2$ Mpc | $\sim 46$ | $\sim 10^{-3}$ | Near DESI residual ceiling (a posteriori) |
 | DESI residual ceiling (external bound) | — | — | $<1.5\times 10^{-4}$ | $\lesssim 10^{-4}$ | model-dep. | $\mathcal{O}(10$–$10^{2})$ | $\lesssim$ few $\times 10^{-3}$ | Sister-repo limit, not a detection |
 
-**A posteriori scales (not inputs):**  
+**A posteriori scales (not inputs):** 
 DESI OU bound $\sigma_X<1.5\times 10^{-4}$ (95% CL); Maus $|\gamma-1|\sim 0.17$; Sakr-like floor $\sim 0.05$; schematic shear $\sim 10^{-3}$.
 
 ---
@@ -88,10 +76,10 @@ If a model in this programme cannot list Z1–Z4, it is rejected (self-shielding
 
 A publishable positive claim requires **all** of:
 
-1. A principle fixing $\ell_*$ or $N_{\mathrm{eff}}$ **before** using DESI numbers.  
-2. A stated $\varepsilon$ (or derivation).  
-3. Numbers for $\sigma_{\mathrm{res}}$ and $\mathrm{RMS}_{\mathrm{path}}$ from the master map.  
-4. Explicit zeros Z1–Z4 still satisfied.  
+1. A principle fixing $\ell_*$ or $N_{\mathrm{eff}}$ **before** using DESI numbers. 
+2. A stated $\varepsilon$ (or derivation). 
+3. Numbers for $\sigma_{\mathrm{res}}$ and $\mathrm{RMS}_{\mathrm{path}}$ from the master map. 
+4. Explicit zeros Z1–Z4 still satisfied. 
 5. A posteriori consistency with sister DESI bound (or tension declared).
 
 Until (1) is done, the only publishable positives are the **theorems of absence** in §5 and the **conditional** landscape in §3.

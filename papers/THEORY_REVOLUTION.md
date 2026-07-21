@@ -1,10 +1,10 @@
 # Minimal theoretical package: when could stochastic vacuum noise be measurable?
 
-**Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Status:** Programme manifesto (not a detection paper)  
-**Date:** July 2026  
-**Verified claims only:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md)  
+**Author:** Jesús Morales Souhail 
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
+**Status:** Programme manifesto (not a detection paper) 
+**Date:** July 2026 
+**Verified claims only:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) 
 **Sister empirical corpus:** [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
@@ -20,7 +20,7 @@ The sister DESI corpus has already established, under stated pipelines:
 | Soft amplifiers fail by many decades | No free lunch from $\sigma_0\sim 10^{-61}$ to $10^{-5}$ |
 | Slip with BAO-scale $\sigma$ is amplitude-starved | Right operator, insufficient amplitude |
 
-Therefore a measurable stochastic dark-energy sector is not “one more $\sigma$ in $\Lambda$CDM”.  
+Therefore a measurable stochastic dark-energy sector is not “one more $\sigma$ in $\Lambda$CDM”. 
 It requires a **minimal package of rule changes**, coupled, with **self-shielding** (predicted zeros).
 
 ---
@@ -31,10 +31,10 @@ A construction is **numerological** if it inserts a factor $\sim 10^{56}$ (or fr
 
 Admissible work must:
 
-1. Derive or define the seed $\sigma_{0,\mathrm{eff}}$ from a counting principle.  
-2. Derive or bound the gain $G$ of any open map.  
-3. State the observable operator (BAO residual vs slip vs both).  
-4. Predict structural zeros (wrong scale / wrong operator / Sorkin soft).  
+1. Derive or define the seed $\sigma_{0,\mathrm{eff}}$ from a counting principle. 
+2. Derive or bound the gain $G$ of any open map. 
+3. State the observable operator (BAO residual vs slip vs both). 
+4. Predict structural zeros (wrong scale / wrong operator / Sorkin soft). 
 5. Use DESI only **a posteriori**.
 
 ---
@@ -50,10 +50,10 @@ Admissible work must:
 **Hard rule:** treating R1, R2, R3 as independent free knobs is out of scope.
 
 ```
-R1: what is counted?     →  seed
-R3: how does it evolve?  →  residual amplitude
-R2: what is observed?    →  H(z) residual and/or light/slip
-        ↓
+R1: what is counted? → seed
+R3: how does it evolve? → residual amplitude
+R2: what is observed? → H(z) residual and/or light/slip
+ ↓
 a posteriori tests (DESI / Euclid / RSD+lensing)
 ```
 
@@ -61,11 +61,11 @@ a posteriori tests (DESI / Euclid / RSD+lensing)
 
 ## 3. Self-shielding
 
-“Measurable without being shielded” does **not** mean signal everywhere.  
+“Measurable without being shielded” does **not** mean signal everywhere. 
 It means shielding becomes a **theorem of the model**:
 
-- Sorkin cell + soft dynamics → null (verified).  
-- Wrong operator (lab optics) → null.  
+- Sorkin cell + soft dynamics → null (verified). 
+- Wrong operator (lab optics) → null. 
 - Possible non-null only if mesoscopic counting or a **derived** hard open map exists.
 
 See [`SELF_SHIELDING_AXIOMS.md`](SELF_SHIELDING_AXIOMS.md) and [`wp5-falsification.md`](wp5-falsification.md).
@@ -74,10 +74,10 @@ See [`SELF_SHIELDING_AXIOMS.md`](SELF_SHIELDING_AXIOMS.md) and [`wp5-falsificati
 
 ## 4. Light without changing global expansion
 
-A classical residual need not shift mean $H(z)$.  
+A classical residual need not shift mean $H(z)$. 
 Anisotropic stress $\pi_T$ wrinkles $\Phi,\Psi$; photons accumulate lensing/ISW-like shifts over Gpc paths.
 
-**Verified:** geometric path gain is $\sqrt{N_{\mathrm{pat}}}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — **not** $10^{56}$.  
+**Verified:** geometric path gain is $\sqrt{N_{\mathrm{pat}}}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — **not** $10^{56}$. 
 **Analogy limit:** galaxies grew from post-inflation $\zeta\sim 10^{-5}$, not from late Sorkin $10^{-61}$.
 
 ---

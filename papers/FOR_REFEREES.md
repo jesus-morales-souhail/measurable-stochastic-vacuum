@@ -1,11 +1,11 @@
 # For referees: claim map, reading order, and formula sheet
 
-**Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Email:** jmskjym@gmail.com  
-**Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum  
-**Date:** July 2026  
-**Status:** Independent research — **not peer reviewed**  
+**Author:** Jesús Morales Souhail 
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
+**Email:** jmskjym@gmail.com 
+**Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum 
+**Date:** July 2026 
+**Status:** Independent research — **not peer reviewed** 
 **Automated gate:** `pytest -q` must report **34 passed**
 
 ---
@@ -19,8 +19,8 @@
 | Conditional light-path predictions | Model kills (e.g. coherent tachyonic growth) |
 | **Not** a detection paper | **Not** a first-principles derivation of $\ell_*$ |
 
-**Sister empirical corpus:**  
-https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou  
+**Sister empirical corpus:** 
+https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou 
 Manuscript: `manuscript/PREPRINT.md`
 
 ---
@@ -46,71 +46,65 @@ Manuscript: `manuscript/PREPRINT.md`
 
 ### 3.1 Background (identical to flat $\Lambda$CDM)
 
+
 $$
 H^{2}(z)=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr].
 $$
 
+
 ### 3.2 Counting seed (hypothesis $d=3$)
 
+
 $$
-N_{\mathrm{eff}}=\Bigl(\frac{L_{H}}{\ell_{*}}\Bigr)^{3},
-\qquad
-\sigma=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2},
-\qquad
-\ell_{*}=L_{H} \sigma^{2/3},
+N_{\mathrm{eff}}=\Bigl(\frac{L_{H}}{\ell_{*}}\Bigr)^{3}, \qquad \sigma=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}, \qquad \ell_{*}=L_{H} \sigma^{2/3},
 $$
+
 
 with $L_{H}=c/H_{0}$.
 
 ### 3.3 Holographic Sorkin seed (special case $d=2$, $\ell_{*}=L_{P}$)
 
+
 $$
-\sigma_{0}=\frac{L_{P}}{L_{H}}\sim 1.18\times 10^{-61}
-\quad(H_{0}=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
+\sigma_{0}=\frac{L_{P}}{L_{H}}\sim 1.18\times 10^{-61} \quad(H_{0}=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
 $$
+
 
 ### 3.4 Soft open map (optional, bounded)
 
+
 $$
-G_{O}=e^{2r},
-\qquad
-\sigma_{\mathrm{res}}=G_{O} \sigma
-\quad(r=\mathcal{O}(1);\ e.g.\ r=1.5\Rightarrow G_{O}\approx 20.09).
+G_{O}=e^{2r}, \qquad \sigma_{\mathrm{res}}=G_{O} \sigma \quad(r=\mathcal{O}(1);\ e.g.\ r=1.5\Rightarrow G_{O}\approx 20.09).
 $$
+
 
 **DESI-safe constraint (a posteriori):** $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$.
 
 ### 3.5 Local gravitational slip (sub-horizon GR)
 
+
 $$
-\pi_{T}=\varepsilon \sigma_{\mathrm{res}} \rho_{X},
-\qquad
-\lvert\gamma-1\rvert
-=
-2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_{X}}{\rho_{m}\lvert\delta_{m}\rvert}.
+\pi_{T}=\varepsilon \sigma_{\mathrm{res}} \rho_{X}, \qquad \lvert\gamma-1\rvert = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_{X}}{\rho_{m}\lvert\delta_{m}\rvert}.
 $$
+
 
 Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_{T}$.
 
 ### 3.6 Light-path accumulation (iid patches)
 
+
 $$
-N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}},
-\qquad
-\mathrm{RMS}_{\mathrm{path}}
-=
-\lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}}.
+N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}}.
 $$
+
 
 ### 3.7 Blackboard reduction ($d=3$, $\chi\sim L_{H}$, $\alpha\sim\mathcal{O}(1)$)
 
+
 $$
-\mathrm{RMS}_{\mathrm{path}}
-\sim
-\alpha \sigma\sqrt{\frac{L_{H}}{\ell_{*}}}
-=
-\alpha \sigma^{2/3}.
+\mathrm{RMS}_{\mathrm{path}} \sim \alpha \sigma\sqrt{\frac{L_{H}}{\ell_{*}}} = \alpha \sigma^{2/3}.
 $$
+
 
 **Warning:** $\sigma\times G_{O}\times\sqrt{N}\neq\mathrm{RMS}_{\mathrm{path}}$ in general (prefactor $\alpha$ and operator order).
 
@@ -169,8 +163,8 @@ python scripts/lib_verified.py
 
 [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) is **pedagogy**:
 
-- bulk $\leftrightarrow$ $\Lambda$ (smooth mean),  
-- edge $\leftrightarrow$ grain $\sigma$ (shear / light),  
+- bulk $\leftrightarrow$ $\Lambda$ (smooth mean), 
+- edge $\leftrightarrow$ grain $\sigma$ (shear / light), 
 - no backscattering $\leftrightarrow$ free-lunch channels closed.
 
 It is **not** a condensed-matter derivation of dark energy.
@@ -179,10 +173,10 @@ It is **not** a condensed-matter derivation of dark energy.
 
 ## 7. Suggested evaluation criteria for referees
 
-1. Are hard claims limited to C1–C8 and backed by `pytest`?  
-2. Is the DESI number used only as a bound, never to fit $\ell_{*}$?  
-3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$?  
-4. Are free $10^{56}$, $r\sim 64$, and $N\sim 10^{119}$ correctly rejected?  
+1. Are hard claims limited to C1–C8 and backed by `pytest`? 
+2. Is the DESI number used only as a bound, never to fit $\ell_{*}$? 
+3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$? 
+4. Are free $10^{56}$, $r\sim 64$, and $N\sim 10^{119}$ correctly rejected? 
 5. Are open problems (N1–N3) stated without hype?
 
 ---

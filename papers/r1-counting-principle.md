@@ -1,10 +1,10 @@
 # WP1 — R1: counting principle for the stochastic seed
 
-**Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Programme:** measurable-stochastic-vacuum  
-**Status:** Partial derivation — landscape and zeros  
-**Date:** July 2026  
-**Code:** [`scripts/r1_counting_landscape.py`](../scripts/r1_counting_landscape.py) · [`scripts/lib_verified.py`](../scripts/lib_verified.py)  
+**Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
+**Programme:** measurable-stochastic-vacuum 
+**Status:** Partial derivation — landscape and zeros 
+**Date:** July 2026 
+**Code:** [`scripts/r1_counting_landscape.py`](../scripts/r1_counting_landscape.py) · [`scripts/lib_verified.py`](../scripts/lib_verified.py) 
 
 > **Hard claims:** cite only [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`). This note is discussion/expansion.
 
@@ -14,11 +14,11 @@
 
 Under the counting hypothesis for the DE residual sector,
 
+
 $$
-N_{\mathrm{eff}}=\left(\frac{L}{\ell_*}\right)^{d},
-\qquad
-\sigma_{0,\mathrm{eff}}=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\left(\frac{\ell_*}{L}\right)^{d/2}.
+N_{\mathrm{eff}}=\left(\frac{L}{\ell_*}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}}=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\left(\frac{\ell_*}{L}\right)^{d/2}.
 $$
+
 
 The excluded Sorkin seed is the special case $\ell_*=L_P$, $d=2$ (holographic count on the Hubble sphere): $\sigma_0\sim 10^{-61}$.
 
@@ -43,8 +43,8 @@ With $L=L_H=c/H_0$ and target $\sigma=10^{-5}$:
 
 ## 3. Structural zeros
 
-1. Planck cell $\Rightarrow$ null for any soft gain (VERIFIED).  
-2. $\ell_*=L_H\Rightarrow\sigma\sim 1$ (upper structural absurdity for BAO smoothness).  
+1. Planck cell $\Rightarrow$ null for any soft gain (VERIFIED). 
+2. $\ell_*=L_H\Rightarrow\sigma\sim 1$ (upper structural absurdity for BAO smoothness). 
 3. Wrong operator (lab optics) $\Rightarrow$ null (exploratory sister repo).
 
 ---
@@ -67,8 +67,8 @@ With $L=L_H=c/H_0$ and target $\sigma=10^{-5}$:
 
 Sister bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) is a **test** only:
 
-- derived $\sigma_{0,\mathrm{eff}}$ in $[10^{-5},1.5\times 10^{-4}]$ → compatible, Euclid can decide;  
-- $\ll 10^{-5}$ → predict null;  
+- derived $\sigma_{0,\mathrm{eff}}$ in $[10^{-5},1.5\times 10^{-4}]$ → compatible, Euclid can decide; 
+- $\ll 10^{-5}$ → predict null; 
 - $\gg 1.5\times 10^{-4}$ without damping → tension.
 
 Never tune $\ell_*$ to that number.
@@ -77,7 +77,7 @@ Never tune $\ell_*$ to that number.
 
 ## 6. Next
 
-WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](r3-open-horizon-map.md)).  
+WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](r3-open-horizon-map.md)). 
 Closing WP1 requires one of R1a–R1c fully derived.
 
 ---

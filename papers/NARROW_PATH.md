@@ -1,10 +1,10 @@
 # The narrow path: the only soft-regime architecture that is mathematically coherent
 
-**Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Date:** July 2026  
-**Status:** Architecture note grounded in verified identities  
-**Hard claims / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/lib_verified.py`](../scripts/lib_verified.py)  
+**Author:** Jesús Morales Souhail 
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
+**Date:** July 2026 
+**Status:** Architecture note grounded in verified identities 
+**Hard claims / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/lib_verified.py`](../scripts/lib_verified.py) 
 **Sister empirical bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
@@ -13,8 +13,8 @@
 
 If one discards “magical” rescues of the Planck/Sorkin seed $\sigma_0\sim 10^{-61}$ (soft squeeze $r\sim 64$, or $N_{\mathrm{pat}}\sim 10^{119}$ along the line of sight), the only soft-regime architecture that remains mathematically coherent is a **triple concurrent structure**:
 
-1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed;  
-2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$);  
+1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed; 
+2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$); 
 3. **R2 — anisotropic stress + light-path accumulation** $\mathrm{RMS}=|\gamma-1|_{\mathrm{loc}}\sqrt{\chi/\ell_*}$, not a change of global $H(z)$.
 
 This note writes the causal chain correctly (not as a naive product of three ad hoc factors), gives **machine-checked numbers**, and isolates the **DESI-safe window** where the isotropic residual stays under the sister bound while the light-path slip RMS sits near $10^{-3}$.
@@ -40,13 +40,11 @@ This note writes the causal chain correctly (not as a naive product of three ad 
 
 **Identity (exact under the counting hypothesis):**
 
+
 $$
-N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_*}\right)^{d},
-\qquad
-\sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_*}{L_H}\right)^{d/2},
-\qquad
-\ell_* = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
+N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_*}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_*}{L_H}\right)^{d/2}, \qquad \ell_* = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
 $$
+
 
 **For $\sigma_{0,\mathrm{eff}}=10^{-5}$ and $L_H=c/H_0$ ($H_0=67.4$):**
 
@@ -56,7 +54,7 @@ $$
 | 3 | $2.065 \mathrm{Mpc}$ (cluster / large-group scale) |
 | 4 | $14.07 \mathrm{Mpc}$ |
 
-**Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$.  
+**Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$. 
 **Still open (not claimed):** which principle fixes $\ell_*$ (R1a/b/c).
 
 ---
@@ -65,10 +63,11 @@ $$
 
 **Identity:** $G_O=e^{2r}$. For $r=1.5$, $G_O=e^{3}\approx 20.086$.
 
+
 $$
-\sigma_{\mathrm{res}} = G_U  G_F  G_O  \sigma_{0,\mathrm{eff}}
-\quad\text{with soft defaults }G_U=G_F=1.
+\sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}} \quad\text{with soft defaults }G_U=G_F=1.
 $$
+
 
 | $\sigma_{0,\mathrm{eff}}$ | $r$ | $\sigma_{\mathrm{res}}$ |
 |:--------------------------|:----|:------------------------|
@@ -76,34 +75,29 @@ $$
 | $10^{-5}$ | $1.5$ | $2.009\times 10^{-4}$ |
 | $7.47\times 10^{-6}$ | $1.5$ | $1.500\times 10^{-4}$ (DESI ceiling) |
 
-**Reading:** soft open gain is a **factor $\sim 10$–$20$**, not $10^{56}$.  
+**Reading:** soft open gain is a **factor $\sim 10$–$20$**, not $10^{56}$. 
 It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual ceiling.
 
 ---
 
 ### 2.3 R2 — Project on gravitational slip + short optical path
 
-**Do not** force the signal into global $H(z)$ (BAO residual bound is already tight).  
+**Do not** force the signal into global $H(z)$ (BAO residual bound is already tight). 
 Source anisotropic stress and read light:
 
+
 $$
-\pi_T = \varepsilon \sigma_{\mathrm{res}} \rho_X,
-\qquad
-|\gamma-1|_{\mathrm{loc}}
-=
-2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m|\delta_m|}
-\quad (k\gg aH, \mu=1).
+\pi_T = \varepsilon \sigma_{\mathrm{res}} \rho_X, \qquad |\gamma-1|_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m|\delta_m|} \quad (k\gg aH, \mu=1).
 $$
+
 
 **Path accumulation (iid patches):**
 
+
 $$
-N_{\mathrm{pat}} = \frac{\chi(z_s)}{\ell_*},
-\qquad
-\mathrm{RMS}_{\mathrm{path}}
-=
-|\gamma-1|_{\mathrm{loc}} \sqrt{N_{\mathrm{pat}}}.
+N_{\mathrm{pat}} = \frac{\chi(z_s)}{\ell_*}, \qquad \mathrm{RMS}_{\mathrm{path}} = |\gamma-1|_{\mathrm{loc}} \sqrt{N_{\mathrm{pat}}}.
 $$
+
 
 For $z_s=1.5$, $\chi\approx 4482 \mathrm{Mpc}$ (fiducial cosmology).
 
@@ -114,28 +108,24 @@ For $z_s=1.5$, $\chi\approx 4482 \mathrm{Mpc}$ (fiducial cosmology).
 ### 3.1 Valid chain
 
 ```
-ell_*  →  sigma_0,eff          (R1 counting)
-              ↓
-         G_O = e^{2r}          (R3 soft open)
-              ↓
-         sigma_res
-              ↓
-    |γ-1|_loc ∝ sigma_res      (R2 local slip)
-              ↓
-    RMS_path = |γ-1|_loc √(χ/ell_*)
+ell_* → sigma_0,eff (R1 counting)
+ ↓
+ G_O = e^{2r} (R3 soft open)
+ ↓
+ sigma_res
+ ↓
+ |γ-1|_loc ∝ sigma_res (R2 local slip)
+ ↓
+ RMS_path = |γ-1|_loc √(χ/ell_*)
 ```
 
 ### 3.2 Invalid shorthand
 
+
 $$
-\underbrace{10^{-5}}_{\text{seed}}
-\times
-\underbrace{20}_{G_O}
-\times
-\underbrace{46}_{\sqrt{N}}
- \not= 
-\mathrm{RMS}_{\mathrm{path}}.
+\underbrace{10^{-5}}_{\text{seed}} \times \underbrace{20}_{G_O} \times \underbrace{46}_{\sqrt{N}} \not= \mathrm{RMS}_{\mathrm{path}}.
 $$
+
 
 That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch**, which is already $\propto\sigma_{\mathrm{res}}=G_O\sigma_0$, and the prefactor $2\varepsilon(\rho_X/\rho_m)/|\delta_m|$ is $\mathcal{O}(0.1$–$1)$, not $1$.
 
@@ -184,19 +174,19 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 
 **If** a principle fixes $\ell_*$ so that $\sigma_{0,\mathrm{eff}}$ lies in the DESI-safe mesoscopic window, **and** soft open gain is at most $G_O\sim\mathcal{O}(10)$, **and** $\varepsilon\sim\mathcal{O}(1)$, then:
 
+
 $$
-\mathrm{RMS}_{\mathrm{path}}(|\gamma-1|)
-\sim
-10^{-3}\text{–}10^{-4}
-\quad\text{at }z_s\sim 1.5,
+\mathrm{RMS}_{\mathrm{path}}(|\gamma-1|) \sim 10^{-3}\text{–}10^{-4} \quad\text{at }z_s\sim 1.5,
 $$
+
 
 while the isotropic BAO residual remains
 
+
 $$
-\sigma_{\mathrm{res}} \le 1.5\times 10^{-4}
-\quad\text{(sister bound)}.
+\sigma_{\mathrm{res}} \le 1.5\times 10^{-4} \quad\text{(sister bound)}.
 $$
+
 
 That is a **conditional** prediction for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_*$.
 
@@ -216,21 +206,21 @@ That is a **conditional** prediction for weak lensing / slip programmes (Euclid,
 ## 7. Causal diagram (narrow path)
 
 ```text
-R1  mesoscopic cell
-    ell_* ~ 1–10 Mpc  →  sigma_0,eff ~ 3e-6 … 1e-5
-         │
-         ▼
-R3  soft open map (optional, bounded)
-    r = O(1)  →  G_O ~ 1–20
-    with sigma_res = G_O * sigma_0  ≤  1.5e-4   (DESI-safe)
-         │
-         ▼
-R2  anisotropic stress → light
-    |γ-1|_loc ∝ sigma_res
-    RMS_path = |γ-1|_loc * sqrt(χ / ell_*)
-         │
-         ▼
-    RMS(γ) ~ 1e-4 … few×1e-3   (conditional, testable)
+R1 mesoscopic cell
+ ell_* ~ 1–10 Mpc → sigma_0,eff ~ 3e-6 … 1e-5
+ │
+ ▼
+R3 soft open map (optional, bounded)
+ r = O(1) → G_O ~ 1–20
+ with sigma_res = G_O * sigma_0 ≤ 1.5e-4 (DESI-safe)
+ │
+ ▼
+R2 anisotropic stress → light
+ |γ-1|_loc ∝ sigma_res
+ RMS_path = |γ-1|_loc * sqrt(χ / ell_*)
+ │
+ ▼
+ RMS(γ) ~ 1e-4 … few×1e-3 (conditional, testable)
 ```
 
 ---
@@ -266,7 +256,7 @@ L_H,_,s0=sorkin_holographic(); MPC=3.085677581e22
 print("ell*(d=3,1e-5) Mpc", ell_for_target_sigma(1e-5,L_H,3)/MPC)
 print("sigma_res", residual_soft_map(1e-5,1.5))
 print("RMS", rms_incoherent(slip_deviation(1,residual_soft_map(1e-5,1.5),0.8),
-      n_patches(comoving_distance_mpc(1.5), ell_for_target_sigma(1e-5,L_H,3)/MPC)))
+ n_patches(comoving_distance_mpc(1.5), ell_for_target_sigma(1e-5,L_H,3)/MPC)))
 PY
 ```
 

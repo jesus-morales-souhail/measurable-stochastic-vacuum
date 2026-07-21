@@ -1,9 +1,9 @@
 # Work packages (live status)
 
-**Language:** English  
-**Last update:** July 2026  
+**Language:** English 
+**Last update:** July 2026 
 
-**Publication spine:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green.  
+**Publication spine:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green. 
 WP notes are expansions, not independent hard-claim sources.
 
 ---
@@ -24,31 +24,31 @@ WP notes are expansions, not independent hard-claim sources.
 
 ## WP0 — Sister empirical corpus
 
-Null OU/QNM, $\sigma_X<1.5\times 10^{-4}$ (95% CL), tachyonic exclusion, amplifier audit, slip starvation.  
+Null OU/QNM, $\sigma_X<1.5\times 10^{-4}$ (95% CL), tachyonic exclusion, amplifier audit, slip starvation. 
 **Do not re-run DESI MCMC here.**
 
 ---
 
 ## WP1 — Counting seed (partial)
 
-**Delivered:** $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$; Sorkin zero; mesoscopic landscape for $\sigma=10^{-5}$.  
-**Open:** principle fixing $\ell_*$ (R1a/b/c).  
+**Delivered:** $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$; Sorkin zero; mesoscopic landscape for $\sigma=10^{-5}$. 
+**Open:** principle fixing $\ell_*$ (R1a/b/c). 
 **Code:** `scripts/r1_counting_landscape.py`, `lib_verified.py`.
 
 ---
 
 ## WP2 — Soft open map (done for soft regime)
 
-**Delivered:** $G_O=e^{2r}$; soft no-gain for Sorkin; $r\sim 64$ required to lift Sorkin (algebra).  
-**Open:** hard horizon bath.  
+**Delivered:** $G_O=e^{2r}$; soft no-gain for Sorkin; $r\sim 64$ required to lift Sorkin (algebra). 
+**Open:** hard horizon bath. 
 **Code:** `scripts/r3_open_horizon_map.py`.
 
 ---
 
 ## WP3 — Slip and light path (partial)
 
-**Delivered:** local $|\gamma-1|$; path $\mathrm{RMS}=s\sqrt{N}$; Sorkin path null; meso path OOM.  
-**Open:** $\varepsilon$ from symmetry.  
+**Delivered:** local $|\gamma-1|$; path $\mathrm{RMS}=s\sqrt{N}$; Sorkin path null; meso path OOM. 
+**Open:** $\varepsilon$ from symmetry. 
 **Code:** `scripts/r2_light_path_accumulation.py`.
 
 ---
@@ -69,8 +69,8 @@ L0–L4 failure levels; decision tree; checklist before any positive paper.
 
 ```
 Verified core (pytest) ──► R1a/b/c candidate (only real missing physics)
-                       ──► optional hard-R3 only if derived, not dialed
-                       ──► then Boltzmann if amplitude+ε fixed
+ ──► optional hard-R3 only if derived, not dialed
+ ──► then Boltzmann if amplitude+ε fixed
 ```
 
 ---

@@ -1,8 +1,8 @@
 # measurable-stochastic-vacuum
 
-**Author:** Jesús Morales Souhail · [ORCID 0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Language:** English  
-**Status:** Independent theory programme — **not peer reviewed** · July 2026  
+**Author:** Jesús Morales Souhail · [ORCID 0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
+**Language:** English 
+**Status:** Independent theory programme — **not peer reviewed** · July 2026 
 
 When can late-time stochastic vacuum / dark-energy noise be telescope-measurable **without free-lunch numerology**?
 
@@ -24,31 +24,34 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git
 cd measurable-stochastic-vacuum
 pip install -r requirements.txt
-pytest -q          # expect: 34 passed
+pytest -q # expect: 34 passed
 python scripts/simple_as_lambda.py
 ```
 
-**Sister empirical corpus (DESI bounds):**  
+**Sister empirical corpus (DESI bounds):** 
 https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou
 
 ---
 
 ## Minimal model (blackboard)
 
-$$
-H^{2}=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr]
-\quad\text{(keep $\Lambda$CDM)}
-$$
 
 $$
-\sigma=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}
-\quad\text{(one grain parameter)}
+H^{2}=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr] \quad\text{(keep $\Lambda$CDM)}
 $$
 
+
+
 $$
-\mathrm{RMS}(\lvert\gamma-1\rvert)\sim\sigma^{2/3}
-\quad\text{(one light-path prediction)}
+\sigma=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2} \quad\text{(one grain parameter)}
 $$
+
+
+
+$$
+\mathrm{RMS}(\lvert\gamma-1\rvert)\sim\sigma^{2/3} \quad\text{(one light-path prediction)}
+$$
+
 
 with a posteriori bound $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ from DESI residual analysis.
 
@@ -91,7 +94,7 @@ Under $N_{\mathrm{eff}}=(L/\ell_{*})^{d}$, $\sigma_{0,\mathrm{eff}}=(\ell_{*}/L)
 ```bash
 python scripts/lib_verified.py
 python scripts/simple_as_lambda.py
-python scripts/light_cone_atlas.py          # CSV + use with figures/
+python scripts/light_cone_atlas.py # CSV + use with figures/
 python scripts/r1_counting_landscape.py
 python scripts/r3_open_horizon_map.py
 python scripts/r2_light_path_accumulation.py
@@ -103,13 +106,13 @@ python scripts/r2_light_path_accumulation.py
 
 ## Explicit non-claims
 
-- No derivation of galactic $\ell_{*}$  
-- No horizon bath with $r\sim 64$  
-- No first-principles $\varepsilon$  
-- No detection claim  
-- Cosmos is not a Hall bar (analogy only)  
-- Cosmic entropy does not “stop”  
-- Not peer reviewed  
+- No derivation of galactic $\ell_{*}$ 
+- No horizon bath with $r\sim 64$ 
+- No first-principles $\varepsilon$ 
+- No detection claim 
+- Cosmos is not a Hall bar (analogy only) 
+- Cosmic entropy does not “stop” 
+- Not peer reviewed 
 
 ---
 
@@ -124,7 +127,7 @@ python scripts/r2_light_path_accumulation.py
 
 ## License and contact
 
-- Code: MIT  
-- Author text: CC BY 4.0  
+- Code: MIT 
+- Author text: CC BY 4.0 
 
 **Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818

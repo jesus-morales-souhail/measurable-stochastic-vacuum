@@ -1,15 +1,15 @@
 # Repository boundary
 
 ```
-stochastic-dark-energy-ou          EMPIRICAL CLAIM SET
-        │                          nulls, bounds, no free lunch
-        │ cited a posteriori
-        ▼
-measurable-stochastic-vacuum       THEORY + VERIFIED KINEMATICS
-        │                          (this repo)
-        │ does not import as claims
-        ▼
-stochastic-de-exploratory-notes    WRONG-SCALE PEDAGOGY ONLY
+stochastic-dark-energy-ou EMPIRICAL CLAIM SET
+ │ nulls, bounds, no free lunch
+ │ cited a posteriori
+ ▼
+measurable-stochastic-vacuum THEORY + VERIFIED KINEMATICS
+ │ (this repo)
+ │ does not import as claims
+ ▼
+stochastic-de-exploratory-notes WRONG-SCALE PEDAGOGY ONLY
 ```
 
 | May enter this repo | Must not enter this repo |
