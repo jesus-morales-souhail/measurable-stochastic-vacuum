@@ -22,7 +22,20 @@ This is **not** a re-fit of BAO residuals. Empirical **limits and exclusions** a
 
 **Read first:** [`papers/THEORY_REVOLUTION.md`](papers/THEORY_REVOLUTION.md)  
 **Self-shielding law:** [`papers/SELF_SHIELDING_AXIOMS.md`](papers/SELF_SHIELDING_AXIOMS.md)  
-**Work packages:** [`notes/WORK_PACKAGES.md`](notes/WORK_PACKAGES.md)
+**Work packages (live):** [`notes/WORK_PACKAGES.md`](notes/WORK_PACKAGES.md)
+
+### Derivations delivered
+
+| WP | Status | Document | Script |
+|----|--------|----------|--------|
+| **WP1 / R1** | Parcial | [`papers/r1-counting-principle.md`](papers/r1-counting-principle.md) | [`scripts/r1_counting_landscape.py`](scripts/r1_counting_landscape.py) |
+| **WP2 / R3** | Teorema de no-ganancia (régimen suave) | [`papers/r3-open-horizon-map.md`](papers/r3-open-horizon-map.md) | [`scripts/r3_open_horizon_map.py`](scripts/r3_open_horizon_map.py) |
+| WP3 / R2 | Pendiente | — | — |
+
+```bash
+python scripts/r1_counting_landscape.py
+python scripts/r3_open_horizon_map.py
+```
 
 ---
 

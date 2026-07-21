@@ -1,0 +1,23 @@
+Hubble radius L_H = 4451 Mpc ;  Planck L_P = 1.62e-35 m
+Sorkin (holographic, d=2): N_BH = (L_H/L_P)^2 = 7.22e+121  ->  sigma_0 = 1.18e-61
+
+Structural zeros (cell = Planck):
+  d=2: sigma = 1.18e-61   (<< 1e-5  ->  DESI/Euclid null is a THEOREM, not a failure)
+  d=3: sigma = 4.04e-92   (<< 1e-5  ->  DESI/Euclid null is a THEOREM, not a failure)
+  d=4: sigma = 1.38e-122   (<< 1e-5  ->  DESI/Euclid null is a THEOREM, not a failure)
+
+Cell scale ell_* required for measurability sigma ~ 1e-05:
+  d=2: ell_* = 0.04 Mpc   (NOT Planck; galactic / mesoscopic)
+  d=3: ell_* = 2.07 Mpc   (NOT Planck; galactic / mesoscopic)
+  d=4: ell_* = 14.08 Mpc   (NOT Planck; galactic / mesoscopic)
+
+Reachable band [1e-5, 1.5e-4] needs ell_* >> L_P by:
+  d=2: ell_*/L_P = 8.50e+55
+  d=3: ell_*/L_P = 3.95e+57
+  d=4: ell_*/L_P = 2.69e+58
+
+OPEN KERNEL (honest): the counting CELL for the DE sector must be
+mesoscopic/galactic (~kpc-Mpc), not Planck, for the residual to be
+telescope-measurable. The R1 programme's load-bearing question is:
+  WHAT PRINCIPLE fixes a galactic-scale DE counting cell, distinct
+  from the Planck/holographic one?  (Sorkin = L_P -> null by theorem.)

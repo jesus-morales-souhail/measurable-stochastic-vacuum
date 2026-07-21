@@ -1,107 +1,97 @@
-# Work packages (orden de construcción)
+# Work packages (estado vivo)
 
 Sin numerología: cada WP produce un **objeto derivado**, no un fit a DESI.
 
+**Última actualización:** julio 2026 (WP1 parcial entregado; WP2 abierto)
+
 ---
 
-## WP0 — Frontera con el corpus DESI (hecho conceptualmente)
+## WP0 — Frontera con el corpus DESI
 
-- [x] Null OU/QNM y cota $\sigma_X$  
-- [x] Exclusión taquiónica rank-1  
-- [x] No free lunch + rutas 1–3  
-- [x] Slip amplitude-starved  
-- [x] Manifiesto R1–R2–R3 (este repo)
+| | |
+|:--|:--|
+| **Estado** | **Hecho** (repo hermano) |
+| **Output** | null OU/QNM, $\sigma_X < 1.5\times 10^{-4}$, exclusión taquiónica, no free lunch, slip starved |
 
-**Output:** no repetir análisis BAO aquí; citar el otro repo.
+No se repite análisis BAO aquí; se **cita**.
 
 ---
 
 ## WP1 — R1: principio de contaje (semilla)
 
-**Objetivo:** definir $N_{\mathrm{eff}}$ o $\ell_*$ **sin** usar $1.5\times 10^{-4}$.
+| | |
+|:--|:--|
+| **Estado** | **Parcial / acotado** |
+| **Entregado** | [`papers/r1-counting-principle.md`](../papers/r1-counting-principle.md) · [`scripts/r1_counting_landscape.py`](../scripts/r1_counting_landscape.py) |
 
-Posibles rutas (elegir **una** y llevarla hasta el final):
+### Qué está derivado
 
-| ID | Idea | Entregable |
-|----|------|------------|
-| R1a | Causal set con región de correlación DE $\neq$ horizonte completo | Fórmula $N_{\mathrm{eff}}(L)$ + hipótesis de contaje |
-| R1b | Cutoff IR de un sector de vacío con escala $\ell_*$ de física de DE | $\sigma_{0,\mathrm{eff}}(\ell_*)$ |
-| R1c | Grano de un orden de unimodular / SDiff a escala cosmológica | DOF del sector residual |
+$$
+\sigma_{0,\mathrm{eff}} = N_{\mathrm{eff}}^{-1/2} = (\ell_*/L)^{d/2}
+$$
 
-**Criterio de aceptación:** $\sigma_{0,\mathrm{eff}}$ sale de un principio; se puede falsar cambiando el principio, no el dato DESI.
+| Resultado | Valor |
+|:----------|:------|
+| Sorkin ($d=2$, $\ell_*=L_P$) | $\sigma_0 \sim 1.2\times 10^{-61}$ — **cero estructural** |
+| Celda para $\sigma\sim 10^{-5}$, $d=2$ | $\ell_* \approx 0.04\,\mathrm{Mpc}$ |
+| Celda para $\sigma\sim 10^{-5}$, $d=3$ | $\ell_* \approx 2.1\,\mathrm{Mpc}$ |
+| Celda para $\sigma\sim 10^{-5}$, $d=4$ | $\ell_* \approx 14\,\mathrm{Mpc}$ |
+| Ceros A6 | Planck-cell null; $\ell_*=L_H$ absurdo; operador óptico null |
 
-**Prohibido:** “tomemos $N_{\mathrm{eff}}=10^{10}$ porque Euclid”.
+### Qué **no** está cerrado (kernel abierto)
+
+| Candidato | Pregunta abierta |
+|:----------|:-----------------|
+| R1a causal set local | ¿Qué fija $\ell_*$ del sector DE? |
+| R1b cutoff IR de vacío | ¿De qué acción sale $\ell_*$? |
+| R1c grano SDiff/unimodular | ¿Por qué $\ell_*$ galáctico y no $L_P$? |
+
+**Estado R1 en tabla A4:** semilla **derivada como paisaje**; principio que fija $\ell_*$ = **ausente (declarado)**.
+
+DESI se usa solo a posteriori (A5): no se eligió $\ell_*$ para entrar en $1.5\times 10^{-4}$.
 
 ---
 
 ## WP2 — R3: mapa abierto (ganancia)
 
-**Objetivo:** master equation o análogo cosmológico con **parámetros del baño derivados** (temperatura de horizonte, tasa de escape, …).
+| | |
+|:--|:--|
+| **Estado** | **En curso** |
+| **Entregable** | [`papers/r3-open-horizon-map.md`](../papers/r3-open-horizon-map.md) · [`scripts/r3_open_horizon_map.py`](../scripts/r3_open_horizon_map.py) |
+| **Input** | $\sigma_{0,\mathrm{eff}}$ de WP1 (no dial) |
 
-| ID | Idea | Entregable |
-|----|------|------------|
-| R3a | Lindblad / desqueezing con $\gamma_{\mathrm{open}}$ ligado a $H(z)$ | Mapa $A_0(\sigma_{0,\mathrm{eff}},\gamma_{\mathrm{open}})$ |
-| R3b | Residual path-integrated con $\theta(x)$ desde horizonte | $\sigma_{\mathrm{res}}(z)$ |
-| R3c | Demostración de cota superior de ganancia (si no hay free lunch, **también es éxito**) | Teorema de no-ganancia |
+**Objetivo:** master / residual path con mapa $\gamma_{\mathrm{open}}\leftrightarrow \theta H(z)$ **o** teorema de no-ganancia.
 
-**Criterio:** o se deriva $A_0\sim 10^{-5}$–$10^{-4}$ desde R1+R3, o se prueba que no, y el programa se cierra en “límites + geometría” sin drama.
+Criterio de aceptación: o $A_0$ en banda telescópica desde R1+R3, o cota de ganancia que cierre el free lunch de forma definitiva en el paquete abierto.
 
 ---
 
-## WP3 — R2: operador slip desde la misma microfísica
+## WP3 — R2: slip desde la misma microfísica
 
-**Objetivo:** $\pi_T$ o $\varepsilon$ **no libre**.
+| | |
+|:--|:--|
+| **Estado** | Pendiente (después de WP2) |
+| **Entregable** | `papers/r2-slip-from-same-sector.md` |
 
-| ID | Entregable |
-|----|------------|
-| R2a | Del mismo $X$ de R1, proyectar parte anisotrópica bajo SDiff |
-| R2b | Predicción $\lvert\gamma-1\rvert(z)$ o cota |
-| R2c | Comparar a posteriori con Maus / forecasts Sakr (test, no dial) |
-
-**Criterio:** si $\varepsilon$ queda libre, el WP falla A4.
+$\varepsilon$ / $\pi_T$ no libres. Predicción $\lvert\gamma-1\rvert$ o cota.
 
 ---
 
 ## WP4 — Predicciones conjuntas y ceros
 
-**Objetivo:** una tabla única:
-
-| Canal | Predicción | Cero estructural |
-|-------|------------|------------------|
-| BAO residual | … | … |
-| Slip | … | … |
-| Lab / pupila / tesseract | **cero** | escala/operador |
+Pendiente. Tabla única BAO / slip / ceros de laboratorio.
 
 ---
 
 ## WP5 — Falsación
 
-La teoría del programa muere (o se estrecha) si:
-
-1. Se deriva $A_0$ medible y Euclid/DESI full-cov la excluyen con el kernel **derivado** (no el OU genérico solo).  
-2. El principio R1 predice $\ell_*$ en conflicto con tests locales de Lorentz **que realmente acoten ese sector**.  
-3. R3 exige un baño incompatible con la historia térmica estándar sin mecanismo de desacoplo.
-
-Falsar es éxito científico.
+Pendiente. Criterios de muerte del paquete R1–R3.
 
 ---
 
-## Orden recomendado
+## Orden
 
 ```
-WP1 (semilla) → WP2 (mapa) → WP3 (slip) → WP4 (ceros) → WP5 (tests)
-```
-
-No invertir: no hacer slip “bonito” antes de tener amplitud honesta.
-
----
-
-## Archivos a crear en el futuro (cuando haya contenido)
-
-```
-papers/r1-counting-principle.md
-papers/r3-open-horizon-map.md
-papers/r2-slip-from-same-sector.md
-papers/joint-predictions-and-zeros.md
-scripts/  # solo checks de consistencia, no MCMC de DESI
+WP0 ✓ → WP1 parcial ✓ → WP2 (ahora) → WP3 → WP4 → WP5
+         └── R1a/b/c (principio de ℓ_*) en paralelo si hay candidato
 ```

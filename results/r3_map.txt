@@ -1,0 +1,29 @@
+========================================================================
+WP2 / R3 — open-horizon map (soft regime)
+========================================================================
+sigma_Sorkin (d=2 holographic) : 1.176e-61
+G_U (late stretch O(1))         : 1.000
+G_F (freeze-out)                : 1.000
+G_O soft (r=1.5)        : 20.086
+G_total soft                    : 20.086
+
+--- No-gain theorem (Sorkin seed) ---
+  G_O=1.0e+00  ->  sigma_res=1.176e-61   (target ~1e-5? False)
+  G_O=2.0e+01  ->  sigma_res=2.363e-60   (target ~1e-5? False)
+  G_O=1.0e+02  ->  sigma_res=1.176e-59   (target ~1e-5? False)
+  G_O=1.0e+06  ->  sigma_res=1.176e-55   (target ~1e-5? False)
+  Conclusion: soft open dynamics cannot lift Sorkin to telescope band.
+
+--- Measurable band needs WP1 mesoscopic seed ---
+   sigma_0,eff         G_O=1        G_O=20  note
+       1.0e-06     1.000e-06     2.009e-05  enters band only with soft open gain
+       1.0e-05     1.000e-05     2.009e-04  above DESI 95% ceiling (a posteriori tension if no damping)
+       5.0e-05     5.000e-05     1.004e-03  above DESI 95% ceiling (a posteriori tension if no damping)
+       1.5e-04     1.500e-04     3.013e-03  above DESI 95% ceiling (a posteriori tension if no damping)
+
+--- What r would be needed to lift Sorkin to 1e-5? (not allowed as free dial) ---
+  required G_O ~ 8.500e+55  =>  r ~ 64.4
+  That r is a NEW scale claim; must be derived from horizon bath physics (A3,A5).
+
+VERDICT: R3 soft = O(10) multiplier. Measurability ⇔ R1 mesoscopic seed
+         (or a future derived hard-open map — not invented here).
