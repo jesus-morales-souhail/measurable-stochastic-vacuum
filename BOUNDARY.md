@@ -1,18 +1,22 @@
-# Boundary with sibling repositories
+# Repository boundary
 
 ```
 stochastic-dark-energy-ou          EMPIRICAL CLAIM SET
-        │                          (nulls, bounds, no free lunch)
-        │ cites ↓
-measurable-stochastic-vacuum       THEORY PACKAGE R1–R2–R3
+        │                          nulls, bounds, no free lunch
+        │ cited a posteriori
+        ▼
+measurable-stochastic-vacuum       THEORY + VERIFIED KINEMATICS
         │                          (this repo)
-        │ does not import ↓
-stochastic-de-exploratory-notes    OPTICS / WRONG-SCALE PEDAGOGY
+        │ does not import as claims
+        ▼
+stochastic-de-exploratory-notes    WRONG-SCALE PEDAGOGY ONLY
 ```
 
 | May enter this repo | Must not enter this repo |
-|---------------------|---------------------------|
-| Derived $N_{\mathrm{eff}}$, open maps, slip from same sector | Free $10^{56}$ factors |
-| Theorems of no-gain | BAO MCMC re-runs (do those next door) |
+|:--------------------|:-------------------------|
+| Derived identities and tested OOM maps | Free $10^{56}$ factors |
+| Soft no-gain theorems | BAO MCMC re-implementation |
 | Structural zeros | Lab wavefront as cosmology |
-| A-posteriori comparison to DESI limits | Fitting $N_{\mathrm{eff}}$ to DESI |
+| A posteriori DESI comparison | Fitting $\ell_*$ or $r$ to DESI |
+
+**Cite for hard results:** `papers/VERIFIED_RESULTS.md` only.

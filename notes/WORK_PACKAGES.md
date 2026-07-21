@@ -1,109 +1,86 @@
-# Work packages (estado vivo)
+# Work packages (live status)
 
-Sin numerología: cada WP produce un **objeto derivado**, no un fit a DESI.
+**Language:** English  
+**Last update:** July 2026  
 
-**Última actualización:** julio 2026
-
-**Citas publicables:** solo [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` en verde. Los WP son expansión.
-
----
-
-## WP0 — Frontera con el corpus DESI
-
-| | |
-|:--|:--|
-| **Estado** | **Hecho** (repo hermano) |
-| **Output** | null OU/QNM, $\sigma_X < 1.5\times 10^{-4}$, exclusión taquiónica, no free lunch, slip starved |
-
-No se repite análisis BAO aquí; se **cita**.
+**Publication spine:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green.  
+WP notes are expansions, not independent hard-claim sources.
 
 ---
 
-## WP1 — R1: principio de contaje (semilla)
+## Overview
 
-| | |
-|:--|:--|
-| **Estado** | **Parcial / acotado** |
-| **Entregado** | [`papers/r1-counting-principle.md`](../papers/r1-counting-principle.md) · [`scripts/r1_counting_landscape.py`](../scripts/r1_counting_landscape.py) |
-
-### Qué está derivado
-
-$$
-\sigma_{0,\mathrm{eff}} = N_{\mathrm{eff}}^{-1/2} = (\ell_*/L)^{d/2}
-$$
-
-| Resultado | Valor |
-|:----------|:------|
-| Sorkin ($d=2$, $\ell_*=L_P$) | $\sigma_0 \sim 1.2\times 10^{-61}$ — **cero estructural** |
-| Celda para $\sigma\sim 10^{-5}$, $d=2$ | $\ell_* \approx 0.04\,\mathrm{Mpc}$ |
-| Celda para $\sigma\sim 10^{-5}$, $d=3$ | $\ell_* \approx 2.1\,\mathrm{Mpc}$ |
-| Celda para $\sigma\sim 10^{-5}$, $d=4$ | $\ell_* \approx 14\,\mathrm{Mpc}$ |
-| Ceros A6 | Planck-cell null; $\ell_*=L_H$ absurdo; operador óptico null |
-
-### Qué **no** está cerrado (kernel abierto)
-
-| Candidato | Pregunta abierta |
-|:----------|:-----------------|
-| R1a causal set local | ¿Qué fija $\ell_*$ del sector DE? |
-| R1b cutoff IR de vacío | ¿De qué acción sale $\ell_*$? |
-| R1c grano SDiff/unimodular | ¿Por qué $\ell_*$ galáctico y no $L_P$? |
-
-**Estado R1 en tabla A4:** semilla **derivada como paisaje**; principio que fija $\ell_*$ = **ausente (declarado)**.
-
-DESI se usa solo a posteriori (A5): no se eligió $\ell_*$ para entrar en $1.5\times 10^{-4}$.
+| WP | Rule | Status | Main document |
+|:---|:-----|:-------|:--------------|
+| WP0 | Empirical boundary | **Done** (sister repo) | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) |
+| WP1 | R1 counting seed | **Partial** | [`r1-counting-principle.md`](../papers/r1-counting-principle.md) |
+| WP2 | R3 soft open map | **Soft theorems done** | [`r3-open-horizon-map.md`](../papers/r3-open-horizon-map.md) |
+| WP3 | R2 slip + path | **Partial** | [`r2-slip-from-same-sector.md`](../papers/r2-slip-from-same-sector.md) |
+| WP4 | Joint table + zeros | **Done** | [`wp4-joint-predictions-and-zeros.md`](../papers/wp4-joint-predictions-and-zeros.md) |
+| WP5 | Falsification | **Done** | [`wp5-falsification.md`](../papers/wp5-falsification.md) |
 
 ---
 
-## WP2 — R3: mapa abierto (ganancia)
+## WP0 — Sister empirical corpus
 
-| | |
-|:--|:--|
-| **Estado** | **En curso** |
-| **Entregable** | [`papers/r3-open-horizon-map.md`](../papers/r3-open-horizon-map.md) · [`scripts/r3_open_horizon_map.py`](../scripts/r3_open_horizon_map.py) |
-| **Input** | $\sigma_{0,\mathrm{eff}}$ de WP1 (no dial) |
-
-**Objetivo:** master / residual path con mapa $\gamma_{\mathrm{open}}\leftrightarrow \theta H(z)$ **o** teorema de no-ganancia.
-
-Criterio de aceptación: o $A_0$ en banda telescópica desde R1+R3, o cota de ganancia que cierre el free lunch de forma definitiva en el paquete abierto.
+Null OU/QNM, $\sigma_X<1.5\times 10^{-4}$ (95% CL), tachyonic exclusion, amplifier audit, slip starvation.  
+**Do not re-run DESI MCMC here.**
 
 ---
 
-## WP3 — R2: slip + acumulación en la luz
+## WP1 — Counting seed (partial)
 
-| | |
-|:--|:--|
-| **Estado** | **Parcial / operador + path cerrados** |
-| **Entregable** | [`papers/r2-slip-from-same-sector.md`](../papers/r2-slip-from-same-sector.md) · [`scripts/r2_light_path_accumulation.py`](../scripts/r2_light_path_accumulation.py) |
-
-### Qué está derivado
-
-- $\pi_T=\varepsilon\sigma\rho_X \to |\gamma-1|$ (mapa local Option 0).  
-- Acumulación geométrica $\mathrm{RMS}\sim|\gamma-1|\sqrt{\chi/\ell_*}$ + Monte Carlo.  
-- $\sqrt{N}\sim\mathcal{O}(10$–$10^{2})$ en caminos $z\sim 1.5$ — **no** $10^{56}$.  
-- Sorkin path-integrado = **cero estructural**; meso $\sigma\sim 10^{-5}$ → RMS $\sim 10^{-4}$–$10^{-3}$.
-
-### Qué sigue abierto
-
-- $\varepsilon$ desde simetría SDiff (no libre).  
-- hi_class / MGCAMB solo cuando $A_0$ y $\varepsilon$ estén fijados por principio.
+**Delivered:** $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$; Sorkin zero; mesoscopic landscape for $\sigma=10^{-5}$.  
+**Open:** principle fixing $\ell_*$ (R1a/b/c).  
+**Code:** `scripts/r1_counting_landscape.py`, `lib_verified.py`.
 
 ---
 
-## WP4 — Predicciones conjuntas y ceros
+## WP2 — Soft open map (done for soft regime)
 
-Pendiente. Tabla única BAO / slip / ceros de laboratorio.
-
----
-
-## WP5 — Falsación
-
-Pendiente. Criterios de muerte del paquete R1–R3.
+**Delivered:** $G_O=e^{2r}$; soft no-gain for Sorkin; $r\sim 64$ required to lift Sorkin (algebra).  
+**Open:** hard horizon bath.  
+**Code:** `scripts/r3_open_horizon_map.py`.
 
 ---
 
-## Orden
+## WP3 — Slip and light path (partial)
+
+**Delivered:** local $|\gamma-1|$; path $\mathrm{RMS}=s\sqrt{N}$; Sorkin path null; meso path OOM.  
+**Open:** $\varepsilon$ from symmetry.  
+**Code:** `scripts/r2_light_path_accumulation.py`.
+
+---
+
+## WP4 — Joint predictions and zeros (done)
+
+Single table linking seed → soft residual → slip → path RMS; structural zeros Z1–Z6.
+
+---
+
+## WP5 — Falsification (done)
+
+L0–L4 failure levels; decision tree; checklist before any positive paper.
+
+---
+
+## Recommended order going forward
 
 ```
-WP0 ✓ → WP1 parcial ✓ → WP2 no-gain ✓ → WP3 path/slip parcial ✓ → WP4 → WP5
-         └── R1a/b/c (principio de ℓ_*) en paralelo si hay candidato
+Verified core (pytest) ──► R1a/b/c candidate (only real missing physics)
+                       ──► optional hard-R3 only if derived, not dialed
+                       ──► then Boltzmann if amplitude+ε fixed
+```
+
+---
+
+## Run everything
+
+```bash
+pip install -r requirements.txt
+pytest -q
+python scripts/lib_verified.py
+python scripts/r1_counting_landscape.py
+python scripts/r3_open_horizon_map.py
+python scripts/r2_light_path_accumulation.py
 ```
