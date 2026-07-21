@@ -31,6 +31,7 @@ Manuscript: `manuscript/PREPRINT.md`
 |:-----|:---------|:--------|
 | 1 | This file | Claim boundaries |
 | 2 | [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) | **Einstein+Morales slip wall + self-shielding inequality** |
+| 2b | [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md) | **Only natural amplifier: $\mathrm{RMS}=|\gamma-1|\sqrt{\chi/\ell_*}$** |
 | 3 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal equations (public model) |
 | 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, test-gated claims** |
 | 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |

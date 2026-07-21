@@ -216,6 +216,44 @@ class TestNoFreeLunchCombined:
         assert 1e-4 < s20 < 5e-4
 
 
+class TestPastLightCone:
+    """Past null-cone accumulation atlas consistency."""
+
+    def test_C_equals_one_identity(self):
+        s, chi, ell = 1e-5, 4482.0, 2.065
+        n = n_patches(chi, ell)
+        assert rms_incoherent(s, n) == pytest.approx(s * math.sqrt(n), rel=1e-12)
+
+    def test_np_a_boost_order_40_to_60(self):
+        L_H, _, _ = sorkin_holographic()
+        mpc = 3.085677581e22
+        ell = ell_for_target_sigma(1e-5, L_H, 3) / mpc
+        chi = comoving_distance_mpc(1.5)
+        boost = math.sqrt(n_patches(chi, ell))
+        assert 40 < boost < 55
+
+    def test_np_b_rms_frontier_not_euclid_easy(self):
+        L_H, _, _ = sorkin_holographic()
+        mpc = 3.085677581e22
+        s0 = 5e-6
+        sres = residual_soft_map(s0, r=1.5)
+        ell = ell_for_target_sigma(s0, L_H, 3) / mpc
+        slip = slip_deviation(1.0, sres, 0.8)
+        rms = rms_incoherent(slip, n_patches(comoving_distance_mpc(1.5), ell))
+        assert sres <= 1.5e-4
+        assert 1e-3 < rms < 1e-2
+        assert rms < 0.03  # still below indicative Euclid floor
+
+    def test_deeper_source_increases_rms(self):
+        L_H, _, _ = sorkin_holographic()
+        mpc = 3.085677581e22
+        ell = ell_for_target_sigma(1e-5, L_H, 3) / mpc
+        slip = slip_deviation(1.0, 1e-5, 0.5)
+        r1 = rms_incoherent(slip, n_patches(comoving_distance_mpc(1.0), ell))
+        r2 = rms_incoherent(slip, n_patches(comoving_distance_mpc(2.0), ell))
+        assert r2 > r1
+
+
 class TestObservableWall:
     """Einstein + Morales slip wall and detectability inverse."""
 

@@ -16,11 +16,11 @@ The only **fully derived** map from the stochastic dark-energy amplitude $\sigma
 $$
 \lvert\gamma-1\rvert
 =
-2\,\varepsilon\,\sigma_X\,
-\frac{\rho_X}{\rho_m\,\lvert\delta_m\rvert}
+2 \varepsilon \sigma_X 
+\frac{\rho_X}{\rho_m \lvert\delta_m\rvert}
 =
-2\,\varepsilon\,\sigma_X\,
-\frac{\Omega_{\Lambda 0}}{\Omega_{m0}\,(1+z)^3\,\lvert\delta_m\rvert}.
+2 \varepsilon \sigma_X 
+\frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^3 \lvert\delta_m\rvert}.
 $$
 
 Combined with the DESI residual ceiling on $\sigma_X$, this equation predicts a **maximum** slip signal $\lvert\gamma-1\rvert_{\max}\sim 10^{-4}$ — hundreds of times below current/forecast experimental floors. That inequality is the mathematical definition of **experimental self-shielding** for this channel.
@@ -38,14 +38,14 @@ Combined with the DESI residual ceiling on $\sigma_X$, this equation predicts a 
 **Poisson**
 
 $$
-k^{2}\Psi = -4\pi G a^{2}\,\rho_m\delta_m.
+k^{2}\Psi = -4\pi G a^{2} \rho_m\delta_m.
 \tag{E1}
 $$
 
 **Anisotropy (traceless spatial stress)**
 
 $$
-k^{2}(\Phi-\Psi) = 8\pi G a^{2}\,\pi_T.
+k^{2}(\Phi-\Psi) = 8\pi G a^{2} \pi_T.
 \tag{E2}
 $$
 
@@ -56,7 +56,7 @@ $$
 $$
 \frac{\rho_X}{\rho_m}
 =
-\frac{\Omega_{\Lambda 0}}{\Omega_{m0}\,(1+z)^3}.
+\frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^3}.
 \tag{N1}
 $$
 
@@ -68,9 +68,9 @@ The **anisotropic** piece is defined as a fraction $\varepsilon\in[0,1]$ of that
 $$
 \pi_T
 =
-\varepsilon\,\delta\rho_X
+\varepsilon \delta\rho_X
 =
-\varepsilon\,\sigma_X\,\rho_X.
+\varepsilon \sigma_X \rho_X.
 \tag{M1}
 $$
 
@@ -85,7 +85,7 @@ Divide (E2) by (E1):
 $$
 \frac{\Phi-\Psi}{\Psi}
 =
--\,
+- 
 \frac{2\pi_T}{\rho_m\delta_m}.
 $$
 
@@ -103,8 +103,8 @@ $$
 \boxed{
 \lvert\gamma-1\rvert
 =
-2\,\varepsilon\,\sigma_X\,
-\frac{\Omega_{\Lambda 0}}{\Omega_{m0}\,(1+z)^3\,\lvert\delta_m\rvert}
+2 \varepsilon \sigma_X 
+\frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^3 \lvert\delta_m\rvert}
 }
 \tag{W}
 $$
@@ -176,7 +176,7 @@ For a discovery-scale threshold $N_{\sigma}$ (e.g. $N_{\sigma}=5$),
 $$
 \lvert\gamma-1\rvert
 \ge
-N_{\sigma}\,\sigma_{\mathrm{exp}}(\gamma).
+N_{\sigma} \sigma_{\mathrm{exp}}(\gamma).
 $$
 
 Invert (W) at $\varepsilon=1$, $\lvert\delta_m\rvert=1$:
@@ -185,8 +185,8 @@ $$
 \boxed{
 \sigma_X
 \;\ge\;
-\frac{N_{\sigma}\,\sigma_{\mathrm{exp}}(\gamma)\,(1+z)^3\,\Omega_{m0}}
-{2\,\Omega_{\Lambda 0}}
+\frac{N_{\sigma} \sigma_{\mathrm{exp}}(\gamma) (1+z)^3 \Omega_{m0}}
+{2 \Omega_{\Lambda 0}}
 }
 \tag{D}
 $$
@@ -221,7 +221,7 @@ A photon time-delay template of the form
 $$
 \Delta t
 \sim
-\xi\,\frac{E^{n}}{M_{\mathrm{Pl}}^{n}}\,H_0^{-1}\int_0^z\frac{(1+z')^{n}}{E(z')}\,\mathrm{d}z'
+\xi \frac{E^{n}}{M_{\mathrm{Pl}}^{n}} H_0^{-1}\int_0^z\frac{(1+z')^{n}}{E(z')} \mathrm{d}z'
 $$
 
 is standard LIV phenomenology. Setting
