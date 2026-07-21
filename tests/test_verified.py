@@ -216,6 +216,33 @@ class TestNoFreeLunchCombined:
         assert 1e-4 < s20 < 5e-4
 
 
+class TestObservableWall:
+    """Einstein + Morales slip wall and detectability inverse."""
+
+    def test_wall_formula_z0(self):
+        # |g-1| = 2*1.5e-4*(0.685/0.315) = 2*1.5e-4*2.1746...
+        s = slip_deviation(1.0, 1.5e-4, 0.0, 1.0)
+        expected = 2.0 * 1.5e-4 * (0.685 / 0.315)
+        assert s == pytest.approx(expected, rel=1e-12)
+        assert 6e-4 < s < 7e-4
+
+    def test_wall_decreases_with_z(self):
+        assert slip_deviation(1.0, 1.5e-4, 0.0) > slip_deviation(1.0, 1.5e-4, 1.0)
+
+    def test_detectability_threshold_exceeds_desi_ceiling(self):
+        # sigma_X needed for |g-1| = 5*0.03 at z=0, eps=1, dm=1
+        S = 5 * 0.03
+        ratio = 0.685 / 0.315
+        sx_need = S / (2.0 * ratio)
+        assert sx_need > 0.03
+        assert sx_need / 1.5e-4 > 200  # shielding factor
+
+    def test_self_shielding_inequality_euclid_floor(self):
+        s_max = slip_deviation(1.0, 1.5e-4, 0.0)
+        sigma_exp = 0.03
+        assert s_max < sigma_exp / 10  # strongly shielded
+
+
 class TestSimpleAsLambda:
     """Blackboard reduction: RMS ~ sigma**(2/3) for d=3."""
 

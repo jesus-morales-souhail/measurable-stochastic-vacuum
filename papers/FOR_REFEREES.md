@@ -30,11 +30,12 @@ Manuscript: `manuscript/PREPRINT.md`
 | Step | Document | Purpose |
 |:-----|:---------|:--------|
 | 1 | This file | Claim boundaries |
-| 2 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal equations (public model) |
-| 3 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, test-gated claims** |
-| 4 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
-| 5 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
-| 6 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
+| 2 | [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) | **Einstein+Morales slip wall + self-shielding inequality** |
+| 3 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal equations (public model) |
+| 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, test-gated claims** |
+| 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
+| 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
+| 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
 **Do not cite as hard results:** `THEORY_REVOLUTION.md`, WP discussion notes (`r1-`, `r2-`, `r3-`), exploratory optics repo.
 
@@ -128,6 +129,7 @@ $$
 | C6 | Path + soft open **cannot** rescue Sorkin | combined tests |
 | C7 | DESI-safe windows NP-A / NP-B exist with $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ | `NARROW_PATH` + tests |
 | C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | sister repo |
+| C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
 
 ### 4.2 Non-claims
 

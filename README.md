@@ -12,11 +12,12 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 
 | Priority | Document | Role |
 |:---------|:---------|:-----|
-| **1** | [`papers/FOR_REFEREES.md`](papers/FOR_REFEREES.md) | Claim map, formula sheet, C1–C8 / N1–N7 |
-| **2** | [`papers/SIMPLE_AS_LAMBDA.md`](papers/SIMPLE_AS_LAMBDA.md) | Minimal model (as simple as $\Lambda$) |
-| **3** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | Hard claims only (test-gated) |
-| **4** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
-| **5** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
+| **1** | [`papers/FOR_REFEREES.md`](papers/FOR_REFEREES.md) | Claim map, formula sheet, C1–C9 / N1–N7 |
+| **2** | [`papers/OBSERVABLE_WALL.md`](papers/OBSERVABLE_WALL.md) | **Einstein+Morales wall + self-shielding** |
+| **3** | [`papers/SIMPLE_AS_LAMBDA.md`](papers/SIMPLE_AS_LAMBDA.md) | Minimal model (as simple as $\Lambda$) |
+| **4** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | Hard claims only (test-gated) |
+| **5** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
+| **6** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
 
 ```bash
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git
