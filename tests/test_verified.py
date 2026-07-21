@@ -24,13 +24,17 @@ from lib_verified import (  # noqa: E402
     L_P_M,
     comoving_distance_mpc,
     ell_for_target_sigma,
+    ell_mpc_for_sigma,
     hubble_radius_m,
+    hubble_radius_mpc,
     n_eff,
     n_patches,
+    r8_mpc,
     residual_soft_map,
     rho_x_over_rho_m,
     rms_incoherent,
     r_needed_for_target,
+    sigma_for_cell_mpc,
     sigma_from_count,
     slip_deviation,
     soft_squeeze_gain,
@@ -316,6 +320,53 @@ class TestNarrowPath:
         """sigma0=1e-5 and r=1.5 => sigma_res > 1.5e-4 (must be clipped to NP-B)."""
         sres = residual_soft_map(1e-5, r=1.5)
         assert sres > 1.5e-4
+
+
+class TestR1OpenKernelScales:
+    """
+    Scale anchors for papers/r1-open-kernel.md.
+    Arithmetic only — does not claim ell_* = R_8 or a derivation.
+    """
+
+    def test_r8_definition(self):
+        # H0=67.4 => h=0.674 => R_8 = 8/0.674 ≈ 11.87 Mpc
+        assert r8_mpc() == pytest.approx(8.0 / 0.674, rel=1e-12)
+        assert 11.5 < r8_mpc() < 12.2
+
+    def test_hubble_radius_mpc_consistent(self):
+        L_m = hubble_radius_m()
+        mpc = 3.085677581e22
+        assert hubble_radius_mpc() == pytest.approx(L_m / mpc, rel=1e-12)
+
+    def test_sigma_for_r8_d3_near_desi_ceiling_order(self):
+        """If ell_*=R_8 and d=3, sigma is O(1e-4) — landscape fact, not a fit."""
+        s = sigma_for_cell_mpc(r8_mpc(), 3)
+        assert 5e-5 < s < 3e-4
+        # published OOM in r1-open-kernel.md
+        assert s == pytest.approx(1.38e-4, rel=0.05)
+
+    def test_sigma_for_r8_d4_near_1e_5_band(self):
+        s = sigma_for_cell_mpc(r8_mpc(), 4)
+        assert 3e-6 < s < 2e-5
+
+    def test_ell_for_desi_ceiling_d3_near_r8(self):
+        """d=3 inverse at DESI ceiling lands near R_8 (scale coincidence)."""
+        ell = ell_mpc_for_sigma(1.5e-4, 3)
+        R8 = r8_mpc()
+        assert ell == pytest.approx(12.6, rel=0.05)
+        assert abs(ell / R8 - 1.0) < 0.15  # within ~15%
+
+    def test_ell_for_1e_5_d4_near_r8(self):
+        ell = ell_mpc_for_sigma(1e-5, 4)
+        R8 = r8_mpc()
+        assert 12.0 < ell < 16.0
+        assert abs(ell / R8 - 1.0) < 0.25
+
+    def test_planck_not_near_r8(self):
+        """Sanity: Sorkin seed is not a mesoscopic R8 story."""
+        _, _, s0 = sorkin_holographic()
+        assert s0 < 1e-50
+        assert sigma_for_cell_mpc(r8_mpc(), 3) / s0 > 1e50
 
     def test_np_b_on_desi_ceiling(self):
         """sigma0 = 1.5e-4 / e^{3} keeps residual on the DESI ceiling."""

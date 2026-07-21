@@ -18,14 +18,16 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 | **3** | [`papers/SIMPLE_AS_LAMBDA.md`](papers/SIMPLE_AS_LAMBDA.md) | Minimal model (as simple as $\Lambda$) |
 | **4** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | Documented results only (unit-tested) |
 | **5** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
+| **5b** | [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) | **Walls vs open kernel** (R1 load-bearing gap) |
 | **6** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
 
 ```bash
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git
 cd measurable-stochastic-vacuum
 pip install -r requirements.txt
-pytest -q # expect: 34 passed
+pytest -q # expect: 49 passed
 python scripts/simple_as_lambda.py
+python scripts/r1_open_kernel_scales.py
 ```
 
 **Sister empirical corpus (DESI bounds):** 
@@ -61,7 +63,7 @@ with a posteriori bound $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ from DESI r
 
 ## Verified core (one paragraph)
 
-Under $N_{\mathrm{eff}}=(L/\ell_{*})^{d}$, $\sigma_{0,\mathrm{eff}}=(\ell_{*}/L)^{d/2}$. Holographic Sorkin counting yields $\sigma_{0}\sim 10^{-61}$. Soft open gain $e^{2r}$ with $r=\mathcal{O}(1)$ is only $\mathcal{O}(10)$ and cannot lift Sorkin to $10^{-5}$ (that requires $r\sim 64$). Sub-horizon anisotropic stress gives $\lvert\gamma-1\rvert=2\varepsilon\sigma(\rho_{X}/\rho_{m})/\lvert\delta_{m}\rvert$; incoherent path accumulation multiplies by $\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$10^{2})$ for Mpc cells on Gpc paths—not $10^{56}$. **Measurability requires a mesoscopic counting cell (principle still open) or a derived hard open map (not constructed).**
+Under $N_{\mathrm{eff}}=(L/\ell_{*})^{d}$, $\sigma_{0,\mathrm{eff}}=(\ell_{*}/L)^{d/2}$. Holographic Sorkin counting yields $\sigma_{0}\sim 10^{-61}$. Soft open gain $e^{2r}$ with $r=\mathcal{O}(1)$ is only $\mathcal{O}(10)$ and cannot lift Sorkin to $10^{-5}$ (that requires $r\sim 64$). Sub-horizon anisotropic stress gives $\lvert\gamma-1\rvert=2\varepsilon\sigma(\rho_{X}/\rho_{m})/\lvert\delta_{m}\rvert$; incoherent path accumulation multiplies by $\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$10^{2})$ for Mpc cells on Gpc paths—not $10^{56}$. **Measurability requires a mesoscopic counting cell (principle still open — see [`r1-open-kernel.md`](papers/r1-open-kernel.md)) or a derived hard open map (not constructed).** Soft amplifiers of a Planck seed are **measured walls**, not open questions of the same type.
 
 ---
 
@@ -75,8 +77,10 @@ Under $N_{\mathrm{eff}}=(L/\ell_{*})^{d}$, $\sigma_{0,\mathrm{eff}}=(\ell_{*}/L)
 | `papers/VERIFIED_RESULTS.md` | Counting, soft gain, slip + path |
 | `papers/SIMPLE_AS_LAMBDA.md` | $\Lambda$-simple reduction |
 | `papers/NARROW_PATH.md` | NP-A / NP-B architecture |
+| `papers/r1-open-kernel.md` | Walls vs open kernel; R1d scale class |
 | `scripts/lib_verified.py` | Implementation |
-| `tests/test_verified.py` | 34 automated checks |
+| `scripts/r1_open_kernel_scales.py` | $R_8$ / landscape scale table |
+| `tests/test_verified.py` | automated checks (`pytest -q`) |
 
 ### Optional / narrative
 

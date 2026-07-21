@@ -58,8 +58,12 @@ With $L=L_H=c/H_0$ and target $\sigma=10^{-5}$:
 | R1a — local causal set | What sets the DE correlation scale? |
 | R1b — IR cutoff of a vacuum sector | Derive $\ell_*$ from an action |
 | R1c — unimodular/SDiff grain | Why cosmological rather than Planck? |
+| R1d — nonlinear structure scale | Why would DE count cells at $R_{\mathrm{nl}}$ / $R_8$? |
 
 **R1 status (A4):** landscape derived; principle fixing $\ell_*$ **absent (declared)**.
+
+**Publication-oriented expansion (walls vs kernel, R1d scale table, falsifiers):**  
+[`r1-open-kernel.md`](r1-open-kernel.md) · `python scripts/r1_open_kernel_scales.py`
 
 ---
 
@@ -71,14 +75,15 @@ Sister bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) is a **test** only:
 - $\ll 10^{-5}$ → predict null; 
 - $\gg 1.5\times 10^{-4}$ without damping → tension.
 
-Never tune $\ell_*$ to that number.
+Never tune $\ell_*$ to that number.  
+Never tune $\ell_*$ to $R_8$ after inspecting S$_8$ either (same dial class; see open-kernel note §7).
 
 ---
 
 ## 6. Next
 
-WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](r3-open-horizon-map.md)). 
-Closing WP1 requires one of R1a–R1c fully derived.
+WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](r3-open-horizon-map.md)).  
+Closing WP1 requires one of R1a–R1d **fully derived** under criteria P1–P6 in [`r1-open-kernel.md`](r1-open-kernel.md).
 
 ---
 

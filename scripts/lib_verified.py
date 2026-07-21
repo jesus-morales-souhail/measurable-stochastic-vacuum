@@ -192,6 +192,49 @@ def r_needed_for_target(sigma0: float, target: float) -> float:
     return 0.5 * math.log(target / sigma0)
 
 
+# ---------------------------------------------------------------------------
+# R1 open-kernel scale anchors (arithmetic only — not a derivation of ell_*)
+# ---------------------------------------------------------------------------
+
+def r8_mpc(H0_km_s_mpc: float = H0_KM_S_MPC) -> float:
+    """
+    Conventional 8 h^{-1} Mpc length in Mpc: R_8 = 8 / h with h = H0/100.
+    Used only as a fixed cosmological scale anchor for landscape comparison.
+    Does NOT claim that ell_* = R_8.
+    """
+    h = H0_km_s_mpc / 100.0
+    if h <= 0:
+        raise ValueError("H0 must be positive")
+    return 8.0 / h
+
+
+def hubble_radius_mpc(H0_km_s_mpc: float = H0_KM_S_MPC) -> float:
+    """L_H = c/H0 in Mpc."""
+    return hubble_radius_m(H0_km_s_mpc) / MPC_M
+
+
+def sigma_for_cell_mpc(
+    ell_mpc: float,
+    d: float,
+    H0_km_s_mpc: float = H0_KM_S_MPC,
+) -> float:
+    """sigma_0,eff for a cell ell_* in Mpc and counting dimension d on L_H."""
+    if ell_mpc <= 0:
+        raise ValueError("ell_mpc must be positive")
+    L = hubble_radius_mpc(H0_km_s_mpc)
+    return sigma_from_count(ell_mpc, L, d)
+
+
+def ell_mpc_for_sigma(
+    sigma: float,
+    d: float,
+    H0_km_s_mpc: float = H0_KM_S_MPC,
+) -> float:
+    """Inverse: ell_* in Mpc for target sigma on L_H."""
+    L = hubble_radius_mpc(H0_km_s_mpc)
+    return ell_for_target_sigma(sigma, L, d)
+
+
 if __name__ == "__main__":
     L_H, N_BH, s0 = sorkin_holographic()
     print("lib_verified smoke check")
@@ -199,6 +242,8 @@ if __name__ == "__main__":
     print(f"  N_BH = {N_BH:.6e}")
     print(f"  sigma_Sorkin = {s0:.6e}")
     print(f"  ell(d=2, sigma=1e-5) / Mpc = {ell_for_target_sigma(1e-5, L_H, 2)/MPC_M:.4f}")
+    print(f"  R_8 = {r8_mpc():.4f} Mpc")
+    print(f"  sigma(ell=R_8, d=3) = {sigma_for_cell_mpc(r8_mpc(), 3):.6e}")
     print(f"  slip(eps=1, sigma=1.5e-4, z=0.5) = {slip_deviation(1.0, 1.5e-4, 0.5):.6e}")
     print(f"  chi(1.5) Mpc = {comoving_distance_mpc(1.5):.1f}")
     print(f"  G_O(r=1.5) = {soft_squeeze_gain(1.5):.6f}")

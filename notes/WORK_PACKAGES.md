@@ -13,7 +13,7 @@ WP notes are expansions, not independent hard-claim sources.
 | WP | Rule | Status | Main document |
 |:---|:-----|:-------|:--------------|
 | WP0 | Empirical boundary | **Done** (sister repo) | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) |
-| WP1 | R1 counting seed | **Partial** | [`r1-counting-principle.md`](../papers/r1-counting-principle.md) |
+| WP1 | R1 counting seed | **Partial** | [`r1-counting-principle.md`](../papers/r1-counting-principle.md) · [`r1-open-kernel.md`](../papers/r1-open-kernel.md) |
 | WP2 | R3 soft open map | **Soft theorems done** | [`r3-open-horizon-map.md`](../papers/r3-open-horizon-map.md) |
 | WP3 | R2 slip + path | **Partial** | [`r2-slip-from-same-sector.md`](../papers/r2-slip-from-same-sector.md) |
 | WP4 | Joint table + zeros | **Done** | [`wp4-joint-predictions-and-zeros.md`](../papers/wp4-joint-predictions-and-zeros.md) |
@@ -31,9 +31,10 @@ Null OU/QNM, $\sigma_X<1.5\times 10^{-4}$ (95% CL), tachyonic exclusion, amplifi
 
 ## WP1 — Counting seed (partial)
 
-**Delivered:** $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$; Sorkin zero; mesoscopic landscape for $\sigma=10^{-5}$. 
-**Open:** principle fixing $\ell_*$ (R1a/b/c). 
-**Code:** `scripts/r1_counting_landscape.py`, `lib_verified.py`.
+**Delivered:** $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$; Sorkin zero; mesoscopic landscape for $\sigma=10^{-5}$; **open-kernel note** (walls vs kernel; R1d scale class; falsifiers).  
+**Open:** principle fixing $\ell_*$ (R1a/b/c/**d**).  
+**Code:** `scripts/r1_counting_landscape.py`, `scripts/r1_open_kernel_scales.py`, `lib_verified.py`.  
+**Publishable status note:** [`papers/r1-open-kernel.md`](../papers/r1-open-kernel.md).
 
 ---
 
@@ -68,10 +69,13 @@ L0–L4 failure levels; decision tree; checklist before any positive paper.
 ## Recommended order going forward
 
 ```
-Verified core (pytest) ──► R1a/b/c candidate (only real missing physics)
+Verified core (pytest) ──► R1a/b/c/d candidate (only real missing physics)
  ──► optional hard-R3 only if derived, not dialed
  ──► then Boltzmann if amplitude+ε fixed
 ```
+
+Do **not** re-open soft amplification of Sorkin (measured walls).  
+Do **not** fit $\ell_*$ to DESI or $R_8$/S$_8$.
 
 ---
 
@@ -82,6 +86,7 @@ pip install -r requirements.txt
 pytest -q
 python scripts/lib_verified.py
 python scripts/r1_counting_landscape.py
+python scripts/r1_open_kernel_scales.py
 python scripts/r3_open_horizon_map.py
 python scripts/r2_light_path_accumulation.py
 ```

@@ -6,7 +6,7 @@
 **Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum 
 **Date:** July 2026 
 **Status:** Independent research — **not peer reviewed** 
-**Automated gate:** `pytest -q` must report **34 passed**
+**Automated gate:** `pytest -q` must report **all tests passed** (expect **49** with R1 open-kernel scale checks)
 
 ---
 
@@ -17,6 +17,7 @@
 | Theory kinematics + verified identities | Empirical DESI BAO residual analysis |
 | Minimal model as simple as $\Lambda$ | Working bound $\sigma_X < 1.5\times 10^{-4}$ (95% CL) |
 | Conditional light-path predictions | Model kills (e.g. coherent tachyonic growth) |
+| Map of **measured walls** vs **open kernel** (R1) | Amplification gap (no free soft gain on Sorkin) |
 | **Not** a detection paper | **Not** a first-principles derivation of $\ell_*$ |
 
 **Sister empirical corpus:** 
@@ -35,10 +36,12 @@ Manuscript: `manuscript/PREPRINT.md`
 | 3 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal equations (public model) |
 | 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, unit-tested claims** |
 | 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
+| 5b | [`r1-open-kernel.md`](r1-open-kernel.md) | **Walls vs open kernel; R1d scale class (not a derivation)** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
-**Do not cite as hard results:** `THEORY_REVOLUTION.md`, WP discussion notes (`r1-`, `r2-`, `r3-`), exploratory optics repo.
+**Do not cite as hard results:** `THEORY_REVOLUTION.md`, WP discussion notes (`r1-counting-principle`, `r2-`, `r3-` except where they restate verified identities), exploratory optics repo.  
+**Cite `r1-open-kernel.md` for:** claim-boundary taxonomy (wall vs kernel) and scale arithmetic only — **not** for “$\ell_*=R_8$ is derived.”
 
 ---
 
@@ -125,6 +128,8 @@ $$
 | C7 | DESI-safe windows NP-A / NP-B exist with $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ | `NARROW_PATH` + tests |
 | C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | sister repo |
 | C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
+| C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_*$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
+| C11 | Scale arithmetic: $R_8=8/h$; $\ell_*(\sigma,d)$ and $\sigma(R_8,d)$ under counting | `lib_verified` + `r1_open_kernel_scales.py` + tests |
 
 ### 4.2 Non-claims
 
@@ -137,6 +142,7 @@ $$
 | N5 | Cosmos is **not** asserted to be a fractional Hall bar (analogy only) |
 | N6 | Entropy of the universe does **not** “stop”; only local backscattering of a protected channel is suppressed (analogy) |
 | N7 | Not peer reviewed |
+| N8 | $\ell_*=R_8$ is **not** derived; S$_8$ is **not** explained by this programme |
 
 ---
 
@@ -155,6 +161,7 @@ pip install -r requirements.txt
 pytest -q
 python scripts/simple_as_lambda.py
 python scripts/lib_verified.py
+python scripts/r1_open_kernel_scales.py
 ```
 
 ---
@@ -173,11 +180,12 @@ It is **not** a condensed-matter derivation of dark energy.
 
 ## 7. Suggested evaluation criteria for referees
 
-1. Are documented results limited to C1–C9 and backed by `pytest`? 
+1. Are documented results limited to C1–C11 and backed by `pytest`? 
 2. Is the DESI number used only as a bound, never to fit $\ell_{*}$? 
 3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$? 
-4. Are free $10^{56}$, $r\sim 64$, and $N\sim 10^{119}$ correctly rejected? 
-5. Are open problems (N1–N3) stated without hype?
+4. Are free $10^{56}$, $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls**? 
+5. Are open problems (N1–N3, N8) stated without hype — especially the R1 open kernel? 
+6. Is any $R_8$ / S$_8$ discussion limited to scale class + non-claim (C11 / N8)?
 
 ---
 

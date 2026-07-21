@@ -91,6 +91,22 @@ With $L=L_H$ and $\sigma_{0,\mathrm{eff}}=10^{-5}$:
 For $\ell_*=L_P$ and $d\in\{2,3,4\}$, $\sigma_{0,\mathrm{eff}}\le\mathcal{O}(10^{-61})\ll 10^{-5}$. 
 Any experiment whose sensitivity is $\gtrsim 10^{-5}$ **must** return a null for this seed **if** the residual tracks $\sigma_{0,\mathrm{eff}}$ without a huge derived gain. That null is a **theorem of the counting hypothesis**, not a failure of the survey.
 
+### 2.6 Scale anchor $R_8$ (arithmetic only)
+
+Define $R_8=8/h\,\mathrm{Mpc}$ with $h=H_0/100$. At $H_0=67.4$, $R_8\approx 11.87\,\mathrm{Mpc}$.
+
+Under the counting hypothesis alone (no fit):
+
+| Specification | Result |
+|:--------------|:-------|
+| $\ell_*=R_8$, $d=3$ | $\sigma_{0,\mathrm{eff}}\approx 1.38\times 10^{-4}$ |
+| $\ell_*=R_8$, $d=4$ | $\sigma_{0,\mathrm{eff}}\approx 7.12\times 10^{-6}$ |
+| $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_*\approx 12.56\,\mathrm{Mpc}$ ($\sim 6\%$ from $R_8$) |
+
+**Verified:** the arithmetic above.  
+**Not verified / not claimed:** $\ell_*=R_8$; any explanation of S$_8$.  
+Programme discussion: [`r1-open-kernel.md`](r1-open-kernel.md) · `scripts/r1_open_kernel_scales.py`.
+
 ---
 
 ## 3. Soft open gain (R3) — verified kinematics

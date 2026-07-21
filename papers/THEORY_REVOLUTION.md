@@ -43,7 +43,7 @@ Admissible work must:
 
 | Rule | Idealization weakened | Content | Verified status |
 |:-----|:----------------------|:--------|:----------------|
-| **R1** | Continuum / global holographic count for the DE sector | Cell $\ell_*$, $N_{\mathrm{eff}}=(L/\ell_*)^d$, $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$ | Kinematics verified; principle for $\ell_*$ **open** |
+| **R1** | Continuum / global holographic count for the DE sector | Cell $\ell_*$, $N_{\mathrm{eff}}=(L/\ell_*)^d$, $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$ | Kinematics verified; principle for $\ell_*$ **open** ([`r1-open-kernel.md`](r1-open-kernel.md)) |
 | **R2** | Strong equivalence (universal light/mass potentials) | $\pi_T\Rightarrow\gamma=\Phi/\Psi\neq 1$; light-path accumulation | Local slip + $\sqrt{N}$ path verified; $\varepsilon$ **open** |
 | **R3** | Unitary closed patch only | Soft open gain $G_O=e^{2r}$ | Soft bound verified; hard bath **open** |
 
