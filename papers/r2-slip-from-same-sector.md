@@ -6,7 +6,7 @@
 **Date:** July 2026 
 **Code:** [`scripts/r2_light_path_accumulation.py`](../scripts/r2_light_path_accumulation.py) · [`scripts/lib_verified.py`](../scripts/lib_verified.py) 
 
-> **Hard claims:** cite only [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`).
+> **Documented results:** see [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`).
 
 ---
 

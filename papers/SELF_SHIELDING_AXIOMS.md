@@ -33,9 +33,9 @@ A prediction is admissible only if the scale where the effect is $\mathcal{O}(1)
 
 ---
 
-## A3 — No free lunch
+## A3 — No undeclared amplification factors
 
-Forbidden: free $10^{56}$; $e^{2r}$ with $r\sim\mathcal{O}(1)$ claimed to fix Sorkin; double-counted $\sqrt{N}$; free $A_0$ renamed as microphysics.
+Excluded: free $10^{56}$; $e^{2r}$ with $r\sim\mathcal{O}(1)$ claimed to fix Sorkin; double-counted $\sqrt{N}$; free $A_0$ renamed as microphysics.
 
 ---
 
@@ -48,7 +48,7 @@ Every model states the status of seed, gain, and operator (derived / bounded / a
 ## A5 — DESI is a test, not a dial
 
 Sister bounds are used only a posteriori for compatibility, tension, or falsification. 
-Forbidden: choosing $\ell_*$ or $r$ to sit under $1.5\times 10^{-4}$.
+Excluded: choosing $\ell_*$ or $r$ to sit under $1.5\times 10^{-4}$.
 
 ---
 
@@ -66,7 +66,7 @@ Any “avoids black holes” claim needs effective volume, probe energy density,
 
 ## A8 — Language in abstracts
 
-**Forbidden:** “we prove the vacuum is discrete”; “Euclid will see Sorkin”; “tesseract solves dark energy”. 
+**Excluded:** “we prove the vacuum is discrete”; “Euclid will see Sorkin”; “tesseract solves dark energy”. 
 
 **Allowed:** “under counting hypothesis …”; “soft open map implies …”; “compatible / in tension with sister DESI bound …”.
 

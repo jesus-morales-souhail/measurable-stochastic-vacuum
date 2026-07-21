@@ -217,7 +217,7 @@ Full write-up: [`NARROW_PATH.md`](NARROW_PATH.md).
 
 ---
 
-## 6. Combined no-free-lunch statement (verified)
+## 6. Combined amplification-gap statement (verified)
 
 Define the soft residual after open kinematics and before/with path geometry as appropriate. Then:
 
@@ -288,4 +288,4 @@ python scripts/r2_light_path_accumulation.py
 
 ---
 
-*End of verified-results note. Programme narrative remains in `THEORY_REVOLUTION.md`; only this file is the citation spine for hard claims.*
+*End of verified-results note. Programme narrative remains in `THEORY_REVOLUTION.md`; only this file is the citation spine for documented results.*

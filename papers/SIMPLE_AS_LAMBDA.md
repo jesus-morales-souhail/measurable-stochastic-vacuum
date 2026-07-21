@@ -15,7 +15,7 @@
 | Einstein equation | $G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G T_{\mu\nu}$ | **Unchanged** for the mean |
 | Extra physics | None | **One** grain parameter $\sigma$ |
 | Extra prediction | None | One light-path number $\mathrm{RMS}$ |
-| Free lunch $10^{-61}\to 10^{-5}$ | Not needed | **Forbidden** (already killed) |
+| Free amplification $10^{-61}\to 10^{-5}$ | Not needed | **Excluded** (already killed) |
 
 **How we “beat” $\Lambda$ is not by more maths.** 
 $\Lambda$ already describes the **mean** vacuum. 
@@ -175,9 +175,9 @@ We add the **smallest equation** that makes vacuum grain **testable**, with math
 
 | Drop | Why |
 |:-----|:----|
-| $r\sim 64$ | Numerology |
+| $r\sim 64$ | Ad hoc free-parameter tuning |
 | $N_{\mathrm{pat}}\sim 10^{119}$ | Impossible in our universe |
-| Free $10^{56}$ | Forbidden |
+| Free $10^{56}$ | Excluded |
 | Changing $H(z)$ first | Data kill large isotropic residual |
 | Tesseracts, pupils, B4 | Wrong scale/operator |
 | Full R1–R2–R3 jargon in public talks | Replace by Lines A–B–C |
@@ -186,7 +186,7 @@ Keep jargon only in technical appendices (`VERIFIED_RESULTS`, `NARROW_PATH`).
 
 ---
 
-## 8. One slide / one blackboard
+## 8. Compact presentation
 
 ```text
 Λ CDM: H² = H₀² [Ω_m (1+z)³ + Ω_Λ] ← keep (BULK)
@@ -203,7 +203,7 @@ Hall-chip translation (see [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANAL
 ```text
 BULK = Λ (insulator / smooth mean vacuum)
 EDGE = σ (Laughlin-like collective grain, not Planck electron)
-PROTECT = no “backscatter” of free-lunch 10^{-61} into telescopes
+PROTECT = no “backscatter” of free-amplification 10^{-61} into telescopes
 SIGNAL = one-way light path (like chiral edge current)
 ```
 
@@ -245,4 +245,4 @@ PY
 
 ---
 
-*End. If it needs more symbols than $\Lambda$, it is not for the blackboard — put it in an appendix.*
+*End. If it needs more symbols than $\Lambda$, it is not for the simplified presentation — put it in an appendix.*

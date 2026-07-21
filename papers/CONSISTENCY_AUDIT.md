@@ -1,17 +1,17 @@
 # Cross-repository consistency audit (July 2026)
 
-**Author:** Jesús Morales Souhail  
-**Scope:** `stochastic-dark-energy-ou` · `measurable-stochastic-vacuum` · `stochastic-de-exploratory-notes`  
+**Author:** Jesús Morales Souhail 
+**Scope:** `stochastic-dark-energy-ou` · `measurable-stochastic-vacuum` · `stochastic-de-exploratory-notes` 
 **Gate:** `pytest -q` in theory repo → **42 passed**
 
 ---
 
-## 1. Repository roles (must not mix)
+## 1. Repository roles (should remain separate)
 
 | Repo | Role | Peer-review claims? |
 |:-----|:-----|:--------------------|
 | **stochastic-dark-energy-ou** | DESI BAO residuals, $\sigma_X$ bound, model kills, amplifier audit | **Yes** (empirical) |
-| **measurable-stochastic-vacuum** | Minimal Model, wall, light-cone path, test-gated theory | **Yes** (theory kinematics) |
+| **measurable-stochastic-vacuum** | Minimal Model, wall, light-cone path, unit-tested theory | **Yes** (theory kinematics) |
 | **stochastic-de-exploratory-notes** | Optics / wrong-scale pedagogy | **No** |
 
 ---
@@ -46,10 +46,10 @@ $$
 \end{aligned}
 $$
 
-**Forbidden identities**
+**Invalid identities**
 
-- $\mathrm{RMS}=\sigma\times G_O\times\sqrt{N}$ as an equality  
-- $\xi_{\mathrm{LIV}}=\sigma_X$ without derivation  
+- $\mathrm{RMS}=\sigma\times G_O\times\sqrt{N}$ as an equality 
+- $\xi_{\mathrm{LIV}}=\sigma_X$ without derivation 
 - Soft $r\sim 64$ or $N\sim 10^{119}$ as “natural”
 
 ---
@@ -67,7 +67,7 @@ $$
 
 ---
 
-## 5. Peer-review entry points
+## 5. Reading guide points
 
 | Repo | Start |
 |:-----|:------|
@@ -79,14 +79,14 @@ $$
 
 ## 6. Sense check (does the story cohere?)
 
-1. **Data:** DESI residual prefers smooth $\Lambda$-like bulk; $\sigma_X$ ceiling is tiny.  
-2. **Wall:** Einstein+Morales map that ceiling to $\lvert\gamma-1\rvert\sim 10^{-4}$ → self-shielded vs Euclid floors $\sim 0.03$.  
-3. **Only natural boost:** past light cone $\sqrt{N}\sim 40$–$70$ → $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ (frontier, not easy detection).  
-4. **Minimal model:** keep $\Lambda$CDM + one grain $\sigma$ + $\mathrm{RMS}\sim\sigma^{2/3}$.  
-5. **Sorkin:** structural null under soft dynamics.  
+1. **Data:** DESI residual prefers smooth $\Lambda$-like bulk; $\sigma_X$ ceiling is tiny. 
+2. **Wall:** Einstein+Morales map that ceiling to $\lvert\gamma-1\rvert\sim 10^{-4}$ → self-shielded vs Euclid floors $\sim 0.03$. 
+3. **Only natural boost:** past light cone $\sqrt{N}\sim 40$–$70$ → $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ (frontier, not easy detection). 
+4. **Minimal model:** keep $\Lambda$CDM + one grain $\sigma$ + $\mathrm{RMS}\sim\sigma^{2/3}$. 
+5. **Sorkin:** structural null under soft dynamics. 
 6. **Analogy (Hall edge):** bulk=$\Lambda$, edge=$\sigma$; does not claim cosmos is a Hall bar.
 
-**Verdict:** the three repos form one coherent programme: empirical nulls / bounds; theory kinematics and wall; exploratory fence. Hard claims are test-gated in the theory repo and empirically bounded in the DESI repo.
+**Verdict:** the three repos form one coherent programme: empirical nulls / bounds; theory kinematics and wall; exploratory fence. Documented results are unit-tested in the theory repo and empirically bounded in the DESI repo.
 
 ---
 

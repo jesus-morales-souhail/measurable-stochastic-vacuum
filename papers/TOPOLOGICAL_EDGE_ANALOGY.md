@@ -133,12 +133,12 @@ $$
 | Local lab “noise” | Irrelevant | Wrong edge |
 | Light-path slip | Zero in pure GR+$\Lambda$ | $\mathrm{RMS}\sim\sigma^{2/3}$ if $\sigma>0$ |
 
-**Shielding is absolute only for the wrong channel** (local reverse / isotropic free lunch), 
+**Shielding is absolute only for the wrong channel** (local reverse / isotropic free amplification), 
 exactly as the Hall edge forbids reverse modes — not as “entropy = 0”.
 
 ---
 
-## 4. Blackboard (one slide)
+## 4. Simplified presentation (one slide)
 
 ```text
 BULK (Λ) G_μν + Λ g_μν = 8πG T_mean ← insulator / smooth expansion
@@ -177,7 +177,7 @@ In cosmology language:
 
 
 $$
-\Gamma_{\mathrm{iso}}^{\mathrm{(free lunch)}} \to 0 \quad\text{(Sorkin soft / wrong operator)}, \qquad \Gamma_{\mathrm{edge}}^{\mathrm{(slip path)}} \propto \sigma^{2/3} \quad\text{(if grain exists)}.
+\Gamma_{\mathrm{iso}}^{\mathrm{(free amplification)}} \to 0 \quad\text{(Sorkin soft / wrong operator)}, \qquad \Gamma_{\mathrm{edge}}^{\mathrm{(slip path)}} \propto \sigma^{2/3} \quad\text{(if grain exists)}.
 $$
 
 
@@ -195,7 +195,7 @@ not the growth of cosmological entropy $S$.
 | Fractional charge | Effective, collective — not bare Planck charge |
 | Chiral edge | Directed null-path accumulation of $\pi_T$ |
 | Braid topology | Path-ordered / path-integrated observable |
-| Surface code resilience | Self-shielding axioms: local numerology cannot rewrite the bulk |
+| Surface code resilience | Self-shielding axioms: local ad hoc free-parameter tuning cannot rewrite the bulk |
 
 ---
 
@@ -217,7 +217,7 @@ Keep only: **bulk $\Lambda$ + edge $\sigma$ + $\mathrm{RMS}\sim\sigma^{2/3}$**.
 | Analogy word | Verified fact |
 |:-------------|:--------------|
 | Bulk insulator | DESI residual null / near-$\Lambda$ background |
-| No reverse mode for free lunch | Soft open + path cannot lift $10^{-61}$ |
+| No reverse mode for free amplification | Soft open + path cannot lift $10^{-61}$ |
 | Edge needs its own scale | Mesoscopic $\ell_*$ for $\sigma\sim 10^{-5}$ |
 | Global path | $\mathrm{RMS}=s\sqrt{N_{\mathrm{pat}}}$ |
 | Protection ≠ detection | Zeros are structural; signal only if $\sigma$ mesoscopic |

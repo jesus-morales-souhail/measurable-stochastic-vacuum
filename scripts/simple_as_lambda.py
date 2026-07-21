@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Minimal model as simple as Λ: background ΛCDM + one grain σ + one light RMS.
+Minimal model: background ΛCDM + one grain σ + one light RMS.
 
   H² = H0² [Ωm(1+z)³ + ΩΛ]          # keep
   σ  = (ℓ*/L_H)^{3/2}                 # one grain parameter (d=3)
@@ -32,7 +32,7 @@ MPC = 3.085677581e22
 
 
 def simple_rms(sigma: float) -> float:
-    """Blackboard formula RMS ~ sigma**(2/3) for d=3, chi ~ L_H."""
+    """Simplified formula RMS ~ sigma**(2/3) for d=3, chi ~ L_H."""
     return sigma ** (2.0 / 3.0)
 
 
@@ -47,7 +47,7 @@ def main() -> None:
     L_H_mpc = L_H / MPC
 
     print("=" * 64)
-    print("AS SIMPLE AS Λ")
+    print("MINIMAL MODEL")
     print("=" * 64)
     print("Background:  H² = H0² [Ωm(1+z)³ + ΩΛ]     (keep ΛCDM)")
     print("Grain:       σ = (ℓ*/L_H)^{3/2}              (one number)")

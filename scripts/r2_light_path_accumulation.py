@@ -8,7 +8,7 @@ Physical picture (honest):
   It can source traceless anisotropic stress π_T, which wrinkles Φ,Ψ.
   Photons accumulate lensing / ISW-like shifts over Gpc paths.
 
-  THIS IS NOT free lunch for a Sorkin seed 1e-61.
+  THIS IS NOT free amplification for a Sorkin seed 1e-61.
   Path accumulation multiplies by at most ~sqrt(N_patches) for incoherent
   noise (or ~N for perfectly coherent), with N ~ χ / ell_* = O(10^2–10^4)
   for mesoscopic cells — NOT 10^56.
@@ -133,7 +133,7 @@ def main() -> None:
     print()
     print("Physics: π_T = ε σ ρ_X  →  |γ-1| = 2 ε σ (ρ_X/ρ_m)/δ_m")
     print("Noise need NOT change global H(z); it wrinkles Φ,Ψ; light integrates.")
-    print("Accumulation is geometric (path / correlation length), NOT 10^56 free lunch.")
+    print("Accumulation is geometric (path / correlation length), NOT 10^56 free amplification.")
     print()
 
     # ---- Cases ----
@@ -224,7 +224,7 @@ def main() -> None:
     # What √N would need to lift Sorkin local slip to Sakr floor?
     slip_s = local_slip(1.0, 1.2e-61, z_mid)
     need = SAKR_FLOOR / max(slip_s, 1e-300)
-    print("--- Free-lunch check: √N needed to lift Sorkin slip to Sakr floor 0.05 ---")
+    print("--- Scaling check: √N needed to lift Sorkin slip to Sakr floor 0.05 ---")
     print(f"  local Sorkin |γ-1| = {slip_s:.3e}")
     print(f"  required √N        = {need:.3e}  =>  N = {need**2:.3e}")
     print(f"  available √N (ell=1 Mpc) = {math.sqrt(n_patches(chi, 1.0)):.1f}")

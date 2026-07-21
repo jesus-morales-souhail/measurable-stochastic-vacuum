@@ -1,4 +1,4 @@
-# The observable wall: Einstein + Morales, without numerology
+# The observable wall: Einstein + Morales, without undeclared free parameters
 
 **Author:** Jesús Morales Souhail 
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
@@ -11,7 +11,7 @@
 
 ## Abstract
 
-The only **fully derived** map from the stochastic dark-energy amplitude $\sigma_X$ (Morales residual sector) to a large-scale structure observable **without undeclared numerology** is the sub-horizon **gravitational-slip wall**
+The only **fully derived** map from the stochastic dark-energy amplitude $\sigma_X$ (Morales residual sector) to a large-scale structure observable **without undeclared free parameters** is the sub-horizon **gravitational-slip wall**
 
 
 $$
@@ -94,12 +94,12 @@ Insert (M1) and (N1):
 
 
 $$
-\lvert\gamma-1\rvert = 2 \varepsilon \sigma_X \frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^3 \lvert\delta_m\rvert}  \tag{W}
+\lvert\gamma-1\rvert = 2 \varepsilon \sigma_X \frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^3 \lvert\delta_m\rvert} \tag{W}
 $$
 
 
 **That is the equation.** 
-Einstein + Newton background + Morales residual definition. No numerology.
+Einstein + Newton background + Morales residual definition. No undeclared free parameters.
 
 ---
 
@@ -139,7 +139,7 @@ Define the experimental sensitivity on slip as $\sigma_{\mathrm{exp}}(\gamma)$ (
 
 
 $$
-S_{\mathrm{pred}}^{\max} = \lvert\gamma-1\rvert_{\max}(\sigma_X^{\mathrm{DESI}},\varepsilon=1) \ll \sigma_{\mathrm{exp}}(\gamma)  \tag{S}
+S_{\mathrm{pred}}^{\max} = \lvert\gamma-1\rvert_{\max}(\sigma_X^{\mathrm{DESI}},\varepsilon=1) \ll \sigma_{\mathrm{exp}}(\gamma) \tag{S}
 $$
 
 
@@ -168,7 +168,7 @@ Invert (W) at $\varepsilon=1$, $\lvert\delta_m\rvert=1$:
 
 
 $$
-\sigma_X \ge \frac{N_{\sigma} \sigma_{\mathrm{exp}}(\gamma) (1+z)^3 \Omega_{m0}} {2 \Omega_{\Lambda 0}}  \tag{D}
+\sigma_X \ge \frac{N_{\sigma} \sigma_{\mathrm{exp}}(\gamma) (1+z)^3 \Omega_{m0}} {2 \Omega_{\Lambda 0}} \tag{D}
 $$
 
 
@@ -188,7 +188,7 @@ $$
 $$
 
 
-**In one sentence:** 
+**Summary:** 
 equation (D) is the door the experiment would need; the DESI residual ceiling locks that door from the inside.
 
 ---
@@ -212,7 +212,7 @@ $$
 
 
 is **not** a consequence of Einstein+(M1). It is an extra assumption. 
-Therefore GRB delays are **not** used here as a numerology-free observable wall.
+Therefore GRB delays are **not** used here as a parameter-free observable wall.
 
 ---
 
@@ -235,7 +235,7 @@ That is a measurement **into the past** along the light path — the only direct
 ### 7.2 Why “forward / local” amplification fails
 
 Trying to amplify a present-day Planck seed ($10^{-61}$) with soft open maps or path geometry is already ruled out (need $r\sim 64$ or $N\sim 10^{119}$). 
-**Backwards** means: use **deep path-integrated** probes (lensing, RSD×CMB lensing, multi-$z$ slip), not local free lunch.
+**Backwards** means: use **deep path-integrated** probes (lensing, RSD×CMB lensing, multi-$z$ slip), not local free amplification.
 
 ### 7.3 Self-shielded experiment design
 
@@ -307,11 +307,11 @@ $$
 $$
 
 
-**(W)** defines the observable.  
-**(S)** defines self-shielding.  
-**(D)** defines what would be needed to break the shield.  
-**(P)** is the only natural amplifier (path statistics).  
-Past null-cone measurements still face (S) unless new *derived* physics raises $\sigma_X$ or $\varepsilon$ without numerology.
+**(W)** defines the observable. 
+**(S)** defines self-shielding. 
+**(D)** defines what would be needed to break the shield. 
+**(P)** is the only natural amplifier (path statistics). 
+Past null-cone measurements still face (S) unless new *derived* physics raises $\sigma_X$ or $\varepsilon$ without undeclared free parameters.
 
 ---
 

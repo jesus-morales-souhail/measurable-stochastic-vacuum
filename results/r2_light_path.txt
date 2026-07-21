@@ -7,7 +7,7 @@ MC paths per case: 8000
 
 Physics: π_T = ε σ ρ_X  →  |γ-1| = 2 ε σ (ρ_X/ρ_m)/δ_m
 Noise need NOT change global H(z); it wrinkles Φ,Ψ; light integrates.
-Accumulation is geometric (path / correlation length), NOT 10^56 free lunch.
+Accumulation is geometric (path / correlation length), NOT a free 10^56 amplification.
 
 case                                        |γ-1|_loc      N_pat    RMS_incoh     coherent
 ------------------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ DESI ceiling, ε=0.1                         1.119e-05  4.482e+02    2.368e-04  
   ell_*=10.0   Mpc  N≈   448.2  √N≈   21.17  (gain on dimensionless slip, not on 1e-61→1e-5)
   ell_*=100.0  Mpc  N≈    44.8  √N≈    6.69  (gain on dimensionless slip, not on 1e-61→1e-5)
 
---- Free-lunch check: √N needed to lift Sorkin slip to Sakr floor 0.05 ---
+--- Scaling check: √N needed to lift Sorkin slip to Sakr floor 0.05 ---
   local Sorkin |γ-1| = 8.949e-62
   required √N        = 5.587e+59  =>  N = 3.122e+119
   available √N (ell=1 Mpc) = 66.9

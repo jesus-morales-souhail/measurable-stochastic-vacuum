@@ -3,7 +3,7 @@
 **Language:** English 
 **Last update:** July 2026 
 
-**Publication spine:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green. 
+**Primary results note:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green. 
 WP notes are expansions, not independent hard-claim sources.
 
 ---

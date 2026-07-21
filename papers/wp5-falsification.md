@@ -4,7 +4,7 @@
 **Programme:** measurable-stochastic-vacuum 
 **Status:** Method note — how the programme dies or narrows 
 **Date:** July 2026 
-**Hard claims:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) 
+**Documented results:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) 
 
 ---
 
@@ -48,7 +48,7 @@ Once a principle $P$ predicts $\ell_*$ or $N_{\mathrm{eff}}$:
 |:--------|:--------|
 | Soft $r=\mathcal{O}(1)$ claimed to fix Sorkin | **Already false** (verified: need $r\sim 64$) |
 | Hard map derives $r\sim 64$ from horizon bath, then data exclude $\sigma_{\mathrm{res}}$ | Candidate dies |
-| Hard map predicts $G_O^{\max}=\mathcal{O}(10)$ for all allowed baths | Strengthens no-free-lunch; package narrows to R1-only door |
+| Hard map predicts $G_O^{\max}=\mathcal{O}(10)$ for all allowed baths | Strengthens no-free-amplification; package narrows to R1-only door |
 | Claim $e^{60}$ late stretch equals inflationary gain for Sorkin seed | **Already false** (regime mismatch) |
 
 ---
@@ -103,7 +103,7 @@ Is the seed Sorkin (ell_* = L_P)?
 ## 9. Closing posture
 
 > The empirical sister repository already succeeded as **limits and exclusions**. 
-> This theory programme succeeds either by a **derived** mesoscopic seed / hard open map that passes WP5, or by proving that no such path exists without numerology — in which case the scientific answer is: *stochastic vacuum noise of Sorkin type is not telescope-measurable under soft dynamics.*
+> This theory programme succeeds either by a **derived** mesoscopic seed / hard open map that passes WP5, or by proving that no such path exists without undeclared free parameters — in which case the scientific answer is: *stochastic vacuum noise of Sorkin type is not telescope-measurable under soft dynamics.*
 
 ---
 

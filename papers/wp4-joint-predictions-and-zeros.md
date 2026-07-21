@@ -4,7 +4,7 @@
 **Programme:** measurable-stochastic-vacuum 
 **Status:** Synthesis of verified maps only 
 **Date:** July 2026 
-**Hard claims:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` 
+**Documented results:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` 
 
 ---
 

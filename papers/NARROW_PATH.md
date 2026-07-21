@@ -4,14 +4,14 @@
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
 **Date:** July 2026 
 **Status:** Architecture note grounded in verified identities 
-**Hard claims / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/lib_verified.py`](../scripts/lib_verified.py) 
+**Documented results / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/lib_verified.py`](../scripts/lib_verified.py) 
 **Sister empirical bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
 ## Abstract
 
-If one discards “magical” rescues of the Planck/Sorkin seed $\sigma_0\sim 10^{-61}$ (soft squeeze $r\sim 64$, or $N_{\mathrm{pat}}\sim 10^{119}$ along the line of sight), the only soft-regime architecture that remains mathematically coherent is a **triple concurrent structure**:
+If one discards “ad hoc” rescues of the Planck/Sorkin seed $\sigma_0\sim 10^{-61}$ (soft squeeze $r\sim 64$, or $N_{\mathrm{pat}}\sim 10^{119}$ along the line of sight), the only soft-regime architecture that remains mathematically coherent is a **triple concurrent structure**:
 
 1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed; 
 2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$); 
@@ -199,7 +199,7 @@ That is a **conditional** prediction for weak lensing / slip programmes (Euclid,
 | Explain why $\Lambda$ is small via Planck pixel noise seen in BAO | Predict a **mesoscopic DE grain** and its light-path imprint |
 | Stretch $10^{-61}$ by geometry or soft squeezing | Change the counting object (R1) |
 | Put all signal into $H(z)$ | Prefer $\pi_T$ / slip / lensing (R2) |
-| Free $r\sim 64$ or free $N\sim 10^{119}$ | Forbidden (A3) |
+| Free $r\sim 64$ or free $N\sim 10^{119}$ | Excluded (A3) |
 
 ---
 
@@ -240,7 +240,7 @@ R2 anisotropic stress → light
 
 ## 9. One-sentence thesis
 
-> The only soft-regime, non-numerological route to a telescope-visible stochastic DE imprint is a **mesoscopic counting seed**, optionally dressed by **$\mathcal{O}(10)$ open gain**, read out through **anisotropic stress and light-path accumulation** at $\mathrm{RMS}(\gamma-1)\sim 10^{-4}$–$10^{-3}$, while keeping the isotropic residual under the DESI ceiling — not a rescue of $10^{-61}$ by magic amplifiers.
+> The only soft-regime, physically constrained route to a telescope-visible stochastic DE imprint is a **mesoscopic counting seed**, optionally dressed by **$\mathcal{O}(10)$ open gain**, read out through **anisotropic stress and light-path accumulation** at $\mathrm{RMS}(\gamma-1)\sim 10^{-4}$–$10^{-3}$, while keeping the isotropic residual under the DESI ceiling — not a rescue of $10^{-61}$ by unphysical amplifiers.
 
 ---
 

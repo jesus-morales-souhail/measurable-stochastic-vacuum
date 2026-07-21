@@ -1,4 +1,4 @@
-# For referees: claim map, reading order, and formula sheet
+# Reading guide: statement of results, reading order, and formula sheet
 
 **Author:** Jesús Morales Souhail 
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
@@ -33,7 +33,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 2 | [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) | **Einstein+Morales slip wall + self-shielding inequality** |
 | 2b | [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md) | **Only natural amplifier: $\mathrm{RMS}=|\gamma-1|\sqrt{\chi/\ell_*}$** |
 | 3 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal equations (public model) |
-| 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, test-gated claims** |
+| 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, unit-tested claims** |
 | 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
@@ -98,7 +98,7 @@ N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \l
 $$
 
 
-### 3.7 Blackboard reduction ($d=3$, $\chi\sim L_{H}$, $\alpha\sim\mathcal{O}(1)$)
+### 3.7 Simplified presentation reduction ($d=3$, $\chi\sim L_{H}$, $\alpha\sim\mathcal{O}(1)$)
 
 
 $$
@@ -165,7 +165,7 @@ python scripts/lib_verified.py
 
 - bulk $\leftrightarrow$ $\Lambda$ (smooth mean), 
 - edge $\leftrightarrow$ grain $\sigma$ (shear / light), 
-- no backscattering $\leftrightarrow$ free-lunch channels closed.
+- no backscattering $\leftrightarrow$ unphysical amplification channels closed.
 
 It is **not** a condensed-matter derivation of dark energy.
 
@@ -173,7 +173,7 @@ It is **not** a condensed-matter derivation of dark energy.
 
 ## 7. Suggested evaluation criteria for referees
 
-1. Are hard claims limited to C1–C8 and backed by `pytest`? 
+1. Are documented results limited to C1–C9 and backed by `pytest`? 
 2. Is the DESI number used only as a bound, never to fit $\ell_{*}$? 
 3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$? 
 4. Are free $10^{56}$, $r\sim 64$, and $N\sim 10^{119}$ correctly rejected? 

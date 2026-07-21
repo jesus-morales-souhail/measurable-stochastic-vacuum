@@ -23,7 +23,7 @@ $$
 
 under the DESI residual ceiling — deep in the self-shielding regime relative to $\sigma_{\mathrm{exp}}\sim 0.03$. 
 
-The **only** amplification allowed by GR + statistics without numerology is **incoherent accumulation along the past null cone**:
+The **only** amplification allowed by GR + statistics without undeclared free parameters is **incoherent accumulation along the past null cone**:
 
 
 $$
@@ -32,7 +32,7 @@ $$
 
 
 For $\chi\sim(3$–$6)\times 10^{3} \mathrm{Mpc}$ and $\ell_{*}\sim 1$–$2 \mathrm{Mpc}$, $\sqrt{N}=\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$70)$. 
-Native $\sim 10^{-5}$–$10^{-4}$ becomes path $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ — at the **edge** of deep weak-lensing / RSD×lensing precision, **not** a free-lunch break of the wall, and **not** a rescue of $\sigma\sim 10^{-61}$.
+Native $\sim 10^{-5}$–$10^{-4}$ becomes path $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ — at the **edge** of deep weak-lensing / RSD×lensing precision, **not** a unphysical breakthrough of the wall, and **not** a rescue of $\sigma\sim 10^{-61}$.
 
 ---
 
@@ -93,7 +93,7 @@ $$
 $$
 
 
-Optional soft open map (still not free lunch):
+Optional soft open map (still not free amplification):
 
 
 $$
@@ -123,13 +123,13 @@ $$
 $$
 
 
-**What is forbidden**
+**Unphysical constructions**
 
 | Fantasy | Status |
 |:--------|:-------|
 | $r\sim 64$ local desqueezing of Sorkin | Ruled out (soft regime) |
 | $N\sim 10^{119}$ patches to lift Sorkin | Not available in our $\chi$ |
-| $\xi=\sigma_X$ for GRB LIV without derivation | Numerology |
+| $\xi=\sigma_X$ for GRB LIV without derivation | Ad hoc free-parameter tuning |
 | $\mathrm{RMS}=\sigma\times G_O\times\sqrt{N}$ as identity | **False** (wrong operator chain) |
 
 ## 3. Numerical atlas (verified)
@@ -173,23 +173,23 @@ Full table: `results/light_cone_integration_table.csv` (64 rows).
 | NP-A | $7.5\times 10^{-6}$ | $3.5\times 10^{-4}$ | $\times 47$ |
 | NP-B | $7.5\times 10^{-5}$ | $4.4\times 10^{-3}$ | $\times 59$ |
 
-**Honest verdict**
+**Assessment**
 
 - Path integration **softens** the wall: moves the signal from $\sim 10^{-5}$–$10^{-4}$ toward $\sim 10^{-3}$. 
 - It does **not** open a clean Euclid detection of $\lvert\gamma-1\rvert\sim 0.03$ under the DESI residual ceiling. 
-- It **does** place the signal at the **technical frontier** of deep multi-bin lensing tomography and cross-correlations — the only non-numerological place left to look. 
+- It **does** place the signal at the **technical frontier** of deep multi-bin lensing tomography and cross-correlations — the only physically constrained place left to look. 
 - Sorkin remains dead even with path integration.
 
 ---
 
 ## 4. Why this is the only solid amplifier
 
-| Mechanism | Allowed by GR+stats? | Numerology? | Effect |
+| Mechanism | Allowed by GR+stats? | Ad hoc free-parameter tuning? | Effect |
 |:----------|:---------------------|:------------|:-------|
 | Past light-cone $\sqrt{N}$ | **Yes** | No | $\times 10$–$70$ |
 | Soft open $G_O=e^{2r}$, $r=\mathcal{O}(1)$ | Kinematically yes | No if $r$ not fitted to DESI | $\times 1$–$20$ |
-| Hard $r\sim 64$ | Would be new physics | **Yes** if undderived | Forbidden here |
-| Local free $10^{56}$ | No | **Yes** | Forbidden |
+| Hard $r\sim 64$ | Would be new physics | **Yes** if undderived | Excluded here |
+| Local free $10^{56}$ | No | **Yes** | Excluded |
 | GRB $\xi=\sigma_X$ | Not derived from Einstein+Morales | **Yes** | Not a wall equation |
 
 **Geometry of the past light cone is the only natural amplifier in this framework.**
@@ -216,7 +216,7 @@ YES: integrate observables along the past null cone
 
 ---
 
-## 6. One-slide summary
+## 6. Summary
 
 ```text
 LOCAL WALL: |γ−1|_loc = 2 ε σ_res (ΩΛ/Ωm) / [(1+z)³ |δ_m|] ~ 10^{-4}
@@ -226,9 +226,9 @@ LIGHT CONE: RMS_path = |γ−1|_loc × √(χ/ℓ*)
  ↓ √N ~ 40–70 for z_s=1.5, ℓ*~1–2 Mpc
 
 RESULT: RMS_path ~ 3×10^{-4} (NP-A) … 4×10^{-3} (NP-B)
- → frontier of deep lensing, not a free-lunch discovery
+ → frontier of deep lensing, not a unjustified detection claim
 
-FORBIDDEN: r~64, N~10^{119}, ξ=σ_X without derivation
+EXCLUDED: r~64, N~10^{119}, and ξ=σ_X without derivation
 ```
 
 ---

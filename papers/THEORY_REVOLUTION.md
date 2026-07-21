@@ -2,7 +2,7 @@
 
 **Author:** Jesús Morales Souhail 
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Status:** Programme manifesto (not a detection paper) 
+**Status:** Programme manifesto (theoretical programme note) 
 **Date:** July 2026 
 **Verified claims only:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) 
 **Sister empirical corpus:** [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
@@ -17,7 +17,7 @@ The sister DESI corpus has already established, under stated pipelines:
 |:-------|:------------|
 | $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) | Bound on **effective** residual amplitude |
 | Coherent tachyonic growth excluded | One hard amplifier class is dead |
-| Soft amplifiers fail by many decades | No free lunch from $\sigma_0\sim 10^{-61}$ to $10^{-5}$ |
+| Soft amplifiers fail by many decades | No free amplification from $\sigma_0\sim 10^{-61}$ to $10^{-5}$ |
 | Slip with BAO-scale $\sigma$ is amplitude-starved | Right operator, insufficient amplitude |
 
 Therefore a measurable stochastic dark-energy sector is not “one more $\sigma$ in $\Lambda$CDM”. 
@@ -25,9 +25,9 @@ It requires a **minimal package of rule changes**, coupled, with **self-shieldin
 
 ---
 
-## 1. Anti-numerology rule
+## 1. Scale-fixing rule
 
-A construction is **numerological** if it inserts a factor $\sim 10^{56}$ (or free $N_{\mathrm{eff}}$, $r$, $\varepsilon$) **without a principle that fixes the scale**.
+A construction is **ad hoc** if it inserts a factor $\sim 10^{56}$ (or free $N_{\mathrm{eff}}$, $r$, $\varepsilon$) **without a principle that fixes the scale**.
 
 Admissible work must:
 
@@ -98,4 +98,4 @@ Anisotropic stress $\pi_T$ wrinkles $\Phi,\Psi$; photons accumulate lensing/ISW-
 
 ---
 
-*Manifesto only. Cite [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) for hard claims.*
+*Manifesto only. Cite [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) for documented results.*

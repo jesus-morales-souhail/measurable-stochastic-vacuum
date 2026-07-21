@@ -98,7 +98,7 @@ def main() -> None:
             f"{r['DESI_res_OK']}"
         )
     print()
-    print("Verdict: path boost is O(10-70) for mesoscopic cells — frontier, not free lunch.")
+    print("Verdict: path boost is O(10-70) for mesoscopic cells — frontier, not free amplification.")
 
 
 if __name__ == "__main__":

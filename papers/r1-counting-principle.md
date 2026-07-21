@@ -6,7 +6,7 @@
 **Date:** July 2026 
 **Code:** [`scripts/r1_counting_landscape.py`](../scripts/r1_counting_landscape.py) · [`scripts/lib_verified.py`](../scripts/lib_verified.py) 
 
-> **Hard claims:** cite only [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`). This note is discussion/expansion.
+> **Documented results:** see [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`). This note is discussion/expansion.
 
 ---
 

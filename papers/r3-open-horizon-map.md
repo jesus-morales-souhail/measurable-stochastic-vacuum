@@ -7,13 +7,13 @@
 **Code:** [`scripts/r3_open_horizon_map.py`](../scripts/r3_open_horizon_map.py) · [`scripts/lib_verified.py`](../scripts/lib_verified.py) 
 **Input:** WP1 seed landscape 
 
-> **Hard claims:** cite only [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`).
+> **Documented results:** see [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`).
 
 ---
 
 ## 1. Question
 
-Given $\sigma_{0,\mathrm{eff}}$ from R1, can open-horizon dynamics produce a telescope residual without free lunch?
+Given $\sigma_{0,\mathrm{eff}}$ from R1, can open-horizon dynamics produce a telescope residual without free amplification?
 
 ---
 
@@ -54,7 +54,7 @@ Defaults in the soft regime: $G_F=1$ (freeze preserves), $G_U=1$ (late $\Delta x
 ## 5. Open (not claimed)
 
 Microscopic horizon Lindblad model fixing $r\gg 1$. 
-Until derived, $r\sim 64$ is forbidden as a dial (A3, A5).
+Until derived, $r\sim 64$ is excluded as a free parameter (A3, A5).
 
 ---
 
