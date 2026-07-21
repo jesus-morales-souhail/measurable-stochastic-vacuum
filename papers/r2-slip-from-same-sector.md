@@ -26,6 +26,9 @@ Esta es la **opción de operador correcta** (R2 / Option 0): el canal de la grie
 
 ---
 
+> **Hard claims:** cite only [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`). This file is discussion/expansion.
+
+
 ## 2. Lo que esta idea **no** concede (anti-free-lunch)
 
 Es tentador decir: “un ruido de $10^{-61}$ se hace visible porque el universo en expansión actúa como un telescopio gigante, igual que las fluctuaciones del Big Bang se convirtieron en galaxias”.

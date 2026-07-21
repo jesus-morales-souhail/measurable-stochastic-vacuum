@@ -20,7 +20,10 @@ WP2 pregunta:
 El audit del repo hermano ya mató: desqueezing $e^{2r}\sim\mathcal{O}(10)$, freeze-out tardío ganancia $=1$, $\sqrt{N}$ doble-contado. Aquí se **formaliza** el mapa residual y se separan dos salidas honestas:
 
 | Salida | Significado |
-|:-------|:------------|
+|:---
+
+> **Hard claims:** cite only [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`). This file is discussion/expansion.
+----|:------------|
 | **Ganancia acotada** | $G \le G_{\max}$ derivado; si $\sigma_{0,\mathrm{eff}}$ es Sorkin, residual sigue muerto |
 | **Ganancia útil** | Solo si R1 ya puso $\sigma_{0,\mathrm{eff}}$ en la banda; R3 no multiplica $10^{56}$ |
 

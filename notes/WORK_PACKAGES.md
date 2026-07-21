@@ -2,7 +2,9 @@
 
 Sin numerología: cada WP produce un **objeto derivado**, no un fit a DESI.
 
-**Última actualización:** julio 2026 (WP1 parcial entregado; WP2 abierto)
+**Última actualización:** julio 2026
+
+**Citas publicables:** solo [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` en verde. Los WP son expansión.
 
 ---
 

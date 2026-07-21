@@ -25,6 +25,9 @@ donde $L$ es la región que define las correlaciones del residual (parche causal
 
 ---
 
+> **Hard claims:** cite only [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) (gated by `pytest -q`). This file is discussion/expansion.
+
+
 ## 2. Paisaje derivado
 
 Con $L_H=c/H_0\simeq 4451$ Mpc, $L_P=1.62\times10^{-35}$ m (fiducial $H_0=67.4$):
