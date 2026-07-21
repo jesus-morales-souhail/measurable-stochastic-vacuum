@@ -5,8 +5,9 @@
 **Date:** July 2026  
 **Status:** Derivation + verified numerical atlas (English, referee-ready)  
 **Code:** `scripts/lib_verified.py` · `scripts/light_cone_atlas.py`  
-**Data:** `results/light_cone_integration_table.csv`  
-**Related:** [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) · [`NARROW_PATH.md`](NARROW_PATH.md) · [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md)
+**Data:** [`results/light_cone_integration_table.csv`](../results/light_cone_integration_table.csv)  
+**Figure:** [`figures/past_light_cone_rms.png`](../figures/past_light_cone_rms.png)  
+**Related:** [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) · [`NARROW_PATH.md`](NARROW_PATH.md) · [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) · [`FOR_REFEREES.md`](FOR_REFEREES.md)
 
 ---
 
@@ -249,13 +250,26 @@ FORBIDDEN:    r~64, N~10^{119}, ξ=σ_X without derivation
 
 ---
 
-## 7. Reproduce
+## 7. Figure (generated in-repo)
+
+![Past light-cone boost and RMS](../figures/past_light_cone_rms.png)
+
+Left: path boost $\sqrt{\chi/\ell_*}$ vs source redshift for NP-A and NP-B.  
+Right: $\mathrm{RMS}_{\mathrm{path}}$ (log scale) vs the indicative experimental floor $\sigma_{\mathrm{exp}}\sim 0.03$.
+
+---
+
+## 8. Reproduce
 
 ```bash
 cd measurable-stochastic-vacuum
 pytest -q
 python scripts/light_cone_atlas.py
-# writes results/light_cone_integration_table.csv
+python scripts/simple_as_lambda.py
+# outputs:
+#   results/light_cone_integration_table.csv
+#   figures/past_light_cone_rms.png
+#   figures/past_light_cone_rms.pdf
 ```
 
 ---

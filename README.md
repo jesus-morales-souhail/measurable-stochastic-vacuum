@@ -91,10 +91,13 @@ Under $N_{\mathrm{eff}}=(L/\ell_{*})^{d}$, $\sigma_{0,\mathrm{eff}}=(\ell_{*}/L)
 ```bash
 python scripts/lib_verified.py
 python scripts/simple_as_lambda.py
+python scripts/light_cone_atlas.py          # CSV + use with figures/
 python scripts/r1_counting_landscape.py
 python scripts/r3_open_horizon_map.py
 python scripts/r2_light_path_accumulation.py
 ```
+
+**Figure:** [`figures/past_light_cone_rms.png`](figures/past_light_cone_rms.png)
 
 ---
 
