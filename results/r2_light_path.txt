@@ -1,0 +1,57 @@
+========================================================================
+WP3 / R2 — light-path accumulation of anisotropic DE stress
+========================================================================
+Source plane z=1.5, χ ≈ 4482.1 Mpc
+Hubble scale c/H0 ≈ 4448 Mpc
+MC paths per case: 8000
+
+Physics: π_T = ε σ ρ_X  →  |γ-1| = 2 ε σ (ρ_X/ρ_m)/δ_m
+Noise need NOT change global H(z); it wrinkles Φ,Ψ; light integrates.
+Accumulation is geometric (path / correlation length), NOT 10^56 free lunch.
+
+case                                        |γ-1|_loc      N_pat    RMS_incoh     coherent
+------------------------------------------------------------------------------------------
+Sorkin + Planck cell                        8.949e-62  4.482e+15    8.949e-56    8.949e-56
+Sorkin + ell_*=1 Mpc                        8.949e-62  4.482e+03    5.991e-60    4.011e-58
+WP1 meso d=2 (ell~0.04 Mpc, σ=1e-5)         7.457e-06  1.121e+05    2.496e-03    8.356e-01
+WP1 meso d=3 (ell~2 Mpc, σ=1e-5)            7.457e-06  2.134e+03    3.445e-04    1.592e-02
+DESI ceiling σ_X (a posteriori)             1.119e-04  4.482e+02    2.368e-03    5.014e-02
+DESI ceiling, ε=0.1                         1.119e-05  4.482e+02    2.368e-04    5.014e-03
+
+--- Comparison to observational floors (order-of-magnitude) ---
+  Maus |γ-1| scale     ~ 0.17
+  Sakr forecast floor  ~ 0.05
+  Shear rms floor      ~ 0.001  (schematic)
+  ISW-like floor       ~ 1e-05   (schematic)
+
+--- Monte Carlo path sum (mesoscopic σ=1e-5, ell=2.1 Mpc, ε=1) ---
+  single-patch |γ-1|     = 7.457e-06
+  N_patches              = 2134.3
+  analytic RMS (√N)      = 3.445e-04
+  MC RMS (chunk mean)    = 3.465e-04
+  MC p95 |sum| (mean)    = 6.706e-04
+
+--- Inflation analogy (correct scale comparison) ---
+  Primordial curvature ζ ~ 1e-5 (after inflation) → structure / galaxies.
+  That is NOT late-time Sorkin 1e-61 stretched by Δx=O(1).
+  'Universe as telescope' for galaxies used an already large seed.
+
+--- Max geometric gain √N along z=1.5 path ---
+  ell_*=0.04   Mpc  N≈112052.4  √N≈  334.74  (gain on dimensionless slip, not on 1e-61→1e-5)
+  ell_*=1.0    Mpc  N≈  4482.1  √N≈   66.95  (gain on dimensionless slip, not on 1e-61→1e-5)
+  ell_*=2.1    Mpc  N≈  2134.3  √N≈   46.20  (gain on dimensionless slip, not on 1e-61→1e-5)
+  ell_*=10.0   Mpc  N≈   448.2  √N≈   21.17  (gain on dimensionless slip, not on 1e-61→1e-5)
+  ell_*=100.0  Mpc  N≈    44.8  √N≈    6.69  (gain on dimensionless slip, not on 1e-61→1e-5)
+
+--- Free-lunch check: √N needed to lift Sorkin slip to Sakr floor 0.05 ---
+  local Sorkin |γ-1| = 8.949e-62
+  required √N        = 5.587e+59  =>  N = 3.122e+119
+  available √N (ell=1 Mpc) = 66.9
+  Deficit: many decades. Path accumulation does NOT replace R1.
+
+VERDICT:
+  Right idea: measure π_T via light (lensing/slip/ISW), not only H(z).
+  Wrong hope: Gpc paths do not multiply 1e-61 into 1e-5.
+  Geometric gain ~ √N = O(10–100) for Mpc cells over Gpc paths.
+  Measurable wrinkles still require WP1 mesoscopic σ_0,eff (or hard R3).
+  Act IV inheritance confirmed with path integral language.

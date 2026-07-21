@@ -29,12 +29,13 @@ This is **not** a re-fit of BAO residuals. Empirical **limits and exclusions** a
 | WP | Status | Document | Script |
 |----|--------|----------|--------|
 | **WP1 / R1** | Parcial | [`papers/r1-counting-principle.md`](papers/r1-counting-principle.md) | [`scripts/r1_counting_landscape.py`](scripts/r1_counting_landscape.py) |
-| **WP2 / R3** | Teorema de no-ganancia (régimen suave) | [`papers/r3-open-horizon-map.md`](papers/r3-open-horizon-map.md) | [`scripts/r3_open_horizon_map.py`](scripts/r3_open_horizon_map.py) |
-| WP3 / R2 | Pendiente | — | — |
+| **WP2 / R3** | No-ganancia suave | [`papers/r3-open-horizon-map.md`](papers/r3-open-horizon-map.md) | [`scripts/r3_open_horizon_map.py`](scripts/r3_open_horizon_map.py) |
+| **WP3 / R2** | Path + slip OOM | [`papers/r2-slip-from-same-sector.md`](papers/r2-slip-from-same-sector.md) | [`scripts/r2_light_path_accumulation.py`](scripts/r2_light_path_accumulation.py) |
 
 ```bash
 python scripts/r1_counting_landscape.py
 python scripts/r3_open_horizon_map.py
+python scripts/r2_light_path_accumulation.py
 ```
 
 ---

@@ -66,14 +66,24 @@ Criterio de aceptación: o $A_0$ en banda telescópica desde R1+R3, o cota de ga
 
 ---
 
-## WP3 — R2: slip desde la misma microfísica
+## WP3 — R2: slip + acumulación en la luz
 
 | | |
 |:--|:--|
-| **Estado** | Pendiente (después de WP2) |
-| **Entregable** | `papers/r2-slip-from-same-sector.md` |
+| **Estado** | **Parcial / operador + path cerrados** |
+| **Entregable** | [`papers/r2-slip-from-same-sector.md`](../papers/r2-slip-from-same-sector.md) · [`scripts/r2_light_path_accumulation.py`](../scripts/r2_light_path_accumulation.py) |
 
-$\varepsilon$ / $\pi_T$ no libres. Predicción $\lvert\gamma-1\rvert$ o cota.
+### Qué está derivado
+
+- $\pi_T=\varepsilon\sigma\rho_X \to |\gamma-1|$ (mapa local Option 0).  
+- Acumulación geométrica $\mathrm{RMS}\sim|\gamma-1|\sqrt{\chi/\ell_*}$ + Monte Carlo.  
+- $\sqrt{N}\sim\mathcal{O}(10$–$10^{2})$ en caminos $z\sim 1.5$ — **no** $10^{56}$.  
+- Sorkin path-integrado = **cero estructural**; meso $\sigma\sim 10^{-5}$ → RMS $\sim 10^{-4}$–$10^{-3}$.
+
+### Qué sigue abierto
+
+- $\varepsilon$ desde simetría SDiff (no libre).  
+- hi_class / MGCAMB solo cuando $A_0$ y $\varepsilon$ estén fijados por principio.
 
 ---
 
