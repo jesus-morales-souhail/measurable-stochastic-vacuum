@@ -102,6 +102,6 @@ Pendiente. Criterios de muerte del paquete R1–R3.
 ## Orden
 
 ```
-WP0 ✓ → WP1 parcial ✓ → WP2 (ahora) → WP3 → WP4 → WP5
+WP0 ✓ → WP1 parcial ✓ → WP2 no-gain ✓ → WP3 path/slip parcial ✓ → WP4 → WP5
          └── R1a/b/c (principio de ℓ_*) en paralelo si hay candidato
 ```

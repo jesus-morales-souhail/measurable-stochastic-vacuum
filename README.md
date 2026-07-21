@@ -1,78 +1,80 @@
 # measurable-stochastic-vacuum
 
 **Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Status:** Theory programme (pre-construction) · **not** a DESI detection claim  
+**Status:** Theory programme with a **verified core** + open research questions  
 **Date:** July 2026  
 
 ---
 
-## What this repository is
+## Start here (publication spine)
 
-A **fundamental-theory** programme that asks a single question:
+| Document | Role |
+|:---------|:-----|
+| **[`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md)** | **Only hard claims** — counting, soft gain, slip+path; all covered by tests |
+| [`tests/test_verified.py`](tests/test_verified.py) | Automated verification (`pytest -q`) |
+| [`scripts/lib_verified.py`](scripts/lib_verified.py) | Library of verified identities |
 
-> Under what *minimal redefinition of physical rules* could late-time vacuum / dark-energy stochasticity be **both real and telescope-measurable**, without free-lunch numerology and without self-destruction (black-hole / energy barriers)?
+```bash
+pip install -r requirements.txt
+pytest -q
+```
 
-This is **not** a re-fit of BAO residuals. Empirical **limits and exclusions** already live in:
+**Sister empirical corpus (DESI bounds, not re-derived here):**  
+https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou
 
-| Repository | Role |
-|------------|------|
-| [`stochastic-dark-energy-ou`](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | DESI claim set: $\sigma_X$ bound, model kills, $10^{56}$ bottleneck, slip starvation |
-| [`stochastic-de-exploratory-notes`](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Scale/operator hygiene digressions (not cosmology claims) |
-| **this repo** | Theory package: which rules must change so the noise is *allowed* to be measurable |
+---
 
-**Read first:** [`papers/THEORY_REVOLUTION.md`](papers/THEORY_REVOLUTION.md)  
-**Self-shielding law:** [`papers/SELF_SHIELDING_AXIOMS.md`](papers/SELF_SHIELDING_AXIOMS.md)  
-**Work packages (live):** [`notes/WORK_PACKAGES.md`](notes/WORK_PACKAGES.md)
+## What is verified (one paragraph)
 
-### Derivations delivered
+Under a counting hypothesis $N_{\mathrm{eff}}=(L/\ell_*)^d$, the seed is $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$. The holographic Sorkin case is $\sigma_0\sim 10^{-61}$. Soft open gain $e^{2r}$ with $r=\mathcal{O}(1)$ is only $\mathcal{O}(10)$ and cannot lift Sorkin to $10^{-5}$ ($r\sim 64$ would be required). Sub-horizon anisotropic stress gives $|\gamma-1|=2\varepsilon\sigma(\rho_X/\rho_m)/|\delta_m|$; incoherent light-path accumulation multiplies by $\sqrt{\chi/\ell_*}=\mathcal{O}(10$–$10^{2})$ for Mpc cells on Gpc paths—not $10^{56}$. Measurability therefore requires a **mesoscopic counting cell** (principle still open) or a **derived** hard open map (not constructed).
 
-| WP | Status | Document | Script |
-|----|--------|----------|--------|
-| **WP1 / R1** | Parcial | [`papers/r1-counting-principle.md`](papers/r1-counting-principle.md) | [`scripts/r1_counting_landscape.py`](scripts/r1_counting_landscape.py) |
-| **WP2 / R3** | No-ganancia suave | [`papers/r3-open-horizon-map.md`](papers/r3-open-horizon-map.md) | [`scripts/r3_open_horizon_map.py`](scripts/r3_open_horizon_map.py) |
-| **WP3 / R2** | Path + slip OOM | [`papers/r2-slip-from-same-sector.md`](papers/r2-slip-from-same-sector.md) | [`scripts/r2_light_path_accumulation.py`](scripts/r2_light_path_accumulation.py) |
+---
+
+## What is programme narrative (not yet verified physics)
+
+| Document | Role |
+|:---------|:-----|
+| [`papers/THEORY_REVOLUTION.md`](papers/THEORY_REVOLUTION.md) | Manifesto R1–R2–R3 |
+| [`papers/SELF_SHIELDING_AXIOMS.md`](papers/SELF_SHIELDING_AXIOMS.md) | Method axioms A0–A8 |
+| [`notes/WORK_PACKAGES.md`](notes/WORK_PACKAGES.md) | Live WP status |
+| WP1–WP3 notes (`r1-…`, `r3-…`, `r2-…`) | Expanded derivations / discussion; **cite VERIFIED_RESULTS for hard claims** |
+
+### Open (explicitly not claimed)
+
+- Principle fixing galactic $\ell_*$ (R1a/b/c)  
+- Horizon bath with $r\sim 64$  
+- $\varepsilon$ from SDiff symmetry  
+- Detection forecasts as certainties  
+
+---
+
+## Demo scripts (use verified library logic)
 
 ```bash
 python scripts/r1_counting_landscape.py
 python scripts/r3_open_horizon_map.py
 python scripts/r2_light_path_accumulation.py
+python scripts/lib_verified.py
 ```
 
 ---
 
-## One-sentence thesis
+## Repository map
 
-A measurable stochastic dark sector is not a parameter tweak on $\Lambda$CDM; it is a **coupled triple redefinition** of (i) the counting scale of spacetime discreteness, (ii) the equivalence structure of gravity (slip), and (iii) the information-theoretic status of the cosmological horizon as an open system — and the theory must **predict its own blind spots**.
-
----
-
-## Three rule changes (package, not menu)
-
-| # | Rule broken / redefined | Physical content | Connects to old corpus |
-|---|-------------------------|------------------|------------------------|
-| **R1** | Local continuum / Lorentz-complete spacetime at *all* scales | Effective discrete cells with $N_{\mathrm{eff}} \ll N_{\mathrm{BH}}$ set the **seed**, not a free $A_0$ | Route 1 |
-| **R2** | Strong equivalence (universal coupling of light and mass to the same potentials) | Anisotropic / sector-selective stress $\Rightarrow \gamma=\Phi/\Psi \neq 1$ as the **operator** of leakage | Option 0 / SDiff gap |
-| **R3** | Global unitarity of the observable patch alone | Open-system / horizon bath dynamics can **feed** residual variance without local free lunch | Desqueezing / Act III |
-
-**Hard rule of this programme:** R1–R3 are **not** three independent knobs. A paper that uses only one of them as a free multiplier is **out of scope** (numerology).
-
----
-
-## What this programme forbids
-
-- Multiplying $\sigma_0 \sim 10^{-61}$ by $10^{56}$ “by hand.”
-- Claiming Euclid will see Sorkin noise without a derived map $\sigma_0 \to A_0$.
-- Using lab optics / tesseracts as cosmological amplifiers ([exploratory fence](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes)).
-- Homemade Boltzmann codes before a target amplitude is *derived* from R1+R3.
-- Treating slip as a shortcut that evades the amplification problem (it does not, unless R1/R3 supply $A_0$).
+```
+papers/VERIFIED_RESULTS.md   ← cite this
+scripts/lib_verified.py      ← identities
+tests/test_verified.py       ← must stay green
+papers/r1,r2,r3-*.md         ← WP discussion
+papers/THEORY_REVOLUTION.md  ← programme only
+```
 
 ---
 
 ## License
 
-- Text: CC BY 4.0  
-- Code (when added): MIT  
+Code MIT · Author text CC BY 4.0  
 
 ## Contact
 
-**Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818
+**Jesús Morales Souhail** · jmskjym@gmail.com
