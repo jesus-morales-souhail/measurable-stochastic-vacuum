@@ -22,7 +22,7 @@ $$
 
 The excluded Sorkin seed is the special case $\ell_*=L_P$, $d=2$ (holographic count on the Hubble sphere): $\sigma_0\sim 10^{-61}$.
 
-**Not done here:** choosing $\ell_*$ to “enter Euclid” (forbidden by A3, A5).
+**Not done here:** choosing $\ell_*$ to “enter Euclid” (excluded by A3, A5).
 
 ---
 
