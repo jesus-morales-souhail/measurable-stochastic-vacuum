@@ -252,7 +252,7 @@ This note **does not re-derive** the DESI likelihood. It consumes those results 
 
 ---
 
-## 8. Reproducibility
+## 9. Reproducibility
 
 ```bash
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git
@@ -267,7 +267,7 @@ python scripts/r2_light_path_accumulation.py
 
 ---
 
-## 9. Suggested citation of *this* note
+## 10. Suggested citation of *this* note
 
 > Morales Souhail, J. (2026). *Verified results: counting seeds, soft open gain, and light-path slip.*  
 > GitHub: `measurable-stochastic-vacuum`, `papers/VERIFIED_RESULTS.md`.  

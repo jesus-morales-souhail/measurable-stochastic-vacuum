@@ -216,6 +216,28 @@ class TestNoFreeLunchCombined:
         assert 1e-4 < s20 < 5e-4
 
 
+class TestSimpleAsLambda:
+    """Blackboard reduction: RMS ~ sigma**(2/3) for d=3."""
+
+    def test_ell_from_sigma_d3(self):
+        L_H, _, _ = sorkin_holographic()
+        sigma = 1e-5
+        ell = ell_for_target_sigma(sigma, L_H, 3)
+        assert sigma_from_count(ell, L_H, 3) == pytest.approx(sigma, rel=1e-12)
+
+    def test_simple_power_matches_structure(self):
+        # ell = L * sigma**(2/3); sqrt(L/ell) * sigma = sigma * sigma**(-1/3) = sigma**(2/3)
+        sigma = 1e-5
+        L = 1.0
+        ell = L * sigma ** (2.0 / 3.0)
+        rms_geom = sigma * math.sqrt(L / ell)
+        assert rms_geom == pytest.approx(sigma ** (2.0 / 3.0), rel=1e-12)
+
+    def test_sorkin_simple_rms_invisible(self):
+        _, _, s0 = sorkin_holographic()
+        assert s0 ** (2.0 / 3.0) < 1e-40
+
+
 class TestNarrowPath:
     """DESI-safe mesoscopic architecture (NP-A / NP-B)."""
 
