@@ -38,6 +38,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
 | 5b | [`r1-open-kernel.md`](r1-open-kernel.md) | **Walls vs open kernel; R1d scale class (not a derivation)** |
 | 5c | [`lensing-rms-forecast-real-data.md`](lensing-rms-forecast-real-data.md) | **Path RMS vs Maus / Sakr / DESI MG / Stage-IV (real data)** |
+| 5d | [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md) | **Gordon & Wands spectator seed** (factor $\sim 45$, not $10^{56}$) |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
@@ -132,6 +133,7 @@ $$
 | C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_*$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
 | C11 | Scale arithmetic: $R_8=8/h$; $\ell_*(\sigma,d)$ and $\sigma(R_8,d)$ under counting; **$R_8$ proximity is $d=3$-specific** | `lib_verified` + `r1_open_kernel_scales.py` + tests |
 | C12 | Path RMS (NP-A/B) vs published Maus/Sakr/DESI-MG errors: mean slip still $\sim 10$–$25\times$ above NP-B | `lensing-rms-forecast-real-data.md` + script + tests |
+| C13 | Gordon & Wands: seed $H_{\mathrm{inf}}/2\pi$; growth factor $\sim 45$ (not $10^{56}$); distinct from Sorkin soft gap | `inflation-spectator-seed-gordon-wands.md` + `gordon_wands_factor45.py` |
 
 ### 4.2 Non-claims
 
@@ -148,6 +150,7 @@ $$
 | N9 | NP-B is **not** a derived prediction; detection of $\mathrm{RMS}\sim 10^{-3}$ is **not** automatic DE texture |
 | N10 | Null lensing at $\sim 10^{-3}$ does **not** kill the whole model — only the tested $(\ell_*,G_O,\varepsilon)$ corner |
 | N11 | Stage-IV sensitivity to **this** path-RMS statistic at $10^{-3}$ is **not** claimed established |
+| N12 | Gordon & Wands (2005) is **not** “the same $10^{56}$ wall”; factor $\sim 45$ for **their** target; **not** automatic DESI claim |
 
 ---
 

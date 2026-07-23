@@ -135,6 +135,12 @@ Anything that chooses \(\ell_*\) so that \(\sigma\) “enters Euclid” or “ma
 
 R1d is singled out **only** because its natural scale sits in the same mesoscopic band already forced by the counting inverse (§4.2). That is a **scale coincidence under the counting hypothesis**, not a derivation.
 
+### 6.0 Adjacent door (not R1 counting): inflationary spectator seed
+
+**Different category from R1a–R1d.** Gordon & Wands (2005), arXiv:astro-ph/0504132, start from a **light DE field during inflation** with \(\delta Q\sim H_{\mathrm{inf}}/(2\pi)\), **not** from \(\sigma_0\sim 10^{-61}\). Frozen evolution is insufficient for *their* CMB-isocurvature target under *their* tensor bound; they need \(\delta Q_f/\delta Q_i>45\) (Mexican-hat roll) — **order \(10^{1}\)–\(10^{2}\)**, not \(10^{56}\).
+
+That is **not** “the same wall with a new name.” It is: *change the UV seed physics so the holographic count is not the starting point.* Full programme note: [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md). **Not claimed:** automatic DESI residual prediction without map + covariance re-derivation.
+
 ### 6.1 R1d — nonlinear structure scale (hypothesis class)
 
 **Statement (conditional):**  

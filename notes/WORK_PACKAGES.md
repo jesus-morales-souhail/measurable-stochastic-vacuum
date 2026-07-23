@@ -20,6 +20,7 @@ WP notes are expansions, not independent hard-claim sources.
 | WP5 | Falsification | **Done** | [`wp5-falsification.md`](../papers/wp5-falsification.md) |
 | — | Narrow path (NP-A/B) | **Done** | [`NARROW_PATH.md`](../papers/NARROW_PATH.md) |
 | — | Lensing RMS vs real data | **Done (OOM gate)** | [`lensing-rms-forecast-real-data.md`](../papers/lensing-rms-forecast-real-data.md) |
+| — | Inflation spectator seed (G&W 2005) | **Revalidated (literature door)** | [`inflation-spectator-seed-gordon-wands.md`](../papers/inflation-spectator-seed-gordon-wands.md) |
 
 ---
 

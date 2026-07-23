@@ -20,6 +20,7 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 | **5** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
 | **5b** | [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) | **Walls vs open kernel** (R1 load-bearing gap) |
 | **5c** | [`papers/lensing-rms-forecast-real-data.md`](papers/lensing-rms-forecast-real-data.md) | **RMS vs Maus / Sakr / DESI MG (real data)** |
+| **5d** | [`papers/inflation-spectator-seed-gordon-wands.md`](papers/inflation-spectator-seed-gordon-wands.md) | **Spectator DE seed (Gordon & Wands; factor ∼45)** |
 | **6** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
 
 ```bash

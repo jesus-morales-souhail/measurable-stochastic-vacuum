@@ -323,6 +323,31 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestGordonWandsFactor45:
+    """Gordon & Wands (2005) Eqs. (25)–(27) arithmetic — not Sorkin 10^56."""
+
+    def test_scale_ratio_squared_near_45(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from gordon_wands_factor45 import (  # noqa: E402
+            PAPER_FACTOR,
+            field_perturbation_ratio_from_scales,
+            energy_scale_ratio,
+        )
+
+        assert energy_scale_ratio() == pytest.approx(7.0)
+        r_q = field_perturbation_ratio_from_scales()
+        assert r_q == pytest.approx(49.0)
+        # paper quotes >45; O(10^1) not O(10^56)
+        assert abs(r_q - PAPER_FACTOR) / PAPER_FACTOR < 0.15
+        assert r_q < 100
+        assert r_q > 10
+
+    def test_not_sorkin_gap(self):
+        from gordon_wands_factor45 import field_perturbation_ratio_from_scales  # noqa: E402
+
+        assert field_perturbation_ratio_from_scales() < 1e6  # nowhere near 1e56
+
+
 class TestTwoAmplificationGaps:
     """Do not mix Euclid-target 10^56 with DESI-ceiling 10^57."""
 
