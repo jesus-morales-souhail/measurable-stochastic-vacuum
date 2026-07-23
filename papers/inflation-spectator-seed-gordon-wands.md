@@ -24,6 +24,8 @@ Gordon & Wands (2005) is a serious PRD calculation of **dark-energy isocurvature
 
 **For this programme:** this is the first literature pathway we have revalidated whose “how much is missing” is **not** \(G_{\mathrm{Euclid}}\sim 10^{56}\), but **depends on \(H_{\mathrm{inf}}\) (unmeasured) and on a derived post-inflation map**. It is a **different starting physics**, not a soft rescue of holographic Sorkin counting. It does **not** automatically become a DESI BAO residual prediction without a full re-derivation of seed → residual → covariance.
 
+**Next step (done as OOM atlas):** modern \(r\) → \(\delta Q\) → \(\sigma_\rho(\varepsilon_Q,A)\) vs residual band —  
+[`inflation-spectator-residual-atlas.md`](inflation-spectator-residual-atlas.md).
 ---
 
 ## 1. Respect and scope

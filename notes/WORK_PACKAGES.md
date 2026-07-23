@@ -21,6 +21,7 @@ WP notes are expansions, not independent hard-claim sources.
 | — | Narrow path (NP-A/B) | **Done** | [`NARROW_PATH.md`](../papers/NARROW_PATH.md) |
 | — | Lensing RMS vs real data | **Done (OOM gate)** | [`lensing-rms-forecast-real-data.md`](../papers/lensing-rms-forecast-real-data.md) |
 | — | Inflation spectator seed (G&W 2005) | **Revalidated (literature door)** | [`inflation-spectator-seed-gordon-wands.md`](../papers/inflation-spectator-seed-gordon-wands.md) |
+| — | Spectator → residual OOM atlas | **Done (OOM; map to BAO open)** | [`inflation-spectator-residual-atlas.md`](../papers/inflation-spectator-residual-atlas.md) |
 
 ---
 
@@ -71,13 +72,14 @@ L0–L4 failure levels; decision tree; checklist before any positive paper.
 ## Recommended order going forward
 
 ```
-Verified core (pytest) ──► R1a/b/c/d candidate (only real missing physics)
- ──► optional hard-R3 only if derived, not dialed
- ──► then Boltzmann if amplitude+ε fixed
+Verified core (pytest)
+ ──► R1a/b/c/d (mesoscopic cell principle)  OR  spectator inflation seed (H_inf, A, ε_Q)
+ ──► map seed → BAO residual kernel / slip (still open for spectator)
+ ──► a posteriori DESI / r / w_Q  (never fit dials to DESI)
 ```
 
 Do **not** re-open soft amplification of Sorkin (measured walls).  
-Do **not** fit $\ell_*$ to DESI or $R_8$/S$_8$.
+Do **not** fit $\ell_*$, $A$, or $\varepsilon_Q$ to DESI or $R_8$/S$_8$.
 
 ---
 

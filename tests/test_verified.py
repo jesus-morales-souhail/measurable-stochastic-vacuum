@@ -323,6 +323,34 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestInflationSpectatorResidualAtlas:
+    """Modern r → δQ → σ_ρ atlas (not a DESI fit)."""
+
+    def test_delta_q_at_r_036(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from inflation_spectator_residual_atlas import delta_q_over_mp  # noqa: E402
+
+        d = delta_q_over_mp(0.036)
+        assert 2e-6 < d < 5e-6
+
+    def test_a45_eps005_in_residual_decade(self):
+        from inflation_spectator_residual_atlas import sigma_rho  # noqa: E402
+
+        s = sigma_rho(0.036, 0.05, 45.0)
+        assert 1e-5 < s < 1.5e-4
+
+    def test_frozen_very_flat_below_euclid(self):
+        from inflation_spectator_residual_atlas import sigma_rho  # noqa: E402
+
+        s = sigma_rho(0.036, 1e-4, 1.0)
+        assert s < 1e-6
+
+    def test_spectator_orders_above_sorkin(self):
+        from inflation_spectator_residual_atlas import delta_q_over_mp  # noqa: E402
+
+        assert delta_q_over_mp(0.036) / 1e-61 > 1e50
+
+
 class TestGordonWandsFactor45:
     """Gordon & Wands (2005) Eqs. (25)–(27) arithmetic — not Sorkin 10^56."""
 
