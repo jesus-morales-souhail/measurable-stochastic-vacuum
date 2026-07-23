@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from lib_verified import (  # noqa: E402
     L_P_M,
+    amplification_gap,
     comoving_distance_mpc,
     ell_for_target_sigma,
     ell_mpc_for_sigma,
@@ -320,6 +321,30 @@ class TestNarrowPath:
         """sigma0=1e-5 and r=1.5 => sigma_res > 1.5e-4 (must be clipped to NP-B)."""
         sres = residual_soft_map(1e-5, r=1.5)
         assert sres > 1.5e-4
+
+
+class TestTwoAmplificationGaps:
+    """Do not mix Euclid-target 10^56 with DESI-ceiling 10^57."""
+
+    def test_euclid_gap_is_about_10_to_56(self):
+        g = amplification_gap(1e-5)
+        assert 5e55 < g < 2e56
+        assert math.log10(g) == pytest.approx(55.93, abs=0.05)
+
+    def test_desi_gap_is_about_10_to_57(self):
+        g = amplification_gap(1.5e-4)
+        assert 5e56 < g < 3e57
+        assert math.log10(g) == pytest.approx(57.10, abs=0.05)
+
+    def test_desi_over_euclid_is_exactly_15(self):
+        assert amplification_gap(1.5e-4) / amplification_gap(1e-5) == pytest.approx(15.0)
+
+    def test_slip_decreases_with_z_at_fixed_delta(self):
+        """(1+z)^3 is in the denominator of (W)."""
+        s0 = slip_deviation(1.0, 1.5e-4, 0.0, 1.0)
+        s1 = slip_deviation(1.0, 1.5e-4, 1.0, 1.0)
+        assert s0 > s1
+        assert s0 == pytest.approx(6.52e-4, rel=0.02)
 
 
 class TestLensingRealDataCompare:

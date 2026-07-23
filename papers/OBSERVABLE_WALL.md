@@ -98,6 +98,9 @@ $$
 $$
 
 
+**\(z\)-dependence (sign check):** \((1+z)^3\) sits in the **denominator**. For fixed \(\lvert\delta_m\rvert=\mathcal{O}(1)\), \(\lvert\gamma-1\rvert\) **decreases** with redshift because \(\rho_m/\rho_X\) grows. The table in §3 is consistent with (W); a reading that \(\lvert\gamma-1\rvert\propto(1+z)^3\) would place the expansion factor in the wrong place.
+
+
 **That is the equation.** 
 Einstein + Newton background + Morales residual definition. No undeclared free parameters.
 
@@ -145,12 +148,12 @@ $$
 
 With $\lvert\gamma-1\rvert_{\max}\sim(2$–$7)\times 10^{-4}$ and
 
-| Experiment | $\sigma_{\mathrm{exp}}(\gamma)$ (indicative) | Factor $S_{\mathrm{pred}}/\sigma_{\mathrm{exp}}$ |
-|:-----------|:-----------------------------------------------|:--------------------------------------------------|
-| DESI-era slip (Maus-like $\mathcal{O}(0.1)$) | $\sim 0.1$ | $\sim 10^{-3}$ |
-| Euclid-like forecast | $\sim 0.03$–$0.05$ | $\sim 10^{-2}$ |
+| Experiment | $\sigma_{\mathrm{exp}}(\gamma)$ (indicative) | Factor $\sigma_{\mathrm{exp}}/S_{\mathrm{pred}}$ (how many× below) |
+|:-----------|:-----------------------------------------------|:--------------------------------------------------------------------|
+| DESI-era slip (Maus $\sigma(\gamma)\sim 0.11$) | $\sim 0.1$ | $\sim 150$–$500\times$ |
+| Euclid-like mean-slip floor (programme OOM) | $\sim 0.03$ | $\sim 50$–$150\times$ ($\sim 300\times$ at mid-range $10^{-4}/0.03$) |
 
-**Interpretation:** under Einstein+(M1) and the BAO residual ceiling, the model **predicts a signal the experiment cannot reach**. That is experimental self-shielding of this channel — not a failure of the derivation.
+**Interpretation:** under Einstein+(M1) and the BAO residual ceiling, the model **predicts a local slip signal the experiment cannot reach**. That is experimental self-shielding of this channel — not a failure of the derivation. (Path accumulation softens but does not erase this wall for DESI-safe amplitudes; see [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md).)
 
 ---
 

@@ -192,6 +192,20 @@ def r_needed_for_target(sigma0: float, target: float) -> float:
     return 0.5 * math.log(target / sigma0)
 
 
+def amplification_gap(target: float, H0_km_s_mpc: float = H0_KM_S_MPC) -> float:
+    """
+    G = target / sigma_0 with holographic Sorkin sigma_0 = L_P/L_H.
+
+    Use target=1e-5  → G_Euclid ~ 8.5e55  (label ~10^56)
+    Use target=1.5e-4 → G_DESI  ~ 1.27e57 (label ~10^57)
+    Do not mix labels.
+    """
+    _, _, s0 = sorkin_holographic(H0_km_s_mpc)
+    if target <= 0:
+        raise ValueError("target must be positive")
+    return target / s0
+
+
 # ---------------------------------------------------------------------------
 # R1 open-kernel scale anchors (arithmetic only — not a derivation of ell_*)
 # ---------------------------------------------------------------------------

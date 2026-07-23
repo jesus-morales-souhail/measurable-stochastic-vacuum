@@ -188,7 +188,7 @@ It is **not** a condensed-matter derivation of dark energy.
 1. Are documented results limited to C1–C11 and backed by `pytest`? 
 2. Is the DESI number used only as a bound, never to fit $\ell_{*}$? 
 3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$? 
-4. Are free $10^{56}$, $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls**? 
+4. Are free $10^{56}$ (Euclid target) / $10^{57}$ (DESI ceiling), $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls** — without mixing the two gap labels? 
 5. Are open problems (N1–N3, N8–N11) stated without hype — especially the R1 open kernel? 
 6. Is any $R_8$ / S$_8$ discussion limited to scale class + non-claim (C11 / N8)? 
 7. Is NP-B / $\mathrm{RMS}\sim 10^{-3}$ free of binary “discovery / model death” language (N9–N11; `NARROW_PATH` §5.1)?
