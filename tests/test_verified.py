@@ -323,6 +323,26 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestH0RunningGeometry:
+    """H0 ratio + z_eq + path counts (no H0 fit)."""
+
+    def test_shoes_planck_ratio(self):
+        assert 73.0 / 67.4 == pytest.approx(1.083, rel=1e-3)
+
+    def test_z_eq_near_0_3(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from h0_running_geometry import z_eq_matter_de  # noqa: E402
+
+        assert 0.25 < z_eq_matter_de() < 0.35
+
+    def test_patch_count_grows_through_running_window(self):
+        R8 = r8_mpc()
+        n05 = comoving_distance_mpc(0.5) / R8
+        n07 = comoving_distance_mpc(0.7) / R8
+        assert n05 > 100
+        assert n07 > n05
+
+
 class TestInflationSpectatorResidualAtlas:
     """Modern r → δQ → σ_ρ atlas (not a DESI fit)."""
 

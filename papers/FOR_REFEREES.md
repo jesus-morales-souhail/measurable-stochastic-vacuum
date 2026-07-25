@@ -40,6 +40,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5c | [`lensing-rms-forecast-real-data.md`](lensing-rms-forecast-real-data.md) | **Path RMS vs Maus / Sakr / DESI MG / Stage-IV (real data)** |
 | 5d | [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md) | **Gordon & Wands spectator seed** (factor $\sim 45$, not $10^{56}$) |
 | 5e | [`inflation-spectator-residual-atlas.md`](inflation-spectator-residual-atlas.md) | **Modern $r\to\sigma_\rho$ atlas** — residual-band windows without $10^{56}$ |
+| 5f | [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md) | **H0 running + time-delay multi-path** vs open kernel (bridge only) |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
@@ -154,6 +155,7 @@ $$
 | N11 | Stage-IV sensitivity to **this** path-RMS statistic at $10^{-3}$ is **not** claimed established |
 | N12 | Gordon & Wands (2005) is **not** “the same $10^{56}$ wall”; factor $\sim 45$ for **their** target; **not** automatic DESI claim |
 | N13 | Atlas windows $(r,A,\varepsilon_Q)$ are **not** DESI fits; $\sigma_\rho\not\equiv\sigma_X$ without map |
+| N14 | Brachistochrone / H0-running note does **not** solve Hubble tension or derive $\ell_*$ |
 
 ---
 

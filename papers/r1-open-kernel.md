@@ -199,6 +199,8 @@ Until (1)–(2) exist, **S\(_8\) is not a claim of this repository**. The honest
 **Sharpened open question (not an answer):**  
 *If a mesoscopic DE counting grain exists, why does its \(d=3\) inverse at residual-band amplitudes sit so close to the scale where an unresolved growth tension already lives — and why does that proximity fail for \(d\neq 3\)?*
 
+**Adjacent literature bridge (not a derivation):** H0-running / time-delay multi-path probes also care about the **late, post-equality path** (\(z\sim 0.3\)–\(0.7\)). See [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md). Same discipline: shared scale class ≠ fitted solution of the Hubble tension.
+
 ---
 
 ## 7. Illegal moves (BOUNDARY)

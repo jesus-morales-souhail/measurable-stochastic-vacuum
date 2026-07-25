@@ -22,6 +22,7 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 | **5c** | [`papers/lensing-rms-forecast-real-data.md`](papers/lensing-rms-forecast-real-data.md) | **RMS vs Maus / Sakr / DESI MG (real data)** |
 | **5d** | [`papers/inflation-spectator-seed-gordon-wands.md`](papers/inflation-spectator-seed-gordon-wands.md) | **Spectator DE seed (Gordon & Wands; factor ∼45)** |
 | **5e** | [`papers/inflation-spectator-residual-atlas.md`](papers/inflation-spectator-residual-atlas.md) | **Modern $r\to$ residual band atlas (the crack)** |
+| **5f** | [`papers/h0-running-brachistochrone-bridge.md`](papers/h0-running-brachistochrone-bridge.md) | **H0 running + multi-path light (bridge to open kernel)** |
 | **6** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
 
 ```bash
