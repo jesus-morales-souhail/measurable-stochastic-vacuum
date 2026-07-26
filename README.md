@@ -13,6 +13,7 @@ I do the data side in a sister repo. This one is the map of what is closed, what
 | Start here | |
 |:-----------|:--|
 | [`START_HERE.md`](START_HERE.md) | how to read the folder |
+| [`papers/PUBLISHABLE.md`](papers/PUBLISHABLE.md) | what can go in a draft (A/B/C layers) |
 | [`papers/INDEX.md`](papers/INDEX.md) | full list of notes |
 | [`BOUNDARY.md`](BOUNDARY.md) | what this repo is not allowed to claim |
 
@@ -39,8 +40,9 @@ If `pytest` is green, the algebraic identities I rely on still hold.
 ## Layout
 
 ```
+papers/PUBLISHABLE.md  publishable vs lab notes
 papers/core/           things I treat as stable
-papers/r1_kernel/      residual scale, coupling, survey tests
+papers/r1_kernel/      residual scale, coupling, CF4 kinematics
 papers/closed_walls/   routes I already killed with numbers
 papers/side_threads/   useful digressions
 papers/work_packages/  longer WP notes
@@ -57,11 +59,16 @@ Residual amplitude under counting: $\sigma=(\ell_{\ast}/L_H)^{3/2}$.
 
 If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) from the sister analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that and closed it on purpose.
 
-Main write-up: [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md).
+On **public Cosmicflows-4** I also measured local **matter** kinematics (block residual velocities and collapse-peak relief). That is context for gravity vs expansion near $R_{\mathrm{nl}}$. It is **not** a dark-energy residual map.
+
+Main write-up: [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md).  
+Publishable map: [`papers/PUBLISHABLE.md`](papers/PUBLISHABLE.md).
 
 ```bash
 python scripts/r1/r1_sandwich_derivation.py
 python scripts/r1/r1_T2_mock_pipeline.py
+python scripts/r1/r1_real_velocity_block_net.py
+python scripts/r1/r1_collapse_relief_cf4.py
 ```
 
 ---

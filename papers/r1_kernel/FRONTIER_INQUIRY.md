@@ -68,6 +68,14 @@ B  residual × structure tests  (falsifiability)   — parallel with A
 C  information metric          (later)
 ```
 
+**Done on the matter side (context, not residual detection):**  
+Cosmicflows-4 block-net $\eta(L)$ and collapse-peak velocity relief  
+([`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md), [`r1-collapse-relief.md`](r1-collapse-relief.md)).  
+That maps where gravity / peculiar motions compete with expansion near $R_{\mathrm{nl}}$.  
+It does **not** replace T2 (residual × structure still needs a residual map).
+
+Publishable packaging of the whole programme: [`../PUBLISHABLE.md`](../PUBLISHABLE.md).
+
 ---
 
 ## 4. Rules I keep
@@ -75,10 +83,11 @@ C  information metric          (later)
 1. Residual owns $\sigma\sim 10^{-5}$–$10^{-4}$ and $\ell_{\ast}\sim R_{\mathrm{nl}}$.  
 2. $H_0\sim 8\%$ is outsourced.  
 3. No free $10^{56}$, no post-hoc $\ell_{\ast}$.  
-4. Every formula: derived / OOM / postulate — say which.
+4. Every formula: derived / OOM / postulate — say which.  
+5. Matter kinematics and DE residual stay in separate sentences.
 
 ---
 
 ## 5. One line
 
-I bounded a mesoscopic residual and fixed its scale under local coupling to nonlinear matter. The open work is better $g$ from averaging/SDiff and residual–structure tests for Stage-IV — not the 8% Hubble gap.
+I bounded a mesoscopic residual and fixed its scale under local coupling to nonlinear matter. Local CF4 kinematics show the gravity–expansion grain in real data. The open work is better $g$ from averaging/SDiff and residual–structure tests for Stage-IV — not the 8% Hubble gap.

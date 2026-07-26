@@ -59,11 +59,15 @@ I write these notes at home, one step at a time. If you are reading for the firs
 | 5p | [`NOTE_uniqueness_residual_grain.md`](../r1_kernel/NOTE_uniqueness_residual_grain.md) | **Short paper draft (conditional theorem + numbers)** |
 | 5q | [`r1-sandwich-falsifiers.md`](../r1_kernel/r1-sandwich-falsifiers.md) | **Operational F1–F4 falsifiers** |
 | 5r | [`r1-a1-microphysics.md`](../r1_kernel/r1-a1-microphysics.md) | **Microphysics map for $g\chi\delta_m$** |
+| 5s | [`r1-real-velocity-block-net.md`](../r1_kernel/r1-real-velocity-block-net.md) | **CF4 block net $\eta(L)$ — matter kinematics only** |
+| 5t | [`r1-collapse-relief.md`](../r1_kernel/r1-collapse-relief.md) | **CF4 collapse peaks + velocity relief — matter only** |
+| 5u | [`PUBLISHABLE.md`](../PUBLISHABLE.md) | **A/B/C layers: what can go in a draft** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
 **Do not cite as hard results:** `THEORY_REVOLUTION.md`, WP discussion notes (`r1-counting-principle`, `r2-`, `r3-` except where they restate verified identities), exploratory optics repo.  
-**Cite `r1-open-kernel.md` for:** claim-boundary taxonomy (wall vs kernel) and scale arithmetic only — **not** for “$\ell_{\ast}=R_8$ is derived.”
+**Cite `r1-open-kernel.md` for:** claim-boundary taxonomy (wall vs kernel) and scale arithmetic only — **not** for “$\ell_{\ast}=R_8$ is derived.”  
+**Cite CF4 notes for:** local peculiar-velocity structure only — **not** for DE residual $\sigma_X$ or $g$.
 
 ---
 

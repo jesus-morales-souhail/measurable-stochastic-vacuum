@@ -17,6 +17,8 @@ The scientific question: can vacuum / dark-energy noise sit near $10^{-5}$–$10
 On the data side I already have $\sigma_X < 1.5\times 10^{-4}$ (95% CL).  
 On the theory side the working picture is $\ell_{\ast}\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ under a few axioms I write down explicitly.
 
+**What is publishable vs lab notes:** [`papers/PUBLISHABLE.md`](papers/PUBLISHABLE.md).
+
 ---
 
 ## How the folders are arranged
@@ -26,9 +28,10 @@ START_HERE.md      ← you are here
 README.md
 BOUNDARY.md         what I refuse to claim
 papers/
-  INDEX.md
+  PUBLISHABLE.md    A/B/C layers for a draft
+  INDEX.md          full catalogue
   core/             stable notes
-  r1_kernel/        residual scale work
+  r1_kernel/        residual scale + CF4 kinematics
   closed_walls/     dead ends (kept on purpose)
   side_threads/
   work_packages/
@@ -40,13 +43,14 @@ Nothing important was deleted when I reorganised; files only moved.
 
 ---
 
-## Three short reading paths
+## Four short reading paths
 
 **A — what can I actually claim? (~30 min)**  
-1. [`papers/core/FOR_REFEREES.md`](papers/core/FOR_REFEREES.md)  
-2. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md)  
-3. [`papers/core/SIMPLE_AS_LAMBDA.md`](papers/core/SIMPLE_AS_LAMBDA.md)  
-4. [`BOUNDARY.md`](BOUNDARY.md)
+1. [`papers/PUBLISHABLE.md`](papers/PUBLISHABLE.md)  
+2. [`papers/core/FOR_REFEREES.md`](papers/core/FOR_REFEREES.md)  
+3. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md)  
+4. [`papers/core/SIMPLE_AS_LAMBDA.md`](papers/core/SIMPLE_AS_LAMBDA.md)  
+5. [`BOUNDARY.md`](BOUNDARY.md)
 
 **B — residual scale argument (~45 min)**  
 1. [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md)  
@@ -56,10 +60,14 @@ Nothing important was deleted when I reorganised; files only moved.
 5. [`papers/r1_kernel/r1-lineA-g-from-averaging.md`](papers/r1_kernel/r1-lineA-g-from-averaging.md)
 
 **C — things I already closed**  
-Sister `amplification-gap.md`, plus everything under [`papers/closed_walls/`](papers/closed_walls/).
+Sister amplification gap, plus everything under [`papers/closed_walls/`](papers/closed_walls/).
 
-Open research lines (coupling, survey tests, and what I am not doing about $H_0$): [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md).  
-What is public data versus my own analysis: [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kernel/HONEST_ASSETS.md).
+**D — real local matter kinematics (CF4, not DE residual)**  
+1. [`papers/r1_kernel/r1-real-velocity-block-net.md`](papers/r1_kernel/r1-real-velocity-block-net.md) — block net, $\eta(L)$  
+2. [`papers/r1_kernel/r1-collapse-relief.md`](papers/r1_kernel/r1-collapse-relief.md) — collapse peaks, velocity relief, gravity vs expansion  
+
+Open research lines: [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md).  
+Public data vs my analysis: [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kernel/HONEST_ASSETS.md).
 
 ---
 
@@ -72,7 +80,8 @@ What is public data versus my own analysis: [`papers/r1_kernel/HONEST_ASSETS.md`
 | Free residual cell under axioms A0–A4 | $\ell_{\ast}\sim R_{\mathrm{nl}}$ |
 | Does nature have $\chi$? | I postulate it; I do not derive it from the SM |
 | Coupling $g$ | working bound $\lvert g\rvert\lesssim 1.45$ from DESI residual |
-| Residual explains $\sim 8\%H_0$? | no — amplitude is short by a lot |
+| Residual explains $\sim 8\%\,H_0$? | no — amplitude is short by a lot |
+| CF4 block net + collapse relief | done on public catalog; **matter only** |
 
 ---
 
@@ -87,9 +96,5 @@ python scripts/r1/r1_T2_mock_pipeline.py
 python scripts/r1/r1_real_velocity_block_net.py
 python scripts/r1/r1_collapse_relief_cf4.py
 ```
-
-Real local-universe kinematics (Cosmicflows-4, matter only):  
-[`papers/r1_kernel/r1-real-velocity-block-net.md`](papers/r1_kernel/r1-real-velocity-block-net.md) ·  
-[`papers/r1_kernel/r1-collapse-relief.md`](papers/r1_kernel/r1-collapse-relief.md).
 
 Full catalogue: [`papers/INDEX.md`](papers/INDEX.md).

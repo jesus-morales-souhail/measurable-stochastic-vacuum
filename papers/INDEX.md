@@ -3,7 +3,8 @@
 Jesús Morales Souhail · July 2026 · not peer reviewed  
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-If you just landed: [`../START_HERE.md`](../START_HERE.md).
+If you just landed: [`../START_HERE.md`](../START_HERE.md).  
+**Publishable vs lab notes:** [`PUBLISHABLE.md`](PUBLISHABLE.md).
 
 | Other repo | Role |
 |:-----------|:-----|
@@ -16,12 +17,24 @@ pytest -q
 
 ---
 
+## Publishable stack (short)
+
+| Layer | Use in a draft | Entry |
+|:------|:---------------|:------|
+| **A — hard** | Results / methods you re-run | [`core/VERIFIED_RESULTS.md`](core/VERIFIED_RESULTS.md), CF4 notes below, sister $\sigma_X$ |
+| **B — conditional** | Model under A0–A4 + falsifiers | [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_uniqueness_residual_grain.md) |
+| **C — context** | Closed routes, pedagogy | [`closed_walls/`](closed_walls/), [`side_threads/`](side_threads/) |
+
+Full rules and skeleton: [`PUBLISHABLE.md`](PUBLISHABLE.md).
+
+---
+
 ## Folders
 
 | Folder | What is in it |
 |:-------|:--------------|
 | [`core/`](core/) | stable claims and formulae |
-| [`r1_kernel/`](r1_kernel/) | residual scale, coupling, survey tests |
+| [`r1_kernel/`](r1_kernel/) | residual scale, coupling, survey tests, CF4 kinematics |
 | [`closed_walls/`](closed_walls/) | routes I closed |
 | [`side_threads/`](side_threads/) | side work |
 | [`work_packages/`](work_packages/) | longer WP notes |
@@ -63,8 +76,13 @@ pytest -q
 | 14 | [`r1_kernel/r1-counting-principle.md`](r1_kernel/r1-counting-principle.md) | counting landscape |
 | 15 | [`r1_kernel/FRONTIER_INQUIRY.md`](r1_kernel/FRONTIER_INQUIRY.md) | what I work on next |
 | 16 | [`r1_kernel/HONEST_ASSETS.md`](r1_kernel/HONEST_ASSETS.md) | public data vs my analysis |
-| 17 | [`r1_kernel/r1-real-velocity-block-net.md`](r1_kernel/r1-real-velocity-block-net.md) | Cosmicflows-4 block net (real \(v_{\mathrm{pec}}\)) |
-| 18 | [`r1_kernel/r1-collapse-relief.md`](r1_kernel/r1-collapse-relief.md) | CF4 collapse peaks, velocity relief, gravity vs expansion |
+
+### 2b. Local matter kinematics (Cosmicflows-4 — not DE residual)
+
+| | File | Content |
+|:--|:-----|:--------|
+| 17 | [`r1_kernel/r1-real-velocity-block-net.md`](r1_kernel/r1-real-velocity-block-net.md) | block net, $\eta(L)$, correlation scale |
+| 18 | [`r1_kernel/r1-collapse-relief.md`](r1_kernel/r1-collapse-relief.md) | collapse peaks, velocity relief, gravity vs expansion |
 
 | Number I keep quoting | Value |
 |:----------------------|:------|
@@ -78,6 +96,8 @@ python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_sandwich_derivation.py
 python scripts/r1/r1_lineA_Q_variance_proxy.py
 python scripts/r1/r1_T2_mock_pipeline.py
+python scripts/r1/r1_real_velocity_block_net.py
+python scripts/r1/r1_collapse_relief_cf4.py
 ```
 
 ---
@@ -86,7 +106,7 @@ python scripts/r1/r1_T2_mock_pipeline.py
 
 | File | Topic |
 |:-----|:------|
-| sister `amplification-gap.md` | soft $10^{56}$ |
+| sister amplification gap | soft $10^{56}$ |
 | [`closed_walls/h0-bridge-toy-map.md`](closed_walls/h0-bridge-toy-map.md) | path RMS vs $H_0$ |
 | [`closed_walls/h0-desqueezing-filter.md`](closed_walls/h0-desqueezing-filter.md) | invented $H_0(z)$ |
 | [`closed_walls/h0-running-brachistochrone-bridge.md`](closed_walls/h0-running-brachistochrone-bridge.md) | literature bridge |
@@ -124,10 +144,11 @@ python scripts/r1/r1_T2_mock_pipeline.py
 | Path | Content |
 |:-----|:--------|
 | `scripts/core/` | kinematics library, light cone, slip path |
-| `scripts/r1/` | $R_{\mathrm{nl}}$, uniqueness, $g$, residual profiles, T2 mock |
+| `scripts/r1/` | $R_{\mathrm{nl}}$, uniqueness, $g$, residual profiles, T2 mock, CF4 |
 | `scripts/closed/` | closed-route checks |
 | `scripts/side/` | secondary scripts |
-| `results/r1_sandwich/`, `r1_lineA_Q/`, `r1_T2_mock/`, … | numerical outputs |
+| `results/r1_sandwich/`, `r1_lineA_Q/`, `r1_T2_mock/`, `r1_real_velocity_net/`, `r1_collapse_relief/` | numerical outputs |
+| `data/real_velocity_net/` | Cosmicflows-4 local copy (public CDS) |
 
 ---
 
