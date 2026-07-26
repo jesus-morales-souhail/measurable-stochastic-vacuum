@@ -1,0 +1,27 @@
+FULL COV DESI DR2 BAO — lambda profile (FRACTIONAL residual)
+================================================================
+n_obs=13  R_nl=8.6098 Mpc  sigma_free=8.516255e-05
+mean(data/theory)=0.990567  residual mean=-9.4330e-03  rms=1.7853e-02
+chi2_LCDM fractional=28.966  (ndof=13)  max|rho|_off=0.494
+
+FORMAL profile (free sigma_res; full 13x13):
+  best sigma_res = 1.7218e-02   Delta lnL = +4.509 vs LCDM
+  95% CL interval sigma_res in [5.0873e-03, 1.7460e-01]
+  zero residual excluded at 95%? True
+  best |lambda| ~ 1.8572e-02   95% |lambda| in [5.5204e-03, 1.7675e-01]
+
+WORKING (programme primary — sister sigma_X < 1.5e-4):
+  |lambda| <= 1.234801e-04
+  |g|      <= 1.4499   (convention lambda = g * sigma_free)
+  Delta lnL at sigma_free  = +0.0022
+  Delta lnL at 1.5e-4      = +0.0068
+
+HONEST INTERPRETATION:
+  Formal preference for ~1-2% residual amplitude absorbs LCDM chi2 tension
+  (mean fractional offset ~1%), NOT the 1e-4 free-grain of P_nl counting.
+  Full-cov does NOT tighten lambda below the diagonal formal ~0.025 level
+  into the 1e-4 regime. Primary bound remains WORKING map.
+  formal_informative_for_1e-4_grain = False
+  primary_bound = working
+
+See papers/r1-bounding-g-plan.md

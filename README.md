@@ -48,6 +48,7 @@ python scripts/r1_t1_mechanisms_compute.py
 python scripts/r1_t12_bbks_peaks.py
 python scripts/r1_bound_g_oom.py
 python scripts/r1_profile_lambda_bao.py
+python scripts/r1_profile_lambda_fullcov.py   # full 13×13 cov; primary=working
 ```
 
 ### C — Closed walls (do not re-open)
@@ -86,7 +87,7 @@ $$
 | Soft amplifiers of \(\sigma_0\sim 10^{-61}\) | **Closed walls** |
 | Length \(R_{\mathrm{nl}}\) | **Computed** \(\approx 8.61\,\mathrm{Mpc}\) |
 | Why vacuum grain \(=R_{\mathrm{nl}}\) | **Hypothesis + sketch** (not full action) |
-| Bound on \(\lambda,g\) | **OOM + BAO profile** (see `results/r1_lambda_profile/`) |
+| Bound on \(\lambda,g\) | **Working** \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\); formal full-cov not informative at \(10^{-4}\) |
 | \(H_0\) tension from residual | **Excluded** at safe amplitude |
 
 ---

@@ -58,9 +58,11 @@ r1-counting-principle.md       ← original WP1 landscape
 | \(R_{\mathrm{nl}}\) | \(\approx 8.61\,\mathrm{Mpc}\) |
 | \(R_*\) (BBKS) | \(\approx 1.58\,\mathrm{Mpc}\) |
 | \(\sigma_{\mathrm{free}}\) (\(d=3\)) | \(\approx 8.5\times 10^{-5}\) |
-| Working \(\lvert\lambda\rvert\) | \(\lesssim 1.2\times 10^{-4}\) (from \(\sigma_X<1.5\times 10^{-4}\)) |
+| Working \(\lvert\lambda\rvert\) | \(\lesssim 1.24\times 10^{-4}\) (from \(\sigma_X<1.5\times 10^{-4}\)) |
+| Working \(\lvert g\rvert\) | \(\lesssim 1.45\) (\(\lambda=g\cdot\sigma_{\mathrm{free}}\)) |
+| Full-cov formal | **Not informative** at \(10^{-4}\) (absorbs \(\chi^2\sim 29\)) |
 
-**Scripts:** `r1_sigma_R_full.py`, `r1_t1_mechanisms_compute.py`, `r1_t12_bbks_peaks.py`, `r1_bound_g_oom.py`, `r1_profile_lambda_bao.py`
+**Scripts:** `r1_sigma_R_full.py`, `r1_t1_mechanisms_compute.py`, `r1_t12_bbks_peaks.py`, `r1_bound_g_oom.py`, `r1_profile_lambda_bao.py`, `r1_profile_lambda_fullcov.py`
 
 ---
 
@@ -98,7 +100,7 @@ r1-counting-principle.md       ← original WP1 landscape
 | **Core** | `lib_verified.py`, `simple_as_lambda.py`, `light_cone_atlas.py` |
 | **R1 / grain** | `r1_counting_landscape.py`, `r1_open_kernel_scales.py`, `r1_sigma_R_full.py`, `r1_principle_Rnl.py`, `ell_star_*.py` |
 | **T1 mechanisms** | `r1_t1_mechanisms_compute.py`, `r1_t12_bbks_peaks.py` |
-| **Bound \(g\)** | `r1_bound_g_oom.py`, `r1_profile_lambda_bao.py` |
+| **Bound \(g\)** | `r1_bound_g_oom.py`, `r1_profile_lambda_bao.py`, `r1_profile_lambda_fullcov.py` |
 | **H0 filters** | `h0_bridge_toy.py`, `h0_desqueezing_filter.py`, `h0_running_geometry.py` |
 | **Other** | `lensing_rms_real_data_compare.py`, `gordon_wands_factor45.py`, `inflation_spectator_residual_atlas.py` |
 
@@ -110,6 +112,7 @@ r1-counting-principle.md       ← original WP1 landscape
 |:-----|:--------|
 | `results/r1_landscape.txt` | Counting landscape |
 | `results/r1_lambda_profile/` | \(\lambda\) profile on DESI BAO diagonal |
+| `results/r1_lambda_fullcov/` | Full 13×13 fractional residual profile + honesty flags |
 | `results/r2_*.txt`, `r3_*.txt` | WP scans |
 
 ---

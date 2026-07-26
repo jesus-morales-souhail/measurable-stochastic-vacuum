@@ -199,9 +199,15 @@ With \(\kappa=1\), \(\sigma_{\mathrm{free}}=8.5\times 10^{-5}\), \(\lvert\lambda
    - Formal 95% (diag 7 bins): \(\lvert\lambda\rvert\le 2.5\times 10^{-2}\) (**weak**, same as sister \(\sigma_X\) profile).  
    - **Working** map from programme ceiling \(\sigma_X<1.5\times 10^{-4}\): \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\).  
    - Artefact: `results/r1_lambda_profile/`.  
-3. **Next:** full DESI covariance (if public pipeline available) to tighten formal limit.  
-4. **Then:** slip OOM / Maus consistency on working \(\lambda\).  
-5. **Optional:** cluster mask test.
+3. **Done:** Full 13×13 DESI DR2 covariance, **fractional** residual (`r1_profile_lambda_fullcov.py`).  
+   - Residual \(r_i=\mathrm{data}_i/\mathrm{theory}_i-1\), \(C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})\).  
+   - \(\chi^2_{\Lambda\mathrm{CDM}}\approx 29\) (13 dof); mean fractional offset \(\sim 1\%\).  
+   - Formal free \(\sigma_{\mathrm{res}}\): best \(\approx 1.7\times 10^{-2}\), 95% \(\in[5\times 10^{-3},\,0.17]\); zero excluded at 95% **only because** cov inflation absorbs background tension — **not** a 1e−4 grain detection.  
+   - At programme amplitudes (\(\sigma_{\mathrm{free}}\), \(1.5\times 10^{-4}\)): \(\Delta\ln\mathcal{L}\approx 0\) vs pure \(\Lambda\)CDM.  
+   - **`formal_informative_for_1e-4_grain = False`**. **`primary_bound = working`**.  
+   - Artefact: `results/r1_lambda_fullcov/`.  
+4. **Next:** slip OOM / Maus consistency on working \(\lambda\).  
+5. **Optional:** joint background+\(\sigma_{\mathrm{res}}\) (float \(r_d\) or \(\Omega_m\)) so formal profile is not dominated by mean offset; cluster mask test.
 
 ---
 
