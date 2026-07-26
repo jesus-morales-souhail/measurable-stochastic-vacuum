@@ -38,14 +38,16 @@ pytest -q
 1. [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) — walls vs open kernel  
 2. [`papers/r1-scale-decade-8-12.md`](papers/r1-scale-decade-8-12.md) — **lead: 8–12 Mpc decade**  
 3. [`papers/r1-principle-nonlinear-matter.md`](papers/r1-principle-nonlinear-matter.md) — \(\ell_*=R_{\mathrm{nl}}\) hypothesis + full \(\sigma(R)\)  
-4. [`papers/r1-t1-mechanisms-compute.md`](papers/r1-t1-mechanisms-compute.md) — averaging + mask numbers  
-5. [`papers/r1-t12-bbks-and-derivation.md`](papers/r1-t12-bbks-and-derivation.md) — BBKS + coarse-graining sketch  
-6. [`papers/r1-bounding-g-plan.md`](papers/r1-bounding-g-plan.md) — bound coupling \(\lambda,g\)  
+4. [`papers/r1-derivation-sandwich.md`](papers/r1-derivation-sandwich.md) — **ADVANCE: uniqueness under A0–A4**  
+5. [`papers/r1-t1-mechanisms-compute.md`](papers/r1-t1-mechanisms-compute.md) — averaging + mask numbers  
+6. [`papers/r1-t12-bbks-and-derivation.md`](papers/r1-t12-bbks-and-derivation.md) — BBKS + coarse-graining sketch  
+7. [`papers/r1-bounding-g-plan.md`](papers/r1-bounding-g-plan.md) — bound coupling \(\lambda,g\)  
 
 ```bash
 python scripts/r1_sigma_R_full.py
 python scripts/r1_t1_mechanisms_compute.py
 python scripts/r1_t12_bbks_peaks.py
+python scripts/r1_sandwich_derivation.py   # uniqueness theorem numbers
 python scripts/r1_bound_g_oom.py
 python scripts/r1_profile_lambda_bao.py
 python scripts/r1_profile_lambda_fullcov.py   # full 13×13 cov; primary=working
@@ -86,7 +88,7 @@ $$
 |:------|:-------|
 | Soft amplifiers of \(\sigma_0\sim 10^{-61}\) | **Closed walls** |
 | Length \(R_{\mathrm{nl}}\) | **Computed** \(\approx 8.61\,\mathrm{Mpc}\) |
-| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Hypothesis + sketch** (not full action) |
+| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Derived under A0–A4** (sandwich uniqueness); A0–A1 still postulates |
 | Bound on \(\lambda,g\) | **Working** \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\); formal full-cov not informative at \(10^{-4}\) |
 | \(H_0\) tension from residual | **Excluded** at safe amplitude |
 

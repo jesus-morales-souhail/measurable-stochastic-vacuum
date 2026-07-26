@@ -121,9 +121,10 @@ SDiff projection removes the isotropic mean; \(\sigma\) is the residual fluctuat
 | P1: coupling \(g\chi\delta_m\) | Postulate (strength \(g\) free) |
 | S1: matter classical on \(R_{\mathrm{nl}}\) | Standard, not re-proven |
 | Coarse-graining \(\Rightarrow\ell_*\sim R_{\mathrm{nl}}\) | **Derived under P0–P1+S1** (influence-functional logic) |
+| **Sandwich uniqueness (UV+IR)** | **Elevated:** [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) |
 | Full relativistic averaging = Buchert \(Q\) | Not identified; optional |
 | Peak-tip \(R_*\) vs domain \(R_{\mathrm{nl}}\) | BBKS shows both; domain is the residual cell under B.4 |
-| Compute \(g\) from microphysics | **Open** |
+| Compute \(g\) from microphysics | **Open** (working bound \(\lvert g\rvert\lesssim 1.45\)) |
 | Path-integral proof on exact FLRW+structure metric | **Open** |
 
 ---

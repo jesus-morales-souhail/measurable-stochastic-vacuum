@@ -762,3 +762,57 @@ class TestR1OpenKernelScales:
         naive = s0 * soft_squeeze_gain(r) * math.sqrt(n)
         assert rms != pytest.approx(naive, rel=0.01)
         assert rms < naive  # prefactor 2(ρX/ρm)/δm < 1 at z=0.8 typically... actually ~1.5e-4*sqrtN vs 2e-4*sqrtN
+
+
+class TestSandwichDerivation:
+    """Lock key sandwich geometry numbers (R_nl band uniqueness machinery)."""
+
+    def test_xi0_at_Rnl_is_unity(self):
+        from r1_sandwich_derivation import Pk_normed, xi_filtered
+        from r1_sigma_R_full import H
+
+        Pk, A, R_nl = Pk_normed()
+        xi0 = xi_filtered(0.0, R_nl * H, Pk, A)
+        assert xi0 == pytest.approx(1.0, abs=0.02)
+
+    def test_mask_corr_length_near_Rnl(self):
+        from r1_sandwich_derivation import (
+            Pk_normed,
+            xi_filtered,
+            mask_stats,
+            find_corr_length,
+        )
+        from r1_sigma_R_full import H
+
+        Pk, A, R_nl = Pk_normed()
+        R_h = R_nl * H
+        xi0 = xi_filtered(0.0, R_h, Pk, A)
+        f, _, _ = mask_stats(0.0, R_h, Pk, A, 1.0, xi0)
+        xi_m0 = f * (1.0 - f)
+
+        def xi_m(rh):
+            return mask_stats(rh, R_h, Pk, A, 1.0, xi0)[1]
+
+        r_e_h = find_corr_length(xi_m, xi_m0, r_max_hinv=25.0, n=40)
+        r_e = r_e_h / H
+        # mask correlation length must sit in O(1)×R_nl band
+        assert 0.5 * R_nl < r_e < 3.0 * R_nl
+
+    def test_decoherence_g1_order_unity_or_larger(self):
+        from r1_sandwich_derivation import decoherence_oom, Pk_normed
+
+        _, _, R_nl = Pk_normed()
+        d = decoherence_oom(1.0, R_nl)
+        assert d["Gamma_over_H0_slow_bath"] == pytest.approx(1.0)
+        assert d["Gamma_over_H0_fast_bath"] > 1.0
+
+    def test_sandwich_allows_Rnl_forbids_tiny(self):
+        from r1_sandwich_derivation import sandwich_table, Pk_normed
+        from lib_verified import hubble_radius_mpc
+
+        _, _, R_nl = Pk_normed()
+        rows = sandwich_table(R_nl, hubble_radius_mpc())
+        by = {r["label"]: r for r in rows}
+        assert "ALLOWED" in by["R_nl"]["regime"]
+        assert "UV" in by["0.1 Mpc"]["regime"]
+        assert "IR" in by["L_H"]["regime"]

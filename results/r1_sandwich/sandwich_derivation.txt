@@ -1,0 +1,20 @@
+SANDWICH DERIVATION — residual grain uniqueness under A0–A4
+============================================================
+R_nl = 8.6098 Mpc
+σ_0(R_nl) = 1.0000  (expect 1)
+ξ_δ correlation length r_e (1/e) = 14.556 Mpc = 1.691 × R_nl
+mask δ_c=1: f=0.1587  r_e,mask = 9.534 Mpc = 1.107 × R_nl
+packing ℓ_sep = 15.90 Mpc
+σ_free(d=3) = 8.516255e-05
+g_working = 1.4499
+
+Decoherence Γ/H0 (OOM):
+  g=1:     fast=5.166e+02  slow=1.000e+00
+  g_work:  fast=1.086e+03  slow=2.102e+00
+
+THEOREM (under A0–A4): free residual counting cell ℓ_* is unique up to O(1):
+  ℓ_* ~ R_nl  (domain/filter), not L_P and not L_H.
+  Fine structure R_* and packing ℓ_sep are O(1) geometric factors in the same decade.
+
+PRIMARY BOUND still: working |λ|≲1.24e-4, |g|≲1.45 (DESI σ_X).
+See papers/r1-derivation-sandwich.md

@@ -121,8 +121,10 @@ Each step: **blind length from matter**, then a posteriori DESI / \(r_0\) / \(R_
 |:-----|:-------|:------|
 | T1.1 numbers | **Done** — \(L_{\mathrm{av}}=R_{\mathrm{nl}}\Rightarrow\sigma_{d=3}\approx 8.5\times 10^{-5}\) under ceiling | [`r1-t1-mechanisms-compute.md`](r1-t1-mechanisms-compute.md) |
 | T1.2 numbers | **Done** — \(f(\delta>1)\approx 0.16\), \(\ell_{\mathrm{sep}}\approx 16\,\mathrm{Mpc}\) packing OOM | same |
+| T1.2 mask \(r_e\) | **Done** — \(r_{e,\mathrm{mask}}\approx 1.11\,R_{\mathrm{nl}}\) | [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) |
+| **Sandwich uniqueness** | **Done under A0–A4** — free residual cell forced to \(\sim R_{\mathrm{nl}}\) | same |
 | T1.3 | Optional language only | — |
-| Action / master-equation link | **Still open** | cannot be replaced by geometry |
+| Existence of \(\chi\) + coupling from SM | **Still open** (postulates A0–A1) | cannot be replaced by sandwich |
 
 ---
 

@@ -102,8 +102,10 @@ For the a-posteriori DESI residual ceiling \(\sigma=1.5\times 10^{-4}\) at \(d=3
 
 > What principle fixes a galactic/mesoscopic counting cell for the DE sector, distinct from the Planck/holographic cell?
 
-**R1 status:** landscape derived; principle fixing \(\ell_*\) **absent (declared)** ([`r1-counting-principle.md`](r1-counting-principle.md) §4).  
-Closing WP1 requires one of the hypothesis classes below **fully derived**, not dialed.
+**R1 status (updated July 2026):** landscape derived.  
+**Form of the principle under axioms A0–A4:** **closed** by sandwich uniqueness \(\ell_*\sim R_{\mathrm{nl}}\) — see [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md).  
+**Still open as postulates:** existence of residual sector \(\chi\) and local coupling to \(\delta_m\) (A0–A1).  
+Closing WP1 as a *nature claim* still requires A0–A1 (or equivalent) from microphysics; the *scale choice* is no longer free once those hold.
 
 ---
 

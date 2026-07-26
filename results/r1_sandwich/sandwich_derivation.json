@@ -1,0 +1,240 @@
+{
+  "theorem": "sandwich uniqueness of residual grain under A0-A4",
+  "R_nl_Mpc": 8.609803792634995,
+  "sigma0_at_Rnl": 1.0000152996125817,
+  "xi_delta_0": 1.0000305994592416,
+  "r_e_delta_Mpc": 14.556113722720827,
+  "r_e_over_Rnl": 1.690644069632856,
+  "delta_c_mask": 1.0,
+  "f_mask": 0.15865895596147833,
+  "r_e_mask_Mpc": 9.533775058082076,
+  "r_e_mask_over_Rnl": 1.107316181378891,
+  "ell_sep_packing_Mpc": 15.904075729043159,
+  "sigma_free_d3": 8.516255298808623e-05,
+  "g_working": 1.449934434535401,
+  "decoherence_g1": {
+    "g": 1.0,
+    "sigma_delta": 1.0,
+    "R_nl_over_LH": 0.0019356750316367156,
+    "Gamma_over_H0_fast_bath": 516.6156424275655,
+    "Gamma_over_H0_slow_bath": 1.0,
+    "N_decoherences_per_tH_fast": 516.6156424275655,
+    "N_decoherences_per_tH_slow": 1.0,
+    "note": "\u0393 ~ g\u00b2 \u03c3_\u03b4\u00b2 / \u03c4_c. Fast: \u03c4_c = R_nl/c; slow: \u03c4_c = 1/H0. If \u0393/H0 \u226b 1, residual is decohered within a Hubble time and free DOF are patch-coarse-grained."
+  },
+  "decoherence_g_work": {
+    "g": 1.449934434535401,
+    "sigma_delta": 1.0,
+    "R_nl_over_LH": 0.0019356750316367156,
+    "Gamma_over_H0_fast_bath": 1086.0861612054161,
+    "Gamma_over_H0_slow_bath": 2.102309864451493,
+    "N_decoherences_per_tH_fast": 1086.0861612054161,
+    "N_decoherences_per_tH_slow": 2.102309864451493,
+    "note": "\u0393 ~ g\u00b2 \u03c3_\u03b4\u00b2 / \u03c4_c. Fast: \u03c4_c = R_nl/c; slow: \u03c4_c = 1/H0. If \u0393/H0 \u226b 1, residual is decohered within a Hubble time and free DOF are patch-coarse-grained."
+  },
+  "decoherence_g_1e-3": {
+    "g": 0.001,
+    "sigma_delta": 1.0,
+    "R_nl_over_LH": 0.0019356750316367156,
+    "Gamma_over_H0_fast_bath": 0.0005166156424275655,
+    "Gamma_over_H0_slow_bath": 1e-06,
+    "N_decoherences_per_tH_fast": 0.0005166156424275655,
+    "N_decoherences_per_tH_slow": 1e-06,
+    "note": "\u0393 ~ g\u00b2 \u03c3_\u03b4\u00b2 / \u03c4_c. Fast: \u03c4_c = R_nl/c; slow: \u03c4_c = 1/H0. If \u0393/H0 \u226b 1, residual is decohered within a Hubble time and free DOF are patch-coarse-grained."
+  },
+  "xi_delta_curve": [
+    {
+      "r_hinv": 0.0,
+      "r_Mpc": 0.0,
+      "xi": 1.0000305994592416,
+      "rho": 1.0
+    },
+    {
+      "r_hinv": 0.5,
+      "r_Mpc": 0.7418397626112759,
+      "xi": 0.9964581017619896,
+      "rho": 0.9964276116159008
+    },
+    {
+      "r_hinv": 1.0,
+      "r_Mpc": 1.4836795252225519,
+      "xi": 0.986048258419411,
+      "rho": 0.9860180867991526
+    },
+    {
+      "r_hinv": 2.0,
+      "r_Mpc": 2.9673590504451037,
+      "xi": 0.9471479439152521,
+      "rho": 0.9471189625871596
+    },
+    {
+      "r_hinv": 3.0,
+      "r_Mpc": 4.451038575667655,
+      "xi": 0.8887317050969651,
+      "rho": 0.8887045112194962
+    },
+    {
+      "r_hinv": 5.0,
+      "r_Mpc": 7.4183976261127595,
+      "xi": 0.7357460803343461,
+      "rho": 0.7357235675910265
+    },
+    {
+      "r_hinv": 8.0,
+      "r_Mpc": 11.869436201780415,
+      "xi": 0.4900372543223509,
+      "rho": 0.4900222599061814
+    },
+    {
+      "r_hinv": 12.0,
+      "r_Mpc": 17.80415430267062,
+      "xi": 0.26116639583155127,
+      "rho": 0.2611584045255964
+    },
+    {
+      "r_hinv": 20.0,
+      "r_Mpc": 29.673590504451038,
+      "xi": 0.09252287381193602,
+      "rho": 0.09252004274865891
+    }
+  ],
+  "xi_mask_curve": [
+    {
+      "r_Mpc": 0.0,
+      "xi_mask": 0.1291691675991895,
+      "rho_delta": 0.999,
+      "xi_mask_over_xi0": 0.9676586711490179
+    },
+    {
+      "r_Mpc": 0.7418397626112759,
+      "xi_mask": 0.12532659898227227,
+      "rho_delta": 0.9964276116159008,
+      "xi_mask_over_xi0": 0.9388724297358746
+    },
+    {
+      "r_Mpc": 1.4836795252225519,
+      "xi_mask": 0.11734356916199808,
+      "rho_delta": 0.9860180867991526,
+      "xi_mask_over_xi0": 0.8790683126140577
+    },
+    {
+      "r_Mpc": 2.9673590504451037,
+      "xi_mask": 0.1020935674927327,
+      "rho_delta": 0.9471189625871596,
+      "xi_mask_over_xi0": 0.7648243593194772
+    },
+    {
+      "r_Mpc": 4.451038575667655,
+      "xi_mask": 0.08794949649927698,
+      "rho_delta": 0.8887045112194962,
+      "xi_mask_over_xi0": 0.6588653816737112
+    },
+    {
+      "r_Mpc": 7.4183976261127595,
+      "xi_mask": 0.0633744500126008,
+      "rho_delta": 0.7357235675910265,
+      "xi_mask_over_xi0": 0.4747637321182051
+    },
+    {
+      "r_Mpc": 11.869436201780415,
+      "xi_mask": 0.03640723386238333,
+      "rho_delta": 0.4900222599061814,
+      "xi_mask_over_xi0": 0.2727413685036895
+    },
+    {
+      "r_Mpc": 17.80415430267062,
+      "xi_mask": 0.017336876332526018,
+      "rho_delta": 0.2611584045255964,
+      "xi_mask_over_xi0": 0.1298775785709426
+    },
+    {
+      "r_Mpc": 29.673590504451038,
+      "xi_mask": 0.005668521013631144,
+      "rho_delta": 0.09252004274865891,
+      "xi_mask_over_xi0": 0.04246519206852127
+    }
+  ],
+  "sandwich_rows": [
+    {
+      "label": "Planck-ish (proxy)",
+      "ell_Mpc": 1e-20,
+      "N_patches": 1.566824076524032e-63,
+      "sigma_count_naive": 3.371000294103641e-36,
+      "sigma_eff_after_renorm": 0.0,
+      "regime": "UV: decohered / not free residual (\u2113 \u226a R_nl)"
+    },
+    {
+      "label": "0.01 Mpc",
+      "ell_Mpc": 0.01,
+      "N_patches": 1.5668240765240323e-09,
+      "sigma_count_naive": 3.3710002941036417e-09,
+      "sigma_eff_after_renorm": 0.0,
+      "regime": "UV: decohered / not free residual (\u2113 \u226a R_nl)"
+    },
+    {
+      "label": "0.1 Mpc",
+      "ell_Mpc": 0.1,
+      "N_patches": 1.5668240765240327e-06,
+      "sigma_count_naive": 1.0660038922464982e-07,
+      "sigma_eff_after_renorm": 0.0,
+      "regime": "UV: decohered / not free residual (\u2113 \u226a R_nl)"
+    },
+    {
+      "label": "1 Mpc",
+      "ell_Mpc": 1.0,
+      "N_patches": 0.0015668240765240326,
+      "sigma_count_naive": 3.371000294103641e-06,
+      "sigma_eff_after_renorm": 0.0,
+      "regime": "UV: decohered / not free residual (\u2113 \u226a R_nl)"
+    },
+    {
+      "label": "R_* ~ 1.58",
+      "ell_Mpc": 1.58,
+      "N_patches": 0.006180043006922659,
+      "sigma_count_naive": 6.694905031511543e-06,
+      "sigma_eff_after_renorm": 0.0,
+      "regime": "UV: decohered / not free residual (\u2113 \u226a R_nl)"
+    },
+    {
+      "label": "R_nl",
+      "ell_Mpc": 8.609803792634995,
+      "N_patches": 1.0,
+      "sigma_count_naive": 8.516255298808623e-05,
+      "sigma_eff_after_renorm": 8.516255298808623e-05,
+      "regime": "ALLOWED band: \u2113_* ~ R_nl (O(1) BBKS)"
+    },
+    {
+      "label": "ell_sep ~ 16",
+      "ell_Mpc": 15.9,
+      "N_patches": 6.298129837098046,
+      "sigma_count_naive": 0.00021372458225867887,
+      "sigma_eff_after_renorm": 0.00021372458225867887,
+      "regime": "ALLOWED band: \u2113_* ~ R_nl (O(1) BBKS)"
+    },
+    {
+      "label": "50 Mpc",
+      "ell_Mpc": 50.0,
+      "N_patches": 195.85300956550407,
+      "sigma_count_naive": 0.0011918285836712654,
+      "sigma_eff_after_renorm": 6.085321774300599e-06,
+      "regime": "IR: local coupling renormalizes to R_nl cells"
+    },
+    {
+      "label": "100 Mpc",
+      "ell_Mpc": 100.0,
+      "N_patches": 1566.8240765240325,
+      "sigma_count_naive": 0.0033710002941036415,
+      "sigma_eff_after_renorm": 2.151486146155053e-06,
+      "regime": "IR: local coupling renormalizes to R_nl cells"
+    },
+    {
+      "label": "L_H",
+      "ell_Mpc": 4447.959317507418,
+      "N_patches": 137880438.4200664,
+      "sigma_count_naive": 1.0,
+      "sigma_eff_after_renorm": 7.2526604314485935e-09,
+      "regime": "IR: local coupling renormalizes to R_nl cells"
+    }
+  ],
+  "conclusion": "Under local coupling to classical nonlinear matter, free residual grain is forced into the O(1)\u00d7R_nl band: UV modes decohere; IR super-cells renormalize to R_nl patches. Correlation lengths r_e(\u03b4) and r_e(mask) are O(R_nl), not L_H or L_P."
+}
