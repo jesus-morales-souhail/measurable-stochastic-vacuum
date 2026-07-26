@@ -24,22 +24,22 @@ This note lists falsification and narrowing criteria for the R1–R2–R3 packag
 | **L1 — Soft-regime theorem stands** | Sorkin + soft open + path still null | **Not** a failure — confirmed structural zero |
 | **L2 — Candidate death** | A specific R1a/b/c or hard-R3 model is excluded | Discard that candidate; package may continue |
 | **L3 — Package death** | Every viable path to mesoscopic $\sigma$ or derived hard gain is excluded | Close programme as “limits + geometry only” (honest success of sister repo) |
-| **L4 — Overclaim death** | Publication uses free $10^{56}$, free $r\sim 64$, or DESI-tuned $\ell_*$ | Reject paper under self-shielding axioms |
+| **L4 — Overclaim death** | Publication uses free $10^{56}$, free $r\sim 64$, or DESI-tuned $\ell_{\ast}$ | Reject paper under self-shielding axioms |
 
 ---
 
 ## 3. Falsifiers for counting (R1)
 
-Once a principle $P$ predicts $\ell_*$ or $N_{\mathrm{eff}}$:
+Once a principle $P$ predicts $\ell_{\ast}$ or $N_{\mathrm{eff}}$:
 
 | Outcome | Verdict |
 |:--------|:--------|
-| $P\Rightarrow \ell_*\sim L_P$ | Predicts structural null; **confirmed** if residual stays null; **does not** yield detection claims |
+| $P\Rightarrow \ell_{\ast}\sim L_P$ | Predicts structural null; **confirmed** if residual stays null; **does not** yield detection claims |
 | $P\Rightarrow \sigma_{0,\mathrm{eff}}\in[10^{-5},1.5\times 10^{-4}]$ | A posteriori compatible with sister DESI ceiling; Euclid residual can falsify |
 | $P\Rightarrow \sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ with no damping mechanism | **Tension** with DESI residual bound (sister repo) → candidate dies unless $\theta$-damping derived |
 | $P$ contradicts local Lorentz tests **that actually constrain that sector** | Candidate dies |
 
-**Illegal move:** change $\ell_*$ after seeing DESI to sit under $1.5\times 10^{-4}$.
+**Illegal move:** change $\ell_{\ast}$ after seeing DESI to sit under $1.5\times 10^{-4}$.
 
 ---
 
@@ -94,7 +94,7 @@ Is the seed Sorkin (ell_* = L_P)?
 
 - [ ] `pytest -q` green  
 - [ ] Claims subset of [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) **or** new tests added  
-- [ ] $\ell_*$ or $r$ or $\varepsilon$ derived, not fitted to DESI  
+- [ ] $\ell_{\ast}$ or $r$ or $\varepsilon$ derived, not fitted to DESI  
 - [ ] Zeros Z1–Z4 stated  
 - [ ] A posteriori DESI comparison only  
 - [ ] No $10^{56}$ free factor  

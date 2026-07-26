@@ -16,9 +16,9 @@ stochastic-de-exploratory-notes    wrong-scale pedagogy only
 
 | Allowed here | Not allowed here |
 |:-------------|:-----------------|
-| identities I can test with `pytest` | free factors of \(10^{56}\) |
+| identities I can test with `pytest` | free factors of $10^{56}$ |
 | soft no-gain statements with numbers | re-running a full BAO MCMC as if it lived here |
 | structural zeros (Planck cell → null residual under soft maps) | lab wavefront demos sold as cosmology |
-| comparing a posteriori to DESI ceilings | fitting \(\ell_*\) or squeeze \(r\) to DESI after looking |
+| comparing a posteriori to DESI ceilings | fitting $\ell_{\ast}$ or squeeze $r$ to DESI after looking |
 
 For hard results I point people to [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md) only. Everything else is a note, a sketch, or a closed wall with a measured height.

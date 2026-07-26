@@ -25,7 +25,7 @@ This is the correct **operator** for the SDiff gap (shear not cancelled by $T_{\
 ## 2. Local map (standard sub-horizon GR)
 
 $$
-\pi_T = \varepsilon \sigma \rho_X, \qquad |\gamma-1| = 2\varepsilon\sigma\frac{\rho_X}{\rho_m|\delta_m|}.
+\pi_T = \varepsilon \sigma \rho_X, \qquad \lvert \gamma-1 \rvert = 2\varepsilon\sigma\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}.
 $$
 
 Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_T$ amplitude.
@@ -35,7 +35,7 @@ Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_T$ ampli
 ## 3. Path accumulation
 
 $$
-N_{\mathrm{pat}}=\frac{\chi}{\ell_*}, \qquad \mathrm{RMS}_{\mathrm{path}} = |\gamma-1|_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}} \quad\text{(iid zero-mean patches)}.
+N_{\mathrm{pat}}=\frac{\chi}{\ell_{\ast}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert \gamma-1 \rvert_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}} \quad\text{(iid zero-mean patches)}.
 $$
 
 For $z_s=1.5$, $\chi\sim 4.5\times 10^{3} \mathrm{Mpc}$, Mpc-scale cells give $\sqrt{N}=\mathcal{O}(10$–$10^{2})$.
@@ -49,7 +49,7 @@ For $z_s=1.5$, $\chi\sim 4.5\times 10^{3} \mathrm{Mpc}$, Mpc-scale cells give $\
 | Case | Path RMS (OOM) |
 |:-----|:---------------|
 | Sorkin | $\ll 10^{-50}$ — structural null |
-| $\sigma=10^{-5}$, $\ell_*\sim 2 \mathrm{Mpc}$ | $\sim 3\times 10^{-4}$ |
+| $\sigma=10^{-5}$, $\ell_{\ast}\sim 2 \mathrm{Mpc}$ | $\sim 3\times 10^{-4}$ |
 | DESI residual ceiling a posteriori | $\sim 10^{-3}$ order |
 
 Galaxy formation is **not** an analogy for lifting $10^{-61}$: it used post-inflation $\zeta\sim 10^{-5}$.

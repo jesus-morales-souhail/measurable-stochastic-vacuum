@@ -22,7 +22,7 @@ I keep theory and data in two places on purpose. This repo holds kinematics and 
 | Conditional light-path predictions | Model kills (e.g. coherent tachyonic growth) |
 | Map of **measured walls** vs **open kernel** (R1) | Amplification gap (no free soft gain on Sorkin) |
 | **Not** a detection paper | Empirical DESI residual bound |
-| Conditional uniqueness $\ell_*\sim R_{\mathrm{nl}}$ under A0–A4 | **Not** a proof that SM realises $\chi$ |
+| Conditional uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ under A0–A4 | **Not** a proof that SM realises $\chi$ |
 
 **Sister empirical corpus:**  
 https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou  
@@ -38,7 +38,7 @@ I write these notes at home, one step at a time. If you are reading for the firs
 |:-----|:---------|:--------|
 | 1 | This file | Claim boundaries |
 | 2 | [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) | **Einstein+Morales slip wall + self-shielding inequality** |
-| 2b | [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md) | **Only natural amplifier: $\mathrm{RMS}=|\gamma-1|\sqrt{\chi/\ell_*}$** |
+| 2b | [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md) | **Only natural amplifier: $\mathrm{RMS}=\lvert \gamma-1 \rvert\sqrt{\chi/\ell_{\ast}}$** |
 | 3 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal equations (public model) |
 | 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, unit-tested claims** |
 | 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
@@ -51,11 +51,11 @@ I write these notes at home, one step at a time. If you are reading for the firs
 | 5h | [`h0-desqueezing-filter.md`](../closed_walls/h0-desqueezing-filter.md) | **Reject invented $H_0(z)$ + hand-tuned $\theta$; $\sigma_X\ll 9\%$** |
 | 5i | [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md) | **$r_0(L_*)$ / $n^{-1/3}$ vs NP-A: no independent hit** |
 | 5j | [`r1-scale-decade-8-12.md`](../r1_kernel/r1-scale-decade-8-12.md) | **Steering: open lead is 8–12 Mpc decade ($r_0$, $R_8$, DESI-ceil cell)** |
-| 5k | [`r1-principle-nonlinear-matter.md`](../r1_kernel/r1-principle-nonlinear-matter.md) | **Hypothesis $\ell_*=R_{\mathrm{nl}}$; full $\sigma(R)$ $\Rightarrow 8.61$ Mpc (not action derivation)** |
+| 5k | [`r1-principle-nonlinear-matter.md`](../r1_kernel/r1-principle-nonlinear-matter.md) | **Hypothesis $\ell_{\ast}=R_{\mathrm{nl}}$; full $\sigma(R)$ $\Rightarrow 8.61$ Mpc (not action derivation)** |
 | 5l | [`r1-t1-mechanisms-compute.md`](../r1_kernel/r1-t1-mechanisms-compute.md) | **T1.1/T1.2 numbers: domain counting + nonlinear mask** |
 | 5m | [`r1-mechanism-candidates.md`](../r1_kernel/r1-mechanism-candidates.md) | **Ranked mechanism candidates (Tier 1–3)** |
-| 5n | [`r1-t12-bbks-and-derivation.md`](../r1_kernel/r1-t12-bbks-and-derivation.md) | **BBKS $R_*$ + coarse-graining derivation sketch** |
-| 5o | [`r1-derivation-sandwich.md`](../r1_kernel/r1-derivation-sandwich.md) | **Sandwich uniqueness $\ell_*\sim R_{\mathrm{nl}}$ under A0–A4** |
+| 5n | [`r1-t12-bbks-and-derivation.md`](../r1_kernel/r1-t12-bbks-and-derivation.md) | **BBKS $R_{\ast}$ + coarse-graining derivation sketch** |
+| 5o | [`r1-derivation-sandwich.md`](../r1_kernel/r1-derivation-sandwich.md) | **Sandwich uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ under A0–A4** |
 | 5p | [`NOTE_uniqueness_residual_grain.md`](../r1_kernel/NOTE_uniqueness_residual_grain.md) | **Short paper draft (conditional theorem + numbers)** |
 | 5q | [`r1-sandwich-falsifiers.md`](../r1_kernel/r1-sandwich-falsifiers.md) | **Operational F1–F4 falsifiers** |
 | 5r | [`r1-a1-microphysics.md`](../r1_kernel/r1-a1-microphysics.md) | **Microphysics map for $g\chi\delta_m$** |
@@ -63,7 +63,7 @@ I write these notes at home, one step at a time. If you are reading for the firs
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
 **Do not cite as hard results:** `THEORY_REVOLUTION.md`, WP discussion notes (`r1-counting-principle`, `r2-`, `r3-` except where they restate verified identities), exploratory optics repo.  
-**Cite `r1-open-kernel.md` for:** claim-boundary taxonomy (wall vs kernel) and scale arithmetic only — **not** for “$\ell_*=R_8$ is derived.”
+**Cite `r1-open-kernel.md` for:** claim-boundary taxonomy (wall vs kernel) and scale arithmetic only — **not** for “$\ell_{\ast}=R_8$ is derived.”
 
 ---
 
@@ -71,65 +71,51 @@ I write these notes at home, one step at a time. If you are reading for the firs
 
 ### 3.1 Background (identical to flat $\Lambda$CDM)
 
-
 $$
 H^{2}(z)=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr].
 $$
 
-
 ### 3.2 Counting seed (hypothesis $d=3$)
-
 
 $$
 N_{\mathrm{eff}}=\Bigl(\frac{L_{H}}{\ell_{*}}\Bigr)^{3}, \qquad \sigma=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}, \qquad \ell_{*}=L_{H} \sigma^{2/3},
 $$
 
-
 with $L_{H}=c/H_{0}$.
 
 ### 3.3 Holographic Sorkin seed (special case $d=2$, $\ell_{*}=L_{P}$)
-
 
 $$
 \sigma_{0}=\frac{L_{P}}{L_{H}}\sim 1.18\times 10^{-61} \quad(H_{0}=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
 $$
 
-
 ### 3.4 Soft open map (optional, bounded)
-
 
 $$
 G_{O}=e^{2r}, \qquad \sigma_{\mathrm{res}}=G_{O} \sigma \quad(r=\mathcal{O}(1);\ e.g.\ r=1.5\Rightarrow G_{O}\approx 20.09).
 $$
 
-
 **DESI-safe constraint (a posteriori):** $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$.
 
 ### 3.5 Local gravitational slip (sub-horizon GR)
-
 
 $$
 \pi_{T}=\varepsilon \sigma_{\mathrm{res}} \rho_{X}, \qquad \lvert\gamma-1\rvert = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_{X}}{\rho_{m}\lvert\delta_{m}\rvert}.
 $$
 
-
 Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_{T}$.
 
 ### 3.6 Light-path accumulation (iid patches)
-
 
 $$
 N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}}.
 $$
 
-
 ### 3.7 Simplified presentation reduction ($d=3$, $\chi\sim L_{H}$, $\alpha\sim\mathcal{O}(1)$)
-
 
 $$
 \mathrm{RMS}_{\mathrm{path}} \sim \alpha \sigma\sqrt{\frac{L_{H}}{\ell_{*}}} = \alpha \sigma^{2/3}.
 $$
-
 
 **Warning:** $\sigma\times G_{O}\times\sqrt{N}\neq\mathrm{RMS}_{\mathrm{path}}$ in general (prefactor $\alpha$ and operator order).
 
@@ -152,8 +138,8 @@ These are the claims I am willing to stand behind. Each one has a place in the c
 | C7 | DESI-safe windows NP-A / NP-B exist as **hand-placed** kinematics with $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ | `NARROW_PATH` + tests |
 | C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | sister repo |
 | C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
-| C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_*$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
-| C11 | Scale arithmetic: $R_8=8/h$; $\ell_*(\sigma,d)$ and $\sigma(R_8,d)$ under counting; **$R_8$ proximity is $d=3$-specific** | `lib_verified` + `scripts/r1/r1_open_kernel_scales.py` + tests |
+| C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_{\ast}$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
+| C11 | Scale arithmetic: $R_8=8/h$; $\ell_{\ast}(\sigma,d)$ and $\sigma(R_8,d)$ under counting; **$R_8$ proximity is $d=3$-specific** | `lib_verified` + `scripts/r1/r1_open_kernel_scales.py` + tests |
 | C12 | Path RMS (NP-A/B) vs published Maus/Sakr/DESI-MG errors: mean slip still $\sim 10$–$25\times$ above NP-B | `lensing-rms-forecast-real-data.md` + script + tests |
 | C13 | Gordon & Wands: seed $H_{\mathrm{inf}}/2\pi$; growth factor $\sim 45$ (not $10^{56}$); distinct from Sorkin soft gap | `inflation-spectator-seed-gordon-wands.md` + `scripts/side/gordon_wands_factor45.py` |
 | C14 | At $r\sim 0.036$, $\delta Q/M_p\sim 3\times 10^{-6}$; with $A\sim 45$, $\varepsilon_Q\sim 0.05$ get $\sigma_\rho\sim\mathrm{few}\times 10^{-5}$ (OOM) | `inflation-spectator-residual-atlas.md` + script + tests |
@@ -173,13 +159,13 @@ I also keep a list of things I do **not** claim. It is easy to over-read a numbe
 | N5 | Cosmos is **not** asserted to be a fractional Hall bar (analogy only) |
 | N6 | Entropy of the universe does **not** “stop”; only local backscattering of a protected channel is suppressed (analogy) |
 | N7 | Not peer reviewed |
-| N8 | $\ell_*=R_8$ is **not** derived; S$_8$ is **not** explained; $d=3$ proximity is **tolerated**, not preferred by fit |
+| N8 | $\ell_{\ast}=R_8$ is **not** derived; S$_8$ is **not** explained; $d=3$ proximity is **tolerated**, not preferred by fit |
 | N9 | NP-B is **not** a derived prediction; detection of $\mathrm{RMS}\sim 10^{-3}$ is **not** automatic DE texture |
-| N10 | Null lensing at $\sim 10^{-3}$ does **not** kill the whole model — only the tested $(\ell_*,G_O,\varepsilon)$ corner |
+| N10 | Null lensing at $\sim 10^{-3}$ does **not** kill the whole model — only the tested $(\ell_{\ast},G_O,\varepsilon)$ corner |
 | N11 | Stage-IV sensitivity to **this** path-RMS statistic at $10^{-3}$ is **not** claimed established |
 | N12 | Gordon & Wands (2005) is **not** “the same $10^{56}$ wall”; factor $\sim 45$ for **their** target; **not** automatic DESI claim |
 | N13 | Atlas windows $(r,A,\varepsilon_Q)$ are **not** DESI fits; $\sigma_\rho\not\equiv\sigma_X$ without map |
-| N14 | Brachistochrone / H0-running note does **not** solve Hubble tension or derive $\ell_*$ |
+| N14 | Brachistochrone / H0-running note does **not** solve Hubble tension or derive $\ell_{\ast}$ |
 | N15 | Coherent $\delta D/D\propto N$ is **not** a legal H0 fix under programme amplifier discipline |
 | N16 | $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ with $\theta$ fit to $z\sim 0.5$–$0.7$ is **not** a result |
 | N17 | CPL 2.5σ/4.2σ must **not** be relabelled as H0-running significance |

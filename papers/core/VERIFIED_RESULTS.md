@@ -13,13 +13,13 @@
 
 I record three families of **verified** relations relevant to whether late-time stochastic dark-energy noise can be telescope-measurable. These are identities and numbers I have checked in code; they are not a detection claim.
 
-1. **Counting seeds (R1 kinematics):** under the hypothesis $N_{\mathrm{eff}}=(L/\ell_*)^d$, one has $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$ exactly. The holographic Sorkin case $(d=2,\ell_*=L_P)$ gives $\sigma_0=L_P/L_H\sim 10^{-61}$. Inverting for a target $\sigma=10^{-5}$ forces $\ell_*$ at the **$0.04$–$14 \mathrm{Mpc}$** scale depending on $d\in\{2,3,4\}$.
+1. **Counting seeds (R1 kinematics):** under the hypothesis $N_{\mathrm{eff}}=(L/\ell_{\ast})^d$, one has $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L)^{d/2}$ exactly. The holographic Sorkin case $(d=2,\ell_{\ast}=L_P)$ gives $\sigma_0=L_P/L_H\sim 10^{-61}$. Inverting for a target $\sigma=10^{-5}$ forces $\ell_{\ast}$ at the **$0.04$–$14 \mathrm{Mpc}$** scale depending on $d\in\{2,3,4\}$.
 
 2. **Soft open gain (R3 kinematics):** a squeeze factor $e^{2r}$ with $r=\mathcal{O}(1)$ yields $G_O=\mathcal{O}(10)$. Lifting Sorkin $\sigma_0$ to $10^{-5}$ would require $r\sim 64$, i.e. a **new scale**, not a soft open map.
 
-3. **Anisotropic stress and light paths (R2):** under the standard sub-horizon anisotropy equation, $|\gamma-1|=2\varepsilon\sigma(\rho_X/\rho_m)/|\delta_m|$. Incoherent line-of-sight accumulation multiplies by $\sqrt{N_{\mathrm{pat}}}$ with $N_{\mathrm{pat}}=\chi/\ell_*$. For Gpc paths and Mpc cells, $\sqrt{N}=\mathcal{O}(10$–$10^{2})$. Path accumulation **does not** promote Sorkin seeds to observational slip floors; mesoscopic seeds from (1) can reach $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$.
+3. **Anisotropic stress and light paths (R2):** under the standard sub-horizon anisotropy equation, $\lvert \gamma-1 \rvert=2\varepsilon\sigma(\rho_X/\rho_m)/\lvert \delta_m \rvert$. Incoherent line-of-sight accumulation multiplies by $\sqrt{N_{\mathrm{pat}}}$ with $N_{\mathrm{pat}}=\chi/\ell_{\ast}$. For Gpc paths and Mpc cells, $\sqrt{N}=\mathcal{O}(10$–$10^{2})$. Path accumulation **does not** promote Sorkin seeds to observational slip floors; mesoscopic seeds from (1) can reach $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$.
 
-**I do not claim** a derivation of why $\ell_*$ is galactic, a microphysical horizon bath with $r\sim 64$, or a DESI detection. Those remain open. Empirical DESI residual bounds live in the sister repository and are used here only as **a posteriori** scales.
+**I do not claim** a derivation of why $\ell_{\ast}$ is galactic, a microphysical horizon bath with $r\sim 64$, or a DESI detection. Those remain open. Empirical DESI residual bounds live in the sister repository and are used here only as **a posteriori** scales.
 
 ---
 
@@ -27,7 +27,7 @@ I record three families of **verified** relations relevant to whether late-time 
 
 | Included | Excluded |
 |:---------|:---------|
-| Algebraic identities | Fits to DESI choosing $\ell_*$ |
+| Algebraic identities | Fits to DESI choosing $\ell_{\ast}$ |
 | Standard GR sub-horizon relations (stated) | Homemade Boltzmann hierarchies |
 | Monte Carlo checks of $\mathrm{RMS}=s\sqrt{N}$ | Optical / lab metaphors as cosmology |
 | Order-of-magnitude cosmology ($H_0$, $\Omega_m$, $\Omega_\Lambda$ fiducial) | Peer-reviewed status |
@@ -41,35 +41,29 @@ Library: `scripts/core/lib_verified.py`.
 
 ### 2.1 Definitions
 
-Assume the DE residual sector admits a counting of effective degrees of freedom in a region of size $L$ with cell $\ell_*>0$ and dimension $d>0$:
-
+Assume the DE residual sector admits a counting of effective degrees of freedom in a region of size $L$ with cell $\ell_{\ast}>0$ and dimension $d>0$:
 
 $$
-N_{\mathrm{eff}} = \left(\frac{L}{\ell_*}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_*}{L}\right)^{d/2}.
+N_{\mathrm{eff}} = \left(\frac{L}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_{\ast}}{L}\right)^{d/2}.
 $$
-
 
 **Status:** exact given the counting hypothesis (not a theorem of GR).
 
 ### 2.2 Inversion
 
-
 $$
-\ell_* = L \sigma_{0,\mathrm{eff}}^{2/d}.
+\ell_{\ast} = L \sigma_{0,\mathrm{eff}}^{2/d}.
 $$
-
 
 **Status:** exact inverse of §2.1 (tested for $d\in\{2,3,4\}$ and several $\sigma$).
 
 ### 2.3 Holographic Sorkin seed
 
-Take $d=2$, $\ell_*=L_P$, $L=L_H=c/H_0$:
-
+Take $d=2$, $\ell_{\ast}=L_P$, $L=L_H=c/H_0$:
 
 $$
 N_{\mathrm{BH}} = \left(\frac{L_H}{L_P}\right)^{2}, \qquad \sigma_0 = \frac{L_P}{L_H} \sim 1.2\times 10^{-61} \quad (H_0=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
 $$
-
 
 **Status:** identity under that count. Matches the “Sorkin/Bekenstein” seed used as UV motivation in the sister corpus.
 
@@ -77,18 +71,18 @@ $$
 
 With $L=L_H$ and $\sigma_{0,\mathrm{eff}}=10^{-5}$:
 
-| $d$ | $\ell_*$ (exact inverse) | Character |
+| $d$ | $\ell_{\ast}$ (exact inverse) | Character |
 |:----|:-------------------------|:----------|
 | 2 | $L_H\times 10^{-5}\approx 0.044 \mathrm{Mpc}$ | mesoscopic |
 | 3 | $\approx 2.1 \mathrm{Mpc}$ | mesoscopic |
 | 4 | $\approx 14 \mathrm{Mpc}$ | mesoscopic |
 
 **Verified reading:** *if* the residual is to sit near $10^{-5}$ by counting alone, the counting cell cannot be Planckian.  
-**Not verified:** a dynamical principle that forces $\ell_*$ into that band. I have not found one yet.
+**Not verified:** a dynamical principle that forces $\ell_{\ast}$ into that band. I have not found one yet.
 
 ### 2.5 Structural zero
 
-For $\ell_*=L_P$ and $d\in\{2,3,4\}$, $\sigma_{0,\mathrm{eff}}\le\mathcal{O}(10^{-61})\ll 10^{-5}$.  
+For $\ell_{\ast}=L_P$ and $d\in\{2,3,4\}$, $\sigma_{0,\mathrm{eff}}\le\mathcal{O}(10^{-61})\ll 10^{-5}$.  
 Any experiment whose sensitivity is $\gtrsim 10^{-5}$ **must** return a null for this seed **if** the residual tracks $\sigma_{0,\mathrm{eff}}$ without a huge derived gain. That null is a **theorem of the counting hypothesis**, not a failure of the survey.
 
 ### 2.6 Scale anchor $R_8$ (arithmetic only)
@@ -99,14 +93,14 @@ Under the counting hypothesis alone (no fit):
 
 | Specification | Result | Near $R_8$? |
 |:--------------|:-------|:------------|
-| $\ell_*=R_8$, $d=3$ | $\sigma_{0,\mathrm{eff}}\approx 1.378\times 10^{-4}$ | (by construction) |
-| $\ell_*=R_8$, $d=4$ | $\sigma_{0,\mathrm{eff}}\approx 7.12\times 10^{-6}$ | — |
-| $\sigma=1.5\times 10^{-4}$, $d=2$ | $\ell_*\approx 0.67\,\mathrm{Mpc}$ | **no** ($\sim 94\%$ off) |
-| $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_*\approx 12.56\,\mathrm{Mpc}$ | **yes** ($\sim 5.8\%$ off) |
-| $\sigma=1.5\times 10^{-4}$, $d=4$ | $\ell_*\approx 54.5\,\mathrm{Mpc}$ | **no** ($\sim 359\%$ off) |
+| $\ell_{\ast}=R_8$, $d=3$ | $\sigma_{0,\mathrm{eff}}\approx 1.378\times 10^{-4}$ | (by construction) |
+| $\ell_{\ast}=R_8$, $d=4$ | $\sigma_{0,\mathrm{eff}}\approx 7.12\times 10^{-6}$ | — |
+| $\sigma=1.5\times 10^{-4}$, $d=2$ | $\ell_{\ast}\approx 0.67\,\mathrm{Mpc}$ | **no** ($\sim 94\%$ off) |
+| $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | **yes** ($\sim 5.8\%$ off) |
+| $\sigma=1.5\times 10^{-4}$, $d=4$ | $\ell_{\ast}\approx 54.5\,\mathrm{Mpc}$ | **no** ($\sim 359\%$ off) |
 
 **Verified:** the arithmetic above; **proximity to $R_8$ is specific to $d=3$** at this residual scale.  
-**Not verified / not claimed:** $\ell_*=R_8$; multi-$d$ robustness; any explanation of S$_8$.  
+**Not verified / not claimed:** $\ell_{\ast}=R_8$; multi-$d$ robustness; any explanation of S$_8$.  
 Data **tolerate** the $d=3$ row; nothing in-repo **prefers** it by fit.  
 Programme discussion: [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · `scripts/r1/r1_open_kernel_scales.py`.
 
@@ -118,11 +112,9 @@ Programme discussion: [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · `
 
 For a single-mode squeeze parameter $r\ge 0$,
 
-
 $$
 G_O = e^{2r}.
 $$
-
 
 At $r=1.5$, $G_O = e^{3}\approx 20.086$ (exact).
 
@@ -131,11 +123,9 @@ At $r=1.5$, $G_O = e^{3}\approx 20.086$ (exact).
 
 ### 3.2 Soft residual map (definition used in programme)
 
-
 $$
 \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}},
 $$
-
 
 with defaults $G_F=1$ (freeze-out preserves amplitude; consistent with sister-repo OU freeze scans) and $G_U=1$ (late-time $\Delta x=\mathcal{O}(1)$ stretch is not $e^{60}$).
 
@@ -144,11 +134,9 @@ with defaults $G_F=1$ (freeze-out preserves amplitude; consistent with sister-re
 For $\sigma_0\sim 10^{-61}$ and any $r\le 10$, $\sigma_{\mathrm{res}}\ll 10^{-50}$.  
 To reach $10^{-5}$ from Sorkin via $G_O$ alone:
 
-
 $$
 r = \frac12\ln\!\left(\frac{10^{-5}}{\sigma_0}\right) \approx 64.4.
 $$
-
 
 **Verified:** the number $r\sim 64$.  
 **Not verified / not claimed:** a horizon-bath derivation of $r\sim 64$ (would be a new scale claim).
@@ -161,32 +149,26 @@ $$
 
 In Newtonian gauge, sub-horizon, with
 
-
 $$
 k^{2}\Psi = -4\pi G a^{2}\rho_m\delta_m, \qquad k^{2}(\Phi-\Psi)=8\pi G a^{2}\pi_T, \qquad \pi_T = \varepsilon \sigma \rho_X,
 $$
 
-
 one obtains
 
-
 $$
-|\gamma-1| = \left|\frac{\Phi}{\Psi}-1\right| = 2\varepsilon\sigma\frac{\rho_X}{\rho_m|\delta_m|}.
+\lvert \gamma-1 \rvert = \left\lvert \frac{\Phi}{\Psi}-1\right\rvert = 2\varepsilon\sigma\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}.
 $$
-
 
 **Status:** standard consequence of the anisotropy equation under the listed assumptions (Ma & Bertschinger form; same as sister `slip_bridge.py`).  
 **Not verified:** value of $\varepsilon$ from first principles; full $k,z$-dependent Boltzmann solution.
 
 ### 4.2 Path accumulation (probability)
 
-If a line of sight crosses $N_{\mathrm{pat}}=\chi/\ell_*$ independent patches and each contributes an iid zero-mean wrinkle of RMS $s$, then
-
+If a line of sight crosses $N_{\mathrm{pat}}=\chi/\ell_{\ast}$ independent patches and each contributes an iid zero-mean wrinkle of RMS $s$, then
 
 $$
 \mathrm{RMS}_{\mathrm{path}} = s\sqrt{N_{\mathrm{pat}}}.
 $$
-
 
 **Status:** exact for the iid model (Monte Carlo checked to $\sim 3\%$).  
 **Not verified:** Gaussianity or independence of real DE stress along the LOS.
@@ -195,13 +177,13 @@ $$
 
 Comoving distance $\chi(1.5)\approx 4.5\times 10^{3} \mathrm{Mpc}$ (trapezoidal integral of $c/H(z)$; convergence tested).
 
-| Seed | Local $\|\gamma-1\|$ ($\varepsilon=\delta_m=1$, $z\sim 0.8$) | $\sqrt{N}$ (example $\ell_*$) | Path RMS |
+| Seed | Local $\|\gamma-1\|$ ($\varepsilon=\delta_m=1$, $z\sim 0.8$) | $\sqrt{N}$ (example $\ell_{\ast}$) | Path RMS |
 |:-----|:--------------------------------------------------------------|:------------------------------|:---------|
-| Sorkin | $\sim 10^{-61}$ | $\sim 67$ ($\ell_*=1 \mathrm{Mpc}$) | $\sim 10^{-60}$ |
-| $\sigma=10^{-5}$, $\ell_*=2.1 \mathrm{Mpc}$ | $\sim 7\times 10^{-6}$ | $\sim 46$ | $\sim 3\times 10^{-4}$ |
-| $\sigma=1.5\times 10^{-4}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$ ($\ell_*=10 \mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
+| Sorkin | $\sim 10^{-61}$ | $\sim 67$ ($\ell_{\ast}=1 \mathrm{Mpc}$) | $\sim 10^{-60}$ |
+| $\sigma=10^{-5}$, $\ell_{\ast}=2.1 \mathrm{Mpc}$ | $\sim 7\times 10^{-6}$ | $\sim 46$ | $\sim 3\times 10^{-4}$ |
+| $\sigma=1.5\times 10^{-4}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$ ($\ell_{\ast}=10 \mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
 
-To lift Sorkin local slip to a floor $|\gamma-1|\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_*=1 \mathrm{Mpc}$.
+To lift Sorkin local slip to a floor $\lvert \gamma-1 \rvert\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_{\ast}=1 \mathrm{Mpc}$.
 
 **Verified reading:** geometric “universe as telescope” along the path is $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — useful, **not** a $10^{56}$ amplifier.  
 **Not verified:** that DESI/Euclid *will* detect slip from DE noise; only that the OOM can approach $10^{-3}$ if $\sigma\sim 10^{-5}$–$10^{-4}$ at **hand-placed** NP corners.  
@@ -220,11 +202,9 @@ To lift Sorkin local slip to a floor $|\gamma-1|\sim 0.05$ by $\sqrt{N}$ alone r
 
 If Sorkin rescues are discarded, the only coherent soft-regime architecture is:
 
-
 $$
-\ell_*\sim\mathrm{Mpc} \Rightarrow \sigma_{0,\mathrm{eff}}\sim 10^{-6}\text{–}10^{-5} \xrightarrow{G_O=e^{2r}, r=\mathcal{O}(1)} \sigma_{\mathrm{res}}\le 1.5\times 10^{-4} \xrightarrow{\pi_T} \mathrm{RMS}_{\mathrm{path}}(|\gamma-1|)\sim 10^{-4}\text{–}10^{-3}.
+\ell_{\ast}\sim\mathrm{Mpc} \Rightarrow \sigma_{0,\mathrm{eff}}\sim 10^{-6}\text{–}10^{-5} \xrightarrow{G_O=e^{2r}, r=\mathcal{O}(1)} \sigma_{\mathrm{res}}\le 1.5\times 10^{-4} \xrightarrow{\pi_T} \mathrm{RMS}_{\mathrm{path}}(\lvert \gamma-1 \rvert)\sim 10^{-4}\text{–}10^{-3}.
 $$
-
 
 | Label | Definition | Residual vs DESI ceiling | Path RMS (OOM, $d=3$, $\varepsilon=1$) |
 |:------|:-----------|:-------------------------|:----------------------------------------|
@@ -233,7 +213,7 @@ $$
 | NP-user ($\sigma_0=10^{-5}$, $r=1.5$) | same shape | **Tension** ($\sigma_{\mathrm{res}}\approx 2.0\times 10^{-4}$) | $\sim 7\times 10^{-3}$ |
 
 **Verified:** algebra and numbers for NP-A/B; naive product $\sigma_0\times G_O\times\sqrt{N}\neq\mathrm{RMS}$.  
-**Not verified:** a principle that realises mesoscopic $\ell_*$, or a bath that realises $r=\mathcal{O}(1)$.  
+**Not verified:** a principle that realises mesoscopic $\ell_{\ast}$, or a bath that realises $r=\mathcal{O}(1)$.  
 Full write-up: [`NARROW_PATH.md`](NARROW_PATH.md).
 
 ---
@@ -242,15 +222,13 @@ Full write-up: [`NARROW_PATH.md`](NARROW_PATH.md).
 
 Define the soft residual after open kinematics and before/with path geometry as appropriate. Then:
 
-
 $$
-\sigma_{\mathrm{res}}^{\mathrm{(soft)}} = e^{2r}\sigma_{0,\mathrm{eff}} \quad (r=\mathcal{O}(1)), \qquad \mathrm{RMS}_{\gamma}^{\mathrm{(path)}} \sim |\gamma-1|(\sigma_{\mathrm{res}}) \sqrt{\chi/\ell_*}.
+\sigma_{\mathrm{res}}^{\mathrm{(soft)}} = e^{2r}\sigma_{0,\mathrm{eff}} \quad (r=\mathcal{O}(1)), \qquad \mathrm{RMS}_{\gamma}^{\mathrm{(path)}} \sim \lvert \gamma-1 \rvert(\sigma_{\mathrm{res}}) \sqrt{\chi/\ell_{\ast}}.
 $$
-
 
 **Theorem (soft regime, in-repo):**  
-If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1)$, then both residual BAO-scale amplitudes and path-integrated slip remain many tens of orders of magnitude below $10^{-5}$ and below $|\gamma-1|\sim 0.05$.  
-**Measurability in this framework requires either** (i) a counting cell $\ell_*$ that makes $\sigma_{0,\mathrm{eff}}$ already mesoscopic (R1 principle still open), **or** (ii) a *derived* hard open map with $r\sim 60$ (not constructed).
+If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1)$, then both residual BAO-scale amplitudes and path-integrated slip remain many tens of orders of magnitude below $10^{-5}$ and below $\lvert \gamma-1 \rvert\sim 0.05$.  
+**Measurability in this framework requires either** (i) a counting cell $\ell_{\ast}$ that makes $\sigma_{0,\mathrm{eff}}$ already mesoscopic (R1 principle still open), **or** (ii) a *derived* hard open map with $r\sim 60$ (not constructed).
 
 ---
 
@@ -269,7 +247,7 @@ This note **does not re-derive** the DESI likelihood. It consumes those results 
 
 ## 8. Explicit non-claims (do not cite as results)
 
-1. A first-principles derivation of galactic $\ell_*$ for DE (R1a/b/c open).  
+1. A first-principles derivation of galactic $\ell_{\ast}$ for DE (R1a/b/c open).  
 2. A horizon Lindblad model that yields $r\sim 64$.  
 3. A value of $\varepsilon$ fixed by SDiff symmetry.  
 4. A detection of stochastic DE or of slip from vacuum noise.  

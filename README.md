@@ -6,7 +6,7 @@ July 2026 · independent work · not peer reviewed
 
 I keep theory notes and small scripts here. The question is simple to state and hard to finish:
 
-Can a late-time residual in dark energy (or the vacuum) be large enough for surveys to care about, without inventing free amplification factors of order \(10^{56}\) from a Planck-scale seed?
+Can a late-time residual in dark energy (or the vacuum) be large enough for surveys to care about, without inventing free amplification factors of order $10^{56}$ from a Planck-scale seed?
 
 I do the data side in a sister repo. This one is the map of what is closed, what is still open, and the numbers that do not move when you re-run the tests.
 
@@ -52,10 +52,10 @@ tests/  results/  data/
 
 ## Where the work sits right now
 
-Mean expansion: flat \(\Lambda\)CDM.  
-Residual amplitude under counting: \(\sigma=(\ell_*/L_H)^{3/2}\).
+Mean expansion: flat $\Lambda$CDM.  
+Residual amplitude under counting: $\sigma=(\ell_{\ast}/L_H)^{3/2}$.
 
-If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\). That gives \(\sigma\sim 8.5\times 10^{-5}\), under the DESI residual ceiling \(\sigma_X<1.5\times 10^{-4}\) (95% CL) from the sister analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the \(\sim 8\%\) Hubble tension — I checked that and closed it on purpose.
+If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) from the sister analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that and closed it on purpose.
 
 Main write-up: [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md).
 

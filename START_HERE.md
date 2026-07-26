@@ -13,9 +13,9 @@ I split the programme into three repos so claims do not get mixed:
 | **this one** | theory and kinematics |
 | [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | analogies and wrong-scale experiments (not cosmology claims) |
 
-The scientific question: can vacuum / dark-energy noise sit near \(10^{-5}\)–\(10^{-4}\) without a free \(10^{56}\) boost from Planck?  
-On the data side I already have \(\sigma_X < 1.5\times 10^{-4}\) (95% CL).  
-On the theory side the working picture is \(\ell_*\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) under a few axioms I write down explicitly.
+The scientific question: can vacuum / dark-energy noise sit near $10^{-5}$–$10^{-4}$ without a free $10^{56}$ boost from Planck?  
+On the data side I already have $\sigma_X < 1.5\times 10^{-4}$ (95% CL).  
+On the theory side the working picture is $\ell_{\ast}\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ under a few axioms I write down explicitly.
 
 ---
 
@@ -58,7 +58,7 @@ Nothing important was deleted when I reorganised; files only moved.
 **C — things I already closed**  
 Sister `amplification-gap.md`, plus everything under [`papers/closed_walls/`](papers/closed_walls/).
 
-Open research lines (coupling, survey tests, and what I am not doing about \(H_0\)): [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md).  
+Open research lines (coupling, survey tests, and what I am not doing about $H_0$): [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md).  
 What is public data versus my own analysis: [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kernel/HONEST_ASSETS.md).
 
 ---
@@ -67,12 +67,12 @@ What is public data versus my own analysis: [`papers/r1_kernel/HONEST_ASSETS.md`
 
 | Topic | Where it stands |
 |:------|:----------------|
-| Soft \(10^{56}\) from Sorkin seed | closed under the maps I checked |
-| \(R_{\mathrm{nl}}\) | \(\approx 8.61\,\mathrm{Mpc}\) |
-| Free residual cell under axioms A0–A4 | \(\ell_*\sim R_{\mathrm{nl}}\) |
-| Does nature have \(\chi\)? | I postulate it; I do not derive it from the SM |
-| Coupling \(g\) | working bound \(\lvert g\rvert\lesssim 1.45\) from DESI residual |
-| Residual explains \(\sim 8\%\) \(H_0\)? | no — amplitude is short by a lot |
+| Soft $10^{56}$ from Sorkin seed | closed under the maps I checked |
+| $R_{\mathrm{nl}}$ | $\approx 8.61\,\mathrm{Mpc}$ |
+| Free residual cell under axioms A0–A4 | $\ell_{\ast}\sim R_{\mathrm{nl}}$ |
+| Does nature have $\chi$? | I postulate it; I do not derive it from the SM |
+| Coupling $g$ | working bound $\lvert g\rvert\lesssim 1.45$ from DESI residual |
+| Residual explains $\sim 8\%$ $H_0$? | no — amplitude is short by a lot |
 
 ---
 

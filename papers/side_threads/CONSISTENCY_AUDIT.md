@@ -27,26 +27,18 @@ I keep these three roles separate on purpose. Mixing them is how overclaims star
 | Sorkin holographic seed | $\sigma_0 = L_P/L_H \approx 1.18\times 10^{-61}$ | `lib_verified.sorkin_holographic` |
 | Soft open $r=1.5$ | $G_O=e^{3}\approx 20.086$ | `lib_verified.soft_squeeze_gain` |
 | $r$ to lift Sorkin to $10^{-5}$ | $\approx 64.4$ | algebra |
-| $\ell_*$ for $\sigma=10^{-5}$, $d=3$ | $\approx 2.065 \mathrm{Mpc}$ | `ell_for_target_sigma` |
+| $\ell_{\ast}$ for $\sigma=10^{-5}$, $d=3$ | $\approx 2.065 \mathrm{Mpc}$ | `ell_for_target_sigma` |
 | Slip wall $z=0$, $\varepsilon=1$, $\sigma_X=1.5\times 10^{-4}$ | $\lvert\gamma-1\rvert\approx 6.52\times 10^{-4}$ | `slip_deviation` |
 | Path RMS NP-A $z_s=1.5$ | $\approx 3.5\times 10^{-4}$ | light-cone atlas |
 | Path RMS NP-B $z_s=1.5$ | $\approx 4.4\times 10^{-3}$ | light-cone atlas |
-| Path boost NP-A $z_s=1.5$ | $\sqrt{N}\approx 46.6$ | $\chi/\ell_*$ |
+| Path boost NP-A $z_s=1.5$ | $\sqrt{N}\approx 46.6$ | $\chi/\ell_{\ast}$ |
 
 ---
 
 ## 3. Canonical equations (single chain)
 
 $$
-\begin{aligned}
-&(E1)\quad k^{2}\Psi=-4\pi G a^{2}\rho_m\delta_m\\
-&(E2)\quad k^{2}(\Phi-\Psi)=8\pi G a^{2}\pi_T\\
-&(M1)\quad \pi_T=\varepsilon\sigma_X\rho_X\\
-&(W)\quad \lvert\gamma-1\rvert=2\varepsilon\sigma_X\frac{\rho_X}{\rho_m\lvert\delta_m\rvert}\\
-&(P)\quad \mathrm{RMS}_{\mathrm{path}}=\lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\chi/\ell_*}\\
-&(B)\quad \sigma=(\ell_*/L_H)^{3/2}\quad(d=3)\\
-&(G)\quad \sigma_{\mathrm{res}}=e^{2r}\sigma,\quad r=\mathcal{O}(1)
-\end{aligned}
+\begin{aligned} &(E1)\quad k^{2}\Psi=-4\pi G a^{2}\rho_m\delta_m\\ &(E2)\quad k^{2}(\Phi-\Psi)=8\pi G a^{2}\pi_T\\ &(M1)\quad \pi_T=\varepsilon\sigma_X\rho_X\\ &(W)\quad \lvert\gamma-1\rvert=2\varepsilon\sigma_X\frac{\rho_X}{\rho_m\lvert\delta_m\rvert}\\ &(P)\quad \mathrm{RMS}_{\mathrm{path}}=\lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}\\ &(B)\quad \sigma=(\ell_{\ast}/L_H)^{3/2}\quad(d=3)\\ &(G)\quad \sigma_{\mathrm{res}}=e^{2r}\sigma,\quad r=\mathcal{O}(1) \end{aligned}
 $$
 
 **Invalid identities** (I have seen these slip into drafts):

@@ -49,7 +49,7 @@ Every model states the status of seed, gain, and operator (derived / bounded / a
 ## A5 — DESI is a test, not a dial
 
 Sister bounds are used only a posteriori for compatibility, tension, or falsification.  
-Excluded: choosing $\ell_*$ or $r$ to sit under $1.5\times 10^{-4}$.
+Excluded: choosing $\ell_{\ast}$ or $r$ to sit under $1.5\times 10^{-4}$.
 
 ---
 

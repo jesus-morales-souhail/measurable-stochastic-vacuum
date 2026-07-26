@@ -15,7 +15,7 @@ If one discards “ad hoc” rescues of the Planck/Sorkin seed $\sigma_0\sim 10^
 
 1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed;  
 2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$);  
-3. **R2 — anisotropic stress + light-path accumulation** $\mathrm{RMS}=|\gamma-1|_{\mathrm{loc}}\sqrt{\chi/\ell_*}$, not a change of global $H(z)$.
+3. **R2 — anisotropic stress + light-path accumulation** $\mathrm{RMS}=\lvert \gamma-1 \rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}$, not a change of global $H(z)$.
 
 I write the causal chain carefully here (not as a naive product of three ad hoc factors), give **machine-checked numbers**, and isolate the **DESI-safe window** where the isotropic residual stays under the sister bound while the light-path slip RMS sits near $10^{-3}$.
 
@@ -40,22 +40,20 @@ I write the causal chain carefully here (not as a naive product of three ad hoc 
 
 **Identity (exact under the counting hypothesis):**
 
-
 $$
-N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_*}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_*}{L_H}\right)^{d/2}, \qquad \ell_* = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
+N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_{\ast}}{L_H}\right)^{d/2}, \qquad \ell_{\ast} = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
 $$
-
 
 **For $\sigma_{0,\mathrm{eff}}=10^{-5}$ and $L_H=c/H_0$ ($H_0=67.4$):**
 
-| $d$ | $\ell_*$ |
+| $d$ | $\ell_{\ast}$ |
 |:----|:---------|
 | 2 | $0.0445 \mathrm{Mpc}$ |
 | 3 | $2.065 \mathrm{Mpc}$ (cluster / large-group scale) |
 | 4 | $14.07 \mathrm{Mpc}$ |
 
 **Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$.  
-**Still open (not claimed):** which principle fixes $\ell_*$ (R1a/b/c). That is the hard problem I have not closed.
+**Still open (not claimed):** which principle fixes $\ell_{\ast}$ (R1a/b/c). That is the hard problem I have not closed.
 
 ---
 
@@ -63,11 +61,9 @@ $$
 
 **Identity:** $G_O=e^{2r}$. For $r=1.5$, $G_O=e^{3}\approx 20.086$.
 
-
 $$
 \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}} \quad\text{with soft defaults }G_U=G_F=1.
 $$
-
 
 | $\sigma_{0,\mathrm{eff}}$ | $r$ | $\sigma_{\mathrm{res}}$ |
 |:--------------------------|:----|:------------------------|
@@ -85,19 +81,15 @@ It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual 
 **Do not** force the signal into global $H(z)$ (BAO residual bound is already tight).  
 Source anisotropic stress and read light:
 
-
 $$
-\pi_T = \varepsilon \sigma_{\mathrm{res}} \rho_X, \qquad |\gamma-1|_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m|\delta_m|} \quad (k\gg aH, \mu=1).
+\pi_T = \varepsilon \sigma_{\mathrm{res}} \rho_X, \qquad \lvert \gamma-1 \rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m\lvert \delta_m \rvert} \quad (k\gg aH, \mu=1).
 $$
-
 
 **Path accumulation (iid patches):**
 
-
 $$
-N_{\mathrm{pat}} = \frac{\chi(z_s)}{\ell_*}, \qquad \mathrm{RMS}_{\mathrm{path}} = |\gamma-1|_{\mathrm{loc}} \sqrt{N_{\mathrm{pat}}}.
+N_{\mathrm{pat}} = \frac{\chi(z_s)}{\ell_{\ast}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert \gamma-1 \rvert_{\mathrm{loc}} \sqrt{N_{\mathrm{pat}}}.
 $$
-
 
 For $z_s=1.5$, $\chi\approx 4482 \mathrm{Mpc}$ (fiducial cosmology).
 
@@ -121,19 +113,17 @@ ell_* → sigma_0,eff (R1 counting)
 
 ### 3.2 Invalid shorthand
 
-
 $$
 \underbrace{10^{-5}}_{\text{seed}} \times \underbrace{20}_{G_O} \times \underbrace{46}_{\sqrt{N}} \not= \mathrm{RMS}_{\mathrm{path}}.
 $$
 
-
-That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch**, which is already $\propto\sigma_{\mathrm{res}}=G_O\sigma_0$, and the prefactor $2\varepsilon(\rho_X/\rho_m)/|\delta_m|$ is $\mathcal{O}(0.1$–$1)$, not $1$.
+That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch**, which is already $\propto\sigma_{\mathrm{res}}=G_O\sigma_0$, and the prefactor $2\varepsilon(\rho_X/\rho_m)/\lvert \delta_m \rvert$ is $\mathcal{O}(0.1$–$1)$, not $1$.
 
 **Machine check ($d=3$, $\sigma_0=10^{-5}$, $r=1.5$, $\varepsilon=1$, $z=0.8$):**
 
 | Quantity | Value |
 |:---------|:------|
-| $\ell_*$ | $2.065 \mathrm{Mpc}$ |
+| $\ell_{\ast}$ | $2.065 \mathrm{Mpc}$ |
 | $G_O$ | $20.086$ |
 | $\sigma_{\mathrm{res}}$ | $2.009\times 10^{-4}$ |
 | $\|\gamma-1\|_{\mathrm{loc}}$ | $1.498\times 10^{-4}$ |
@@ -168,29 +158,25 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 
 **NP-user sketch** ($\sigma_0=10^{-5}$, $r=1.5$) is the right *shape* of the narrow path but must be **clipped** into NP-B (or NP-A) to stay consistent with the DESI residual null/ceiling.
 
-**Status of NP-B (read carefully):** $\sigma_0$ and $r$ in NP-B are **not derived**. They are a **hand-placed** point in the DESI-safe window used to read order-of-magnitude path RMS **if** a mesoscopic seed and soft $G_O\sim\mathcal{O}(10)$ existed. Fitting $\ell_*$ or $r$ to DESI is forbidden ([`BOUNDARY.md`](../../BOUNDARY.md)). NP-B is architecture kinematics, not a prediction of the open kernel.
+**Status of NP-B (read carefully):** $\sigma_0$ and $r$ in NP-B are **not derived**. They are a **hand-placed** point in the DESI-safe window used to read order-of-magnitude path RMS **if** a mesoscopic seed and soft $G_O\sim\mathcal{O}(10)$ existed. Fitting $\ell_{\ast}$ or $r$ to DESI is forbidden ([`BOUNDARY.md`](../../BOUNDARY.md)). NP-B is architecture kinematics, not a prediction of the open kernel.
 
 ---
 
 ## 5. Concrete observable prediction (conditional)
 
-**If** a principle fixes $\ell_*$ so that $\sigma_{0,\mathrm{eff}}$ lies in the DESI-safe mesoscopic window, **and** soft open gain is at most $G_O\sim\mathcal{O}(10)$, **and** $\varepsilon\sim\mathcal{O}(1)$, then:
-
+**If** a principle fixes $\ell_{\ast}$ so that $\sigma_{0,\mathrm{eff}}$ lies in the DESI-safe mesoscopic window, **and** soft open gain is at most $G_O\sim\mathcal{O}(10)$, **and** $\varepsilon\sim\mathcal{O}(1)$, then:
 
 $$
-\mathrm{RMS}_{\mathrm{path}}(|\gamma-1|) \sim 10^{-3}\text{–}10^{-4} \quad\text{at }z_s\sim 1.5,
+\mathrm{RMS}_{\mathrm{path}}(\lvert \gamma-1 \rvert) \sim 10^{-3}\text{–}10^{-4} \quad\text{at }z_s\sim 1.5,
 $$
-
 
 while the isotropic BAO residual remains
-
 
 $$
 \sigma_{\mathrm{res}} \le 1.5\times 10^{-4} \quad\text{(sister bound)}.
 $$
 
-
-That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_*$.
+That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_{\ast}$.
 
 ### 5.1 Forbidden binary (same discipline as the $R_8$ honesty lock)
 
@@ -203,7 +189,7 @@ That sentence fails on **both** sides. I have caught myself wanting to write ver
 | Broken claim | Why it fails |
 |:-------------|:-------------|
 | Detection $\Rightarrow$ “texture of DE” | $\mathrm{RMS}\sim 10^{-3}$ in the table is the **NP-B hand point**, not a derived open-kernel prediction. Even a real excess at that band must first survive **baryonic feedback, photo-$z$ errors, intrinsic alignments, and shape systematics** — standard weak-lensing contaminants that can raise RMS without any vacuum grain. |
-| Null $\Rightarrow$ “model discarded without excuses” | A null at that sensitivity excludes the **specific** $(\ell_*,G_O,\varepsilon)$ corner that was tested (e.g. NP-B), **not** the whole programme. While the R1 principle is still **absent (declared)**, smaller $\ell_*$ or smaller $G_O$ can sit below the threshold. That is the meaning of an open kernel, not a loophole. |
+| Null $\Rightarrow$ “model discarded without excuses” | A null at that sensitivity excludes the **specific** $(\ell_{\ast},G_O,\varepsilon)$ corner that was tested (e.g. NP-B), **not** the whole programme. While the R1 principle is still **absent (declared)**, smaller $\ell_{\ast}$ or smaller $G_O$ can sit below the threshold. That is the meaning of an open kernel, not a loophole. |
 
 **Sustained wording (use this):**
 
@@ -228,11 +214,11 @@ Does any Stage-III/IV pipeline constrain a **stochastic, path-accumulated** $\ma
 **Partial answer with real published data** (not a full likelihood):  
 [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) · `python scripts/side/lensing_rms_real_data_compare.py`
 
-| External (cited) | Scale | vs NP-B path RMS \(\sim 4.4\times 10^{-3}\) |
+| External (cited) | Scale | vs NP-B path RMS $\sim 4.4\times 10^{-3}$ |
 |:-----------------|:------|:-------------------------------------------|
-| Maus $\sigma(\gamma)=0.11$ (arXiv:2505.20656) | measured mean slip | \(\sim 25\times\) coarser |
-| Sakr constant $\eta\sim 5\%$ (arXiv:2501.07477) | Euclid+DESI-like **forecast** | \(\sim 11\times\) coarser |
-| DESI MG $\sigma(\Sigma_0)=0.045$ (arXiv:2411.12026) | measured | \(\sim 10\times\) coarser |
+| Maus $\sigma(\gamma)=0.11$ (arXiv:2505.20656) | measured mean slip | $\sim 25\times$ coarser |
+| Sakr constant $\eta\sim 5\%$ (arXiv:2501.07477) | Euclid+DESI-like **forecast** | $\sim 11\times$ coarser |
+| DESI MG $\sigma(\Sigma_0)=0.045$ (arXiv:2411.12026) | measured | $\sim 10\times$ coarser |
 | Stage-IV $m\sim 2\times 10^{-3}$ (SRD/Euclid) | **calibration**, wrong operator | must not be rebranded as path-RMS reach |
 
 Until a dedicated forecast maps **this** statistic into survey likelihoods, treat $10^{-3}$ as a **theory-side OOM target**, not an established survey capability.
@@ -279,7 +265,7 @@ R2 anisotropic stress → light
 | Algebra of the narrow path | **Verified** (`lib_verified` + tests) |
 | DESI-safe window NP-A / NP-B numbers | **Verified** as kinematics of **hand-placed** points |
 | NP-B as derived prediction | **Not claimed** ($\sigma_0$, $r$ not fixed by principle) |
-| Principle fixing $\ell_*$ | **Open** (R1a/b/c/d; [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md)) |
+| Principle fixing $\ell_{\ast}$ | **Open** (R1a/b/c/d; [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md)) |
 | Microphysical $r=\mathcal{O}(1)$ from horizon bath | **Open** (soft $r$ is only a kinematic allowance) |
 | $\varepsilon$ from SDiff | **Open** |
 | Detection / “texture of DE” | **Not claimed** |

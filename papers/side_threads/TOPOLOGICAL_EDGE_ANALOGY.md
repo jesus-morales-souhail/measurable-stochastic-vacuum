@@ -101,20 +101,20 @@ It does **not** open a free isotropic noise channel for telescopes.
 ### 3.3 Edge = one grain number
 
 $$
-\sigma = \Bigl(\frac{\ell_*}{L_H}\Bigr)^{3/2}
+\sigma = \Bigl(\frac{\ell_{\ast}}{L_H}\Bigr)^{3/2}
 $$
 
 - $\sigma$: amplitude of the **edge** (residual sector), one constant like $\Omega_\Lambda$.  
-- $\ell_*$: edge correlation length (mesoscopic if $\sigma\sim 10^{-5}$).  
+- $\ell_{\ast}$: edge correlation length (mesoscopic if $\sigma\sim 10^{-5}$).  
 - **Not** $L_P$: Planck counting is the wrong “filling factor” for telescope edges.
 
 ### 3.4 Edge current = light sees shear
 
 $$
-\pi_T \sim \sigma \rho_X, \qquad |\gamma-1| \sim \sigma, \qquad \mathrm{RMS}_{\mathrm{path}} \sim \sigma^{2/3}.
+\pi_T \sim \sigma \rho_X, \qquad \lvert \gamma-1 \rvert \sim \sigma, \qquad \mathrm{RMS}_{\mathrm{path}} \sim \sigma^{2/3}.
 $$
 
-(Last line: $d=3$ counting + path $\sqrt{\chi/\ell_*}$; see `SIMPLE_AS_LAMBDA.md`.)
+(Last line: $d=3$ counting + path $\sqrt{\chi/\ell_{\ast}}$; see `SIMPLE_AS_LAMBDA.md`.)
 
 ### 3.5 Protection (why DESI null does not kill the edge)
 
@@ -205,7 +205,7 @@ Keep only: **bulk $\Lambda$ + edge $\sigma$ + $\mathrm{RMS}\sim\sigma^{2/3}$**.
 |:-------------|:--------------|
 | Bulk insulator | DESI residual null / near-$\Lambda$ background |
 | No reverse mode for free amplification | Soft open + path cannot lift $10^{-61}$ |
-| Edge needs its own scale | Mesoscopic $\ell_*$ for $\sigma\sim 10^{-5}$ |
+| Edge needs its own scale | Mesoscopic $\ell_{\ast}$ for $\sigma\sim 10^{-5}$ |
 | Global path | $\mathrm{RMS}=s\sqrt{N_{\mathrm{pat}}}$ |
 | Protection ≠ detection | Zeros are structural; signal only if $\sigma$ mesoscopic |
 

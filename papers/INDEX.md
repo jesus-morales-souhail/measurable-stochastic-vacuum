@@ -51,12 +51,12 @@ pytest -q
 | 2 | [`r1_kernel/r1-derivation-sandwich.md`](r1_kernel/r1-derivation-sandwich.md) | uniqueness + numbers |
 | 3 | [`r1_kernel/r1-sandwich-falsifiers.md`](r1_kernel/r1-sandwich-falsifiers.md) | how it dies |
 | 4 | [`r1_kernel/r1-T2-preregistration.md`](r1_kernel/r1-T2-preregistration.md) | residual × structure protocol |
-| 5 | [`r1_kernel/r1-lineA-g-from-averaging.md`](r1_kernel/r1-lineA-g-from-averaging.md) | \(g\) from averaging proxy |
-| 6 | [`r1_kernel/r1-a1-microphysics.md`](r1_kernel/r1-a1-microphysics.md) | where \(g\chi\delta_m\) could come from |
-| 7 | [`r1_kernel/r1-principle-nonlinear-matter.md`](r1_kernel/r1-principle-nonlinear-matter.md) | full \(\sigma(R)\) |
+| 5 | [`r1_kernel/r1-lineA-g-from-averaging.md`](r1_kernel/r1-lineA-g-from-averaging.md) | $g$ from averaging proxy |
+| 6 | [`r1_kernel/r1-a1-microphysics.md`](r1_kernel/r1-a1-microphysics.md) | where $g\chi\delta_m$ could come from |
+| 7 | [`r1_kernel/r1-principle-nonlinear-matter.md`](r1_kernel/r1-principle-nonlinear-matter.md) | full $\sigma(R)$ |
 | 8 | [`r1_kernel/r1-open-kernel.md`](r1_kernel/r1-open-kernel.md) | walls vs open kernel |
 | 9 | [`r1_kernel/r1-scale-decade-8-12.md`](r1_kernel/r1-scale-decade-8-12.md) | 8–12 Mpc decade |
-| 10 | [`r1_kernel/r1-bounding-g-plan.md`](r1_kernel/r1-bounding-g-plan.md) | plan for \(\lambda\), \(g\) |
+| 10 | [`r1_kernel/r1-bounding-g-plan.md`](r1_kernel/r1-bounding-g-plan.md) | plan for $\lambda$, $g$ |
 | 11 | [`r1_kernel/r1-t1-mechanisms-compute.md`](r1_kernel/r1-t1-mechanisms-compute.md) | domain / mask numbers |
 | 12 | [`r1_kernel/r1-t12-bbks-and-derivation.md`](r1_kernel/r1-t12-bbks-and-derivation.md) | BBKS peaks |
 | 13 | [`r1_kernel/r1-mechanism-candidates.md`](r1_kernel/r1-mechanism-candidates.md) | literature ranking |
@@ -66,10 +66,10 @@ pytest -q
 
 | Number I keep quoting | Value |
 |:----------------------|:------|
-| \(R_{\mathrm{nl}}\) | \(\approx 8.61\,\mathrm{Mpc}\) |
-| \(r_{e,\mathrm{mask}}\) | \(\approx 1.11\,R_{\mathrm{nl}}\) |
-| \(\sigma_{\mathrm{free}}\) (\(d=3\)) | \(\approx 8.5\times 10^{-5}\) |
-| working \(\lvert\lambda\rvert\), \(\lvert g\rvert\) | \(\lesssim 1.24\times 10^{-4}\), \(\lesssim 1.45\) |
+| $R_{\mathrm{nl}}$ | $\approx 8.61\,\mathrm{Mpc}$ |
+| $r_{e,\mathrm{mask}}$ | $\approx 1.11\,R_{\mathrm{nl}}$ |
+| $\sigma_{\mathrm{free}}$ ($d=3$) | $\approx 8.5\times 10^{-5}$ |
+| working $\lvert\lambda\rvert$, $\lvert g\rvert$ | $\lesssim 1.24\times 10^{-4}$, $\lesssim 1.45$ |
 
 ```bash
 python scripts/r1/r1_sigma_R_full.py
@@ -84,12 +84,12 @@ python scripts/r1/r1_T2_mock_pipeline.py
 
 | File | Topic |
 |:-----|:------|
-| sister `amplification-gap.md` | soft \(10^{56}\) |
-| [`closed_walls/h0-bridge-toy-map.md`](closed_walls/h0-bridge-toy-map.md) | path RMS vs \(H_0\) |
-| [`closed_walls/h0-desqueezing-filter.md`](closed_walls/h0-desqueezing-filter.md) | invented \(H_0(z)\) |
+| sister `amplification-gap.md` | soft $10^{56}$ |
+| [`closed_walls/h0-bridge-toy-map.md`](closed_walls/h0-bridge-toy-map.md) | path RMS vs $H_0$ |
+| [`closed_walls/h0-desqueezing-filter.md`](closed_walls/h0-desqueezing-filter.md) | invented $H_0(z)$ |
 | [`closed_walls/h0-running-brachistochrone-bridge.md`](closed_walls/h0-running-brachistochrone-bridge.md) | literature bridge |
 | [`closed_walls/ell-star-external-scales.md`](closed_walls/ell-star-external-scales.md) | Andromeda / Virgo |
-| [`closed_walls/ell-star-r0-peculiar-scales.md`](closed_walls/ell-star-r0-peculiar-scales.md) | \(r_0\) vs NP-A |
+| [`closed_walls/ell-star-r0-peculiar-scales.md`](closed_walls/ell-star-r0-peculiar-scales.md) | $r_0$ vs NP-A |
 
 ---
 
@@ -122,7 +122,7 @@ python scripts/r1/r1_T2_mock_pipeline.py
 | Path | Content |
 |:-----|:--------|
 | `scripts/core/` | kinematics library, light cone, slip path |
-| `scripts/r1/` | \(R_{\mathrm{nl}}\), uniqueness, \(g\), residual profiles, T2 mock |
+| `scripts/r1/` | $R_{\mathrm{nl}}$, uniqueness, $g$, residual profiles, T2 mock |
 | `scripts/closed/` | closed-route checks |
 | `scripts/side/` | secondary scripts |
 | `results/r1_sandwich/`, `r1_lineA_Q/`, `r1_T2_mock/`, … | numerical outputs |
@@ -134,8 +134,8 @@ python scripts/r1/r1_T2_mock_pipeline.py
 | Topic | Status |
 |:------|:-------|
 | soft Sorkin amplification | closed under audited maps |
-| \(R_{\mathrm{nl}}\) | computed \(\approx 8.61\,\mathrm{Mpc}\) |
-| free residual scale under A0–A4 | \(\ell_*\sim R_{\mathrm{nl}}\) |
-| microphysics of \(\chi\), \(g\) | postulated; \(g_{\mathrm{eff}}\sim\mathcal{O}(1)\) from proxy |
+| $R_{\mathrm{nl}}$ | computed $\approx 8.61\,\mathrm{Mpc}$ |
+| free residual scale under A0–A4 | $\ell_{\ast}\sim R_{\mathrm{nl}}$ |
+| microphysics of $\chi$, $g$ | postulated; $g_{\mathrm{eff}}\sim\mathcal{O}(1)$ from proxy |
 | residual × structure test | protocol + synthetic mock written |
-| residual as \(H_0\) fix | excluded at DESI-safe amplitude |
+| residual as $H_0$ fix | excluded at DESI-safe amplitude |
