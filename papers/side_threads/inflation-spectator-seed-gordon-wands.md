@@ -145,7 +145,7 @@ This note does **not** claim the checklist is done.
 | I3 | Map $\delta Q\to\delta\rho_Q/\rho_Q\to$ **BAO residual kernel** $\sigma_X$ (not only CMB isocurvature) | **Not done here** |
 | I4 | Covariance on DESI BAO distances under that map; re-run sister likelihood | **Not done** |
 | I5 | Check DESI ceiling $\sigma_X<1.5\times 10^{-4}$ a posteriori | Only after I3–I4 |
-| I6 | Do **not** smuggle Sorkin $\sigma_0$ back in as the seed | Label rule |
+| I6 | Do **not** reintroduce Sorkin $\sigma_0$ back in as the seed | Label rule |
 
 Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DESI claim of this repo.
 
@@ -159,7 +159,7 @@ Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DE
 
 ---
 
-## 6. Claim checklist
+## 6. Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -169,7 +169,7 @@ Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DE
 | GW4 | Mexican-hat roll implements $\phi_f/\phi_i>45$ | Eqs. (31)–(32), (37) |
 | GW5 | Seed is **not** Sorkin $\sigma_0\sim 10^{-61}$ | Entire construction |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-GW1 | Gordon & Wands **solves** DESI residual detectability |
 | N-GW2 | Their tachyonic roll = sister GPE BAO residual (excluded) |

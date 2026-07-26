@@ -126,7 +126,7 @@ under the sister DESI ceiling $1.5\times 10^{-4}$ — compatibility, not a fit.
 | $\sigma_8$ and $P(k)$ imply $R_{\mathrm{nl}}\ll 3\,\mathrm{Mpc}$ or $\gg 30\,\mathrm{Mpc}$ under standard growth | Principle still well-defined but leaves the 8–12 decade coincidence |
 | Microphysics forces DE grain = $L_P$ | Soft null; telescope residual not from this channel |
 | Derived $\ell_{\ast}=R_{\mathrm{nl}}$ but BAO residual $\gg 1.5\times 10^{-4}$ without damping | Tension with sister bound |
-| Only way to hit data is to retune $R_{\mathrm{nl}}$ after seeing DESI | Illegal — reject under BOUNDARY |
+| Only way to hit data is to retune $R_{\mathrm{nl}}$ after seeing DESI | Excluded under BOUNDARY |
 
 Still missing for a full theory claim: an explicit calculation — from an action, open-system master equation, or equivalent — showing *why* the vacuum residual grain must sit at $R_{\mathrm{nl}}$ rather than $L_P$, $r_0$, or another IR scale. Until that exists, P$_\mathrm{nl}$ is a motivated hypothesis with a clean length, not a derivation.
 
@@ -144,7 +144,7 @@ Not the $\sim 9\%$ $H_0$ tension (amplitude still short under DESI-safe residual
 
 ---
 
-## 6. Claim checklist
+## 6. Summary
 
 | ID | Claim | Status |
 |:---|:------|:-------|
@@ -154,7 +154,7 @@ Not the $\sim 9\%$ $H_0$ tension (amplitude still short under DESI-safe residual
 | P4 | A posteriori overlap with $r_0$, $R_8$, ceiling cell decade | comparison |
 | P5 | $\sigma(\ell_{\ast}=R_{\mathrm{nl}},d=3)\sim 8.5\times 10^{-5}$ under ceiling | arithmetic |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-P1 | Derivation from an action / master equation that *forces* $\ell_{\ast}=R_{\mathrm{nl}}$ |
 | N-P2 | $\ell_{\ast}=R_{\mathrm{nl}}$ proven |

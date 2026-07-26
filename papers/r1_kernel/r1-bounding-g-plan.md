@@ -99,7 +99,7 @@ Executable now. Does not replace a full likelihood; freezes the ceiling.
 | Parameters | $\lambda$ (and optionally $\sigma_{\mathrm{free}}$ with prior around $8.5\times 10^{-5}$ if testing P$_\mathrm{nl}$); not $\ell_{\ast}$ free |
 | Method | Nested sampling / MCMC (emcee or existing sister Cobaya/custom OU likelihood) on public BAO only first; then multi-probe only a posteriori |
 | Output | Posterior $p(\lambda\mid\mathrm{BAO})$; 95% upper limit $\lambda_{95}$ |
-| Illegal | Refit $\ell_{\ast}$ or $R_{\mathrm{nl}}$ to improve the limit |
+| Excluded | Refit $\ell_{\ast}$ or $R_{\mathrm{nl}}$ to improve the limit |
 
 Why BAO first: that is where $\sigma_X$ is already defined and audited in this programme.
 
@@ -187,7 +187,7 @@ Order-unity dimensionless $g$ is already at the edge of the DESI residual ceilin
 | Move | Why |
 |:-----|:----|
 | Fit $R_{\mathrm{nl}}$ or $\ell_{\ast}$ inside the MCMC | BOUNDARY / undeclared free scale |
-| Use H0 9% as a $g$ target | Amplitude short; wrong problem |
+| Use H0 9% as a $g$ target | Amplitude short; outside this residual sector |
 | Claim Stage-0 OOM is a detection of $\chi$ | Ceiling only |
 | Skip BAO and jump to clusters | Weaker for $g$; more systematics |
 
@@ -208,7 +208,7 @@ Order-unity dimensionless $g$ is already at the edge of the DESI residual ceilin
    - `formal_informative_for_1e-4_grain = False`. `primary_bound = working`.
    - Artefact: `results/r1_lambda_fullcov/`.
 4. Slip OOM / Maus consistency on working $\lambda$ — predicted $\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11$ ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).
-5. Operational F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).
+5. F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).
 6. Optional: joint background+$\sigma_{\mathrm{res}}$ (float $r_d$ or $\Omega_m$); cluster mask test; influence-functional rate beyond OOM.
 
 I bound the dimensionless response $\lambda$ (and $g$ under fixed $\chi$-normalisation) first with the DESI BAO residual likelihood at fixed $\ell_{\ast}=R_{\mathrm{nl}}$; use slip/lensing as operator checks and clusters only for nonlinear-mask geometry. Stage-0 already implies $\lvert\lambda\rvert\lesssim 10^{-4}$ and $\lvert g\rvert\lesssim\mathcal{O}(1)$.

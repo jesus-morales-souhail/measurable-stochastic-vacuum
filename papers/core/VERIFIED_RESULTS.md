@@ -245,7 +245,7 @@ This note **does not re-derive** the DESI likelihood. It consumes those results 
 
 ---
 
-## 8. Explicit non-claims (do not cite as results)
+## 8. Not results (do not cite as such)
 
 1. A first-principles derivation of galactic $\ell_{\ast}$ for DE (R1a/b/c open).  
 2. A horizon Lindblad model that yields $r\sim 64$.  

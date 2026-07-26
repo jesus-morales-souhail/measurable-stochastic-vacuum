@@ -119,7 +119,7 @@ This is the gap that is **not** a free parameter:
 | **Sister $\sigma_X$ bound** | A posteriori: if a derived $(r,A,\varepsilon_Q)$ predicts $\sigma_\rho>\sigma_X^{\mathrm{DESI}}$, that corner dies. |
 | **DE isocurvature / CMB** | Gordon–Wands original target; independent of BAO residual kernel. |
 
-**Illegal (BOUNDARY):** choose $A$ and $\varepsilon_Q$ after looking at DESI to land in band.  
+**Excluded (BOUNDARY):** choose $A$ and $\varepsilon_Q$ after looking at DESI to land in band.  
 **Legal:** derive $A$ from a potential (as G&W try), take $r$ from tensors, take $\varepsilon_Q$ from DE dynamics, **then** compare to $\sigma_X$.
 
 ---
@@ -138,7 +138,7 @@ Until the BAO-kernel map exists, a residual-band hit in this atlas is a **necess
 
 ---
 
-## 6. Claim checklist
+## 6. Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -148,7 +148,7 @@ Until the BAO-kernel map exists, a residual-band hit in this atlas is a **necess
 | IS4 | $A=45$, $\varepsilon_Q=0.05$, $r=0.036$ → $\sigma_\rho\sim\mathrm{few}\times 10^{-5}$ | script |
 | IS5 | Sorkin gaps remain $\sim 10^{56}$–$10^{57}$ | sister `gap_two_targets` |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-IS1 | Spectator DE **detected** by DESI |
 | N-IS2 | $\varepsilon_Q=0.05$, $A=45$ **derived** for our residual |

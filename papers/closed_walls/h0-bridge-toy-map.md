@@ -72,7 +72,7 @@ $\beta\approx 3.0\times 10^{-3}$ (NP-A) or $7.2\times 10^{-3}$ ($R_8$) vs wall $
 | NP-A | $1.34$ | **overshoots** |
 | $R_8$ | $1.062$ | near but still short; $\beta$ needed $\sim 1.3\times s_{\mathrm{loc}}$ |
 
-Coherent line-of-sight stacking is the same **logical family** as free path amplifiers already closed for residual honesty (no free $N$ boost). **Not** a legal save of the bridge.
+Coherent line-of-sight stacking is the same logical family as free path amplifiers already closed (no free $N$ boost). It does not save the bridge.
 
 ### 3.3 Shape-only $f(z)=\sqrt{\chi(z)/\chi(1.5)}$
 
@@ -95,13 +95,13 @@ The shape **does** change through the window where Dainotti / Krishnan-style run
 | Does the **sense** (local high / deep low) match? | **Yes** under the distance-overestimate toy |
 | Does the **shape** vary at $z\sim 0.5$–$0.7$? | **Yes** (scale class) |
 | Can coherent stacking save it? | Amplitude yes, **class no** (excluded) |
-| Fit $\ell_{\ast}$ to 1.083? | **Illegal** |
+| Fit $\ell_{\ast}$ to 1.083? | **Excluded** |
 
 **Consequence for the programme:** the open kernel / mesoscopic grain remains interesting for **residual, slip, and path RMS** at $10^{-4}$–$10^{-3}$; it is **not** a free lunch for the Hubble tension under self-shielding. Any H0 solution still needs different physics (or a derived coherent channel that survives DESI — not currently available).
 
 ---
 
-## 5. Claim checklist
+## 5. Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -110,7 +110,7 @@ The shape **does** change through the window where Dainotti / Krishnan-style run
 | T3 | $\beta$ for 1.083 $\gg s_{\mathrm{loc}}$ | script |
 | T4 | Shape $f(z)$ monotonic through 0.5–0.7 | script |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-T1 | Toy solves Hubble tension |
 | N-T2 | Coherent mode allowed |

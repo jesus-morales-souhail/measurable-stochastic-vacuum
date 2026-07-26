@@ -5,15 +5,15 @@
 **Email:** jmskjym@gmail.com  
 **Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum  
 **Date:** July 2026  
-**Status:** Independent research — **not peer reviewed**  
-**Master index:** [`INDEX.md`](INDEX.md)  
-**Automated gate:** `pytest -q` must report **all tests passed**
+**Status:** Independent research — not peer reviewed  
+**Index:** [`INDEX.md`](INDEX.md)  
+**Tests:** `pytest -q`
 
 ---
 
 ## 1. What this repository is (and is not)
 
-I keep theory and data in two places on purpose. This repo holds kinematics and identities I can check with code. The sister repo holds the DESI residual analysis.
+Theory and data live in two places. This repo: kinematics and identities I can check with code. Sister repo: DESI residual analysis.
 
 | This repository | Sister repository |
 |:----------------|:------------------|
@@ -32,42 +32,40 @@ Manuscript: `manuscript/PREPRINT.md`
 
 ## 2. Reading order
 
-I write these notes at home, one step at a time. If you are reading for the first time, this order is the one I use myself when I come back to the work after a break.
-
-| Step | Document | Purpose |
+| Step | Document | Content |
 |:-----|:---------|:--------|
-| 1 | This file | Claim boundaries |
-| 2 | [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) | **Einstein+Morales slip wall + self-shielding inequality** |
-| 2b | [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md) | **Only natural amplifier: $\mathrm{RMS}=\lvert \gamma-1 \rvert\sqrt{\chi/\ell_{\ast}}$** |
-| 3 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal equations (public model) |
-| 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | **Only hard, unit-tested claims** |
+| 1 | This file | claim boundaries |
+| 2 | [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) | slip wall + self-shielding inequality |
+| 2b | [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md) | path $\mathrm{RMS}=\lvert\gamma-1\rvert\sqrt{\chi/\ell_{\ast}}$ |
+| 3 | [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | minimal equations |
+| 4 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | unit-tested claims |
 | 5 | [`NARROW_PATH.md`](NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
-| 5b | [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) | **Walls vs open kernel; R1d scale class (not a derivation)** |
-| 5c | [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) | **Path RMS vs Maus / Sakr / DESI MG / Stage-IV (real data)** |
-| 5d | [`inflation-spectator-seed-gordon-wands.md`](../side_threads/inflation-spectator-seed-gordon-wands.md) | **Gordon & Wands spectator seed** (factor $\sim 45$, not $10^{56}$) |
-| 5e | [`inflation-spectator-residual-atlas.md`](../side_threads/inflation-spectator-residual-atlas.md) | **Modern $r\to\sigma_\rho$ atlas** — residual-band windows without $10^{56}$ |
-| 5f | [`h0-running-brachistochrone-bridge.md`](../closed_walls/h0-running-brachistochrone-bridge.md) | **H0 running + time-delay multi-path** vs open kernel (bridge only) |
-| 5g | [`h0-bridge-toy-map.md`](../closed_walls/h0-bridge-toy-map.md) | **Toy $\delta D/D$: stochastic short of H0 tension by $\times 16$–$38$** |
-| 5h | [`h0-desqueezing-filter.md`](../closed_walls/h0-desqueezing-filter.md) | **Reject invented $H_0(z)$ + hand-tuned $\theta$; $\sigma_X\ll 9\%$** |
-| 5i | [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md) | **$r_0(L_*)$ / $n^{-1/3}$ vs NP-A: no independent hit** |
-| 5j | [`r1-scale-decade-8-12.md`](../r1_kernel/r1-scale-decade-8-12.md) | **Steering: open lead is 8–12 Mpc decade ($r_0$, $R_8$, DESI-ceil cell)** |
-| 5k | [`r1-principle-nonlinear-matter.md`](../r1_kernel/r1-principle-nonlinear-matter.md) | **Hypothesis $\ell_{\ast}=R_{\mathrm{nl}}$; full $\sigma(R)$ $\Rightarrow 8.61$ Mpc (not action derivation)** |
-| 5l | [`r1-t1-mechanisms-compute.md`](../r1_kernel/r1-t1-mechanisms-compute.md) | **T1.1/T1.2 numbers: domain counting + nonlinear mask** |
-| 5m | [`r1-mechanism-candidates.md`](../r1_kernel/r1-mechanism-candidates.md) | **Ranked mechanism candidates (Tier 1–3)** |
-| 5n | [`r1-t12-bbks-and-derivation.md`](../r1_kernel/r1-t12-bbks-and-derivation.md) | **BBKS $R_{\ast}$ + coarse-graining derivation sketch** |
-| 5o | [`r1-derivation-sandwich.md`](../r1_kernel/r1-derivation-sandwich.md) | **Sandwich uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ under A0–A4** |
-| 5p | [`NOTE_uniqueness_residual_grain.md`](../r1_kernel/NOTE_uniqueness_residual_grain.md) | **Short paper draft (conditional theorem + numbers)** |
-| 5q | [`r1-sandwich-falsifiers.md`](../r1_kernel/r1-sandwich-falsifiers.md) | **Operational F1–F4 falsifiers** |
-| 5r | [`r1-a1-microphysics.md`](../r1_kernel/r1-a1-microphysics.md) | **Microphysics map for $g\chi\delta_m$** |
-| 5s | [`r1-real-velocity-block-net.md`](../r1_kernel/r1-real-velocity-block-net.md) | **CF4 block net $\eta(L)$ — matter kinematics only** |
-| 5t | [`r1-collapse-relief.md`](../r1_kernel/r1-collapse-relief.md) | **CF4 collapse peaks + velocity relief — matter only** |
-| 5u | [`what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.md) | **What I would put in a short paper** |
-| 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
-| 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
+| 5b | [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) | walls vs open kernel |
+| 5c | [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) | path RMS vs Maus / Sakr / DESI MG |
+| 5d | [`inflation-spectator-seed-gordon-wands.md`](../side_threads/inflation-spectator-seed-gordon-wands.md) | Gordon & Wands spectator (factor $\sim 45$) |
+| 5e | [`inflation-spectator-residual-atlas.md`](../side_threads/inflation-spectator-residual-atlas.md) | $r\to\sigma_\rho$ atlas |
+| 5f | [`h0-running-brachistochrone-bridge.md`](../closed_walls/h0-running-brachistochrone-bridge.md) | H0 running + time-delay literature |
+| 5g | [`h0-bridge-toy-map.md`](../closed_walls/h0-bridge-toy-map.md) | toy $\delta D/D$ short of H0 tension |
+| 5h | [`h0-desqueezing-filter.md`](../closed_walls/h0-desqueezing-filter.md) | invented $H_0(z)$ rejected; $\sigma_X\ll 9\%$ |
+| 5i | [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md) | $r_0$ / $n^{-1/3}$ vs NP-A |
+| 5j | [`r1-scale-decade-8-12.md`](../r1_kernel/r1-scale-decade-8-12.md) | 8–12 Mpc decade |
+| 5k | [`r1-principle-nonlinear-matter.md`](../r1_kernel/r1-principle-nonlinear-matter.md) | $\ell_{\ast}=R_{\mathrm{nl}}$; $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ |
+| 5l | [`r1-t1-mechanisms-compute.md`](../r1_kernel/r1-t1-mechanisms-compute.md) | domain counting + nonlinear mask |
+| 5m | [`r1-mechanism-candidates.md`](../r1_kernel/r1-mechanism-candidates.md) | mechanism candidates |
+| 5n | [`r1-t12-bbks-and-derivation.md`](../r1_kernel/r1-t12-bbks-and-derivation.md) | BBKS $R_{\ast}$ |
+| 5o | [`r1-derivation-sandwich.md`](../r1_kernel/r1-derivation-sandwich.md) | sandwich under A0–A4 |
+| 5p | [`NOTE_uniqueness_residual_grain.md`](../r1_kernel/NOTE_uniqueness_residual_grain.md) | uniqueness note |
+| 5q | [`r1-sandwich-falsifiers.md`](../r1_kernel/r1-sandwich-falsifiers.md) | F1–F4 falsifiers |
+| 5r | [`r1-a1-microphysics.md`](../r1_kernel/r1-a1-microphysics.md) | $g\chi\delta_m$ map |
+| 5s | [`r1-real-velocity-block-net.md`](../r1_kernel/r1-real-velocity-block-net.md) | CF4 block net (matter) |
+| 5t | [`r1-collapse-relief.md`](../r1_kernel/r1-collapse-relief.md) | CF4 collapse peaks (matter) |
+| 5u | [`what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.md) | paper map |
+| 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | analogy only |
+| 7 | Sister `PREPRINT.md` | empirical $\sigma_X$ bound |
 
-**Do not cite as hard results:** `THEORY_REVOLUTION.md`, WP discussion notes (`r1-counting-principle`, `r2-`, `r3-` except where they restate verified identities), exploratory optics repo.  
-**Cite `r1-open-kernel.md` for:** claim-boundary taxonomy (wall vs kernel) and scale arithmetic only — **not** for “$\ell_{\ast}=R_8$ is derived.”  
-**Cite CF4 notes for:** local peculiar-velocity structure only — **not** for DE residual $\sigma_X$ or $g$.
+Not hard results: `THEORY_REVOLUTION.md`, exploratory optics sister, long WP discussion unless it restates verified identities.  
+`r1-open-kernel.md`: walls vs kernel and scale arithmetic — not a derivation of $\ell_{\ast}=R_8$.  
+CF4 notes: matter $v_{\mathrm{pec}}$ only — not $\sigma_X$ or $g$.
 
 ---
 
@@ -125,11 +123,9 @@ $$
 
 ---
 
-## 4. Claim checklist
+## 4. Claims
 
-### 4.1 Claims (supported in-repo)
-
-These are the claims I am willing to stand behind. Each one has a place in the code or in a note that the tests cover.
+### 4.1 Supported in-repo
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -148,13 +144,11 @@ These are the claims I am willing to stand behind. Each one has a place in the c
 | C13 | Gordon & Wands: seed $H_{\mathrm{inf}}/2\pi$; growth factor $\sim 45$ (not $10^{56}$); distinct from Sorkin soft gap | `inflation-spectator-seed-gordon-wands.md` + `scripts/side/gordon_wands_factor45.py` |
 | C14 | At $r\sim 0.036$, $\delta Q/M_p\sim 3\times 10^{-6}$; with $A\sim 45$, $\varepsilon_Q\sim 0.05$ get $\sigma_\rho\sim\mathrm{few}\times 10^{-5}$ (OOM) | `inflation-spectator-residual-atlas.md` + script + tests |
 | C15 | DESI-safe path-RMS toy: $H_0(0.15)/H_0(1.5)\approx 1.006$, not $1.083$; $\beta$ short $\times 16$–$38$ | `h0-bridge-toy-map.md` + script + tests |
-| C16 | Residual amplitude $\sigma_X<1.5\times 10^{-4}$ cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ illegal | `h0-desqueezing-filter.md` + script + tests |
+| C16 | Residual amplitude $\sigma_X<1.5\times 10^{-4}$ cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ excluded | `h0-desqueezing-filter.md` + script + tests |
 
-### 4.2 Non-claims
+### 4.2 Not claimed
 
-I also keep a list of things I do **not** claim. It is easy to over-read a number when you have been living with it for months.
-
-| ID | Non-claim |
+| ID | Not claimed |
 |:---|:----------|
 | N1 | No derivation of why $\ell_{*}$ is galactic |
 | N2 | No microphysical horizon bath fixing $r=\mathcal{O}(1)$ or $r\sim 64$ |
@@ -170,7 +164,7 @@ I also keep a list of things I do **not** claim. It is easy to over-read a numbe
 | N12 | Gordon & Wands (2005) is **not** “the same $10^{56}$ wall”; factor $\sim 45$ for **their** target; **not** automatic DESI claim |
 | N13 | Atlas windows $(r,A,\varepsilon_Q)$ are **not** DESI fits; $\sigma_\rho\not\equiv\sigma_X$ without map |
 | N14 | Brachistochrone / H0-running note does **not** solve Hubble tension or derive $\ell_{\ast}$ |
-| N15 | Coherent $\delta D/D\propto N$ is **not** a legal H0 fix under programme amplifier discipline |
+| N15 | Coherent $\delta D/D\propto N$ is not an $H_0$ fix under the amplifier rules of this programme |
 | N16 | $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ with $\theta$ fit to $z\sim 0.5$–$0.7$ is **not** a result |
 | N17 | CPL 2.5σ/4.2σ must **not** be relabelled as H0-running significance |
 
@@ -215,7 +209,7 @@ It is **not** a condensed-matter derivation of dark energy. I use it only as a p
 3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$?  
 4. Are free $10^{56}$ (Euclid target) / $10^{57}$ (DESI ceiling), $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls** — without mixing the two gap labels?  
 5. Are open problems (N1–N3, N8–N11) stated without hype — especially the R1 open kernel?  
-6. Is any $R_8$ / S$_8$ discussion limited to scale class + non-claim (C11 / N8)?  
+6. Is any $R_8$ / S$_8$ discussion limited to scale class + limits (C11 / N8)?  
 7. Is NP-B / $\mathrm{RMS}\sim 10^{-3}$ free of binary “discovery / model death” language (N9–N11; `NARROW_PATH` §5.1)?
 
 ---

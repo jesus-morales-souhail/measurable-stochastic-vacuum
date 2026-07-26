@@ -62,7 +62,7 @@ Residual is spatially white on survey scales, or correlated only on $\ll 1\,\mat
 | $k_{\mathrm{nl}}$ pivot | $\sim 0.17\,h\,\mathrm{Mpc}^{-1}$ | $\sim 1/(R_{\mathrm{nl}}h)$ OOM |
 | $\ell_{\mathrm{sep}}$ (packing) | $\approx 15.9\,\mathrm{Mpc}$ | $f(\delta>1)\approx 0.16$ |
 
-Illegal: refit $R_{\mathrm{nl}}$ or $\ell_{\ast}$ to improve T2 after looking at residual maps.
+Excluded: refit $R_{\mathrm{nl}}$ or $\ell_{\ast}$ to improve T2 after looking at residual maps.
 
 ---
 
@@ -111,7 +111,7 @@ T2 supports the sandwich scale lock if all hold:
 1. T1 amplitude still $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ (or updated public ceiling) at fixed $\ell_{\ast}=R_{\mathrm{nl}}$.
 2. S1: $r_e\in[0.5,3]R_{\mathrm{nl}}$ at $\ge 2\sigma$ preference over white / Gpc-scale alternatives **or** upper limits still allow the band.
 3. S2: $\xi_{rm}$ or $P_{rm}$ positive in the $R_{\mathrm{nl}}$ band at $\ge 2\sigma$ vs S4 random mask.
-4. No illegal $\ell_{\ast}$ refit.
+4. No excluded $\ell_{\ast}$ refit.
 
 ### 4.2 Kill (L2 for sandwich form)
 

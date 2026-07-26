@@ -72,7 +72,7 @@ Averaging residual naturally lands $g_{\mathrm{eff}}$ at the same order as the D
 
 ---
 
-## 3. What this is not
+## 3. Limits
 
 - Not a proof that Buchert $Q$ is dark energy.
 - Not a full relativistic gauge-fixed variance calculation (needs dedicated numerics / constrained realisations).
@@ -115,7 +115,7 @@ or support-weighted $\sigma\sim\sigma_{\mathrm{free}}\sqrt{f}$ depending on norm
 
 ---
 
-## 6. Claim checklist
+## 6. Summary
 
 | ID | Claim | Status |
 |:---|:------|:-------|

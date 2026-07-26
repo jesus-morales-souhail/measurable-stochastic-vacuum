@@ -14,7 +14,7 @@ Depends on: [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) · [`wp5-fa
 
 The sandwich theorem states: if A0–A4 hold, free residual grain $\ell_{\ast}\sim R_{\mathrm{nl}}$. A theorem is scientific only if it can lose. This note pre-registers operational falsifiers and reports predictions at the programme working point versus published / forecast floors.
 
-Primary gates: (F1) BAO residual amplitude at fixed $\ell_{\ast}=R_{\mathrm{nl}}$; (F2) residual correlation length in the $\mathcal{O}(1)\times R_{\mathrm{nl}}$ band if a residual is detected; (F3) slip / path-RMS consistency with Maus/Sakr; (F4) illegal moves (post-hoc $\ell_{\ast}$, free $10^{56}$, $m$-bias rebrand).
+Primary gates: (F1) BAO residual amplitude at fixed $\ell_{\ast}=R_{\mathrm{nl}}$; (F2) residual correlation length in the $\mathcal{O}(1)\times R_{\mathrm{nl}}$ band if a residual is detected; (F3) slip / path-RMS consistency with Maus/Sakr; (F4) excluded moves (post-hoc $\ell_{\ast}$, free $10^{56}$, $m$-bias rebrand).
 
 ---
 
@@ -91,7 +91,7 @@ Levels aligned with [`wp5-falsification.md`](../work_packages/wp5-falsification.
 
 ---
 
-## 6. Claim checklist
+## 6. Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -99,7 +99,7 @@ Levels aligned with [`wp5-falsification.md`](../work_packages/wp5-falsification.
 | Fals2 | F1–F4 pre-registered | this note |
 | Fals3 | Stage-IV $m$-bias not a path-RMS test | definitional + lensing note |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-F1 | Stage-IV will detect sandwich residual |
 | N-F2 | Maus already tests path-RMS |

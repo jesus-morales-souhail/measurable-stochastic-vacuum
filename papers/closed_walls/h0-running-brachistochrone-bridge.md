@@ -131,7 +131,7 @@ This is the same pattern as R1d $\leftrightarrow R_8$: **shared scale language**
 
 ---
 
-## 6. Claim checklist
+## 6. Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -142,7 +142,7 @@ This is the same pattern as R1d $\leftrightarrow R_8$: **shared scale language**
 | H5 | $z_{\mathrm{eq}}\approx 0.30$; $\chi(z)$, $N=\chi/R_8$ as in §3 | script |
 | H6 | H-bridge is **hypothesis class** only | this note |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-H1 | Brachistochrone solves Hubble tension |
 | N-H2 | Mesoscopic grain **derived** from H0 running |

@@ -171,7 +171,7 @@ Until then, this note is the **gate**: real data say mean-slip / MG precision is
 
 ---
 
-## 7. Claim checklist
+## 7. Summary
 
 | ID | Claim | Status |
 |:---|:------|:-------|
@@ -182,7 +182,7 @@ Until then, this note is the **gate**: real data say mean-slip / MG precision is
 | L5 | $\mathcal{R}\gg 1$ for mean-slip errors vs NP path RMS | Arithmetic from L1–L4 |
 | L6 | Stage-IV $m\sim 10^{-3}$ is calibration, not path-RMS detection | Definitional |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-L1 | Euclid/LSST **will** detect $\mathrm{RMS}_{\mathrm{path}}\sim 10^{-3}$ |
 | N-L2 | Detection $\Rightarrow$ texture of dark energy |

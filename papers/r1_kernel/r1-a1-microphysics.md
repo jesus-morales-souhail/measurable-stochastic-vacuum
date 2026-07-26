@@ -36,7 +36,7 @@ A1 is not forced by the Standard Model alone, but it is not an arbitrary inventi
 | Effective strength $\lvert g\rvert\sim\mathcal{O}(1)$ allowed, $\gg 1$ disfavoured | Working bound from DESI residual |
 | Scale of support $\sim R_{\mathrm{nl}}$ | Follows from sandwich once A1 holds — not a second dial |
 
-Illegal: invent $\chi$ *and* set $\ell_{\ast}$ by hand *and* amplify from Planck.
+Do not invent $\chi$ *and* set $\ell_{\ast}$ by hand *and* amplify from Planck.
 
 ---
 
@@ -115,7 +115,7 @@ Illegal: invent $\chi$ *and* set $\ell_{\ast}$ by hand *and* amplify from Planck
 | Pure holographic DE with $L=H^{-1}$ | Wrong scale (Gpc); mean DE focus |
 | Ad hoc $\chi$ with free $\ell_{\ast}$ and free $g$ | Double dial; fails self-shielding |
 | Soft squeeze of Sorkin seed to set effective $g$ | Wall: needs $r\sim 64$ |
-| Fitting $g$ to Maus $\gamma-1\sim 0.1$ | Illegal (wrong amplitude + dial) |
+| Fitting $g$ to Maus $\gamma-1\sim 0.1$ | Excluded (wrong amplitude + dial) |
 
 ---
 
@@ -159,7 +159,7 @@ So A1 does not open a free $g\sim 10^{2}$ window: BAO residual already forces $\
 
 ---
 
-## 8. Claim checklist
+## 8. Summary
 
 | ID | Claim | Status |
 |:---|:------|:-------|
@@ -168,7 +168,7 @@ So A1 does not open a free $g\sim 10^{2}$ window: BAO residual already forces $\
 | A1-3 | $\lvert g\rvert\lesssim\mathcal{O}(1)$ under DESI working map | computed elsewhere |
 | A1-4 | Emergent residual preferred over new force | programme stance |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-A1 | Proof that Buchert $Q$ is dark energy |
 | N-A2 | Detection of $\chi$ |

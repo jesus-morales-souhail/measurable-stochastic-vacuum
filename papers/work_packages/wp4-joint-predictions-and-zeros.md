@@ -73,7 +73,7 @@ If a model in this programme cannot list Z1–Z4, it is rejected (self-shielding
 
 ## 6. What would count as a *positive* prediction
 
-A publishable positive claim requires **all** of:
+A a positive claim requires **all** of:
 
 1. A principle fixing $\ell_{\ast}$ or $N_{\mathrm{eff}}$ **before** using DESI numbers.  
 2. A stated $\varepsilon$ (or derivation).  
@@ -81,7 +81,7 @@ A publishable positive claim requires **all** of:
 4. Explicit zeros Z1–Z4 still satisfied.  
 5. A posteriori consistency with sister DESI bound (or tension declared).
 
-Until (1) is done, the only publishable positives are the **theorems of absence** in §5 and the **conditional** landscape in §3.
+Until (1) is done, the only the solid positives are the **theorems of absence** in §5 and the **conditional** landscape in §3.
 
 ---
 

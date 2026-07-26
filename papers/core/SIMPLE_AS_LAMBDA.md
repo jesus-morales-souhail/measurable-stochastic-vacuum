@@ -81,7 +81,7 @@ $$
 \mathrm{RMS} \sim \alpha \sigma^{2/3}.
 $$
 
-**That is the whole theory** at $\Lambda$-level simplicity:
+Minimal content at $\Lambda$-level simplicity:
 
 | Symbol | Meaning | Analogue in $\Lambda$CDM |
 |:-------|:--------|:-------------------------|

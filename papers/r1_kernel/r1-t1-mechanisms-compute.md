@@ -143,7 +143,7 @@ Geometry is viable. The sketch derives coarse-graining under stated postulates; 
 
 ---
 
-## 7. Claim checklist
+## 7. Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -153,7 +153,7 @@ Geometry is viable. The sketch derives coarse-graining under stated postulates; 
 | M4 | $\ell_{\mathrm{sep}}(\delta_c=1)\approx 16\,\mathrm{Mpc}$ packing OOM | script |
 | M5 | Microphysics still open | this note |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-M1 | Buchert explains $\Lambda$ |
 | N-M2 | Action-level decoherence derived |

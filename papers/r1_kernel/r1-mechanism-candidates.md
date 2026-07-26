@@ -17,7 +17,7 @@ For this programme (not for “solve Dark Energy” in general):
 | Fix a length of order few–ten Mpc from matter / gravity without DESI $\sigma_X$ as input | Match the 8–12 Mpc decade lead |
 | Connect that length to a residual / grain / IR cell of the DE or vacuum sector | Open R1 kernel, not only mean $\Lambda$ |
 | Be formulable enough to write a falsifier | Same bar as WP5 |
-| Not smuggle free $10^{56}$ or hand-tuned $\theta$ | Walls already measured |
+| No free $10^{56}$ or hand-tuned $\theta$ | Walls already measured |
 
 Below: tiers by weight. “Serious” ≠ “correct.”
 
@@ -98,7 +98,7 @@ Below: tiers by weight. “Serious” ≠ “correct.”
 | Classic holographic DE with $L=H^{-1}$ | Predicts horizon scale ($\mathrm{Gpc}$), not 8–12 Mpc |
 | Pure Planck-cell vacuum counting | Sorkin seed — wall already measured |
 | Soft amplifiers / complex $\omega$ on residual to move $H_0$ by 9% | Amplitude short by $\times 10^{2}$–$10^{3}$ |
-| Fitting $\ell_{\ast}$ to $R_8$ or $r_0$ after looking | Illegal (BOUNDARY) |
+| Fitting $\ell_{\ast}$ to $R_8$ or $r_0$ after looking | Excluded (BOUNDARY) |
 | “Voxel vacuum” / ad hoc IR cutoffs without structure derivation | Undeclared free length |
 
 ---
@@ -127,4 +127,4 @@ Each step: blind length from matter, then a posteriori DESI / $r_0$ / $R_8$.
 | T1.3 | Optional language only | — |
 | Existence of $\chi$ + coupling from SM | Still open (postulates A0–A1) | cannot be replaced by sandwich |
 
-The serious candidates are those that already treat the nonlinear structure scale as an IR domain (averaging / backreaction / edge of collapse). Decoherence-to-mean-$\Lambda$ and EFT $k_{\mathrm{max}}$ are real physics but weaker maps to a residual grain of few Mpc. Horizon holography and soft amplifiers are the wrong scale or the wrong problem.
+The serious candidates are those that already treat the nonlinear structure scale as an IR domain (averaging / backreaction / edge of collapse). Decoherence-to-mean-$\Lambda$ and EFT $k_{\mathrm{max}}$ are real physics but weaker maps to a residual grain of few Mpc. Horizon holography and soft amplifiers are the wrong scale or outside this residual sector.

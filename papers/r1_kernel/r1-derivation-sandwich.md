@@ -173,11 +173,11 @@ The open problem is narrower: it is no longer â€œany mesoscopic scale could doâ€
 | Residual is purely gravitational with no local coupling to $\delta_m$ (A1 false) | UV/IR lemmas do not apply; grain scale undetermined by this argument |
 | Matter never becomes classical on $R_{\mathrm{nl}}$ (A2 false) | Pointer basis missing; decoherence argument fails |
 | Free residual measured with correlation length $\ll 1\,\mathrm{Mpc}$ or $\gg 100\,\mathrm{Mpc}$ at $\sigma\sim 10^{-4}$ | Tension with uniqueness band |
-| Only way to fit data is to float $\ell_{\ast}$ away from matter $R_{\mathrm{nl}}$ after looking at DESI | Illegal under BOUNDARY; reject as free dial |
+| Only way to fit data is to float $\ell_{\ast}$ away from matter $R_{\mathrm{nl}}$ after looking at DESI | Excluded under BOUNDARY; reject as free dial |
 
 ---
 
-## 8. Claim checklist
+## 8. Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
@@ -188,7 +188,7 @@ The open problem is narrower: it is no longer â€œany mesoscopic scale could doâ€
 | S5 | Sandwich table UV / allowed / IR | script |
 | S6 | Decoherence OOM for $g\sim\mathcal{O}(1)$ | script |
 
-| Non-claim | |
+| Not claimed | |
 |:----------|:--|
 | N-S1 | Proof that SM+GR implies A0â€“A1 |
 | N-S2 | Microscopic derivation of $g$ |

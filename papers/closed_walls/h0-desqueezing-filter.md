@@ -20,7 +20,7 @@ $$
 
 and then chooses $\theta\sim 0.47$ so the knee sits at $z\sim 0.5$–$0.7$ **fails** the filter I use here: the functional form is not derived from Einstein or OU dynamics, and $\theta$ is fitted to the known transition.
 
-This note freezes that filter, restores the correct status of $\sigma_X$ (temporal in $x=\ln a$), separates **CPL 2.5σ/4.2σ** from **H0-running**, and runs the only legal test: **amplitude** of any desqueezing/OU residual is bounded by $\sigma_X<1.5\times 10^{-4}$, which is $\sim 500\times$ too small to produce an $8\%$ $H_0$ drift — **independent of hand-tuned $\theta$**.
+This note freezes that filter, restores the correct status of $\sigma_X$ (temporal in $x=\ln a$), separates **CPL 2.5σ/4.2σ** from **H0-running**, and runs the amplitude test: any desqueezing/OU residual is bounded by $\sigma_X<1.5\times 10^{-4}$, which is $\sim 500\times$ too small to produce an $8\%$ $H_0$ drift — independent of hand-tuned $\theta$.
 
 ---
 
@@ -39,7 +39,7 @@ This note freezes that filter, restores the correct status of $\sigma_X$ (tempor
 
 ## 2. What fails the filter (reject)
 
-| Claim | Why illegal |
+| Claim | Why rejected |
 |:------|:------------|
 | $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ as physics | **Not derived** from field equations, OU SDE, or desqueezing Lindblad map — free functional form |
 | $\theta\sim 0.47$ because transition is at $z\sim 0.5$–$0.7$ | **Post-hoc fit** of the free parameter to the known answer (`BOUNDARY`: no fit of $\ell_{\ast}/r/\theta$ to the gap) |
@@ -68,7 +68,7 @@ Consequences:
 
 ---
 
-## 4. Legal test: amplitude first (no free $\theta$ to the 9%)
+## 4. Amplitude test: amplitude first (no free $\theta$ to the 9%)
 
 ### 4.1 Desqueezing / OU residual envelope (programme map)
 
@@ -120,7 +120,7 @@ From sister DESI paper abstract (multi-probe CPL, **not** this note’s H0-runni
 | DESI+CMB+SN class | $w_0,w_a$ away from $(-1,0)$ at **2.5σ–4.2σ** (dataset-dependent) | Preference for **dynamical mean DE** in CPL |
 | This programme BAO-only | $w_0\approx -0.99$, $w_a\approx -0.02$ | Nearly $\Lambda$ under BAO-only diagonal baseline |
 
-**Illegal:** paste 2.5σ–4.2σ into a table labelled “H0 running significance.”  
+**Do not:** paste 2.5σ–4.2σ into a table labelled “H0 running significance.”  
 **Legal:** cite H0-running papers (Dainotti, Krishnan, Wong trend $\sim 1.9\sigma$) with **their** numbers.
 
 ---
@@ -139,14 +139,14 @@ From sister DESI paper abstract (multi-probe CPL, **not** this note’s H0-runni
 
 ---
 
-## 7. Claim checklist
+## 7. Summary
 
 | ID | Claim |
 |:---|:------|
 | F1 | $t_{1/2}=\ln 2/\gamma$ is programme-validated |
 | F2 | $\sigma_X$ is defined on $x=\ln a$ (temporal e-folds) |
 | F3 | $\lvert\delta H/H\rvert\lesssim\sigma_X<1.5\times 10^{-4}\ll 0.083$ under residual identification |
-| F4 | Hand-tuned $\theta\sim 0.47$ is illegal |
+| F4 | Hand-tuned $\theta\sim 0.47$ is rejected |
 | F5 | BAO-only $(w_0,w_a)\approx(-0.99,-0.02)$ |
 
 ---

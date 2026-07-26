@@ -27,7 +27,7 @@ This note separates two kinds of incompleteness in the stochastic vacuum program
 
    That question is declared absent, not “tried and failed.”
 
-I record criteria for what would count as a principle, list hypothesis classes R1a–R1d (including a nonlinear structure scale class R1d that sits numerically near the existing landscape), state illegal moves (no DESI-tuned $\ell_{\ast}$; no S$_8$-tuned $\ell_{\ast}$), and give a posteriori falsifiers. I do not claim that $\ell_{\ast}$ is $R_8$, that S$_8$ is explained, or that any R1 class is derived.
+I record criteria for what would count as a principle, list hypothesis classes R1a–R1d (including a nonlinear structure scale class R1d that sits numerically near the existing landscape), state excluded moves (no DESI-tuned $\ell_{\ast}$; no S$_8$-tuned $\ell_{\ast}$), and give a posteriori falsifiers. I do not claim that $\ell_{\ast}$ is $R_8$, that S$_8$ is explained, or that any R1 class is derived.
 
 ---
 
@@ -35,7 +35,7 @@ I record criteria for what would count as a principle, list hypothesis classes R
 
 The sister DESI corpus closes empirical statements: null residual under the stated OU/QNM kernel, $\sigma_X < 1.5\times 10^{-4}$ (95% CL), coherent tachyonic growth excluded, linear amplification of a pure Sorkin seed closed as an amplification gap.
 
-The theory repository closes kinematics: counting inversion, soft open gain bounds, local slip under stated GR assumptions, path $\mathrm{RMS}=s\sqrt{N}$. Automated gate: `pytest -q`.
+The theory repository closes kinematics: counting inversion, soft open gain bounds, local slip under stated GR assumptions, path $\mathrm{RMS}=s\sqrt{N}$. Tests: `pytest -q`.
 
 What remains for a positive detection claim is not another soft amplifier. It is a principle that fixes the counting cell, or a derived hard open map (not constructed). Mixing “I failed to amplify Planck” with “I never derived the grain” misreports the map: the first is a wall; the second is the only soft-regime door still marked *unknown*.
 
@@ -185,11 +185,11 @@ Under pattern hygiene: the coincidence has an equation (counting), units (Mpc vs
 Legitimate use of the table: motivate *which* principle classes are worth deriving (those that land $\ell_{\ast}$ near Mpc–tens of Mpc), with $d$-fragility kept visible.  
 Illegitimate use: pick the single near row ($d=3$, DESI ceiling) and call it a principle.
 
-### 6.3 S$_8$ / growth (non-claim with a shared target)
+### 6.3 S$_8$ / growth (shared target, not a claim)
 
 The S$_8$ tension lives at the same class of scales as the mesoscopic counting landscape. That is a reason to *investigate* a joint physical map; it is not a map.
 
-A publishable link would require at least:
+A a positive claim would require at least:
 
 1. a principle $P$ fixing $\ell_{\ast}$ (or a transfer function) without tension data as input;
 2. an operator from residual grain $\sigma$ to $P(k)$ or to the growth function;
@@ -197,21 +197,16 @@ A publishable link would require at least:
 
 Until (1)–(2) exist, S$_8$ is not a claim of this repository. Two open questions may share a scale; they do not yet share a theory.
 
-**Sharpened open question (updated steering):**  
-*Not* “what confirms NP-A $2.06\,\mathrm{Mpc}$” (external checks failed).  
-*Yes:* what principle, stated blind, would predict a DE residual cell of order 8–12 Mpc?  
-In that decade sit, independently: galaxy $r_0(L_*)\sim 7.4$–$8.9\,\mathrm{Mpc}$, $R_8\approx 11.9\,\mathrm{Mpc}$, and the DESI-ceiling $d=3$ counting cell $\approx 12.6\,\mathrm{Mpc}$. See [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md).
+**Open question.** What principle, stated without targeting $R_8$ or the DESI ceiling, would predict a DE residual cell of order 8–12 Mpc? In that decade sit, independently: galaxy $r_0(L_*)\sim 7.4$–$8.9\,\mathrm{Mpc}$, $R_8\approx 11.9\,\mathrm{Mpc}$, and the DESI-ceiling $d=3$ counting cell $\approx 12.6\,\mathrm{Mpc}$. See [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md). External checks of NP-A $2.06\,\mathrm{Mpc}$ (MW–Andromeda, Virgo, circular “2.01”, $r_0\equiv 2.06$) failed: [`ell-star-external-scales.md`](../closed_walls/ell-star-external-scales.md), [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md).
 
-**First blind attempt:** P$_\mathrm{nl}$: $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ (matter $\sigma_8$ only) $\Rightarrow\sim 8$–$10\,\mathrm{Mpc}$.  
+**Candidate:** P$_\mathrm{nl}$: $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ (matter $\sigma_8$ only) $\Rightarrow\sim 8$–$10\,\mathrm{Mpc}$.  
 See [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md). Microphysics still open.
 
-**Closed as confirmation of NP-A:** MW–Andromeda, Virgo, circular “2.01”, and $r_0\equiv 2.06$. Notes: [`ell-star-external-scales.md`](../closed_walls/ell-star-external-scales.md), [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md).
-
-**Adjacent:** H0-running path depth — [`h0-running-brachistochrone-bridge.md`](../closed_walls/h0-running-brachistochrone-bridge.md). Shared late-time language ≠ $H_0$ solution (amplitude short).
+H0-running path depth: [`h0-running-brachistochrone-bridge.md`](../closed_walls/h0-running-brachistochrone-bridge.md). Shared late-time language is not an $H_0$ solution (amplitude short).
 
 ---
 
-## 7. Illegal moves (BOUNDARY)
+## 7. Moves excluded by BOUNDARY
 
 | Move | Why forbidden |
 |:-----|:--------------|
@@ -221,7 +216,7 @@ See [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md). Micr
 | Stack soft $r\sim\mathcal{O}(1)$ and path $\sqrt{N}$ as if they rescued Sorkin | Contradicts verified combined null |
 | Cite this note as “$\ell_{\ast}=R_8$ is derived” | It is not |
 
-**Legal a-posteriori use:** given a derived $\sigma_{0,\mathrm{eff}}$,
+**A posteriori use:** given a derived $\sigma_{0,\mathrm{eff}}$,
 
 - in $[10^{-5},\,1.5\times 10^{-4}]$ → compatible band; Euclid can decide;
 - $\ll 10^{-5}$ → predict structural null under soft dynamics;
@@ -257,7 +252,7 @@ That channel does not close R1: it does not fix $\ell_{\ast}$ for the DE residua
 |:---------------------------|:--------------------------------|
 | Walls of §3 with measured heights | “Soft amplification can still reach Euclid from Sorkin” without a new derived map |
 | Counting landscape and structural zeros (§4) | “$\ell_{\ast}$ is galactic” as a derived fact |
-| Criteria P1–P6 and illegal moves | DESI- or S$_8$-tuned $\ell_{\ast}$ |
+| Criteria P1–P6 and excluded moves | DESI- or S$_8$-tuned $\ell_{\ast}$ |
 | R1d as a hypothesis class with scale table (§6) | “S$_8$ explained by stochastic DE” |
 | Declared open kernel sentence | Closure of WP1 without a principle |
 

@@ -3,7 +3,7 @@
 Jesús Morales Souhail · July 2026  
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-Not a detection paper. Depends on the uniqueness argument, the DESI residual ceiling, and the closed $H_0$ checks.
+Depends on the uniqueness argument, the DESI residual ceiling, and the closed $H_0$ checks.
 
 ---
 

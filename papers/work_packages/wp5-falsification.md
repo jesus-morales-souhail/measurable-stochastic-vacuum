@@ -39,7 +39,7 @@ Once a principle $P$ predicts $\ell_{\ast}$ or $N_{\mathrm{eff}}$:
 | $P\Rightarrow \sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ with no damping mechanism | **Tension** with DESI residual bound (sister repo) → candidate dies unless $\theta$-damping derived |
 | $P$ contradicts local Lorentz tests **that actually constrain that sector** | Candidate dies |
 
-**Illegal move:** change $\ell_{\ast}$ after seeing DESI to sit under $1.5\times 10^{-4}$.
+**Do not:** change $\ell_{\ast}$ after seeing DESI to sit under $1.5\times 10^{-4}$.
 
 ---
 
@@ -60,7 +60,7 @@ Once a principle $P$ predicts $\ell_{\ast}$ or $N_{\mathrm{eff}}$:
 |:--------|:--------|
 | Model predicts $\mathrm{RMS}_{\mathrm{path}}\gtrsim 0.05$–$0.1$ with $\sigma$ allowed by DESI residual | Conflict with slip floors / GR-like measurements at that OOM → die or reduce $\varepsilon$ **if $\varepsilon$ derived** |
 | Setting $\varepsilon=0$ by symmetry | Slip channel closes; only isotropic residual remains |
-| Free $\varepsilon$ fitted to Maus $\gamma=1.17$ | **Illegal** (DESI/Maus as dial) |
+| Free $\varepsilon$ fitted to Maus $\gamma=1.17$ | **Excluded** (DESI/Maus as dial) |
 
 ---
 

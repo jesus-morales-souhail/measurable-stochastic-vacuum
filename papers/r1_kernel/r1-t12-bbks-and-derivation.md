@@ -152,7 +152,7 @@ SDiff projection removes the isotropic mean; $\sigma$ is the residual fluctuatio
 
 ---
 
-## Claim checklist
+## Summary
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
