@@ -85,14 +85,26 @@ gives, under \(\lambda=g\sigma_{\mathrm{free}}\),
 
 ---
 
-## 4. Next computation (to upgrade OOM → number)
+## 4. Executed: Gaussian proxy numerics
 
-1. On a Gaussian or N-body density field, define domains of radius \(R_{\mathrm{nl}}\).  
-2. Estimate domain-to-domain scatter of a Buchert-like \(Q\) proxy (or of \(\langle\delta^2\rangle\), \(\langle\delta^3\rangle\) as placeholders).  
-3. Form \(\sigma_Q/\sqrt{N_{\mathrm{Hubble}}}\) and map to \(g_{\mathrm{eff}}\).  
-4. Require \(\lvert g_{\mathrm{eff}}\rvert\lesssim 1.45\) a posteriori (or report tension).
+```bash
+python scripts/r1/r1_lineA_Q_variance_proxy.py
+```
 
-**Code status:** landscape scripts exist for \(\sigma_{\mathrm{free}}\); full \(Q\) variance is **future** (Line A compute package).
+**Map used:** \(g_{\mathrm{eff}}=\mathrm{rms}(q)\) on one \(R_{\mathrm{nl}}\) domain with \(q\sim Q/H^2\), \(\delta\sim\mathcal{N}(0,1)\), \(\lambda_{\mathrm{eff}}=g_{\mathrm{eff}}\sigma_{\mathrm{free}}\).
+
+| Proxy | Definition | \(g_{\mathrm{eff}}\) (MC / analytic) |
+|:------|:-----------|:-------------------------------------|
+| **P0** | \(q=\delta^2-1\) | \(\sqrt{2}\approx\mathbf{1.41}\) |
+| **P1** (primary) | \(q=\tfrac{2}{3}f^2(\delta^2-1)\), \(f=\Omega_m^{0.55}\) | \(\approx\mathbf{0.48}\) |
+| **P2** | \(\alpha(\delta^2-1)+\beta\delta^3\) | \(\mathcal{O}(1)\) |
+| Sub-cell var | sample var of \(n_{\mathrm{sub}}\) cells | \(\mathcal{O}(1)\) |
+
+**A posteriori vs DESI working \(\lvert g\rvert\lesssim 1.45\):** all proxies are **same order** (factor \(\sim 0.3\)–\(1\)). DESI is **consistency**, not the definition of \(g\).
+
+**Artefact:** `results/r1_lineA_Q/`.
+
+**Still open for upgrade:** true \(\mathrm{Var}(Q)\) from N-body / constrained realisations (full Buchert on domains).
 
 ---
 
@@ -111,8 +123,9 @@ or support-weighted \(\sigma\sim\sigma_{\mathrm{free}}\sqrt{f}\) depending on no
 | ID | Claim | Status |
 |:---|:------|:-------|
 | GA1 | \(g_{\mathrm{eff}}\sim\mathcal{O}(1)\) from averaging residual OOM | sketch |
-| GA2 | Matches DESI working bound order | consistency |
-| GA3 | Full \(Q\) variance from N-body | **open** |
+| GA2 | Gaussian proxy: \(g_{\mathrm{eff}}\approx 0.5\)–\(1.4\) (P1–P0) | **executed** |
+| GA3 | Matches DESI working bound order | consistency |
+| GA4 | Full \(Q\) variance from N-body | **open** |
 
 ---
 

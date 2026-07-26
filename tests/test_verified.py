@@ -841,3 +841,34 @@ class TestSandwichFalsifiers:
         names = [r["observable"] for r in rows]
         assert any("sigma_res" in n for n in names)
         assert any("correlation" in n for n in names)
+
+
+class TestLineA_QProxy:
+    def test_g_eff_order_unity(self):
+        from r1_lineA_Q_variance_proxy import monte_carlo_proxies, map_to_g, growth_rate_f
+        import math
+
+        mc = monte_carlo_proxies(n_dom=20_000)
+        g0 = map_to_g(mc["P0_delta2"]["rms_single_domain"], 8.5e-5)["g_eff"]
+        assert g0 == pytest.approx(math.sqrt(2.0), rel=0.05)
+        g1 = map_to_g(mc["P1_expansion"]["rms_single_domain"], 8.5e-5)["g_eff"]
+        assert 0.2 < g1 < 2.0
+        assert growth_rate_f() == pytest.approx(0.315**0.55, rel=1e-6)
+
+    def test_analytic_P0(self):
+        import math
+        from r1_lineA_Q_variance_proxy import map_to_g
+
+        m = map_to_g(math.sqrt(2.0), 8.516e-5)
+        assert m["g_eff"] == pytest.approx(math.sqrt(2.0))
+        assert m["lambda_eff"] == pytest.approx(math.sqrt(2.0) * 8.516e-5, rel=1e-6)
+
+
+class TestT2PreregistrationExists:
+    def test_protocol_file(self):
+        p = ROOT / "papers" / "r1_kernel" / "r1-T2-preregistration.md"
+        assert p.is_file()
+        text = p.read_text(encoding="utf-8")
+        assert "Pre-registration" in text or "pre-register" in text.lower()
+        assert "ALLOWED" in text or "0.5" in text
+        assert "mathrm{nl}" in text or "nonlinear" in text.lower()

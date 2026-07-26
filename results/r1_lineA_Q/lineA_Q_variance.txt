@@ -1,0 +1,22 @@
+LINE A — Gaussian Q variance proxy → g_eff
+==========================================
+R_nl = 8.6098 Mpc
+N_domains = 1.378804e+08
+sigma_free = 8.516255e-05
+DESI working |g| ≲ 1.45
+
+PROXIES (g_eff = rms of dimensionless q = Q/H² on one domain):
+  P0  q=δ²−1              g_eff = 1.4289  (analytic √2=1.4142)
+  P1  q=(2/3)f²(δ²−1)     g_eff = 0.2673  (analytic 0.2646)  ← primary
+  P2  q=α(δ²−1)+βδ³       g_eff = 1.8764
+  sub-cell variance       g_eff = 0.1004
+
+Hubble residual σ_Q_H (P1) = 2.276680e-05
+λ_eff (P1) = 2.276680e-05
+
+READING:
+  g_eff ~ O(1) from matter geometry + kinematic proxy — NOT fitted to DESI.
+  DESI |g|≲1.45 is a posteriori compatible (same order).
+  Upgrade path: N-body / constrained realisations for true Var(Q).
+
+See papers/r1_kernel/r1-lineA-g-from-averaging.md

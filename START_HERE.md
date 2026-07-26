@@ -76,11 +76,11 @@ data/                  ← portable DESI npy copies
 
 See [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md):
 
-| Line | Focus |
-|:-----|:------|
-| **A** | Derive \(g_{\mathrm{eff}}\) from averaging / SDiff (not DESI dial) |
-| **B** | Stage-IV test: residual × structure at \(R_{\mathrm{nl}}\) |
-| **C** | Information/entropy on past light cone (later) |
+| Line | Focus | Status |
+|:-----|:------|:-------|
+| **A** | \(g_{\mathrm{eff}}\) from averaging \(Q\) proxy | **Done OOM+MC** — [`r1-lineA-g-from-averaging.md`](papers/r1_kernel/r1-lineA-g-from-averaging.md) |
+| **B** | T2 pre-reg: residual × mask at \(R_{\mathrm{nl}}\) | **Done protocol** — [`r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md) |
+| **C** | Information/entropy on past light cone | Later |
 
 **Not the frontier:** forcing the grain to explain 8% \(H_0\) (short by \(\sim 30\)–\(10^{3}\times\)).
 

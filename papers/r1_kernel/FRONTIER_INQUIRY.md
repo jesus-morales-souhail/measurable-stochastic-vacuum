@@ -175,6 +175,13 @@ Do **not** open C as a path to \(H_0\).
 
 ---
 
+## 5b. Executed (July 2026)
+
+| Line | Deliverable |
+|:-----|:------------|
+| **A** | `scripts/r1/r1_lineA_Q_variance_proxy.py` → \(g_{\mathrm{eff}}pprox 0.27\) (P1) – \(1.41\) (P0); `results/r1_lineA_Q/` |
+| **B** | [`r1-T2-preregistration.md`](r1-T2-preregistration.md) — frozen T2 protocol |
+
 ## 6. Immediate next actions (executable)
 
 | # | Action | Command / file |

@@ -44,6 +44,8 @@ pytest -q
 | Order | File | What you get |
 |:------|:-----|:-------------|
 | 0 | [`r1_kernel/FRONTIER_INQUIRY.md`](r1_kernel/FRONTIER_INQUIRY.md) | **Frontier reframe** (H0 closed → Lines A/B/C) |
+| 0a | [`r1_kernel/r1-lineA-g-from-averaging.md`](r1_kernel/r1-lineA-g-from-averaging.md) | **Line A:** \(g_{\mathrm{eff}}\sim\mathcal{O}(1)\) from \(Q\) proxy |
+| 0b | [`r1_kernel/r1-T2-preregistration.md`](r1_kernel/r1-T2-preregistration.md) | **Line B:** T2 pre-reg residual×mask |
 | 1 | [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_uniqueness_residual_grain.md) | **Short paper draft** (start here for the lead) |
 | 2 | [`r1_kernel/r1-derivation-sandwich.md`](r1_kernel/r1-derivation-sandwich.md) | Uniqueness theorem under A0–A4 + numbers |
 | 3 | [`r1_kernel/r1-sandwich-falsifiers.md`](r1_kernel/r1-sandwich-falsifiers.md) | F1–F4 operational gates |

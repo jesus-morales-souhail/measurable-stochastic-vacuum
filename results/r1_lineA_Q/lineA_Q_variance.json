@@ -1,0 +1,113 @@
+{
+  "method": "Gaussian domain proxy for Q/H\u00b2 variance \u2192 g_eff",
+  "R_nl_Mpc": 8.609803792634995,
+  "L_H_Mpc": 4447.959317507418,
+  "N_domains": 137880438.4200664,
+  "sigma_free": 8.516255298808623e-05,
+  "DESI_g_work": 1.45,
+  "monte_carlo": {
+    "n_dom": 200000,
+    "f_growth": 0.5297498038588546,
+    "P0_delta2": {
+      "name": "q=\u03b4\u00b2\u22121",
+      "mean": 0.005513188653903897,
+      "var": 2.0417661179060356,
+      "rms_single_domain": 1.4289038168841302,
+      "p05": -0.9961733265717018,
+      "p95": 2.8673506403273987
+    },
+    "P1_expansion": {
+      "name": "q=(2/3)f\u00b2(\u03b4\u00b2\u22121)",
+      "mean": 0.001031461931172386,
+      "var": 0.07146718775207435,
+      "rms_single_domain": 0.26733347667674234,
+      "p05": -0.1863739711646694,
+      "p95": 0.5364523535261615
+    },
+    "P2_var_skew": {
+      "name": "q=\u03b1(\u03b4\u00b2\u22121)+\u03b2\u03b4\u00b3 (\u03b1=1.0,\u03b2=0.3)",
+      "mean": 0.008076502849085116,
+      "var": 3.5209656379700855,
+      "rms_single_domain": 1.876423629666309,
+      "p05": -0.996253320637315,
+      "p95": 3.0695431328639153
+    },
+    "analytic_Var_delta2": 2.0,
+    "analytic_rms_P0": 1.4142135623730951,
+    "analytic_rms_P1": 0.2645850783833815
+  },
+  "proxies": {
+    "P0_delta2": {
+      "name": "q=\u03b4\u00b2\u22121",
+      "mean": 0.005513188653903897,
+      "var": 2.0417661179060356,
+      "rms_single_domain": 1.4289038168841302,
+      "p05": -0.9961733265717018,
+      "p95": 2.8673506403273987,
+      "sigma_Q_single": 1.4289038168841302,
+      "sigma_Q_Hubble": 0.00012168909702027339,
+      "lambda_eff": 0.00012168909702027339,
+      "g_eff": 1.4289038168841302,
+      "g_work_DESI": 1.45,
+      "g_eff_over_g_work": 0.9854509081959518,
+      "compatible_with_DESI_work": true,
+      "OOM_compatible": true
+    },
+    "P1_expansion": {
+      "name": "q=(2/3)f\u00b2(\u03b4\u00b2\u22121)",
+      "mean": 0.001031461931172386,
+      "var": 0.07146718775207435,
+      "rms_single_domain": 0.26733347667674234,
+      "p05": -0.1863739711646694,
+      "p95": 0.5364523535261615,
+      "sigma_Q_single": 0.26733347667674234,
+      "sigma_Q_Hubble": 2.2766801372972384e-05,
+      "lambda_eff": 2.2766801372972384e-05,
+      "g_eff": 0.26733347667674234,
+      "g_work_DESI": 1.45,
+      "g_eff_over_g_work": 0.1843679149494775,
+      "compatible_with_DESI_work": true,
+      "OOM_compatible": true
+    },
+    "P2_var_skew": {
+      "name": "q=\u03b1(\u03b4\u00b2\u22121)+\u03b2\u03b4\u00b3 (\u03b1=1.0,\u03b2=0.3)",
+      "mean": 0.008076502849085116,
+      "var": 3.5209656379700855,
+      "rms_single_domain": 1.876423629666309,
+      "p05": -0.996253320637315,
+      "p95": 3.0695431328639153,
+      "sigma_Q_single": 1.876423629666309,
+      "sigma_Q_Hubble": 0.00015980102678955413,
+      "lambda_eff": 0.00015980102678955413,
+      "g_eff": 1.876423629666309,
+      "g_work_DESI": 1.45,
+      "g_eff_over_g_work": 1.2940852618388339,
+      "compatible_with_DESI_work": true,
+      "OOM_compatible": true
+    }
+  },
+  "subcell": {
+    "n_dom": 50000,
+    "n_sub": 8,
+    "rms_single_domain": 0.10037060231474408,
+    "mean_q": 1.7663219606197095e-05,
+    "note": "sub-cell sample variance proxy; still Gaussian OOM not N-body",
+    "sigma_Q_single": 0.10037060231474408,
+    "sigma_Q_Hubble": 8.547816738075523e-06,
+    "lambda_eff": 8.547816738075523e-06,
+    "g_eff": 0.10037060231474408,
+    "g_work_DESI": 1.45,
+    "g_eff_over_g_work": 0.0692211050446511,
+    "compatible_with_DESI_work": true,
+    "OOM_compatible": true
+  },
+  "primary_P1_g_eff": 0.26733347667674234,
+  "analytic_g_P0": 1.4142135623730951,
+  "analytic_g_P1": 0.2645850783833815,
+  "interpretation": "g_eff = rms(q) on a single R_nl domain under \u03bb=g\u00b7\u03c3_free. All proxies give g_eff = O(1), same order as DESI working bound ~1.45. DESI is a posteriori consistency, not the definition of g.",
+  "not_claimed": [
+    "Full Buchert Q from N-body",
+    "Mean Q as dark energy",
+    "H0 from residual"
+  ]
+}
