@@ -14,7 +14,7 @@
 I implement the promised **a priori** toy:
 
 $$
-\left\lvert \frac{\delta D}{D}\right\rvert = \begin{cases} s_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}} & \text{(S) stochastic / path RMS}\\ s_{\mathrm{loc}}\,(\chi/\ell_{\ast}) & \text{(C) coherent (flagged)}\\ \end{cases}
+\left| \frac{\delta D}{D}\right| = \begin{cases} s_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}} & \text{(S) stochastic / path RMS}\\ s_{\mathrm{loc}}\,(\chi/\ell_{\ast}) & \text{(C) coherent (flagged)}\\ \end{cases}
 $$
 
 with $\ell_{\ast}$ **fixed** from the R1 landscape (NP-A or $R_8$-class) and $s_{\mathrm{loc}}=\lvert\gamma-1\rvert$ from the Einstein+Morales wall at the DESI residual ceiling. I also track the amplitude-free shape $f(z)=\sqrt{\chi(z)/\chi(1.5)}$.

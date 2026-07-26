@@ -53,7 +53,7 @@ $$
 Potential-dominated fractional density contrast (OOM, flat gauge):
 
 $$
-\sigma_\rho\equiv\left\lvert \frac{\delta\rho_Q}{\rho_Q}\right\rvert \approx\sqrt{2\varepsilon_Q}\;A\;\frac{\delta Q_i}{M_p}, \qquad \varepsilon_Q=\frac{M_p^2}{2}\left(\frac{V_Q'}{V_Q}\right)^2,
+\sigma_\rho\equiv\left| \frac{\delta\rho_Q}{\rho_Q}\right| \approx\sqrt{2\varepsilon_Q}\;A\;\frac{\delta Q_i}{M_p}, \qquad \varepsilon_Q=\frac{M_p^2}{2}\left(\frac{V_Q'}{V_Q}\right)^2,
 $$
 
 with post-inflation field growth $A=\delta Q_f/\delta Q_i$ (Gordon & Wands: $A>45$ for *their* target).

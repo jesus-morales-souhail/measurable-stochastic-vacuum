@@ -156,7 +156,7 @@ $$
 one obtains
 
 $$
-\lvert \gamma-1 \rvert = \left\lvert \frac{\Phi}{\Psi}-1\right\rvert = 2\varepsilon\sigma\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}.
+\lvert \gamma-1 \rvert = \left| \frac{\Phi}{\Psi}-1\right| = 2\varepsilon\sigma\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}.
 $$
 
 **Status:** standard consequence of the anisotropy equation under the listed assumptions (Ma & Bertschinger form; same as sister `slip_bridge.py`).  
