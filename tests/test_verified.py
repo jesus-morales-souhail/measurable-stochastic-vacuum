@@ -18,7 +18,10 @@ import numpy as np
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "scripts"))
+_SCRIPTS = ROOT / "scripts"
+for _d in (_SCRIPTS, _SCRIPTS / "core", _SCRIPTS / "r1", _SCRIPTS / "closed", _SCRIPTS / "side"):
+    if _d.is_dir() and str(_d) not in sys.path:
+        sys.path.insert(0, str(_d))
 
 from lib_verified import (  # noqa: E402
     L_P_M,

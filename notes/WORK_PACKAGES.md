@@ -4,7 +4,7 @@
 **Last update:** July 2026  
 
 **Navigate:** [`papers/INDEX.md`](../papers/INDEX.md) · [`README.md`](../README.md)  
-**Primary results:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green.  
+**Primary results:** [`papers/core/VERIFIED_RESULTS.md`](../papers/core/VERIFIED_RESULTS.md) + `pytest -q` green.  
 WP notes are expansions, not independent hard-claim sources.
 
 ---
@@ -14,7 +14,7 @@ WP notes are expansions, not independent hard-claim sources.
 | WP | Rule | Status | Main document |
 |:---|:-----|:-------|:--------------|
 | WP0 | Empirical boundary | **Done** (sister repo) | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) |
-| WP1 | R1 counting seed | **Partial** | [`r1-counting-principle.md`](../papers/r1-counting-principle.md) · [`r1-open-kernel.md`](../papers/r1-open-kernel.md) |
+| WP1 | R1 counting seed | **Partial** | [`r1-counting-principle.md`](../papers/r1_kernel/r1-counting-principle.md) · [`r1-open-kernel.md`](../papers/r1_kernel/r1-open-kernel.md) |
 | WP2 | R3 soft open map | **Soft theorems done** | [`r3-open-horizon-map.md`](../papers/r3-open-horizon-map.md) |
 | WP3 | R2 slip + path | **Partial** | [`r2-slip-from-same-sector.md`](../papers/r2-slip-from-same-sector.md) |
 | WP4 | Joint table + zeros | **Done** | [`wp4-joint-predictions-and-zeros.md`](../papers/wp4-joint-predictions-and-zeros.md) |
@@ -26,9 +26,9 @@ WP notes are expansions, not independent hard-claim sources.
 | — | H0 running / multi-path bridge | **Done (literature+geometry; no H0 fit)** | [`h0-running-brachistochrone-bridge.md`](../papers/h0-running-brachistochrone-bridge.md) |
 | — | H0 toy $\delta D/D$ map | **Done (stochastic fails 8% gap)** | [`h0-bridge-toy-map.md`](../papers/h0-bridge-toy-map.md) |
 | — | Desqueezing vs invented $H_0(z)$ filter | **Done (reject; $\sigma_X\ll 9\%$)** | [`h0-desqueezing-filter.md`](../papers/h0-desqueezing-filter.md) |
-| — | P_nl + full $\sigma(R)$ | **Done (length; hypothesis)** | [`r1-principle-nonlinear-matter.md`](../papers/r1-principle-nonlinear-matter.md) |
-| — | T1.1/T1.2 mechanism compute | **Done (geometry viable)** | [`r1-t1-mechanisms-compute.md`](../papers/r1-t1-mechanisms-compute.md) |
-| — | Action/master-eq link vacuum↔$R_{\mathrm{nl}}$ | **Sketch under P0–P1** | [`r1-t12-bbks-and-derivation.md`](../papers/r1-t12-bbks-and-derivation.md) |
+| — | P_nl + full $\sigma(R)$ | **Done (length; hypothesis)** | [`r1-principle-nonlinear-matter.md`](../papers/r1_kernel/r1-principle-nonlinear-matter.md) |
+| — | T1.1/T1.2 mechanism compute | **Done (geometry viable)** | [`r1-t1-mechanisms-compute.md`](../papers/r1_kernel/r1-t1-mechanisms-compute.md) |
+| — | Action/master-eq link vacuum↔$R_{\mathrm{nl}}$ | **Sketch under P0–P1** | [`r1-t12-bbks-and-derivation.md`](../papers/r1_kernel/r1-t12-bbks-and-derivation.md) |
 | — | BBKS peak moments at $R_{\mathrm{nl}}$ | **Done** | same |
 
 ---
@@ -44,8 +44,8 @@ Null OU/QNM, $\sigma_X<1.5\times 10^{-4}$ (95% CL), tachyonic exclusion, amplifi
 
 **Delivered:** $\sigma_{0,\mathrm{eff}}=(\ell_*/L)^{d/2}$; Sorkin zero; mesoscopic landscape for $\sigma=10^{-5}$; **open-kernel note** (walls vs kernel; R1d scale class; falsifiers).  
 **Open:** principle fixing $\ell_*$ (R1a/b/c/**d**).  
-**Code:** `scripts/r1_counting_landscape.py`, `scripts/r1_open_kernel_scales.py`, `lib_verified.py`.  
-**Publishable status note:** [`papers/r1-open-kernel.md`](../papers/r1-open-kernel.md).
+**Code:** `scripts/r1/r1_counting_landscape.py`, `scripts/r1/r1_open_kernel_scales.py`, `scripts/core/lib_verified.py`.  
+**Publishable status note:** [`papers/r1_kernel/r1-open-kernel.md`](../papers/r1_kernel/r1-open-kernel.md).
 
 ---
 
@@ -99,9 +99,9 @@ Do **not** re-label NP-A as galaxy separation.
 ```bash
 pip install -r requirements.txt
 pytest -q
-python scripts/lib_verified.py
-python scripts/r1_counting_landscape.py
-python scripts/r1_open_kernel_scales.py
+python scripts/core/lib_verified.py
+python scripts/r1/r1_counting_landscape.py
+python scripts/r1/r1_open_kernel_scales.py
 python scripts/lensing_rms_real_data_compare.py
 python scripts/r3_open_horizon_map.py
 python scripts/r2_light_path_accumulation.py

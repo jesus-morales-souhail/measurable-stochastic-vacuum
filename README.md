@@ -3,12 +3,15 @@
 **Author:** Jesús Morales Souhail · [ORCID 0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
 **Language:** English · **Status:** Independent theory programme — **not peer reviewed** · July 2026  
 
+**→ New here? Open [`START_HERE.md`](START_HERE.md) (one page).**  
+**→ Full map:** [`papers/INDEX.md`](papers/INDEX.md)
+
 When can late-time stochastic vacuum / dark-energy noise be telescope-measurable **without free \(10^{56}\) amplifiers**?
 
-**Full document map:** [`papers/INDEX.md`](papers/INDEX.md) ← **start here if lost**
-
-**Sister empirical corpus (DESI BAO nulls):**  
-https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou
+| Sister role | Repo |
+|:------------|:-----|
+| DESI BAO **data claims** | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) |
+| Pedagogy / wrong-scale **quarantine** | [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) |
 
 ---
 
@@ -23,86 +26,38 @@ pytest -q
 
 ---
 
-## Reading paths
+## Layout (reorganised July 2026)
 
-### A — Referee / stable claims (30 min)
+```
+START_HERE.md     one-page entry
+papers/
+  core/           stable claims
+  r1_kernel/      active lead (uniqueness of grain)
+  closed_walls/   dead ends
+  side_threads/   secondary
+  work_packages/  WP deep dives
+scripts/
+  core/  r1/  closed/  side/
+tests/  results/  data/
+```
 
-1. [`papers/FOR_REFEREES.md`](papers/FOR_REFEREES.md) — claims & formula sheet  
-2. [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) — unit-tested identities  
-3. [`papers/OBSERVABLE_WALL.md`](papers/OBSERVABLE_WALL.md) — slip wall  
-4. [`papers/SIMPLE_AS_LAMBDA.md`](papers/SIMPLE_AS_LAMBDA.md) — minimal model  
-5. [`BOUNDARY.md`](BOUNDARY.md) — what this repo is not  
+---
 
-### B — Active research: open R1 kernel (current lead)
+## Current scientific lead (one block)
 
-1. [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) — walls vs open kernel  
-2. [`papers/r1-scale-decade-8-12.md`](papers/r1-scale-decade-8-12.md) — **lead: 8–12 Mpc decade**  
-3. [`papers/r1-principle-nonlinear-matter.md`](papers/r1-principle-nonlinear-matter.md) — \(\ell_*=R_{\mathrm{nl}}\) hypothesis + full \(\sigma(R)\)  
-4. [`papers/r1-derivation-sandwich.md`](papers/r1-derivation-sandwich.md) — **ADVANCE: uniqueness under A0–A4**  
-5. [`papers/NOTE_uniqueness_residual_grain.md`](papers/NOTE_uniqueness_residual_grain.md) — **short paper draft**  
-6. [`papers/r1-sandwich-falsifiers.md`](papers/r1-sandwich-falsifiers.md) — F1–F4 operational gates  
-7. [`papers/r1-a1-microphysics.md`](papers/r1-a1-microphysics.md) — origins of \(g\chi\delta_m\)  
-8. [`papers/r1-bounding-g-plan.md`](papers/r1-bounding-g-plan.md) — bound coupling \(\lambda,g\)  
+**Bulk** expansion = \(\Lambda\).  
+**Edge / residual** amplitude \(\sigma = (\ell_*/L_H)^{3/2}\).  
+Under axioms (residual sector + local coupling to classical nonlinear matter):  
+\(\ell_* \sim R_{\mathrm{nl}} \approx 8.61\,\mathrm{Mpc}\)  
+\(\Rightarrow \sigma \sim 8.5\times 10^{-5}\) (under DESI \(\sigma_X < 1.5\times 10^{-4}\)).  
+Working coupling \(\lvert g\rvert \lesssim 1.45\).  
+\(H_0\) tension **not** explained at safe residual amplitude.
+
+Short draft: [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md)
 
 ```bash
-python scripts/r1_sigma_R_full.py
-python scripts/r1_sandwich_derivation.py   # uniqueness theorem numbers
-python scripts/r1_sandwich_falsifiers.py   # F1–F4 + Stage-IV honesty
-python scripts/r1_bound_g_oom.py
-python scripts/r1_profile_lambda_bao.py
-python scripts/r1_profile_lambda_fullcov.py
-```
-
-### C — Closed walls (do not re-open)
-
-| Topic | Note |
-|:------|:-----|
-| Soft amplification of Sorkin | sister `amplification-gap.md` |
-| \(H_0\) 9% from residual / desqueezing | `h0-bridge-toy-map.md`, `h0-desqueezing-filter.md` |
-| NP-A = Andromeda / Virgo / “2.01” | `ell-star-external-scales.md` |
-| \(r_0 = 2.06\,\mathrm{Mpc}\) | `ell-star-r0-peculiar-scales.md` |
-
----
-
-## Minimal model
-
-
-$$
-H^{2}=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr]
-\qquad
-\sigma=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}
-\qquad
-\mathrm{RMS}(\lvert\gamma-1\rvert)\sim\sigma^{2/3}
-$$
-
-
-**Current lead:** \(\ell_*\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) (hypothesis) \(\Rightarrow\sigma\sim 8.5\times 10^{-5}\) under DESI ceiling.
-
-**Bulk = \(\Lambda\). Edge = \(\sigma\). Signal = light path, not a new \(H(z)\).**
-
----
-
-## Status snapshot
-
-| Layer | Status |
-|:------|:-------|
-| Soft amplifiers of \(\sigma_0\sim 10^{-61}\) | **Closed walls** |
-| Length \(R_{\mathrm{nl}}\) | **Computed** \(\approx 8.61\,\mathrm{Mpc}\) |
-| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Derived under A0–A4** (sandwich uniqueness); A0–A1 still postulates |
-| Bound on \(\lambda,g\) | **Working** \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\); formal full-cov not informative at \(10^{-4}\) |
-| \(H_0\) tension from residual | **Excluded** at safe amplitude |
-
----
-
-## Layout
-
-```
-papers/     theory notes (see INDEX.md)
-scripts/    verified kinematics + R1 pipeline
-tests/      pytest gate
-results/    numerical artefacts
-notes/      WORK_PACKAGES live status
-BOUNDARY.md claim fence vs sister repos
+python scripts/r1/r1_sandwich_derivation.py
+python scripts/r1/r1_sandwich_falsifiers.py
 ```
 
 ---

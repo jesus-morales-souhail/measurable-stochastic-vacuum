@@ -1,20 +1,22 @@
 # Document index — measurable-stochastic-vacuum
 
-**Read this first if the folder feels crowded.**  
-Author: Jesús Morales Souhail · July 2026 · **Not peer reviewed**
+**Lost?** Read [`../START_HERE.md`](../START_HERE.md) first (one page).  
+**Author:** Jesús Morales Souhail · July 2026 · **Not peer reviewed**
 
-Sister empirical repo: [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+Sister data repo: [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)  
+Exploratory quarantine: [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes)
 
 ---
 
-## 1. Start here (5 minutes)
+## How papers are organised
 
-| Order | File | What you get |
-|:------|:-----|:-------------|
-| 1 | [`README.md`](../README.md) | One-page map + minimal model |
-| 2 | [`FOR_REFEREES.md`](FOR_REFEREES.md) | Claims C* / non-claims N* + formula sheet |
-| 3 | [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) | Only unit-tested identities |
-| 4 | [`BOUNDARY.md`](../BOUNDARY.md) | What may / may not enter this repo |
+| Folder | Meaning | When to open |
+|:-------|:--------|:-------------|
+| [`core/`](core/) | Stable claims, formulas, referee path | Publishing / review |
+| [`r1_kernel/`](r1_kernel/) | **Active lead:** grain scale uniqueness | Current research |
+| [`closed_walls/`](closed_walls/) | Dead ends already measured | Only if tempted to re-open |
+| [`side_threads/`](side_threads/) | Useful secondary (inflation, lensing) | After core + r1 |
+| [`work_packages/`](work_packages/) | WP expansions (slip, horizon, falsification) | Deep dive |
 
 ```bash
 pytest -q
@@ -22,93 +24,101 @@ pytest -q
 
 ---
 
-## 2. Core theory (stable)
+## 1. Core (stable)
 
 | File | Role |
 |:-----|:-----|
-| [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) | Minimal model as simple as \(\Lambda\) |
-| [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) | Slip wall + self-shielding |
-| [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md) | Path \(\mathrm{RMS}=s\sqrt{N}\) |
-| [`NARROW_PATH.md`](NARROW_PATH.md) | NP-A / NP-B architecture |
-| [`SELF_SHIELDING_AXIOMS.md`](SELF_SHIELDING_AXIOMS.md) | Method axioms |
-| [`wp4-joint-predictions-and-zeros.md`](wp4-joint-predictions-and-zeros.md) | Joint zeros table |
-| [`wp5-falsification.md`](wp5-falsification.md) | Falsifiers |
+| [`core/FOR_REFEREES.md`](core/FOR_REFEREES.md) | Claims C* / non-claims N* + formula sheet |
+| [`core/VERIFIED_RESULTS.md`](core/VERIFIED_RESULTS.md) | Unit-tested identities only |
+| [`core/SIMPLE_AS_LAMBDA.md`](core/SIMPLE_AS_LAMBDA.md) | Minimal model as simple as \(\Lambda\) |
+| [`core/OBSERVABLE_WALL.md`](core/OBSERVABLE_WALL.md) | Slip wall + self-shielding |
+| [`core/PAST_LIGHT_CONE_INTEGRATION.md`](core/PAST_LIGHT_CONE_INTEGRATION.md) | Path \(\mathrm{RMS}=s\sqrt{N}\) |
+| [`core/NARROW_PATH.md`](core/NARROW_PATH.md) | NP-A / NP-B windows |
+| [`core/SELF_SHIELDING_AXIOMS.md`](core/SELF_SHIELDING_AXIOMS.md) | Method axioms |
+| [`../BOUNDARY.md`](../BOUNDARY.md) | What may / may not enter claims |
 
 ---
 
-## 3. Open R1 kernel (active research thread)
+## 2. R1 kernel (active lead) — read in this order
 
-**Question:** what fixes mesoscopic \(\ell_*\)? Lead: **8–12 Mpc decade**, not NP-A 2.06 confirmation.
+| Order | File | What you get |
+|:------|:-----|:-------------|
+| 1 | [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_uniqueness_residual_grain.md) | **Short paper draft** (start here for the lead) |
+| 2 | [`r1_kernel/r1-derivation-sandwich.md`](r1_kernel/r1-derivation-sandwich.md) | Uniqueness theorem under A0–A4 + numbers |
+| 3 | [`r1_kernel/r1-sandwich-falsifiers.md`](r1_kernel/r1-sandwich-falsifiers.md) | F1–F4 operational gates |
+| 4 | [`r1_kernel/r1-a1-microphysics.md`](r1_kernel/r1-a1-microphysics.md) | Where \(g\chi\delta_m\) can come from |
+| 5 | [`r1_kernel/r1-principle-nonlinear-matter.md`](r1_kernel/r1-principle-nonlinear-matter.md) | \(R_{\mathrm{nl}}\) full integral |
+| 6 | [`r1_kernel/r1-open-kernel.md`](r1_kernel/r1-open-kernel.md) | Walls vs open kernel taxonomy |
+| 7 | [`r1_kernel/r1-scale-decade-8-12.md`](r1_kernel/r1-scale-decade-8-12.md) | Steering: 8–12 Mpc decade |
+| 8 | [`r1_kernel/r1-bounding-g-plan.md`](r1_kernel/r1-bounding-g-plan.md) | Bound \(\lambda,g\) |
+| 9 | [`r1_kernel/r1-t1-mechanisms-compute.md`](r1_kernel/r1-t1-mechanisms-compute.md) | Domain + mask numbers |
+| 10 | [`r1_kernel/r1-t12-bbks-and-derivation.md`](r1_kernel/r1-t12-bbks-and-derivation.md) | BBKS \(R_*\) + coarse-graining sketch |
+| 11 | [`r1_kernel/r1-mechanism-candidates.md`](r1_kernel/r1-mechanism-candidates.md) | Tier 1–3 literature ranking |
+| 12 | [`r1_kernel/r1-counting-principle.md`](r1_kernel/r1-counting-principle.md) | Original counting landscape |
 
-```
-r1-open-kernel.md              ← walls vs open kernel
-r1-scale-decade-8-12.md        ← steering: r0, R8, DESI-ceil cell
-r1-principle-nonlinear-matter.md ← hypothesis ℓ_*=R_nl + full σ(R)
-r1-derivation-sandwich.md      ← **ADVANCE: uniqueness theorem under A0–A4**
-r1-sandwich-falsifiers.md      ← operational F1–F4 + Stage-IV honesty
-r1-a1-microphysics.md          ← where gχδ_m can come from (M1–M6)
-NOTE_uniqueness_residual_grain.md ← **short paper draft**
-r1-t1-mechanisms-compute.md    ← T1.1/T1.2 geometry numbers
-r1-t12-bbks-and-derivation.md  ← BBKS R_* + coarse-graining sketch
-r1-mechanism-candidates.md     ← Tier 1–3 literature ranking
-r1-bounding-g-plan.md          ← how to bound coupling λ, g
-r1-counting-principle.md       ← original WP1 landscape
-```
-
-**Key numbers (locked):**
+**Locked numbers**
 
 | Symbol | Value |
 |:-------|:------|
 | \(R_{\mathrm{nl}}\) | \(\approx 8.61\,\mathrm{Mpc}\) |
-| \(R_*\) (BBKS) | \(\approx 1.58\,\mathrm{Mpc}\) |
-| \(r_{e,\mathrm{mask}}\) | \(\approx 9.5\,\mathrm{Mpc}\approx 1.11\,R_{\mathrm{nl}}\) |
+| \(r_{e,\mathrm{mask}}\) | \(\approx 1.11\,R_{\mathrm{nl}}\) |
 | \(\sigma_{\mathrm{free}}\) (\(d=3\)) | \(\approx 8.5\times 10^{-5}\) |
-| Working \(\lvert\lambda\rvert\) | \(\lesssim 1.24\times 10^{-4}\) (from \(\sigma_X<1.5\times 10^{-4}\)) |
-| Working \(\lvert g\rvert\) | \(\lesssim 1.45\) (\(\lambda=g\cdot\sigma_{\mathrm{free}}\)) |
-| Full-cov formal | **Not informative** at \(10^{-4}\) (absorbs \(\chi^2\sim 29\)) |
-| Open kernel form | **Closed under A0–A4** (sandwich); A0–A1 still postulates |
+| Working \(\lvert\lambda\rvert\) / \(\lvert g\rvert\) | \(\lesssim 1.24\times 10^{-4}\) / \(\lesssim 1.45\) |
 
-**Scripts:** `r1_sigma_R_full.py`, `r1_t1_mechanisms_compute.py`, `r1_t12_bbks_peaks.py`, `r1_sandwich_derivation.py`, `r1_bound_g_oom.py`, `r1_profile_lambda_bao.py`, `r1_profile_lambda_fullcov.py`
+```bash
+python scripts/r1/r1_sigma_R_full.py
+python scripts/r1/r1_sandwich_derivation.py
+python scripts/r1/r1_sandwich_falsifiers.py
+python scripts/r1/r1_bound_g_oom.py
+```
 
 ---
 
-## 4. Closed walls & filters (do not re-open)
+## 3. Closed walls (do not re-open)
 
 | File | Closed claim |
 |:-----|:-------------|
 | Sister `amplification-gap.md` | Soft \(10^{56}\) free lunch |
-| [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md) | Path RMS explains 9% \(H_0\) |
-| [`h0-desqueezing-filter.md`](h0-desqueezing-filter.md) | Invented \(H_0(z)\) + hand-tuned \(\theta\) |
-| [`ell-star-external-scales.md`](ell-star-external-scales.md) | Andromeda/Virgo confirm NP-A |
-| [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md) | \(r_0\equiv 2.06\,\mathrm{Mpc}\) |
+| [`closed_walls/h0-bridge-toy-map.md`](closed_walls/h0-bridge-toy-map.md) | Path RMS explains 9% \(H_0\) |
+| [`closed_walls/h0-desqueezing-filter.md`](closed_walls/h0-desqueezing-filter.md) | Invented \(H_0(z)\) + hand-tuned \(\theta\) |
+| [`closed_walls/h0-running-brachistochrone-bridge.md`](closed_walls/h0-running-brachistochrone-bridge.md) | Literature bridge only |
+| [`closed_walls/ell-star-external-scales.md`](closed_walls/ell-star-external-scales.md) | Andromeda/Virgo confirm NP-A |
+| [`closed_walls/ell-star-r0-peculiar-scales.md`](closed_walls/ell-star-r0-peculiar-scales.md) | \(r_0\equiv 2.06\,\mathrm{Mpc}\) |
 
 ---
 
-## 5. Side threads (useful, secondary)
+## 4. Side threads (secondary)
 
 | File | Role |
 |:-----|:-----|
-| [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md) | Inflation seed, factor \(\sim 45\) |
-| [`inflation-spectator-residual-atlas.md`](inflation-spectator-residual-atlas.md) | Modern \(r\to\sigma_\rho\) |
-| [`lensing-rms-forecast-real-data.md`](lensing-rms-forecast-real-data.md) | Path RMS vs Maus/Sakr |
-| [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md) | H0-running literature bridge |
-| [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Pedagogy only |
-| [`THEORY_REVOLUTION.md`](THEORY_REVOLUTION.md) | R1–R2–R3 manifesto |
-| [`CONSISTENCY_AUDIT.md`](CONSISTENCY_AUDIT.md) | Cross-repo audit |
-| `r2-*.md`, `r3-*.md` | WP2/WP3 expansions |
+| [`side_threads/inflation-spectator-seed-gordon-wands.md`](side_threads/inflation-spectator-seed-gordon-wands.md) | Inflation seed, factor \(\sim 45\) |
+| [`side_threads/inflation-spectator-residual-atlas.md`](side_threads/inflation-spectator-residual-atlas.md) | Modern \(r\to\sigma_\rho\) |
+| [`side_threads/lensing-rms-forecast-real-data.md`](side_threads/lensing-rms-forecast-real-data.md) | Path RMS vs Maus/Sakr |
+| [`side_threads/TOPOLOGICAL_EDGE_ANALOGY.md`](side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | Pedagogy only |
+| [`side_threads/THEORY_REVOLUTION.md`](side_threads/THEORY_REVOLUTION.md) | Manifesto (not hard claims) |
+| [`side_threads/CONSISTENCY_AUDIT.md`](side_threads/CONSISTENCY_AUDIT.md) | Cross-repo audit |
+
+---
+
+## 5. Work packages (deep dive)
+
+| File | Role |
+|:-----|:-----|
+| [`work_packages/wp4-joint-predictions-and-zeros.md`](work_packages/wp4-joint-predictions-and-zeros.md) | Joint zeros |
+| [`work_packages/wp5-falsification.md`](work_packages/wp5-falsification.md) | Falsification levels L0–L4 |
+| [`work_packages/r2-slip-from-same-sector.md`](work_packages/r2-slip-from-same-sector.md) | Slip channel |
+| [`work_packages/r3-open-horizon-map.md`](work_packages/r3-open-horizon-map.md) | Soft open map |
 
 ---
 
 ## 6. Scripts map
 
-| Group | Scripts |
-|:------|:--------|
-| **Core** | `lib_verified.py`, `simple_as_lambda.py`, `light_cone_atlas.py` |
-| **R1 / grain** | `r1_counting_landscape.py`, `r1_open_kernel_scales.py`, `r1_sigma_R_full.py`, `r1_principle_Rnl.py`, `ell_star_*.py` |
-| **T1 / derivation** | `r1_t1_mechanisms_compute.py`, `r1_t12_bbks_peaks.py`, `r1_sandwich_derivation.py`, `r1_sandwich_falsifiers.py` |
-| **Bound \(g\)** | `r1_bound_g_oom.py`, `r1_profile_lambda_bao.py`, `r1_profile_lambda_fullcov.py` |
-| **H0 filters** | `h0_bridge_toy.py`, `h0_desqueezing_filter.py`, `h0_running_geometry.py` |
-| **Other** | `lensing_rms_real_data_compare.py`, `gordon_wands_factor45.py`, `inflation_spectator_residual_atlas.py` |
+| Folder | Content |
+|:-------|:--------|
+| `scripts/core/` | `lib_verified.py`, light-cone, slip path, simple model |
+| `scripts/r1/` | \(R_{\mathrm{nl}}\), sandwich, \(\lambda\) profile, mechanisms |
+| `scripts/closed/` | H0 filters, external-scale audits |
+| `scripts/side/` | Inflation atlas, lensing compare, R3 map |
 
 ---
 
@@ -116,11 +126,11 @@ r1-counting-principle.md       ← original WP1 landscape
 
 | Path | Content |
 |:-----|:--------|
+| `results/r1_sandwich/` | Uniqueness numbers |
+| `results/r1_falsifiers/` | F1–F4 table |
+| `results/r1_lambda_profile/` | Diagonal BAO \(\lambda\) profile |
+| `results/r1_lambda_fullcov/` | Full 13×13 (formal weak; primary=working) |
 | `results/r1_landscape.txt` | Counting landscape |
-| `results/r1_lambda_profile/` | \(\lambda\) profile on DESI BAO diagonal |
-| `results/r1_lambda_fullcov/` | Full 13×13 fractional residual profile + honesty flags |
-| `results/r1_sandwich/` | Sandwich theorem numbers (\(r_e\), mask, decoherence, table) |
-| `results/r1_falsifiers/` | Working-point predictions + F1–F4 table |
 | `results/r2_*.txt`, `r3_*.txt` | WP scans |
 
 ---
@@ -131,12 +141,12 @@ r1-counting-principle.md       ← original WP1 landscape
 |:------|:-------|
 | Soft amplifiers of Sorkin | **Walls (closed)** |
 | \(R_{\mathrm{nl}}\) length | **Computed** (\(\approx 8.61\,\mathrm{Mpc}\)) |
-| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Sandwich uniqueness under A0–A4**; short draft [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md) |
-| A0–A1 microphysics | **Mapped** (M1–M3 preferred); not SM theorem |
-| Falsifiers | **F1–F4 pre-registered** ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)) |
+| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Sandwich uniqueness under A0–A4**; A0–A1 postulates |
+| A0–A1 microphysics | **Mapped** (M1–M3 preferred) |
+| Falsifiers | **F1–F4 pre-registered** |
 | Bound on \(\lambda,g\) | **Working** \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\) |
-| Slip at working \(\lambda\) | \(\lvert\gamma-1\rvert\sim 10^{-4}\ll\) Maus \(0.11\); \(\mathrm{RMS}_{\mathrm{path}}\sim 2.5\times 10^{-3}\) |
-| \(H_0\) 9% from residual | **Excluded** at DESI-safe amplitude |
+| Slip at working \(\lambda\) | \(\lvert\gamma-1\rvert\sim 10^{-4}\ll\) Maus; \(\mathrm{RMS}_{\mathrm{path}}\sim 2.5\times 10^{-3}\) |
+| \(H_0\) 9% from residual | **Excluded** |
 
 ---
 

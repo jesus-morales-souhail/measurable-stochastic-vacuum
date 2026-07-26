@@ -19,4 +19,4 @@ stochastic-de-exploratory-notes WRONG-SCALE PEDAGOGY ONLY
 | Structural zeros | Lab wavefront as cosmology |
 | A posteriori DESI comparison | Fitting $\ell_*$ or $r$ to DESI |
 
-**Cite for hard results:** `papers/VERIFIED_RESULTS.md` only.
+**Cite for hard results:** `papers/core/VERIFIED_RESULTS.md` only.
