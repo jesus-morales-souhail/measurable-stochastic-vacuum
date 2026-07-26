@@ -6,3 +6,4 @@ results/*.pyc
 # local junk / redundant downloads (canonical tables are tracked uncompressed)
 data/real_velocity_net/try.dat
 data/real_velocity_net/*.dat.gz
+data/real_velocity_net/table3.dat
