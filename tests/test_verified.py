@@ -872,3 +872,20 @@ class TestT2PreregistrationExists:
         assert "Pre-registration" in text or "pre-register" in text.lower()
         assert "ALLOWED" in text or "0.5" in text
         assert "mathrm{nl}" in text or "nonlinear" in text.lower()
+
+
+class TestT2MockPipeline:
+    def test_mock_pipeline_pass(self):
+        from r1_T2_mock_pipeline import run_mock
+        from r1_sigma_R_full import H as H_FID, SIGMA8, find_R_nl, make_Pk_unnorm, normalize_A
+        from lib_verified import hubble_radius_mpc, sigma_from_count
+
+        Pk = make_Pk_unnorm()
+        A = normalize_A(Pk, SIGMA8)
+        R_nl = find_R_nl(Pk, A, 1.0) / H_FID
+        sf = sigma_from_count(R_nl, hubble_radius_mpc(), 3)
+        # smaller grid for speed in tests
+        m = run_mock(R_nl, sf, n=128, box_factor=30.0, g_inj=1.0, noise_frac=0.3)
+        assert m["in_ALLOWED_band"]
+        assert m["cross_residual_mask"] > 0.2
+        assert m["PASS_T2_structure_mock"]

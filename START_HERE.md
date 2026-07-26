@@ -79,7 +79,7 @@ See [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.m
 | Line | Focus | Status |
 |:-----|:------|:-------|
 | **A** | \(g_{\mathrm{eff}}\) from averaging \(Q\) proxy | **Done OOM+MC** — [`r1-lineA-g-from-averaging.md`](papers/r1_kernel/r1-lineA-g-from-averaging.md) |
-| **B** | T2 pre-reg: residual × mask at \(R_{\mathrm{nl}}\) | **Done protocol** — [`r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md) |
+| **B** | T2 pre-reg + end-to-end mock | **PASS** — [`r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md) · `scripts/r1/r1_T2_mock_pipeline.py` |
 | **C** | Information/entropy on past light cone | Later |
 
 **Not the frontier:** forcing the grain to explain 8% \(H_0\) (short by \(\sim 30\)–\(10^{3}\times\)).

@@ -1,0 +1,24 @@
+T2 END-TO-END MOCK VALIDATION
+==============================
+R_nl = 8.6098 Mpc  sigma_free = 8.516255e-05
+ALLOWED band = [4.30, 25.83] Mpc
+
+BASELINE (g=1, noise_frac=0.5):
+  r_e(residual) = 17.616 Mpc (2.05 R_nl)
+  in_band = True
+  cross r×mask = +0.5748
+  cross r×rand = +0.0064
+  PASS_T2_structure = True
+
+ENSEMBLE (n=12):
+  r_e = 16.824 ± 0.863 Mpc
+  cross r×mask = +0.5998 ± 0.0114
+  pass fraction = 1.00
+
+CONTROLS:
+  white residual: r_e≈1.734  cross_mask=-0.0075
+  100 Mpc inject: r_e≈95.874  in_ALLOWED=False
+
+PIPELINE VALIDATION: PASS
+
+See papers/r1_kernel/r1-T2-preregistration.md

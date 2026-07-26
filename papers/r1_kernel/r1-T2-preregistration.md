@@ -179,18 +179,45 @@ T2 **kills** the sandwich scale claim if **any** hold:
 
 ---
 
-## 9. Reproduce programme numbers
+## 9. End-to-end mock validation (pipeline proof)
+
+**Code:** [`scripts/r1/r1_T2_mock_pipeline.py`](../../scripts/r1/r1_T2_mock_pipeline.py)  
+**Results:** `results/r1_T2_mock/`
+
+Synthetic 2D Gaussian matter field with corr \(\sim R_{\mathrm{nl}}\); residual injected as  
+\(r = g\,\sigma_{\mathrm{free}}\,\delta + \mathrm{noise}\).
+
+| Check | Result (fiducial run) |
+|:------|:----------------------|
+| Recover \(r_e\) in ALLOWED band | **Yes** — ensemble \(r_e\approx 16.8\pm 0.9\,\mathrm{Mpc}\) (\(\sim 2\,R_{\mathrm{nl}}\)) |
+| Cross residual×mask positive | **Yes** — \(\approx +0.60\) |
+| Cross residual×random mask | **Null** — \(\sim 0\) |
+| White residual control | \(r_e\) small; cross \(\sim 0\) |
+| Wrong-scale (100 Mpc) injection | \(r_e\sim 96\,\mathrm{Mpc}\) **outside** ALLOWED band |
+| Ensemble PASS fraction | **12/12** |
+| **Pipeline validation** | **PASS** |
+
+This proves the **estimators and kill/support logic work** when the hypothesis is true in the mock. It does **not** prove nature realises the residual.
+
+```bash
+python scripts/r1/r1_T2_mock_pipeline.py
+```
+
+---
+
+## 10. Reproduce programme numbers
 
 ```bash
 python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_stage4_test_design.py
 python scripts/r1/r1_sandwich_falsifiers.py
+python scripts/r1/r1_T2_mock_pipeline.py
 pytest -q
 ```
 
 ---
 
-## 10. One-sentence protocol
+## 11. One-sentence protocol
 
 > **Pre-register** residual–matter cross and correlation length in the \(\mathcal{O}(1)\times R_{\mathrm{nl}}\) band at DESI-safe amplitude, with masks blind to residual and **no** post-hoc \(\ell_*\); success is scale lock, not \(H_0\).
 

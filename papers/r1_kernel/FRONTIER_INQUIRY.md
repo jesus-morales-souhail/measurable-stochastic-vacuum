@@ -180,7 +180,8 @@ Do **not** open C as a path to \(H_0\).
 | Line | Deliverable |
 |:-----|:------------|
 | **A** | `scripts/r1/r1_lineA_Q_variance_proxy.py` → \(g_{\mathrm{eff}}pprox 0.27\) (P1) – \(1.41\) (P0); `results/r1_lineA_Q/` |
-| **B** | [`r1-T2-preregistration.md`](r1-T2-preregistration.md) — frozen T2 protocol |
+| **B** | [`r1-T2-preregistration.md`](r1-T2-preregistration.md) + mock pipeline **PASS** (`r1_T2_mock_pipeline.py`) |
+| assets | [`HONEST_ASSETS.md`](HONEST_ASSETS.md) |
 
 ## 6. Immediate next actions (executable)
 
