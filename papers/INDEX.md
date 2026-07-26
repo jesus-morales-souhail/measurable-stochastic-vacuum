@@ -45,6 +45,9 @@ r1-open-kernel.md              ← walls vs open kernel
 r1-scale-decade-8-12.md        ← steering: r0, R8, DESI-ceil cell
 r1-principle-nonlinear-matter.md ← hypothesis ℓ_*=R_nl + full σ(R)
 r1-derivation-sandwich.md      ← **ADVANCE: uniqueness theorem under A0–A4**
+r1-sandwich-falsifiers.md      ← operational F1–F4 + Stage-IV honesty
+r1-a1-microphysics.md          ← where gχδ_m can come from (M1–M6)
+NOTE_uniqueness_residual_grain.md ← **short paper draft**
 r1-t1-mechanisms-compute.md    ← T1.1/T1.2 geometry numbers
 r1-t12-bbks-and-derivation.md  ← BBKS R_* + coarse-graining sketch
 r1-mechanism-candidates.md     ← Tier 1–3 literature ranking
@@ -102,7 +105,7 @@ r1-counting-principle.md       ← original WP1 landscape
 |:------|:--------|
 | **Core** | `lib_verified.py`, `simple_as_lambda.py`, `light_cone_atlas.py` |
 | **R1 / grain** | `r1_counting_landscape.py`, `r1_open_kernel_scales.py`, `r1_sigma_R_full.py`, `r1_principle_Rnl.py`, `ell_star_*.py` |
-| **T1 / derivation** | `r1_t1_mechanisms_compute.py`, `r1_t12_bbks_peaks.py`, `r1_sandwich_derivation.py` |
+| **T1 / derivation** | `r1_t1_mechanisms_compute.py`, `r1_t12_bbks_peaks.py`, `r1_sandwich_derivation.py`, `r1_sandwich_falsifiers.py` |
 | **Bound \(g\)** | `r1_bound_g_oom.py`, `r1_profile_lambda_bao.py`, `r1_profile_lambda_fullcov.py` |
 | **H0 filters** | `h0_bridge_toy.py`, `h0_desqueezing_filter.py`, `h0_running_geometry.py` |
 | **Other** | `lensing_rms_real_data_compare.py`, `gordon_wands_factor45.py`, `inflation_spectator_residual_atlas.py` |
@@ -117,6 +120,7 @@ r1-counting-principle.md       ← original WP1 landscape
 | `results/r1_lambda_profile/` | \(\lambda\) profile on DESI BAO diagonal |
 | `results/r1_lambda_fullcov/` | Full 13×13 fractional residual profile + honesty flags |
 | `results/r1_sandwich/` | Sandwich theorem numbers (\(r_e\), mask, decoherence, table) |
+| `results/r1_falsifiers/` | Working-point predictions + F1–F4 table |
 | `results/r2_*.txt`, `r3_*.txt` | WP scans |
 
 ---
@@ -127,8 +131,11 @@ r1-counting-principle.md       ← original WP1 landscape
 |:------|:-------|
 | Soft amplifiers of Sorkin | **Walls (closed)** |
 | \(R_{\mathrm{nl}}\) length | **Computed** (\(\approx 8.61\,\mathrm{Mpc}\)) |
-| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Sandwich uniqueness under A0–A4** ([`r1-derivation-sandwich.md`](r1-derivation-sandwich.md)); A0–A1 postulates |
-| Bound on \(\lambda,g\) | **Working** \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\); formal full-cov not informative at \(10^{-4}\) |
+| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Sandwich uniqueness under A0–A4**; short draft [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md) |
+| A0–A1 microphysics | **Mapped** (M1–M3 preferred); not SM theorem |
+| Falsifiers | **F1–F4 pre-registered** ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)) |
+| Bound on \(\lambda,g\) | **Working** \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\) |
+| Slip at working \(\lambda\) | \(\lvert\gamma-1\rvert\sim 10^{-4}\ll\) Maus \(0.11\); \(\mathrm{RMS}_{\mathrm{path}}\sim 2.5\times 10^{-3}\) |
 | \(H_0\) 9% from residual | **Excluded** at DESI-safe amplitude |
 
 ---

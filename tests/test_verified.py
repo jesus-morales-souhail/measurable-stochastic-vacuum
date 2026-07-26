@@ -816,3 +816,25 @@ class TestSandwichDerivation:
         assert "ALLOWED" in by["R_nl"]["regime"]
         assert "UV" in by["0.1 Mpc"]["regime"]
         assert "IR" in by["L_H"]["regime"]
+
+
+class TestSandwichFalsifiers:
+    def test_working_point_under_desi_ceiling(self):
+        from r1_sandwich_falsifiers import R_nl_and_sigma, predictions, DESI_SIGMA_X
+
+        R_nl, sf = R_nl_and_sigma()
+        pred = predictions(R_nl, sf)
+        assert sf < DESI_SIGMA_X
+        assert pred["lambda_working"] > 0
+        assert pred["g_working"] == pytest.approx(1.45, rel=0.05)
+        assert pred["RMS_path_working"] < 0.05  # below Sakr constant-η floor
+        assert pred["slip_local_working"] < 0.11  # below Maus
+
+    def test_falsifier_table_has_F1_scale(self):
+        from r1_sandwich_falsifiers import R_nl_and_sigma, predictions, falsifier_table
+
+        R_nl, sf = R_nl_and_sigma()
+        rows = falsifier_table(predictions(R_nl, sf))
+        names = [r["observable"] for r in rows]
+        assert any("sigma_res" in n for n in names)
+        assert any("correlation" in n for n in names)

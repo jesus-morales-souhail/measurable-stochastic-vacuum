@@ -19,7 +19,8 @@
 | Minimal model as simple as $\Lambda$ | Working bound $\sigma_X < 1.5\times 10^{-4}$ (95% CL) |
 | Conditional light-path predictions | Model kills (e.g. coherent tachyonic growth) |
 | Map of **measured walls** vs **open kernel** (R1) | Amplification gap (no free soft gain on Sorkin) |
-| **Not** a detection paper | **Not** a first-principles derivation of $\ell_*$ |
+| **Not** a detection paper | Empirical DESI residual bound |
+| Conditional uniqueness $\ell_*\sim R_{\mathrm{nl}}$ under A0–A4 | **Not** a proof that SM realises $\chi$ |
 
 **Sister empirical corpus:** 
 https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou 
@@ -50,6 +51,10 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5l | [`r1-t1-mechanisms-compute.md`](r1-t1-mechanisms-compute.md) | **T1.1/T1.2 numbers: domain counting + nonlinear mask** |
 | 5m | [`r1-mechanism-candidates.md`](r1-mechanism-candidates.md) | **Ranked mechanism candidates (Tier 1–3)** |
 | 5n | [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) | **BBKS $R_*$ + coarse-graining derivation sketch** |
+| 5o | [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) | **Sandwich uniqueness $\ell_*\sim R_{\mathrm{nl}}$ under A0–A4** |
+| 5p | [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md) | **Short paper draft (conditional theorem + numbers)** |
+| 5q | [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md) | **Operational F1–F4 falsifiers** |
+| 5r | [`r1-a1-microphysics.md`](r1-a1-microphysics.md) | **Microphysics map for $g\chi\delta_m$** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 

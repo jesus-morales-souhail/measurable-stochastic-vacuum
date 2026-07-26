@@ -39,18 +39,18 @@ pytest -q
 2. [`papers/r1-scale-decade-8-12.md`](papers/r1-scale-decade-8-12.md) — **lead: 8–12 Mpc decade**  
 3. [`papers/r1-principle-nonlinear-matter.md`](papers/r1-principle-nonlinear-matter.md) — \(\ell_*=R_{\mathrm{nl}}\) hypothesis + full \(\sigma(R)\)  
 4. [`papers/r1-derivation-sandwich.md`](papers/r1-derivation-sandwich.md) — **ADVANCE: uniqueness under A0–A4**  
-5. [`papers/r1-t1-mechanisms-compute.md`](papers/r1-t1-mechanisms-compute.md) — averaging + mask numbers  
-6. [`papers/r1-t12-bbks-and-derivation.md`](papers/r1-t12-bbks-and-derivation.md) — BBKS + coarse-graining sketch  
-7. [`papers/r1-bounding-g-plan.md`](papers/r1-bounding-g-plan.md) — bound coupling \(\lambda,g\)  
+5. [`papers/NOTE_uniqueness_residual_grain.md`](papers/NOTE_uniqueness_residual_grain.md) — **short paper draft**  
+6. [`papers/r1-sandwich-falsifiers.md`](papers/r1-sandwich-falsifiers.md) — F1–F4 operational gates  
+7. [`papers/r1-a1-microphysics.md`](papers/r1-a1-microphysics.md) — origins of \(g\chi\delta_m\)  
+8. [`papers/r1-bounding-g-plan.md`](papers/r1-bounding-g-plan.md) — bound coupling \(\lambda,g\)  
 
 ```bash
 python scripts/r1_sigma_R_full.py
-python scripts/r1_t1_mechanisms_compute.py
-python scripts/r1_t12_bbks_peaks.py
 python scripts/r1_sandwich_derivation.py   # uniqueness theorem numbers
+python scripts/r1_sandwich_falsifiers.py   # F1–F4 + Stage-IV honesty
 python scripts/r1_bound_g_oom.py
 python scripts/r1_profile_lambda_bao.py
-python scripts/r1_profile_lambda_fullcov.py   # full 13×13 cov; primary=working
+python scripts/r1_profile_lambda_fullcov.py
 ```
 
 ### C — Closed walls (do not re-open)

@@ -206,8 +206,9 @@ With \(\kappa=1\), \(\sigma_{\mathrm{free}}=8.5\times 10^{-5}\), \(\lvert\lambda
    - At programme amplitudes (\(\sigma_{\mathrm{free}}\), \(1.5\times 10^{-4}\)): \(\Delta\ln\mathcal{L}\approx 0\) vs pure \(\Lambda\)CDM.  
    - **`formal_informative_for_1e-4_grain = False`**. **`primary_bound = working`**.  
    - Artefact: `results/r1_lambda_fullcov/`.  
-4. **Next:** slip OOM / Maus consistency on working \(\lambda\).  
-5. **Optional:** joint background+\(\sigma_{\mathrm{res}}\) (float \(r_d\) or \(\Omega_m\)) so formal profile is not dominated by mean offset; cluster mask test.
+4. **Done:** slip OOM / Maus consistency on working \(\lambda\) — predicted \(\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11\) ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).  
+5. **Done:** operational F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).  
+6. **Optional:** joint background+\(\sigma_{\mathrm{res}}\) (float \(r_d\) or \(\Omega_m\)); cluster mask test; influence-functional rate beyond OOM.
 
 ---
 

@@ -1,0 +1,101 @@
+{
+  "predictions": {
+    "R_nl_Mpc": 8.609803792634995,
+    "sigma_free": 8.516255298808623e-05,
+    "lambda_working": 0.00012348011811037194,
+    "g_working": 1.449934434535401,
+    "sigma_res_working_ceiling": 0.00015,
+    "eps": 1.0,
+    "z_slip": 0.8,
+    "z_src": 1.5,
+    "chi_Mpc": 4482.097037740729,
+    "N_patches_path": 520.5806247959806,
+    "slip_local_free": 6.350986216913695e-05,
+    "slip_local_working": 0.00011186230322032788,
+    "RMS_path_free": 0.0014490560030054878,
+    "RMS_path_working": 0.002552276708769292,
+    "ell_star_band_lo_Mpc": 4.304901896317498,
+    "ell_star_band_hi_Mpc": 25.829411377904986
+  },
+  "falsifiers": [
+    {
+      "observable": "sigma_res (BAO residual amplitude)",
+      "prediction": 8.516255298808623e-05,
+      "floor": 0.00015,
+      "floor_name": "DESI \u03c3_X 95% (sister OU)",
+      "floor_over_pred": 1.7613375214454194,
+      "kills_if": "Measured \u03c3_res \u226b 1.5e-4 with no damping, at fixed ell_*=R_nl",
+      "supports_if": "\u03c3_res stays \u2264 1.5e-4 while ell_* locked to R_nl (compatibility)",
+      "notes": "Primary empirical gate. Illegal: refit ell_* after seeing DESI."
+    },
+    {
+      "observable": "sigma_res free grain only",
+      "prediction": 8.516255298808623e-05,
+      "floor": 1e-05,
+      "floor_name": "Euclid-band OOM 1e-5",
+      "floor_over_pred": 0.11742250142969464,
+      "kills_if": "Euclid residual null far below free grain with ell_*=R_nl forced",
+      "supports_if": "Residual band 1e-5\u20131.5e-4 consistent with counting at R_nl",
+      "notes": "Detection window if residual appears at predicted OOM without 1e56."
+    },
+    {
+      "observable": "|\u03b3\u22121|_local (working \u03c3)",
+      "prediction": 0.00011186230322032788,
+      "floor": 0.11,
+      "floor_name": "Maus \u03c3(\u03b3)=0.11",
+      "floor_over_pred": 983.3518248175185,
+      "kills_if": "Mean |\u03b3\u22121| required \u226b Maus if eps~1 and \u03c3~1.5e-4 without damping",
+      "supports_if": "Predicted local slip \u226a Maus (consistency; not a detection)",
+      "notes": "Today Maus cannot test sandwich amplitude; only kills huge eps\u00d7\u03c3."
+    },
+    {
+      "observable": "RMS_path (working)",
+      "prediction": 0.002552276708769292,
+      "floor": 0.05,
+      "floor_name": "Sakr constant-\u03b7 ~0.05",
+      "floor_over_pred": 19.590352342364167,
+      "kills_if": "If identified with \u03b7\u22121 and measured \u226b prediction without systematics",
+      "supports_if": "RMS_path remains below mean-\u03b7 floors (consistency)",
+      "notes": "Operator map imperfect; do not equate RMS_path with \u03b7 blindly."
+    },
+    {
+      "observable": "RMS_path (free grain)",
+      "prediction": 0.0014490560030054878,
+      "floor": 0.05,
+      "floor_name": "Sakr constant-\u03b7 ~0.05",
+      "floor_over_pred": 34.505222638942165,
+      "kills_if": "Same as above at free-grain amplitude",
+      "supports_if": "Free-grain path RMS deep below Stage-IV mean-\u03b7 forecasts",
+      "notes": "Gap ~ tens\u2013hundreds; not Stage-IV near-term detection of free grain."
+    },
+    {
+      "observable": "ell_* correlation length of residual",
+      "prediction": 8.609803792634995,
+      "floor": 25.829411377904986,
+      "floor_name": "ALLOWED band upper ~3 R_nl",
+      "floor_over_pred": 3.0,
+      "kills_if": "Free residual \u03be measured \u226a 1 Mpc or \u226b 100 Mpc at \u03c3~1e-4",
+      "supports_if": "Measured residual correlation length in [0.5,3]\u00d7R_nl",
+      "notes": "Direct test of sandwich uniqueness (hardest observationally)."
+    },
+    {
+      "observable": "Stage-IV m-bias (WRONG OPERATOR)",
+      "prediction": 0.002552276708769292,
+      "floor": 0.002,
+      "floor_name": "Stage-IV m~2e-3 calibration",
+      "floor_over_pred": 0.7836140936945666,
+      "kills_if": "Never use as kill of sandwich",
+      "supports_if": "Never use as detection of residual texture",
+      "notes": "Category error: shear calibration \u2260 stochastic path-RMS."
+    }
+  ],
+  "external": {
+    "Maus_sigma_gamma": 0.11,
+    "Sakr_eta_const": 0.05,
+    "Sakr_eta_free": 0.3,
+    "DESI_sigma_X": 0.00015,
+    "Stage4_m_bias_OOM": 0.002,
+    "Euclid_residual_target": 1e-05
+  },
+  "decision_tree": "\nDECISION TREE (sandwich package)\n================================\n1. Does residual sector \u03c7 couple locally to \u03b4_m? (A0\u2013A1)\n   NO  \u2192 sandwich does not apply; scale undetermined (package narrows)\n   YES \u2192 continue\n2. Is ell_* forced to ~R_nl? (theorem under A0\u2013A4)\n   If data force free residual correlation \u226a1 Mpc or \u226b100 Mpc at \u03c3~1e-4\n   \u2192 sandwich band dies (L2 for this principle form)\n3. Is \u03c3_res \u2264 1.5e-4 at fixed ell_*=R_nl?\n   NO (and no derived damping) \u2192 candidate dies vs DESI\n   YES \u2192 compatible; Euclid residual can still detect or deepen null\n4. Slip / path RMS\n   Predicted \u226a Maus/Sakr today \u2192 consistency only\n   Future stochastic path-RMS proxy at 1e-3\u20131e-4 \u2192 real test of anisotropic channel\n5. Illegal moves (instant L4)\n   - Fit ell_* to DESI after looking\n   - Free 1e56 amplifier\n   - Equate Stage-IV m-bias with path-RMS detection\n"
+}
