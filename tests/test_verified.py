@@ -323,6 +323,24 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestEllStarExternalScales:
+    """Andromeda/Virgo are not independent confirmation of NP-A."""
+
+    def test_npa_value(self):
+        assert 1.5 < ell_mpc_for_sigma(1e-5, 3) < 3.0
+
+    def test_andromeda_far_from_npa(self):
+        npa = ell_mpc_for_sigma(1e-5, 3)
+        assert abs(0.78 / npa - 1.0) > 0.5
+
+    def test_desi_ceiling_d3_near_r8_not_npa(self):
+        """Different σ row: ceiling cell ~12 Mpc near R8, not NP-A."""
+        ell_c = ell_mpc_for_sigma(1.5e-4, 3)
+        R8 = r8_mpc()
+        assert abs(ell_c / R8 - 1.0) < 0.15
+        assert ell_c > 5 * ell_mpc_for_sigma(1e-5, 3)
+
+
 class TestH0DesqueezingFilter:
     """σ_X amplitude cannot source ~9% H0 drift; no free θ to the knee."""
 

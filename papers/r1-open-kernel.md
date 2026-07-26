@@ -201,6 +201,8 @@ Until (1)–(2) exist, **S\(_8\) is not a claim of this repository**. The honest
 
 **Adjacent literature bridge (not a derivation):** H0-running / time-delay multi-path probes also care about the **late, post-equality path** (\(z\sim 0.3\)–\(0.7\)). See [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md). Same discipline: shared scale class ≠ fitted solution of the Hubble tension.
 
+**External galaxy/cluster lengths (checked, not confirmed):** MW–Andromeda \(\sim 0.78\,\mathrm{Mpc}\) and Virgo radii \(\sim 1\)–\(1.8\,\mathrm{Mpc}\) do **not** independently confirm NP-A \(\ell_*\approx 2.06\,\mathrm{Mpc}\). Re-labelling NP-A as “typical galaxy separation” is circular. See [`ell-star-external-scales.md`](ell-star-external-scales.md).
+
 ---
 
 ## 7. Illegal moves (BOUNDARY)
