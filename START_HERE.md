@@ -72,6 +72,20 @@ data/                  ← portable DESI npy copies
 
 ---
 
+## Research frontier (after H0 door closed)
+
+See [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md):
+
+| Line | Focus |
+|:-----|:------|
+| **A** | Derive \(g_{\mathrm{eff}}\) from averaging / SDiff (not DESI dial) |
+| **B** | Stage-IV test: residual × structure at \(R_{\mathrm{nl}}\) |
+| **C** | Information/entropy on past light cone (later) |
+
+**Not the frontier:** forcing the grain to explain 8% \(H_0\) (short by \(\sim 30\)–\(10^{3}\times\)).
+
+---
+
 ## One-line status
 
 | Layer | Status |

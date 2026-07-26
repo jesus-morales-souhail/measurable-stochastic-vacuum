@@ -1,0 +1,79 @@
+{
+  "R_nl_Mpc": 8.609803792634995,
+  "sigma_free": 8.516255298808623e-05,
+  "lambda_work": 0.00012348011811037194,
+  "g_work": 1.449934434535401,
+  "sigma_work_ceiling": 0.00015,
+  "slip_local_free": 6.350986216913695e-05,
+  "slip_local_work": 0.00011186230322032788,
+  "RMS_path_free": 0.0014490560030054878,
+  "RMS_path_work": 0.002552276708769292,
+  "N_patches_z1p5": 520.5806247959806,
+  "k_nl_approx_h_Mpc": 0.17232442933156292,
+  "ell_sep_Mpc": 15.902580850326878,
+  "H0_8pct_over_sigma": 939.3800114375571,
+  "H0_8pct_over_RMS": 31.344563747782665,
+  "tests": [
+    {
+      "id": "T1_BAO_residual",
+      "observable": "DESI/Euclid BAO residual \u03c3_X (OU/QNM)",
+      "prediction": 8.516255298808623e-05,
+      "ceiling": 0.00015,
+      "floor_now": 0.00015,
+      "unique_fingerprint": "Amplitude only; lock ell_*=R_nl (no float)",
+      "stage4_action": "Tighten \u03c3_X with DR3/Euclid BAO; pre-register ell_*=R_nl",
+      "kills_if": "\u03c3_X >> 1.5e-4 at fixed R_nl with no damping",
+      "supports_if": "\u03c3_X stays under ceiling; optional detection near free grain"
+    },
+    {
+      "id": "T2_scale_band",
+      "observable": "Residual correlation length / preferred scale",
+      "prediction_Mpc": 8.609803792634995,
+      "band_Mpc": [
+        4.304901896317498,
+        25.829411377904986
+      ],
+      "k_nl_h_per_Mpc": 0.17232442933156292,
+      "ell_sep_Mpc": 15.902580850326878,
+      "unique_fingerprint": "Power or residual support peaks near R_nl\u2013ell_sep, not L_H",
+      "stage4_action": "Search residual\u00d7matter cross or mask-weighted slip at k~0.1 h/Mpc",
+      "kills_if": "Free residual \u03be << 1 Mpc or >> 100 Mpc at \u03c3~1e-4",
+      "supports_if": "Measured scale in O(1)\u00d7R_nl band"
+    },
+    {
+      "id": "T3_slip_mean",
+      "observable": "Mean gravitational slip |\u03b3\u22121| or |\u03b7\u22121|",
+      "prediction_local": 0.00011186230322032788,
+      "floor_Maus": 0.11,
+      "floor_Sakr": 0.05,
+      "gap_Maus": 983.3518248175185,
+      "unique_fingerprint": "Weak alone (MG degenerate); use as consistency",
+      "stage4_action": "Do NOT claim detection until \u03c3(\u03b7) << 1e-3; combine with T2",
+      "kills_if": "Data force |\u03b3\u22121| >> 0.01 for eps~1 at DESI-safe \u03c3 (unexpected)",
+      "supports_if": "Remains consistent with << Maus/Sakr"
+    },
+    {
+      "id": "T4_path_RMS",
+      "observable": "Path-accumulated slip RMS (stochastic proxy)",
+      "prediction": 0.002552276708769292,
+      "floor_Sakr_mean_eta": 0.05,
+      "gap": 19.590352342364167,
+      "unique_fingerprint": "Stochastic path accumulation s\u221aN; not shear m-bias",
+      "stage4_action": "Define survey proxy for path variance of slip; never use m~1e-3 as this",
+      "kills_if": "Proxy measured >> few % without systematics",
+      "supports_if": "Proxy upper limits approach 1e-3 from above"
+    },
+    {
+      "id": "T5_NOT_H0",
+      "observable": "H0 tension ~8%",
+      "prediction_from_grain": "INSUFFICIENT",
+      "gap_factor_vs_sigma": 939.3800114375571,
+      "gap_factor_vs_path_RMS": 31.344563747782665,
+      "unique_fingerprint": "None \u2014 wrong problem for this sector",
+      "stage4_action": "Outsource to early DE / ladder / large-scale mean; do not force g",
+      "kills_if": "N/A (already excluded as explanation)",
+      "supports_if": "N/A"
+    }
+  ],
+  "design_principle": "Unique fingerprint = residual correlated with nonlinear structure on ~R_nl (8\u201316 Mpc), amplitude 1e-5\u20131e-4 \u2014 NOT 8% H0."
+}

@@ -1,0 +1,28 @@
+STAGE-IV / DESI TEST DESIGN — residual grain (Line B)
+R_nl=8.6098 Mpc  sigma_free=8.516255e-05  g_work=1.4499
+slip_loc work=1.1186e-04  RMS_path work=2.5523e-03  N_pat=520.6
+k_nl ~ 0.1723 h/Mpc  ell_sep=15.90 Mpc
+H0 8% / sigma_free = 939×  |  H0 8% / RMS_path = 31×
+
+DESIGN PRINCIPLE:
+  Unique signature = residual × structure at R_nl, σ ~ 1e-5–1e-4
+  NOT an 8% H0 jump (short by ~30–1000× depending on operator)
+
+TESTS:
+  [T1_BAO_residual] DESI/Euclid BAO residual σ_X (OU/QNM)
+    action: Tighten σ_X with DR3/Euclid BAO; pre-register ell_*=R_nl
+    kills:  σ_X >> 1.5e-4 at fixed R_nl with no damping
+  [T2_scale_band] Residual correlation length / preferred scale
+    action: Search residual×matter cross or mask-weighted slip at k~0.1 h/Mpc
+    kills:  Free residual ξ << 1 Mpc or >> 100 Mpc at σ~1e-4
+  [T3_slip_mean] Mean gravitational slip |γ−1| or |η−1|
+    action: Do NOT claim detection until σ(η) << 1e-3; combine with T2
+    kills:  Data force |γ−1| >> 0.01 for eps~1 at DESI-safe σ (unexpected)
+  [T4_path_RMS] Path-accumulated slip RMS (stochastic proxy)
+    action: Define survey proxy for path variance of slip; never use m~1e-3 as this
+    kills:  Proxy measured >> few % without systematics
+  [T5_NOT_H0] H0 tension ~8%
+    action: Outsource to early DE / ladder / large-scale mean; do not force g
+    kills:  N/A (already excluded as explanation)
+
+See papers/r1_kernel/FRONTIER_INQUIRY.md
