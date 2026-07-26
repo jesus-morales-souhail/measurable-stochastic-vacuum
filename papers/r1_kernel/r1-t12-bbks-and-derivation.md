@@ -15,8 +15,12 @@ Code: [`scripts/r1/r1_t12_bbks_peaks.py`](../../scripts/r1/r1_t12_bbks_peaks.py)
 For a Gaussian field smoothed with window $W(kR)$:
 
 $$
-\sigma_j^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,k^{2j}\,W^2(kR),
-\gamma_{\mathrm{BBKS}}=\frac{\sigma_1^2}{\sigma_0\sigma_2},\qquad R_{\ast}=\sqrt{3}\,\frac{\sigma_1}{\sigma_2}.
+\sigma_j^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,k^{2j}\,W^2(kR)
+$$
+
+$$
+\gamma_{\mathrm{BBKS}}=\frac{\sigma_1^2}{\sigma_0\sigma_2},\qquad
+R_{\ast}=\sqrt{3}\,\frac{\sigma_1}{\sigma_2}.
 $$
 
 $R_{\ast}$ is the curvature radius of peaks (scale of the peak tip), not the filter radius $R$.
