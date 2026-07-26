@@ -323,6 +323,44 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestR1T1Mechanisms:
+    """T1.1 counting on R_nl; T1.2 Gaussian mask packing."""
+
+    def test_t11_d3_under_desi_ceiling(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from r1_sigma_R_full import (  # noqa: E402
+            H,
+            make_Pk_unnorm,
+            normalize_A,
+            find_R_nl,
+        )
+        from lib_verified import hubble_radius_mpc, sigma_from_count  # noqa: E402
+
+        Pk = make_Pk_unnorm()
+        A = normalize_A(Pk, 0.81)
+        R_nl = find_R_nl(Pk, A, 1.0) / H
+        s = sigma_from_count(R_nl, hubble_radius_mpc(), 3)
+        assert s < 1.5e-4
+        assert s > 1e-5
+
+    def test_t12_gaussian_fraction_delta_c_1(self):
+        from r1_t1_mechanisms_compute import gaussian_tail_fraction  # noqa: E402
+
+        f = gaussian_tail_fraction(1.0, 1.0)
+        assert 0.15 < f < 0.17
+
+    def test_t12_sep_larger_than_R(self):
+        from r1_t1_mechanisms_compute import (  # noqa: E402
+            gaussian_tail_fraction,
+            packing_separation,
+        )
+
+        f = gaussian_tail_fraction(1.0, 1.0)
+        sep = packing_separation(8.61, f)
+        assert sep > 8.61
+        assert 12.0 < sep < 25.0
+
+
 class TestR1PrincipleRnl:
     """Blind R_nl from sigma8; full integral preferred over power-law."""
 

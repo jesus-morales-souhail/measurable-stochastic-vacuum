@@ -115,6 +115,15 @@ Below: **tiers by weight**. “Serious” ≠ “correct.”
 
 Each step: **blind length from matter**, then a posteriori DESI / \(r_0\) / \(R_8\).
 
+### Status of computations (July 2026)
+
+| Step | Status | Where |
+|:-----|:-------|:------|
+| T1.1 numbers | **Done** — \(L_{\mathrm{av}}=R_{\mathrm{nl}}\Rightarrow\sigma_{d=3}\approx 8.5\times 10^{-5}\) under ceiling | [`r1-t1-mechanisms-compute.md`](r1-t1-mechanisms-compute.md) |
+| T1.2 numbers | **Done** — \(f(\delta>1)\approx 0.16\), \(\ell_{\mathrm{sep}}\approx 16\,\mathrm{Mpc}\) packing OOM | same |
+| T1.3 | Optional language only | — |
+| Action / master-equation link | **Still open** | cannot be replaced by geometry |
+
 ---
 
 ## One-sentence map

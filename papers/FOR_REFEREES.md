@@ -46,6 +46,8 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5i | [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md) | **$r_0(L_*)$ / $n^{-1/3}$ vs NP-A: no independent hit** |
 | 5j | [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md) | **Steering: open lead is 8–12 Mpc decade ($r_0$, $R_8$, DESI-ceil cell)** |
 | 5k | [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md) | **Hypothesis $\ell_*=R_{\mathrm{nl}}$; full $\sigma(R)$ $\Rightarrow 8.61$ Mpc (not action derivation)** |
+| 5l | [`r1-t1-mechanisms-compute.md`](r1-t1-mechanisms-compute.md) | **T1.1/T1.2 numbers: domain counting + nonlinear mask** |
+| 5m | [`r1-mechanism-candidates.md`](r1-mechanism-candidates.md) | **Ranked mechanism candidates (Tier 1–3)** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
