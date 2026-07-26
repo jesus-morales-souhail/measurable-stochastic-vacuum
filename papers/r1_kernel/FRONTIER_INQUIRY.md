@@ -7,9 +7,9 @@ Not a detection paper. Depends on the uniqueness argument, the DESI residual cei
 
 ---
 
-## 0. Framing (so I stop fighting the wrong problem)
+## Why residual is not the 8% $H_0$ problem
 
-A residual at $\sigma\lesssim 10^{-4}$ cannot make an 8% jump in distance or $H_0$. Rough ratios:
+A residual at $\sigma\lesssim 10^{-4}$ cannot make an 8% jump in distance or $H_0$:
 
 | Quantity | Value | $0.08$ / that |
 |:---------|:------|:----------------|
@@ -17,18 +17,18 @@ A residual at $\sigma\lesssim 10^{-4}$ cannot make an 8% jump in distance or $H_
 | free grain at $R_{\mathrm{nl}}$ | $8.5\times 10^{-5}$ | $\sim 1000$ |
 | path RMS (working residual) | $\sim 2.5\times 10^{-3}$ | $\sim 30$–$50$ |
 
-So I treat the residual sector as a bounded problem in the $10^{-5}$–$10^{-4}$ window with a geometric scale, not as a failed $H_0$ model. If the 8% is physical, it lives in early expansion, ladder systematics, or large-scale mean effects that do not inject a DESI residual above the ceiling.
+I treat the residual sector as a $10^{-5}$–$10^{-4}$ problem with a geometric scale. If the 8% is physical, it lives in early expansion, ladder systematics, or large-scale mean effects that do not inject a DESI residual above the ceiling.
 
 ---
 
-## 1. If not the grain, what can make 8% without breaking DESI residual?
+## What can make ~8% without breaking the DESI residual bound
 
-Any mechanism that makes $\Delta H/H\sim 8\%$ must not look like a stationary BAO residual $\gtrsim 10^{-4}$ on the OU/QNM kernel I used.
+Any mechanism with $\Delta H/H\sim 8\%$ must not look like a stationary BAO residual $\gtrsim 10^{-4}$ on the OU/QNM kernel I used.
 
-| Class | Can give ~8%? | OK with $\sigma_X\lesssim 10^{-4}$? |
-|:------|:--------------|:-------------------------------------|
+| Class | ~8%? | Compatible with $\sigma_X\lesssim 10^{-4}$? |
+|:------|:-----|:--------------------------------------------|
 | early universe / $r_d$ / $N_{\mathrm{eff}}$ | yes | yes — different epoch |
-| local ladder systematics | partly, contested | yes — not a DE residual field |
+| local ladder systematics | partly | yes — not a DE residual field |
 | void / bulk flow $\gtrsim 100\,\mathrm{Mpc}$ | maybe | only if it is not OU residual on BAO bins |
 | mean $w(z)$ / MG | maybe | only if residual about the mean stays small |
 | stochastic residual at $10^{-4}$ | no | already at ceiling |
@@ -38,54 +38,42 @@ I do not compete with early DE for $H_0$. I work on residual amplitude and scale
 
 ---
 
-## 2. Where the model does live
+## Open work on the residual sector
 
-### Coupling $g$
-
-I want $g$ from physics, not only from DESI. Best routes for me:
+**Coupling $g$.** I want $g$ from physics, not only from DESI.
 
 | Path | Status |
 |:-----|:-------|
-| averaging residual (Buchert-like) on $R_{\mathrm{nl}}$ | OOM + Gaussian proxy: $g_{\mathrm{eff}}\sim\mathcal{O}(1)$ — see `r1-lineA-g-from-averaging.md` |
+| averaging residual (Buchert-like) on $R_{\mathrm{nl}}$ | OOM + Gaussian proxy: $g_{\mathrm{eff}}\sim\mathcal{O}(1)$ — `r1-lineA-g-from-averaging.md` |
 | SDiff edge residual | same order if $\varepsilon\sim\mathcal{O}(1)$ |
 | influence functional with matter bath | still to formalise beyond OOM $\Gamma$ |
 
-### Survey fingerprint
+**Survey fingerprint.** Residual correlated with nonlinear structure near $R_{\mathrm{nl}}$ (roughly 4–26 Mpc). Protocol: `r1-T2-preregistration.md`. Synthetic mock: `scripts/r1/r1_T2_mock_pipeline.py`.
 
-Not 8% in $H_0$. Residual correlated with nonlinear structure near $R_{\mathrm{nl}}$ (roughly 4–26 Mpc band). Protocol: `r1-T2-preregistration.md`. Synthetic mock recovers the injected scale: `scripts/r1/r1_T2_mock_pipeline.py`.
-
-### Information / entropy on the light cone
-
-Interesting, but second. Path RMS $s\sqrt{N}$ is solid kinematics. Shannon / von Neumann language needs a defined ensemble; I will not invent complex work to force $H_0$.
+**Information on the light cone.** Path RMS $s\sqrt{N}$ is solid kinematics. Shannon / von Neumann language needs a defined ensemble; later.
 
 ---
 
-## 3. Order of work
+## Priority
 
 ```
-A  g from averaging / edge     (foundation)
-B  residual × structure tests  (falsifiability)   — parallel with A
-C  information metric          (later)
+A  g from averaging / edge
+B  residual × structure tests   (parallel with A)
+C  information metric           (later)
 ```
 
-**Done on the matter side (context, not residual detection):**  
-Cosmicflows-4 block-net $\eta(L)$ and collapse-peak velocity relief  
+**Matter kinematics already done (not residual detection):**  
+CF4 block-net $\eta(L)$ and collapse-peak velocity relief  
 ([`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md), [`r1-collapse-relief.md`](r1-collapse-relief.md)).  
-That maps where gravity / peculiar motions compete with expansion near $R_{\mathrm{nl}}$.  
-It does **not** replace T2 (residual × structure still needs a residual map).
+Where peculiar motion competes with expansion near $R_{\mathrm{nl}}$. Does not replace T2.
 
 ---
 
-## 4. Rules I keep
+## Scope of this programme
 
-1. Residual owns $\sigma\sim 10^{-5}$–$10^{-4}$ and $\ell_{\ast}\sim R_{\mathrm{nl}}$.  
-2. $H_0\sim 8\%$ is outsourced.  
-3. No free $10^{56}$, no post-hoc $\ell_{\ast}$.  
-4. Every formula: derived / OOM / postulate — say which.  
-5. Matter kinematics and DE residual stay in separate sentences.
+- Residual window $\sigma\sim 10^{-5}$–$10^{-4}$, $\ell_{\ast}\sim R_{\mathrm{nl}}$ under A0–A4.  
+- $H_0\sim 8\%$ is outside this residual sector.  
+- No free $10^{56}$; no post-hoc $\ell_{\ast}$.  
+- Each formula is either derived, order-of-magnitude, or a postulate — labelled as such.
 
----
-
-## 5. One line
-
-I bounded a mesoscopic residual and fixed its scale under local coupling to nonlinear matter. Local CF4 kinematics show the gravity–expansion grain in real data. The open work is better $g$ from averaging/SDiff and residual–structure tests for Stage-IV — not the 8% Hubble gap.
+Open work: better $g$ from averaging/SDiff, and residual–structure tests when residual maps exist.

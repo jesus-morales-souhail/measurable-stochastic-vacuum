@@ -114,40 +114,15 @@ python scripts/r1/r1_real_velocity_block_net.py
 
 ---
 
-## What these numbers mean (only data)
+## Interpretation
 
-1. **There is a real residual-velocity field** relative to \(v=H_0 d\) at the CF \(H_0\) convention: block means scatter by \(\sim 900\)–\(1100\) km/s depending on \(L\).
+Block-mean residual velocities relative to \(v=H_0 d\) (CF \(H_0\) convention) scatter by \(\sim 900\)–\(1100\) km/s depending on \(L\). \(\eta(L)\) falls with \(L\): at \(L\sim 5\)–\(10\,\mathrm{Mpc}\), block-mean residual scatter exceeds \(H_0 L\); at \(L\sim 30\)–\(40\,\mathrm{Mpc}\), expansion across the block wins — for this estimator and this \(H_0\). The pair scale \(r_e\) grows with block size in this simple estimator; treat it as descriptive, not a fixed constant.
 
-2. **\(\eta(L)\) falls with \(L\)**: at \(L\sim 5\)–\(10\,\mathrm{Mpc}\), block-mean residual scatter exceeds \(H_0 L\); at \(L\sim 30\)–\(40\,\mathrm{Mpc}\), \(H_0 L\) is larger. That is the data version of “gravity / peculiar motions matter more on smaller blocks; expansion across the block wins on larger blocks” — **for this estimator and this \(H_0\) convention**.
+Median \(e_{\mathrm{DM}}\approx 0.43\) mag. Roughly \(\delta d/d \sim (\ln 10/5)\,e_{\mathrm{DM}}\sim 0.2\), so distance error alone contributes of order \(H_0 d \times 0.2\) to \(v_{\mathrm{pec}}\). Global rms \(1608\) km/s mixes signal and noise; block means help but do not remove Malmquist / selection systematics (Tully+2023).
 
-3. **\(r_e\) grows with block size** in this simple pair estimator (coarser blocks → smoother field → longer apparent correlation). Treat \(r_e\) as a **descriptive** scale of the blocked field, not as a unique physical constant.
+This is matter kinematics from published distances and redshifts. It is not a DE residual measurement, not \(\Omega_m/\Omega_\Lambda\), not an \(H_0\) solution, and \(L\) is only a scan grid (not a fit of \(\ell_*\)).
 
-4. **Distance errors matter.** Median \(e_{\mathrm{DM}}\approx 0.43\) mag. A rough distance fractional error is \(\delta d/d \sim (\ln 10/5)\,e_{\mathrm{DM}}\sim 0.2\). That alone contributes an error of order \(H_0 d \times 0.2\) to \(v_{\mathrm{pec}}\) (hundreds of km/s at tens of Mpc). So the **global** rms \(1608\) km/s is **not** pure bulk flow; it includes measurement noise. Block means reduce noise somewhat but do not remove Malmquist / selection systematics. CF literature discusses those in detail (Tully+2023).
-
----
-
-## What this does **not** claim
-
-| Claim | Status here |
-|:------|:------------|
-| Detection of dark-energy residual \(\sigma_X\) | **No** |
-| Measurement of \(\Omega_m\) / \(\Omega_\Lambda\) | **No** |
-| Solution of the Hubble tension | **No** |
-| “Work origin” of vacuum energy from \(v\times d\) | **No** |
-| Fit of \(\ell_*\) or \(R_{\mathrm{nl}}\) | **No** — \(L\) is only a scan grid |
-
----
-
-## How this connects to the “net” idea (method only)
-
-The procedure is exactly:
-
-1. Cover the survey volume (CF4 local universe, \(d<200\,\mathrm{Mpc}\)).  
-2. Divide into existing cubic blocks of side \(L\).  
-3. In each block, mean residual velocity vs Hubble flow (gravity-driven deviation / “reversion” relative to pure expansion).  
-4. Variances + pair correlation / covariance structure → characteristic velocity scatter and a descriptive correlation scale.
-
-That is **matter kinematics from published distances and redshifts**. Full stop.
+Method: cover CF4 volume \(d<200\,\mathrm{Mpc}\), cubic blocks of side \(L\), mean residual velocity per block, then scatter and pair correlation of block means.
 
 ---
 

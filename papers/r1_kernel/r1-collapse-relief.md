@@ -142,66 +142,19 @@ Examples from this run (not renamed to popular cluster names without an external
 
 ---
 
-## How this interacts with gravity (plain language)
+## Gravity vs expansion in these numbers
 
-1. **Collapse peaks** in CF4 are places with many neighbors within $\sim R_{\mathrm{nl}}$ and, when multi-member, real **internal** velocity relief (orbits / infall).  
-2. **Expansion** across one $R_{\mathrm{nl}}$ cell is $v_H\sim 650\,\mathrm{km\,s^{-1}}$. Typical peak internal rms is $\sim 100\,\mathrm{km\,s^{-1}}$ (sub-dominant); rich multi-member systems reach $\sim 0.4\,v_H$ in the median and $\mathcal{O}(1)$ in the tail.  
-3. **Catalog $V_{\mathrm{pec}}$ scatter is larger in voids** — largely because singles + distance noise win when there is no group average. That is **not** “gravity is stronger in voids.”  
-4. The **block net** said the same story at volume level: $\eta(L)>1$ for $L\sim 5$–$15\,\mathrm{Mpc}$ and $\eta(L)<1$ for $L\gtrsim 30\,\mathrm{Mpc}$. Collapse peaks sit in the scale range where peculiar / gravity kinematics compete with expansion.
+Collapse peaks in CF4 are multi-member groups with high $n_{10}$. Expansion across one $R_{\mathrm{nl}}$ cell is $v_H\sim 650\,\mathrm{km\,s^{-1}}$. Typical peak internal rms is $\sim 100\,\mathrm{km\,s^{-1}}$; rich multi-member systems reach $\sim 0.4\,v_H$ in the median and order unity in the tail. Catalog $V_{\mathrm{pec}}$ scatter is larger in voids mostly because singles carry more distance noise, not because gravity is stronger there. The block net gives the same volume-level pattern: $\eta(L)>1$ for $L\sim 5$–$15\,\mathrm{Mpc}$ and $\eta(L)<1$ for $L\gtrsim 30\,\mathrm{Mpc}$.
 
 ---
 
-## Remaining variables (repo + catalog + literature)
+## Limits of this run
 
-I keep an explicit list so nothing is smuggled in as a claim.
+CF4: line-of-sight only; $e_{\mathrm{DM}}$ dominates individual $V_{\mathrm{pec}}$; membership is only CF4 galaxies; sky and TF/FP/SN mix are uneven.
 
-**From CF4 itself**
+Not measured here: $\Omega_m$, $f\sigma_8$, DE residual $\sigma_X$, coupling $g$, free $H_0$. Residual × structure (T2) needs a residual map, not only matter kinematics. Courtois grids and Whitford bulk-flow vectors are cited, not recomputed. $R_{\mathrm{nei}}=10\,\mathrm{Mpc}$ is fixed near the $R_{\mathrm{nl}}$ decade; it is not a fit of $\ell_{\ast}$ to CF4 peaks.
 
-- Line-of-sight velocities only (no full 3D $v$ from these tables alone).  
-- $e_{\mathrm{DM}}$ dominates individual $V_{\mathrm{pec}}$; groups help, do not erase systematics.  
-- Membership counts only CF4 galaxies, not complete group rosters.  
-- Sky / method selection (TF, FP, SN mix) is not uniform.
-
-**From this repo (theory side — not measured here)**
-
-- $R_{\mathrm{nl}}$, $\sigma_{\mathrm{free}}$, $\lambda$, $g$ — residual-sector quantities; CF4 does not measure them.  
-- T2 residual × structure ([`r1-T2-preregistration.md`](r1-T2-preregistration.md)) needs a **residual map**, not only matter kinematics.  
-- Block-net $\eta(L)$ is the complementary volume average ([`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md)).
-
-**From literature, not ingested here**
-
-- Courtois et al. continuous density/velocity **grids**.  
-- Whitford et al. bulk-flow **vectors** ($\sim 400\,\mathrm{km\,s^{-1}}$ class).  
-- Independent cluster mass / caustic dispersions.
-
-**Explicitly not done**
-
-- No $\Omega_m$ / $f\sigma_8$ fit.  
-- No DE residual detection.  
-- No free $H_0$ solution.  
-- No work-origin claim for vacuum energy from collapse.
-
----
-
-## What this does **not** claim
-
-| Claim | Status |
-|:------|:-------|
-| Detection of DE residual $\sigma_X$ | **No** |
-| Residual × collapse cross-correlation (T2) | **No** — needs residual map |
-| $\Omega_m$ / $\Omega_\Lambda$ | **No** |
-| Hubble tension solution | **No** |
-| Vacuum work origin from $v\times d$ | **No** |
-| Fit of $\ell_*$ to CF4 peaks | **No** — $R_{\mathrm{nei}}$ is fixed near $R_{\mathrm{nl}}$ decade |
-
----
-
-## Next legal steps (if I continue this line)
-
-1. Cross-match top `1PGC` IDs to named structures (Virgo, Fornax, Centaurus) with HyperLEDA / NED — **labels only**, not new physics.  
-2. Optional: ingest Courtois CF4 grid products for continuous $\delta$ and compare to discrete $n_{10}$.  
-3. T2 only when a residual map exists at overlapping volume (unlikely for local CF4 alone).  
-4. Keep DESI residual ceiling and sandwich numbers in their own scripts; do not retune them to CF4 peaks.
+If I continue: cross-match top `1PGC` to named structures (labels only); optional Courtois grids; do not retune DESI residual or sandwich numbers to CF4.
 
 ---
 

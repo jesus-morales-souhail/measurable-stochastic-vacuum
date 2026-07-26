@@ -1,26 +1,23 @@
-# Residual scale work
+# Residual scale
 
-This folder is where most of my recent work sits: what fixes $\ell_{\ast}$, how large $\sigma$ is, how $g$ is bounded, how one would test residual–structure correlation, and (separately) local **matter** kinematics from Cosmicflows-4.
+Notes on $\ell_{\ast}$, $\sigma$, $g$, residual–structure tests, and (separately) CF4 matter kinematics.
 
-Start with [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md).  
-If I wrote a short paper: [`../what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.md).
+Start: [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md).  
+Paper map: [`../what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.md).
 
-## Reading order I use
+| File | Content |
+|:-----|:--------|
+| [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md) | main argument |
+| [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) | numbers under A0–A4 |
+| [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md) | falsifiers |
+| [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md) | $R_{\mathrm{nl}}$ |
+| [`r1-lineA-g-from-averaging.md`](r1-lineA-g-from-averaging.md) | $g$ OOM |
+| [`r1-T2-preregistration.md`](r1-T2-preregistration.md) | residual × structure |
+| [`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md) | CF4 block net (matter) |
+| [`r1-collapse-relief.md`](r1-collapse-relief.md) | CF4 peaks (matter) |
+| [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md) | open work |
+| [`HONEST_ASSETS.md`](HONEST_ASSETS.md) | public data vs analysis |
 
-| Step | File | Role |
-|:-----|:-----|:-----|
-| 1 | [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md) | main argument |
-| 2 | [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) | numbers under A0–A4 |
-| 3 | [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md) | how it dies |
-| 4 | [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md) | $R_{\mathrm{nl}}$ geometry |
-| 5 | [`r1-lineA-g-from-averaging.md`](r1-lineA-g-from-averaging.md) | $g$ OOM |
-| 6 | [`r1-T2-preregistration.md`](r1-T2-preregistration.md) | residual × structure |
-| 7 | [`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md) | CF4 block net (matter) |
-| 8 | [`r1-collapse-relief.md`](r1-collapse-relief.md) | CF4 peaks + relief (matter) |
-| — | [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md) | open work |
-| — | [`HONEST_ASSETS.md`](HONEST_ASSETS.md) | public vs mine |
-
-CF4 notes measure **matter** peculiar velocities and collapse proxies.  
-They do **not** measure dark-energy residual $\sigma_X$ or the coupling $g$.
+CF4 measures matter $v_{\mathrm{pec}}$, not $\sigma_X$ or $g$.
 
 — Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)

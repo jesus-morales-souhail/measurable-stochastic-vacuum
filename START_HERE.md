@@ -40,11 +40,7 @@ scripts/...
 tests/  results/  data/
 ```
 
-Nothing important was deleted when I reorganised; files only moved.
-
----
-
-## Four short reading paths
+## Reading paths
 
 **A — what can I actually claim? (~30 min)**  
 1. [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md)  
@@ -72,7 +68,7 @@ Public data vs my analysis: [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kern
 
 ---
 
-## Status in plain language
+## Status
 
 | Topic | Where it stands |
 |:------|:----------------|
