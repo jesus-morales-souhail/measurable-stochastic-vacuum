@@ -76,9 +76,16 @@ NP-A (\(\sigma=10^{-5}\)) remains the Euclid-aspirational arithmetic row; it is 
 
 ---
 
-## 6. One-sentence steering
+## 6. First blind candidate (attempt)
 
-> The programme’s best open lead is no longer “confirm 2.06 Mpc”; it is “derive, blind, a reason for an 8–12 Mpc cell,” where \(r_0\), \(R_8\), and the DESI-ceiling \(d=3\) counting row already sit as independent neighbours.
+**P\(_\mathrm{nl}\):** \(\ell_*=R_{\mathrm{nl}}\) with \(\sigma(R_{\mathrm{nl}})=1\) from matter \(\sigma_8\) only.  
+Predicts \(\sim 8\)–\(10\,\mathrm{Mpc}\) a priori; a posteriori overlaps the decade.  
+Full write-up: [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md).  
+Still **not** a completed microphysical derivation.
+
+## 7. One-sentence steering
+
+> The programme’s best open lead is “derive, blind, a reason for an 8–12 Mpc cell,” with P\(_\mathrm{nl}\) as the first principle-shaped attempt aimed at that decade — not a finished answer.
 
 ---
 
