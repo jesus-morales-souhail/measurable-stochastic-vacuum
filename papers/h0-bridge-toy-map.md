@@ -119,11 +119,17 @@ The shape **does** change through the window where Dainotti / Krishnan-style run
 
 ---
 
-## 6. Reproduce
+## 6. Related filter (desqueezing packaging)
+
+Invented \(H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]\) with \(\theta\) tuned to \(z\sim 0.5\)–\(0.7\) is **rejected** in [`h0-desqueezing-filter.md`](h0-desqueezing-filter.md).  
+Complex \(\omega\) does not raise the \(\sigma_X\) energy budget. Same shortfall vs \(8\%\).
+
+## 7. Reproduce
 
 ```bash
 cd measurable-stochastic-vacuum
 python scripts/h0_bridge_toy.py
+python scripts/h0_desqueezing_filter.py
 python scripts/h0_running_geometry.py
 pytest -q
 ```

@@ -42,6 +42,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5e | [`inflation-spectator-residual-atlas.md`](inflation-spectator-residual-atlas.md) | **Modern $r\to\sigma_\rho$ atlas** — residual-band windows without $10^{56}$ |
 | 5f | [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md) | **H0 running + time-delay multi-path** vs open kernel (bridge only) |
 | 5g | [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md) | **Toy $\delta D/D$: stochastic short of H0 tension by $\times 16$–$38$** |
+| 5h | [`h0-desqueezing-filter.md`](h0-desqueezing-filter.md) | **Reject invented $H_0(z)$ + hand-tuned $\theta$; $\sigma_X\ll 9\%$** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
@@ -139,6 +140,7 @@ $$
 | C13 | Gordon & Wands: seed $H_{\mathrm{inf}}/2\pi$; growth factor $\sim 45$ (not $10^{56}$); distinct from Sorkin soft gap | `inflation-spectator-seed-gordon-wands.md` + `gordon_wands_factor45.py` |
 | C14 | At $r\sim 0.036$, $\delta Q/M_p\sim 3\times 10^{-6}$; with $A\sim 45$, $\varepsilon_Q\sim 0.05$ get $\sigma_\rho\sim\mathrm{few}\times 10^{-5}$ (OOM) | `inflation-spectator-residual-atlas.md` + script + tests |
 | C15 | DESI-safe path-RMS toy: $H_0(0.15)/H_0(1.5)\approx 1.006$, not $1.083$; $\beta$ short $\times 16$–$38$ | `h0-bridge-toy-map.md` + script + tests |
+| C16 | Residual amplitude $\sigma_X<1.5\times 10^{-4}$ cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ illegal | `h0-desqueezing-filter.md` + script + tests |
 
 ### 4.2 Non-claims
 
@@ -159,6 +161,8 @@ $$
 | N13 | Atlas windows $(r,A,\varepsilon_Q)$ are **not** DESI fits; $\sigma_\rho\not\equiv\sigma_X$ without map |
 | N14 | Brachistochrone / H0-running note does **not** solve Hubble tension or derive $\ell_*$ |
 | N15 | Coherent $\delta D/D\propto N$ is **not** a legal H0 fix under programme amplifier discipline |
+| N16 | $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ with $\theta$ fit to $z\sim 0.5$–$0.7$ is **not** a result |
+| N17 | CPL 2.5σ/4.2σ must **not** be relabelled as H0-running significance |
 
 ---
 

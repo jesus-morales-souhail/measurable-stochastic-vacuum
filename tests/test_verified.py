@@ -323,6 +323,31 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestH0DesqueezingFilter:
+    """σ_X amplitude cannot source ~9% H0 drift; no free θ to the knee."""
+
+    def test_sigma_x_short_of_h0_tension(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from h0_desqueezing_filter import (  # noqa: E402
+            DELTA_H0,
+            SIGMA_X_DESI,
+            shortfall,
+        )
+
+        assert DELTA_H0 > 0.07
+        assert shortfall(SIGMA_X_DESI) > 400
+
+    def test_envelope_at_zero_theta_is_sigma(self):
+        from h0_desqueezing_filter import residual_envelope, SIGMA_X_DESI  # noqa: E402
+
+        assert residual_envelope(SIGMA_X_DESI, 0.0, 1.0) == pytest.approx(SIGMA_X_DESI)
+
+    def test_damping_only_reduces_envelope(self):
+        from h0_desqueezing_filter import residual_envelope, SIGMA_X_DESI  # noqa: E402
+
+        assert residual_envelope(SIGMA_X_DESI, 1.0, 1.0) < SIGMA_X_DESI
+
+
 class TestH0BridgeToy:
     """A priori path-bias toy: stochastic short of H0 tension."""
 
