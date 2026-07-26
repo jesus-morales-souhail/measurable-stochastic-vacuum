@@ -345,6 +345,3 @@ print("sigma_X needed", 5*0.03*Om/(2*Ol))
 PY
 ```
 
----
-
-*End of observable-wall note.*

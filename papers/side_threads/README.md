@@ -1,3 +1,3 @@
-# Side threads
+# Secondary notes
 
-Useful secondary notes (inflation spectator, lensing floors, pedagogy). Not the primary R1 lead.
+Inflationary spectators, lensing comparisons, and pedagogical material. These are not the primary residual-scale argument.

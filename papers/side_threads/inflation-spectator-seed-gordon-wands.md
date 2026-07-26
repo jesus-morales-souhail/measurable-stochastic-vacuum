@@ -181,6 +181,3 @@ pytest -q  # includes factor-45 arithmetic test
 
 **Paper PDF:** https://arxiv.org/pdf/astro-ph/0504132
 
----
-
-*End of Gordon & Wands revalidation note.*

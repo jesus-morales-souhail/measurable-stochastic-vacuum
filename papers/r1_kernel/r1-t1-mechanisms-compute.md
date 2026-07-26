@@ -148,6 +148,3 @@ Geometry is viable. The sketch **derives coarse-graining under stated postulates
 | N-M2 | Action-level decoherence derived |
 | N-M3 | \(H_0\) tension solved |
 
----
-
-*End of T1.1/T1.2 compute note.*

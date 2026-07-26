@@ -1,6 +1,5 @@
-# R1 kernel — active research lead
+# Residual scale and coupling
 
-**Question:** what fixes the residual counting cell \(\ell_*\)?  
-**Answer under axioms A0–A4:** \(\ell_*\sim R_{\mathrm{nl}}\) (sandwich uniqueness).
+Notes on the free residual counting scale \(\ell_*\), its relation to the matter nonlinear scale \(R_{\mathrm{nl}}\), bounds on the coupling \(g\), and survey-oriented tests.
 
-**Start here:** [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md)
+**Main draft:** [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md)

@@ -310,6 +310,3 @@ print("RMS", rms_incoherent(slip_deviation(1,residual_soft_map(1e-5,1.5),0.8),
 PY
 ```
 
----
-
-*End of narrow-path note.*

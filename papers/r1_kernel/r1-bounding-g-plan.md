@@ -194,20 +194,20 @@ With \(\kappa=1\), \(\sigma_{\mathrm{free}}=8.5\times 10^{-5}\), \(\lvert\lambda
 
 ## 7. Engineering status
 
-1. **Done:** Stage 0 OOM (`scripts/r1/r1_bound_g_oom.py`).  
-2. **Done:** Profile likelihood on DESI DR2 BAO diagonal (`scripts/r1/r1_profile_lambda_bao.py`).  
+1.  Stage 0 OOM (`scripts/r1/r1_bound_g_oom.py`).  
+2.  Profile likelihood on DESI DR2 BAO diagonal (`scripts/r1/r1_profile_lambda_bao.py`).  
    - Formal 95% (diag 7 bins): \(\lvert\lambda\rvert\le 2.5\times 10^{-2}\) (**weak**, same as sister \(\sigma_X\) profile).  
    - **Working** map from programme ceiling \(\sigma_X<1.5\times 10^{-4}\): \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\).  
    - Artefact: `results/r1_lambda_profile/`.  
-3. **Done:** Full 13×13 DESI DR2 covariance, **fractional** residual (`scripts/r1/r1_profile_lambda_fullcov.py`).  
+3.  Full 13×13 DESI DR2 covariance, **fractional** residual (`scripts/r1/r1_profile_lambda_fullcov.py`).  
    - Residual \(r_i=\mathrm{data}_i/\mathrm{theory}_i-1\), \(C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})\).  
    - \(\chi^2_{\Lambda\mathrm{CDM}}\approx 29\) (13 dof); mean fractional offset \(\sim 1\%\).  
    - Formal free \(\sigma_{\mathrm{res}}\): best \(\approx 1.7\times 10^{-2}\), 95% \(\in[5\times 10^{-3},\,0.17]\); zero excluded at 95% **only because** cov inflation absorbs background tension — **not** a 1e−4 grain detection.  
    - At programme amplitudes (\(\sigma_{\mathrm{free}}\), \(1.5\times 10^{-4}\)): \(\Delta\ln\mathcal{L}\approx 0\) vs pure \(\Lambda\)CDM.  
    - **`formal_informative_for_1e-4_grain = False`**. **`primary_bound = working`**.  
    - Artefact: `results/r1_lambda_fullcov/`.  
-4. **Done:** slip OOM / Maus consistency on working \(\lambda\) — predicted \(\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11\) ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).  
-5. **Done:** operational F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).  
+4.  slip OOM / Maus consistency on working \(\lambda\) — predicted \(\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11\) ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).  
+5.  operational F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).  
 6. **Optional:** joint background+\(\sigma_{\mathrm{res}}\) (float \(r_d\) or \(\Omega_m\)); cluster mask test; influence-functional rate beyond OOM.
 
 ---
@@ -216,6 +216,3 @@ With \(\kappa=1\), \(\sigma_{\mathrm{free}}=8.5\times 10^{-5}\), \(\lvert\lambda
 
 > Bound the dimensionless response \(\lambda\) (and \(g\) under fixed \(\chi\)-normalisation) **first** with the DESI BAO residual likelihood at fixed \(\ell_*=R_{\mathrm{nl}}\); use slip/lensing as operator checks and clusters only for nonlinear-mask geometry — Stage-0 already implies \(\lvert\lambda\rvert\lesssim 10^{-4}\) and \(\lvert g\rvert\lesssim\mathcal{O}(1)\).
 
----
-
-*End of \(g\)-bounding plan.*

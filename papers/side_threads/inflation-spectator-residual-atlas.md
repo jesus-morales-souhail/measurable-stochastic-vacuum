@@ -171,6 +171,3 @@ python scripts/side/inflation_spectator_residual_atlas.py
 python scripts/gap_two_targets.py  # sister repo: Sorkin contrast
 ```
 
----
-
-*End of spectator residual atlas.*

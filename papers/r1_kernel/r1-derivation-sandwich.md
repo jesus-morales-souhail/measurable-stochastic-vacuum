@@ -1,46 +1,24 @@
-# Sandwich derivation: uniqueness of residual grain \(\ell_*\sim R_{\mathrm{nl}}\)
+# Uniqueness of the residual grain \(\ell_*\sim R_{\mathrm{nl}}\) under stated axioms
 
-**Author:** Jesús Morales Souhail  
-**Date:** July 2026  
-**Status:** **Derivation under stated axioms** + executed numbers — not a Standard-Model proof that nature realises the axioms  
-**Code:** [`scripts/r1/r1_sandwich_derivation.py`](../../scripts/r1/r1_sandwich_derivation.py)  
-**Results:** [`results/r1_sandwich/`](../results/r1_sandwich/)  
-**Depends on:** [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md) · [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) · [`r1-open-kernel.md`](r1-open-kernel.md)
+Jesús Morales Souhail · July 2026  
+
+*Conditional derivation with numerical support. Not a proof that nature realises the axioms.*  
+Code: [`scripts/r1/r1_sandwich_derivation.py`](../../scripts/r1/r1_sandwich_derivation.py) · Results: [`results/r1_sandwich/`](../../results/r1_sandwich/)  
+Related: [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md), [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md), [`r1-open-kernel.md`](r1-open-kernel.md), [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md)
 
 ---
 
 ## Abstract
 
-The open R1 kernel asks: *what principle fixes a mesoscopic counting cell for the DE residual sector?*  
-Previous notes stated the **hypothesis** P\(_\mathrm{nl}\) (\(\ell_*=R_{\mathrm{nl}}\)) and a **sketch** (coarse-graining under coupling to classical matter).  
+The open problem of the residual counting scale is: what fixes a mesoscopic cell \(\ell_*\) for a dark-energy residual sector? Earlier notes stated the hypothesis \(\ell_*=R_{\mathrm{nl}}\) and a coarse-graining sketch. This note states the argument under axioms A0–A4 (residual sector; local coupling \(g\chi\delta_m\); classical nonlinear matter; counting after decoherence; no free soft gain \(\sim 10^{56}\)). Free residual cells with \(\ell\ll R_{\mathrm{nl}}\) are unavailable; cells with \(\ell\gg R_{\mathrm{nl}}\) renormalize to \(R_{\mathrm{nl}}\) under local coupling. Hence \(\ell_*\sim R_{\mathrm{nl}}\) up to order-unity geometric factors fixed by the same matter field.
 
-This note elevates that sketch to a **sandwich uniqueness argument**:
-
-> **Under axioms A0–A4** (residual sector; local coupling \(g\chi\delta_m\); matter classicality on nonlinear patches; counting of free residual DOF after decoherence; no free \(10^{56}\)),  
-> the free residual counting cell is forced into the band
-> \[
-> \ell_*\sim R_{\mathrm{nl}}
-> \]
-> up to \(\mathcal{O}(1)\) geometric factors fixed by the same matter field (\(R_*\), \(\ell_{\mathrm{sep}}\), \(r_{e}\)).  
-> Cells \(\ell\ll R_{\mathrm{nl}}\) are **UV-forbidden** (decoherence / not free).  
-> Cells \(\ell\gg R_{\mathrm{nl}}\) **IR-renormalize** to \(R_{\mathrm{nl}}\) patches under local coupling.
-
-**Executed:** real-space \(\xi_\delta(r)\) and Gaussian-threshold mask correlation at \(R=R_{\mathrm{nl}}\); decoherence OOM rates; sandwich table.  
-**Still not claimed:** that the Standard Model + GR *must* contain \(\chi\); value of \(g\) from microphysics (bounded a posteriori by DESI).
-
-This is the programme’s first **conditional theorem** for the open kernel — not another coincidence table.
+The note reports real-space \(\xi_\delta(r)\), Gaussian-threshold mask correlation at \(R=R_{\mathrm{nl}}\), order-of-magnitude decoherence rates, and a comparison table across trial cells. It does not claim that the Standard Model contains \(\chi\), nor a first-principles value of \(g\) (only an a posteriori DESI-compatible order of magnitude).
 
 ---
 
-## 1. Why this is the advance
+## 1. Scope
 
-| Before this note | After this note |
-|:-----------------|:----------------|
-| \(\ell_*=R_{\mathrm{nl}}\) is a **hypothesis** that “looks interesting” because numbers sit in the 8–12 Mpc decade | \(\ell_*\sim R_{\mathrm{nl}}\) is the **unique free residual cell** *if* A0–A4 hold |
-| Sketch B.4 in [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) | Lemmas UV + IR + uniqueness + numbers |
-| “The principle that fixes the galactic grain remains open” (open-kernel) | Principle **form** is fixed under axioms; open problem shrinks to *whether nature realises A0–A1* |
-
-**Honest scope:** a derivation *under axioms* is still a derivation. It is not a proof from the Standard Model alone. That is the correct publication bar for this stage.
+Under A0–A4, \(\ell_*\sim R_{\mathrm{nl}}\) is the unique free residual counting scale up to \(\mathcal{O}(1)\) geometry. The open problem then reduces to whether nature realises A0–A1. A derivation under axioms is not a derivation from the Standard Model alone; that distinction is intentional.
 
 ---
 
@@ -230,6 +208,3 @@ python scripts/r1/r1_sandwich_derivation.py
 pytest -q
 ```
 
----
-
-*End of sandwich derivation note.*

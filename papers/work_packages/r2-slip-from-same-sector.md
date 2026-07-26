@@ -74,6 +74,3 @@ Full Boltzmann (hi_class/MGCAMB) only after $\sigma$ and $\varepsilon$ are princ
 | $\sqrt{N}$ path | **Closed** (+ MC) |
 | Microscopic $\varepsilon$ | **Absent (declared)** |
 
----
-
-*End of WP3 discussion note.*

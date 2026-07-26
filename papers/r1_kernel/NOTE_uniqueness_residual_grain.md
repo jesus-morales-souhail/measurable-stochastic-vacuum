@@ -1,84 +1,78 @@
 # Uniqueness of the residual vacuum grain under local coupling to nonlinear structure
 
-**Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Email:** jmskjym@gmail.com  
-**Affiliation:** Independent researcher  
-**Date:** July 2026  
-**Status:** Programme note intended as a **short paper draft** — **not peer reviewed**  
-**Code:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum  
-**Sister empirical bound:** \(\sigma_X<1.5\times 10^{-4}\) (95% CL), [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+Jesús Morales Souhail  
+ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · jmskjym@gmail.com  
+Independent researcher · July 2026  
+
+*Draft note. Not peer reviewed.*  
+Code: [measurable-stochastic-vacuum](https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum)  
+Companion DESI residual bound \(\sigma_X<1.5\times 10^{-4}\) (95% CL): [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
 ## Abstract
 
-Standard cosmology treats dark energy as a homogeneous background (\(\Lambda\) or a smooth field). We consider a residual sector \(\chi\) that does **not** source the mean expansion after isotropic projection, but may retain a mesoscopic correlation length \(\ell_*\). Under four axioms — residual sector; local coupling to matter contrast; classicality of matter on nonlinear scales; and counting of free residual degrees of freedom after decoherence — we prove a **sandwich uniqueness** result: free residual cells much smaller than the matter nonlinear scale \(R_{\mathrm{nl}}\) are decohered, while cells much larger renormalize to \(R_{\mathrm{nl}}\) under local coupling. Hence
-\[
-\ell_*\sim R_{\mathrm{nl}}.
-\]
-With a standard top-hat variance integral we find \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) (\(\sigma_8=0.81\)). Volume counting then gives residual amplitude \(\sigma\approx 8.5\times 10^{-5}\) (\(d=3\)), under the DESI residual ceiling. The correlation length of the Gaussian threshold mask \(\delta>1\) is \(r_{e,\mathrm{mask}}\approx 1.11\,R_{\mathrm{nl}}\). We pre-register falsifiers and bound the dimensionless coupling \(\lvert g\rvert\lesssim\mathcal{O}(1)\). We do **not** claim a derivation of \(\chi\) from the Standard Model, nor a solution of the \(H_0\) tension.
+In the standard cosmological model, dark energy is treated as a homogeneous background. Here we consider a residual sector \(\chi\) that does not source the mean expansion after isotropic projection, but may retain a mesoscopic correlation length \(\ell_*\). Under four axioms—existence of such a residual, local coupling to the matter density contrast, classicality of matter on nonlinear scales, and counting of free residual degrees of freedom after decoherence—we obtain a uniqueness result for the free residual scale: cells much smaller than the matter nonlinear scale \(R_{\mathrm{nl}}\) are not available as free residual modes, while cells much larger renormalize to \(R_{\mathrm{nl}}\) under local coupling. Thus \(\ell_*\sim R_{\mathrm{nl}}\).
 
-**Keywords:** dark energy residual, nonlinear scale, decoherence, gravitational slip, DESI
+Evaluating the top-hat variance integral with an Eisenstein–Hu–style transfer function normalized to \(\sigma_8=0.81\) yields \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\). Volume counting with \(d=3\) then gives residual amplitude \(\sigma\approx 8.5\times 10^{-5}\), below the DESI residual ceiling from the companion analysis. The correlation length of a Gaussian threshold mask \(\delta>1\) is \(r_{e,\mathrm{mask}}\approx 1.11\,R_{\mathrm{nl}}\). Falsification criteria are stated, and the dimensionless coupling is bounded by \(\lvert g\rvert\lesssim\mathcal{O}(1)\) under the programme normalisation. We do not claim a derivation of \(\chi\) from the Standard Model, nor an explanation of the Hubble tension.
+
+**Keywords:** dark energy residual; nonlinear scale; decoherence; gravitational slip; DESI
 
 ---
 
 ## 1. Introduction
 
-Late-time acceleration is described by \(\Lambda\)CDM with high success on the mean expansion. Whether the dark-energy sector admits a **residual**, stochastic, or granular component at mesoscopic scales is a different question. Amplifying a pure Planck/Sorkin holographic seed \(\sigma_0\sim 10^{-61}\) into a telescope-band residual \(\sim 10^{-5}\) requires soft gains of order \(10^{56}\), which have been audited and closed as free amplifiers in companion work.
+The mean expansion history of the late universe is well described by flat \(\Lambda\)CDM. Whether the dark-energy sector also admits a residual, stochastic, or granular component on mesoscopic scales is a separate question. Starting from a pure Planck-scale holographic seed \(\sigma_0\sim 10^{-61}\) and reaching a residual of order \(10^{-5}\) under soft open-system maps requires a gain of order \(10^{56}\). That route has been examined in companion work and is not available without introducing a new hard scale.
 
-An alternative is to change the **counting cell**: if residual degrees of freedom are counted on a mesoscopic length \(\ell_*\) rather than \(L_P\), the amplitude
+An alternative is to change the counting cell. If residual degrees of freedom are counted on a mesoscopic length \(\ell_*\) rather than the Planck length, the amplitude
 \[
 \sigma=\Bigl(\frac{\ell_*}{L_H}\Bigr)^{d/2}
 \]
-can sit near \(10^{-5}\)–\(10^{-4}\) without soft amplification. The open problem is then: **what fixes \(\ell_*\)?**
+can already lie near \(10^{-5}\)–\(10^{-4}\). The open problem is then what fixes \(\ell_*\).
 
-This note proposes a conditional answer. We do not claim that dark energy “knows about galaxies” by assertion. We show that **if** a residual couples locally to classical nonlinear matter, then \(\ell_*\) is forced to the matter nonlinear scale \(R_{\mathrm{nl}}\) defined by \(\sigma(R_{\mathrm{nl}})=1\).
-
-This connection is **not** standard lore. It is a new hypothesis of the programme, elevated here to a uniqueness theorem under stated axioms.
+This note gives a conditional answer. We do not assert that dark energy “knows about galaxies.” We show that if a residual couples locally to classical nonlinear matter, then \(\ell_*\) is forced to the matter nonlinear scale \(R_{\mathrm{nl}}\) defined by \(\sigma(R_{\mathrm{nl}})=1\). That identification is not standard lore; it is a hypothesis of this programme, developed here as a uniqueness argument under explicit axioms.
 
 ---
 
 ## 2. Axioms
 
-| ID | Statement |
-|:---|:----------|
-| **A0** | A residual sector \(\chi\) exists; its isotropic mean is projected out (SDiff / unimodular-type structural zero). Observables care about fluctuations about that mean. |
-| **A1** | Local interaction \(\mathcal{L}_{\mathrm{int}}=g\chi\delta_m\) (or density form). |
-| **A2** | On filters with matter variance \(\sigma(R)\ge 1\), \(\delta_m\) is effectively classical, organised in nonlinear patches of size \(\sim R_{\mathrm{nl}}\). |
-| **A3** | Free residual DOF after environment-induced decoherence are counted as \(N=(L_H/\ell_*)^d\), \(\sigma=N^{-1/2}\). |
-| **A4** | No free soft gain \(\sim 10^{56}\) from a pure Planck seed. |
+| | Statement |
+|:--|:----------|
+| A0 | A residual sector \(\chi\) exists. Its isotropic mean is projected out (SDiff / unimodular-type structural zero). Observables concern fluctuations about that mean. |
+| A1 | The residual couples locally to matter: \(\mathcal{L}_{\mathrm{int}}=g\chi\delta_m\) (or a density form of the same locality). |
+| A2 | On filters with matter variance \(\sigma(R)\ge 1\), \(\delta_m\) is effectively classical and organised in nonlinear patches of size \(\sim R_{\mathrm{nl}}\). |
+| A3 | After environment-induced decoherence, free residual degrees of freedom are counted as \(N=(L_H/\ell_*)^d\), with \(\sigma=N^{-1/2}\). |
+| A4 | Soft maps do not introduce a free gain \(\sim 10^{56}\) from a pure Planck seed. |
 
-**Scope:** Results below are theorems **under A0–A4**. Existence of \(\chi\) (A0) and the coupling (A1) remain physical postulates; possible microphysical origins (averaging residual, SDiff edge stress, open-system influence functionals) are discussed in companion notes and are not required for the uniqueness algebra.
+Results below are conditional on A0–A4. Existence of \(\chi\) and the coupling in A1 remain physical postulates. Possible microphysical origins—averaging residuals, edge stress after isotropic projection, or influence functionals with matter as environment—are discussed elsewhere and are not required for the uniqueness algebra.
 
 ---
 
-## 3. Sandwich uniqueness
+## 3. Uniqueness of the free residual scale
 
-### 3.1 UV lemma
+### 3.1 Ultraviolet side
 
-If \(\chi\) couples locally to classical \(\delta_m\) coherent on patches of size \(R_{\mathrm{nl}}\), residual configurations that differ **within** a single patch are monitored by the same classical record. Open-system / influence-functional logic suppresses such coherences when \(g\sigma_\delta\) is not parametrically tiny. The effective free residual field is therefore the **patch average**
+If \(\chi\) couples locally to classical \(\delta_m\) that is coherent on patches of size \(R_{\mathrm{nl}}\), residual configurations that differ within a single patch are monitored by the same classical record. Standard open-system reasoning then suppresses such coherences when \(g\sigma_\delta\) is not parametrically small. The effective free residual is the patch average
 \[
 \chi_{\mathrm{eff}}(p)=\frac{1}{V_p}\int_p\chi.
 \]
-**Consequence:** free residual counting cells with \(\ell\ll R_{\mathrm{nl}}\) are not available.
+Free residual counting cells with \(\ell\ll R_{\mathrm{nl}}\) are therefore not available.
 
-### 3.2 IR lemma
+### 3.2 Infrared side
 
-If one posits a free residual cell \(\ell\gg R_{\mathrm{nl}}\), local coupling implies the interaction is a sum of contributions from \(N_p=(\ell/R_{\mathrm{nl}})^d\) independent nonlinear patches. The independent residual DOF are the patch modes; averaging them yields
+If one posits a free residual cell \(\ell\gg R_{\mathrm{nl}}\), local coupling implies that the interaction on that cell is a sum of contributions from \(N_p=(\ell/R_{\mathrm{nl}})^d\) independent nonlinear patches. The independent residual modes are those of the patches. Averaging them yields
 \[
 \sigma_{\mathrm{eff}}(\ell)=\frac{\sigma(R_{\mathrm{nl}})}{\sqrt{N_p}},
 \]
-i.e. the same counting as if the cell were \(R_{\mathrm{nl}}\). Super-cells **renormalize** to \(R_{\mathrm{nl}}\).
+which is the same counting as if the cell were \(R_{\mathrm{nl}}\). Super-cells renormalize to \(R_{\mathrm{nl}}\).
 
-### 3.3 Theorem
+### 3.3 Result
 
 Under A0–A4,
 \[
-\boxed{\ell_*\sim R_{\mathrm{nl}}\qquad\text{(unique free residual scale up to \(\mathcal{O}(1)\) geometry).}}
+\ell_*\sim R_{\mathrm{nl}},
 \]
-
-Geometric \(\mathcal{O}(1)\) factors from the same filtered matter field include the density correlation length \(r_{e,\delta}\), the threshold-mask correlation length \(r_{e,\mathrm{mask}}\), packing separation of \(\delta>1\) regions, and BBKS peak curvature \(R_*\) (substructure **inside** the domain, not an independent free residual cell under the UV lemma).
+up to geometric factors of order unity fixed by the same filtered matter field (density correlation length, threshold-mask correlation length, packing separation of \(\delta>1\) regions, and BBKS peak curvature \(R_*\) as substructure inside the domain rather than as an independent free residual cell).
 
 ---
 
@@ -90,99 +84,88 @@ Geometric \(\mathcal{O}(1)\) factors from the same filtered matter field include
 \sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),\qquad
 W_{\mathrm{TH}}(x)=\frac{3(\sin x-x\cos x)}{x^3}.
 \]
-With an Eisenstein–Hu–style \(P(k)\) normalized to \(\sigma_8=0.81\) and \(h=0.674\),
+With \(P(k)\) of Eisenstein–Hu type, \(n_s=0.965\), \(\Omega_m=0.315\), \(h=0.674\), and \(\sigma_8=0.81\),
 \[
-R_{\mathrm{nl}}\approx 5.80\,h^{-1}\mathrm{Mpc}\approx\mathbf{8.61\,\mathrm{Mpc}}.
+R_{\mathrm{nl}}\approx 5.80\,h^{-1}\mathrm{Mpc}\approx 8.61\,\mathrm{Mpc}.
 \]
-No DESI residual number enters this solve.
+No DESI residual likelihood enters this determination.
 
-### 4.2 Mask correlation (executed)
+### 4.2 Mask and packing scales
 
-For Gaussian threshold \(m=\mathbf{1}\{\delta>1\}\) at filter \(R_{\mathrm{nl}}\),
+For a Gaussian threshold \(m=\mathbf{1}\{\delta>1\}\) at filter \(R_{\mathrm{nl}}\),
 \[
-r_{e,\mathrm{mask}}\approx 9.53\,\mathrm{Mpc}\approx\mathbf{1.11}\,R_{\mathrm{nl}}.
+r_{e,\mathrm{mask}}\approx 9.53\,\mathrm{Mpc}\approx 1.11\,R_{\mathrm{nl}}.
 \]
-Density correlation: \(r_{e,\delta}\approx 14.6\,\mathrm{Mpc}\approx 1.69\,R_{\mathrm{nl}}\).  
-Packing separation of \(\delta>1\) patches: \(\ell_{\mathrm{sep}}\approx 15.9\,\mathrm{Mpc}\).
+The density correlation length is \(r_{e,\delta}\approx 14.6\,\mathrm{Mpc}\approx 1.69\,R_{\mathrm{nl}}\). Packing separation of \(\delta>1\) patches is \(\ell_{\mathrm{sep}}\approx 15.9\,\mathrm{Mpc}\).
 
 ### 4.3 Counting amplitude
 
-With \(\ell_*=R_{\mathrm{nl}}\), \(d=3\), \(L_H=c/H_0\),
+With \(\ell_*=R_{\mathrm{nl}}\), \(d=3\), and \(L_H=c/H_0\),
 \[
-\sigma_{\mathrm{free}}=\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx\mathbf{8.5\times 10^{-5}}.
+\sigma_{\mathrm{free}}=\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5},
 \]
-This lies under the sister DESI BAO residual ceiling \(\sigma_X<1.5\times 10^{-4}\) (95% CL, OU/QNM kernel).
+which lies under the companion DESI BAO residual ceiling \(\sigma_X<1.5\times 10^{-4}\) (95% CL, OU/QNM kernel).
 
 ### 4.4 Coupling bound
 
-Writing induced residual \(\lambda\) with \(\sigma_{\mathrm{res}}^2=\sigma_{\mathrm{free}}^2+\lambda^2\) and convention \(\lambda=g\sigma_{\mathrm{free}}\),
+Writing \(\sigma_{\mathrm{res}}^2=\sigma_{\mathrm{free}}^2+\lambda^2\) and \(\lambda=g\sigma_{\mathrm{free}}\),
 \[
 \lvert\lambda\rvert\lesssim 1.24\times 10^{-4},\qquad
 \lvert g\rvert\lesssim 1.45
 \]
-under the working DESI map. Formal full-covariance profile likelihoods on absolute \(D/r_d\) are **not** informative at \(10^{-4}\) because \(\chi^2_{\Lambda\mathrm{CDM}}\sim 29\) is absorbed by covariance inflation — the working ceiling remains the primary bound.
+under the working DESI map. Formal full-covariance profiles on absolute \(D/r_d\) at fixed background are not informative at the \(10^{-4}\) level, because a large \(\chi^2\) against the fiducial theory is absorbed by residual variance; the working ceiling remains the primary bound.
 
 ---
 
-## 5. Decoherence OOM
+## 5. Decoherence estimate
 
-For \(\Gamma\sim g^2\sigma_\delta^2/\tau_c\) with \(\sigma_\delta=1\):
-
-| \(g\) | \(\Gamma/H_0\) (slow bath \(\tau_c\sim H_0^{-1}\)) | \(\Gamma/H_0\) (fast bath \(\tau_c\sim R_{\mathrm{nl}}/c\)) |
-|:------|:--------------------------------------------------|:----------------------------------------------------------|
-| \(1\) | \(\sim 1\) | \(\sim 5\times 10^{2}\) |
-| \(g_{\mathrm{work}}\approx 1.45\) | \(\sim 2\) | \(\sim 10^{3}\) |
-
-Order-unity \(g\) yields decoherence within cosmological timescales, consistent with the UV lemma.
+With \(\Gamma\sim g^2\sigma_\delta^2/\tau_c\) and \(\sigma_\delta=1\), order-unity \(g\) gives \(\Gamma/H_0\sim\mathcal{O}(1)\) for a slow bath \(\tau_c\sim H_0^{-1}\), and larger rates if \(\tau_c\sim R_{\mathrm{nl}}/c\). That is consistent with the ultraviolet argument in Sec. 3.1 as an order-of-magnitude check, not a full influence-functional calculation.
 
 ---
 
-## 6. Falsifiers (pre-registered)
+## 6. Falsification criteria
 
-| Gate | Kill condition |
-|:-----|:---------------|
-| **F1 BAO** | Residual \(\sigma_{\mathrm{res}}\gg 1.5\times 10^{-4}\) at **fixed** \(\ell_*=R_{\mathrm{nl}}\) without derived damping |
-| **F2 Scale** | Free residual correlation length at \(\sigma\sim 10^{-4}\) measured \(\ll 1\,\mathrm{Mpc}\) or \(\gg 100\,\mathrm{Mpc}\) |
-| **F3 Slip** | Stochastic path-RMS / slip proxy far above Maus/Sakr floors without systematics budget (today predictions sit \(\ll\) floors) |
-| **F4 Method** | Post-hoc fit of \(\ell_*\) to DESI; free \(10^{56}\); rebrand Stage-IV shear \(m\sim 10^{-3}\) as residual-texture detection |
+| | Condition that excludes this form of the claim |
+|:--|:-----------------------------------------------|
+| F1 | Residual amplitude \(\sigma_{\mathrm{res}}\gg 1.5\times 10^{-4}\) at fixed \(\ell_*=R_{\mathrm{nl}}\) with no derived damping |
+| F2 | Free residual correlation length at \(\sigma\sim 10^{-4}\) measured well below \(1\,\mathrm{Mpc}\) or well above \(100\,\mathrm{Mpc}\) |
+| F3 | Stochastic slip path RMS forced far above published mean-slip floors without a systematics budget |
+| F4 | \(\ell_*\) fitted after residual data are inspected; free \(10^{56}\) gain; shear multiplicative bias treated as residual-texture detection |
 
-**Illegal:** adjusting \(\ell_*\) after looking at residual data.
+A survey-oriented protocol for residual–matter cross-correlation on the \(R_{\mathrm{nl}}\) band is given in a separate pre-registration note.
 
 ---
 
-## 7. What we do not claim
+## 7. Scope
 
-1. That the Standard Model + GR **must** contain \(\chi\).  
-2. A microscopic derivation of \(g\) (only \(\lvert g\rvert\lesssim\mathcal{O}(1)\) a posteriori).  
-3. Explanation of the \(\sim 9\%\) \(H_0\) tension (amplitude short by \(\sim 10^{2}\)–\(10^{3}\) under DESI-safe residual).  
-4. That Stage-IV mean slip already tests path-RMS at \(10^{-3}\).  
-5. Peer-reviewed status.
+We do not claim that the Standard Model and general relativity must contain \(\chi\); that \(g\) is derived microscopically (only that \(\lvert g\rvert\lesssim\mathcal{O}(1)\) under the working residual ceiling); that the \(\sim 8\%\) Hubble tension is explained by this residual (the amplitude is short by two to three orders of magnitude under DESI-safe values); or that present mean-slip measurements test path-accumulated residuals at the \(10^{-3}\) level.
 
 ---
 
 ## 8. Discussion
 
-The scientific content of this note is a **narrowing of the open problem**. Before: any mesoscopic \(\ell_*\) in a broad band could be entertained. After: under local coupling to classical nonlinear matter, \(\ell_*\sim R_{\mathrm{nl}}\) is unique up to \(\mathcal{O}(1)\). The remaining question is whether nature realises a residual sector with that coupling — a sharper, falsifiable target.
+The main content of the argument is a narrowing of the open problem. Without A0–A4, any mesoscopic \(\ell_*\) in a wide band remains possible. With local coupling to classical nonlinear matter, \(\ell_*\sim R_{\mathrm{nl}}\) up to order-unity geometry. The remaining question is whether nature realises a residual sector with that coupling.
 
-Possible non-ad-hoc origins of A1 include: (i) residual fluctuations about spatial averages on nonlinear domains; (ii) SDiff/unimodular edge stress supported on nonlinear masks; (iii) open-system influence functionals with matter as bath. In all three, \(\chi\) need not be a new fifth-force particle.
+Non-ad-hoc routes to A1 include residual fluctuations about spatial averages on nonlinear domains, residual stress supported on nonlinear masks after isotropic projection, and open-system influence functionals with matter as the environment. In those settings \(\chi\) need not be introduced as a new fifth-force field.
 
 ---
 
 ## 9. Conclusions
 
-Under residual sector + local coupling to classical nonlinear matter + post-decoherence counting, the free residual vacuum grain is uniquely
+Under a residual sector, local coupling to classical nonlinear matter, and post-decoherence counting, the free residual scale is
 \[
 \ell_*\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc},
 \]
-with amplitude \(\sigma\sim 8.5\times 10^{-5}\) under present DESI residual limits and coupling \(\lvert g\rvert\lesssim\mathcal{O}(1)\). The result is conditional, quantitative, and falsifiable. It does not reinstate soft amplification of a Planck seed, and it does not solve \(H_0\).
+with amplitude \(\sigma\sim 8.5\times 10^{-5}\) under present DESI residual limits and coupling \(\lvert g\rvert\lesssim\mathcal{O}(1)\). The result is conditional, quantitative, and falsifiable. It does not restore soft amplification of a Planck seed, and it does not address the Hubble tension.
 
 ---
 
-## Acknowledgements / reproducibility
+## Reproducibility
 
 ```bash
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git
-cd measurable-stochastic-vacuum && pip install -r requirements.txt
+cd measurable-stochastic-vacuum
+pip install -r requirements.txt
 python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_sandwich_derivation.py
 python scripts/r1/r1_sandwich_falsifiers.py
@@ -190,19 +173,15 @@ python scripts/r1/r1_bound_g_oom.py
 pytest -q
 ```
 
-Companion notes: `r1-derivation-sandwich.md`, `r1-a1-microphysics.md`, `r1-sandwich-falsifiers.md`, `r1-bounding-g-plan.md`.
+Companion notes in this repository: `r1-derivation-sandwich.md`, `r1-a1-microphysics.md`, `r1-sandwich-falsifiers.md`, `r1-T2-preregistration.md`, `r1-lineA-g-from-averaging.md`.
 
 ---
 
-## References (selected)
+## References
 
-1. Bardeen, Bond, Kaiser, Szalay, ApJ 304, 15 (1986) — peak statistics.  
-2. Buchert, arXiv:0707.2153 — averaging / backreaction.  
-3. Eisenstein & Hu, ApJ 496, 605 (1998) — transfer function.  
-4. Maus et al., arXiv:2505.20656 — DESI×CMB-lensing slip.  
-5. Sakr et al., arXiv:2501.07477 — anisotropic stress forecasts.  
-6. Programme repos: measurable-stochastic-vacuum; stochastic-dark-energy-ou.
-
----
-
-*End of short paper draft.*
+1. J. M. Bardeen, J. R. Bond, N. Kaiser, and A. S. Szalay, Astrophys. J. **304**, 15 (1986).  
+2. T. Buchert, arXiv:0707.2153.  
+3. D. J. Eisenstein and W. Hu, Astrophys. J. **496**, 605 (1998).  
+4. M. Maus et al., arXiv:2505.20656.  
+5. Z. Sakr, Y. Zheng, and S. Casas, arXiv:2501.07477.  
+6. J. Morales Souhail, stochastic-dark-energy-ou and measurable-stochastic-vacuum (2026).

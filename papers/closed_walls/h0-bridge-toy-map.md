@@ -134,6 +134,3 @@ python scripts/closed/h0_running_geometry.py
 pytest -q
 ```
 
----
-
-*End of H0 bridge toy map.*

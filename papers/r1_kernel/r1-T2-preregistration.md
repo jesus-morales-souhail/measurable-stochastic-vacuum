@@ -1,32 +1,26 @@
-# Pre-registration: Test T2 — residual × nonlinear structure at \(R_{\mathrm{nl}}\)
+# Analysis plan: residual–structure correlation on the nonlinear scale
 
-**Author:** Jesús Morales Souhail  
-**Date:** July 2026  
-**Status:** **Pre-registered protocol** (analysis plan before unblinding a residual detection)  
-**Not peer reviewed** · Not a claim that Stage-IV will detect  
-**Parents:** [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md) · [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md) · Stage-IV design script  
+Jesús Morales Souhail · July 2026  
 
-**Code:** [`scripts/r1/r1_stage4_test_design.py`](../../scripts/r1/r1_stage4_test_design.py) · results in `results/r1_stage4_design/`
+*Pre-registered protocol for a residual–matter cross test. Not peer reviewed. Not a claim of Stage-IV detection.*  
+Related: [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md), [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)  
+Code: [`scripts/r1/r1_stage4_test_design.py`](../../scripts/r1/r1_stage4_test_design.py), [`scripts/r1/r1_T2_mock_pipeline.py`](../../scripts/r1/r1_T2_mock_pipeline.py)
 
 ---
 
-## 0. Why pre-register
+## 0. Purpose
 
-The sandwich programme predicts a **unique geometric fingerprint**:
+If a residual of amplitude \(\sim 10^{-5}\)–\(10^{-4}\) couples locally to matter, its spatial correlation is predicted to lie near the nonlinear scale \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) (allowed band roughly \(4\)–\(26\,\mathrm{Mpc}\)), not at the Planck length, the Hubble radius, or an 8% distance shift.
 
-> If a DESI-safe residual exists and couples locally to matter, its spatial support / correlation prefers the **nonlinear structure scale**  
-> \(\ell_*\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) (band \(\sim 4\)–\(26\,\mathrm{Mpc}\)),  
-> **not** \(L_P\), **not** \(L_H\), and **not** an 8% \(H_0\) jump.
+This document fixes, before inspection of residual maps:
 
-Without pre-registration, any weak scale preference in noise can be over-interpreted. This note freezes:
+1. hypotheses;  
+2. observable definitions;  
+3. the scale band and null tests;  
+4. support and exclusion criteria;  
+5. analysis choices that are not permitted after unblinding.
 
-1. **Hypothesis**  
-2. **Observable definition**  
-3. **Scale band and nulls**  
-4. **Success / kill criteria**  
-5. **Illegal analysis moves**
-
-DESI DR3 / Euclid BAO+LSS analyses that test residual grain **should follow this plan or state deviations**.
+Deviations from the plan should be stated explicitly in any application to DESI or Euclid data.
 
 ---
 
@@ -195,7 +189,7 @@ Synthetic 2D Gaussian matter field with corr \(\sim R_{\mathrm{nl}}\); residual 
 | White residual control | \(r_e\) small; cross \(\sim 0\) |
 | Wrong-scale (100 Mpc) injection | \(r_e\sim 96\,\mathrm{Mpc}\) **outside** ALLOWED band |
 | Ensemble PASS fraction | **12/12** |
-| **Pipeline validation** | **PASS** |
+| **Pipeline validation** | validated |
 
 This proves the **estimators and kill/support logic work** when the hypothesis is true in the mock. It does **not** prove nature realises the residual.
 
@@ -221,6 +215,3 @@ pytest -q
 
 > **Pre-register** residual–matter cross and correlation length in the \(\mathcal{O}(1)\times R_{\mathrm{nl}}\) band at DESI-safe amplitude, with masks blind to residual and **no** post-hoc \(\ell_*\); success is scale lock, not \(H_0\).
 
----
-
-*End of T2 pre-registration.*

@@ -1,111 +1,88 @@
-# START HERE — measurable-stochastic-vacuum
+# Guide to this repository
 
-**Author:** Jesús Morales Souhail · July 2026 · **Not peer reviewed**
+Jesús Morales Souhail  
+July 2026 · Independent research · Not peer reviewed
 
-If the folder feels huge: **read this page only**, then pick one path below.
+This repository is the theory side of a programme on whether a late-time residual in the dark-energy sector can be large enough to matter for surveys, without free amplification factors of order \(10^{56}\) from a Planck-scale seed.
 
----
-
-## The whole programme in one paragraph
-
-We ask whether dark energy / vacuum can have a small **stochastic residual** that telescopes could see — **without** inventing free factors of \(10^{56}\) to amplify Planck-scale noise.  
-Sister data (DESI BAO) already bound that residual to \(\sigma_X < 1.5\times 10^{-4}\).  
-This repo develops the **theory map**: what is closed, what is open, and the current lead  
-\(\ell_* \sim R_{\mathrm{nl}} \approx 8.61\,\mathrm{Mpc}\) under stated axioms.
+A companion analysis of public DESI DR2 BAO data bounds a residual amplitude \(\sigma_X < 1.5\times 10^{-4}\) (95% CL). The working hypothesis developed here is that, under stated axioms, the residual counting scale is the matter nonlinear scale \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\).
 
 ---
 
-## Three repositories (do not mix roles)
+## Related repositories
 
-| Repo | Role | Start file |
-|:-----|:-----|:-----------|
-| **[stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)** | **Data / DESI claims** | `manuscript/PREPRINT.md` |
-| **This repo** | **Theory / when measurable** | this file → `papers/INDEX.md` |
-| **[stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes)** | **Pedagogy / wrong-scale quarantine** | `README.md` |
+| Repository | Role |
+|:-----------|:-----|
+| [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | Empirical DESI BAO residual analysis |
+| This repository | Theory, kinematics, and open questions |
+| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Exploratory and pedagogical material only |
 
 ---
 
-## Folder map (this repo)
+## Directory layout
 
 ```
-START_HERE.md          ← you are here
-README.md              ← short overview
-BOUNDARY.md            ← what may not enter claims
+START_HERE.md
+README.md
+BOUNDARY.md
 papers/
-  INDEX.md             ← full document index
-  core/                ← stable claims (referee path)
-  r1_kernel/           ← active research: grain scale uniqueness
-  closed_walls/        ← closed dead ends (do not re-open)
-  side_threads/        ← useful but secondary
-  work_packages/       ← WP2–WP5 expansions
-scripts/
-  core/  r1/  closed/  side/   ← same logic as papers
-tests/                 ← pytest gate (must stay green)
-results/               ← numerical artefacts
-data/                  ← portable DESI npy copies
+  INDEX.md           full catalogue
+  core/              stable claims and formulae
+  r1_kernel/         residual scale and coupling
+  closed_walls/      excluded mechanisms
+  side_threads/      secondary topics
+  work_packages/     longer work-package notes
+scripts/core|r1|closed|side
+tests/
+results/
+data/
 ```
-
-**Nothing was deleted.** Files only moved into topic folders.
 
 ---
 
-## Read in this order (choose one)
+## Suggested reading
 
-### Path A — “What can we claim?” (30 min)
-
+**For claims and notation (about 30 minutes)**  
 1. [`papers/core/FOR_REFEREES.md`](papers/core/FOR_REFEREES.md)  
 2. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md)  
 3. [`papers/core/SIMPLE_AS_LAMBDA.md`](papers/core/SIMPLE_AS_LAMBDA.md)  
-4. [`BOUNDARY.md`](BOUNDARY.md)  
+4. [`BOUNDARY.md`](BOUNDARY.md)
 
-### Path B — “What is the current scientific lead?” (45 min)
-
-1. [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md) ← short paper draft  
+**For the residual-scale argument (about 45 minutes)**  
+1. [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md)  
 2. [`papers/r1_kernel/r1-derivation-sandwich.md`](papers/r1_kernel/r1-derivation-sandwich.md)  
 3. [`papers/r1_kernel/r1-sandwich-falsifiers.md`](papers/r1_kernel/r1-sandwich-falsifiers.md)  
-4. [`papers/r1_kernel/r1-a1-microphysics.md`](papers/r1_kernel/r1-a1-microphysics.md)  
+4. [`papers/r1_kernel/r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md)  
+5. [`papers/r1_kernel/r1-lineA-g-from-averaging.md`](papers/r1_kernel/r1-lineA-g-from-averaging.md)
 
-### Path C — “What did we already kill?” (15 min)
+**For excluded routes**  
+Sister repository `amplification-gap.md`, and notes under [`papers/closed_walls/`](papers/closed_walls/).
 
-1. Sister `amplification-gap.md`  
-2. [`papers/closed_walls/`](papers/closed_walls/) — H0 from residual, Andromeda/NP-A false friends  
-
----
-
-## Research frontier (after H0 door closed)
-
-See [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md):
-
-| Line | Focus | Status |
-|:-----|:------|:-------|
-| **A** | \(g_{\mathrm{eff}}\) from averaging \(Q\) proxy | **Done OOM+MC** — [`r1-lineA-g-from-averaging.md`](papers/r1_kernel/r1-lineA-g-from-averaging.md) |
-| **B** | T2 pre-reg + end-to-end mock | **PASS** — [`r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md) · `scripts/r1/r1_T2_mock_pipeline.py` |
-| **C** | Information/entropy on past light cone | Later |
-
-**Not the frontier:** forcing the grain to explain 8% \(H_0\) (short by \(\sim 30\)–\(10^{3}\times\)).
+A broader research agenda (coupling estimates, survey tests, open problems) is summarised in [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md). Scope of public data versus original analysis is stated in [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kernel/HONEST_ASSETS.md).
 
 ---
 
-## One-line status
+## Present status (summary)
 
-| Layer | Status |
+| Topic | Status |
 |:------|:-------|
-| Soft \(10^{56}\) amplifiers | **Closed** |
-| \(R_{\mathrm{nl}}\) | **Computed** \(\approx 8.61\,\mathrm{Mpc}\) |
-| Why grain \(=R_{\mathrm{nl}}\) | **Unique under axioms A0–A4** |
-| Existence of residual sector | **Still a postulate** |
-| Bound on coupling \(g\) | **Working** \(\lvert g\rvert\lesssim 1.45\) |
-| \(H_0\) 9% from residual | **Excluded** |
+| Soft amplification \(\sim 10^{56}\) of a Sorkin seed | Excluded under audited soft maps |
+| \(R_{\mathrm{nl}}\) | \(\approx 8.61\,\mathrm{Mpc}\) from \(\sigma(R)=1\) |
+| Residual scale under axioms A0–A4 | \(\ell_*\sim R_{\mathrm{nl}}\) |
+| Existence of the residual sector | Postulated, not derived from the Standard Model |
+| Coupling \(g\) (working bound) | \(\lvert g\rvert\lesssim 1.45\) from DESI residual ceiling |
+| Residual as explanation of the \(\sim 8\%\) \(H_0\) tension | Excluded at DESI-safe amplitude |
 
 ---
 
-## Commands
+## Reproduce core numbers
 
 ```bash
 pytest -q
 python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_sandwich_derivation.py
-python scripts/r1/r1_sandwich_falsifiers.py
+python scripts/r1/r1_lineA_Q_variance_proxy.py
+python scripts/r1/r1_T2_mock_pipeline.py
 ```
 
-Full index: [`papers/INDEX.md`](papers/INDEX.md)
+Full catalogue: [`papers/INDEX.md`](papers/INDEX.md).

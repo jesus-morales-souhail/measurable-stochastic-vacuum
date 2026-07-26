@@ -122,6 +122,3 @@ python scripts/closed/ell_star_r0_peculiar.py
 | R0-4 | \(v_{\mathrm{pec}}\) coherence ≫ NP-A | scale class |
 | R0-5 | Open kernel still open | programme status |
 
----
-
-*End of r0 / peculiar-velocity scale note.*

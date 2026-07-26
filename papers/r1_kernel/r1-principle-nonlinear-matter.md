@@ -167,6 +167,3 @@ Scope if successful: residual \(\sigma_X\) and path slip RMS \(10^{-4}\)–\(10^
 
 > P\(_\mathrm{nl}\) remains a **hypothesis** (decoherence at collapse), not an action principle; the length \(R_{\mathrm{nl}}\) is now computed with a **full top-hat \(\sigma(R)\) integral** (\(\approx 8.61\,\mathrm{Mpc}\)), retiring the single-index power-law as the primary number while keeping it as a cross-check.
 
----
-
-*End of R_nl principle candidate note.*

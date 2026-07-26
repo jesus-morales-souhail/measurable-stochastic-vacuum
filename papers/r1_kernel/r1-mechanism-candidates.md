@@ -132,6 +132,3 @@ Each step: **blind length from matter**, then a posteriori DESI / \(r_0\) / \(R_
 
 > The serious candidates are those that already treat the **nonlinear structure scale as an IR domain** (averaging / backreaction / edge of collapse); decoherence-to-mean-\(\Lambda\) and EFT \(k_{\mathrm{max}}\) are real physics but weaker maps to a residual grain of few Mpc; horizon holography and soft amplifiers are the wrong scale or the wrong problem.
 
----
-
-*End of mechanism-candidate ranking.*

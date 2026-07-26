@@ -152,7 +152,7 @@ This is the same pattern as R1d \(\leftrightarrow R_8\): **shared scale language
 
 ## 7. Next honest steps
 
-1. **Done:** toy \(\delta D/D=s\sqrt{\chi/\ell_*}\) with \(\ell_*\) a priori — [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md). **Verdict:** DESI-safe stochastic amplitude **short** of the \(8\%\) H0 gap by \(\times 16\)–\(38\).  
+1.  toy \(\delta D/D=s\sqrt{\chi/\ell_*}\) with \(\ell_*\) a priori — [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md). **Verdict:** DESI-safe stochastic amplitude **short** of the \(8\%\) H0 gap by \(\times 16\)–\(38\).  
 2. **External:** freeze a public H0-running table (Dainotti bins / Krishnan) as CSV with arXiv tags — no re-fit.  
 3. **Joint:** any future coherent-like map must still obey sister \(\sigma_X\).  
 4. **Experiment:** more TDCOSMO systems + SN binning with pre-registered bins.
@@ -173,6 +173,3 @@ python scripts/closed/h0_running_geometry.py
 pytest -q
 ```
 
----
-
-*End of H0 / brachistochrone / open-kernel bridge note.*

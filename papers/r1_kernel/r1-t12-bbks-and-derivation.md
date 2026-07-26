@@ -160,6 +160,3 @@ python scripts/r1/r1_t12_bbks_peaks.py
 pytest -q
 ```
 
----
-
-*End of BBKS + derivation sketch.*

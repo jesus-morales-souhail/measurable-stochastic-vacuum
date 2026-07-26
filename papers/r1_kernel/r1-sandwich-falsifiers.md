@@ -114,6 +114,3 @@ python scripts/r1/r1_sandwich_falsifiers.py
 pytest -q
 ```
 
----
-
-*End of sandwich falsifiers.*

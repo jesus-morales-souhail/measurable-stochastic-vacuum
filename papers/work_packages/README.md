@@ -1,3 +1,3 @@
-# Work packages
+# Work-package notes
 
-WP2–WP5 expansions (slip, horizon open map, joint zeros, falsification levels).
+Longer notes on slip, soft open maps, joint zeros, and falsification levels.

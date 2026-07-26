@@ -127,6 +127,3 @@ or support-weighted \(\sigma\sim\sigma_{\mathrm{free}}\sqrt{f}\) depending on no
 | GA3 | Matches DESI working bound order | consistency |
 | GA4 | Full \(Q\) variance from N-body | **open** |
 
----
-
-*End of Line A start note.*

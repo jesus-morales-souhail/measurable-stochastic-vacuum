@@ -165,6 +165,3 @@ Sister:
 cat results/eos_cpl_desi_dr2/eos_cpl_summary.txt
 ```
 
----
-
-*End of desqueezing / H0 filter note.*

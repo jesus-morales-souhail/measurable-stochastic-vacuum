@@ -869,7 +869,7 @@ class TestT2PreregistrationExists:
         p = ROOT / "papers" / "r1_kernel" / "r1-T2-preregistration.md"
         assert p.is_file()
         text = p.read_text(encoding="utf-8")
-        assert "Pre-registration" in text or "pre-register" in text.lower()
+        assert "pre-regist" in text.lower() or "Analysis plan" in text or "protocol" in text.lower()
         assert "ALLOWED" in text or "0.5" in text
         assert "mathrm{nl}" in text or "nonlinear" in text.lower()
 

@@ -1,29 +1,22 @@
-# Frontier inquiry: after the \(H_0\) door closes
+# Research agenda after excluding residual solutions of the Hubble tension
 
-**Author:** Jesús Morales Souhail  
-**Date:** July 2026  
-**Status:** Research-programme reframe + ranked inquiry lines — **not** a detection paper  
-**Depends on:** sandwich uniqueness · DESI \(\sigma_X\) · closed H0 walls  
+Jesús Morales Souhail · July 2026  
+
+*Agenda note, not a detection paper. Depends on the residual uniqueness argument, the DESI residual ceiling, and the closed \(H_0\) comparisons.*
 
 ---
 
-## 0. Narrative shift (internal)
+## 0. Framing
 
-| Before (problem framing) | Now (frontier framing) |
-|:-------------------------|:-----------------------|
-| “The grain does not explain \(H_0\); the model fails the 8%.” | “We have an **upper bound** on the grain (\(\sigma\lesssim 10^{-4}\)). What physics lives in the remaining gap to 8%?” |
-| “Force parameters to hit \(H_0^{\mathrm{loc}}/H_0^{\mathrm{CMB}}\sim 1.08\).” | “The model predicts a **fine signature** \(\sim 10^{-4}\)–\(10^{-3}\) at \(\ell_*\sim 8.6\,\mathrm{Mpc}\). Design Stage-IV falsifiers.” |
-| “Why is the amplitude so small?” | “What **symmetry / coupling** fixes \(\ell_*=R_{\mathrm{nl}}\) and \(\lvert g\rvert\lesssim\mathcal{O}(1)\) without fine-tuning?” |
+A residual amplitude \(\sigma\lesssim 10^{-4}\) cannot produce an \(\sim 8\%\) shift in distance or \(H_0\). Relative to an 8% effect one finds, roughly,
 
-**Structural fact (numbers):**
+| Quantity | Value | \(0.08\) / quantity |
+|:---------|:------|:--------------------|
+| DESI residual ceiling \(\sigma_X\) | \(1.5\times 10^{-4}\) | \(\sim 5\times 10^{2}\) |
+| Free-grain \(\sigma\) at \(R_{\mathrm{nl}}\) | \(8.5\times 10^{-5}\) | \(\sim 10^{3}\) |
+| Path RMS (working residual) | \(\sim 2.5\times 10^{-3}\) | \(\sim 30\)–\(50\) |
 
-| Quantity | Value | Ratio to 8% distance jump |
-|:---------|:------|:--------------------------|
-| DESI residual ceiling \(\sigma_X\) | \(1.5\times 10^{-4}\) | \(0.08/\sigma_X\sim\mathbf{530}\) |
-| Free-grain \(\sigma\) at \(R_{\mathrm{nl}}\) | \(8.5\times 10^{-5}\) | \(\sim 940\times\) short of 8% |
-| Path \(\mathrm{RMS}\) (working) | \(\sim 2.5\times 10^{-3}\) | \(\sim 30\)–\(55\times\) short of 8% |
-
-The grain is **not** a failed \(H_0\) model. It is a **successful upper-bound + scale-structure programme** in the \(10^{-5}\)–\(10^{-4}\) window. The 8% is a **different physical problem**.
+The residual sector is therefore treated as a bounded, scale-structured problem in the \(10^{-5}\)–\(10^{-4}\) window, not as a failed explanation of the Hubble tension. The \(\sim 8\%\) discrepancy, if physical, must be sought elsewhere (early expansion, distance-ladder systematics, or large-scale mean effects that do not inject a DESI residual above the ceiling).
 
 ---
 
@@ -42,10 +35,7 @@ The grain is **not** a failed \(H_0\) model. It is a **successful upper-bound + 
 | **E. Stochastic DE residual at \(\sigma\sim 10^{-4}\)** | **No** — short by \(\sim 10^{2}\)–\(10^{3}\) | Already at ceiling | **Closed as \(H_0\) solution** |
 | **F. Soft Planck amplification \(10^{56}\)** | Numerically yes if free | Illegal / closed wall | Not a mechanism |
 
-**Answer in one sentence:**  
-Physics that can inhabit the 8% gap while respecting DESI residual bounds is **either early-universe / sound-horizon physics, local distance-ladder systematics, or large-scale mean (not residual) inhomogeneity/MG** — not a mesoscopic stochastic DE grain at \(\sigma\sim 10^{-4}\).
-
-**Programme role:** we **do not** compete with early DE for \(H_0\). We **own** the residual window and the grain-scale uniqueness problem.
+Mechanisms compatible with DESI residual bounds and capable of an \(\sim 8\%\) shift are therefore of early-universe / sound-horizon type, local calibration type, or large-scale mean (not residual) structure or modified gravity. A mesoscopic stochastic residual at \(\sigma\sim 10^{-4}\) is not among them. This programme does not compete with early dark energy for \(H_0\); it addresses residual amplitude and scale.
 
 ---
 
@@ -180,7 +170,7 @@ Do **not** open C as a path to \(H_0\).
 | Line | Deliverable |
 |:-----|:------------|
 | **A** | `scripts/r1/r1_lineA_Q_variance_proxy.py` → \(g_{\mathrm{eff}}pprox 0.27\) (P1) – \(1.41\) (P0); `results/r1_lineA_Q/` |
-| **B** | [`r1-T2-preregistration.md`](r1-T2-preregistration.md) + mock pipeline **PASS** (`r1_T2_mock_pipeline.py`) |
+| **B** | [`r1-T2-preregistration.md`](r1-T2-preregistration.md) + mock pipeline validated (`r1_T2_mock_pipeline.py`) |
 | assets | [`HONEST_ASSETS.md`](HONEST_ASSETS.md) |
 
 ## 6. Immediate next actions (executable)
@@ -198,6 +188,3 @@ Do **not** open C as a path to \(H_0\).
 
 > We have **bounded** mesoscopic vacuum residual and **derived** its scale under local coupling to nonlinear matter; the research frontier is **\(g\) from averaging/SDiff**, **Stage-IV residual×structure tests**, and only later an information metric on the past light cone — **not** the 8% \(H_0\) gap.
 
----
-
-*End of frontier inquiry note.*

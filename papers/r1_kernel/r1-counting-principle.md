@@ -85,6 +85,3 @@ Never tune $\ell_*$ to $R_8$ after inspecting S$_8$ either (same dial class; see
 WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](../work_packages/r3-open-horizon-map.md)).  
 Closing WP1 requires one of R1a–R1d **fully derived** under criteria P1–P6 in [`r1-open-kernel.md`](r1-open-kernel.md).
 
----
-
-*End of WP1 discussion note.*

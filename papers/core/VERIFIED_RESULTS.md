@@ -307,6 +307,3 @@ python scripts/core/r2_light_path_accumulation.py
 3. Maus et al., arXiv:2505.20656 — published slip $\gamma=\Phi/\Psi$ (used only as floor scale). 
 4. Sakr et al., arXiv:2501.07477 — indicative $\eta$ forecast floors.
 
----
-
-*End of verified-results note. Programme narrative remains in `THEORY_REVOLUTION.md`; only this file is the citation spine for documented results.*

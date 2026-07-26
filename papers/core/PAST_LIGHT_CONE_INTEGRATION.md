@@ -256,6 +256,3 @@ python scripts/core/simple_as_lambda.py
 # figures/past_light_cone_rms.pdf
 ```
 
----
-
-*End of past light-cone integration note.*

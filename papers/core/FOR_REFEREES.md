@@ -226,6 +226,3 @@ It is **not** a condensed-matter derivation of dark energy.
 
 **Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818
 
----
-
-*End of referee package.*

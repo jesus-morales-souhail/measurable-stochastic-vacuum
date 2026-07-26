@@ -86,6 +86,3 @@ If any of these, computed **blind** to \(2.0646\), lands near NP-A or near the D
 | N-E2 | Virgo proves the counting cell |
 | N-E3 | Mesoscopic grain solves \(H_0\) tension |
 
----
-
-*End of external-scales honesty note.*

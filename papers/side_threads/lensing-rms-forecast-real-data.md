@@ -208,6 +208,3 @@ python scripts/core/lib_verified.py
 
 **Related:** [`NARROW_PATH.md`](../core/NARROW_PATH.md) · [`PAST_LIGHT_CONE_INTEGRATION.md`](../core/PAST_LIGHT_CONE_INTEGRATION.md) · [`OBSERVABLE_WALL.md`](../core/OBSERVABLE_WALL.md) · sister `data-pack-option0-internet.md`
 
----
-
-*End of real-data lensing forecast gate.*

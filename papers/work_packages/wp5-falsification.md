@@ -105,6 +105,3 @@ Is the seed Sorkin (ell_* = L_P)?
 > The empirical sister repository already succeeded as **limits and exclusions**. 
 > This theory programme succeeds either by a **derived** mesoscopic seed / hard open map that passes WP5, or by proving that no such path exists without undeclared free parameters — in which case the scientific answer is: *stochastic vacuum noise of Sorkin type is not telescope-measurable under soft dynamics.*
 
----
-
-*End of WP5.*

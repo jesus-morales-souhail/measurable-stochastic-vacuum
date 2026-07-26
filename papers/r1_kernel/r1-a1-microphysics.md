@@ -179,6 +179,3 @@ So A1 does **not** open a free \(g\sim 10^{2}\) window: BAO residual already for
 
 > A1 need not be an invented fifth force: averaging residuals, SDiff edge stress, and open-system influence functionals all generate effective \(g\chi\delta_m\)-like mixing; once granted, the sandwich fixes \(\ell_*\sim R_{\mathrm{nl}}\) and DESI bounds \(\lvert g\rvert\lesssim\mathcal{O}(1)\).
 
----
-
-*End of A1 microphysics map.*

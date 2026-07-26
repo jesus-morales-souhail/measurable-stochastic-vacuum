@@ -87,6 +87,3 @@ Still **not** a completed microphysical derivation.
 
 > The programme’s best open lead is “derive, blind, a reason for an 8–12 Mpc cell,” with P\(_\mathrm{nl}\) as the first principle-shaped attempt aimed at that decade — not a finished answer.
 
----
-
-*End of 8–12 Mpc decade steering note.*

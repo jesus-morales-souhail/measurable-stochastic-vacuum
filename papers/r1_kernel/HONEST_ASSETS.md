@@ -1,55 +1,35 @@
-# Honest assets: what we have vs “more data than anyone”
+# Scope of data and original analysis
 
-**Author:** Jesús Morales Souhail  
-**Date:** July 2026  
-**Status:** Reality check — **not** a marketing claim  
+Jesús Morales Souhail · July 2026
 
----
-
-## Short answer
-
-| Claim | True? |
-|:------|:------|
-| We have **more raw DESI photons / proprietary survey data** than DESI/Euclid teams | **No** |
-| We have **unique unpublished universe measurements** nobody else can access | **No** |
-| We have an **unusually complete integrated programme** (data null + walls + scale theorem + \(g\) + falsifiers + mock pipeline) on **public** data | **Yes — that is the real power** |
-| Information is power | **Yes, if it is organised, honest, and publishable** — not if it is a pile of files |
+This note states what is public and what is original to the programme, so that claims are not overstated.
 
 ---
 
-## What is public (not exclusive)
+## Public inputs
 
-- DESI DR2 BAO means and covariances (Zenodo / collaboration releases).  
-- Planck-class \(\sigma_8\), \(P(k)\) ingredients.  
-- Literature on Buchert, slip, Stage-IV forecasts.
+The DESI DR2 BAO summary statistics and covariances used in the companion repository are public products (collaboration releases / Zenodo packages). Cosmological parameters entering the matter power spectrum (\(\sigma_8\), \(\Omega_m\), \(n_s\), \(h\)) are standard Planck-class values. Background literature on averaging, gravitational slip, and Stage-IV forecasts is cited where used.
 
-Anyone with internet can download the same BAO tables.
+There is no proprietary access to raw DESI spectra or to collaboration-internal chains beyond what is publicly distributed.
 
 ---
 
-## What is **ours** (intellectual capital)
+## Original contributions of the programme
 
-1. **Empirical discipline:** residual OU/QNM analysis + \(\sigma_X\) ceiling + amplification gap (sister repo).  
-2. **Closed walls with numbers:** no free \(10^{56}\); no \(H_0\) from residual; no Andromeda = \(\ell_*\).  
-3. **Conditional uniqueness theorem:** \(\ell_*\sim R_{\mathrm{nl}}\) under A0–A4.  
-4. **Geometry:** \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\), mask \(r_e\), BBKS \(R_*\).  
-5. **Coupling:** \(g_{\mathrm{eff}}\sim\mathcal{O}(1)\) from \(Q\) proxy; DESI a posteriori.  
-6. **Pre-registered T2** + **end-to-end mock PASS**.  
-7. **Three-repo hygiene:** data / theory / quarantine separated.  
-8. **Tests:** automated gate (`pytest`) locking identities.
+The following are constructed in this repository and its empirical sister repository, on top of those public inputs:
 
-That combination, written cleanly and without self-deception, is **rare for an independent programme**.  
-It is **not** the same as owning more telescope data than the collaborations.
+1. Residual analysis under an OU/QNM kernel and the resulting ceiling \(\sigma_X<1.5\times 10^{-4}\) (95% CL), together with the soft-amplification gap for a pure Sorkin seed.  
+2. Explicit exclusion of the residual sector as an explanation of the \(\sim 8\%\) Hubble tension at DESI-safe amplitude.  
+3. The conditional uniqueness argument \(\ell_*\sim R_{\mathrm{nl}}\) under axioms A0–A4.  
+4. Numerical evaluation of \(R_{\mathrm{nl}}\), mask correlation lengths, and packing scales.  
+5. An order-of-magnitude estimate of \(g_{\mathrm{eff}}\) from a Gaussian averaging proxy, compared a posteriori to the DESI residual ceiling.  
+6. Pre-registered residual–structure tests and a synthetic end-to-end mock of those estimators.  
+7. Separation of empirical claims, theory notes, and exploratory material into distinct repositories, with automated tests on kinematic identities.
 
----
-
-## Correct power statement
-
-> **Power = organised truth on public data + falsifiable structure.**  
-> Not: secret data.  
-> Not: forced \(H_0\).  
-> Yes: a map others would take months to rebuild, already measured walls, and a test protocol ready for Stage-IV.
+These items constitute an organised analysis programme, not exclusive ownership of survey data.
 
 ---
 
-*End of honest assets.*
+## Implication for publication
+
+Results should be presented as independent research on public data with stated axioms and falsifiers. They should not be described as privileged access to DESI or as a detection of residual dark energy.
