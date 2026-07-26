@@ -43,6 +43,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5f | [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md) | **H0 running + time-delay multi-path** vs open kernel (bridge only) |
 | 5g | [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md) | **Toy $\delta D/D$: stochastic short of H0 tension by $\times 16$–$38$** |
 | 5h | [`h0-desqueezing-filter.md`](h0-desqueezing-filter.md) | **Reject invented $H_0(z)$ + hand-tuned $\theta$; $\sigma_X\ll 9\%$** |
+| 5i | [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md) | **$r_0(L_*)$ / $n^{-1/3}$ vs NP-A: no independent hit** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 

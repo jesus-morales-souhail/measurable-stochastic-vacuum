@@ -323,6 +323,28 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestEllStarR0Peculiar:
+    """NEW: r0(L*) is far above NP-A; not a re-print of Andromeda."""
+
+    def test_r0_Lstar_above_npa(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from ell_star_r0_peculiar import hinv_to_mpc, R0_LSTAR_LO, R0_LSTAR_HI  # noqa: E402
+
+        npa = ell_mpc_for_sigma(1e-5, 3)
+        r0_lo = hinv_to_mpc(R0_LSTAR_LO)
+        r0_hi = hinv_to_mpc(R0_LSTAR_HI)
+        assert r0_lo > 3 * npa
+        assert r0_hi > 3 * npa
+        assert 7.0 < r0_lo < 8.0
+        assert 8.0 < r0_hi < 10.0
+
+    def test_n_inv3_not_npa(self):
+        from ell_star_r0_peculiar import hinv_to_mpc, N_INV3  # noqa: E402
+
+        npa = ell_mpc_for_sigma(1e-5, 3)
+        assert abs(hinv_to_mpc(N_INV3) / npa - 1.0) > 1.0
+
+
 class TestEllStarExternalScales:
     """Andromeda/Virgo are not independent confirmation of NP-A."""
 

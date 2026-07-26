@@ -203,6 +203,8 @@ Until (1)–(2) exist, **S\(_8\) is not a claim of this repository**. The honest
 
 **External galaxy/cluster lengths (checked, not confirmed):** MW–Andromeda \(\sim 0.78\,\mathrm{Mpc}\) and Virgo radii \(\sim 1\)–\(1.8\,\mathrm{Mpc}\) do **not** independently confirm NP-A \(\ell_*\approx 2.06\,\mathrm{Mpc}\). Re-labelling NP-A as “typical galaxy separation” is circular. See [`ell-star-external-scales.md`](ell-star-external-scales.md).
 
+**Independent clustering lengths (new):** \(r_0(L_*)\sim 5\)–\(6\,h^{-1}\mathrm{Mpc}\approx 7.4\)–\(8.9\,\mathrm{Mpc}\) and \(n_*^{-1/3}\sim 6.9\,\mathrm{Mpc}\) are **factor \(\sim 3.5\)–\(4\)** above NP-A — not a hit. See [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md).
+
 ---
 
 ## 7. Illegal moves (BOUNDARY)
