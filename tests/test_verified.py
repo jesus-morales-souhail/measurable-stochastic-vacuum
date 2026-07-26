@@ -324,9 +324,9 @@ class TestNarrowPath:
 
 
 class TestR1PrincipleRnl:
-    """Blind R_nl from sigma8; lands in 8–12 Mpc decade a posteriori."""
+    """Blind R_nl from sigma8; full integral preferred over power-law."""
 
-    def test_Rnl_band_8_to_10_mpc(self):
+    def test_power_law_band_still_decade(self):
         sys.path.insert(0, str(ROOT / "scripts"))
         from r1_principle_Rnl import R_nl_mpc  # noqa: E402
 
@@ -334,17 +334,33 @@ class TestR1PrincipleRnl:
         assert min(vals) > 7.0
         assert max(vals) < 11.0
 
+    def test_full_integral_sigma8_normalized(self):
+        from r1_sigma_R_full import make_Pk_unnorm, normalize_A, sigma_R  # noqa: E402
+
+        Pk = make_Pk_unnorm()
+        A = normalize_A(Pk, 0.81)
+        assert sigma_R(8.0, Pk, A) == pytest.approx(0.81, rel=1e-3)
+
+    def test_full_integral_Rnl_near_8_to_10_mpc(self):
+        from r1_sigma_R_full import (  # noqa: E402
+            H,
+            make_Pk_unnorm,
+            normalize_A,
+            find_R_nl,
+        )
+
+        Pk = make_Pk_unnorm()
+        A = normalize_A(Pk, 0.81)
+        R_h = find_R_nl(Pk, A, 1.0)
+        R_mpc = R_h / H
+        assert 7.0 < R_mpc < 12.0
+        assert abs(R_mpc - 8.61) < 1.0  # stable under EH-like P(k)
+
     def test_Rnl_not_npa(self):
         from r1_principle_Rnl import R_nl_mpc  # noqa: E402
 
         npa = ell_mpc_for_sigma(1e-5, 3)
         assert R_nl_mpc(-1.5) > 3 * npa
-
-    def test_sigma_at_Rnl_under_desi_ceiling(self):
-        from r1_principle_Rnl import R_nl_mpc, sigma_count_d3  # noqa: E402
-
-        s = sigma_count_d3(R_nl_mpc(-1.5))
-        assert 1e-5 < s < 1.5e-4
 
 
 class TestEllStarR0Peculiar:

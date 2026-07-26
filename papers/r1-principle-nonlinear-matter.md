@@ -2,30 +2,31 @@
 
 **Author:** Jesús Morales Souhail  
 **Date:** July 2026  
-**Status:** Hypothesis class with **a priori** length prediction — **not** a completed microphysical derivation  
-**Code:** [`scripts/r1_principle_Rnl.py`](../scripts/r1_principle_Rnl.py)  
+**Status:** Physical **hypothesis** + refined length calculation — **not** a derivation from an action  
+**Code:** [`scripts/r1_sigma_R_full.py`](../scripts/r1_sigma_R_full.py) (full \(\sigma(R)\)) · [`scripts/r1_principle_Rnl.py`](../scripts/r1_principle_Rnl.py) (power-law shortcut only)  
 **Steering:** [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md) · [`r1-open-kernel.md`](r1-open-kernel.md)
 
 ---
 
 ## Abstract
 
-We state a **blind** candidate principle for the open R1 kernel (written so the length is fixed by **matter** physics, not by DESI residual targets):
+We state a **blind** candidate *hypothesis* (not an action principle) for the open R1 kernel:
 
-> **(P\(_\mathrm{nl}\))** The effective counting / correlation cell \(\ell_*\) of the stochastic DE residual sector is the scale at which **matter** density fluctuations become order unity,
-> \[
-> \sigma(R_{\mathrm{nl}})=1,
-> \]
-> because that is the scale where collapsed structure can source decoherence, residual grain, or projection for a vacuum sector coupled to matter.
+> **(P\(_\mathrm{nl}\))** The effective counting / correlation cell \(\ell_*\) of the stochastic DE residual sector is the scale at which **matter** density fluctuations become order unity, \(\sigma(R_{\mathrm{nl}})=1\), *if* residual grain / decoherence is sourced where structure collapses.
 
-Using only standard cosmological inputs (\(\sigma_8\), local spectral index \(n_{\mathrm{eff}}\), \(H_0\)) — **not** \(\sigma_X\), not \(r_0\), not a DESI fit — one obtains
-\[
-R_{\mathrm{nl}}\sim 5\text{–}6.5\,h^{-1}\mathrm{Mpc}
-\approx 8\text{–}10\,\mathrm{Mpc}
-\quad(h=0.674,\ \sigma_8\simeq 0.81).
-\]
-**A posteriori:** this lands in the same 8–12 Mpc decade as \(R_8\), \(r_0(L_*)\), and the DESI-ceiling \(d=3\) counting cell.  
-**Not claimed:** a Lagrangian derivation of vacuum–matter decoherence; that \(\ell_*=R_{\mathrm{nl}}\) is proven; that \(H_0\) tension is solved.
+**Honest split:**
+
+1. **Hypothesis (unproven):** vacuum residual grain \(\leftrightarrow\) matter nonlinear patch. This is a physical conjecture, **not** derived from a Lagrangian or open-system calculation of decoherence.  
+2. **Geometry of \(R_{\mathrm{nl}}\):** once P\(_\mathrm{nl}\) is *assumed*, \(R_{\mathrm{nl}}\) is a standard matter observable. The **honest** evaluation is the full integral
+   \[
+   \sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),
+   \]
+   with a \(\Lambda\)CDM-like \(P(k)\) normalized to \(\sigma_8\), **not** only a single-index power-law shortcut \(\sigma(R)\propto R^{-(n_{\mathrm{eff}}+3)/2}\).
+
+Full integral (this repo): \(R_{\mathrm{nl}}\approx 5.80\,h^{-1}\mathrm{Mpc}\approx\mathbf{8.61\,\mathrm{Mpc}}\) (\(\sigma_8=0.81\), \(h=0.674\)).  
+Power-law shortcut: \(\sim 7.8\)–\(9.6\,\mathrm{Mpc}\) (same decade; coarser).  
+**A posteriori:** near \(r_0(L_*)\); same decade as \(R_8\) and DESI-ceiling \(d=3\) cell.  
+**Not claimed:** derivation of decoherence; \(\ell_*=R_{\mathrm{nl}}\) proven; \(H_0\) tension solved.
 
 ---
 
@@ -35,9 +36,10 @@ R_{\mathrm{nl}}\sim 5\text{–}6.5\,h^{-1}\mathrm{Mpc}
 
 1. Matter clustering becomes **nonlinear** on a characteristic comoving scale \(R_{\mathrm{nl}}\) defined by the variance of the linear density field in a top-hat (or equivalent) filter: \(\sigma(R_{\mathrm{nl}})=1\).  
 2. That scale is fixed by the **observed** \(\sigma_8\) (amplitude at \(8\,h^{-1}\mathrm{Mpc}\)) and the shape of \(P(k)\) near that pivot — both are **matter / growth** data, not DE residual likelihoods.  
-3. **Hypothesis:** the DE residual sector does not count Planck cells; it inherits a grain set by the **matter nonlinear patch**, because residual isotropy / SDiff leakage / decoherence is tied to collapsed structure (edge / grain language of the programme).
+3. **Hypothesis (not derived):** the DE residual sector does not count Planck cells; it inherits a grain set by the **matter nonlinear patch**, *if* residual isotropy / SDiff leakage / decoherence is tied to collapsed structure.  
+   **Missing step:** an explicit decoherence or effective-action calculation that *forces* \(\ell_*=R_{\mathrm{nl}}\) rather than merely allowing it.
 
-This is a **principle class**, not a free dial: once \(\sigma_8\) and \(P(k)\) are fixed, \(R_{\mathrm{nl}}\) is fixed.
+Once P\(_\mathrm{nl}\) is *assumed*, \(R_{\mathrm{nl}}\) is fixed by \(\sigma_8\) and \(P(k)\) — that part is geometry, not a free dial. The *identification* \(\ell_*=R_{\mathrm{nl}}\) remains the open physical claim.
 
 ### 1.2 What is *not* input
 
@@ -50,61 +52,69 @@ This is a **principle class**, not a free dial: once \(\sigma_8\) and \(P(k)\) a
 
 ---
 
-## 2. A priori calculation
+## 2. A priori calculation of \(R_{\mathrm{nl}}\) (geometry only)
 
-### 2.1 Local power-law map (standard OOM)
+### 2.1 Full integral (primary, honest)
 
-Near the \(8\,h^{-1}\mathrm{Mpc}\) pivot,
+\[
+\sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),\qquad
+\Delta^2(k)=\frac{k^3 P(k)}{2\pi^2},\qquad
+W_{\mathrm{TH}}(x)=\frac{3(\sin x-x\cos x)}{x^3}.
+\]
+
+\(P(k)=A\,k^{n_s}T^2(k)\) with Eisenstein–Hu–style transfer (shape \(\Gamma_{\mathrm{eff}}\)), \(n_s=0.965\), \(\Omega_m=0.315\), \(\Omega_b=0.049\), \(h=0.674\), normalized so \(\sigma(8\,h^{-1}\mathrm{Mpc})=\sigma_8=0.81\). Solve \(\sigma(R_{\mathrm{nl}})=1\).
+
+| Result | Value |
+|:-------|:------|
+| \(R_{\mathrm{nl}}\) | \(\mathbf{5.803\,h^{-1}\mathrm{Mpc}=\mathbf{8.610\,\mathrm{Mpc}}}\) |
+| Downstream \(\sigma=(\ell_*/L_H)^{3/2}\) if \(\ell_*=R_{\mathrm{nl}}\), \(d=3\) | \(\approx 8.5\times 10^{-5}\) (under DESI ceiling \(1.5\times 10^{-4}\)) |
+
+```bash
+python scripts/r1_sigma_R_full.py
+```
+
+**Caveat on \(P(k)\):** this is a fitting-function transfer, not CAMB/CLASS Boltzmann output. Good enough to retire the single-index shortcut; a CAMB-normalized run is a further refinement, not expected to move \(R_{\mathrm{nl}}\) out of the few–ten Mpc class for this cosmology.
+
+### 2.2 Local power-law shortcut (secondary, coarser)
+
+Near the \(8\,h^{-1}\mathrm{Mpc}\) pivot only,
 \[
 \sigma(R)\approx\sigma_8\left(\frac{R_8}{R}\right)^{\alpha},\qquad
-\alpha=\frac{n_{\mathrm{eff}}+3}{2},\qquad R_8\equiv 8\,h^{-1}\mathrm{Mpc}.
-\]
-Require \(\sigma(R_{\mathrm{nl}})=1\):
-\[
+\alpha=\frac{n_{\mathrm{eff}}+3}{2}
+\quad\Rightarrow\quad
 R_{\mathrm{nl}}=R_8\,\sigma_8^{1/\alpha}.
 \]
 
-**Inputs (matter sector, Planck-class OOM):**
+| \(n_{\mathrm{eff}}\) | \(R_{\mathrm{nl}}\) [Mpc] |
+|:---------------------|:------------------------|
+| \(-2.0\) | \(7.79\) |
+| \(-1.5\) | \(8.96\) |
+| \(-1.0\) | \(9.61\) |
 
-| Quantity | Value | Role |
-|:---------|:------|:-----|
-| \(\sigma_8\) | \(0.81\) | amplitude of matter fluctuations |
-| \(n_{\mathrm{eff}}\) | \(-2.0\) to \(-1.0\) (local slope OOM) | shape near nonlinear pivot |
-| \(h\) | \(0.674\) (\(H_0=67.4\)) | unit conversion only |
-
-### 2.2 Predicted band (code)
-
-| \(n_{\mathrm{eff}}\) | \(\alpha\) | \(R_{\mathrm{nl}}\) [\(h^{-1}\) Mpc] | \(R_{\mathrm{nl}}\) [Mpc] |
-|:---------------------|:-----------|:-------------------------------------|:------------------------|
-| \(-2.0\) | \(0.50\) | \(5.25\) | \(7.79\) |
-| \(-1.5\) | \(0.75\) | \(6.04\) | \(8.96\) |
-| \(-1.0\) | \(1.00\) | \(6.48\) | \(9.61\) |
-
-**Blind prediction:** \(\ell_*\sim R_{\mathrm{nl}}\sim \mathbf{8\text{–}10\,\mathrm{Mpc}}\) (central band).
+Agrees with the full integral **at the decade level**; the full integral is the preferred number (\(8.61\,\mathrm{Mpc}\)).
 
 ```bash
-python scripts/r1_principle_Rnl.py
+python scripts/r1_principle_Rnl.py   # shortcut only
 ```
 
 ---
 
 ## 3. A posteriori comparison (after the prediction)
 
-| Quantity | Value [Mpc] | Relation to \(R_{\mathrm{nl}}\sim 8\)–\(10\) |
-|:---------|:------------|:---------------------------------------------|
-| \(R_{\mathrm{nl}}\) (this principle) | \(8\)–\(10\) | **prediction** |
-| \(r_0(L_*)\) (Zehavi class) | \(7.4\)–\(8.9\) | same decade; clustering length, not identical object |
-| \(R_8=8/h\) | \(11.87\) | pivot of \(\sigma_8\); adjacent |
-| DESI-ceiling cell \(d=3\), \(\sigma=1.5\times 10^{-4}\) | \(12.56\) | counting inverse a posteriori |
-| NP-A cell \(\sigma=10^{-5}\), \(d=3\) | \(2.06\) | **different** aspirational row — not the lead |
+| Quantity | Value [Mpc] | Relation to full \(R_{\mathrm{nl}}\approx 8.61\) |
+|:---------|:------------|:------------------------------------------------|
+| \(R_{\mathrm{nl}}\) full integral | \(8.61\) | **prediction (geometry under P\(_\mathrm{nl}\))** |
+| \(r_0(L_*)\) (Zehavi class) | \(7.4\)–\(8.9\) | very close; clustering length ≠ variance scale |
+| \(R_8=8/h\) | \(11.87\) | same decade (\(\sim 38\%\) larger) |
+| DESI-ceiling cell \(d=3\), \(\sigma=1.5\times 10^{-4}\) | \(12.56\) | same decade; counting inverse a posteriori |
+| NP-A cell \(\sigma=10^{-5}\), \(d=3\) | \(2.06\) | **different** row — not the lead |
 
-**Downstream residual if \(\ell_*=R_{\mathrm{nl}}\approx 9\,\mathrm{Mpc}\), \(d=3\):**
+**Downstream residual if \(\ell_*=R_{\mathrm{nl}}^{\mathrm{(full)}}\approx 8.61\,\mathrm{Mpc}\), \(d=3\):**
 \[
 \sigma_{0,\mathrm{eff}}=\Bigl(\frac{\ell_*}{L_H}\Bigr)^{3/2}
-\approx\Bigl(\frac{9}{4448}\Bigr)^{3/2}
-\sim 9\times 10^{-5},
+\approx 8.5\times 10^{-5},
 \]
-which sits **under** the sister DESI ceiling \(1.5\times 10^{-4}\) and in the residual decade — a **compatibility** check, not a fit.
+under the sister DESI ceiling \(1.5\times 10^{-4}\) — **compatibility**, not a fit.
 
 ---
 
@@ -117,7 +127,8 @@ which sits **under** the sister DESI ceiling \(1.5\times 10^{-4}\) and in the re
 | Derived \(\ell_*=R_{\mathrm{nl}}\) but BAO residual \(\gg 1.5\times 10^{-4}\) without damping | Tension with sister bound |
 | Only way to hit data is to retune \(R_{\mathrm{nl}}\) after seeing DESI | **Illegal** — reject under BOUNDARY |
 
-**Still missing for a full theory claim:** an explicit map from “matter nonlinear patch” to the OU residual operator / SDiff grain (decoherence calculation, not a slogan).
+**Still missing for a full theory claim (the user’s correct objection):**  
+an explicit calculation — from an action, open-system master equation, or equivalent — showing *why* the vacuum residual grain **must** sit at \(R_{\mathrm{nl}}\) rather than \(L_P\), \(r_0\), or another IR scale. Until that exists, P\(_\mathrm{nl}\) is a **motivated hypothesis with a clean length**, not a derivation.
 
 ---
 
@@ -134,22 +145,24 @@ Scope if successful: residual \(\sigma_X\) and path slip RMS \(10^{-4}\)–\(10^
 
 | ID | Claim | Status |
 |:---|:------|:-------|
-| P1 | Principle P\(_\mathrm{nl}\) stated without DESI \(\sigma_X\) as input | this note |
-| P2 | \(R_{\mathrm{nl}}=R_8\sigma_8^{1/\alpha}\) band \(\sim 8\)–\(10\,\mathrm{Mpc}\) | arithmetic + script |
-| P3 | A posteriori overlap with \(r_0\), \(R_8\), ceiling cell decade | comparison |
-| P4 | \(\sigma(\ell_*=9\,\mathrm{Mpc},d=3)\sim 10^{-4}\) under ceiling | arithmetic |
+| P1 | Hypothesis P\(_\mathrm{nl}\) stated without DESI \(\sigma_X\) as input | this note |
+| P2 | Full \(\sigma(R)\) integral \(\Rightarrow R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) | `r1_sigma_R_full.py` |
+| P3 | Power-law shortcut is same decade, coarser | `r1_principle_Rnl.py` |
+| P4 | A posteriori overlap with \(r_0\), \(R_8\), ceiling cell decade | comparison |
+| P5 | \(\sigma(\ell_*=R_{\mathrm{nl}},d=3)\sim 8.5\times 10^{-5}\) under ceiling | arithmetic |
 
 | Non-claim | |
 |:----------|:--|
-| N-P1 | Microscopic derivation of vacuum decoherence at \(R_{\mathrm{nl}}\) |
+| N-P1 | Derivation from an action / master equation that *forces* \(\ell_*=R_{\mathrm{nl}}\) |
 | N-P2 | \(\ell_*=R_{\mathrm{nl}}\) proven |
 | N-P3 | \(H_0\) tension explained |
+| N-P4 | EH transfer = final CAMB-precision \(P(k)\) |
 
 ---
 
 ## 7. One-sentence status
 
-> A blind matter-only definition \(R_{\mathrm{nl}}\) with \(\sigma(R_{\mathrm{nl}})=1\) predicts \(\sim 8\)–\(10\,\mathrm{Mpc}\); that is the first principle-shaped candidate aimed at the 8–12 Mpc decade, still short of a full derivation, now open to the same audit as every prior attempt.
+> P\(_\mathrm{nl}\) remains a **hypothesis** (decoherence at collapse), not an action principle; the length \(R_{\mathrm{nl}}\) is now computed with a **full top-hat \(\sigma(R)\) integral** (\(\approx 8.61\,\mathrm{Mpc}\)), retiring the single-index power-law as the primary number while keeping it as a cross-check.
 
 ---
 
