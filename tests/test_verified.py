@@ -323,6 +323,33 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestH0BridgeToy:
+    """A priori path-bias toy: stochastic short of H0 tension."""
+
+    def test_stochastic_ratio_near_one(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from h0_bridge_toy import ELL_NPA, ratio_local_to_deep  # noqa: E402
+
+        r = ratio_local_to_deep(ELL_NPA, mode="S")
+        assert 1.0 < r < 1.02  # O(0.1–1%), not 8%
+
+    def test_beta_needed_exceeds_wall_slip(self):
+        from h0_bridge_toy import ELL_NPA, S_LOC, beta_needed_for_ratio  # noqa: E402
+
+        beta = beta_needed_for_ratio(ELL_NPA, mode="S")
+        assert beta / S_LOC > 10
+
+    def test_shape_increases_through_running_window(self):
+        from h0_bridge_toy import shape_norm  # noqa: E402
+
+        assert shape_norm(0.3) < shape_norm(0.5) < shape_norm(0.7)
+
+    def test_ell_fixed_a_priori_npa(self):
+        from h0_bridge_toy import ELL_NPA  # noqa: E402
+
+        assert 1.5 < ELL_NPA < 3.0
+
+
 class TestH0RunningGeometry:
     """H0 ratio + z_eq + path counts (no H0 fit)."""
 

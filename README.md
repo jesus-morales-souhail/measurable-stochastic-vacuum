@@ -23,6 +23,7 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 | **5d** | [`papers/inflation-spectator-seed-gordon-wands.md`](papers/inflation-spectator-seed-gordon-wands.md) | **Spectator DE seed (Gordon & Wands; factor ∼45)** |
 | **5e** | [`papers/inflation-spectator-residual-atlas.md`](papers/inflation-spectator-residual-atlas.md) | **Modern $r\to$ residual band atlas (the crack)** |
 | **5f** | [`papers/h0-running-brachistochrone-bridge.md`](papers/h0-running-brachistochrone-bridge.md) | **H0 running + multi-path light (bridge to open kernel)** |
+| **5g** | [`papers/h0-bridge-toy-map.md`](papers/h0-bridge-toy-map.md) | **Toy path bias: stochastic short of H0 tension** |
 | **6** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
 
 ```bash

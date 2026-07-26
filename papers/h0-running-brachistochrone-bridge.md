@@ -150,12 +150,12 @@ This is the same pattern as R1d \(\leftrightarrow R_8\): **shared scale language
 
 ---
 
-## 7. Next honest steps (if pursued)
+## 7. Next honest steps
 
-1. **External:** freeze a public H0-running table (Dainotti bins / Krishnan compilations) as CSV with arXiv tags — no re-fit.  
-2. **Internal:** toy operator \(\delta D(z)/D(z)=f(\sqrt{\chi/\ell_*})\) with \(\ell_*\) from R1 landscape **fixed a priori**, then compare shape to published trend (a posteriori).  
-3. **Joint:** same \(\ell_*\) must also obey sister \(\sigma_X\) and path-RMS wall.  
-4. **Experiment:** more TDCOSMO systems + SN binning with pre-registered bins (kill look-elsewhere).
+1. **Done:** toy \(\delta D/D=s\sqrt{\chi/\ell_*}\) with \(\ell_*\) a priori — [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md). **Verdict:** DESI-safe stochastic amplitude **short** of the \(8\%\) H0 gap by \(\times 16\)–\(38\).  
+2. **External:** freeze a public H0-running table (Dainotti bins / Krishnan) as CSV with arXiv tags — no re-fit.  
+3. **Joint:** any future coherent-like map must still obey sister \(\sigma_X\).  
+4. **Experiment:** more TDCOSMO systems + SN binning with pre-registered bins.
 
 ---
 

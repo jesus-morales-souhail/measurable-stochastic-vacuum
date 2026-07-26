@@ -23,6 +23,7 @@ WP notes are expansions, not independent hard-claim sources.
 | — | Inflation spectator seed (G&W 2005) | **Revalidated (literature door)** | [`inflation-spectator-seed-gordon-wands.md`](../papers/inflation-spectator-seed-gordon-wands.md) |
 | — | Spectator → residual OOM atlas | **Done (OOM; map to BAO open)** | [`inflation-spectator-residual-atlas.md`](../papers/inflation-spectator-residual-atlas.md) |
 | — | H0 running / multi-path bridge | **Done (literature+geometry; no H0 fit)** | [`h0-running-brachistochrone-bridge.md`](../papers/h0-running-brachistochrone-bridge.md) |
+| — | H0 toy $\delta D/D$ map | **Done (stochastic fails 8% gap)** | [`h0-bridge-toy-map.md`](../papers/h0-bridge-toy-map.md) |
 
 ---
 

@@ -41,6 +41,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5d | [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md) | **Gordon & Wands spectator seed** (factor $\sim 45$, not $10^{56}$) |
 | 5e | [`inflation-spectator-residual-atlas.md`](inflation-spectator-residual-atlas.md) | **Modern $r\to\sigma_\rho$ atlas** — residual-band windows without $10^{56}$ |
 | 5f | [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md) | **H0 running + time-delay multi-path** vs open kernel (bridge only) |
+| 5g | [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md) | **Toy $\delta D/D$: stochastic short of H0 tension by $\times 16$–$38$** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
@@ -137,6 +138,7 @@ $$
 | C12 | Path RMS (NP-A/B) vs published Maus/Sakr/DESI-MG errors: mean slip still $\sim 10$–$25\times$ above NP-B | `lensing-rms-forecast-real-data.md` + script + tests |
 | C13 | Gordon & Wands: seed $H_{\mathrm{inf}}/2\pi$; growth factor $\sim 45$ (not $10^{56}$); distinct from Sorkin soft gap | `inflation-spectator-seed-gordon-wands.md` + `gordon_wands_factor45.py` |
 | C14 | At $r\sim 0.036$, $\delta Q/M_p\sim 3\times 10^{-6}$; with $A\sim 45$, $\varepsilon_Q\sim 0.05$ get $\sigma_\rho\sim\mathrm{few}\times 10^{-5}$ (OOM) | `inflation-spectator-residual-atlas.md` + script + tests |
+| C15 | DESI-safe path-RMS toy: $H_0(0.15)/H_0(1.5)\approx 1.006$, not $1.083$; $\beta$ short $\times 16$–$38$ | `h0-bridge-toy-map.md` + script + tests |
 
 ### 4.2 Non-claims
 
@@ -156,6 +158,7 @@ $$
 | N12 | Gordon & Wands (2005) is **not** “the same $10^{56}$ wall”; factor $\sim 45$ for **their** target; **not** automatic DESI claim |
 | N13 | Atlas windows $(r,A,\varepsilon_Q)$ are **not** DESI fits; $\sigma_\rho\not\equiv\sigma_X$ without map |
 | N14 | Brachistochrone / H0-running note does **not** solve Hubble tension or derive $\ell_*$ |
+| N15 | Coherent $\delta D/D\propto N$ is **not** a legal H0 fix under programme amplifier discipline |
 
 ---
 
