@@ -1,0 +1,21 @@
+REAL DATA: Cosmicflows-4 block-net (matter peculiar velocities)
+Source: Tully et al. 2023, ApJ 944, 94  CDS J/ApJ/944/94 table2.dat
+H0 for v_pec = Vcmb - H0*d : 75.0 km/s/Mpc (CF convention, not fitted)
+N galaxies (cuts): 18011
+v_pec rms (global): 1608.1 km/s  (jackknife subsample rms std 4.4)
+
+Block side L | N_blocks | sigma(v_block) | v_H(L)=H0*L | eta=sig/vH | r_e (1/e)
+   5.0 |   888 |    899.4 |    375.0 |  2.40 |    6.6
+  10.0 |  1878 |   1041.7 |    750.0 |  1.39 |    8.8
+  15.0 |  1821 |   1129.8 |   1125.0 |  1.00 |   10.7
+  20.0 |  1295 |   1141.1 |   1500.0 |  0.76 |   19.0
+  30.0 |   635 |    993.7 |   2250.0 |  0.44 |   30.5
+  40.0 |   360 |   1057.5 |   3000.0 |  0.35 |   39.2
+
+Definitions:
+  v_pec = Vcmb - H0*d   (line-of-sight residual vs pure Hubble at fixed H0)
+  eta = rms(block-mean v_pec) / (H0*L)  — gravity/peculiar vs expansion at scale L
+  r_e = separation where block-mean velocity correlation falls to 1/e
+
+Non-claims: not DE residual; not Omega; not H0 solution; no free dials.
+Wrote /home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/measurable-stochastic-vacuum/results/r1_real_velocity_net/cf4_block_net.json

@@ -63,6 +63,7 @@ pytest -q
 | 14 | [`r1_kernel/r1-counting-principle.md`](r1_kernel/r1-counting-principle.md) | counting landscape |
 | 15 | [`r1_kernel/FRONTIER_INQUIRY.md`](r1_kernel/FRONTIER_INQUIRY.md) | what I work on next |
 | 16 | [`r1_kernel/HONEST_ASSETS.md`](r1_kernel/HONEST_ASSETS.md) | public data vs my analysis |
+| 17 | [`r1_kernel/r1-real-velocity-block-net.md`](r1_kernel/r1-real-velocity-block-net.md) | Cosmicflows-4 block net (real \(v_{\mathrm{pec}}\)) |
 
 | Number I keep quoting | Value |
 |:----------------------|:------|
