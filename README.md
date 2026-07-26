@@ -19,6 +19,7 @@ When can late-time stochastic vacuum / dark-energy noise be telescope-measurable
 | **4** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | Documented results only (unit-tested) |
 | **5** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
 | **5b** | [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) | **Walls vs open kernel** (R1 load-bearing gap) |
+| **5b′** | [`papers/r1-scale-decade-8-12.md`](papers/r1-scale-decade-8-12.md) | **Lead: 8–12 Mpc decade ($r_0$, $R_8$, DESI ceil)** |
 | **5c** | [`papers/lensing-rms-forecast-real-data.md`](papers/lensing-rms-forecast-real-data.md) | **RMS vs Maus / Sakr / DESI MG (real data)** |
 | **5d** | [`papers/inflation-spectator-seed-gordon-wands.md`](papers/inflation-spectator-seed-gordon-wands.md) | **Spectator DE seed (Gordon & Wands; factor ∼45)** |
 | **5e** | [`papers/inflation-spectator-residual-atlas.md`](papers/inflation-spectator-residual-atlas.md) | **Modern $r\to$ residual band atlas (the crack)** |

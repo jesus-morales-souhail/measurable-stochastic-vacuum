@@ -196,14 +196,14 @@ A publishable link would require at least:
 
 Until (1)–(2) exist, **S\(_8\) is not a claim of this repository**. The honest status is: two open questions may share a scale; they do not yet share a theory.
 
-**Sharpened open question (not an answer):**  
-*If a mesoscopic DE counting grain exists, why does its \(d=3\) inverse at residual-band amplitudes sit so close to the scale where an unresolved growth tension already lives — and why does that proximity fail for \(d\neq 3\)?*
+**Sharpened open question (updated steering):**  
+*Not* “what confirms NP-A \(2.06\,\mathrm{Mpc}\)” (external checks failed).  
+*Yes:* **what principle, stated blind, would predict a DE residual cell of order 8–12 Mpc?**  
+In that decade sit, independently: galaxy \(r_0(L_*)\sim 7.4\)–\(8.9\,\mathrm{Mpc}\), \(R_8\approx 11.9\,\mathrm{Mpc}\), and the DESI-ceiling \(d=3\) counting cell \(\approx 12.6\,\mathrm{Mpc}\). See [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md).
 
-**Adjacent literature bridge (not a derivation):** H0-running / time-delay multi-path probes also care about the **late, post-equality path** (\(z\sim 0.3\)–\(0.7\)). See [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md). Same discipline: shared scale class ≠ fitted solution of the Hubble tension.
+**Closed as confirmation of NP-A:** MW–Andromeda, Virgo, circular “2.01”, and \(r_0\equiv 2.06\). Notes: [`ell-star-external-scales.md`](ell-star-external-scales.md), [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md).
 
-**External galaxy/cluster lengths (checked, not confirmed):** MW–Andromeda \(\sim 0.78\,\mathrm{Mpc}\) and Virgo radii \(\sim 1\)–\(1.8\,\mathrm{Mpc}\) do **not** independently confirm NP-A \(\ell_*\approx 2.06\,\mathrm{Mpc}\). Re-labelling NP-A as “typical galaxy separation” is circular. See [`ell-star-external-scales.md`](ell-star-external-scales.md).
-
-**Independent clustering lengths (new):** \(r_0(L_*)\sim 5\)–\(6\,h^{-1}\mathrm{Mpc}\approx 7.4\)–\(8.9\,\mathrm{Mpc}\) and \(n_*^{-1/3}\sim 6.9\,\mathrm{Mpc}\) are **factor \(\sim 3.5\)–\(4\)** above NP-A — not a hit. See [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md).
+**Adjacent:** H0-running path depth — [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md). Shared late-time language ≠ \(H_0\) solution (amplitude short).
 
 ---
 

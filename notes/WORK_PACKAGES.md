@@ -76,13 +76,16 @@ L0–L4 failure levels; decision tree; checklist before any positive paper.
 
 ```
 Verified core (pytest)
- ──► R1a/b/c/d (mesoscopic cell principle)  OR  spectator inflation seed (H_inf, A, ε_Q)
- ──► map seed → BAO residual kernel / slip (still open for spectator)
- ──► a posteriori DESI / r / w_Q  (never fit dials to DESI)
+ ──► R1 principle for ell_* in the **8–12 Mpc decade** (r0, R8, DESI-ceil d=3 neighbours)
+      — not “confirm NP-A 2.06” (external checks failed)
+ ──► OR spectator inflation seed (H_inf, A, ε_Q)
+ ──► map seed → BAO residual / slip
+ ──► a posteriori DESI / r / w_Q  (never fit dials)
 ```
 
 Do **not** re-open soft amplification of Sorkin (measured walls).  
-Do **not** fit $\ell_*$, $A$, or $\varepsilon_Q$ to DESI or $R_8$/S$_8$.
+Do **not** fit $\ell_*$, $A$, or $\varepsilon_Q$ to DESI or $R_8$/S$_8$.  
+Do **not** re-label NP-A as galaxy separation.
 
 ---
 
