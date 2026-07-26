@@ -3,7 +3,7 @@
 This folder is where most of my recent work sits: what fixes $\ell_{\ast}$, how large $\sigma$ is, how $g$ is bounded, how one would test residual–structure correlation, and (separately) local **matter** kinematics from Cosmicflows-4.
 
 Start with [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md).  
-What can go in a paper draft: [`../PUBLISHABLE.md`](../PUBLISHABLE.md).
+If I wrote a short paper: [`../what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.md).
 
 ## Reading order I use
 

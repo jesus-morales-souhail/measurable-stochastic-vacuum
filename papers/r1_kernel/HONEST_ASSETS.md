@@ -3,8 +3,7 @@
 Jesús Morales Souhail · July 2026  
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-I write this so I do not oversell the programme — to myself or to anyone else.  
-See also [`../PUBLISHABLE.md`](../PUBLISHABLE.md) for what can go in a draft.
+I write this so I do not oversell the programme — to myself or to anyone else.
 
 ---
 

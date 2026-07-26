@@ -4,7 +4,7 @@ Jesús Morales Souhail · July 2026 · not peer reviewed
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
 If you just landed: [`../START_HERE.md`](../START_HERE.md).  
-**Publishable vs lab notes:** [`PUBLISHABLE.md`](PUBLISHABLE.md).
+If I wrote a short paper: [`what-i-would-put-in-a-paper.md`](what-i-would-put-in-a-paper.md).
 
 | Other repo | Role |
 |:-----------|:-----|
@@ -14,18 +14,6 @@ If you just landed: [`../START_HERE.md`](../START_HERE.md).
 ```bash
 pytest -q
 ```
-
----
-
-## Publishable stack (short)
-
-| Layer | Use in a draft | Entry |
-|:------|:---------------|:------|
-| **A — hard** | Results / methods you re-run | [`core/VERIFIED_RESULTS.md`](core/VERIFIED_RESULTS.md), CF4 notes below, sister $\sigma_X$ |
-| **B — conditional** | Model under A0–A4 + falsifiers | [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_uniqueness_residual_grain.md) |
-| **C — context** | Closed routes, pedagogy | [`closed_walls/`](closed_walls/), [`side_threads/`](side_threads/) |
-
-Full rules and skeleton: [`PUBLISHABLE.md`](PUBLISHABLE.md).
 
 ---
 

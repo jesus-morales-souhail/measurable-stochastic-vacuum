@@ -10,10 +10,10 @@ Can a late-time residual in dark energy (or the vacuum) be large enough for surv
 
 I do the data side in a sister repo. This one is the map of what is closed, what is still open, and the numbers that do not move when you re-run the tests.
 
-| Start here | |
-|:-----------|:--|
+| | |
+|:--|:--|
 | [`START_HERE.md`](START_HERE.md) | how to read the folder |
-| [`papers/PUBLISHABLE.md`](papers/PUBLISHABLE.md) | what can go in a draft (A/B/C layers) |
+| [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md) | if I wrote a short paper, what goes in |
 | [`papers/INDEX.md`](papers/INDEX.md) | full list of notes |
 | [`BOUNDARY.md`](BOUNDARY.md) | what this repo is not allowed to claim |
 
@@ -40,12 +40,11 @@ If `pytest` is green, the algebraic identities I rely on still hold.
 ## Layout
 
 ```
-papers/PUBLISHABLE.md  publishable vs lab notes
-papers/core/           things I treat as stable
+papers/core/           stable notes
 papers/r1_kernel/      residual scale, coupling, CF4 kinematics
 papers/closed_walls/   routes I already killed with numbers
-papers/side_threads/   useful digressions
-papers/work_packages/  longer WP notes
+papers/side_threads/   digressions
+papers/work_packages/  longer notes
 scripts/core|r1|closed|side
 tests/  results/  data/
 ```
@@ -59,10 +58,9 @@ Residual amplitude under counting: $\sigma=(\ell_{\ast}/L_H)^{3/2}$.
 
 If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) from the sister analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that and closed it on purpose.
 
-On **public Cosmicflows-4** I also measured local **matter** kinematics (block residual velocities and collapse-peak relief). That is context for gravity vs expansion near $R_{\mathrm{nl}}$. It is **not** a dark-energy residual map.
+On public Cosmicflows-4 I also looked at local **matter** kinematics (block residual velocities and collapse-peak relief). That is context for gravity vs expansion near $R_{\mathrm{nl}}$. It is **not** a dark-energy residual map.
 
-Main write-up: [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md).  
-Publishable map: [`papers/PUBLISHABLE.md`](papers/PUBLISHABLE.md).
+Main write-up: [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md).
 
 ```bash
 python scripts/r1/r1_sandwich_derivation.py

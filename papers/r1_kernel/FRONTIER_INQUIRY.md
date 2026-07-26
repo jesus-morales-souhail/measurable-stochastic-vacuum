@@ -74,8 +74,6 @@ Cosmicflows-4 block-net $\eta(L)$ and collapse-peak velocity relief
 That maps where gravity / peculiar motions compete with expansion near $R_{\mathrm{nl}}$.  
 It does **not** replace T2 (residual × structure still needs a residual map).
 
-Publishable packaging of the whole programme: [`../PUBLISHABLE.md`](../PUBLISHABLE.md).
-
 ---
 
 ## 4. Rules I keep

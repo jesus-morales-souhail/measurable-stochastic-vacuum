@@ -23,6 +23,6 @@ stochastic-de-exploratory-notes    wrong-scale pedagogy only
 | public CF4 **matter** kinematics (block net, collapse relief) | selling CF4 $V_{\mathrm{pec}}$ as a DE residual detection |
 | conditional uniqueness under named axioms | claiming SM realises $\chi$ without a derivation |
 
-Publishable layers (A hard / B conditional / C context): [`papers/PUBLISHABLE.md`](papers/PUBLISHABLE.md).
+If I wrote a short paper, what I would put in it: [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).
 
 For hard results I point people to [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md) and the CF4 notes when the claim is matter kinematics. Everything else is a note, a sketch, or a closed wall with a measured height.

@@ -61,7 +61,7 @@ I write these notes at home, one step at a time. If you are reading for the firs
 | 5r | [`r1-a1-microphysics.md`](../r1_kernel/r1-a1-microphysics.md) | **Microphysics map for $g\chi\delta_m$** |
 | 5s | [`r1-real-velocity-block-net.md`](../r1_kernel/r1-real-velocity-block-net.md) | **CF4 block net $\eta(L)$ — matter kinematics only** |
 | 5t | [`r1-collapse-relief.md`](../r1_kernel/r1-collapse-relief.md) | **CF4 collapse peaks + velocity relief — matter only** |
-| 5u | [`PUBLISHABLE.md`](../PUBLISHABLE.md) | **A/B/C layers: what can go in a draft** |
+| 5u | [`what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.md) | **What I would put in a short paper** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
