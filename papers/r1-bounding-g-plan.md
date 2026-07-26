@@ -192,13 +192,16 @@ With \(\kappa=1\), \(\sigma_{\mathrm{free}}=8.5\times 10^{-5}\), \(\lvert\lambda
 
 ---
 
-## 7. Immediate next engineering steps
+## 7. Engineering status
 
-1. **Now:** Stage 0 script (done) + freeze \(\lambda\leftrightarrow g\) convention.  
-2. **Next code:** sister-repo OU likelihood wrapper `logL(lambda)` with \(\sigma_{\mathrm{res}}(\lambda)=\sqrt{\sigma_{\mathrm{free}}^2+\lambda^2}\), \(\ell_*\) fixed.  
-3. **Then:** short MCMC / profile likelihood → \(\lambda_{95}\).  
-4. **Then:** push chains through slip OOM / Maus consistency.  
-5. **Optional:** cluster mask test with fixed \((R_{\mathrm{nl}},R_*,\lambda_{95})\).
+1. **Done:** Stage 0 OOM (`r1_bound_g_oom.py`).  
+2. **Done:** Profile likelihood on DESI DR2 BAO diagonal (`r1_profile_lambda_bao.py`).  
+   - Formal 95% (diag 7 bins): \(\lvert\lambda\rvert\le 2.5\times 10^{-2}\) (**weak**, same as sister \(\sigma_X\) profile).  
+   - **Working** map from programme ceiling \(\sigma_X<1.5\times 10^{-4}\): \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\).  
+   - Artefact: `results/r1_lambda_profile/`.  
+3. **Next:** full DESI covariance (if public pipeline available) to tighten formal limit.  
+4. **Then:** slip OOM / Maus consistency on working \(\lambda\).  
+5. **Optional:** cluster mask test.
 
 ---
 

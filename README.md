@@ -1,145 +1,109 @@
 # measurable-stochastic-vacuum
 
-**Author:** Jesús Morales Souhail · [ORCID 0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Language:** English 
-**Status:** Independent theory programme — **not peer reviewed** · July 2026 
+**Author:** Jesús Morales Souhail · [ORCID 0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**Language:** English · **Status:** Independent theory programme — **not peer reviewed** · July 2026  
 
-When can late-time stochastic vacuum / dark-energy noise be telescope-measurable **without free-amplification ad hoc free-parameter tuning**?
+When can late-time stochastic vacuum / dark-energy noise be telescope-measurable **without free \(10^{56}\) amplifiers**?
+
+**Full document map:** [`papers/INDEX.md`](papers/INDEX.md) ← **start here if lost**
+
+**Sister empirical corpus (DESI BAO nulls):**  
+https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou
 
 ---
 
-## Reading guide (start here)
-
-| Priority | Document | Role |
-|:---------|:---------|:-----|
-| **1** | [`papers/FOR_REFEREES.md`](papers/FOR_REFEREES.md) | Statement of results, formula sheet, C1–C9 / N1–N7 |
-| **2** | [`papers/OBSERVABLE_WALL.md`](papers/OBSERVABLE_WALL.md) | **Einstein+Morales wall + self-shielding** |
-| **2b** | [`papers/PAST_LIGHT_CONE_INTEGRATION.md`](papers/PAST_LIGHT_CONE_INTEGRATION.md) | **Past light-cone $\mathrm{RMS}$ atlas (only natural amplifier)** |
-| **3** | [`papers/SIMPLE_AS_LAMBDA.md`](papers/SIMPLE_AS_LAMBDA.md) | Minimal model (as simple as $\Lambda$) |
-| **4** | [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) | Documented results only (unit-tested) |
-| **5** | [`papers/NARROW_PATH.md`](papers/NARROW_PATH.md) | DESI-safe windows NP-A / NP-B |
-| **5b** | [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) | **Walls vs open kernel** (R1 load-bearing gap) |
-| **5b′** | [`papers/r1-scale-decade-8-12.md`](papers/r1-scale-decade-8-12.md) | **Lead: 8–12 Mpc decade ($r_0$, $R_8$, DESI ceil)** |
-| **5c** | [`papers/lensing-rms-forecast-real-data.md`](papers/lensing-rms-forecast-real-data.md) | **RMS vs Maus / Sakr / DESI MG (real data)** |
-| **5d** | [`papers/inflation-spectator-seed-gordon-wands.md`](papers/inflation-spectator-seed-gordon-wands.md) | **Spectator DE seed (Gordon & Wands; factor ∼45)** |
-| **5e** | [`papers/inflation-spectator-residual-atlas.md`](papers/inflation-spectator-residual-atlas.md) | **Modern $r\to$ residual band atlas (the crack)** |
-| **5f** | [`papers/h0-running-brachistochrone-bridge.md`](papers/h0-running-brachistochrone-bridge.md) | **H0 running + multi-path light (bridge to open kernel)** |
-| **5g** | [`papers/h0-bridge-toy-map.md`](papers/h0-bridge-toy-map.md) | **Toy path bias: stochastic short of H0 tension** |
-| **5h** | [`papers/h0-desqueezing-filter.md`](papers/h0-desqueezing-filter.md) | **Filter: no invented $H_0(z)$ / hand-tuned $\theta$** |
-| **6** | [`papers/TOPOLOGICAL_EDGE_ANALOGY.md`](papers/TOPOLOGICAL_EDGE_ANALOGY.md) | Optional bulk/edge analogy |
+## Quick start
 
 ```bash
 git clone https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum.git
 cd measurable-stochastic-vacuum
 pip install -r requirements.txt
-pytest -q # expect: 54 passed
-python scripts/simple_as_lambda.py
-python scripts/r1_open_kernel_scales.py
-python scripts/lensing_rms_real_data_compare.py
+pytest -q
 ```
 
-**Sister empirical corpus (DESI bounds):** 
-https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou
-
 ---
 
-## Minimal model (simplified presentation)
+## Reading paths
 
+### A — Referee / stable claims (30 min)
 
-$$
-H^{2}=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr] \quad\text{(keep $\Lambda$CDM)}
-$$
+1. [`papers/FOR_REFEREES.md`](papers/FOR_REFEREES.md) — claims & formula sheet  
+2. [`papers/VERIFIED_RESULTS.md`](papers/VERIFIED_RESULTS.md) — unit-tested identities  
+3. [`papers/OBSERVABLE_WALL.md`](papers/OBSERVABLE_WALL.md) — slip wall  
+4. [`papers/SIMPLE_AS_LAMBDA.md`](papers/SIMPLE_AS_LAMBDA.md) — minimal model  
+5. [`BOUNDARY.md`](BOUNDARY.md) — what this repo is not  
 
+### B — Active research: open R1 kernel (current lead)
 
-
-$$
-\sigma=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2} \quad\text{(one grain parameter)}
-$$
-
-
-
-$$
-\mathrm{RMS}(\lvert\gamma-1\rvert)\sim\sigma^{2/3} \quad\text{(one light-path prediction)}
-$$
-
-
-with a posteriori bound $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ from DESI residual analysis.
-
-**Bulk = $\Lambda$ (smooth mean). Edge = $\sigma$ (mesoscopic grain). Signal = light, not a new $H(z)$.**
-
----
-
-## Verified core (one paragraph)
-
-Under $N_{\mathrm{eff}}=(L/\ell_{*})^{d}$, $\sigma_{0,\mathrm{eff}}=(\ell_{*}/L)^{d/2}$. Holographic Sorkin counting yields $\sigma_{0}\sim 10^{-61}$. Soft open gain $e^{2r}$ with $r=\mathcal{O}(1)$ is only $\mathcal{O}(10)$ and cannot lift Sorkin to $10^{-5}$ (that requires $r\sim 64$). Sub-horizon anisotropic stress gives $\lvert\gamma-1\rvert=2\varepsilon\sigma(\rho_{X}/\rho_{m})/\lvert\delta_{m}\rvert$; incoherent path accumulation multiplies by $\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$10^{2})$ for Mpc cells on Gpc paths—not $10^{56}$. **Measurability requires a mesoscopic counting cell (principle still open — see [`r1-open-kernel.md`](papers/r1-open-kernel.md)) or a derived hard open map (not constructed).** Soft amplifiers of a Planck seed are **measured walls**, not open questions of the same type.
-
----
-
-## Document map
-
-### Quantitative results
-
-| Path | Content |
-|:-----|:--------|
-| `papers/FOR_REFEREES.md` | Referee package |
-| `papers/VERIFIED_RESULTS.md` | Counting, soft gain, slip + path |
-| `papers/SIMPLE_AS_LAMBDA.md` | $\Lambda$-simple reduction |
-| `papers/NARROW_PATH.md` | NP-A / NP-B architecture |
-| `papers/r1-open-kernel.md` | Walls vs open kernel; R1d scale class |
-| `scripts/lib_verified.py` | Implementation |
-| `scripts/r1_open_kernel_scales.py` | $R_8$ / landscape scale table |
-| `tests/test_verified.py` | automated checks (`pytest -q`) |
-
-### Optional / narrative
-
-| Path | Content |
-|:-----|:--------|
-| `papers/TOPOLOGICAL_EDGE_ANALOGY.md` | Hall/Laughlin bulk–edge analogy |
-| `papers/THEORY_REVOLUTION.md` | R1–R2–R3 manifesto |
-| `papers/SELF_SHIELDING_AXIOMS.md` | Method axioms |
-| `papers/r1-*.md`, `r2-*.md`, `r3-*.md`, `wp4-*`, `wp5-*` | WP discussion |
-| `notes/WORK_PACKAGES.md` | Live status |
-| `BOUNDARY.md` | Sister-repo fence |
-
-### Demo scripts
+1. [`papers/r1-open-kernel.md`](papers/r1-open-kernel.md) — walls vs open kernel  
+2. [`papers/r1-scale-decade-8-12.md`](papers/r1-scale-decade-8-12.md) — **lead: 8–12 Mpc decade**  
+3. [`papers/r1-principle-nonlinear-matter.md`](papers/r1-principle-nonlinear-matter.md) — \(\ell_*=R_{\mathrm{nl}}\) hypothesis + full \(\sigma(R)\)  
+4. [`papers/r1-t1-mechanisms-compute.md`](papers/r1-t1-mechanisms-compute.md) — averaging + mask numbers  
+5. [`papers/r1-t12-bbks-and-derivation.md`](papers/r1-t12-bbks-and-derivation.md) — BBKS + coarse-graining sketch  
+6. [`papers/r1-bounding-g-plan.md`](papers/r1-bounding-g-plan.md) — bound coupling \(\lambda,g\)  
 
 ```bash
-python scripts/lib_verified.py
-python scripts/simple_as_lambda.py
-python scripts/light_cone_atlas.py # CSV + use with figures/
-python scripts/r1_counting_landscape.py
-python scripts/r3_open_horizon_map.py
-python scripts/r2_light_path_accumulation.py
+python scripts/r1_sigma_R_full.py
+python scripts/r1_t1_mechanisms_compute.py
+python scripts/r1_t12_bbks_peaks.py
+python scripts/r1_bound_g_oom.py
+python scripts/r1_profile_lambda_bao.py
 ```
 
-**Figure:** [`figures/past_light_cone_rms.png`](figures/past_light_cone_rms.png)
+### C — Closed walls (do not re-open)
+
+| Topic | Note |
+|:------|:-----|
+| Soft amplification of Sorkin | sister `amplification-gap.md` |
+| \(H_0\) 9% from residual / desqueezing | `h0-bridge-toy-map.md`, `h0-desqueezing-filter.md` |
+| NP-A = Andromeda / Virgo / “2.01” | `ell-star-external-scales.md` |
+| \(r_0 = 2.06\,\mathrm{Mpc}\) | `ell-star-r0-peculiar-scales.md` |
 
 ---
 
-## Explicit non-claims
+## Minimal model
 
-- No derivation of galactic $\ell_{*}$ 
-- No horizon bath with $r\sim 64$ 
-- No first-principles $\varepsilon$ 
-- No detection claim 
-- Cosmos is not a Hall bar (analogy only) 
-- Cosmic entropy does not “stop” 
-- Not peer reviewed 
 
----
+$$
+H^{2}=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr]
+\qquad
+\sigma=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}
+\qquad
+\mathrm{RMS}(\lvert\gamma-1\rvert)\sim\sigma^{2/3}
+$$
 
-## Sister repositories
 
-| Repo | Role |
-|:-----|:-----|
-| [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | DESI empirical claims + preprint |
-| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Wrong-scale pedagogy only |
+**Current lead:** \(\ell_*\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) (hypothesis) \(\Rightarrow\sigma\sim 8.5\times 10^{-5}\) under DESI ceiling.
+
+**Bulk = \(\Lambda\). Edge = \(\sigma\). Signal = light path, not a new \(H(z)\).**
 
 ---
 
-## License and contact
+## Status snapshot
 
-- Code: MIT 
-- Author text: CC BY 4.0 
+| Layer | Status |
+|:------|:-------|
+| Soft amplifiers of \(\sigma_0\sim 10^{-61}\) | **Closed walls** |
+| Length \(R_{\mathrm{nl}}\) | **Computed** \(\approx 8.61\,\mathrm{Mpc}\) |
+| Why vacuum grain \(=R_{\mathrm{nl}}\) | **Hypothesis + sketch** (not full action) |
+| Bound on \(\lambda,g\) | **OOM + BAO profile** (see `results/r1_lambda_profile/`) |
+| \(H_0\) tension from residual | **Excluded** at safe amplitude |
+
+---
+
+## Layout
+
+```
+papers/     theory notes (see INDEX.md)
+scripts/    verified kinematics + R1 pipeline
+tests/      pytest gate
+results/    numerical artefacts
+notes/      WORK_PACKAGES live status
+BOUNDARY.md claim fence vs sister repos
+```
+
+---
+
+## Contact
 
 **Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818

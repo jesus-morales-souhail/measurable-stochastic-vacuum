@@ -1,9 +1,10 @@
 # Work packages (live status)
 
-**Language:** English 
-**Last update:** July 2026 
+**Language:** English  
+**Last update:** July 2026  
 
-**Primary results note:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green. 
+**Navigate:** [`papers/INDEX.md`](../papers/INDEX.md) · [`README.md`](../README.md)  
+**Primary results:** [`papers/VERIFIED_RESULTS.md`](../papers/VERIFIED_RESULTS.md) + `pytest -q` green.  
 WP notes are expansions, not independent hard-claim sources.
 
 ---
