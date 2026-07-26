@@ -121,17 +121,18 @@ T1.1 and T1.2 are **consistent with each other** at the decade level: both point
 
 ---
 
-## 5. Remaining physics gap (unchanged)
+## 5. BBKS refinement + derivation sketch
 
-No amount of \(\sigma(R)\) or packing geometry derives:
-\[
-\text{vacuum residual grain}\;\stackrel{?}{=}\;\text{averaging / edge domain of matter}.
-\]
-That requires a **mechanism** (open-system decoherence, effective action on inhomogeneous backgrounds, or derived SDiff edge width). T1.1–T1.2 only show the **geometry is viable and DESI-compatible**.
+Peak curvature \(R_*\approx 1.58\,\mathrm{Mpc}\) vs domain \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\): see [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md).  
+Derivation sketch (postulates P0–P1 + standard S1 \(\Rightarrow\) coarse-graining \(\ell_*\sim R_{\mathrm{nl}}\)) in the same note.
+
+## 6. Remaining physics gap
+
+Geometry is viable. The sketch **derives coarse-graining under stated postulates**; it does **not** derive the coupling \(g\) or prove nature realizes P0–P1.
 
 ---
 
-## 6. Claim checklist
+## 7. Claim checklist
 
 | ID | Claim | Evidence |
 |:---|:------|:---------|

@@ -323,6 +323,33 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestR1T12BBKS:
+    """BBKS moments at R_nl: R_* finer than filter; sigma0=1."""
+
+    def test_bbks_sigma0_is_one(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from r1_sigma_R_full import make_Pk_unnorm, normalize_A, find_R_nl  # noqa: E402
+        from r1_t12_bbks_peaks import bbks_at_R  # noqa: E402
+
+        Pk = make_Pk_unnorm()
+        A = normalize_A(Pk, 0.81)
+        R_nl_h = find_R_nl(Pk, A, 1.0)
+        s0, s1, s2, gamma, R_star = bbks_at_R(R_nl_h, Pk, A)
+        assert s0 == pytest.approx(1.0, rel=1e-2)
+        assert 0.0 < gamma < 1.0
+        assert R_star < R_nl_h  # peak tip finer than filter
+
+    def test_R_star_mpc_order_1_to_3(self):
+        from r1_sigma_R_full import H, make_Pk_unnorm, normalize_A, find_R_nl  # noqa: E402
+        from r1_t12_bbks_peaks import bbks_at_R  # noqa: E402
+
+        Pk = make_Pk_unnorm()
+        A = normalize_A(Pk, 0.81)
+        R_nl_h = find_R_nl(Pk, A, 1.0)
+        *_, R_star_h = bbks_at_R(R_nl_h, Pk, A)
+        assert 1.0 < R_star_h / H < 4.0
+
+
 class TestR1T1Mechanisms:
     """T1.1 counting on R_nl; T1.2 Gaussian mask packing."""
 

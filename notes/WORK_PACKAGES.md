@@ -27,7 +27,8 @@ WP notes are expansions, not independent hard-claim sources.
 | — | Desqueezing vs invented $H_0(z)$ filter | **Done (reject; $\sigma_X\ll 9\%$)** | [`h0-desqueezing-filter.md`](../papers/h0-desqueezing-filter.md) |
 | — | P_nl + full $\sigma(R)$ | **Done (length; hypothesis)** | [`r1-principle-nonlinear-matter.md`](../papers/r1-principle-nonlinear-matter.md) |
 | — | T1.1/T1.2 mechanism compute | **Done (geometry viable)** | [`r1-t1-mechanisms-compute.md`](../papers/r1-t1-mechanisms-compute.md) |
-| — | Action/master-eq link vacuum↔$R_{\mathrm{nl}}$ | **Open** | [`r1-mechanism-candidates.md`](../papers/r1-mechanism-candidates.md) |
+| — | Action/master-eq link vacuum↔$R_{\mathrm{nl}}$ | **Sketch under P0–P1** | [`r1-t12-bbks-and-derivation.md`](../papers/r1-t12-bbks-and-derivation.md) |
+| — | BBKS peak moments at $R_{\mathrm{nl}}$ | **Done** | same |
 
 ---
 

@@ -48,6 +48,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5k | [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md) | **Hypothesis $\ell_*=R_{\mathrm{nl}}$; full $\sigma(R)$ $\Rightarrow 8.61$ Mpc (not action derivation)** |
 | 5l | [`r1-t1-mechanisms-compute.md`](r1-t1-mechanisms-compute.md) | **T1.1/T1.2 numbers: domain counting + nonlinear mask** |
 | 5m | [`r1-mechanism-candidates.md`](r1-mechanism-candidates.md) | **Ranked mechanism candidates (Tier 1–3)** |
+| 5n | [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) | **BBKS $R_*$ + coarse-graining derivation sketch** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
