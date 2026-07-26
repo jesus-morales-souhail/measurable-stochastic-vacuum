@@ -323,6 +323,30 @@ class TestNarrowPath:
         assert sres > 1.5e-4
 
 
+class TestR1PrincipleRnl:
+    """Blind R_nl from sigma8; lands in 8–12 Mpc decade a posteriori."""
+
+    def test_Rnl_band_8_to_10_mpc(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from r1_principle_Rnl import R_nl_mpc  # noqa: E402
+
+        vals = [R_nl_mpc(ne) for ne in (-2.0, -1.5, -1.0)]
+        assert min(vals) > 7.0
+        assert max(vals) < 11.0
+
+    def test_Rnl_not_npa(self):
+        from r1_principle_Rnl import R_nl_mpc  # noqa: E402
+
+        npa = ell_mpc_for_sigma(1e-5, 3)
+        assert R_nl_mpc(-1.5) > 3 * npa
+
+    def test_sigma_at_Rnl_under_desi_ceiling(self):
+        from r1_principle_Rnl import R_nl_mpc, sigma_count_d3  # noqa: E402
+
+        s = sigma_count_d3(R_nl_mpc(-1.5))
+        assert 1e-5 < s < 1.5e-4
+
+
 class TestEllStarR0Peculiar:
     """NEW: r0(L*) is far above NP-A; not a re-print of Andromeda."""
 

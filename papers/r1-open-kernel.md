@@ -201,6 +201,9 @@ Until (1)–(2) exist, **S\(_8\) is not a claim of this repository**. The honest
 *Yes:* **what principle, stated blind, would predict a DE residual cell of order 8–12 Mpc?**  
 In that decade sit, independently: galaxy \(r_0(L_*)\sim 7.4\)–\(8.9\,\mathrm{Mpc}\), \(R_8\approx 11.9\,\mathrm{Mpc}\), and the DESI-ceiling \(d=3\) counting cell \(\approx 12.6\,\mathrm{Mpc}\). See [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md).
 
+**First blind attempt:** P\(_\mathrm{nl}\): \(\ell_*=R_{\mathrm{nl}}\) with \(\sigma(R_{\mathrm{nl}})=1\) (matter \(\sigma_8\) only) \(\Rightarrow\sim 8\)–\(10\,\mathrm{Mpc}\).  
+See [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md). Microphysics still open.
+
 **Closed as confirmation of NP-A:** MW–Andromeda, Virgo, circular “2.01”, and \(r_0\equiv 2.06\). Notes: [`ell-star-external-scales.md`](ell-star-external-scales.md), [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md).
 
 **Adjacent:** H0-running path depth — [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md). Shared late-time language ≠ \(H_0\) solution (amplitude short).

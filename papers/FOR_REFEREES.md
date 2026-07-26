@@ -45,6 +45,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 5h | [`h0-desqueezing-filter.md`](h0-desqueezing-filter.md) | **Reject invented $H_0(z)$ + hand-tuned $\theta$; $\sigma_X\ll 9\%$** |
 | 5i | [`ell-star-r0-peculiar-scales.md`](ell-star-r0-peculiar-scales.md) | **$r_0(L_*)$ / $n^{-1/3}$ vs NP-A: no independent hit** |
 | 5j | [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md) | **Steering: open lead is 8–12 Mpc decade ($r_0$, $R_8$, DESI-ceil cell)** |
+| 5k | [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md) | **Blind candidate: $\ell_*=R_{\mathrm{nl}}$ ($\sigma=1$) $\sim 8$–$10$ Mpc** |
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](TOPOLOGICAL_EDGE_ANALOGY.md) | Optional analogy (bulk/edge); not a derivation |
 | 7 | Sister `PREPRINT.md` | Empirical null and $\sigma_X$ bound |
 
