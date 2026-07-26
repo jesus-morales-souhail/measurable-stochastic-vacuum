@@ -6,7 +6,8 @@
 **Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum 
 **Date:** July 2026 
 **Status:** Independent research — **not peer reviewed** 
-**Automated gate:** `pytest -q` must report **all tests passed** (expect **54** with open-kernel + real-data lensing checks)
+**Master index:** [`INDEX.md`](INDEX.md)  
+**Automated gate:** `pytest -q` must report **all tests passed**
 
 ---
 
