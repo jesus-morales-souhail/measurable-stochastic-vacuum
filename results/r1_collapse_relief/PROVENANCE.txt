@@ -1,0 +1,9 @@
+CF4 collapse peaks + velocity relief + gravity/expansion
+Script: scripts/r1/r1_collapse_relief_cf4.py
+Data: data/real_velocity_net/table2.dat, table4.dat
+Source: Tully et al. 2023, ApJ 944, 94  CDS J/ApJ/944/94
+Note: papers/r1_kernel/r1-collapse-relief.md
+H0 convention: 75 km/s/Mpc (CF residual scale, not fitted)
+R_nl (repo geometry): 8.61 Mpc
+Neighbor radius: 10 Mpc
+Non-claims: not DE residual; not Omega; not free H0; not T2 residual x structure

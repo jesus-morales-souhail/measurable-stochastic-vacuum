@@ -72,7 +72,7 @@ What is public data versus my own analysis: [`papers/r1_kernel/HONEST_ASSETS.md`
 | Free residual cell under axioms A0–A4 | $\ell_{\ast}\sim R_{\mathrm{nl}}$ |
 | Does nature have $\chi$? | I postulate it; I do not derive it from the SM |
 | Coupling $g$ | working bound $\lvert g\rvert\lesssim 1.45$ from DESI residual |
-| Residual explains $\sim 8\%$ $H_0$? | no — amplitude is short by a lot |
+| Residual explains $\sim 8\%H_0$? | no — amplitude is short by a lot |
 
 ---
 
@@ -84,6 +84,12 @@ python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_sandwich_derivation.py
 python scripts/r1/r1_lineA_Q_variance_proxy.py
 python scripts/r1/r1_T2_mock_pipeline.py
+python scripts/r1/r1_real_velocity_block_net.py
+python scripts/r1/r1_collapse_relief_cf4.py
 ```
+
+Real local-universe kinematics (Cosmicflows-4, matter only):  
+[`papers/r1_kernel/r1-real-velocity-block-net.md`](papers/r1_kernel/r1-real-velocity-block-net.md) ·  
+[`papers/r1_kernel/r1-collapse-relief.md`](papers/r1_kernel/r1-collapse-relief.md).
 
 Full catalogue: [`papers/INDEX.md`](papers/INDEX.md).

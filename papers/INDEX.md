@@ -64,6 +64,7 @@ pytest -q
 | 15 | [`r1_kernel/FRONTIER_INQUIRY.md`](r1_kernel/FRONTIER_INQUIRY.md) | what I work on next |
 | 16 | [`r1_kernel/HONEST_ASSETS.md`](r1_kernel/HONEST_ASSETS.md) | public data vs my analysis |
 | 17 | [`r1_kernel/r1-real-velocity-block-net.md`](r1_kernel/r1-real-velocity-block-net.md) | Cosmicflows-4 block net (real \(v_{\mathrm{pec}}\)) |
+| 18 | [`r1_kernel/r1-collapse-relief.md`](r1_kernel/r1-collapse-relief.md) | CF4 collapse peaks, velocity relief, gravity vs expansion |
 
 | Number I keep quoting | Value |
 |:----------------------|:------|
@@ -140,3 +141,4 @@ python scripts/r1/r1_T2_mock_pipeline.py
 | microphysics of $\chi$, $g$ | postulated; $g_{\mathrm{eff}}\sim\mathcal{O}(1)$ from proxy |
 | residual × structure test | protocol + synthetic mock written |
 | residual as $H_0$ fix | excluded at DESI-safe amplitude |
+| CF4 block net + collapse relief | real matter kinematics only (no DE residual) |

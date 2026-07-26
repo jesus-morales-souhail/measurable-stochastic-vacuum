@@ -1,0 +1,76 @@
+CF4 COLLAPSE PEAKS + VELOCITY RELIEF + GRAVITY/EXPANSION (data only)
+Source: Tully et al. 2023, ApJ 944, 94  CDS J/ApJ/944/94
+Groups N=12337  Galaxies N=18011
+R_nei=10.0 Mpc  R_nl(repo)=8.61 Mpc  H0_CF=75.0
+Thresholds: N_mem p75(multi)=4.0  n_nei p75=21.0 p25=4.0 p90=46.0
+N multi=1566  peak=530  peak_strong=221  void=3240
+
+Sample | N | <Vpec> | rms(Vpec) | med|V| | med Nmem | med n10 | med vrms_int | eta_int | eta_pec
+all_groups               | 12337 |    91.0 |   640.2 |   316.0 |   1.0 |    9.0 |   107.8 |  0.167 |  0.050
+multi_member             |  1566 |    78.4 |   428.9 |   225.5 |   2.0 |   14.0 |   107.8 |  0.167 |  0.036
+high_multiplicity        |   422 |    86.9 |   337.7 |   178.5 |   6.0 |   15.0 |   254.9 |  0.395 |  0.028
+high_local_density       |  3196 |   114.9 |   436.0 |   222.0 |   1.0 |   37.0 |    95.9 |  0.149 |  0.069
+low_local_density        |  3485 |    24.4 |   791.7 |   437.0 |   1.0 |    2.0 |   104.2 |  0.161 |  0.045
+peak_multi_and_dense     |   530 |    59.3 |   301.4 |   164.5 |   3.0 |   38.0 |    95.9 |  0.149 |  0.045
+peak_strong_p90_density  |   221 |    12.7 |   246.6 |   164.0 |   3.0 |   97.0 |    80.2 |  0.124 |  0.089
+void_proxy               |  3240 |    21.6 |   804.9 |   448.0 |   1.0 |    2.0 |     nan |    nan |  0.046
+
+=== Peak vs void contrast ===
+peak - void <Vpec> = 37.689273235499655
+peak/void rms(Vpec) = 0.3744645246500466
+peak_strong/void rms(Vpec) = 0.3063661138832223
+peak med internal vrms = 95.93108478731614
+peak eta_int (vrms/(H0*R_nl)) = 0.14855762258972688
+peak eta_pec med = 0.044682299111129906  void eta_pec med = 0.04631074688172124
+peak/void eta_pec = 0.9648365038303004
+
+=== Relief curve (Vpec vs local density bins) ===
+bin | n_nei range | N | <Vpec> | rms(Vpec) | med|V| | med vrms_int
+  1 |   0-  3 |  2056 |    31.0 |   792.1 |   457.5 | 97.0
+  2 |   3-  5 |  2056 |    40.0 |   762.6 |   395.0 | 115.69236241659982
+  3 |   5-  9 |  2056 |    98.4 |   669.0 |   354.0 | 105.0
+  4 |   9- 16 |  2056 |   130.8 |   606.0 |   311.0 | 119.11434468239023
+  5 |  16- 31 |  2056 |   150.0 |   524.0 |   250.0 | 115.75836902790225
+  6 |  31-596 |  2057 |    95.7 |   386.9 |   211.0 | 88.0
+
+=== Distance shells (selection control) ===
+d_lo-d_hi | N | N_multi | frac_multi | med n10 | p90 n10 | rms(Vpec)
+    1- 20 |   624 |    88 | 0.141 |  286.0 |  442.4 |   303.2
+   20- 40 |  1091 |   168 | 0.154 |   38.0 |   95.0 |   360.0
+   40- 80 |  3038 |   355 | 0.117 |   15.0 |   37.0 |   480.7
+   80-120 |  3337 |   390 | 0.117 |    8.0 |   24.0 |   597.7
+  120-200 |  4247 |   565 | 0.133 |    4.0 |   13.0 |   832.0
+
+=== Top MULTI-MEMBER collapse (highest n_gal within 10 Mpc) ===
+1PGC  d  Vpec  N_mem  n10  vrms_int  eta_pec  eta_int
+     37048  d= 10.0  Vpec=  +358  Nmem=  2  n10=590  vint=125.5  eta_pec=0.477  eta_int=0.1943476577622919
+     41066  d=  8.1  Vpec=  +284  Nmem=  4  n10=577  vint=65.26245091934565  eta_pec=0.467  eta_int=0.10106457749801882
+     42637  d=  9.3  Vpec=  +179  Nmem=  2  n10=572  vint=96.0  eta_pec=0.257  eta_int=0.148664343786295
+     32256  d= 10.8  Vpec=  +271  Nmem= 13  n10=560  vint=414.6476796327842  eta_pec=0.335  eta_int=0.6421179707824766
+     41522  d=  9.3  Vpec=  +194  Nmem=  2  n10=550  vint=29.5  eta_pec=0.278  eta_int=0.045683313975996905
+     34695  d= 11.4  Vpec=  +267  Nmem=  5  n10=539  vint=144.2214963172966  eta_pec=0.312  eta_int=0.22333952197800483
+     37235  d= 12.4  Vpec=  +220  Nmem=  2  n10=524  vint=7.0  eta_pec=0.237  eta_int=0.01084010840108401
+     44182  d=  6.8  Vpec=  +181  Nmem=  3  n10=521  vint=73.29089681232968  eta_pec=0.355  eta_int=0.11349732375118804
+     46153  d=  9.0  Vpec=   +19  Nmem=  3  n10=503  vint=54.798621231641306  eta_pec=0.028  eta_int=0.08486042776870507
+     41333  d=  8.0  Vpec=  +120  Nmem=  3  n10=503  vint=79.14683962245253  eta_pec=0.200  eta_int=0.12256576015865665
+     33166  d= 12.9  Vpec=   +16  Nmem=  3  n10=482  vint=25.849994627121728  eta_pec=0.017  eta_int=0.040030963417919826
+     41618  d= 12.3  Vpec=  +677  Nmem=  2  n10=458  vint=202.0  eta_pec=0.734  eta_int=0.31281455671699576
+
+=== Gravity vs expansion (definitions) ===
+  v_H(R_nl) = H0*R_nl = 645.8 km/s
+  eta_int = internal_vrms / v_H(R_nl)  — internal relief vs expansion grain
+  eta_pec = |Vpec| / (H0*Dist)       — group residual vs Hubble at its d
+  block-net eta(L) = sigma(v_block)/(H0*L) — volume average (see r1_real_velocity_net)
+
+Literature (not recomputed):
+  Whitford et al. 2023, MNRAS 526, 3051: MLE 408 ± 165 km/s at depth ~49 Mpc/h; MVE 428 ± 108 km/s at depth ~173 Mpc/h
+  Courtois et al. 2023, A&A 670, L15: CF4 density/velocity grids
+  Tully et al. 2008, ApJ 676, 184: Local Void outflow
+  Shaya et al. 2017, ApJ 850, 207: Local Supercluster action dynamics
+
+Remaining variables (honest list — see JSON remaining_variables):
+  LOS-only; e_DM noise; incomplete membership; no residual×structure (T2);
+  no Omega/f_sigma8 fit; Courtois grids not ingested; g/lambda not from CF4.
+
+Non-claims: matter kinematics only; no DE residual / Omega / H0 solution.
+Wrote /home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/measurable-stochastic-vacuum/results/r1_collapse_relief
