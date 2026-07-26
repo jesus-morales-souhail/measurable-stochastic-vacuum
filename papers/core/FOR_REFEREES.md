@@ -1,17 +1,19 @@
 # Reading guide: statement of results, reading order, and formula sheet
 
-**Author:** Jesús Morales Souhail 
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Email:** jmskjym@gmail.com 
-**Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum 
-**Date:** July 2026 
-**Status:** Independent research — **not peer reviewed** 
+**Author:** Jesús Morales Souhail  
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**Email:** jmskjym@gmail.com  
+**Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum  
+**Date:** July 2026  
+**Status:** Independent research — **not peer reviewed**  
 **Master index:** [`INDEX.md`](INDEX.md)  
 **Automated gate:** `pytest -q` must report **all tests passed**
 
 ---
 
 ## 1. What this repository is (and is not)
+
+I keep theory and data in two places on purpose. This repo holds kinematics and identities I can check with code. The sister repo holds the DESI residual analysis.
 
 | This repository | Sister repository |
 |:----------------|:------------------|
@@ -22,13 +24,15 @@
 | **Not** a detection paper | Empirical DESI residual bound |
 | Conditional uniqueness $\ell_*\sim R_{\mathrm{nl}}$ under A0–A4 | **Not** a proof that SM realises $\chi$ |
 
-**Sister empirical corpus:** 
-https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou 
+**Sister empirical corpus:**  
+https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou  
 Manuscript: `manuscript/PREPRINT.md`
 
 ---
 
-## 2. Mandatory reading order (peer review)
+## 2. Reading order
+
+I write these notes at home, one step at a time. If you are reading for the first time, this order is the one I use myself when I come back to the work after a break.
 
 | Step | Document | Purpose |
 |:-----|:---------|:--------|
@@ -135,6 +139,8 @@ $$
 
 ### 4.1 Claims (supported in-repo)
 
+These are the claims I am willing to stand behind. Each one has a place in the code or in a note that the tests cover.
+
 | ID | Claim | Evidence |
 |:---|:------|:---------|
 | C1 | Counting identities and inversion $\ell_{*}(\sigma)$ | `lib_verified` + tests |
@@ -155,6 +161,8 @@ $$
 | C16 | Residual amplitude $\sigma_X<1.5\times 10^{-4}$ cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ illegal | `h0-desqueezing-filter.md` + script + tests |
 
 ### 4.2 Non-claims
+
+I also keep a list of things I do **not** claim. It is easy to over-read a number when you have been living with it for months.
 
 | ID | Non-claim |
 |:---|:----------|
@@ -202,27 +210,27 @@ python scripts/r1/r1_open_kernel_scales.py
 
 [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) is **pedagogy**:
 
-- bulk $\leftrightarrow$ $\Lambda$ (smooth mean), 
-- edge $\leftrightarrow$ grain $\sigma$ (shear / light), 
+- bulk $\leftrightarrow$ $\Lambda$ (smooth mean),  
+- edge $\leftrightarrow$ grain $\sigma$ (shear / light),  
 - no backscattering $\leftrightarrow$ unphysical amplification channels closed.
 
-It is **not** a condensed-matter derivation of dark energy.
+It is **not** a condensed-matter derivation of dark energy. I use it only as a picture, never as a proof.
 
 ---
 
-## 7. Suggested evaluation criteria for referees
+## 7. How I would like a careful reader to judge this
 
-1. Are documented results limited to C1–C11 and backed by `pytest`? 
-2. Is the DESI number used only as a bound, never to fit $\ell_{*}$? 
-3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$? 
-4. Are free $10^{56}$ (Euclid target) / $10^{57}$ (DESI ceiling), $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls** — without mixing the two gap labels? 
-5. Are open problems (N1–N3, N8–N11) stated without hype — especially the R1 open kernel? 
-6. Is any $R_8$ / S$_8$ discussion limited to scale class + non-claim (C11 / N8)? 
+1. Are documented results limited to C1–C11 and backed by `pytest`?  
+2. Is the DESI number used only as a bound, never to fit $\ell_{*}$?  
+3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$?  
+4. Are free $10^{56}$ (Euclid target) / $10^{57}$ (DESI ceiling), $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls** — without mixing the two gap labels?  
+5. Are open problems (N1–N3, N8–N11) stated without hype — especially the R1 open kernel?  
+6. Is any $R_8$ / S$_8$ discussion limited to scale class + non-claim (C11 / N8)?  
 7. Is NP-B / $\mathrm{RMS}\sim 10^{-3}$ free of binary “discovery / model death” language (N9–N11; `NARROW_PATH` §5.1)?
 
 ---
 
 ## 8. Contact
 
-**Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818
-
+**Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818  
+github.com/jesus-morales-souhail

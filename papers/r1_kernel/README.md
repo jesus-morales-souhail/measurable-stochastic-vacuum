@@ -1,5 +1,5 @@
-# Residual scale and coupling
+# Residual scale work
 
-Notes on the free residual counting scale \(\ell_*\), its relation to the matter nonlinear scale \(R_{\mathrm{nl}}\), bounds on the coupling \(g\), and survey-oriented tests.
+This folder is where most of my recent work sits: what fixes \(\ell_*\), how large \(\sigma\) is, how \(g\) is bounded, and how one would test residual–structure correlation.
 
-**Main draft:** [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md)
+Start with [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md).

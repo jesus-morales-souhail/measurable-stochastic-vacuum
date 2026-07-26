@@ -1,10 +1,11 @@
 # WP3 — R2: anisotropic stress, potential wrinkles, and light paths
 
-**Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Programme:** measurable-stochastic-vacuum 
-**Status:** Operator + path OOM closed; $\varepsilon$ open 
-**Date:** July 2026 
-**Code:** [`scripts/core/r2_light_path_accumulation.py`](../../scripts/core/r2_light_path_accumulation.py) · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py) 
+**Author:** Jesús Morales Souhail  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
+**Programme:** measurable-stochastic-vacuum  
+**Status:** Operator + path OOM closed; $\varepsilon$ open  
+**Date:** July 2026  
+**Code:** [`scripts/core/r2_light_path_accumulation.py`](../../scripts/core/r2_light_path_accumulation.py) · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)  
 
 > **Documented results:** see [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) (gated by `pytest -q`).
 
@@ -12,9 +13,9 @@
 
 ## 1. Physical picture
 
-A classical DE residual need not change global $H(z)$. 
-It may source traceless anisotropic stress $\pi_T$, wrinkling $\Phi,\Psi$. 
-Photons accumulate lensing / ISW-like shifts over Gpc paths. 
+A classical DE residual need not change global $H(z)$.  
+It may source traceless anisotropic stress $\pi_T$, wrinkling $\Phi,\Psi$.  
+Photons accumulate lensing / ISW-like shifts over Gpc paths.  
 The telescope measures **integrated light distortion**, not vacuum noise directly.
 
 This is the correct **operator** for the SDiff gap (shear not cancelled by $T_{\mu\nu}\propto g_{\mu\nu}$).
@@ -23,11 +24,9 @@ This is the correct **operator** for the SDiff gap (shear not cancelled by $T_{\
 
 ## 2. Local map (standard sub-horizon GR)
 
-
 $$
 \pi_T = \varepsilon \sigma \rho_X, \qquad |\gamma-1| = 2\varepsilon\sigma\frac{\rho_X}{\rho_m|\delta_m|}.
 $$
-
 
 Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_T$ amplitude.
 
@@ -35,11 +34,9 @@ Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_T$ ampli
 
 ## 3. Path accumulation
 
-
 $$
 N_{\mathrm{pat}}=\frac{\chi}{\ell_*}, \qquad \mathrm{RMS}_{\mathrm{path}} = |\gamma-1|_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}} \quad\text{(iid zero-mean patches)}.
 $$
-
 
 For $z_s=1.5$, $\chi\sim 4.5\times 10^{3} \mathrm{Mpc}$, Mpc-scale cells give $\sqrt{N}=\mathcal{O}(10$–$10^{2})$.
 
@@ -61,7 +58,7 @@ Galaxy formation is **not** an analogy for lifting $10^{-61}$: it used post-infl
 
 ## 5. Open
 
-$\varepsilon$ fixed by residual SDiff symmetry (not free). 
+$\varepsilon$ fixed by residual SDiff symmetry (not free).  
 Full Boltzmann (hi_class/MGCAMB) only after $\sigma$ and $\varepsilon$ are principle-fixed.
 
 ---
@@ -73,4 +70,3 @@ Full Boltzmann (hi_class/MGCAMB) only after $\sigma$ and $\varepsilon$ are princ
 | Local slip formula | **Closed** (under stated assumptions) |
 | $\sqrt{N}$ path | **Closed** (+ MC) |
 | Microscopic $\varepsilon$ | **Absent (declared)** |
-

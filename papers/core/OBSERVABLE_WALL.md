@@ -1,10 +1,10 @@
 # The observable wall: Einstein + Morales, without undeclared free parameters
 
-**Author:** Jesús Morales Souhail 
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Date:** July 2026 
-**Status:** Derived relation + detectability inequality (English, referee-ready) 
-**Code:** `scripts/core/lib_verified.py` · `tests/test_verified.py` 
+**Author:** Jesús Morales Souhail  
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**Date:** July 2026  
+**Status:** Derived relation + detectability inequality · independent research, **not peer reviewed**  
+**Code:** `scripts/core/lib_verified.py` · `tests/test_verified.py`  
 **Sister bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
@@ -59,7 +59,7 @@ $$
 
 ### 1.3 Morales stochastic residual (definition of the noise amplitude)
 
-The isotropic fractional residual amplitude of the dark-energy density is bounded by the sister BAO analysis as $\sigma_X$. 
+The isotropic fractional residual amplitude of the dark-energy density is bounded by the sister BAO analysis as $\sigma_X$.  
 The **anisotropic** piece is defined as a fraction $\varepsilon\in[0,1]$ of that residual:
 
 
@@ -101,8 +101,8 @@ $$
 **\(z\)-dependence (sign check):** \((1+z)^3\) sits in the **denominator**. For fixed \(\lvert\delta_m\rvert=\mathcal{O}(1)\), \(\lvert\gamma-1\rvert\) **decreases** with redshift because \(\rho_m/\rho_X\) grows. The table in §3 is consistent with (W); a reading that \(\lvert\gamma-1\rvert\propto(1+z)^3\) would place the expansion factor in the wrong place.
 
 
-**That is the equation.** 
-Einstein + Newton background + Morales residual definition. No undeclared free parameters.
+**That is the equation.**  
+Einstein + Newton background + Morales residual definition. No undeclared free parameters. I checked the algebra against the tests in `tests/test_verified.py`.
 
 ---
 
@@ -191,7 +191,7 @@ $$
 $$
 
 
-**Summary:** 
+**Summary:**  
 equation (D) is the door the experiment would need; the DESI residual ceiling locks that door from the inside.
 
 ---
@@ -214,8 +214,8 @@ $$
 $$
 
 
-is **not** a consequence of Einstein+(M1). It is an extra assumption. 
-Therefore GRB delays are **not** used here as a parameter-free observable wall.
+is **not** a consequence of Einstein+(M1). It is an extra assumption.  
+Therefore GRB delays are **not** used here as a parameter-free observable wall. I set that idea aside deliberately.
 
 ---
 
@@ -237,7 +237,7 @@ That is a measurement **into the past** along the light path — the only direct
 
 ### 7.2 Why “forward / local” amplification fails
 
-Trying to amplify a present-day Planck seed ($10^{-61}$) with soft open maps or path geometry is already ruled out (need $r\sim 64$ or $N\sim 10^{119}$). 
+Trying to amplify a present-day Planck seed ($10^{-61}$) with soft open maps or path geometry is already ruled out (need $r\sim 64$ or $N\sim 10^{119}$).  
 **Backwards** means: use **deep path-integrated** probes (lensing, RSD×CMB lensing, multi-$z$ slip), not local free amplification.
 
 ### 7.3 Self-shielded experiment design
@@ -248,7 +248,7 @@ Trying to amplify a present-day Planck seed ($10^{-61}$) with soft open maps or 
 | Use (W)+(S)+(D) as the quantitative wall | Fit $\ell_*$ to evade DESI |
 | Keep background $=\Lambda$CDM (bulk) | Expect isotropic BAO residual detection first |
 
-Even path accumulation only multiplies by $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ — it does **not** cancel the wall of equation (W) under the DESI ceiling; it slightly softens it (see `NARROW_PATH.md` NP-A/B).
+Even path accumulation only multiplies by $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ — it does **not** cancel the wall of equation (W) under the DESI ceiling; it slightly softens it (see [`NARROW_PATH.md`](NARROW_PATH.md) NP-A/B).
 
 ---
 
@@ -310,10 +310,10 @@ $$
 $$
 
 
-**(W)** defines the observable. 
-**(S)** defines self-shielding. 
-**(D)** defines what would be needed to break the shield. 
-**(P)** is the only natural amplifier (path statistics). 
+**(W)** defines the observable.  
+**(S)** defines self-shielding.  
+**(D)** defines what would be needed to break the shield.  
+**(P)** is the only natural amplifier (path statistics).  
 Past null-cone measurements still face (S) unless new *derived* physics raises $\sigma_X$ or $\varepsilon$ without undeclared free parameters.
 
 ---
@@ -344,4 +344,3 @@ Om,Ol=0.315,0.685
 print("sigma_X needed", 5*0.03*Om/(2*Ol))
 PY
 ```
-

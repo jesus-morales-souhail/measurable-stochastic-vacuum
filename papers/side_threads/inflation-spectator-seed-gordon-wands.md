@@ -1,9 +1,9 @@
 # Inflationary spectator seed for DE: Gordon & Wands (2005), revalidated for this programme
 
 **Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
 **Date:** July 2026  
-**Status:** Literature revalidation note — **respectful external theory**, not a detection claim  
+**Status:** Literature revalidation note — respectful external theory, not a detection claim  
 **Primary reference:** C. Gordon & D. Wands, *The amplitude of dark energy perturbations*, Phys. Rev. D **71**, 123505 (2005); arXiv:[astro-ph/0504132](https://arxiv.org/abs/astro-ph/0504132)  
 **Related programme notes:** [`amplification-gap` sister](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/amplification-gap.md) · [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`NARROW_PATH.md`](../core/NARROW_PATH.md)  
 **Code (arithmetic of their eqs only):** [`scripts/side/gordon_wands_factor45.py`](../../scripts/side/gordon_wands_factor45.py)
@@ -22,10 +22,11 @@ Gordon & Wands (2005) is a serious PRD calculation of **dark-energy isocurvature
 3. **Growth factor needed after inflation:** \(\delta Q_f/\delta Q_i>45\) [Eq. (27)], equivalently \(\phi_f/\phi_i>45\) [Eq. (32)] in their Mexican-hat construction — **order forty-five**, not \(10^{56}\).  
 4. The factor \(\sim 45\) follows from the tension between the inflation energy needed for a frozen light field to meet their amplitude [Eq. (25)] and the **then-current** tensor bound [Eq. (26)].
 
-**For this programme:** this is the first literature pathway we have revalidated whose “how much is missing” is **not** \(G_{\mathrm{Euclid}}\sim 10^{56}\), but **depends on \(H_{\mathrm{inf}}\) (unmeasured) and on a derived post-inflation map**. It is a **different starting physics**, not a soft rescue of holographic Sorkin counting. It does **not** automatically become a DESI BAO residual prediction without a full re-derivation of seed → residual → covariance.
+**For this programme:** this is the first literature pathway I have revalidated whose “how much is missing” is **not** \(G_{\mathrm{Euclid}}\sim 10^{56}\), but **depends on \(H_{\mathrm{inf}}\) (unmeasured) and on a derived post-inflation map**. It is a **different starting physics**, not a soft rescue of holographic Sorkin counting. It does **not** automatically become a DESI BAO residual prediction without a full re-derivation of seed → residual → covariance.
 
 **Next step (done as OOM atlas):** modern \(r\) → \(\delta Q\) → \(\sigma_\rho(\varepsilon_Q,A)\) vs residual band —  
 [`inflation-spectator-residual-atlas.md`](inflation-spectator-residual-atlas.md).
+
 ---
 
 ## 1. Respect and scope
@@ -97,7 +98,7 @@ Complex field; radial \(\phi\) in a Mexican-hat potential [Eq. (37)]; trapped ne
 
 This is a **derived** post-inflation map of \(\mathcal{O}(10^{1}\)–\(10^{2})\) growth — not a free \(10^{56}\) dial, and **not** the sister-repo excluded coherent GPE residual on BAO.
 
-They also discuss difficulties (radial field as inflaton produces uncorrelated curvature; variable-decay reheating for anti-correlation). Those caveats are **in the paper**; we do not paper over them.
+They also discuss difficulties (radial field as inflaton produces uncorrelated curvature; variable-decay reheating for anti-correlation). Those caveats are **in the paper**; I do not paper over them.
 
 ---
 
@@ -137,7 +138,7 @@ Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DE
 ## 5. Modern context (pointers, not re-derived)
 
 - Tensor bounds have evolved since 2005; any **numerical** update of Eqs. (25)–(27) must use current \(r\) / \(V_{\mathrm{inf}}\) limits, not only the paper’s \(V^{1/4}<10^{-2}M_p\).  
-- Spectator / quintessence-during-inflation literature is larger than one paper; Gordon & Wands is the **worked PRD example** we revalidated equation-by-equation.  
+- Spectator / quintessence-during-inflation literature is larger than one paper; Gordon & Wands is the **worked PRD example** I revalidated equation-by-equation.  
 - Sister DESI exclusion of **coherent tachyonic residual growth on BAO** remains; it does **not** automatically exclude a **post-inflation radial roll** of a complex PNGB sector aimed at isocurvature.
 
 ---
@@ -180,4 +181,3 @@ pytest -q  # includes factor-45 arithmetic test
 ```
 
 **Paper PDF:** https://arxiv.org/pdf/astro-ph/0504132
-

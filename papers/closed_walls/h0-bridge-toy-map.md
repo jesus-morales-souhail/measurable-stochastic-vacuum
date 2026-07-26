@@ -1,9 +1,9 @@
 # Toy a priori map: path depth \(\to\) distance bias (H0-bridge test)
 
 **Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
 **Date:** July 2026  
-**Status:** Toy map + amplitude honesty check — **not** a solution of the Hubble tension  
+**Status:** Toy map + amplitude check — **not** a solution of the Hubble tension  
 **Code:** [`scripts/closed/h0_bridge_toy.py`](../../scripts/closed/h0_bridge_toy.py)  
 **Parent:** [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md) · [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`OBSERVABLE_WALL.md`](../core/OBSERVABLE_WALL.md)
 
@@ -11,7 +11,7 @@
 
 ## Abstract
 
-We implement the promised **a priori** toy:
+I implement the promised **a priori** toy:
 \[
 \left\lvert\frac{\delta D}{D}\right\rvert
 =
@@ -20,7 +20,7 @@ s_{\mathrm{loc}}\sqrt{\chi/\ell_*} & \text{(S) stochastic / path RMS}\\
 s_{\mathrm{loc}}\,(\chi/\ell_*) & \text{(C) coherent (flagged)}\\
 \end{cases}
 \]
-with \(\ell_*\) **fixed** from the R1 landscape (NP-A or \(R_8\)-class) and \(s_{\mathrm{loc}}=\lvert\gamma-1\rvert\) from the Einstein+Morales wall at the DESI residual ceiling. We also track the amplitude-free shape \(f(z)=\sqrt{\chi(z)/\chi(1.5)}\).
+with \(\ell_*\) **fixed** from the R1 landscape (NP-A or \(R_8\)-class) and \(s_{\mathrm{loc}}=\lvert\gamma-1\rvert\) from the Einstein+Morales wall at the DESI residual ceiling. I also track the amplitude-free shape \(f(z)=\sqrt{\chi(z)/\chi(1.5)}\).
 
 **Result:** under DESI-safe stochastic accumulation, the induced \(H_0(0.15)/H_0(1.5)\) ratio shift is **\(\mathcal{O}(0.1\%)\)**, not the observed \(\sim 8\%\). The bridge **does not** explain the Hubble tension at safe amplitude. Coherent accumulation can reach \(\mathcal{O}(10\%)\) but is the **excluded** free-amplifier class. The **shape** \(f(z)\) does vary through the literature running window \(z\sim 0.5\)–\(0.7\) — scale class only.
 
@@ -98,7 +98,7 @@ The shape **does** change through the window where Dainotti / Krishnan-style run
 | Can coherent stacking save it? | Amplitude yes, **class no** (excluded) |
 | Fit \(\ell_*\) to 1.083? | **Illegal** |
 
-**Programme consequence:** the open kernel / mesoscopic grain remains interesting for **residual, slip, and path RMS** at \(10^{-4}\)–\(10^{-3}\); it is **not** a free lunch for the Hubble tension under self-shielding. Any H0 solution still needs different physics (or a derived coherent channel that survives DESI — not currently available).
+**Consequence for the programme:** the open kernel / mesoscopic grain remains interesting for **residual, slip, and path RMS** at \(10^{-4}\)–\(10^{-3}\); it is **not** a free lunch for the Hubble tension under self-shielding. Any H0 solution still needs different physics (or a derived coherent channel that survives DESI — not currently available).
 
 ---
 
@@ -133,4 +133,3 @@ python scripts/closed/h0_desqueezing_filter.py
 python scripts/closed/h0_running_geometry.py
 pytest -q
 ```
-

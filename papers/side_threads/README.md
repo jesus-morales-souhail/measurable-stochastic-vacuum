@@ -1,3 +1,5 @@
-# Secondary notes
+# Side threads
 
-Inflationary spectators, lensing comparisons, and pedagogical material. These are not the primary residual-scale argument.
+Useful digressions (inflation spectators, lensing floors, analogies). Not the main residual-scale argument.
+
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)

@@ -1,10 +1,11 @@
-# Independent clustering lengths vs NP-A \(\ell_*\) (new result)
+# Independent clustering lengths vs NP-A \(\ell_*\)
 
 **Author:** Jesús Morales Souhail  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
 **Date:** July 2026  
 **Status:** External-scale test — **not** a derivation of \(\ell_*\)  
 **Code:** [`scripts/closed/ell_star_r0_peculiar.py`](../../scripts/closed/ell_star_r0_peculiar.py)  
-**This note is not** a re-display of MW–Andromeda / Virgo tables ([`ell-star-external-scales.md`](ell-star-external-scales.md)).
+**Note:** This is not a re-display of the MW–Andromeda / Virgo tables ([`ell-star-external-scales.md`](ell-star-external-scales.md)).
 
 ---
 
@@ -15,7 +16,7 @@ The open R1 question is whether a **mesoscopic** counting cell \(\ell_*\) is fix
 \ell_*^{\mathrm{NP\text{-}A}}=2.0646\,\mathrm{Mpc}
 \quad(d=3,\ \sigma=10^{-5},\ H_0=67.4).
 \]
-Here we compare that number to **independent, pre-existing** scales of **galaxy clustering** and **peculiar velocities**, computed without targeting \(2.06\,\mathrm{Mpc}\).
+Here I compare that number to **independent, pre-existing** scales of **galaxy clustering** and **peculiar velocities**, computed without targeting \(2.06\,\mathrm{Mpc}\).
 
 **Result:** standard \(L_*\) galaxy correlation lengths are
 \[
@@ -25,11 +26,11 @@ r_0(L_*)\sim 5\text{–}6\,h^{-1}\mathrm{Mpc}
 \]
 a factor \(\sim 3.5\)–\(4.3\) **above** NP-A. Mean inter-galaxy separation \(n_*^{-1/3}\) is \(\sim 6.9\,\mathrm{Mpc}\). Peculiar-velocity coherence / bulk-flow scales are **tens to hundreds** of \(h^{-1}\mathrm{Mpc}\). **None** independently hits \(2.06\,\mathrm{Mpc}\).
 
-The open kernel therefore remains: arithmetic without an external prior at the NP-A row. The DESI-ceiling \(d=3\) cell (\(\approx 12.6\,\mathrm{Mpc}\)) sits nearer \(R_8\) and the \(r_0\) decade, but that is a **different \(\sigma\) row** and still not a principle.
+So the open kernel remains: arithmetic without an external prior at the NP-A row. The DESI-ceiling \(d=3\) cell (\(\approx 12.6\,\mathrm{Mpc}\)) sits nearer \(R_8\) and the \(r_0\) decade, but that is a **different \(\sigma\) row** and still not a principle.
 
 ---
 
-## 1. What is new in this note
+## 1. What is new here
 
 | Already done (previous notes) | This note |
 |:------------------------------|:----------|
@@ -63,7 +64,7 @@ Power-law model \(\xi_{gg}(r)=(r/r_0)^{-\gamma}\) (\(\gamma\sim 1.7\)–\(1.9\))
 
 **Sources (SDSS clustering, luminosity/color dependence):**  
 Zehavi et al., arXiv:[1005.2413](https://arxiv.org/abs/1005.2413); arXiv:[astro-ph/0408569](https://arxiv.org/abs/astro-ph/0408569).  
-These works measure \(w_p(r_p)\) and report correlation amplitudes that, in the classical power-law language used across the literature, place **typical \(L_*\) samples near \(r_0\sim 5\)–\(6\,h^{-1}\mathrm{Mpc}\)**; brighter/redder samples sit higher. We use that **established range**, not a fit to NP-A.
+Those works measure \(w_p(r_p)\) and report correlation amplitudes that, in the classical power-law language used across the literature, place **typical \(L_*\) samples near \(r_0\sim 5\)–\(6\,h^{-1}\mathrm{Mpc}\)**; brighter/redder samples sit higher. I use that **established range**, not a fit to NP-A.
 
 **Verdict:** \(r_0(L_*)\) is **not** \(\approx 2.06\,\mathrm{Mpc}\). It is several times larger, in the same **broad decade** as \(R_8\) / DESI-ceiling cell, not the Euclid-target NP-A cell.
 
@@ -121,4 +122,3 @@ python scripts/closed/ell_star_r0_peculiar.py
 | R0-3 | \(n_*^{-1/3}\sim 6.9\,\mathrm{Mpc}\) ≠ NP-A | arithmetic |
 | R0-4 | \(v_{\mathrm{pec}}\) coherence ≫ NP-A | scale class |
 | R0-5 | Open kernel still open | programme status |
-

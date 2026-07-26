@@ -1,22 +1,24 @@
-# Repository boundary
+# Boundary of this repository
+
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+
+I keep three places for three jobs:
 
 ```
-stochastic-dark-energy-ou EMPIRICAL CLAIM SET
- │ nulls, bounds, amplification gap
- │ cited a posteriori
- ▼
-measurable-stochastic-vacuum THEORY + VERIFIED KINEMATICS
- │ (this repo)
- │ does not import as claims
- ▼
-stochastic-de-exploratory-notes WRONG-SCALE PEDAGOGY ONLY
+stochastic-dark-energy-ou          empirical claims (DESI nulls, bounds, amplification gap)
+        │  cited here only a posteriori
+        ▼
+measurable-stochastic-vacuum       theory + checked kinematics  (this repo)
+        │  does not pull exploratory optics in as cosmology
+        ▼
+stochastic-de-exploratory-notes    wrong-scale pedagogy only
 ```
 
-| May enter this repo | Must not enter this repo |
-|:--------------------|:-------------------------|
-| Derived identities and tested OOM maps | Free $10^{56}$ factors |
-| Soft no-gain theorems | BAO MCMC re-implementation |
-| Structural zeros | Lab wavefront as cosmology |
-| A posteriori DESI comparison | Fitting $\ell_*$ or $r$ to DESI |
+| Allowed here | Not allowed here |
+|:-------------|:-----------------|
+| identities I can test with `pytest` | free factors of \(10^{56}\) |
+| soft no-gain statements with numbers | re-running a full BAO MCMC as if it lived here |
+| structural zeros (Planck cell → null residual under soft maps) | lab wavefront demos sold as cosmology |
+| comparing a posteriori to DESI ceilings | fitting \(\ell_*\) or squeeze \(r\) to DESI after looking |
 
-**Cite for hard results:** `papers/core/VERIFIED_RESULTS.md` only.
+For hard results I point people to [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md) only. Everything else is a note, a sketch, or a closed wall with a measured height.

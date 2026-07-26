@@ -1,6 +1,7 @@
 # Filter note: desqueezing is real; invented \(H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]\) is not
 
 **Author:** Jesús Morales Souhail  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
 **Date:** July 2026  
 **Status:** Claim-boundary filter — applies `pattern-undeclared-physical-power` + `BOUNDARY`  
 **Code:** [`scripts/closed/h0_desqueezing_filter.py`](../../scripts/closed/h0_desqueezing_filter.py)  
@@ -15,9 +16,9 @@ A draft construction that writes
 \[
 H_0(z)=H_{0,\mathrm{fid}}\bigl[1+\varepsilon\,e^{-\theta x}\bigr]
 \]
-and then chooses \(\theta\sim 0.47\) so the knee sits at \(z\sim 0.5\)–\(0.7\) **fails** the programme filter: the functional form is not derived from Einstein or OU dynamics, and \(\theta\) is fitted to the known transition.
+and then chooses \(\theta\sim 0.47\) so the knee sits at \(z\sim 0.5\)–\(0.7\) **fails** the filter I use here: the functional form is not derived from Einstein or OU dynamics, and \(\theta\) is fitted to the known transition.
 
-This note freezes the filter, restores the correct status of \(\sigma_X\) (temporal in \(x=\ln a\)), separates **CPL 2.5σ/4.2σ** from **H0-running**, and runs the only legal test: **amplitude** of any desqueezing/OU residual is bounded by \(\sigma_X<1.5\times 10^{-4}\), which is \(\sim 500\times\) too small to produce an \(8\%\) \(H_0\) drift — **independent of hand-tuned \(\theta\)**.
+This note freezes that filter, restores the correct status of \(\sigma_X\) (temporal in \(x=\ln a\)), separates **CPL 2.5σ/4.2σ** from **H0-running**, and runs the only legal test: **amplitude** of any desqueezing/OU residual is bounded by \(\sigma_X<1.5\times 10^{-4}\), which is \(\sim 500\times\) too small to produce an \(8\%\) \(H_0\) drift — **independent of hand-tuned \(\theta\)**.
 
 ---
 
@@ -164,4 +165,3 @@ Sister:
 # BAO-only w0,wa
 cat results/eos_cpl_desi_dr2/eos_cpl_summary.txt
 ```
-

@@ -1,10 +1,10 @@
 # The narrow path: the only soft-regime architecture that is mathematically coherent
 
-**Author:** Jesús Morales Souhail 
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Date:** July 2026 
-**Status:** Architecture note grounded in verified identities 
-**Documented results / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py) 
+**Author:** Jesús Morales Souhail  
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**Date:** July 2026  
+**Status:** Architecture note grounded in verified identities · independent research, **not peer reviewed**  
+**Documented results / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)  
 **Sister empirical bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
@@ -13,11 +13,11 @@
 
 If one discards “ad hoc” rescues of the Planck/Sorkin seed $\sigma_0\sim 10^{-61}$ (soft squeeze $r\sim 64$, or $N_{\mathrm{pat}}\sim 10^{119}$ along the line of sight), the only soft-regime architecture that remains mathematically coherent is a **triple concurrent structure**:
 
-1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed; 
-2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$); 
+1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed;  
+2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$);  
 3. **R2 — anisotropic stress + light-path accumulation** $\mathrm{RMS}=|\gamma-1|_{\mathrm{loc}}\sqrt{\chi/\ell_*}$, not a change of global $H(z)$.
 
-This note writes the causal chain correctly (not as a naive product of three ad hoc factors), gives **machine-checked numbers**, and isolates the **DESI-safe window** where the isotropic residual stays under the sister bound while the light-path slip RMS sits near $10^{-3}$.
+I write the causal chain carefully here (not as a naive product of three ad hoc factors), give **machine-checked numbers**, and isolate the **DESI-safe window** where the isotropic residual stays under the sister bound while the light-path slip RMS sits near $10^{-3}$.
 
 ---
 
@@ -54,8 +54,8 @@ $$
 | 3 | $2.065 \mathrm{Mpc}$ (cluster / large-group scale) |
 | 4 | $14.07 \mathrm{Mpc}$ |
 
-**Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$. 
-**Still open (not claimed):** which principle fixes $\ell_*$ (R1a/b/c).
+**Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$.  
+**Still open (not claimed):** which principle fixes $\ell_*$ (R1a/b/c). That is the hard problem I have not closed.
 
 ---
 
@@ -75,14 +75,14 @@ $$
 | $10^{-5}$ | $1.5$ | $2.009\times 10^{-4}$ |
 | $7.47\times 10^{-6}$ | $1.5$ | $1.500\times 10^{-4}$ (DESI ceiling) |
 
-**Reading:** soft open gain is a **factor $\sim 10$–$20$**, not $10^{56}$. 
+**Reading:** soft open gain is a **factor $\sim 10$–$20$**, not $10^{56}$.  
 It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual ceiling.
 
 ---
 
 ### 2.3 R2 — Project on gravitational slip + short optical path
 
-**Do not** force the signal into global $H(z)$ (BAO residual bound is already tight). 
+**Do not** force the signal into global $H(z)$ (BAO residual bound is already tight).  
 Source anisotropic stress and read light:
 
 
@@ -168,7 +168,7 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 
 **NP-user sketch** ($\sigma_0=10^{-5}$, $r=1.5$) is the right *shape* of the narrow path but must be **clipped** into NP-B (or NP-A) to stay consistent with the DESI residual null/ceiling.
 
-**Status of NP-B (read carefully):** $\sigma_0$ and $r$ in NP-B are **not derived**. They are a **hand-placed** point in the DESI-safe window used to read order-of-magnitude path RMS **if** a mesoscopic seed and soft $G_O\sim\mathcal{O}(10)$ existed. Fitting $\ell_*$ or $r$ to DESI is forbidden ([`BOUNDARY.md`](../BOUNDARY.md)). NP-B is architecture kinematics, not a prediction of the open kernel.
+**Status of NP-B (read carefully):** $\sigma_0$ and $r$ in NP-B are **not derived**. They are a **hand-placed** point in the DESI-safe window used to read order-of-magnitude path RMS **if** a mesoscopic seed and soft $G_O\sim\mathcal{O}(10)$ existed. Fitting $\ell_*$ or $r$ to DESI is forbidden ([`BOUNDARY.md`](../../BOUNDARY.md)). NP-B is architecture kinematics, not a prediction of the open kernel.
 
 ---
 
@@ -198,7 +198,7 @@ That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin)
 
 > If deep lensing finds $\mathrm{RMS}_{\mathrm{path}}\sim 10^{-3}$, we have discovered the texture of dark energy; if not, the model is mathematically discarded with no excuses.
 
-That sentence fails on **both** sides.
+That sentence fails on **both** sides. I have caught myself wanting to write versions of it; both readings are wrong.
 
 | Broken claim | Why it fails |
 |:-------------|:-------------|
@@ -209,7 +209,7 @@ That sentence fails on **both** sides.
 
 > If a lensing analysis finds an excess of path-integrated slip RMS compatible with this band, **and** it survives control of baryonic feedback, photo-$z$, and intrinsic alignments, it would be the **first positive evidence** the programme has ever had — and still would not by itself prove a mesoscopic DE grain. If it does **not** detect such an excess, that **excludes NP-B (or the tested corner) specifically**, tightening the region where the still-open counting kernel could live — it does **not** close the kernel or the whole model.
 
-Same emotion, binary fixed. Matches the $d=3$–specificity lock: no over-read of a positive coincidence, no over-read of a null.
+Same care as the $d=3$–specificity lock: no over-read of a positive coincidence, no over-read of a null.
 
 ### 5.2 Sensitivity is **not** established in-repo (check before any paper claim)
 
@@ -222,7 +222,7 @@ Same emotion, binary fixed. Matches the $d=3$–specificity lock: no over-read o
 
 **Reading:** $\mathcal{O}(10^{-3})$ path RMS is **far below** current published slip errors ($\mathcal{O}(0.1)$). Stage-IV surveys (Euclid, LSST/Rubin) aim at percent-level growth/lensing and multiplicative-bias control near $10^{-3}$ in **shear calibration**, but that is **not** the same statement as “the survey measures *this* path-RMS statistic of stochastic slip wrinkles at $10^{-3}$.”
 
-**Open experimental question (must be answered before marketing detection):**  
+**Open experimental question (must be answered before any detection language):**  
 Does any Stage-III/IV pipeline constrain a **stochastic, path-accumulated** $\mathrm{RMS}(\lvert\gamma-1\rvert)$ (or a well-defined proxy) at $\sim 10^{-3}$ after the systematics list above?
 
 **Partial answer with real published data** (not a full likelihood):  
@@ -309,4 +309,3 @@ print("RMS", rms_incoherent(slip_deviation(1,residual_soft_map(1e-5,1.5),0.8),
  n_patches(comoving_distance_mpc(1.5), ell_for_target_sigma(1e-5,L_H,3)/MPC)))
 PY
 ```
-

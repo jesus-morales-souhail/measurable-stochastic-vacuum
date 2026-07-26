@@ -1,3 +1,5 @@
-# Closed routes
+# Closed walls
 
-Mechanisms that have been examined numerically or algebraically and are not available under the soft-regime assumptions of the programme. They remain documented for reference.
+Routes I already checked with numbers and do not want to reopen as free parameters. I keep the notes so I remember why they died.
+
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)

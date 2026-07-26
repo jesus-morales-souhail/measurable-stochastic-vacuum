@@ -1,81 +1,82 @@
-# Guide to this repository
+# Start here
 
-Jesús Morales Souhail  
-July 2026 · Independent research · Not peer reviewed
+Jesús Morales Souhail · July 2026  
+[github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · not peer reviewed
 
-This repository is the theory side of a programme on whether a late-time residual in the dark-energy sector can be large enough to matter for surveys, without free amplification factors of order \(10^{56}\) from a Planck-scale seed.
+This folder is dense. You do not need to open everything.
 
-A companion analysis of public DESI DR2 BAO data bounds a residual amplitude \(\sigma_X < 1.5\times 10^{-4}\) (95% CL). The working hypothesis developed here is that, under stated axioms, the residual counting scale is the matter nonlinear scale \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\).
+I split the programme into three repos so claims do not get mixed:
+
+| Repo | What I use it for |
+|:-----|:------------------|
+| [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | DESI BAO residual numbers |
+| **this one** | theory and kinematics |
+| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | analogies and wrong-scale experiments (not cosmology claims) |
+
+The scientific question: can vacuum / dark-energy noise sit near \(10^{-5}\)–\(10^{-4}\) without a free \(10^{56}\) boost from Planck?  
+On the data side I already have \(\sigma_X < 1.5\times 10^{-4}\) (95% CL).  
+On the theory side the working picture is \(\ell_*\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\) under a few axioms I write down explicitly.
 
 ---
 
-## Related repositories
-
-| Repository | Role |
-|:-----------|:-----|
-| [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | Empirical DESI BAO residual analysis |
-| This repository | Theory, kinematics, and open questions |
-| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Exploratory and pedagogical material only |
-
----
-
-## Directory layout
+## How the folders are arranged
 
 ```
-START_HERE.md
+START_HERE.md      ← you are here
 README.md
-BOUNDARY.md
+BOUNDARY.md         what I refuse to claim
 papers/
-  INDEX.md           full catalogue
-  core/              stable claims and formulae
-  r1_kernel/         residual scale and coupling
-  closed_walls/      excluded mechanisms
-  side_threads/      secondary topics
-  work_packages/     longer work-package notes
-scripts/core|r1|closed|side
-tests/
-results/
-data/
+  INDEX.md
+  core/             stable notes
+  r1_kernel/        residual scale work
+  closed_walls/     dead ends (kept on purpose)
+  side_threads/
+  work_packages/
+scripts/...
+tests/  results/  data/
 ```
+
+Nothing important was deleted when I reorganised; files only moved.
 
 ---
 
-## Suggested reading
+## Three short reading paths
 
-**For claims and notation (about 30 minutes)**  
+**A — what can I actually claim? (~30 min)**  
 1. [`papers/core/FOR_REFEREES.md`](papers/core/FOR_REFEREES.md)  
 2. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md)  
 3. [`papers/core/SIMPLE_AS_LAMBDA.md`](papers/core/SIMPLE_AS_LAMBDA.md)  
 4. [`BOUNDARY.md`](BOUNDARY.md)
 
-**For the residual-scale argument (about 45 minutes)**  
+**B — residual scale argument (~45 min)**  
 1. [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md)  
 2. [`papers/r1_kernel/r1-derivation-sandwich.md`](papers/r1_kernel/r1-derivation-sandwich.md)  
 3. [`papers/r1_kernel/r1-sandwich-falsifiers.md`](papers/r1_kernel/r1-sandwich-falsifiers.md)  
 4. [`papers/r1_kernel/r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md)  
 5. [`papers/r1_kernel/r1-lineA-g-from-averaging.md`](papers/r1_kernel/r1-lineA-g-from-averaging.md)
 
-**For excluded routes**  
-Sister repository `amplification-gap.md`, and notes under [`papers/closed_walls/`](papers/closed_walls/).
+**C — things I already closed**  
+Sister `amplification-gap.md`, plus everything under [`papers/closed_walls/`](papers/closed_walls/).
 
-A broader research agenda (coupling estimates, survey tests, open problems) is summarised in [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md). Scope of public data versus original analysis is stated in [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kernel/HONEST_ASSETS.md).
-
----
-
-## Present status (summary)
-
-| Topic | Status |
-|:------|:-------|
-| Soft amplification \(\sim 10^{56}\) of a Sorkin seed | Excluded under audited soft maps |
-| \(R_{\mathrm{nl}}\) | \(\approx 8.61\,\mathrm{Mpc}\) from \(\sigma(R)=1\) |
-| Residual scale under axioms A0–A4 | \(\ell_*\sim R_{\mathrm{nl}}\) |
-| Existence of the residual sector | Postulated, not derived from the Standard Model |
-| Coupling \(g\) (working bound) | \(\lvert g\rvert\lesssim 1.45\) from DESI residual ceiling |
-| Residual as explanation of the \(\sim 8\%\) \(H_0\) tension | Excluded at DESI-safe amplitude |
+Open research lines (coupling, survey tests, and what I am not doing about \(H_0\)): [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md).  
+What is public data versus my own analysis: [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kernel/HONEST_ASSETS.md).
 
 ---
 
-## Reproduce core numbers
+## Status in plain language
+
+| Topic | Where it stands |
+|:------|:----------------|
+| Soft \(10^{56}\) from Sorkin seed | closed under the maps I checked |
+| \(R_{\mathrm{nl}}\) | \(\approx 8.61\,\mathrm{Mpc}\) |
+| Free residual cell under axioms A0–A4 | \(\ell_*\sim R_{\mathrm{nl}}\) |
+| Does nature have \(\chi\)? | I postulate it; I do not derive it from the SM |
+| Coupling \(g\) | working bound \(\lvert g\rvert\lesssim 1.45\) from DESI residual |
+| Residual explains \(\sim 8\%\) \(H_0\)? | no — amplitude is short by a lot |
+
+---
+
+## Commands I actually run
 
 ```bash
 pytest -q

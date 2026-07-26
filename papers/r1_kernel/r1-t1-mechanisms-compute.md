@@ -1,23 +1,24 @@
 # T1.1 / T1.2 computations: averaging domain and nonlinear mask
 
-**Author:** Jesús Morales Souhail  
-**Date:** July 2026  
-**Status:** Quantitative Tier-1 **machinery** — still not an action-level derivation of decoherence  
-**Code:** [`scripts/r1/r1_t1_mechanisms_compute.py`](../../scripts/r1/r1_t1_mechanisms_compute.py)  
-**Depends on:** [`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py) · [`r1-mechanism-candidates.md`](r1-mechanism-candidates.md)
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+
+*Quantitative Tier-1 machinery. Still not an action-level derivation of decoherence.*
+
+Code: [`scripts/r1/r1_t1_mechanisms_compute.py`](../../scripts/r1/r1_t1_mechanisms_compute.py)  
+Depends on: [`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py) · [`r1-mechanism-candidates.md`](r1-mechanism-candidates.md)
 
 ---
 
 ## Abstract
 
-We execute the first two Tier-1 work items with **numbers**:
+I execute the first two Tier-1 work items with numbers:
 
-1. **T1.1** — Set the averaging domain \(L_{\mathrm{av}}:=R_{\mathrm{nl}}\) from the full \(\sigma(R)=1\) integral only. Count effective residual DOF as \(N=(L_H/L_{\mathrm{av}})^d\).  
+1. **T1.1** — Set the averaging domain \(L_{\mathrm{av}}:=R_{\mathrm{nl}}\) from the full \(\sigma(R)=1\) integral only. Count effective residual DOF as \(N=(L_H/L_{\mathrm{av}})^d\).
 2. **T1.2** — Model nonlinear “edge” regions as the Gaussian excursion set \(\delta>\delta_c\) on a field with \(\sigma(R_{\mathrm{nl}})=1\); report volume fraction and packing separation.
 
-**Results (fiducial run):** \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\); \(d=3\) counting gives \(\sigma\approx 8.5\times 10^{-5}\) (**under** DESI ceiling \(1.5\times 10^{-4}\)); nonlinear volume fraction at \(\delta_c=1\) is \(f\approx 0.16\); inter-patch separation \(\sim R_{\mathrm{nl}}f^{-1/3}\approx 16\,\mathrm{Mpc}\) (same decade as \(R_8\) / DESI-ceiling cell).
+Results (fiducial run): \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\); \(d=3\) counting gives \(\sigma\approx 8.5\times 10^{-5}\) (under DESI ceiling \(1.5\times 10^{-4}\)); nonlinear volume fraction at \(\delta_c=1\) is \(f\approx 0.16\); inter-patch separation \(\sim R_{\mathrm{nl}}f^{-1/3}\approx 16\,\mathrm{Mpc}\) (same decade as \(R_8\) / DESI-ceiling cell).
 
-**Still open:** why the vacuum residual **must** live on that domain (master equation / action). These steps only show that **if** it does, lengths and amplitudes are DESI-compatible without \(10^{56}\).
+Still open: why the vacuum residual must live on that domain (master equation / action). These steps only show that *if* it does, lengths and amplitudes are DESI-compatible without \(10^{56}\).
 
 ---
 
@@ -42,7 +43,7 @@ python scripts/r1/r1_t1_mechanisms_compute.py
 
 ### 2.1 Statement
 
-In Buchert-type language, cosmological equations are averaged on a domain of size \(L_{\mathrm{av}}\). We **identify**
+In Buchert-type language, cosmological equations are averaged on a domain of size \(L_{\mathrm{av}}\). I identify
 \[
 L_{\mathrm{av}}:=R_{\mathrm{nl}}
 \]
@@ -51,22 +52,22 @@ as the natural domain once structure is nonlinear (Tier-1 candidate T1.1). Resid
 N_{\mathrm{eff}}=\Bigl(\frac{L_H}{L_{\mathrm{av}}}\Bigr)^{d},\qquad
 \sigma_{0,\mathrm{eff}}=\Bigl(\frac{L_{\mathrm{av}}}{L_H}\Bigr)^{d/2}.
 \]
-This is the same algebra as R1 counting with \(\ell_*=R_{\mathrm{nl}}\) — now **motivated** as averaging-domain size, still not derived from vacuum QFT.
+This is the same algebra as R1 counting with \(\ell_*=R_{\mathrm{nl}}\) — now motivated as averaging-domain size, still not derived from vacuum QFT.
 
 ### 2.2 Numbers
 
 | \(d\) | \(N_{\mathrm{eff}}\) | \(\sigma_{0,\mathrm{eff}}\) | vs DESI \(1.5\times 10^{-4}\) |
 |:------|:---------------------|:----------------------------|:-----------------------------|
 | 2 | \(\sim 2.7\times 10^{5}\) | \(\sim 1.9\times 10^{-3}\) | above (not the default \(d\)) |
-| **3** | \(\sim 1.4\times 10^{8}\) | \(\mathbf{\sim 8.5\times 10^{-5}}\) | **under** |
+| 3 | \(\sim 1.4\times 10^{8}\) | \(\sim 8.5\times 10^{-5}\) | under |
 | 4 | \(\sim 7\times 10^{10}\) | \(\sim 3.8\times 10^{-6}\) | under |
 
-**Programme default \(d=3\):** residual amplitude from domain counting is **DESI-safe** and \(\mathcal{O}(10^{-4})\), without soft \(10^{56}\) gain.
+Programme default \(d=3\): residual amplitude from domain counting is DESI-safe and \(\mathcal{O}(10^{-4})\), without soft \(10^{56}\) gain.
 
-### 2.3 What this does *not* prove
+### 2.3 What this does not prove
 
-- That Buchert \(Q\) explains mean cosmic acceleration.  
-- That the residual is Gaussian OU with that \(\sigma\).  
+- That Buchert \(Q\) explains mean cosmic acceleration.
+- That the residual is Gaussian OU with that \(\sigma\).
 - That averaging is the correct microphysics of the vacuum.
 
 ---
@@ -97,14 +98,14 @@ Blob size / mask correlation scale \(\sim R_{\mathrm{nl}}\) (filter scale; full 
 | \(1.5\) | \(0.067\) | \(8.61\) | \(\approx 21.2\) |
 | \(2.0\) | \(0.023\) | \(8.61\) | \(\approx 30.3\) |
 
-**Reading:**  
-- Edge / blob scale \(\sim 8.6\,\mathrm{Mpc}\) sits on \(r_0\) and in the 8–12 decade.  
+Reading:
+- Edge / blob scale \(\sim 8.6\,\mathrm{Mpc}\) sits on \(r_0\) and in the 8–12 decade.
 - Separation of nonlinear patches \(\sim 16\,\mathrm{Mpc}\) (at \(\delta_c=1\)) sits near \(R_8\) / DESI-ceiling cell (\(\sim 12\,\mathrm{Mpc}\)) — same decade, not a fit.
 
-### 3.3 What this does *not* prove
+### 3.3 What this does not prove
 
-- Full excursion-set mass functions / halo exclusion.  
-- That the residual operator equals the indicator \(m\).  
+- Full excursion-set mass functions / halo exclusion.
+- That the residual operator equals the indicator \(m\).
 - Decoherence rate from gravitational collapse.
 
 ---
@@ -117,7 +118,7 @@ Blob size / mask correlation scale \(\sim R_{\mathrm{nl}}\) (filter scale; full 
 | T1.2 edge size | \(\sim R_{\mathrm{nl}}\) | — |
 | T1.2 inter-edge sep | \(\sim 16\,\mathrm{Mpc}\) (\(\delta_c=1\)) | if used as \(\ell_*\): \(\sigma\sim 2\times 10^{-4}\) (order of ceiling) |
 
-T1.1 and T1.2 are **consistent with each other** at the decade level: both point to mesoscopic structure scales fixed by matter, with residual amplitudes that do not require free \(10^{56}\).
+T1.1 and T1.2 are consistent with each other at the decade level: both point to mesoscopic structure scales fixed by matter, with residual amplitudes that do not require free \(10^{56}\).
 
 ---
 
@@ -126,9 +127,11 @@ T1.1 and T1.2 are **consistent with each other** at the decade level: both point
 Peak curvature \(R_*\approx 1.58\,\mathrm{Mpc}\) vs domain \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\): see [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md).  
 Derivation sketch (postulates P0–P1 + standard S1 \(\Rightarrow\) coarse-graining \(\ell_*\sim R_{\mathrm{nl}}\)) in the same note.
 
+---
+
 ## 6. Remaining physics gap
 
-Geometry is viable. The sketch **derives coarse-graining under stated postulates**; it does **not** derive the coupling \(g\) or prove nature realizes P0–P1.
+Geometry is viable. The sketch derives coarse-graining under stated postulates; it does not derive the coupling \(g\) or prove nature realizes P0–P1.
 
 ---
 
@@ -147,4 +150,3 @@ Geometry is viable. The sketch **derives coarse-graining under stated postulates
 | N-M1 | Buchert explains \(\Lambda\) |
 | N-M2 | Action-level decoherence derived |
 | N-M3 | \(H_0\) tension solved |
-

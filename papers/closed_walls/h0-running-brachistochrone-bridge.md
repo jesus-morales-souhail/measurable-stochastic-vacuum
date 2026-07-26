@@ -1,7 +1,7 @@
 # H0 tension, “brachistochrone” intuition, and a bridge to the open kernel
 
 **Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
 **Date:** July 2026  
 **Status:** Literature + geometry note — **not** a solution of the Hubble tension; **not** a derivation of \(\ell_*\)  
 **Code:** [`scripts/closed/h0_running_geometry.py`](../../scripts/closed/h0_running_geometry.py)  
@@ -11,9 +11,9 @@
 
 ## Abstract
 
-A working intuition — measure the Hubble tension as if comparing “paths” under fixed gravity at long vs short distance — is fixed into four testable statements. The classical Bernoulli brachistochrone is **not** the photon path; the real multi-path, multi-time observable is **strong-lensing time delay**. The literature already studies **H0 running / redshift evolution of inferred \(H_0\)** (Krishnan et al.; Dainotti et al.; Wong/H0LiCOW trend). The observed local/early ratio is \(\sim 73/67.4\approx 1.083\).
+I had a working intuition — measure the Hubble tension as if comparing “paths” under fixed gravity at long vs short distance — and I fixed it into four testable statements. The classical Bernoulli brachistochrone is **not** the photon path; the real multi-path, multi-time observable is **strong-lensing time delay**. The literature already studies **H0 running / redshift evolution of inferred \(H_0\)** (Krishnan et al.; Dainotti et al.; Wong/H0LiCOW trend). The observed local/early ratio is \(\sim 73/67.4\approx 1.083\).
 
-We then ask, without fitting, whether the programme’s **mesoscopic grain** (\(\ell_*\sim\mathrm{Mpc}\), \(R_8\sim 12\,\mathrm{Mpc}\)) points at a **similar redshift class** as the reported transition (\(z\sim 0.3\)–\(0.7\)). Geometry: matter–DE equality sits at \(z_{\mathrm{eq}}\approx 0.30\); lookback and \(\chi(z)\) grow through the same window where path patch counts \(N=\chi/\ell_*\) become large. That is a **shared scale class**, not a derived mechanism for \(H_0(z)\).
+I then ask, without fitting, whether the programme’s **mesoscopic grain** (\(\ell_*\sim\mathrm{Mpc}\), \(R_8\sim 12\,\mathrm{Mpc}\)) points at a **similar redshift class** as the reported transition (\(z\sim 0.3\)–\(0.7\)). Geometry: matter–DE equality sits at \(z_{\mathrm{eq}}\approx 0.30\); lookback and \(\chi(z)\) grow through the same window where path patch counts \(N=\chi/\ell_*\) become large. That is a **shared scale class**, not a derived mechanism for \(H_0(z)\).
 
 ---
 
@@ -66,7 +66,7 @@ Active (and debated) line:
 \[
 \frac{H_0^{\mathrm{SH0ES}}}{H_0^{\mathrm{Planck}}}\approx\frac{73}{67.4}\approx 1.083.
 \]
-Literature “running” claims aim to connect high-\(H_0\) at low \(z\) to low-\(H_0\) at high \(z\) in a continuous way. **We do not re-fit SN bins here.**
+Literature “running” claims aim to connect high-\(H_0\) at low \(z\) to low-\(H_0\) at high \(z\) in a continuous way. **I do not re-fit SN bins here.**
 
 ---
 
@@ -152,7 +152,7 @@ This is the same pattern as R1d \(\leftrightarrow R_8\): **shared scale language
 
 ## 7. Next honest steps
 
-1.  toy \(\delta D/D=s\sqrt{\chi/\ell_*}\) with \(\ell_*\) a priori — [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md). **Verdict:** DESI-safe stochastic amplitude **short** of the \(8\%\) H0 gap by \(\times 16\)–\(38\).  
+1. Toy \(\delta D/D=s\sqrt{\chi/\ell_*}\) with \(\ell_*\) a priori — [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md). **Verdict:** DESI-safe stochastic amplitude **short** of the \(8\%\) H0 gap by \(\times 16\)–\(38\).  
 2. **External:** freeze a public H0-running table (Dainotti bins / Krishnan) as CSV with arXiv tags — no re-fit.  
 3. **Joint:** any future coherent-like map must still obey sister \(\sigma_X\).  
 4. **Experiment:** more TDCOSMO systems + SN binning with pre-registered bins.
@@ -172,4 +172,3 @@ cd measurable-stochastic-vacuum
 python scripts/closed/h0_running_geometry.py
 pytest -q
 ```
-

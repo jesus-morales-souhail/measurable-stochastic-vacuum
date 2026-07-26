@@ -1,12 +1,12 @@
 # Past light-cone integration: the only natural amplifier
 
-**Author:** Jesús Morales Souhail 
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Date:** July 2026 
-**Status:** Derivation + verified numerical atlas (English, referee-ready) 
-**Code:** `scripts/core/lib_verified.py` · `scripts/core/light_cone_atlas.py` 
-**Data:** [`results/light_cone_integration_table.csv`](../results/light_cone_integration_table.csv) 
-**Figure:** [`figures/past_light_cone_rms.png`](../figures/past_light_cone_rms.png) 
+**Author:** Jesús Morales Souhail  
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**Date:** July 2026  
+**Status:** Derivation + verified numerical atlas · independent research, **not peer reviewed**  
+**Code:** `scripts/core/lib_verified.py` · `scripts/core/light_cone_atlas.py`  
+**Data:** [`results/light_cone_integration_table.csv`](../../results/light_cone_integration_table.csv)  
+**Figure:** [`figures/past_light_cone_rms.png`](../../figures/past_light_cone_rms.png)  
 **Related:** [`OBSERVABLE_WALL.md`](OBSERVABLE_WALL.md) · [`NARROW_PATH.md`](NARROW_PATH.md) · [`SIMPLE_AS_LAMBDA.md`](SIMPLE_AS_LAMBDA.md) · [`FOR_REFEREES.md`](FOR_REFEREES.md)
 
 ---
@@ -21,7 +21,7 @@ $$
 $$
 
 
-under the DESI residual ceiling — deep in the self-shielding regime relative to $\sigma_{\mathrm{exp}}\sim 0.03$. 
+under the DESI residual ceiling — deep in the self-shielding regime relative to $\sigma_{\mathrm{exp}}\sim 0.03$.  
 
 The **only** amplification allowed by GR + statistics without undeclared free parameters is **incoherent accumulation along the past null cone**:
 
@@ -31,7 +31,7 @@ $$
 $$
 
 
-For $\chi\sim(3$–$6)\times 10^{3} \mathrm{Mpc}$ and $\ell_{*}\sim 1$–$2 \mathrm{Mpc}$, $\sqrt{N}=\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$70)$. 
+For $\chi\sim(3$–$6)\times 10^{3} \mathrm{Mpc}$ and $\ell_{*}\sim 1$–$2 \mathrm{Mpc}$, $\sqrt{N}=\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$70)$.  
 Native $\sim 10^{-5}$–$10^{-4}$ becomes path $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ — at the **edge** of deep weak-lensing / RSD×lensing precision, **not** a unphysical breakthrough of the wall, and **not** a rescue of $\sigma\sim 10^{-61}$.
 
 ---
@@ -65,7 +65,7 @@ $$
 
 ### 1.2 Accumulation factor — pure path statistics
 
-Photons from source redshift $z_s$ travel comoving distance $\chi(z_s)$. 
+Photons from source redshift $z_s$ travel comoving distance $\chi(z_s)$.  
 If the grain correlation length is $\ell_{*}$, the number of independent patches is
 
 
@@ -82,7 +82,7 @@ $$
 $$
 
 
-Hence **$C=1$** when $s$ is already the per-patch RMS. 
+Hence **$C=1$** when $s$ is already the per-patch RMS.  
 $C\neq 1$ only if one redefines what “per-patch amplitude” means (window functions, redshift weighting, survey mask). Those are $\mathcal{O}(1)$ survey factors, not $10^{56}$.
 
 ### 1.3 Grain–seed link (Minimal Model, $d=3$)
@@ -134,7 +134,7 @@ $$
 
 ## 3. Numerical atlas (verified)
 
-Fiducial: $H_0=67.4$, $\Omega_m=0.315$, $\Omega_\Lambda=0.685$, $\varepsilon=\delta_m=1$, $z_{\mathrm{slip}}=0.8$. 
+Fiducial: $H_0=67.4$, $\Omega_m=0.315$, $\Omega_\Lambda=0.685$, $\varepsilon=\delta_m=1$, $z_{\mathrm{slip}}=0.8$.  
 Full table: `results/light_cone_integration_table.csv` (64 rows).
 
 ### 3.1 Comoving distance
@@ -175,11 +175,11 @@ Full table: `results/light_cone_integration_table.csv` (64 rows).
 
 **Assessment**
 
-- Path integration **softens** the wall: moves the signal from $\sim 10^{-5}$–$10^{-4}$ toward $\sim 10^{-3}$ **for the hand-placed NP-A/B corners**. 
-- It does **not** open a clean detection of $\lvert\gamma-1\rvert\sim 0.03$ under the DESI residual ceiling. 
-- It places those corners near a **possible** technical frontier of multi-bin lensing / cross-correlations — **if** a survey can actually constrain this statistic after systematics (baryons, photo-$z$, IA). That experimental reach is **not established in-repo** (see [`NARROW_PATH.md`](NARROW_PATH.md) §5.1–5.2). 
-- A detection at $\sim 10^{-3}$ would be **first positive evidence only after systematics**, not automatic “texture of DE.” A null **excludes the tested corner** (e.g. NP-B), not the open R1 kernel. 
-- Sorkin remains dead even with path integration.
+I re-ran these numbers several times. Path integration **softens** the wall: it moves the signal from $\sim 10^{-5}$–$10^{-4}$ toward $\sim 10^{-3}$ **for the hand-placed NP-A/B corners**.  
+It does **not** open a clean detection of $\lvert\gamma-1\rvert\sim 0.03$ under the DESI residual ceiling.  
+It places those corners near a **possible** technical frontier of multi-bin lensing / cross-correlations — **if** a survey can actually constrain this statistic after systematics (baryons, photo-$z$, IA). That experimental reach is **not established in-repo** (see [`NARROW_PATH.md`](NARROW_PATH.md) §5.1–5.2).  
+A detection at $\sim 10^{-3}$ would be **first positive evidence only after systematics**, not automatic “texture of DE.” A null **excludes the tested corner** (e.g. NP-B), not the open R1 kernel.  
+Sorkin remains dead even with path integration.
 
 ---
 
@@ -193,7 +193,7 @@ Full table: `results/light_cone_integration_table.csv` (64 rows).
 | Local free $10^{56}$ | No | **Yes** | Excluded |
 | GRB $\xi=\sigma_X$ | Not derived from Einstein+Morales | **Yes** | Not a wall equation |
 
-**Geometry of the past light cone is the only natural amplifier in this framework.**
+**Geometry of the past light cone is the only natural amplifier in this framework.** That is the conclusion I keep coming back to.
 
 ---
 
@@ -210,9 +210,9 @@ YES: integrate observables along the past null cone
 
 **Experimental programme consistent with self-shielding**
 
-1. Keep bulk $=\Lambda$CDM (no large isotropic BAO residual). 
-2. Bound $\sigma_{\mathrm{res}}$ from DESI (already $\lt 1.5\times 10^{-4}$). 
-3. Measure **path-integrated** slip / shear tomography / RSD×lensing deep in $z$. 
+1. Keep bulk $=\Lambda$CDM (no large isotropic BAO residual).  
+2. Bound $\sigma_{\mathrm{res}}$ from DESI (already $\lt 1.5\times 10^{-4}$).  
+3. Measure **path-integrated** slip / shear tomography / RSD×lensing deep in $z$.  
 4. Compare to $\mathrm{RMS}_{\mathrm{path}}$ from the master formula — not to local $\lvert\gamma-1\rvert$ alone.
 
 ---
@@ -236,9 +236,9 @@ EXCLUDED: r~64, N~10^{119}, and ξ=σ_X without derivation
 
 ## 7. Figure (generated in-repo)
 
-![Past light-cone boost and RMS](../figures/past_light_cone_rms.png)
+![Past light-cone boost and RMS](../../figures/past_light_cone_rms.png)
 
-Left: path boost $\sqrt{\chi/\ell_*}$ vs source redshift for NP-A and NP-B. 
+Left: path boost $\sqrt{\chi/\ell_*}$ vs source redshift for NP-A and NP-B.  
 Right: $\mathrm{RMS}_{\mathrm{path}}$ (log scale) vs the indicative experimental floor $\sigma_{\mathrm{exp}}\sim 0.03$.
 
 ---
@@ -255,4 +255,3 @@ python scripts/core/simple_as_lambda.py
 # figures/past_light_cone_rms.png
 # figures/past_light_cone_rms.pdf
 ```
-

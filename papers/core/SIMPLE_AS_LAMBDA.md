@@ -1,13 +1,15 @@
 # As simple as $\Lambda$: the minimal model
 
-**Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) 
-**Date:** July 2026 
-**Status:** Minimal public model (English) — pedagogical reduction of the verified core 
-**Gate:** `pytest -q` (34 tests) · `scripts/core/lib_verified.py` · [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · [`FOR_REFEREES.md`](FOR_REFEREES.md) 
+**Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**Date:** July 2026  
+**Status:** Minimal public model — independent research, **not peer reviewed**  
+**Gate:** `pytest -q` (34 tests) · `scripts/core/lib_verified.py` · [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · [`FOR_REFEREES.md`](FOR_REFEREES.md)
 
 ---
 
 ## 1. Why $\Lambda$ wins (and how to match it)
+
+I have spent a long time trying not to invent extra machinery. $\Lambda$ already works for the mean expansion. The question I care about is: what is the smallest correction one can add so that vacuum grain might leave a light-path imprint?
 
 | | Cosmological constant $\Lambda$ | This programme (reduced) |
 |:--|:--------------------------------|:-------------------------|
@@ -17,9 +19,9 @@
 | Extra prediction | None | One light-path number $\mathrm{RMS}$ |
 | Free amplification $10^{-61}\to 10^{-5}$ | Not needed | **Excluded** (already killed) |
 
-**How we “beat” $\Lambda$ is not by more maths.** 
-$\Lambda$ already describes the **mean** vacuum. 
-We keep that mean and add the **simplest possible correction** that $\Lambda$ cannot make: a small, countable grain that light can see.
+I do not try to beat $\Lambda$ by writing more equations.  
+$\Lambda$ already describes the **mean** vacuum.  
+I keep that mean and add the **simplest possible correction** that $\Lambda$ cannot make: a small, countable grain that light can see.
 
 ---
 
@@ -57,12 +59,12 @@ $$
 $$
 
 
-- $\sigma$: dimensionless noise amplitude of the dark-energy sector (our only extra constant, like $\Omega_\Lambda$ is the only vacuum constant in flat $\Lambda$CDM). 
-- $\ell_*$: correlation / counting length (derived from $\sigma$, not free). 
-- $L_H=c/H_0$: Hubble length. 
-- Exponent $3/2$: spatial 3D counting ($d=3$). 
+- $\sigma$: dimensionless noise amplitude of the dark-energy sector (our only extra constant, like $\Omega_\Lambda$ is the only vacuum constant in flat $\Lambda$CDM).  
+- $\ell_*$: correlation / counting length (derived from $\sigma$, not free).  
+- $L_H=c/H_0$: Hubble length.  
+- Exponent $3/2$: spatial 3D counting ($d=3$).  
 
-**Drop** Sorkin $\sigma\sim 10^{-61}$ as a target for telescopes. 
+**Drop** Sorkin $\sigma\sim 10^{-61}$ as a target for telescopes.  
 If you measure something, $\sigma$ is mesoscopic: $\sigma\sim 10^{-6}$–$10^{-5}$ $\Rightarrow$ $\ell_*\sim$ Mpc.
 
 ### Line C — What light sees (one prediction)
@@ -109,7 +111,7 @@ G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}.
 $$
 
 
-Parameters: $\Lambda$ (or $\Omega_\Lambda$). 
+Parameters: $\Lambda$ (or $\Omega_\Lambda$).  
 Prediction: $H(z)$ as above.
 
 ### Grainy vacuum (minimal)
@@ -120,7 +122,7 @@ $$
 $$
 
 
-Parameters: $\sigma$ (plus shared $\Omega_m,H_0$). 
+Parameters: $\sigma$ (plus shared $\Omega_m,H_0$).  
 Prediction: small gravitational slip along the line of sight; **not** a new $H(z)$.
 
 Optional soft open factor (still simple):
@@ -139,7 +141,7 @@ $$
 $$
 
 
-Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha \sigma_{\mathrm{res}}\sqrt{\chi/\ell_*}$ with $\ell_*$ from Line B using $\sigma$ (seed) or using $\sigma_{\mathrm{res}}$ if grain is read after open map — see NP-A / NP-B in `NARROW_PATH.md`.
+Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha \sigma_{\mathrm{res}}\sqrt{\chi/\ell_*}$ with $\ell_*$ from Line B using $\sigma$ (seed) or using $\sigma_{\mathrm{res}}$ if grain is read after open map — see NP-A / NP-B in [`NARROW_PATH.md`](NARROW_PATH.md).
 
 ---
 
@@ -155,7 +157,7 @@ Exact path formula (verified library) gives the same **order**: few $\times 10^{
 
 ---
 
-## 6. How this surpasses $\Lambda$ (honestly)
+## 6. How this compares with $\Lambda$ (honestly)
 
 | Criterion | Winner |
 |:----------|:-------|
@@ -166,12 +168,12 @@ Exact path formula (verified library) gives the same **order**: few $\times 10^{
 | Planck fine-tuning story | Neither solved; we **stop pretending** telescopes see $10^{-61}$ |
 | Falsifiable extra | **Us:** $\mathrm{RMS}\sim\sigma^{2/3}$ vs lensing/slip surveys |
 
-We do not replace $\Lambda$. 
-We add the **smallest equation** that makes vacuum grain **testable**, with maths no heavier than $\Lambda$ itself.
+I do not replace $\Lambda$.  
+I add the **smallest equation** that makes vacuum grain **testable**, with maths no heavier than $\Lambda$ itself.
 
 ---
 
-## 7. What we delete from the mental model
+## 7. What I delete from the mental model
 
 | Drop | Why |
 |:-----|:----|
@@ -182,7 +184,7 @@ We add the **smallest equation** that makes vacuum grain **testable**, with math
 | Tesseracts, pupils, B4 | Wrong scale/operator |
 | Full R1–R2–R3 jargon in public talks | Replace by Lines A–B–C |
 
-Keep jargon only in technical appendices (`VERIFIED_RESULTS`, `NARROW_PATH`).
+Keep jargon only in technical appendices ([`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md), [`NARROW_PATH.md`](NARROW_PATH.md)).
 
 ---
 
@@ -207,10 +209,10 @@ PROTECT = no “backscatter” of free-amplification 10^{-61} into telescopes
 SIGNAL = one-way light path (like chiral edge current)
 ```
 
-**Entropy:** local *backscattering* of the protected channel is suppressed — 
+**Entropy:** local *backscattering* of the protected channel is suppressed —  
 **not** “entropy of the universe stops”.
 
-That is the entire public model.
+That is the entire public model as I would present it at the kitchen table.
 
 ---
 
@@ -245,4 +247,4 @@ PY
 
 ---
 
-*End. If it needs more symbols than $\Lambda$, it is not for the simplified presentation — put it in an appendix.*
+If a presentation needs more symbols than $\Lambda$, it does not belong in this note — put it in an appendix.

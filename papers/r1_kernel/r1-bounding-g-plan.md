@@ -1,10 +1,11 @@
 # Plan to bound the coupling \(g\) (residual \(\chi\)–matter)
 
-**Author:** Jesús Morales Souhail  
-**Date:** July 2026  
-**Status:** Analysis plan + OOM bounds — **not** a finished MCMC paper  
-**Code:** [`scripts/r1/r1_bound_g_oom.py`](../../scripts/r1/r1_bound_g_oom.py)  
-**Depends on:** [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) · sister DESI \(\sigma_X\) · [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md)
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+
+*Analysis plan and OOM bounds. Not a finished MCMC paper.*
+
+Code: [`scripts/r1/r1_bound_g_oom.py`](../../scripts/r1/r1_bound_g_oom.py)  
+Depends on: [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) · sister DESI \(\sigma_X\) · [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md)
 
 ---
 
@@ -18,13 +19,13 @@
 | \(\sigma_{\mathrm{count}}\) (\(d=3\), \(\ell_*=R_{\mathrm{nl}}\)) | \(\approx 8.5\times 10^{-5}\) | Free residual amplitude from counting |
 | DESI residual ceiling | \(\sigma_X<1.5\times 10^{-4}\) (95% CL) | A posteriori bound (sister repo) |
 
-**Free parameter to bound:** coupling strength between residual field \(\chi\) and matter contrast \(\delta_m\).
+Free parameter to bound: coupling strength between residual field \(\chi\) and matter contrast \(\delta_m\).
 
 ---
 
 ## 2. Parameterization of \(g\) (so it is observable)
 
-The sketch used \(\mathcal{L}_{\mathrm{int}}=g\,\chi\,\delta_m\). For bounds we use a **dimensionless** effective coupling on the nonlinear domain (clearer than a dimensionful \(g\)):
+The sketch used \(\mathcal{L}_{\mathrm{int}}=g\,\chi\,\delta_m\). For bounds I use a dimensionless effective coupling on the nonlinear domain (clearer than a dimensionful \(g\)):
 
 ### 2.1 Response coupling \(\lambda\) (primary)
 
@@ -34,8 +35,8 @@ On the filter scale \(R_{\mathrm{nl}}\),
 =\lambda\,\delta_m\big|_{R_{\mathrm{nl}}}
 +\text{(free residual orthogonal to }\delta_m\text{)}.
 \]
-- \(\lambda=0\): no induced residual (pure free grain).  
-- \(\lvert\lambda\rvert\sim 1\): residual tracks matter 1:1 (ruled out by BAO smoothness).  
+- \(\lambda=0\): no induced residual (pure free grain).
+- \(\lvert\lambda\rvert\sim 1\): residual tracks matter 1:1 (ruled out by BAO smoothness).
 
 **Relation to action \(g\):** once the normalization of \(\chi\) is fixed (e.g. \(\langle\chi^2\rangle^{1/2}=\sigma_{\mathrm{count}}\)),  
 \(\lambda = g\times\text{(normalisation factor)}\). Bounding \(\lambda\) bounds \(g\) up to that convention — state the convention in any paper.
@@ -89,7 +90,7 @@ With free grain included (independent, Gaussian add in quadrature):
 python scripts/r1/r1_bound_g_oom.py
 ```
 
-**Status:** **executable now.** Does not replace a full likelihood; freezes the ceiling.
+Executable now. Does not replace a full likelihood; freezes the ceiling.
 
 ---
 
@@ -97,14 +98,14 @@ python scripts/r1/r1_bound_g_oom.py
 
 | | |
 |:--|:--|
-| **Data** | Public DESI DR2 BAO summary stats + covariance (sister repo pipelines) |
-| **Model** | Flat \(\Lambda\)CDM background + residual kernel with \(\sigma_{\mathrm{res}}(\lambda)=\sqrt{\sigma_{\mathrm{free}}^2+\lambda^2}\) (or linear response template correlated with \(\delta_m\) if implemented) |
-| **Parameters** | \(\lambda\) (and optionally \(\sigma_{\mathrm{free}}\) with prior around \(8.5\times 10^{-5}\) if testing P\(_\mathrm{nl}\)); **not** \(\ell_*\) free |
-| **Method** | Nested sampling / MCMC (emcee or existing sister Cobaya/custom OU likelihood) on **public** BAO only first; then multi-probe only a posteriori |
-| **Output** | Posterior \(p(\lambda\mid\mathrm{BAO})\); 95% upper limit \(\lambda_{95}\) |
-| **Illegal** | Refit \(\ell_*\) or \(R_{\mathrm{nl}}\) to improve the limit |
+| Data | Public DESI DR2 BAO summary stats + covariance (sister repo pipelines) |
+| Model | Flat \(\Lambda\)CDM background + residual kernel with \(\sigma_{\mathrm{res}}(\lambda)=\sqrt{\sigma_{\mathrm{free}}^2+\lambda^2}\) (or linear response template correlated with \(\delta_m\) if implemented) |
+| Parameters | \(\lambda\) (and optionally \(\sigma_{\mathrm{free}}\) with prior around \(8.5\times 10^{-5}\) if testing P\(_\mathrm{nl}\)); not \(\ell_*\) free |
+| Method | Nested sampling / MCMC (emcee or existing sister Cobaya/custom OU likelihood) on public BAO only first; then multi-probe only a posteriori |
+| Output | Posterior \(p(\lambda\mid\mathrm{BAO})\); 95% upper limit \(\lambda_{95}\) |
+| Illegal | Refit \(\ell_*\) or \(R_{\mathrm{nl}}\) to improve the limit |
 
-**Why BAO first:** that is where \(\sigma_X\) is already defined and audited in this programme.
+Why BAO first: that is where \(\sigma_X\) is already defined and audited in this programme.
 
 ---
 
@@ -112,13 +113,13 @@ python scripts/r1/r1_bound_g_oom.py
 
 | | |
 |:--|:--|
-| **Data** | Maus et al. DESI×CMB-lensing slip \(\gamma=1.17\pm 0.11\) (arXiv:2505.20656); later TDCOSMO / Stage-IV as available |
-| **Model** | Programme wall: \(\lvert\gamma-1\rvert=2\varepsilon\sigma_{\mathrm{res}}(\rho_X/\rho_m)/\lvert\delta_m\rvert\) with \(\sigma_{\mathrm{res}}(\lambda)\) from Stage 0–1; path RMS optional |
-| **Method** | (i) OOM: require predicted \(\lvert\gamma-1\rvert_{\mathrm{loc}}\) and \(\mathrm{RMS}_{\mathrm{path}}\) below published errors; (ii) later, importance sampling of Stage-1 chains through slip likelihood |
-| **Output** | Consistency check; typically **weaker** than BAO for \(\lambda\) today (Maus error \(\mathcal{O}(0.1)\) vs signal \(\sim 10^{-3}\)–\(10^{-4}\)) |
-| **Ref.** | [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) |
+| Data | Maus et al. DESI×CMB-lensing slip \(\gamma=1.17\pm 0.11\) (arXiv:2505.20656); later TDCOSMO / Stage-IV as available |
+| Model | Programme wall: \(\lvert\gamma-1\rvert=2\varepsilon\sigma_{\mathrm{res}}(\rho_X/\rho_m)/\lvert\delta_m\rvert\) with \(\sigma_{\mathrm{res}}(\lambda)\) from Stage 0–1; path RMS optional |
+| Method | (i) OOM: require predicted \(\lvert\gamma-1\rvert_{\mathrm{loc}}\) and \(\mathrm{RMS}_{\mathrm{path}}\) below published errors; (ii) later, importance sampling of Stage-1 chains through slip likelihood |
+| Output | Consistency check; typically weaker than BAO for \(\lambda\) today (Maus error \(\mathcal{O}(0.1)\) vs signal \(\sim 10^{-3}\)–\(10^{-4}\)) |
+| Ref. | [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) |
 
-**Role:** not the tightest bound on \(\lambda\), but the right **operator** (anisotropic residual / SDiff gap).
+Role: not the tightest bound on \(\lambda\), but the right operator (anisotropic residual / SDiff gap).
 
 ---
 
@@ -126,11 +127,11 @@ python scripts/r1/r1_bound_g_oom.py
 
 | | |
 |:--|:--|
-| **Data** | Cluster abundances, weak-lensing mass maps; \(\xi_{gg}\) (DESI/SDSS) for \(r_0\) |
-| **Model** | Mask of nonlinear regions; check that residual support \(\propto\mathbf{1}\{\delta>\delta_c\}\) does not overproduce cluster-scale systematics |
-| **Method** | Forward model of residual-induced bias in \(n(M)\) or in \(w_p(r_p)\) — **after** Stage 1 prior on \(\lambda\) |
-| **Output** | Test of T1.2 geometry (edge on \(\delta_m\)); secondary bound on \(\lambda\) if residual correlates with \(\delta_m\) |
-| **Caution** | Easy to double-count nonlinear systematics; pre-register scales \(R_{\mathrm{nl}},R_*\) |
+| Data | Cluster abundances, weak-lensing mass maps; \(\xi_{gg}\) (DESI/SDSS) for \(r_0\) |
+| Model | Mask of nonlinear regions; check that residual support \(\propto\mathbf{1}\{\delta>\delta_c\}\) does not overproduce cluster-scale systematics |
+| Method | Forward model of residual-induced bias in \(n(M)\) or in \(w_p(r_p)\) — after Stage 1 prior on \(\lambda\) |
+| Output | Test of T1.2 geometry (edge on \(\delta_m\)); secondary bound on \(\lambda\) if residual correlates with \(\delta_m\) |
+| Caution | Easy to double-count nonlinear systematics; pre-register scales \(R_{\mathrm{nl}},R_*\) |
 
 ---
 
@@ -138,11 +139,11 @@ python scripts/r1/r1_bound_g_oom.py
 
 | | |
 |:--|:--|
-| **Sampler** | Nested sampling (dynesty/ultranest) or emcee |
-| **Likelihood** | Sister OU-BAO + optional slip; **fixed** \(R_{\mathrm{nl}}\) from \(\sigma(R)=1\) |
-| **Priors** | \(\lambda\sim\mathrm{Uniform}(-10^{-3},10^{-3})\) or log-uniform on \(\lvert\lambda\rvert\); \(\sigma_{\mathrm{free}}\) delta or narrow prior at \(8.5\times 10^{-5}\) under P\(_\mathrm{nl}\) |
-| **Systematics** | OU kernel hyperparameters as in sister paper; no free \(10^{56}\) |
-| **Success metric** | \(\lambda_{95}\) reported with \(\ell_*\) **not** varied |
+| Sampler | Nested sampling (dynesty/ultranest) or emcee |
+| Likelihood | Sister OU-BAO + optional slip; fixed \(R_{\mathrm{nl}}\) from \(\sigma(R)=1\) |
+| Priors | \(\lambda\sim\mathrm{Uniform}(-10^{-3},10^{-3})\) or log-uniform on \(\lvert\lambda\rvert\); \(\sigma_{\mathrm{free}}\) delta or narrow prior at \(8.5\times 10^{-5}\) under P\(_\mathrm{nl}\) |
+| Systematics | OU kernel hyperparameters as in sister paper; no free \(10^{56}\) |
+| Success metric | \(\lambda_{95}\) reported with \(\ell_*\) not varied |
 
 ---
 
@@ -150,12 +151,12 @@ python scripts/r1/r1_bound_g_oom.py
 
 | Observable | Sensitivity to \(\lambda\) today | Role |
 |:-----------|:---------------------------------|:-----|
-| **DESI BAO residual \(\sigma_X\)** | **Strongest** (ceiling \(1.5\times 10^{-4}\)) | **Primary bound** |
+| DESI BAO residual \(\sigma_X\) | Strongest (ceiling \(1.5\times 10^{-4}\)) | Primary bound |
 | Slip \(\gamma\) (Maus) | Weak (error \(\sim 0.1\)) | Operator sanity |
 | Path RMS / Stage-IV lensing | Future | Tighten anisotropic channel |
 | Clusters / \(r_0\) | Scale geometry, weak on \(\lambda\) alone | T1.2 structure test |
 
-**Plan in one line:** bound \(\lambda\) (hence \(g\)) **primarily with BAO residual likelihood**; use lensing/slip as consistency; clusters for mask geometry — not as the first \(g\) constraint.
+Plan in one line: bound \(\lambda\) (hence \(g\)) primarily with BAO residual likelihood; use lensing/slip as consistency; clusters for mask geometry — not as the first \(g\) constraint.
 
 ---
 
@@ -175,13 +176,14 @@ With \(\kappa=1\), \(\sigma_{\mathrm{free}}=8.5\times 10^{-5}\), \(\lvert\lambda
 \[
 \lvert g\rvert\lesssim\frac{1.2\times 10^{-4}}{8.5\times 10^{-5}}\sim\mathcal{O}(1).
 \]
-**Interpretation:** order-unity dimensionless \(g\) is already at the edge of the DESI residual ceiling once \(\chi\) is normalized to the free grain — so BAO is informative, not empty.
+
+Order-unity dimensionless \(g\) is already at the edge of the DESI residual ceiling once \(\chi\) is normalized to the free grain — so BAO is informative, not empty.
 
 (Report both \(\lambda_{95}\) and \(g_{95}\) under this convention in any paper.)
 
 ---
 
-## 6. What we will **not** do
+## 6. What I will not do
 
 | Move | Why |
 |:-----|:----|
@@ -194,25 +196,20 @@ With \(\kappa=1\), \(\sigma_{\mathrm{free}}=8.5\times 10^{-5}\), \(\lvert\lambda
 
 ## 7. Engineering status
 
-1.  Stage 0 OOM (`scripts/r1/r1_bound_g_oom.py`).  
-2.  Profile likelihood on DESI DR2 BAO diagonal (`scripts/r1/r1_profile_lambda_bao.py`).  
-   - Formal 95% (diag 7 bins): \(\lvert\lambda\rvert\le 2.5\times 10^{-2}\) (**weak**, same as sister \(\sigma_X\) profile).  
-   - **Working** map from programme ceiling \(\sigma_X<1.5\times 10^{-4}\): \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\).  
-   - Artefact: `results/r1_lambda_profile/`.  
-3.  Full 13×13 DESI DR2 covariance, **fractional** residual (`scripts/r1/r1_profile_lambda_fullcov.py`).  
-   - Residual \(r_i=\mathrm{data}_i/\mathrm{theory}_i-1\), \(C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})\).  
-   - \(\chi^2_{\Lambda\mathrm{CDM}}\approx 29\) (13 dof); mean fractional offset \(\sim 1\%\).  
-   - Formal free \(\sigma_{\mathrm{res}}\): best \(\approx 1.7\times 10^{-2}\), 95% \(\in[5\times 10^{-3},\,0.17]\); zero excluded at 95% **only because** cov inflation absorbs background tension — **not** a 1e−4 grain detection.  
-   - At programme amplitudes (\(\sigma_{\mathrm{free}}\), \(1.5\times 10^{-4}\)): \(\Delta\ln\mathcal{L}\approx 0\) vs pure \(\Lambda\)CDM.  
-   - **`formal_informative_for_1e-4_grain = False`**. **`primary_bound = working`**.  
-   - Artefact: `results/r1_lambda_fullcov/`.  
-4.  slip OOM / Maus consistency on working \(\lambda\) — predicted \(\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11\) ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).  
-5.  operational F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).  
-6. **Optional:** joint background+\(\sigma_{\mathrm{res}}\) (float \(r_d\) or \(\Omega_m\)); cluster mask test; influence-functional rate beyond OOM.
+1. Stage 0 OOM (`scripts/r1/r1_bound_g_oom.py`).
+2. Profile likelihood on DESI DR2 BAO diagonal (`scripts/r1/r1_profile_lambda_bao.py`).
+   - Formal 95% (diag 7 bins): \(\lvert\lambda\rvert\le 2.5\times 10^{-2}\) (weak, same as sister \(\sigma_X\) profile).
+   - Working map from programme ceiling \(\sigma_X<1.5\times 10^{-4}\): \(\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}\), \(\lvert g\rvert\lesssim 1.45\).
+   - Artefact: `results/r1_lambda_profile/`.
+3. Full 13×13 DESI DR2 covariance, fractional residual (`scripts/r1/r1_profile_lambda_fullcov.py`).
+   - Residual \(r_i=\mathrm{data}_i/\mathrm{theory}_i-1\), \(C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})\).
+   - \(\chi^2_{\Lambda\mathrm{CDM}}\approx 29\) (13 dof); mean fractional offset \(\sim 1\%\).
+   - Formal free \(\sigma_{\mathrm{res}}\): best \(\approx 1.7\times 10^{-2}\), 95% \(\in[5\times 10^{-3},\,0.17]\); zero excluded at 95% only because cov inflation absorbs background tension — not a 1e−4 grain detection.
+   - At programme amplitudes (\(\sigma_{\mathrm{free}}\), \(1.5\times 10^{-4}\)): \(\Delta\ln\mathcal{L}\approx 0\) vs pure \(\Lambda\)CDM.
+   - `formal_informative_for_1e-4_grain = False`. `primary_bound = working`.
+   - Artefact: `results/r1_lambda_fullcov/`.
+4. Slip OOM / Maus consistency on working \(\lambda\) — predicted \(\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11\) ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).
+5. Operational F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).
+6. Optional: joint background+\(\sigma_{\mathrm{res}}\) (float \(r_d\) or \(\Omega_m\)); cluster mask test; influence-functional rate beyond OOM.
 
----
-
-## 8. One-sentence plan
-
-> Bound the dimensionless response \(\lambda\) (and \(g\) under fixed \(\chi\)-normalisation) **first** with the DESI BAO residual likelihood at fixed \(\ell_*=R_{\mathrm{nl}}\); use slip/lensing as operator checks and clusters only for nonlinear-mask geometry — Stage-0 already implies \(\lvert\lambda\rvert\lesssim 10^{-4}\) and \(\lvert g\rvert\lesssim\mathcal{O}(1)\).
-
+I bound the dimensionless response \(\lambda\) (and \(g\) under fixed \(\chi\)-normalisation) first with the DESI BAO residual likelihood at fixed \(\ell_*=R_{\mathrm{nl}}\); use slip/lensing as operator checks and clusters only for nonlinear-mask geometry. Stage-0 already implies \(\lvert\lambda\rvert\lesssim 10^{-4}\) and \(\lvert g\rvert\lesssim\mathcal{O}(1)\).

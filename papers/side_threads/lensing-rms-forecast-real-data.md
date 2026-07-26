@@ -1,9 +1,9 @@
 # Path-RMS vs real lensing / slip data: an OOM forecast gate
 
 **Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
 **Date:** July 2026  
-**Status:** Publication-oriented data note — **uses published external results**; not a full survey likelihood  
+**Status:** Data note — uses published external results; not a full survey likelihood  
 **Code:** [`scripts/side/lensing_rms_real_data_compare.py`](../../scripts/side/lensing_rms_real_data_compare.py)  
 **Sister data pack:** [stochastic-dark-energy-ou `data-pack-option0-internet.md`](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/data-pack-option0-internet.md)  
 **Claim discipline:** [`NARROW_PATH.md`](../core/NARROW_PATH.md) §5.1–5.2 · [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md)
@@ -12,7 +12,7 @@
 
 ## Abstract
 
-We compare the programme’s **hand-placed** path-integrated slip RMS at DESI-safe corners (NP-A / NP-B) to **published** gravitational-slip and modified-gravity constraints and to Stage-IV **shear-calibration** requirements from the literature. All external numbers are taken from named papers (arXiv IDs below). The conclusion is quantitative and non-binary:
+I compare the programme’s **hand-placed** path-integrated slip RMS at DESI-safe corners (NP-A / NP-B) to **published** gravitational-slip and modified-gravity constraints and to Stage-IV **shear-calibration** requirements from the literature. All external numbers are taken from named papers (arXiv IDs below). The conclusion is quantitative and non-binary:
 
 1. Current mean-slip precision (Maus et al.) is \(\mathcal{O}(0.1)\) on \(\gamma=\Phi/\Psi\).  
 2. Euclid-like + DESI-like **forecasts** for constant anisotropic stress \(\eta\) reach \(\sim 5\%\) (Sakr et al.); free \((z,k)\) remains \(\gtrsim 30\%\).  
@@ -21,7 +21,7 @@ We compare the programme’s **hand-placed** path-integrated slip RMS at DESI-sa
 5. Therefore published / forecast **mean** slip precision sits **roughly \(10\)–\(30\times\)** (Sakr constant \(\eta\)) to **\(\sim 25\times\)** (Maus) above NP-B, and far above NP-A — **before** equating operators.  
 6. Stage-IV multiplicative bias control at \(\sim 10^{-3}\) is a **calibration** requirement, **not** a measurement of stochastic path-RMS of DE wrinkles.
 
-We do **not** claim discovery, model death, or that Euclid/LSST “reach \(10^{-3}\) on this statistic.”
+I do **not** claim discovery, model death, or that Euclid/LSST “reach \(10^{-3}\) on this statistic.”
 
 ---
 
@@ -207,4 +207,3 @@ python scripts/core/lib_verified.py
 ```
 
 **Related:** [`NARROW_PATH.md`](../core/NARROW_PATH.md) · [`PAST_LIGHT_CONE_INTEGRATION.md`](../core/PAST_LIGHT_CONE_INTEGRATION.md) · [`OBSERVABLE_WALL.md`](../core/OBSERVABLE_WALL.md) · sister `data-pack-option0-internet.md`
-

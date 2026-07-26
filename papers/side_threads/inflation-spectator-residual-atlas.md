@@ -1,9 +1,9 @@
 # Finding the gap: spectator inflation seed vs residual band (modern \(r\))
 
 **Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
 **Date:** July 2026  
-**Status:** Programme advance note — **OOM atlas + experimental door**, not a DESI detection  
+**Status:** OOM atlas + experimental door — not a DESI detection  
 **Builds on:** [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md) · sister [`amplification-gap.md`](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/amplification-gap.md)  
 **Code:** [`scripts/side/inflation_spectator_residual_atlas.py`](../../scripts/side/inflation_spectator_residual_atlas.py) · `pytest`  
 
@@ -36,7 +36,7 @@ That is the **gap that experiments can close**: measure \(r\) (ceiling on \(\del
 | R1 mesoscopic cell | Principle for \(\ell_*\) | Open kernel (declared) |
 | **Spectator during inflation** | \(H_{\mathrm{inf}}\) (via \(r\)), \(A\), \(\varepsilon_Q\), map to BAO kernel | **This note** |
 
-The user pressure is correct: if there is a crack, it is here — **change the seed physics**, then ask which **experiment** kills or allows residual-band amplitudes.
+If there is a crack, it is here — **change the seed physics**, then ask which **experiment** kills or allows residual-band amplitudes.
 
 ---
 
@@ -57,7 +57,7 @@ Potential-dominated fractional density contrast (OOM, flat gauge):
 with post-inflation field growth \(A=\delta Q_f/\delta Q_i\) (Gordon & Wands: \(A>45\) for *their* target).
 
 **Modern \(r\) anchors (95% CL class, literature):**  
-BICEP/Keck + Planck combinations often quote \(r\lesssim 0.036\); we also show \(r=0.056\) and a low-scale \(r=10^{-3}\).  
+BICEP/Keck + Planck combinations often quote \(r\lesssim 0.036\); I also show \(r=0.056\) and a low-scale \(r=10^{-3}\).  
 Refs.: BK15/BK18 + Planck analyses (e.g. \(r<0.036\) at 95% CL class); energy scale \(V_*^{1/4}\lesssim 1.4\times 10^{16}\,\mathrm{GeV}\) for \(r\sim 0.036\).
 
 ---
@@ -107,7 +107,7 @@ At \(r=0.036\):
 
 ## 4. The experimental gap (what can actually decide)
 
-This is the “brecha” that is **not** a free parameter:
+This is the gap that is **not** a free parameter:
 
 | Measurement | What it does to the spectator door |
 |:------------|:-----------------------------------|
@@ -155,7 +155,7 @@ Until the BAO-kernel map exists, a residual-band hit in this atlas is a **necess
 
 ---
 
-## 7. One-sentence advance
+## 7. One-sentence take
 
 > The crack is not another soft amplifier of Sorkin: under modern \(r\), an inflationary spectator plus \(\mathcal{O}(10^{1}\)–\(10^{2})\) derived field growth can sit in the residual decade **if** the DE slope is not vanishing — and **future \(r\) and \(w_Q\) measurements** can shut that window without ever needing a \(10^{56}\) miracle.
 
@@ -170,4 +170,3 @@ python scripts/side/gordon_wands_factor45.py
 python scripts/side/inflation_spectator_residual_atlas.py
 python scripts/gap_two_targets.py  # sister repo: Sorkin contrast
 ```
-
