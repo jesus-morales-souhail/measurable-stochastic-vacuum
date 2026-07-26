@@ -130,6 +130,9 @@ under the sister DESI ceiling \(1.5\times 10^{-4}\) — **compatibility**, not a
 **Still missing for a full theory claim (the user’s correct objection):**  
 an explicit calculation — from an action, open-system master equation, or equivalent — showing *why* the vacuum residual grain **must** sit at \(R_{\mathrm{nl}}\) rather than \(L_P\), \(r_0\), or another IR scale. Until that exists, P\(_\mathrm{nl}\) is a **motivated hypothesis with a clean length**, not a derivation.
 
+**Ranked mechanism candidates** (Buchert averaging, SDiff edge, IR cutoff at \(R_{\mathrm{nl}}\), …):  
+[`r1-mechanism-candidates.md`](r1-mechanism-candidates.md).
+
 ---
 
 ## 5. Relation to programme walls
