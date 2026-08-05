@@ -94,7 +94,7 @@ Einstein + Newton background + Morales residual definition. No undeclared free p
 Sister result (a posteriori input, not a free dial inside the derivation of (W)):
 
 $$
-\sigma_X < 1.5\times 10^{-4} \quad(95\%~\mathrm{CL}).
+\sigma_X < 1.5\times 10^{-4} \quad(95% CL).
 $$
 
 Best-case shear ($\varepsilon=1$, $\lvert\delta_m\rvert=1$, $\Omega_{m0}=0.315$, $\Omega_{\Lambda 0}=0.685$):

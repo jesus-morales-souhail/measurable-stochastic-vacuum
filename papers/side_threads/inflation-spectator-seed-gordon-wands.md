@@ -87,7 +87,7 @@ $$
 while then-current tensor limits gave [Eq. (26)]
 
 $$
-V_{\mathrm{inf}}^{1/4}<10^{-2}\,M_p\quad(95\%~\mathrm{CL}).
+V_{\mathrm{inf}}^{1/4}<10^{-2}\,M_p\quad(95% CL).
 $$
 
 Hence frozen inflationary DE perturbations are **not of sufficient size for their quadrupole target without either high $H_{\mathrm{inf}}$ (excluded then) or post-inflation growth**.
