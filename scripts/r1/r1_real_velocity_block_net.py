@@ -398,7 +398,8 @@ def main() -> None:
         f"CDS: {SOURCE['cds']}\n"
         f"Files: {SOURCE['url_table2']}\n"
         f"ReadMe: {SOURCE['url_readme']}\n"
-        f"Local: {table2}\n"
+        f"Data file in repo: data/real_velocity_net/{Path(table2).name}
+"
         f"H0 convention: {H0_CF_KMS} km/s/Mpc for v_pec only\n"
     )
     (OUT / "PROVENANCE.txt").write_text(prov, encoding="utf-8")

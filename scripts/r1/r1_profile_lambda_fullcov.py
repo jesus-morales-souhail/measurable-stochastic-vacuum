@@ -48,16 +48,17 @@ OUT = ROOT / "results" / "r1_lambda_fullcov"
 OUT.mkdir(parents=True, exist_ok=True)
 DATA = ROOT / "data"
 
-# Sister zenodo cache (absolute fallback)
+# Optional BAO data roots (env overrides; no machine-specific defaults)
+# DESI_BAO_DIR: path to desi_bao_dr2 tables from the data repo
+# DESI_BAO_ALT: optional alternate cache
 SISTER_BAO = Path(
-    "/home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/stochastic-dark-energy-ou"
-    "/data/desi_dr2_local/dr2_data/dr2-bao-zenodo/cosmology_chains/bao_data/desi_bao_dr2"
+    __import__("os").environ.get(
+        "DESI_BAO_DIR",
+        str(ROOT.parent / "stochastic-dark-energy-ou" / "data" / "desi_dr2_local"
+            / "dr2_data" / "dr2-bao-zenodo" / "cosmology_chains" / "bao_data" / "desi_bao_dr2"),
+    )
 )
-# Alternate public copies
-ALT_BAO = Path(
-    "/home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/proyecto_unificacion"
-    "/data/desi/bao_dr2"
-)
+ALT_BAO = Path(__import__("os").environ.get("DESI_BAO_ALT", str(ROOT / "data" / "desi" / "bao_dr2")))
 
 from lib_verified import hubble_radius_mpc, sigma_from_count  # noqa: E402
 from r1_sigma_R_full import H as H_FID, SIGMA8, find_R_nl, make_Pk_unnorm, normalize_A  # noqa: E402

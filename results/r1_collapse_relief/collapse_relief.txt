@@ -73,4 +73,4 @@ Remaining variables (honest list — see JSON remaining_variables):
   no Omega/f_sigma8 fit; Courtois grids not ingested; g/lambda not from CF4.
 
 Non-claims: matter kinematics only; no DE residual / Omega / H0 solution.
-Wrote /home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/measurable-stochastic-vacuum/results/r1_collapse_relief
+Wrote results/r1_collapse_relief
