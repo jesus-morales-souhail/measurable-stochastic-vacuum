@@ -1,10 +1,10 @@
 # Analysis plan: residual–structure correlation on the nonlinear scale
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Pre-registered protocol for a residual–matter cross test. Not a claim of Stage-IV detection.*
 
-Related: [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md), [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)  
+Related: [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md), [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)
 Code: [`scripts/r1/r1_stage4_test_design.py`](../../scripts/r1/r1_stage4_test_design.py), [`scripts/r1/r1_T2_mock_pipeline.py`](../../scripts/r1/r1_T2_mock_pipeline.py)
 
 ---
@@ -27,7 +27,7 @@ Deviations from the plan should be stated explicitly in any application to DESI 
 
 ## 1. Hypothesis (T2)
 
-**H1 (scale).**  
+**H1 (scale).**
 The two-point structure of a residual field $\chi$ (or a residual proxy correlated with anisotropic stress / BAO residual template) has correlation length
 
 $$
@@ -36,7 +36,7 @@ $$
 
 when the residual amplitude is in the programme window $\sigma\sim 10^{-5}$–$1.5\times 10^{-4}$.
 
-**H2 (matter lock).**  
+**H2 (matter lock).**
 $\chi$ is positively correlated with a nonlinear mask built only from matter:
 
 $$
@@ -45,7 +45,7 @@ $$
 
 (pre-registered defaults: $\delta_c=1.0$ primary; $1.5$ robustness).
 
-**H0 (null).**  
+**H0 (null).**
 Residual is spatially white on survey scales, or correlated only on $\ll 1\,\mathrm{Mpc}$ or $\gg 100\,\mathrm{Mpc}$, or anti-correlated with $m$ at high significance without a derived sign flip.
 
 ---
@@ -57,7 +57,7 @@ Residual is spatially white on survey scales, or correlated only on $\ll 1\,\mat
 | $R_{\mathrm{nl}}$ | $\approx 8.61\,\mathrm{Mpc}$ | $\sigma(R)=1$, EH-like $P(k)$, $\sigma_8=0.81$ |
 | Counting $d$ | $3$ | programme default |
 | $\sigma_{\mathrm{free}}$ | $\approx 8.5\times 10^{-5}$ | $(R_{\mathrm{nl}}/L_H)^{3/2}$ |
-| Residual ceiling | $\sigma_X<1.5\times 10^{-4}$ (95%) | sister DESI OU |
+| Residual ceiling | $\sigma_X<1.5\times 10^{-4}$ (95%) | related DESI OU |
 | Allowed $\ell_{\ast}$ band | $[0.5,3]R_{\mathrm{nl}}$ | sandwich $\mathcal{O}(1)$ |
 | $k_{\mathrm{nl}}$ pivot | $\sim 0.17\,h\,\mathrm{Mpc}^{-1}$ | $\sim 1/(R_{\mathrm{nl}}h)$ OOM |
 | $\ell_{\mathrm{sep}}$ (packing) | $\approx 15.9\,\mathrm{Mpc}$ | $f(\delta>1)\approx 0.16$ |
@@ -180,10 +180,10 @@ T2 kills the sandwich scale claim if any hold:
 
 ## 9. End-to-end mock validation (pipeline proof)
 
-Code: [`scripts/r1/r1_T2_mock_pipeline.py`](../../scripts/r1/r1_T2_mock_pipeline.py)  
+Code: [`scripts/r1/r1_T2_mock_pipeline.py`](../../scripts/r1/r1_T2_mock_pipeline.py)
 Results: `results/r1_T2_mock/`
 
-Synthetic 2D Gaussian matter field with corr $\sim R_{\mathrm{nl}}$; residual injected as  
+Synthetic 2D Gaussian matter field with corr $\sim R_{\mathrm{nl}}$; residual injected as
 $r = g\,\sigma_{\mathrm{free}}\,\delta + \mathrm{noise}$.
 
 | Check | Result (fiducial run) |

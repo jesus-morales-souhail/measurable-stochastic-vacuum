@@ -1,11 +1,11 @@
 # Operational falsifiers of the sandwich uniqueness theorem
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Pre-registered falsifiers and executed numbers. Not a claim of Stage-IV detection.*
 
-Code: [`scripts/r1/r1_sandwich_falsifiers.py`](../../scripts/r1/r1_sandwich_falsifiers.py)  
-Results: [`results/r1_falsifiers/`](../results/r1_falsifiers/)  
+Code: [`scripts/r1/r1_sandwich_falsifiers.py`](../../scripts/r1/r1_sandwich_falsifiers.py)
+Results: [`results/r1_falsifiers/`](../results/r1_falsifiers/)
 Depends on: [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) · [`wp5-falsification.md`](../work_packages/wp5-falsification.md) · [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md)
 
 ---

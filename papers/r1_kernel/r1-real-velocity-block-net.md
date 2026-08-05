@@ -1,10 +1,10 @@
 # Block-net on real peculiar velocities (Cosmicflows-4)
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-July 2026 · data note · not peer reviewed  
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+July 2026 · data note
 
-**Code:** [`scripts/r1/r1_real_velocity_block_net.py`](../../scripts/r1/r1_real_velocity_block_net.py)  
-**Results:** [`results/r1_real_velocity_net/`](../../results/r1_real_velocity_net/)  
+**Code:** [`scripts/r1/r1_real_velocity_block_net.py`](../../scripts/r1/r1_real_velocity_block_net.py)
+**Results:** [`results/r1_real_velocity_net/`](../../results/r1_real_velocity_net/)
 **Data (local copy):** [`data/real_velocity_net/table2.dat`](../../data/real_velocity_net/table2.dat)
 
 ---
@@ -13,7 +13,7 @@ July 2026 · data note · not peer reviewed
 
 A concrete version of the “cast a net, split into blocks, measure means and covariances” idea — **only on real galaxy data**, with a documented public catalog.
 
-This measures **matter** line-of-sight residual velocities relative to a pure Hubble flow.  
+This measures **matter** line-of-sight residual velocities relative to a pure Hubble flow.
 It does **not** measure dark-energy residuals, \(\Omega_\Lambda\), or a work origin for vacuum energy.
 
 ---
@@ -31,8 +31,8 @@ It does **not** measure dark-energy residuals, \(\Omega_\Lambda\), or a work ori
 
 Columns used (from ReadMe):
 
-- `Vcmb` — systemic velocity in the CMB frame (km/s)  
-- `DM`, `e_DM` — distance modulus and uncertainty (mag)  
+- `Vcmb` — systemic velocity in the CMB frame (km/s)
+- `DM`, `e_DM` — distance modulus and uncertainty (mag)
 - `SGL`, `SGB` — supergalactic coordinates (deg)
 
 ---
@@ -49,13 +49,13 @@ d = 10^{({\rm DM}-25)/5}\quad[\mathrm{Mpc}].
 v_{\mathrm{pec}} = V_{\mathrm{cmb}} - H_0\, d.
 \]
 
-**\(H_0 = 75\,\mathrm{km\,s^{-1}Mpc^{-1}}\)**  
-This is the conventional Cosmicflows residual scale for converting distance to Hubble velocity.  
+**\(H_0 = 75\,\mathrm{km\,s^{-1}Mpc^{-1}}\)**
+This is the conventional Cosmicflows residual scale for converting distance to Hubble velocity.
 It is **not** fitted in this script and is **not** a claim about the true cosmic \(H_0\).
 
 **Coordinates:** supergalactic Cartesian \((x,y,z)\) from \((d,\mathrm{SGL},\mathrm{SGB})\).
 
-**Blocks:** cubes of side \(L\) Mpc; keep blocks with \(\ge 3\) galaxies.  
+**Blocks:** cubes of side \(L\) Mpc; keep blocks with \(\ge 3\) galaxies.
 Per block: mean \(v_{\mathrm{pec}}\), internal rms, galaxy count.
 
 **Correlation:** for block means demeaned,
@@ -141,5 +141,5 @@ python scripts/r1/r1_real_velocity_block_net.py
 
 ## References
 
-1. R. B. Tully et al., *Cosmicflows-4*, Astrophys. J. **944**, 94 (2023).  
+1. R. B. Tully et al., *Cosmicflows-4*, Astrophys. J. **944**, 94 (2023).
 2. CDS catalog [J/ApJ/944/94](https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/944/94).

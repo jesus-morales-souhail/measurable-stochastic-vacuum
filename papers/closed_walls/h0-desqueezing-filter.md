@@ -1,17 +1,17 @@
 # Filter note: desqueezing is real; invented $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ is not
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Date:** July 2026  
-**Status:** Claim-boundary filter — applies `pattern-undeclared-physical-power` + `BOUNDARY`  
-**Code:** [`scripts/closed/h0_desqueezing_filter.py`](../../scripts/closed/h0_desqueezing_filter.py)  
-**Related:** sister desqueezing note · [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md) · OU residual bound  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Date:** July 2026
+**Status:** Claim-boundary filter — applies `pattern-undeclared-physical-power` + `BOUNDARY`
+**Code:** [`scripts/closed/h0_desqueezing_filter.py`](../../scripts/closed/h0_desqueezing_filter.py)
+**Related:** sister desqueezing note · [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md) · OU residual bound
 
 ---
 
 ## Abstract
 
-Complex frequency $\omega=\omega_R-i\gamma/2$ and half-life $t_{1/2}=\ln 2/\gamma$ are **standard** and already validated in this programme’s desqueezing scans.  
+Complex frequency $\omega=\omega_R-i\gamma/2$ and half-life $t_{1/2}=\ln 2/\gamma$ are **standard** and already validated in this programme’s desqueezing scans.
 A draft construction that writes
 
 $$
@@ -62,8 +62,8 @@ The residual amplitude $\sigma_X$ is the stationary scale of fluctuations along 
 
 Consequences:
 
-1. Any claim that a temporal DE drift of order $8\%$ in $H_0$ is “orthogonal” to $\sigma_X$ is **wrong**.  
-2. The BAO-only free-$(w_0,w_a)$ fit already asked whether the **mean** DE history needs strong time dependence: it prefers nearly $\Lambda$ ($w_0\approx -0.99$, $w_a\approx -0.02$). Nested $(\sigma,\theta)$ is not preferred ($\Delta\mathrm{AIC}=+4$).  
+1. Any claim that a temporal DE drift of order $8\%$ in $H_0$ is “orthogonal” to $\sigma_X$ is **wrong**.
+2. The BAO-only free-$(w_0,w_a)$ fit already asked whether the **mean** DE history needs strong time dependence: it prefers nearly $\Lambda$ ($w_0\approx -0.99$, $w_a\approx -0.02$). Nested $(\sigma,\theta)$ is not preferred ($\Delta\mathrm{AIC}=+4$).
 3. Stochastic residual $\sigma_X$ is an **additional** bound on fluctuations about that mean.
 
 ---
@@ -92,7 +92,7 @@ Complex $\omega$ changes the **phase** of the correlator, not the **energy budge
 
 ### 4.2 Same conclusion as path-RMS toy
 
-[`h0-bridge-toy-map.md`](h0-bridge-toy-map.md): DESI-safe stochastic path bias gives $H_0(0.15)/H_0(1.5)\approx 1.006$, not $1.083$.  
+[`h0-bridge-toy-map.md`](h0-bridge-toy-map.md): DESI-safe stochastic path bias gives $H_0(0.15)/H_0(1.5)\approx 1.006$, not $1.083$.
 Desqueezing packaging does not repair that deficit.
 
 ### 4.3 What $\theta$ from the repo actually is (a priori, not H0-fit)
@@ -113,14 +113,14 @@ python scripts/closed/h0_desqueezing_filter.py
 
 ## 5. CPL 2.5σ / 4.2σ vs H0-running (do not mix)
 
-From sister DESI paper abstract (multi-probe CPL, **not** this note’s H0-running table):
+From related DESI paper abstract (multi-probe CPL, **not** this note’s H0-running table):
 
 | Combination class | Typical CPL claim in abstract | Meaning |
 |:------------------|:------------------------------|:--------|
 | DESI+CMB+SN class | $w_0,w_a$ away from $(-1,0)$ at **2.5σ–4.2σ** (dataset-dependent) | Preference for **dynamical mean DE** in CPL |
 | This programme BAO-only | $w_0\approx -0.99$, $w_a\approx -0.02$ | Nearly $\Lambda$ under BAO-only diagonal baseline |
 
-**Do not:** paste 2.5σ–4.2σ into a table labelled “H0 running significance.”  
+**Do not:** paste 2.5σ–4.2σ into a table labelled “H0 running significance.”
 **Legal:** cite H0-running papers (Dainotti, Krishnan, Wong trend $\sim 1.9\sigma$) with **their** numbers.
 
 ---

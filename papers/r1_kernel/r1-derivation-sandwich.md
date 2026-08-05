@@ -1,10 +1,10 @@
 # Uniqueness of the residual grain $\ell_{\ast}\sim R_{\mathrm{nl}}$ under stated axioms
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Conditional derivation with numerical support. Not a proof that nature realises the axioms.*
 
-Code: [`scripts/r1/r1_sandwich_derivation.py`](../../scripts/r1/r1_sandwich_derivation.py) · Results: [`results/r1_sandwich/`](../../results/r1_sandwich/)  
+Code: [`scripts/r1/r1_sandwich_derivation.py`](../../scripts/r1/r1_sandwich_derivation.py) · Results: [`results/r1_sandwich/`](../../results/r1_sandwich/)
 Related: [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md), [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md), [`r1-open-kernel.md`](r1-open-kernel.md), [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md)
 
 ---
@@ -160,7 +160,7 @@ Update:
 | Existence of the residual sector + coupling | Still the load-bearing postulates (A0–A1) |
 | Geometry of $R_{\mathrm{nl}}$ | Closed (full $\sigma(R)$) |
 | Amplitude under counting | Closed downstream |
-| Empirical ceiling on $\lambda,g$ | Working bound from sister DESI |
+| Empirical ceiling on $\lambda,g$ | Working bound from related DESI |
 
 The open problem is narrower: it is no longer “any mesoscopic scale could do”; it is “does nature implement a residual sector that couples locally to classical nonlinear matter?” — a sharper, falsifiable question.
 

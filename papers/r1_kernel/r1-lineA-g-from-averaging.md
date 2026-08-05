@@ -1,6 +1,6 @@
 # Line A: effective $g$ from averaging residual (not from DESI dial)
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Derivation sketch and OOM path. Not a finished Buchert MCMC.*
 

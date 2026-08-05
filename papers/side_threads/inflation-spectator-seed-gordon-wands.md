@@ -1,30 +1,30 @@
 # Inflationary spectator seed for DE: Gordon & Wands (2005), revalidated for this programme
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Date:** July 2026  
-**Status:** Literature revalidation note — respectful external theory, not a detection claim  
-**Primary reference:** C. Gordon & D. Wands, *The amplitude of dark energy perturbations*, Phys. Rev. D **71**, 123505 (2005); arXiv:[astro-ph/0504132](https://arxiv.org/abs/astro-ph/0504132)  
-**Related programme notes:** [`amplification-gap` sister](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/amplification-gap.md) · [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`NARROW_PATH.md`](../core/NARROW_PATH.md)  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Date:** July 2026
+**Status:** Literature revalidation note — respectful external theory, not a detection claim
+**Primary reference:** C. Gordon & D. Wands, *The amplitude of dark energy perturbations*, Phys. Rev. D **71**, 123505 (2005); arXiv:[astro-ph/0504132](https://arxiv.org/abs/astro-ph/0504132)
+**Related programme notes:** [`amplification-gap` sister](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/amplification-gap.md) · [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`NARROW_PATH.md`](../core/NARROW_PATH.md)
 **Code (arithmetic of their eqs only):** [`scripts/side/gordon_wands_factor45.py`](../../scripts/side/gordon_wands_factor45.py)
 
 ---
 
 ## Abstract
 
-Gordon & Wands (2005) is a serious PRD calculation of **dark-energy isocurvature** seeded by a **light spectator field during inflation**, using standard cosmological perturbation theory (separate-universe / large-scale limit). It must **not** be dismissed by equating their “tachyonic amplification” with the excluded coherent GPE/tachyonic **BAO residual** of the sister DESI corpus.
+Gordon & Wands (2005) is a serious PRD calculation of **dark-energy isocurvature** seeded by a **light spectator field during inflation**, using standard cosmological perturbation theory (separate-universe / large-scale limit). It must **not** be dismissed by equating their “tachyonic amplification” with the excluded coherent GPE/tachyonic **BAO residual** of the related DESI corpus.
 
 **Verified from the paper (not from memory of the word “tachyonic”):**
 
-1. **Seed is not Sorkin.** For a light canonical field during inflation they use  
-   $\mathcal{P}_Q^{1/2}=H_{\mathrm{inf}}/(2\pi)$ [their Eq. (12)], not $\sigma_0=L_P/L_H\sim 10^{-61}$.  
-2. **Frozen case is insufficient *for their target*** (large DE density contrast for the low CMB quadrupole), not “insufficient by $10^{56}$.”  
-3. **Growth factor needed after inflation:** $\delta Q_f/\delta Q_i>45$ [Eq. (27)], equivalently $\phi_f/\phi_i>45$ [Eq. (32)] in their Mexican-hat construction — **order forty-five**, not $10^{56}$.  
+1. **Seed is not Sorkin.** For a light canonical field during inflation they use
+   $\mathcal{P}_Q^{1/2}=H_{\mathrm{inf}}/(2\pi)$ [their Eq. (12)], not $\sigma_0=L_P/L_H\sim 10^{-61}$.
+2. **Frozen case is insufficient *for their target*** (large DE density contrast for the low CMB quadrupole), not “insufficient by $10^{56}$.”
+3. **Growth factor needed after inflation:** $\delta Q_f/\delta Q_i>45$ [Eq. (27)], equivalently $\phi_f/\phi_i>45$ [Eq. (32)] in their Mexican-hat construction — **order forty-five**, not $10^{56}$.
 4. The factor $\sim 45$ follows from the tension between the inflation energy needed for a frozen light field to meet their amplitude [Eq. (25)] and the **then-current** tensor bound [Eq. (26)].
 
 **For this programme:** this is the first literature pathway I have revalidated whose “how much is missing” is **not** $G_{\mathrm{Euclid}}\sim 10^{56}$, but **depends on $H_{\mathrm{inf}}$ (unmeasured) and on a derived post-inflation map**. It is a **different starting physics**, not a soft rescue of holographic Sorkin counting. It does **not** automatically become a DESI BAO residual prediction without a full re-derivation of seed → residual → covariance.
 
-**Next step (done as OOM atlas):** modern $r$ → $\delta Q$ → $\sigma_\rho(\varepsilon_Q,A)$ vs residual band —  
+**Next step (done as OOM atlas):** modern $r$ → $\delta Q$ → $\sigma_\rho(\varepsilon_Q,A)$ vs residual band —
 [`inflation-spectator-residual-atlas.md`](inflation-spectator-residual-atlas.md).
 
 ---
@@ -153,8 +153,8 @@ Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DE
 
 ## 5. Modern context (pointers, not re-derived)
 
-- Tensor bounds have evolved since 2005; any **numerical** update of Eqs. (25)–(27) must use current $r$ / $V_{\mathrm{inf}}$ limits, not only the paper’s $V^{1/4}<10^{-2}M_p$.  
-- Spectator / quintessence-during-inflation literature is larger than one paper; Gordon & Wands is the **worked PRD example** I revalidated equation-by-equation.  
+- Tensor bounds have evolved since 2005; any **numerical** update of Eqs. (25)–(27) must use current $r$ / $V_{\mathrm{inf}}$ limits, not only the paper’s $V^{1/4}<10^{-2}M_p$.
+- Spectator / quintessence-during-inflation literature is larger than one paper; Gordon & Wands is the **worked PRD example** I revalidated equation-by-equation.
 - Sister DESI exclusion of **coherent tachyonic residual growth on BAO** remains; it does **not** automatically exclude a **post-inflation radial roll** of a complex PNGB sector aimed at isocurvature.
 
 ---
@@ -181,9 +181,9 @@ Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DE
 
 ## 7. Programme stance (after revalidation)
 
-1. **Respect:** Gordon & Wands is competent standard theory; “same wall as Sorkin $10^{56}$” was **false**.  
-2. **Category:** open question of type **“$H_{\mathrm{inf}}$ + derived $\mathcal{O}(10^{1}$–$10^{2})$ map”**, not type **“free $10^{56}$ on holographic seed.”**  
-3. **Next science (if pursued):** modern tensor prior → $\delta Q$ band → explicit map to residual / slip operators → a posteriori DESI.  
+1. **Respect:** Gordon & Wands is competent standard theory; “same wall as Sorkin $10^{56}$” was **false**.
+2. **Category:** open question of type **“$H_{\mathrm{inf}}$ + derived $\mathcal{O}(10^{1}$–$10^{2})$ map”**, not type **“free $10^{56}$ on holographic seed.”**
+3. **Next science (if pursued):** modern tensor prior → $\delta Q$ band → explicit map to residual / slip operators → a posteriori DESI.
 4. **Until then:** cite this note as **literature door + arithmetic check**, not as a new DESI result.
 
 ---

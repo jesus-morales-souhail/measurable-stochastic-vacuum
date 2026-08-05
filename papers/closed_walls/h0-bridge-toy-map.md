@@ -1,10 +1,10 @@
 # Toy a priori map: path depth $\to$ distance bias (H0-bridge test)
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Date:** July 2026  
-**Status:** Toy map + amplitude check — **not** a solution of the Hubble tension  
-**Code:** [`scripts/closed/h0_bridge_toy.py`](../../scripts/closed/h0_bridge_toy.py)  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Date:** July 2026
+**Status:** Toy map + amplitude check — **not** a solution of the Hubble tension
+**Code:** [`scripts/closed/h0_bridge_toy.py`](../../scripts/closed/h0_bridge_toy.py)
 **Parent:** [`h0-running-brachistochrone-bridge.md`](h0-running-brachistochrone-bridge.md) · [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`OBSERVABLE_WALL.md`](../core/OBSERVABLE_WALL.md)
 
 ---
@@ -62,8 +62,8 @@ python scripts/closed/h0_bridge_toy.py
 | NP-A $\approx 2.06$ Mpc | $3.41\times 10^{-3}$ | $9.01\times 10^{-3}$ | $\mathbf{1.0056}$ | short |
 | $R_8\approx 11.87$ Mpc | $1.42\times 10^{-3}$ | $3.76\times 10^{-3}$ | $\mathbf{1.0023}$ | short |
 
-**$\beta$ needed** if $\delta=\beta\sqrt{\chi/\ell_{\ast}}$ to force ratio $1.083$:  
-$\beta\approx 3.0\times 10^{-3}$ (NP-A) or $7.2\times 10^{-3}$ ($R_8$) vs wall $s_{\mathrm{loc}}\approx 1.93\times 10^{-4}$ → short by **$\times 16$–$38$**. That residual / slip amplitude sits **above** the sister DESI ceiling → **excluded** under current programme bounds.
+**$\beta$ needed** if $\delta=\beta\sqrt{\chi/\ell_{\ast}}$ to force ratio $1.083$:
+$\beta\approx 3.0\times 10^{-3}$ (NP-A) or $7.2\times 10^{-3}$ ($R_8$) vs wall $s_{\mathrm{loc}}\approx 1.93\times 10^{-4}$ → short by **$\times 16$–$38$**. That residual / slip amplitude sits **above** the related DESI ceiling → **excluded** under current programme bounds.
 
 ### 3.2 Coherent (C) — amplitude large, class excluded
 
@@ -120,7 +120,7 @@ The shape **does** change through the window where Dainotti / Krishnan-style run
 
 ## 6. Related filter (desqueezing packaging)
 
-Invented $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ with $\theta$ tuned to $z\sim 0.5$–$0.7$ is **rejected** in [`h0-desqueezing-filter.md`](h0-desqueezing-filter.md).  
+Invented $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ with $\theta$ tuned to $z\sim 0.5$–$0.7$ is **rejected** in [`h0-desqueezing-filter.md`](h0-desqueezing-filter.md).
 Complex $\omega$ does not raise the $\sigma_X$ energy budget. Same shortfall vs $8\%$.
 
 ## 7. Reproduce

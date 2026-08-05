@@ -1,17 +1,17 @@
 # Collapse peaks, velocity relief, and gravity vs expansion (Cosmicflows-4)
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-July 2026 · data note · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+July 2026 · data note
 
-**Code:** [`scripts/r1/r1_collapse_relief_cf4.py`](../../scripts/r1/r1_collapse_relief_cf4.py)  
-**Results:** [`results/r1_collapse_relief/`](../../results/r1_collapse_relief/)  
+**Code:** [`scripts/r1/r1_collapse_relief_cf4.py`](../../scripts/r1/r1_collapse_relief_cf4.py)
+**Results:** [`results/r1_collapse_relief/`](../../results/r1_collapse_relief/)
 **Companion (volume net):** [`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md)
 
 ---
 
 ## What this is
 
-The previous note cast a cubic “net” over Cosmicflows-4 and measured block-mean residual velocities.  
+The previous note cast a cubic “net” over Cosmicflows-4 and measured block-mean residual velocities.
 Here I ask a sharper question on the **same public catalog**:
 
 > Where does **matter collapse most**, what is the **velocity relief** (topography) at those points, and how does that kinematic relief compare to **pure expansion** at the matter nonlinear grain?
@@ -39,7 +39,7 @@ Literature I cite but **do not recompute**: Whitford et al. 2023 (bulk flow on C
 
 ## Collapse proxies (from the catalog only)
 
-1. **$N_{\mathrm{mem}}$** — number of CF4 table2 galaxies sharing the group’s `1PGC` (multiplicity).  
+1. **$N_{\mathrm{mem}}$** — number of CF4 table2 galaxies sharing the group’s `1PGC` (multiplicity).
 2. **$n_{10}$** — number of CF4 galaxies within $10\,\mathrm{Mpc}$ of the group center (local density).
 
 Classes (percentiles of the data, not theory targets):
@@ -65,14 +65,14 @@ On this run: $p_{75}(N_{\mathrm{mem}}|\mathrm{multi})=4$, $p_{75}(n_{10})=21$, $
 | Internal | for multi-member groups: $\mathrm{rms}(V_{\mathrm{cmb}}^{\mathrm{members}})$ about group $V_{3k}$ |
 | Relief curve | both quantities in bins of $n_{10}$ |
 
-Internal rms is the closest thing in these tables to “matter colliding / orbiting inside a collapsed patch.”  
+Internal rms is the closest thing in these tables to “matter colliding / orbiting inside a collapsed patch.”
 External $V_{\mathrm{pec}}$ mixes coherent flow **and** distance error; denser multi-member systems often **average better**, so catalog scatter can **drop** even where gravity is strong. I keep that caveat explicit.
 
 ---
 
 ## Gravity vs expansion diagnostics
 
-Repo geometry (not refit to CF4): $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ from the sandwich / $\sigma(R)$ work.  
+Repo geometry (not refit to CF4): $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ from the sandwich / $\sigma(R)$ work.
 At CF $H_0=75$:
 
 \[
@@ -85,7 +85,7 @@ v_H(R_{\mathrm{nl}})=H_0 R_{\mathrm{nl}}\approx 646\,\mathrm{km\,s^{-1}}.
 | $\eta_{\mathrm{pec}}$ | $\lvert V_{\mathrm{pec}}\rvert/(H_0 d)$ | group residual vs Hubble at its distance |
 | $\eta(L)$ | $\sigma(v_{\mathrm{block}})/(H_0 L)$ | volume block net (previous note) |
 
-If $\eta_{\mathrm{int}}\sim\mathcal{O}(1)$, internal dispersion is competing with expansion across $R_{\mathrm{nl}}$.  
+If $\eta_{\mathrm{int}}\sim\mathcal{O}(1)$, internal dispersion is competing with expansion across $R_{\mathrm{nl}}$.
 Median peaks sit **below** that; the **high-multiplicity** tail and individual rich groups can approach it.
 
 ---
@@ -109,21 +109,21 @@ python scripts/r1/r1_collapse_relief_cf4.py
 
 **Peak vs void (catalog $V_{\mathrm{pec}}$):**
 
-- peak $/$ void rms$(V_{\mathrm{pec}})\approx 0.37$  
-- peak_strong $/$ void $\approx 0.31$  
+- peak $/$ void rms$(V_{\mathrm{pec}})\approx 0.37$
+- peak_strong $/$ void $\approx 0.31$
 - med $\eta_{\mathrm{pec}}$ is **similar** peak vs void ($\sim 0.045$); the big contrast is in **scatter**, not median residual fraction.
 
 ### Relief curve (six equal-count bins of $n_{10}$)
 
-As local density rises, **catalog** rms$(V_{\mathrm{pec}})$ falls from $\sim 790\,\mathrm{km\,s^{-1}}$ (emptiest bin) to $\sim 390\,\mathrm{km\,s^{-1}}$ (densest).  
+As local density rises, **catalog** rms$(V_{\mathrm{pec}})$ falls from $\sim 790\,\mathrm{km\,s^{-1}}$ (emptiest bin) to $\sim 390\,\mathrm{km\,s^{-1}}$ (densest).
 Internal vrms stays of order $90$–$120\,\mathrm{km\,s^{-1}}$ for systems that have members; the **high-multiplicity** cut is where internal relief jumps ($\mathrm{med}\sim 255\,\mathrm{km\,s^{-1}}$).
 
 That pattern is consistent with: **voids / singles** → noisier individual $V_{\mathrm{pec}}$; **collapsed multi-member systems** → shared flow + real internal dispersion from gravity.
 
 ### Distance shells (selection control)
 
-Median $n_{10}$ is huge only nearby ($d<20\,\mathrm{Mpc}$: med $n_{10}\sim 286$) and falls with distance as the CF4 galaxy sampling thins.  
-rms$(V_{\mathrm{pec}})$ **rises** with distance (distance-error contribution grows with $H_0 d$).  
+Median $n_{10}$ is huge only nearby ($d<20\,\mathrm{Mpc}$: med $n_{10}\sim 286$) and falls with distance as the CF4 galaxy sampling thins.
+rms$(V_{\mathrm{pec}})$ **rises** with distance (distance-error contribution grows with $H_0 d$).
 So the densest peaks on the top-list are **local Supercluster / Virgo-class** volume — where the catalog is densest — not a claim that collapse only happens nearby.
 
 ### Top multi-member collapse sites (highest $n_{10}$)
@@ -160,9 +160,9 @@ If I continue: cross-match top `1PGC` to named structures (labels only); optiona
 
 ## References
 
-1. R. B. Tully et al., *Cosmicflows-4*, Astrophys. J. **944**, 94 (2023).  
-2. CDS [J/ApJ/944/94](https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/944/94).  
-3. A. M. Whitford et al., MNRAS **526**, 3051 (2023).  
-4. H. M. Courtois et al., A&A **670**, L15 (2023).  
-5. R. B. Tully et al., ApJ **676**, 184 (2008).  
+1. R. B. Tully et al., *Cosmicflows-4*, Astrophys. J. **944**, 94 (2023).
+2. CDS [J/ApJ/944/94](https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/944/94).
+3. A. M. Whitford et al., MNRAS **526**, 3051 (2023).
+4. H. M. Courtois et al., A&A **670**, L15 (2023).
+5. R. B. Tully et al., ApJ **676**, 184 (2008).
 6. E. J. Shaya et al., ApJ **850**, 207 (2017).

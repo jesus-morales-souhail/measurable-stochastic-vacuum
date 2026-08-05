@@ -1,15 +1,15 @@
 # The open kernel of R1: measured walls versus an undeclared counting cell
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
-ORCID: [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · jmskjym@gmail.com  
+ORCID: [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · jmskjym@gmail.com
 Programme: [measurable-stochastic-vacuum](https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum)
 
 *Programme note on walls vs open kernel. Not a derivation of $\ell_{\ast}$.*
 
-Verified kinematics: [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) · `pytest -q`  
-Parent WP1 note: [`r1-counting-principle.md`](r1-counting-principle.md)  
-Sister empirical bound: $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+Verified kinematics: [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) · `pytest -q`
+Parent WP1 note: [`r1-counting-principle.md`](r1-counting-principle.md)
+Related empirical bound: $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
@@ -33,7 +33,7 @@ I record criteria for what would count as a principle, list hypothesis classes R
 
 ## 1. Why this distinction matters
 
-The sister DESI corpus closes empirical statements: null residual under the stated OU/QNM kernel, $\sigma_X < 1.5\times 10^{-4}$ (95% CL), coherent tachyonic growth excluded, linear amplification of a pure Sorkin seed closed as an amplification gap.
+The related DESI corpus closes empirical statements: null residual under the stated OU/QNM kernel, $\sigma_X < 1.5\times 10^{-4}$ (95% CL), coherent tachyonic growth excluded, linear amplification of a pure Sorkin seed closed as an amplification gap.
 
 The theory repository closes kinematics: counting inversion, soft open gain bounds, local slip under stated GR assumptions, path $\mathrm{RMS}=s\sqrt{N}$. Tests: `pytest -q`.
 
@@ -48,7 +48,7 @@ What remains for a positive detection claim is not another soft amplifier. It is
 | Measured wall | A candidate mechanism was specified and checked; the required gain or parameter lies outside the soft / derived regime | Proven insufficient (height measured) | Do not dig deeper for free gain |
 | Open kernel | The ingredient was never derived; kinematics wait on it | Absent (declared) | Only load-bearing soft-regime gap |
 
-**Amplification gap (wall class):** there is no free gain factor that multiplies $\sigma_0\sim 10^{-61}$ into $10^{-5}$ under audited soft channels.  
+**Amplification gap (wall class):** there is no free gain factor that multiplies $\sigma_0\sim 10^{-61}$ into $10^{-5}$ under audited soft channels.
 **R1 kernel (open class):** the *starting grain* may not be Planckian. If a principle sets $\ell_{\ast}$ mesoscopic, $\sigma_{0,\mathrm{eff}}$ already sits in the telescope band without $r\sim 64$.
 
 These are not two incomplete answers to the same question. They are different questions.
@@ -67,7 +67,7 @@ All entries below are verified algebraically or numerically in-repo or in the si
 | Late freeze $\Delta x=\mathcal{O}(1)$ as “$e^{60}$” | Sister Route 2 MC | Freeze/restore gain $=1$ |
 | Soft double-well avalanche | Sister Route 3 | Gain $\mathrm{p95}/\sigma\sim 2$ |
 | Local slip with BAO-bounded $\sigma$ | $\lvert\gamma-1\rvert=2\varepsilon\sigma(\rho_X/\rho_m)/\lvert\delta_m\rvert$ | $\mathcal{O}(10^{-4})$ under DESI ceiling — amplitude starved |
-| Wrong-scale optics / tesseract $B_4$ | Exploratory sister notes | Closed as wrong operator / wrong scale |
+| Optics / tesseract $B_4$ (wrong scale) | Exploratory related notes | Closed as wrong operator / wrong scale |
 
 Each row is a wall with measured height. Publishing “maybe soft amplification still works” without a new derived map would contradict the verified core.
 
@@ -101,9 +101,9 @@ Telescope-band residuals from counting alone require a mesoscopic DE counting ce
 
 > What principle fixes a galactic/mesoscopic counting cell for the DE sector, distinct from the Planck/holographic cell?
 
-**R1 status (updated July 2026):** landscape derived.  
-**Form of the principle under axioms A0–A4:** closed by sandwich uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ — see [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md).  
-**Still open as postulates:** existence of residual sector $\chi$ and local coupling to $\delta_m$ (A0–A1).  
+**R1 status (updated July 2026):** landscape derived.
+**Form of the principle under axioms A0–A4:** closed by sandwich uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ — see [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md).
+**Still open as postulates:** existence of residual sector $\chi$ and local coupling to $\delta_m$ (A0–A1).
 Closing WP1 as a *nature claim* still requires A0–A1 (or equivalent) from microphysics; the *scale choice* is no longer free once those hold.
 
 ---
@@ -144,7 +144,7 @@ That is not “the same wall with a new name.” It is: *change the UV seed phys
 
 ### 6.1 R1d — nonlinear structure scale (hypothesis class)
 
-**Statement (conditional):**  
+**Statement (conditional):**
 *If* the effective counting cell of the DE residual sector is set by the scale at which cosmic structure becomes nonlinear — denoted $R_{\mathrm{nl}}$ and often summarised by $R_8\equiv 8\,h^{-1}\mathrm{Mpc}$ — *then* $\sigma_{0,\mathrm{eff}}$ is fixed once $d$ and $L$ are chosen, without soft amplification of a Planck seed.
 
 Not claimed: that DE “knows” about galaxies; that S$_8$ is solved; that $d=3$ is mandatory.
@@ -169,7 +169,7 @@ Reproducible: `python scripts/r1/r1_open_kernel_scales.py` · identities in `scr
 
 #### Fragility in $d$ (must be stated)
 
-The near-coincidence with $R_8$ is specific to $d=3$ at the a-posteriori DESI residual ceiling.  
+The near-coincidence with $R_8$ is specific to $d=3$ at the a-posteriori DESI residual ceiling.
 It does not survive a change of counting exponent:
 
 | $d$ at $\sigma=1.5\times 10^{-4}$ | $\lvert\ell_{\ast}/R_8-1\rvert$ | Reads as |
@@ -182,7 +182,7 @@ That is honesty about the finding, not a flaw in reporting it. A robust multi-an
 
 Under pattern hygiene: the coincidence has an equation (counting), units (Mpc vs dimensionless $\sigma$), and a clear answer to “do data *prefer* this or only *tolerate* it?” — tolerate only. No likelihood preferred $d=3$ and $R_8$ over other combinations; the row was read off arithmetic after the landscape existed, not searched for to match S$_8$.
 
-Legitimate use of the table: motivate *which* principle classes are worth deriving (those that land $\ell_{\ast}$ near Mpc–tens of Mpc), with $d$-fragility kept visible.  
+Legitimate use of the table: motivate *which* principle classes are worth deriving (those that land $\ell_{\ast}$ near Mpc–tens of Mpc), with $d$-fragility kept visible.
 Illegitimate use: pick the single near row ($d=3$, DESI ceiling) and call it a principle.
 
 ### 6.3 S$_8$ / growth (shared target, not a claim)
@@ -199,7 +199,7 @@ Until (1)–(2) exist, S$_8$ is not a claim of this repository. Two open questio
 
 **Open question.** What principle, stated without targeting $R_8$ or the DESI ceiling, would predict a DE residual cell of order 8–12 Mpc? In that decade sit, independently: galaxy $r_0(L_*)\sim 7.4$–$8.9\,\mathrm{Mpc}$, $R_8\approx 11.9\,\mathrm{Mpc}$, and the DESI-ceiling $d=3$ counting cell $\approx 12.6\,\mathrm{Mpc}$. See [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md). External checks of NP-A $2.06\,\mathrm{Mpc}$ (MW–Andromeda, Virgo, circular “2.01”, $r_0\equiv 2.06$) failed: [`ell-star-external-scales.md`](../closed_walls/ell-star-external-scales.md), [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md).
 
-**Candidate:** P$_\mathrm{nl}$: $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ (matter $\sigma_8$ only) $\Rightarrow\sim 8$–$10\,\mathrm{Mpc}$.  
+**Candidate:** P$_\mathrm{nl}$: $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ (matter $\sigma_8$ only) $\Rightarrow\sim 8$–$10\,\mathrm{Mpc}$.
 See [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md). Microphysics still open.
 
 H0-running path depth: [`h0-running-brachistochrone-bridge.md`](../closed_walls/h0-running-brachistochrone-bridge.md). Shared late-time language is not an $H_0$ solution (amplitude short).
@@ -232,7 +232,7 @@ From [`wp5-falsification.md`](../work_packages/wp5-falsification.md), specialise
 |:----------------------------|:------|
 | $\ell_{\ast}\sim L_P$ | Soft-regime telescope null is a theorem; no detection claim |
 | $\ell_{\ast}\sim L_H$ | $\sigma\sim 1$: excluded by BAO smoothness |
-| Fixed $\ell_{\ast}$ with $\sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ and no damping | Tension with sister DESI bound |
+| Fixed $\ell_{\ast}$ with $\sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ and no damping | Tension with related DESI bound |
 | Fixed $\ell_{\ast}$ in the mesoscopic band | Residual amplitude is a prediction; Euclid/DESI test a posteriori |
 | Any of R1a–R1d only after seeing data | Reject under self-shielding axioms (overclaim death) |
 
@@ -272,5 +272,5 @@ python scripts/r1/r1_open_kernel_scales.py
 python scripts/core/lib_verified.py
 ```
 
-Related documents:  
+Related documents:
 [`r1-counting-principle.md`](r1-counting-principle.md) · [`NARROW_PATH.md`](../core/NARROW_PATH.md) · [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) · [`wp5-falsification.md`](../work_packages/wp5-falsification.md) · [`FOR_REFEREES.md`](../core/FOR_REFEREES.md) · sister `papers/amplification-gap.md`

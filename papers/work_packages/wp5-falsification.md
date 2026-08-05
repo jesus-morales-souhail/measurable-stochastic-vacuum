@@ -1,17 +1,17 @@
 # WP5 — Falsification criteria
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Programme:** measurable-stochastic-vacuum  
-**Status:** Method note — how the programme dies or narrows  
-**Date:** July 2026  
-**Documented results:** [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md)  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Programme:** measurable-stochastic-vacuum
+**Status:** Method note — how the programme dies or narrows
+**Date:** July 2026
+**Documented results:** [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md)
 
 ---
 
 ## 1. Purpose
 
-A theory programme is scientific only if it can **lose**.  
+A theory programme is scientific only if it can **lose**.
 This note lists falsification and narrowing criteria for the R1–R2–R3 package **without** using DESI as a dial to save the model.
 
 ---
@@ -23,7 +23,7 @@ This note lists falsification and narrowing criteria for the R1–R2–R3 packag
 | **L0 — Identity failure** | Algebra in `lib_verified` / tests break | Stop; fix maths (not physics) |
 | **L1 — Soft-regime theorem stands** | Sorkin + soft open + path still null | **Not** a failure — confirmed structural zero |
 | **L2 — Candidate death** | A specific R1a/b/c or hard-R3 model is excluded | Discard that candidate; package may continue |
-| **L3 — Package death** | Every viable path to mesoscopic $\sigma$ or derived hard gain is excluded | Close programme as “limits + geometry only” (honest success of sister repo) |
+| **L3 — Package death** | Every viable path to mesoscopic $\sigma$ or derived hard gain is excluded | Close programme as “limits + geometry only” (honest success of related repository) |
 | **L4 — Overclaim death** | Publication uses free $10^{56}$, free $r\sim 64$, or DESI-tuned $\ell_{\ast}$ | Reject paper under self-shielding axioms |
 
 ---
@@ -35,8 +35,8 @@ Once a principle $P$ predicts $\ell_{\ast}$ or $N_{\mathrm{eff}}$:
 | Outcome | Verdict |
 |:--------|:--------|
 | $P\Rightarrow \ell_{\ast}\sim L_P$ | Predicts structural null; **confirmed** if residual stays null; **does not** yield detection claims |
-| $P\Rightarrow \sigma_{0,\mathrm{eff}}\in[10^{-5},1.5\times 10^{-4}]$ | A posteriori compatible with sister DESI ceiling; Euclid residual can falsify |
-| $P\Rightarrow \sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ with no damping mechanism | **Tension** with DESI residual bound (sister repo) → candidate dies unless $\theta$-damping derived |
+| $P\Rightarrow \sigma_{0,\mathrm{eff}}\in[10^{-5},1.5\times 10^{-4}]$ | A posteriori compatible with related DESI ceiling; Euclid residual can falsify |
+| $P\Rightarrow \sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ with no damping mechanism | **Tension** with DESI residual bound (related repository) → candidate dies unless $\theta$-damping derived |
 | $P$ contradicts local Lorentz tests **that actually constrain that sector** | Candidate dies |
 
 **Do not:** change $\ell_{\ast}$ after seeing DESI to sit under $1.5\times 10^{-4}$.
@@ -83,25 +83,25 @@ Is the seed Sorkin (ell_* = L_P)?
 
 ## 7. What does *not* falsify the programme
 
-- Null BAO residual under Sorkin counting (expected).  
-- Null lab diffraction / tesseract tests (wrong scale/operator).  
-- Mild $\gamma-1=\mathcal{O}(0.1)$ hints without a derived $\varepsilon$ and $\sigma$ (insufficient).  
+- Null BAO residual under Sorkin counting (expected).
+- Null lab diffraction / tesseract tests (wrong scale/operator).
+- Mild $\gamma-1=\mathcal{O}(0.1)$ hints without a derived $\varepsilon$ and $\sigma$ (insufficient).
 - Soft open gain $\mathcal{O}(10)$ being small (theorem, not failure).
 
 ---
 
 ## 8. Minimal checklist before any “positive” paper
 
-- [ ] `pytest -q` green  
-- [ ] Claims subset of [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) **or** new tests added  
-- [ ] $\ell_{\ast}$ or $r$ or $\varepsilon$ derived, not fitted to DESI  
-- [ ] Zeros Z1–Z4 stated  
-- [ ] A posteriori DESI comparison only  
-- [ ] No $10^{56}$ free factor  
+- [ ] `pytest -q` green
+- [ ] Claims subset of [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) **or** new tests added
+- [ ] $\ell_{\ast}$ or $r$ or $\varepsilon$ derived, not fitted to DESI
+- [ ] Zeros Z1–Z4 stated
+- [ ] A posteriori DESI comparison only
+- [ ] No $10^{56}$ free factor
 
 ---
 
 ## 9. Closing posture
 
-> The empirical sister repository already succeeded as **limits and exclusions**.  
+> The empirical related repositorysitory already succeeded as **limits and exclusions**.
 > This theory programme succeeds either by a **derived** mesoscopic seed / hard open map that passes WP5, or by proving that no such path exists without undeclared free parameters — in which case the scientific answer is: *stochastic vacuum noise of Sorkin type is not telescope-measurable under soft dynamics.*

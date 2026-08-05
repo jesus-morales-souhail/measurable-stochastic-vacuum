@@ -1,7 +1,7 @@
 # Start here
 
-Jesús Morales Souhail · July 2026  
-[github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · not peer reviewed
+Jesús Morales Souhail · July 2026
+[github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
 This folder is dense. You do not need to open everything.
 
@@ -11,13 +11,13 @@ I split the programme into three repos so claims do not get mixed:
 |:-----|:------------------|
 | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | DESI BAO residual numbers |
 | **this one** | theory and kinematics |
-| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | analogies and wrong-scale experiments (not cosmology claims) |
+| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | analogies and scale checks (not cosmology claims) |
 
-The scientific question: can vacuum / dark-energy noise sit near $10^{-5}$–$10^{-4}$ without a free $10^{56}$ boost from Planck?  
-On the data side I already have $\sigma_X < 1.5\times 10^{-4}$ (95% CL).  
+The scientific question: can vacuum / dark-energy noise sit near $10^{-5}$–$10^{-4}$ without a free $10^{56}$ boost from Planck?
+On the data side I already have $\sigma_X < 1.5\times 10^{-4}$ (95% CL).
 On the theory side the working picture is $\ell_{\ast}\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ under a few axioms I write down explicitly.
 
-If I sat down to write a short paper, this is what I would use:  
+If I sat down to write a short paper, this is what I would use:
 [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).
 
 ---
@@ -42,28 +42,28 @@ tests/  results/  data/
 
 ## Reading paths
 
-**A — what can I actually claim? (~30 min)**  
-1. [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md)  
-2. [`papers/core/FOR_REFEREES.md`](papers/core/FOR_REFEREES.md)  
-3. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md)  
-4. [`papers/core/SIMPLE_AS_LAMBDA.md`](papers/core/SIMPLE_AS_LAMBDA.md)  
+**A — what can I actually claim? (~30 min)**
+1. [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md)
+2. [`papers/core/FOR_REFEREES.md`](papers/core/FOR_REFEREES.md)
+3. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md)
+4. [`papers/core/SIMPLE_AS_LAMBDA.md`](papers/core/SIMPLE_AS_LAMBDA.md)
 5. [`BOUNDARY.md`](BOUNDARY.md)
 
-**B — residual scale argument (~45 min)**  
-1. [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md)  
-2. [`papers/r1_kernel/r1-derivation-sandwich.md`](papers/r1_kernel/r1-derivation-sandwich.md)  
-3. [`papers/r1_kernel/r1-sandwich-falsifiers.md`](papers/r1_kernel/r1-sandwich-falsifiers.md)  
-4. [`papers/r1_kernel/r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md)  
+**B — residual scale argument (~45 min)**
+1. [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md)
+2. [`papers/r1_kernel/r1-derivation-sandwich.md`](papers/r1_kernel/r1-derivation-sandwich.md)
+3. [`papers/r1_kernel/r1-sandwich-falsifiers.md`](papers/r1_kernel/r1-sandwich-falsifiers.md)
+4. [`papers/r1_kernel/r1-T2-preregistration.md`](papers/r1_kernel/r1-T2-preregistration.md)
 5. [`papers/r1_kernel/r1-lineA-g-from-averaging.md`](papers/r1_kernel/r1-lineA-g-from-averaging.md)
 
-**C — things I already closed**  
+**C — things I already closed**
 Sister amplification gap, plus everything under [`papers/closed_walls/`](papers/closed_walls/).
 
-**D — local matter kinematics (CF4, not DE residual)**  
-1. [`papers/r1_kernel/r1-real-velocity-block-net.md`](papers/r1_kernel/r1-real-velocity-block-net.md)  
+**D — local matter kinematics (CF4, not DE residual)**
+1. [`papers/r1_kernel/r1-real-velocity-block-net.md`](papers/r1_kernel/r1-real-velocity-block-net.md)
 2. [`papers/r1_kernel/r1-collapse-relief.md`](papers/r1_kernel/r1-collapse-relief.md)
 
-Open lines: [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md).  
+Open lines: [`papers/r1_kernel/FRONTIER_INQUIRY.md`](papers/r1_kernel/FRONTIER_INQUIRY.md).
 Public data vs my analysis: [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kernel/HONEST_ASSETS.md).
 
 ---

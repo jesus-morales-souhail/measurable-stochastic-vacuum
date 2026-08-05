@@ -1,12 +1,12 @@
 # Uniqueness of the residual vacuum grain under local coupling to nonlinear structure
 
-Jesús Morales Souhail  
-ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · jmskjym@gmail.com  
-[github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
+Jesús Morales Souhail
+ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · jmskjym@gmail.com
+[github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-July 2026 · draft note · not peer reviewed  
+July 2026 · draft note
 
-Code for the numbers: [measurable-stochastic-vacuum](https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum)  
+Code for the numbers: [measurable-stochastic-vacuum](https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum)
 DESI residual bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) lives in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
@@ -17,7 +17,7 @@ Usual cosmology treats dark energy as a smooth background. I look at a residual 
 
 Under four axioms — residual sector, local coupling to matter contrast, classical matter on nonlinear scales, and counting free residual modes after decoherence — free residual cells much smaller than the matter nonlinear scale $R_{\mathrm{nl}}$ are not available, and cells much larger fall back to $R_{\mathrm{nl}}$ under local coupling. So $\ell_{\ast}\sim R_{\mathrm{nl}}$.
 
-With a standard top-hat variance integral and an Eisenstein–Hu–style $P(k)$ at $\sigma_8=0.81$ I get $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. Counting with $d=3$ then gives $\sigma\approx 8.5\times 10^{-5}$, under the DESI residual ceiling from the sister analysis. The correlation length of a Gaussian mask $\delta>1$ is about $1.11\,R_{\mathrm{nl}}$. I state falsifiers and bound the dimensionless coupling by $\lvert g\rvert\lesssim\mathcal{O}(1)$. I am not claiming a Standard Model derivation of $\chi$, and I am not claiming this residual fixes the Hubble tension.
+With a standard top-hat variance integral and an Eisenstein–Hu–style $P(k)$ at $\sigma_8=0.81$ I get $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. Counting with $d=3$ then gives $\sigma\approx 8.5\times 10^{-5}$, under the DESI residual ceiling from the related analysis. The correlation length of a Gaussian mask $\delta>1$ is about $1.11\,R_{\mathrm{nl}}$. I state falsifiers and bound the dimensionless coupling by $\lvert g\rvert\lesssim\mathcal{O}(1)$. I am not claiming a Standard Model derivation of $\chi$, and I am not claiming this residual fixes the Hubble tension.
 
 **Keywords:** dark energy residual; nonlinear scale; decoherence; gravitational slip; DESI
 
@@ -113,7 +113,7 @@ $$
 r_{e,\mathrm{mask}}\approx 9.53\,\mathrm{Mpc}\approx 1.11\,R_{\mathrm{nl}}.
 $$
 
-Density correlation length $\approx 14.6\,\mathrm{Mpc}\approx 1.69\,R_{\mathrm{nl}}$.  
+Density correlation length $\approx 14.6\,\mathrm{Mpc}\approx 1.69\,R_{\mathrm{nl}}$.
 Packing separation of $\delta>1$ patches $\approx 15.9\,\mathrm{Mpc}$.
 
 ### 4.3 Counting amplitude
@@ -124,7 +124,7 @@ $$
 \sigma_{\mathrm{free}}=\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5},
 $$
 
-under the sister DESI ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL, OU/QNM).
+under the related DESI ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL, OU/QNM).
 
 ### 4.4 Coupling
 
@@ -159,9 +159,9 @@ A more detailed residual–structure protocol is in `r1-T2-preregistration.md`.
 
 ## 7. What I am not claiming
 
-- that SM+GR must contain $\chi$  
-- a microscopic derivation of $g$ (only $\lvert g\rvert\lesssim\mathcal{O}(1)$ under the working ceiling)  
-- that this residual explains $\sim 8\%$ $H_0$ (short by $\sim 10^{2}$–$10^{3}$)  
+- that SM+GR must contain $\chi$
+- a microscopic derivation of $g$ (only $\lvert g\rvert\lesssim\mathcal{O}(1)$ under the working ceiling)
+- that this residual explains $\sim 8\%$ $H_0$ (short by $\sim 10^{2}$–$10^{3}$)
 - that present mean-slip data already test path RMS at $10^{-3}$
 
 ---
@@ -205,9 +205,9 @@ Also useful: `r1-derivation-sandwich.md`, `r1-a1-microphysics.md`, `r1-sandwich-
 
 ## References
 
-1. J. M. Bardeen, J. R. Bond, N. Kaiser, A. S. Szalay, ApJ **304**, 15 (1986).  
-2. T. Buchert, arXiv:0707.2153.  
-3. D. J. Eisenstein, W. Hu, ApJ **496**, 605 (1998).  
-4. M. Maus et al., arXiv:2505.20656.  
-5. Z. Sakr, Y. Zheng, S. Casas, arXiv:2501.07477.  
+1. J. M. Bardeen, J. R. Bond, N. Kaiser, A. S. Szalay, ApJ **304**, 15 (1986).
+2. T. Buchert, arXiv:0707.2153.
+3. D. J. Eisenstein, W. Hu, ApJ **496**, 605 (1998).
+4. M. Maus et al., arXiv:2505.20656.
+5. Z. Sakr, Y. Zheng, S. Casas, arXiv:2501.07477.
 6. J. Morales Souhail, stochastic-dark-energy-ou and measurable-stochastic-vacuum (2026).

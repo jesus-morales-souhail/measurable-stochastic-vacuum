@@ -1,17 +1,17 @@
 # WP4 — Joint predictions and structural zeros
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Programme:** measurable-stochastic-vacuum  
-**Status:** Synthesis of verified maps only  
-**Date:** July 2026  
-**Documented results:** [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) · `pytest -q`  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Programme:** measurable-stochastic-vacuum
+**Status:** Synthesis of verified maps only
+**Date:** July 2026
+**Documented results:** [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) · `pytest -q`
 
 ---
 
 ## 1. Purpose
 
-I combine R1 (seed), R3 (soft gain), and R2 (slip + path) into a **single prediction table** and an explicit list of **structural zeros**.  
+I combine R1 (seed), R3 (soft gain), and R2 (slip + path) into a **single prediction table** and an explicit list of **structural zeros**.
 No new free parameters. No DESI dial.
 
 ---
@@ -22,7 +22,7 @@ $$
 \sigma_{0,\mathrm{eff}} = \left(\frac{\ell_{\ast}}{L}\right)^{d/2} \quad\xrightarrow{ G_O=e^{2r} } \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}} \quad\xrightarrow{ \pi_T=\varepsilon\sigma_{\mathrm{res}}\rho_X } \lvert \gamma-1 \rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m\lvert \delta_m \rvert} \quad\xrightarrow{ \mathrm{iid path} } \mathrm{RMS}_{\mathrm{path}} = \lvert \gamma-1 \rvert_{\mathrm{loc}}\sqrt{\frac{\chi}{\ell_{\ast}}}.
 $$
 
-**Defaults used for soft regime (stated, not fitted):**  
+**Defaults used for soft regime (stated, not fitted):**
 $G_U=1$, $G_F=1$, $r\le 1.5$ $\Rightarrow$ $G_O\le e^{3}\approx 20$, $\varepsilon\le 1$, $\delta_m\sim 1$, $L=L_H=c/H_0$.
 
 ---
@@ -38,7 +38,7 @@ $G_U=1$, $G_F=1$, $r\le 1.5$ $\Rightarrow$ $G_O\le e^{3}\approx 20$, $\varepsilo
 | Mesoscopic + soft open | $10^{-5}$ | 20 | $\sim 2\times 10^{-4}$ | $\sim 1.5\times 10^{-4}$ | $\sim 2$ Mpc | $\sim 46$ | $\sim 10^{-3}$ | Near DESI residual ceiling (a posteriori) |
 | DESI residual ceiling (external bound) | — | — | $<1.5\times 10^{-4}$ | $\lesssim 10^{-4}$ | model-dep. | $\mathcal{O}(10$–$10^{2})$ | $\lesssim$ few $\times 10^{-3}$ | Sister-repo limit, not a detection |
 
-**A posteriori scales (not inputs):**  
+**A posteriori scales (not inputs):**
 DESI OU bound $\sigma_X<1.5\times 10^{-4}$ (95% CL); Maus $\lvert \gamma-1 \rvert\sim 0.17$; Sakr-like floor $\sim 0.05$; schematic shear $\sim 10^{-3}$.
 
 ---
@@ -63,7 +63,7 @@ DESI OU bound $\sigma_X<1.5\times 10^{-4}$ (95% CL); Maus $\lvert \gamma-1 \rver
 | Z1 | $\ell_{\ast}=L_P$ (any soft $G_O$) | Seed $\le 10^{-61}$; path $\sqrt{N}$ cannot recover |
 | Z2 | Soft open only, Sorkin seed | $G_O=\mathcal{O}(10)\ll 10^{56}$ |
 | Z3 | Freeze-out only | $G_F=1$ (preserves seed) |
-| Z4 | Wrong operator (pupil, tesseract, SLM) | Scale/operator mismatch (exploratory sister repo) |
+| Z4 | Wrong operator (pupil, tesseract, SLM) | Scale/operator mismatch (exploratory related repository) |
 | Z5 | $\ell_{\ast}=L_H$ | $\sigma\sim 1$, destroys BAO smoothness (upper structural bound) |
 | Z6 | Claiming $e^{60}$ late-time stretch as Sorkin amplifier | Wrong regime (inflation $\neq$ late $\Delta x=\mathcal{O}(1)$) |
 
@@ -75,11 +75,11 @@ If a model in this programme cannot list Z1–Z4, it is rejected (self-shielding
 
 A a positive claim requires **all** of:
 
-1. A principle fixing $\ell_{\ast}$ or $N_{\mathrm{eff}}$ **before** using DESI numbers.  
-2. A stated $\varepsilon$ (or derivation).  
-3. Numbers for $\sigma_{\mathrm{res}}$ and $\mathrm{RMS}_{\mathrm{path}}$ from the master map.  
-4. Explicit zeros Z1–Z4 still satisfied.  
-5. A posteriori consistency with sister DESI bound (or tension declared).
+1. A principle fixing $\ell_{\ast}$ or $N_{\mathrm{eff}}$ **before** using DESI numbers.
+2. A stated $\varepsilon$ (or derivation).
+3. Numbers for $\sigma_{\mathrm{res}}$ and $\mathrm{RMS}_{\mathrm{path}}$ from the master map.
+4. Explicit zeros Z1–Z4 still satisfied.
+5. A posteriori consistency with related DESI bound (or tension declared).
 
 Until (1) is done, the only the solid positives are the **theorems of absence** in §5 and the **conditional** landscape in §3.
 

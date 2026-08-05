@@ -1,6 +1,6 @@
 # T1.2 BBKS refinement + derivation sketch for vacuum grain $\sim R_{\mathrm{nl}}$
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *(A) BBKS numbers executed. (B) Derivation sketch with explicit postulates — not a finished QFT proof.*
 
@@ -82,7 +82,7 @@ Not derived here: value of $g$. Only the scale structure of the interaction is u
 
 ### B.3 Matter becomes classical at $R_{\mathrm{nl}}$ (standard input S1)
 
-On scales where $\sigma(R)\gtrsim 1$, matter density perturbations are in the nonlinear, effectively classical regime (standard structure-formation lore; environment-induced decoherence of gravitational/density degrees of freedom is a large literature).  
+On scales where $\sigma(R)\gtrsim 1$, matter density perturbations are in the nonlinear, effectively classical regime (standard structure-formation lore; environment-induced decoherence of gravitational/density degrees of freedom is a large literature).
 Input, not re-derived: the classical pointer basis for late-time matter is organized by nonlinear patches of size $\sim R_{\mathrm{nl}}$.
 
 ### B.4 Influence on $\chi$: coarse-graining (derived under P0–P1 + S1)
@@ -95,7 +95,7 @@ $$
 
 where $\chi_p$ is the mean of $\chi$ on patch $p$ and $m_p$ is the matter content of that patch.
 
-Consequence (standard open-system / influence-functional logic):  
+Consequence (standard open-system / influence-functional logic):
 coherences of $\chi$ between configurations that differ within a single patch faster than $R_{\mathrm{nl}}$ are suppressed by the classical record in $m_p$ (many environmental degrees of freedom per patch).
 
 Thus the effective residual free field after decoherence is the patch-averaged field
@@ -110,7 +110,7 @@ $$
 \ell_{\ast}\sim R_{\mathrm{nl}}.
 $$
 
-This step is the closest thing to a derivation available without a full QFT-on-inhomogeneous-background calculation:  
+This step is the closest thing to a derivation available without a full QFT-on-inhomogeneous-background calculation:
 *if* $\chi$ couples to classical $\delta_m$ structured on $R_{\mathrm{nl}}$, *then* the residual that remains quantum/stochastic at late times is coarse-grained at $R_{\mathrm{nl}}$.
 
 ### B.5 Amplitude after coarse-graining (derived under counting)

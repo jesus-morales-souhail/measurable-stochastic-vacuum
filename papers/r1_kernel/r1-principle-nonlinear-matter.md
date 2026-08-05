@@ -1,10 +1,10 @@
 # Blind R1 candidate: DE residual cell = matter nonlinear scale $R_{\mathrm{nl}}$
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Physical hypothesis + refined length calculation. Not a derivation from an action.*
 
-Code: [`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py) (full $\sigma(R)$) · [`scripts/r1/r1_principle_Rnl.py`](../../scripts/r1/r1_principle_Rnl.py) (power-law shortcut only)  
+Code: [`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py) (full $\sigma(R)$) · [`scripts/r1/r1_principle_Rnl.py`](../../scripts/r1/r1_principle_Rnl.py) (power-law shortcut only)
 Steering: [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md) · [`r1-open-kernel.md`](r1-open-kernel.md)
 
 ---
@@ -19,7 +19,7 @@ Two layers, kept separate:
 
 1. **Hypothesis (unproven):** vacuum residual grain $\leftrightarrow$ matter nonlinear patch. This is a physical conjecture, not derived from a Lagrangian or open-system calculation of decoherence.
 2. **Geometry of $R_{\mathrm{nl}}$:** once P$_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is a standard matter observable. The evaluation I prefer is the full integral
-   
+
 
 $$
 \sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),
@@ -27,9 +27,9 @@ $$
 
    with a $\Lambda$CDM-like $P(k)$ normalized to $\sigma_8$, not only a single-index power-law shortcut $\sigma(R)\propto R^{-(n_{\mathrm{eff}}+3)/2}$.
 
-Full integral (this repo): $R_{\mathrm{nl}}\approx 5.80\,h^{-1}\mathrm{Mpc}\approx 8.61\,\mathrm{Mpc}$ ($\sigma_8=0.81$, $h=0.674$).  
-Power-law shortcut: $\sim 7.8$–$9.6\,\mathrm{Mpc}$ (same decade; coarser).  
-A posteriori: near $r_0(L_*)$; same decade as $R_8$ and DESI-ceiling $d=3$ cell.  
+Full integral (this repo): $R_{\mathrm{nl}}\approx 5.80\,h^{-1}\mathrm{Mpc}\approx 8.61\,\mathrm{Mpc}$ ($\sigma_8=0.81$, $h=0.674$).
+Power-law shortcut: $\sim 7.8$–$9.6\,\mathrm{Mpc}$ (same decade; coarser).
+A posteriori: near $r_0(L_*)$; same decade as $R_8$ and DESI-ceiling $d=3$ cell.
 Not claimed: derivation of decoherence; $\ell_{\ast}=R_{\mathrm{nl}}$ proven; $H_0$ tension solved.
 
 ---
@@ -40,7 +40,7 @@ Not claimed: derivation of decoherence; $\ell_{\ast}=R_{\mathrm{nl}}$ proven; $H
 
 1. Matter clustering becomes nonlinear on a characteristic comoving scale $R_{\mathrm{nl}}$ defined by the variance of the linear density field in a top-hat (or equivalent) filter: $\sigma(R_{\mathrm{nl}})=1$.
 2. That scale is fixed by the observed $\sigma_8$ (amplitude at $8\,h^{-1}\mathrm{Mpc}$) and the shape of $P(k)$ near that pivot — both are matter / growth data, not DE residual likelihoods.
-3. **Hypothesis (not derived):** the DE residual sector does not count Planck cells; it inherits a grain set by the matter nonlinear patch, *if* residual isotropy / SDiff leakage / decoherence is tied to collapsed structure.  
+3. **Hypothesis (not derived):** the DE residual sector does not count Planck cells; it inherits a grain set by the matter nonlinear patch, *if* residual isotropy / SDiff leakage / decoherence is tied to collapsed structure.
    **Missing step:** an explicit decoherence or effective-action calculation that *forces* $\ell_{\ast}=R_{\mathrm{nl}}$ rather than merely allowing it.
 
 Once P$_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is fixed by $\sigma_8$ and $P(k)$ — that part is geometry, not a free dial. The *identification* $\ell_{\ast}=R_{\mathrm{nl}}$ remains the open physical claim.
@@ -115,7 +115,7 @@ $$
 \sigma_{0,\mathrm{eff}}=\Bigl(\frac{\ell_{\ast}}{L_H}\Bigr)^{3/2} \approx 8.5\times 10^{-5},
 $$
 
-under the sister DESI ceiling $1.5\times 10^{-4}$ — compatibility, not a fit.
+under the related DESI ceiling $1.5\times 10^{-4}$ — compatibility, not a fit.
 
 ---
 
@@ -130,7 +130,7 @@ under the sister DESI ceiling $1.5\times 10^{-4}$ — compatibility, not a fit.
 
 Still missing for a full theory claim: an explicit calculation — from an action, open-system master equation, or equivalent — showing *why* the vacuum residual grain must sit at $R_{\mathrm{nl}}$ rather than $L_P$, $r_0$, or another IR scale. Until that exists, P$_\mathrm{nl}$ is a motivated hypothesis with a clean length, not a derivation.
 
-Ranked mechanism candidates (Buchert averaging, SDiff edge, IR cutoff at $R_{\mathrm{nl}}$, …):  
+Ranked mechanism candidates (Buchert averaging, SDiff edge, IR cutoff at $R_{\mathrm{nl}}$, …):
 [`r1-mechanism-candidates.md`](r1-mechanism-candidates.md).
 
 ---
@@ -139,7 +139,7 @@ Ranked mechanism candidates (Buchert averaging, SDiff edge, IR cutoff at $R_{\ma
 
 This does not re-open soft amplification of Sorkin. It changes the counting cell so the seed is already mesoscopic — the only soft-regime door left open in the kernel notes.
 
-Scope if successful: residual $\sigma_X$ and path slip RMS $10^{-4}$–$10^{-3}$.  
+Scope if successful: residual $\sigma_X$ and path slip RMS $10^{-4}$–$10^{-3}$.
 Not the $\sim 9\%$ $H_0$ tension (amplitude still short under DESI-safe residual).
 
 ---

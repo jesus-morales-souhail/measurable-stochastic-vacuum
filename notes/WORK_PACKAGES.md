@@ -1,6 +1,6 @@
 # Work packages (live checklist)
 
-Jesús Morales Souhail · updated with the residual-scale work  
+Jesús Morales Souhail · updated with the residual-scale work
 Hard results live in [`papers/core/VERIFIED_RESULTS.md`](../papers/core/VERIFIED_RESULTS.md). Green `pytest -q` is the gate.
 
 This is my own checklist, not a paper.

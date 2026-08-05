@@ -1,11 +1,11 @@
 # The narrow path: the only soft-regime architecture that is mathematically coherent
 
-**Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Date:** July 2026  
-**Status:** Architecture note grounded in verified identities · independent research, **not peer reviewed**  
-**Documented results / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)  
-**Sister empirical bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+**Author:** Jesús Morales Souhail
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
+**Date:** July 2026
+**Status:** Architecture note grounded in verified identities · independent research, **not peer reviewed**
+**Documented results / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)
+**Related empirical bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
@@ -13,8 +13,8 @@
 
 If one discards “ad hoc” rescues of the Planck/Sorkin seed $\sigma_0\sim 10^{-61}$ (soft squeeze $r\sim 64$, or $N_{\mathrm{pat}}\sim 10^{119}$ along the line of sight), the only soft-regime architecture that remains mathematically coherent is a **triple concurrent structure**:
 
-1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed;  
-2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$);  
+1. **R1 — mesoscopic counting cell** so that $\sigma_{0,\mathrm{eff}}\sim 10^{-5}$–$10^{-6}$ already at the seed;
+2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$);
 3. **R2 — anisotropic stress + light-path accumulation** $\mathrm{RMS}=\lvert \gamma-1 \rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}$, not a change of global $H(z)$.
 
 I write the causal chain carefully here (not as a naive product of three ad hoc factors), give **machine-checked numbers**, and isolate the **DESI-safe window** where the isotropic residual stays under the sister bound while the light-path slip RMS sits near $10^{-3}$.
@@ -52,7 +52,7 @@ $$
 | 3 | $2.065 \mathrm{Mpc}$ (cluster / large-group scale) |
 | 4 | $14.07 \mathrm{Mpc}$ |
 
-**Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$.  
+**Physical reading:** DE correlation / counting grain is an **IR emergent scale**, not $L_P$.
 **Still open (not claimed):** which principle fixes $\ell_{\ast}$ (R1a/b/c). That is the hard problem I have not closed.
 
 ---
@@ -71,14 +71,14 @@ $$
 | $10^{-5}$ | $1.5$ | $2.009\times 10^{-4}$ |
 | $7.47\times 10^{-6}$ | $1.5$ | $1.500\times 10^{-4}$ (DESI ceiling) |
 
-**Reading:** soft open gain is a **factor $\sim 10$–$20$**, not $10^{56}$.  
+**Reading:** soft open gain is a **factor $\sim 10$–$20$**, not $10^{56}$.
 It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual ceiling.
 
 ---
 
 ### 2.3 R2 — Project on gravitational slip + short optical path
 
-**Do not** force the signal into global $H(z)$ (BAO residual bound is already tight).  
+**Do not** force the signal into global $H(z)$ (BAO residual bound is already tight).
 Source anisotropic stress and read light:
 
 $$
@@ -208,10 +208,10 @@ Same care as the $d=3$–specificity lock: no over-read of a positive coincidenc
 
 **Reading:** $\mathcal{O}(10^{-3})$ path RMS is **far below** current published slip errors ($\mathcal{O}(0.1)$). Stage-IV surveys (Euclid, LSST/Rubin) aim at percent-level growth/lensing and multiplicative-bias control near $10^{-3}$ in **shear calibration**, but that is **not** the same statement as “the survey measures *this* path-RMS statistic of stochastic slip wrinkles at $10^{-3}$.”
 
-**Open experimental question (must be answered before any detection language):**  
+**Open experimental question (must be answered before any detection language):**
 Does any Stage-III/IV pipeline constrain a **stochastic, path-accumulated** $\mathrm{RMS}(\lvert\gamma-1\rvert)$ (or a well-defined proxy) at $\sim 10^{-3}$ after the systematics list above?
 
-**Partial answer with real published data** (not a full likelihood):  
+**Partial answer with real published data** (not a full likelihood):
 [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) · `python scripts/side/lensing_rms_real_data_compare.py`
 
 | External (cited) | Scale | vs NP-B path RMS $\sim 4.4\times 10^{-3}$ |

@@ -1,11 +1,11 @@
 # Path-RMS vs real lensing / slip data: an OOM forecast gate
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Date:** July 2026  
-**Status:** Data note — uses published external results; not a full survey likelihood  
-**Code:** [`scripts/side/lensing_rms_real_data_compare.py`](../../scripts/side/lensing_rms_real_data_compare.py)  
-**Sister data pack:** [stochastic-dark-energy-ou `data-pack-option0-internet.md`](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/data-pack-option0-internet.md)  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Date:** July 2026
+**Status:** Data note — uses published external results; not a full survey likelihood
+**Code:** [`scripts/side/lensing_rms_real_data_compare.py`](../../scripts/side/lensing_rms_real_data_compare.py)
+**Sister data pack:** [stochastic-dark-energy-ou `data-pack-option0-internet.md`](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/data-pack-option0-internet.md)
 **Claim discipline:** [`NARROW_PATH.md`](../core/NARROW_PATH.md) §5.1–5.2 · [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md)
 
 ---
@@ -14,11 +14,11 @@
 
 I compare the programme’s **hand-placed** path-integrated slip RMS at DESI-safe corners (NP-A / NP-B) to **published** gravitational-slip and modified-gravity constraints and to Stage-IV **shear-calibration** requirements from the literature. All external numbers are taken from named papers (arXiv IDs below). The conclusion is quantitative and non-binary:
 
-1. Current mean-slip precision (Maus et al.) is $\mathcal{O}(0.1)$ on $\gamma=\Phi/\Psi$.  
-2. Euclid-like + DESI-like **forecasts** for constant anisotropic stress $\eta$ reach $\sim 5\%$ (Sakr et al.); free $(z,k)$ remains $\gtrsim 30\%$.  
-3. DESI full-shape MG constraints on the lensing parameter $\Sigma_0$ are still $\mathcal{O}(0.05)$.  
-4. Programme NP-B path RMS is $\sim 4\times 10^{-3}$; NP-A is $\sim 3.5\times 10^{-4}$.  
-5. Therefore published / forecast **mean** slip precision sits **roughly $10$–$30\times$** (Sakr constant $\eta$) to **$\sim 25\times$** (Maus) above NP-B, and far above NP-A — **before** equating operators.  
+1. Current mean-slip precision (Maus et al.) is $\mathcal{O}(0.1)$ on $\gamma=\Phi/\Psi$.
+2. Euclid-like + DESI-like **forecasts** for constant anisotropic stress $\eta$ reach $\sim 5\%$ (Sakr et al.); free $(z,k)$ remains $\gtrsim 30\%$.
+3. DESI full-shape MG constraints on the lensing parameter $\Sigma_0$ are still $\mathcal{O}(0.05)$.
+4. Programme NP-B path RMS is $\sim 4\times 10^{-3}$; NP-A is $\sim 3.5\times 10^{-4}$.
+5. Therefore published / forecast **mean** slip precision sits **roughly $10$–$30\times$** (Sakr constant $\eta$) to **$\sim 25\times$** (Maus) above NP-B, and far above NP-A — **before** equating operators.
 6. Stage-IV multiplicative bias control at $\sim 10^{-3}$ is a **calibration** requirement, **not** a measurement of stochastic path-RMS of DE wrinkles.
 
 I do **not** claim discovery, model death, or that Euclid/LSST “reach $10^{-3}$ on this statistic.”
@@ -102,7 +102,7 @@ pytest -q
 
 **Use here:** $\sim 2\times 10^{-3}$ as an OOM **calibration** floor — **not** $\sigma(\mathrm{RMS}_{\mathrm{path}})$.
 
-### 3.5 Sister empirical residual (this programme’s BAO side)
+### 3.5 Related empirical residual (this programme’s BAO side)
 
 | | |
 |:--|:--|
@@ -134,9 +134,9 @@ Numbers from `python scripts/side/lensing_rms_real_data_compare.py` (may differ 
 
 ### 4.1 Reading (calibrated)
 
-1. **Today (Maus):** mean slip is measured at $\mathcal{O}(0.1)$. NP-B path RMS is $\sim 25\times$ smaller even before systematics and operator mismatch. A claim that “deep lensing already tests NP-B” is **false**.  
-2. **Stage-IV mean $\eta$ (Sakr, constant):** $\sim 5\%$ is the optimistic homogeneous case — still $\sim 10\times$ above NP-B path RMS if one naively equates $\lvert\eta-1\rvert$ with path RMS. Free $(z,k)$ is worse ($\gtrsim 30\%$).  
-3. **$m\sim 10^{-3}$:** looks numerically near NP-B, but it is **shear calibration**, not stochastic DE texture. Using it as a detection threshold is the category error §5.1 of [`NARROW_PATH.md`](../core/NARROW_PATH.md) forbids.  
+1. **Today (Maus):** mean slip is measured at $\mathcal{O}(0.1)$. NP-B path RMS is $\sim 25\times$ smaller even before systematics and operator mismatch. A claim that “deep lensing already tests NP-B” is **false**.
+2. **Stage-IV mean $\eta$ (Sakr, constant):** $\sim 5\%$ is the optimistic homogeneous case — still $\sim 10\times$ above NP-B path RMS if one naively equates $\lvert\eta-1\rvert$ with path RMS. Free $(z,k)$ is worse ($\gtrsim 30\%$).
+3. **$m\sim 10^{-3}$:** looks numerically near NP-B, but it is **shear calibration**, not stochastic DE texture. Using it as a detection threshold is the category error §5.1 of [`NARROW_PATH.md`](../core/NARROW_PATH.md) forbids.
 4. **Null / excess:** same binary lock — excess needs baryons / photo-$z$ / IA control; null excludes the **tested corner**, not the open kernel.
 
 ---
@@ -161,10 +161,10 @@ Any “first positive evidence” language **must** list these as first-line nul
 
 A paper-grade forecast (not yet done here) would need:
 
-1. A **defined observable** mapping $\mathrm{RMS}_{\mathrm{path}}$ (or a two-point proxy of stochastic slip wrinkles) onto measurable spectra ($C_\ell^{\kappa g}$, $E_G$, slip tomography, …).  
-2. A **likelihood** with Euclid/LSST+DESI specifications.  
-3. A **systematics budget** (baryons, IA, photo-$z$, $m$).  
-4. A **prior** on $(\ell_{\ast},G_O,\varepsilon)$ that does **not** fit DESI residual $\sigma_X$ as a dial.  
+1. A **defined observable** mapping $\mathrm{RMS}_{\mathrm{path}}$ (or a two-point proxy of stochastic slip wrinkles) onto measurable spectra ($C_\ell^{\kappa g}$, $E_G$, slip tomography, …).
+2. A **likelihood** with Euclid/LSST+DESI specifications.
+3. A **systematics budget** (baryons, IA, photo-$z$, $m$).
+4. A **prior** on $(\ell_{\ast},G_O,\varepsilon)$ that does **not** fit DESI residual $\sigma_X$ as a dial.
 5. Clear output: exclusion contours on the **corner**, not “model death.”
 
 Until then, this note is the **gate**: real data say mean-slip / MG precision is still **decades of millides** away from claiming NP-B as tested, and Stage-IV $m\sim 10^{-3}$ must not be rebranded as DE texture sensitivity.

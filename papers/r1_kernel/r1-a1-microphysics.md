@@ -1,6 +1,6 @@
 # Microphysics of A1: where can $g\chi\delta_m$ come from?
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Ranked microphysics map for postulate A1. Not a derivation of $g$ from the Standard Model.*
 
@@ -60,7 +60,7 @@ Do not invent $\chi$ *and* set $\ell_{\ast}$ by hand *and* amplify from Planck.
 | Idea | Isotropic vacuum stress is projected out (unimodular / SDiff). Residual anisotropic stress lives where conformal / volume-preserving symmetry is broken by structure — edges of $\delta_m\sim\mathcal{O}(1)$ regions. |
 | Coupling | Residual support $\propto$ nonlinear mask $\Rightarrow$ effective coupling to $\delta_m$ on edges. |
 | A0 fit | Exact design goal of programme bulk–edge language. |
-| Literature | Unimodular gravity corpus; programme [`OBSERVABLE_WALL.md`](../core/OBSERVABLE_WALL.md), [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) (pedagogy only for CM analogy). |
+| Literature | Unimodular gravity corpus; programme [`OBSERVABLE_WALL.md`](../core/OBSERVABLE_WALL.md), [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) (method notes only for CM analogy). |
 | Risk | Without a derived residual operator, still semi-phenomenological. |
 | Verdict | Strong programme fit; pairs with T1.2 mask geometry ($r_{e,\mathrm{mask}}\approx 1.1 R_{\mathrm{nl}}$). |
 

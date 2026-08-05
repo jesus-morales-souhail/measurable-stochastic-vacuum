@@ -1,15 +1,15 @@
 # Index of notes
 
-Jesús Morales Souhail · July 2026 · not peer reviewed  
+Jesús Morales Souhail · July 2026
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-If you just landed: [`../START_HERE.md`](../START_HERE.md).  
+If you just landed: [`../START_HERE.md`](../START_HERE.md).
 If I wrote a short paper: [`what-i-would-put-in-a-paper.md`](what-i-would-put-in-a-paper.md).
 
 | Other repo | Role |
 |:-----------|:-----|
 | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | DESI residual analysis |
-| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | pedagogy only |
+| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | method notes only |
 
 ```bash
 pytest -q

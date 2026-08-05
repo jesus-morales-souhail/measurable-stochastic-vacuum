@@ -1,16 +1,16 @@
 # Topological edge analogy: simplify the vacuum grain like a Hall chip
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Date:** July 2026  
-**Status:** Analogy only — **not** a condensed-matter derivation of dark energy  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Date:** July 2026
+**Status:** Analogy only — **not** a condensed-matter derivation of dark energy
 **Pairs with:** [`FOR_REFEREES.md`](../core/FOR_REFEREES.md) · [`SIMPLE_AS_LAMBDA.md`](../core/SIMPLE_AS_LAMBDA.md) · [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md)
 
 ---
 
 ## 0. One-sentence point
 
-**$\Lambda$ is the bulk insulator of the vacuum; the measurable grain is an edge channel.**  
+**$\Lambda$ is the bulk insulator of the vacuum; the measurable grain is an edge channel.**
 Local noise cannot easily destroy what is protected by topology (or by projection symmetries like SDiff); it can only rearrange the edge. That is the simplification I want on the desk.
 
 ---
@@ -37,7 +37,7 @@ In a **2D electron gas**, near absolute zero, with a strong perpendicular magnet
 | **Excitations** | Not bare electrons: quasiparticles / **anyons** (e.g. charge $e/3$) |
 | **Protection** | No counter-propagating state on that edge ⇒ impurity cannot reverse the mode |
 
-**Braiding (topological qubits, $\nu=5/2$ programme):**  
+**Braiding (topological qubits, $\nu=5/2$ programme):**
 logical information lives in the **global braid**, not in the local position of anyon $A$ or $B$. Local kicks do not untie the braid.
 
 **Entropy — precise statement (do not overclaim):**
@@ -65,8 +65,8 @@ So: **local entropy production for the protected channel is blocked**, not “th
 | Anyon ≠ electron | Residual excitation ≠ Planck pixel particle |
 | Braid = non-local info | Observables are **path-integrated** (global), not local vacuum “clicks” |
 
-**Analogy limit (mandatory):**  
-the universe is **not** claimed to be a fractional Hall bar.  
+**Analogy limit (mandatory):**
+the universe is **not** claimed to be a fractional Hall bar.
 The analogy only enforces **bulk vs edge** and **local vs topological protection**.
 
 ---
@@ -95,7 +95,7 @@ $$
 T_{\mu\nu}^{\mathrm{(iso)}} = V g_{\mu\nu}
 $$
 
-is the piece that volume-preserving / unimodular structure treats as **pure trace** (bulk).  
+is the piece that volume-preserving / unimodular structure treats as **pure trace** (bulk).
 It does **not** open a free isotropic noise channel for telescopes.
 
 ### 3.3 Edge = one grain number
@@ -104,8 +104,8 @@ $$
 \sigma = \Bigl(\frac{\ell_{\ast}}{L_H}\Bigr)^{3/2}
 $$
 
-- $\sigma$: amplitude of the **edge** (residual sector), one constant like $\Omega_\Lambda$.  
-- $\ell_{\ast}$: edge correlation length (mesoscopic if $\sigma\sim 10^{-5}$).  
+- $\sigma$: amplitude of the **edge** (residual sector), one constant like $\Omega_\Lambda$.
+- $\ell_{\ast}$: edge correlation length (mesoscopic if $\sigma\sim 10^{-5}$).
 - **Not** $L_P$: Planck counting is the wrong “filling factor” for telescope edges.
 
 ### 3.4 Edge current = light sees shear
@@ -124,7 +124,7 @@ $$
 | Local lab “noise” | Irrelevant | Wrong edge |
 | Light-path slip | Zero in pure GR+$\Lambda$ | $\mathrm{RMS}\sim\sigma^{2/3}$ if $\sigma>0$ |
 
-**Shielding is absolute only for the wrong channel** (local reverse / isotropic free amplification),  
+**Shielding is absolute only for the wrong channel** (local reverse / isotropic free amplification),
 exactly as the Hall edge forbids reverse modes — not as “entropy = 0”.
 
 ---
@@ -168,7 +168,7 @@ $$
 \Gamma_{\mathrm{iso}}^{\mathrm{(free amplification)}} \to 0 \quad\text{(Sorkin soft / wrong operator)}, \qquad \Gamma_{\mathrm{edge}}^{\mathrm{(slip path)}} \propto \sigma^{2/3} \quad\text{(if grain exists)}.
 $$
 
-Topological / projective protection **stops local destruction of the edge mode**,  
+Topological / projective protection **stops local destruction of the edge mode**,
 not the growth of cosmological entropy $S$.
 
 ---

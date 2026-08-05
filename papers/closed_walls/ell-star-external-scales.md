@@ -1,10 +1,10 @@
 # External scale candidates for $\ell_{\ast}$
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 July 2026
 
-Not a derivation of $\ell_{\ast}$.  
-Code: [`scripts/closed/ell_star_external_scales.py`](../../scripts/closed/ell_star_external_scales.py)  
+Not a derivation of $\ell_{\ast}$.
+Code: [`scripts/closed/ell_star_external_scales.py`](../../scripts/closed/ell_star_external_scales.py)
 Related: [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`r1-counting-principle.md`](../r1_kernel/r1-counting-principle.md)
 
 ---
@@ -54,16 +54,16 @@ python scripts/closed/ell_star_external_scales.py
 
 A useful principle should:
 
-1. Predict a length (or $N_{\mathrm{eff}}$) from matter, gravity, or decoherence **without** targeting $2.06\,\mathrm{Mpc}$ first.  
-2. Use DESI residual and $R_8$ only afterwards.  
+1. Predict a length (or $N_{\mathrm{eff}}$) from matter, gravity, or decoherence **without** targeting $2.06\,\mathrm{Mpc}$ first.
+2. Use DESI residual and $R_8$ only afterwards.
 3. Avoid choosing an object because its size matches the counting inverse.
 
 Candidates I have not yet used as the R1 principle in this repo:
 
-- galaxy two-point correlation length $r_0$ (DESI / SDSS)  
-- scale where peculiar-velocity correlations decay  
-- horizon / nonlinear scale at structure re-entry (if distinct from pure $R_8$)  
-- thermal / interaction decoherence length of a vacuum sector coupled to collapsed matter  
+- galaxy two-point correlation length $r_0$ (DESI / SDSS)
+- scale where peculiar-velocity correlations decay
+- horizon / nonlinear scale at structure re-entry (if distinct from pure $R_8$)
+- thermal / interaction decoherence length of a vacuum sector coupled to collapsed matter
 
 If any of these, computed without targeting $2.0646$, lands near NP-A or near the DESI-ceiling cell $\sim 12\,\mathrm{Mpc}$, that is an external prior for R1. Until then the NP-A length is only counting arithmetic.
 

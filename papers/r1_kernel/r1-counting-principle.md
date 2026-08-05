@@ -1,13 +1,13 @@
 # WP1 — R1: counting principle for the stochastic seed
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
-ORCID: [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+ORCID: [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 Programme: measurable-stochastic-vacuum
 
 *Partial derivation — landscape and zeros. Discussion/expansion of verified results.*
 
-Code: [`scripts/r1/r1_counting_landscape.py`](../../scripts/r1/r1_counting_landscape.py) · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)  
+Code: [`scripts/r1/r1_counting_landscape.py`](../../scripts/r1/r1_counting_landscape.py) · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)
 Documented results: [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) (gated by `pytest -q`).
 
 ---
@@ -45,7 +45,7 @@ Telescope-band residuals from counting alone require a mesoscopic DE counting ce
 
 1. Planck cell $\Rightarrow$ null for any soft gain (verified).
 2. $\ell_{\ast}=L_H\Rightarrow\sigma\sim 1$ (upper structural absurdity for BAO smoothness).
-3. Wrong operator (lab optics) $\Rightarrow$ null (exploratory sister repo).
+3. Wrong operator (lab optics) $\Rightarrow$ null (exploratory related repository).
 
 ---
 
@@ -62,7 +62,7 @@ Telescope-band residuals from counting alone require a mesoscopic DE counting ce
 
 **R1 status:** landscape derived; form of the principle under A0–A4 closed by sandwich uniqueness (see [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md)); existence of residual sector and local coupling still postulates. As a nature claim, the principle fixing $\ell_{\ast}$ remains open until A0–A1 are grounded.
 
-Publication-oriented expansion (walls vs kernel, R1d scale table, falsifiers):  
+Publication-oriented expansion (walls vs kernel, R1d scale table, falsifiers):
 [`r1-open-kernel.md`](r1-open-kernel.md) · `python scripts/r1/r1_open_kernel_scales.py`
 
 ---
@@ -75,12 +75,12 @@ Sister bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) is a test only:
 - $\ll 10^{-5}$ → predict null;
 - $\gg 1.5\times 10^{-4}$ without damping → tension.
 
-Never tune $\ell_{\ast}$ to that number.  
+Never tune $\ell_{\ast}$ to that number.
 Never tune $\ell_{\ast}$ to $R_8$ after inspecting S$_8$ either (same dial class; see open-kernel note §7).
 
 ---
 
 ## 6. Next
 
-WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](../work_packages/r3-open-horizon-map.md)).  
+WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](../work_packages/r3-open-horizon-map.md)).
 Closing WP1 as a nature claim requires A0–A1 (or equivalent) from microphysics under criteria P1–P6 in [`r1-open-kernel.md`](r1-open-kernel.md); the scale form under those axioms is already the sandwich.

@@ -1,11 +1,11 @@
 # H0 tension, “brachistochrone” intuition, and a bridge to the open kernel
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Date:** July 2026  
-**Status:** Literature + geometry note — **not** a solution of the Hubble tension; **not** a derivation of $\ell_{\ast}$  
-**Code:** [`scripts/closed/h0_running_geometry.py`](../../scripts/closed/h0_running_geometry.py)  
-**Related:** [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) · sister DESI bound  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Date:** July 2026
+**Status:** Literature + geometry note — **not** a solution of the Hubble tension; **not** a derivation of $\ell_{\ast}$
+**Code:** [`scripts/closed/h0_running_geometry.py`](../../scripts/closed/h0_running_geometry.py)
+**Related:** [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md) · related DESI bound
 
 ---
 
@@ -73,7 +73,7 @@ Literature “running” claims aim to connect high-$H_0$ at low $z$ to low-$H_0
 
 ## 3. Geometry in this programme (no free dial)
 
-Fiducial flat $\Lambda$CDM: $H_0=67.4$, $\Omega_m=0.315$, $\Omega_\Lambda=0.685$.  
+Fiducial flat $\Lambda$CDM: $H_0=67.4$, $\Omega_m=0.315$, $\Omega_\Lambda=0.685$.
 Reproduce: `python scripts/closed/h0_running_geometry.py`.
 
 ### 3.1 Cosmic path length and patch counts
@@ -97,7 +97,7 @@ Matter–DE equality: $z_{\mathrm{eq}}=(\Omega_\Lambda/\Omega_m)^{1/3}-1\approx\
 | NP path RMS (sister atlas) | $z_s\sim 1.5$ | Deeper; uses same $\sqrt{\chi/\ell_{\ast}}$ logic |
 | R1 open kernel $\ell_{\ast}\sim\mathrm{Mpc}$ | IR grain | **Same scale class** as $R_8$; **no** derived $H_0(z)$ |
 
-**Legitimate reading:** two open stories (mesoscopic DE grain; $H_0$ evolving with probe depth) both care about the **late, post-equality, few-Gpc path** regime.  
+**Legitimate reading:** two open stories (mesoscopic DE grain; $H_0$ evolving with probe depth) both care about the **late, post-equality, few-Gpc path** regime.
 **Illegitimate reading:** “therefore $\ell_{\ast}=R_8$ explains the Hubble tension.”
 
 ---
@@ -153,9 +153,9 @@ This is the same pattern as R1d $\leftrightarrow R_8$: **shared scale language**
 
 ## 7. Next honest steps
 
-1. Toy $\delta D/D=s\sqrt{\chi/\ell_{\ast}}$ with $\ell_{\ast}$ a priori — [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md). **Verdict:** DESI-safe stochastic amplitude **short** of the $8\%$ H0 gap by $\times 16$–$38$.  
-2. **External:** freeze a public H0-running table (Dainotti bins / Krishnan) as CSV with arXiv tags — no re-fit.  
-3. **Joint:** any future coherent-like map must still obey sister $\sigma_X$.  
+1. Toy $\delta D/D=s\sqrt{\chi/\ell_{\ast}}$ with $\ell_{\ast}$ a priori — [`h0-bridge-toy-map.md`](h0-bridge-toy-map.md). **Verdict:** DESI-safe stochastic amplitude **short** of the $8\%$ H0 gap by $\times 16$–$38$.
+2. **External:** freeze a public H0-running table (Dainotti bins / Krishnan) as CSV with arXiv tags — no re-fit.
+3. **Joint:** any future coherent-like map must still obey sister $\sigma_X$.
 4. **Experiment:** more TDCOSMO systems + SN binning with pre-registered bins.
 
 ---

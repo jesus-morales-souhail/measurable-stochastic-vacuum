@@ -1,17 +1,17 @@
 # Minimal theoretical package: when could stochastic vacuum noise be measurable?
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Status:** Theoretical programme note  
-**Date:** July 2026  
-**Verified claims only:** [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md)  
-**Sister empirical corpus:** [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Status:** Theoretical programme note
+**Date:** July 2026
+**Verified claims only:** [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md)
+**Related empirical corpus:** [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
 ## 0. Why parameter fitting is not enough
 
-The sister DESI corpus has already established, under stated pipelines:
+The related DESI corpus has already established, under stated pipelines:
 
 | Result | Implication |
 |:-------|:------------|
@@ -20,7 +20,7 @@ The sister DESI corpus has already established, under stated pipelines:
 | Soft amplifiers fail by many decades | No free amplification from $\sigma_0\sim 10^{-61}$ to $10^{-5}$ |
 | Slip with BAO-scale $\sigma$ is amplitude-starved | Right operator, insufficient amplitude |
 
-So a measurable stochastic dark-energy sector is not “one more $\sigma$ in $\Lambda$CDM”.  
+So a measurable stochastic dark-energy sector is not “one more $\sigma$ in $\Lambda$CDM”.
 It needs a **minimal package of rule changes**, coupled, with **self-shielding** (predicted zeros).
 
 ---
@@ -31,10 +31,10 @@ A construction is **ad hoc** if it inserts a factor $\sim 10^{56}$ (or free $N_{
 
 Admissible work must:
 
-1. Derive or define the seed $\sigma_{0,\mathrm{eff}}$ from a counting principle.  
-2. Derive or bound the gain $G$ of any open map.  
-3. State the observable operator (BAO residual vs slip vs both).  
-4. Predict structural zeros (wrong scale / wrong operator / Sorkin soft).  
+1. Derive or define the seed $\sigma_{0,\mathrm{eff}}$ from a counting principle.
+2. Derive or bound the gain $G$ of any open map.
+3. State the observable operator (BAO residual vs slip vs both).
+4. Predict structural zeros (wrong scale / wrong operator / Sorkin soft).
 5. Use DESI only **a posteriori**.
 
 ---
@@ -61,11 +61,11 @@ a posteriori tests (DESI / Euclid / RSD+lensing)
 
 ## 3. Self-shielding
 
-“Measurable without being shielded” does **not** mean signal everywhere.  
+“Measurable without being shielded” does **not** mean signal everywhere.
 It means shielding becomes a **theorem of the model**:
 
-- Sorkin cell + soft dynamics → null (verified).  
-- Wrong operator (lab optics) → null.  
+- Sorkin cell + soft dynamics → null (verified).
+- Wrong operator (lab optics) → null.
 - Possible non-null only if mesoscopic counting or a **derived** hard open map exists.
 
 See [`SELF_SHIELDING_AXIOMS.md`](../core/SELF_SHIELDING_AXIOMS.md) and [`wp5-falsification.md`](../work_packages/wp5-falsification.md).
@@ -74,10 +74,10 @@ See [`SELF_SHIELDING_AXIOMS.md`](../core/SELF_SHIELDING_AXIOMS.md) and [`wp5-fal
 
 ## 4. Light without changing global expansion
 
-A classical residual need not shift mean $H(z)$.  
+A classical residual need not shift mean $H(z)$.
 Anisotropic stress $\pi_T$ wrinkles $\Phi,\Psi$; photons accumulate lensing/ISW-like shifts over Gpc paths.
 
-**Verified:** geometric path gain is $\sqrt{N_{\mathrm{pat}}}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — **not** $10^{56}$.  
+**Verified:** geometric path gain is $\sqrt{N_{\mathrm{pat}}}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — **not** $10^{56}$.
 **Analogy limit:** galaxies grew from post-inflation $\zeta\sim 10^{-5}$, not from late Sorkin $10^{-61}$.
 
 ---
@@ -88,7 +88,7 @@ Anisotropic stress $\pi_T$ wrinkles $\Phi,\Psi$; photons accumulate lensing/ISW-
 |:-----------|:-----|
 | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | Empirical claim set (nulls, bounds) |
 | **this repo** | Theory package + verified kinematics |
-| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Wrong-scale pedagogy only |
+| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Wrong-scale method notes only |
 
 ---
 

@@ -1,7 +1,7 @@
 # Self-shielding axioms
 
-**Programme:** measurable-stochastic-vacuum  
-**Author:** Jesús Morales Souhail · July 2026  
+**Programme:** measurable-stochastic-vacuum
+**Author:** Jesús Morales Souhail · July 2026
 **Status:** Independent research — **not peer reviewed**
 
 These are the admission rules I use for this repository. They grew out of mistakes I made earlier — wrong scale, wrong operator, free amplifiers dressed as physics. I keep them short so I can check a claim against them before it enters a note.
@@ -48,7 +48,7 @@ Every model states the status of seed, gain, and operator (derived / bounded / a
 
 ## A5 — DESI is a test, not a dial
 
-Sister bounds are used only a posteriori for compatibility, tension, or falsification.  
+Sister bounds are used only a posteriori for compatibility, tension, or falsification.
 Not allowed: choosing $\ell_{\ast}$ or $r$ to sit under $1.5\times 10^{-4}$.
 
 ---
@@ -67,9 +67,9 @@ Any “avoids black holes” claim needs effective volume, probe energy density,
 
 ## A8 — Language in abstracts
 
-**Not claimed:** “we prove the vacuum is discrete”; “Euclid will see Sorkin”; “tesseract solves dark energy”.  
+**Not claimed:** “we prove the vacuum is discrete”; “Euclid will see Sorkin”; “tesseract solves dark energy”.
 
-**Allowed:** “under counting hypothesis …”; “soft open map implies …”; “compatible / in tension with sister DESI bound …”.
+**Allowed:** “under counting hypothesis …”; “soft open map implies …”; “compatible / in tension with related DESI bound …”.
 
 ---
 

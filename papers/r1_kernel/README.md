@@ -2,7 +2,7 @@
 
 Notes on $\ell_{\ast}$, $\sigma$, $g$, residual–structure tests, and (separately) CF4 matter kinematics.
 
-Start: [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md).  
+Start: [`NOTE_uniqueness_residual_grain.md`](NOTE_uniqueness_residual_grain.md).
 Paper map: [`../what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.md).
 
 | File | Content |

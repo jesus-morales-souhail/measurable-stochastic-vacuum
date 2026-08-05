@@ -1,12 +1,12 @@
 # WP2 — R3: open-horizon map (soft gain and no-gain theorems)
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Programme:** measurable-stochastic-vacuum  
-**Status:** Soft-regime theorems closed; hard bath open  
-**Date:** July 2026  
-**Code:** [`scripts/side/r3_open_horizon_map.py`](../../scripts/side/r3_open_horizon_map.py) · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)  
-**Input:** WP1 seed landscape  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Programme:** measurable-stochastic-vacuum
+**Status:** Soft-regime theorems closed; hard bath open
+**Date:** July 2026
+**Code:** [`scripts/side/r3_open_horizon_map.py`](../../scripts/side/r3_open_horizon_map.py) · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)
+**Input:** WP1 seed landscape
 
 > **Documented results:** see [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) (gated by `pytest -q`).
 
@@ -52,7 +52,7 @@ Defaults in the soft regime: $G_F=1$ (freeze preserves), $G_U=1$ (late $\Delta x
 
 ## 5. Open (not claimed)
 
-Microscopic horizon Lindblad model fixing $r\gg 1$.  
+Microscopic horizon Lindblad model fixing $r\gg 1$.
 Until derived, $r\sim 64$ is excluded as a free parameter (A3, A5).
 
 ---

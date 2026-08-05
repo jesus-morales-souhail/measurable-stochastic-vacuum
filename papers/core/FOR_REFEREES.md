@@ -1,21 +1,21 @@
 # Reading guide: statement of results, reading order, and formula sheet
 
-**Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Email:** jmskjym@gmail.com  
-**Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum  
-**Date:** July 2026  
-**Status:** Independent research — not peer reviewed  
-**Index:** [`INDEX.md`](INDEX.md)  
+**Author:** Jesús Morales Souhail
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
+**Email:** jmskjym@gmail.com
+**Repository:** https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum
+**Date:** July 2026
+**Status:** Independent research
+**Index:** [`INDEX.md`](INDEX.md)
 **Tests:** `pytest -q`
 
 ---
 
 ## 1. What this repository is (and is not)
 
-Theory and data live in two places. This repo: kinematics and identities I can check with code. Sister repo: DESI residual analysis.
+Theory and data live in two places. This repo: kinematics and identities I can check with code. Related repository: DESI residual analysis.
 
-| This repository | Sister repository |
+| This repository | Related repositoriesitory |
 |:----------------|:------------------|
 | Theory kinematics + verified identities | Empirical DESI BAO residual analysis |
 | Minimal model as simple as $\Lambda$ | Working bound $\sigma_X < 1.5\times 10^{-4}$ (95% CL) |
@@ -24,8 +24,8 @@ Theory and data live in two places. This repo: kinematics and identities I can c
 | **Not** a detection paper | Empirical DESI residual bound |
 | Conditional uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ under A0–A4 | **Not** a proof that SM realises $\chi$ |
 
-**Sister empirical corpus:**  
-https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou  
+**Related empirical corpus:**
+https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou
 Manuscript: `manuscript/PREPRINT.md`
 
 ---
@@ -63,8 +63,8 @@ Manuscript: `manuscript/PREPRINT.md`
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | analogy only |
 | 7 | Sister `PREPRINT.md` | empirical $\sigma_X$ bound |
 
-Not hard results: `THEORY_REVOLUTION.md`, exploratory optics sister, long WP discussion unless it restates verified identities.  
-`r1-open-kernel.md`: walls vs kernel and scale arithmetic — not a derivation of $\ell_{\ast}=R_8$.  
+Not hard results: `THEORY_REVOLUTION.md`, exploratory optics sister, long WP discussion unless it restates verified identities.
+`r1-open-kernel.md`: walls vs kernel and scale arithmetic — not a derivation of $\ell_{\ast}=R_8$.
 CF4 notes: matter $v_{\mathrm{pec}}$ only — not $\sigma_X$ or $g$.
 
 ---
@@ -136,7 +136,7 @@ $$
 | C5 | Path $\mathrm{RMS}=s\sqrt{N}$ for iid zero-mean patches | MC + tests |
 | C6 | Path + soft open **cannot** rescue Sorkin | combined tests |
 | C7 | DESI-safe windows NP-A / NP-B exist as **hand-placed** kinematics with $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ | `NARROW_PATH` + tests |
-| C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | sister repo |
+| C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | related repository |
 | C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
 | C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_{\ast}$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
 | C11 | Scale arithmetic: $R_8=8/h$; $\ell_{\ast}(\sigma,d)$ and $\sigma(R_8,d)$ under counting; **$R_8$ proximity is $d=3$-specific** | `lib_verified` + `scripts/r1/r1_open_kernel_scales.py` + tests |
@@ -194,8 +194,8 @@ python scripts/r1/r1_open_kernel_scales.py
 
 [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) is **pedagogy**:
 
-- bulk $\leftrightarrow$ $\Lambda$ (smooth mean),  
-- edge $\leftrightarrow$ grain $\sigma$ (shear / light),  
+- bulk $\leftrightarrow$ $\Lambda$ (smooth mean),
+- edge $\leftrightarrow$ grain $\sigma$ (shear / light),
 - no backscattering $\leftrightarrow$ unphysical amplification channels closed.
 
 It is **not** a condensed-matter derivation of dark energy. I use it only as a picture, never as a proof.
@@ -204,17 +204,17 @@ It is **not** a condensed-matter derivation of dark energy. I use it only as a p
 
 ## 7. How I would like a careful reader to judge this
 
-1. Are documented results limited to C1–C11 and backed by `pytest`?  
-2. Is the DESI number used only as a bound, never to fit $\ell_{*}$?  
-3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$?  
-4. Are free $10^{56}$ (Euclid target) / $10^{57}$ (DESI ceiling), $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls** — without mixing the two gap labels?  
-5. Are open problems (N1–N3, N8–N11) stated without hype — especially the R1 open kernel?  
-6. Is any $R_8$ / S$_8$ discussion limited to scale class + limits (C11 / N8)?  
+1. Are documented results limited to C1–C11 and backed by `pytest`?
+2. Is the DESI number used only as a bound, never to fit $\ell_{*}$?
+3. Is the minimal model no more complex than $\Lambda$CDM + one $\sigma$?
+4. Are free $10^{56}$ (Euclid target) / $10^{57}$ (DESI ceiling), $r\sim 64$, and $N\sim 10^{119}$ correctly rejected as **walls** — without mixing the two gap labels?
+5. Are open problems (N1–N3, N8–N11) stated without hype — especially the R1 open kernel?
+6. Is any $R_8$ / S$_8$ discussion limited to scale class + limits (C11 / N8)?
 7. Is NP-B / $\mathrm{RMS}\sim 10^{-3}$ free of binary “discovery / model death” language (N9–N11; `NARROW_PATH` §5.1)?
 
 ---
 
 ## 8. Contact
 
-**Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818  
+**Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818
 github.com/jesus-morales-souhail

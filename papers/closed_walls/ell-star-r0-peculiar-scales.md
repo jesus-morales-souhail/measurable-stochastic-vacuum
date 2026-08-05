@@ -1,10 +1,10 @@
 # Clustering lengths and peculiar-velocity scales vs NP-A $\ell_{\ast}$
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 July 2026
 
-External-scale comparison — not a derivation of $\ell_{\ast}$.  
-Code: [`scripts/closed/ell_star_r0_peculiar.py`](../../scripts/closed/ell_star_r0_peculiar.py)  
+External-scale comparison — not a derivation of $\ell_{\ast}$.
+Code: [`scripts/closed/ell_star_r0_peculiar.py`](../../scripts/closed/ell_star_r0_peculiar.py)
 MW–Andromeda / Virgo tables: [`ell-star-external-scales.md`](ell-star-external-scales.md).
 
 ---
@@ -63,7 +63,7 @@ Power-law model $\xi_{gg}(r)=(r/r_0)^{-\gamma}$ ($\gamma\sim 1.7$–$1.9$): $r_0
 | $L_*$ / main (high) | $6.0$ | $8.90$ | $+331\%$ | $-25\%$ |
 | Luminous (upper OOM) | $8.0$ | $11.87$ | $+475\%$ | $\sim 0\%$ |
 
-Sources: Zehavi et al., arXiv:[1005.2413](https://arxiv.org/abs/1005.2413); arXiv:[astro-ph/0408569](https://arxiv.org/abs/astro-ph/0408569).  
+Sources: Zehavi et al., arXiv:[1005.2413](https://arxiv.org/abs/1005.2413); arXiv:[astro-ph/0408569](https://arxiv.org/abs/astro-ph/0408569).
 Typical $L_*$ samples sit near $r_0\sim 5$–$6\,h^{-1}\mathrm{Mpc}$; brighter/redder samples sit higher. I use that literature range, not a fit to NP-A.
 
 $r_0(L_*)$ is not $\approx 2.06\,\mathrm{Mpc}$. It is several times larger, in the same broad decade as $R_8$ and the DESI-ceiling cell, not the NP-A cell.

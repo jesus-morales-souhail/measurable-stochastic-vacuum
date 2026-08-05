@@ -1,6 +1,6 @@
 # What I work on after closing residual-$H_0$
 
-Jesús Morales Souhail · July 2026  
+Jesús Morales Souhail · July 2026
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
 Depends on the uniqueness argument, the DESI residual ceiling, and the closed $H_0$ checks.
@@ -62,18 +62,18 @@ B  residual × structure tests   (parallel with A)
 C  information metric           (later)
 ```
 
-**Matter kinematics already done (not residual detection):**  
-CF4 block-net $\eta(L)$ and collapse-peak velocity relief  
-([`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md), [`r1-collapse-relief.md`](r1-collapse-relief.md)).  
+**Matter kinematics already done (not residual detection):**
+CF4 block-net $\eta(L)$ and collapse-peak velocity relief
+([`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md), [`r1-collapse-relief.md`](r1-collapse-relief.md)).
 Where peculiar motion competes with expansion near $R_{\mathrm{nl}}$. Does not replace T2.
 
 ---
 
 ## Scope of this programme
 
-- Residual window $\sigma\sim 10^{-5}$–$10^{-4}$, $\ell_{\ast}\sim R_{\mathrm{nl}}$ under A0–A4.  
-- $H_0\sim 8\%$ is outside this residual sector.  
-- No free $10^{56}$; no post-hoc $\ell_{\ast}$.  
+- Residual window $\sigma\sim 10^{-5}$–$10^{-4}$, $\ell_{\ast}\sim R_{\mathrm{nl}}$ under A0–A4.
+- $H_0\sim 8\%$ is outside this residual sector.
+- No free $10^{56}$; no post-hoc $\ell_{\ast}$.
 - Each formula is either derived, order-of-magnitude, or a postulate — labelled as such.
 
 Open work: better $g$ from averaging/SDiff, and residual–structure tests when residual maps exist.

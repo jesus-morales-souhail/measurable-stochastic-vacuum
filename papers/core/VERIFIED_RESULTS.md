@@ -1,11 +1,11 @@
 # Verified results: counting seeds, soft open gain, and light-path slip
 
-**Author:** Jesús Morales Souhail  
-**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)  
-**Date:** July 2026  
-**Status:** Technical note — **only claims that are algebraically or numerically verified in-repo** · independent research, **not peer reviewed**  
-**Code:** `scripts/core/lib_verified.py` · **Tests:** `tests/test_verified.py` (`pytest -q` must pass)  
-**Sister empirical corpus:** [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+**Author:** Jesús Morales Souhail
+**ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
+**Date:** July 2026
+**Status:** Technical note — **only claims that are algebraically or numerically verified in-repo** · independent research, **not peer reviewed**
+**Code:** `scripts/core/lib_verified.py` · **Tests:** `tests/test_verified.py` (`pytest -q` must pass)
+**Related empirical corpus:** [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
@@ -19,7 +19,7 @@ I record three families of **verified** relations relevant to whether late-time 
 
 3. **Anisotropic stress and light paths (R2):** under the standard sub-horizon anisotropy equation, $\lvert \gamma-1 \rvert=2\varepsilon\sigma(\rho_X/\rho_m)/\lvert \delta_m \rvert$. Incoherent line-of-sight accumulation multiplies by $\sqrt{N_{\mathrm{pat}}}$ with $N_{\mathrm{pat}}=\chi/\ell_{\ast}$. For Gpc paths and Mpc cells, $\sqrt{N}=\mathcal{O}(10$–$10^{2})$. Path accumulation **does not** promote Sorkin seeds to observational slip floors; mesoscopic seeds from (1) can reach $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$.
 
-**I do not claim** a derivation of why $\ell_{\ast}$ is galactic, a microphysical horizon bath with $r\sim 64$, or a DESI detection. Those remain open. Empirical DESI residual bounds live in the sister repository and are used here only as **a posteriori** scales.
+**I do not claim** a derivation of why $\ell_{\ast}$ is galactic, a microphysical horizon bath with $r\sim 64$, or a DESI detection. Those remain open. Empirical DESI residual bounds live in the related repositorysitory and are used here only as **a posteriori** scales.
 
 ---
 
@@ -32,7 +32,7 @@ I record three families of **verified** relations relevant to whether late-time 
 | Monte Carlo checks of $\mathrm{RMS}=s\sqrt{N}$ | Optical / lab metaphors as cosmology |
 | Order-of-magnitude cosmology ($H_0$, $\Omega_m$, $\Omega_\Lambda$ fiducial) | Peer-reviewed status |
 
-Automated tests: `pytest -q` from the repository root.  
+Automated tests: `pytest -q` from the repository root.
 Library: `scripts/core/lib_verified.py`.
 
 ---
@@ -77,12 +77,12 @@ With $L=L_H$ and $\sigma_{0,\mathrm{eff}}=10^{-5}$:
 | 3 | $\approx 2.1 \mathrm{Mpc}$ | mesoscopic |
 | 4 | $\approx 14 \mathrm{Mpc}$ | mesoscopic |
 
-**Verified reading:** *if* the residual is to sit near $10^{-5}$ by counting alone, the counting cell cannot be Planckian.  
+**Verified reading:** *if* the residual is to sit near $10^{-5}$ by counting alone, the counting cell cannot be Planckian.
 **Not verified:** a dynamical principle that forces $\ell_{\ast}$ into that band. I have not found one yet.
 
 ### 2.5 Structural zero
 
-For $\ell_{\ast}=L_P$ and $d\in\{2,3,4\}$, $\sigma_{0,\mathrm{eff}}\le\mathcal{O}(10^{-61})\ll 10^{-5}$.  
+For $\ell_{\ast}=L_P$ and $d\in\{2,3,4\}$, $\sigma_{0,\mathrm{eff}}\le\mathcal{O}(10^{-61})\ll 10^{-5}$.
 Any experiment whose sensitivity is $\gtrsim 10^{-5}$ **must** return a null for this seed **if** the residual tracks $\sigma_{0,\mathrm{eff}}$ without a huge derived gain. That null is a **theorem of the counting hypothesis**, not a failure of the survey.
 
 ### 2.6 Scale anchor $R_8$ (arithmetic only)
@@ -99,9 +99,9 @@ Under the counting hypothesis alone (no fit):
 | $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | **yes** ($\sim 5.8\%$ off) |
 | $\sigma=1.5\times 10^{-4}$, $d=4$ | $\ell_{\ast}\approx 54.5\,\mathrm{Mpc}$ | **no** ($\sim 359\%$ off) |
 
-**Verified:** the arithmetic above; **proximity to $R_8$ is specific to $d=3$** at this residual scale.  
-**Not verified / not claimed:** $\ell_{\ast}=R_8$; multi-$d$ robustness; any explanation of S$_8$.  
-Data **tolerate** the $d=3$ row; nothing in-repo **prefers** it by fit.  
+**Verified:** the arithmetic above; **proximity to $R_8$ is specific to $d=3$** at this residual scale.
+**Not verified / not claimed:** $\ell_{\ast}=R_8$; multi-$d$ robustness; any explanation of S$_8$.
+Data **tolerate** the $d=3$ row; nothing in-repo **prefers** it by fit.
 Programme discussion: [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · `scripts/r1/r1_open_kernel_scales.py`.
 
 ---
@@ -118,7 +118,7 @@ $$
 
 At $r=1.5$, $G_O = e^{3}\approx 20.086$ (exact).
 
-**Status:** identity of the squeeze map.  
+**Status:** identity of the squeeze map.
 **Not verified:** that cosmology realises a given $r$.
 
 ### 3.2 Soft residual map (definition used in programme)
@@ -131,14 +131,14 @@ with defaults $G_F=1$ (freeze-out preserves amplitude; consistent with sister-re
 
 ### 3.3 No soft rescue of Sorkin
 
-For $\sigma_0\sim 10^{-61}$ and any $r\le 10$, $\sigma_{\mathrm{res}}\ll 10^{-50}$.  
+For $\sigma_0\sim 10^{-61}$ and any $r\le 10$, $\sigma_{\mathrm{res}}\ll 10^{-50}$.
 To reach $10^{-5}$ from Sorkin via $G_O$ alone:
 
 $$
 r = \frac12\ln\!\left(\frac{10^{-5}}{\sigma_0}\right) \approx 64.4.
 $$
 
-**Verified:** the number $r\sim 64$.  
+**Verified:** the number $r\sim 64$.
 **Not verified / not claimed:** a horizon-bath derivation of $r\sim 64$ (would be a new scale claim).
 
 ---
@@ -159,7 +159,7 @@ $$
 \lvert \gamma-1 \rvert = \left| \frac{\Phi}{\Psi}-1\right| = 2\varepsilon\sigma\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}.
 $$
 
-**Status:** standard consequence of the anisotropy equation under the listed assumptions (Ma & Bertschinger form; same as sister `slip_bridge.py`).  
+**Status:** standard consequence of the anisotropy equation under the listed assumptions (Ma & Bertschinger form; same as sister `slip_bridge.py`).
 **Not verified:** value of $\varepsilon$ from first principles; full $k,z$-dependent Boltzmann solution.
 
 ### 4.2 Path accumulation (probability)
@@ -170,7 +170,7 @@ $$
 \mathrm{RMS}_{\mathrm{path}} = s\sqrt{N_{\mathrm{pat}}}.
 $$
 
-**Status:** exact for the iid model (Monte Carlo checked to $\sim 3\%$).  
+**Status:** exact for the iid model (Monte Carlo checked to $\sim 3\%$).
 **Not verified:** Gaussianity or independence of real DE stress along the LOS.
 
 ### 4.3 Numerical anchors ($z_s=1.5$, fiducial cosmology)
@@ -185,15 +185,15 @@ Comoving distance $\chi(1.5)\approx 4.5\times 10^{3} \mathrm{Mpc}$ (trapezoidal 
 
 To lift Sorkin local slip to a floor $\lvert \gamma-1 \rvert\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_{\ast}=1 \mathrm{Mpc}$.
 
-**Verified reading:** geometric “universe as telescope” along the path is $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — useful, **not** a $10^{56}$ amplifier.  
-**Not verified:** that DESI/Euclid *will* detect slip from DE noise; only that the OOM can approach $10^{-3}$ if $\sigma\sim 10^{-5}$–$10^{-4}$ at **hand-placed** NP corners.  
-**Not verified:** that Stage-IV surveys constrain *this* path-RMS statistic at $10^{-3}$ after baryons / photo-$z$ / IA.  
+**Verified reading:** geometric “universe as telescope” along the path is $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ for Mpc cells — useful, **not** a $10^{56}$ amplifier.
+**Not verified:** that DESI/Euclid *will* detect slip from DE noise; only that the OOM can approach $10^{-3}$ if $\sigma\sim 10^{-5}$–$10^{-4}$ at **hand-placed** NP corners.
+**Not verified:** that Stage-IV surveys constrain *this* path-RMS statistic at $10^{-3}$ after baryons / photo-$z$ / IA.
 **Not claimed:** detection $\Leftrightarrow$ “texture of DE”; null $\Leftrightarrow$ full model death (see [`NARROW_PATH.md`](NARROW_PATH.md) §5.1).
 
 ### 4.4 Physical interpretation (tight)
 
-- Correct: noise need not change global $H(z)$; $\pi_T$ wrinkles $\Phi,\Psi$; light integrates.  
-- Correct analogy limit: primordial structure used $\zeta\sim 10^{-5}$ after inflation, not late Sorkin $10^{-61}$.  
+- Correct: noise need not change global $H(z)$; $\pi_T$ wrinkles $\Phi,\Psi$; light integrates.
+- Correct analogy limit: primordial structure used $\zeta\sim 10^{-5}$ after inflation, not late Sorkin $10^{-61}$.
 - Incorrect: “photons travel for Gyr $\Rightarrow$ $10^{-61}$ becomes $10^{-5}$.”
 
 ---
@@ -212,8 +212,8 @@ $$
 | **NP-B** | $\sigma_0\lesssim 7.5\times 10^{-6}$, $r=1.5$ | OK (on/under ceiling) | $\sim$ few $\times 10^{-3}$ |
 | NP-user ($\sigma_0=10^{-5}$, $r=1.5$) | same shape | **Tension** ($\sigma_{\mathrm{res}}\approx 2.0\times 10^{-4}$) | $\sim 7\times 10^{-3}$ |
 
-**Verified:** algebra and numbers for NP-A/B; naive product $\sigma_0\times G_O\times\sqrt{N}\neq\mathrm{RMS}$.  
-**Not verified:** a principle that realises mesoscopic $\ell_{\ast}$, or a bath that realises $r=\mathcal{O}(1)$.  
+**Verified:** algebra and numbers for NP-A/B; naive product $\sigma_0\times G_O\times\sqrt{N}\neq\mathrm{RMS}$.
+**Not verified:** a principle that realises mesoscopic $\ell_{\ast}$, or a bath that realises $r=\mathcal{O}(1)$.
 Full write-up: [`NARROW_PATH.md`](NARROW_PATH.md).
 
 ---
@@ -226,13 +226,13 @@ $$
 \sigma_{\mathrm{res}}^{\mathrm{(soft)}} = e^{2r}\sigma_{0,\mathrm{eff}} \quad (r=\mathcal{O}(1)), \qquad \mathrm{RMS}_{\gamma}^{\mathrm{(path)}} \sim \lvert \gamma-1 \rvert(\sigma_{\mathrm{res}}) \sqrt{\chi/\ell_{\ast}}.
 $$
 
-**Theorem (soft regime, in-repo):**  
-If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1)$, then both residual BAO-scale amplitudes and path-integrated slip remain many tens of orders of magnitude below $10^{-5}$ and below $\lvert \gamma-1 \rvert\sim 0.05$.  
+**Theorem (soft regime, in-repo):**
+If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1)$, then both residual BAO-scale amplitudes and path-integrated slip remain many tens of orders of magnitude below $10^{-5}$ and below $\lvert \gamma-1 \rvert\sim 0.05$.
 **Measurability in this framework requires either** (i) a counting cell $\ell_{\ast}$ that makes $\sigma_{0,\mathrm{eff}}$ already mesoscopic (R1 principle still open), **or** (ii) a *derived* hard open map with $r\sim 60$ (not constructed).
 
 ---
 
-## 7. Relation to DESI empirical claims (sister repo)
+## 7. Relation to DESI empirical claims (related repository)
 
 | Sister claim (DESI corpus) | Role here |
 |:---------------------------|:----------|
@@ -247,10 +247,10 @@ This note **does not re-derive** the DESI likelihood. It consumes those results 
 
 ## 8. Not results (do not cite as such)
 
-1. A first-principles derivation of galactic $\ell_{\ast}$ for DE (R1a/b/c open).  
-2. A horizon Lindblad model that yields $r\sim 64$.  
-3. A value of $\varepsilon$ fixed by SDiff symmetry.  
-4. A detection of stochastic DE or of slip from vacuum noise.  
+1. A first-principles derivation of galactic $\ell_{\ast}$ for DE (R1a/b/c open).
+2. A horizon Lindblad model that yields $r\sim 64$.
+3. A value of $\varepsilon$ fixed by SDiff symmetry.
+4. A detection of stochastic DE or of slip from vacuum noise.
 5. Peer review.
 
 ---
@@ -272,15 +272,15 @@ python scripts/core/r2_light_path_accumulation.py
 
 ## 10. Suggested citation of *this* note
 
-> Morales Souhail, J. (2026). *Verified results: counting seeds, soft open gain, and light-path slip.*  
-> GitHub: `measurable-stochastic-vacuum`, `papers/core/VERIFIED_RESULTS.md`.  
+> Morales Souhail, J. (2026). *Verified results: counting seeds, soft open gain, and light-path slip.*
+> GitHub: `measurable-stochastic-vacuum`, `papers/core/VERIFIED_RESULTS.md`.
 > Claims restricted to identities and tests in `tests/test_verified.py`.
 
 ---
 
 ## References (minimal)
 
-1. Ma, C.-P. & Bertschinger, E. (1995), Astrophys. J. Suppl., arXiv:astro-ph/9506072 — perturbation equations.  
-2. Sister repo: Morales Souhail, *stochastic-dark-energy-ou* — DESI residual bounds and amplifier audit.  
-3. Maus et al., arXiv:2505.20656 — published slip $\gamma=\Phi/\Psi$ (used only as floor scale).  
+1. Ma, C.-P. & Bertschinger, E. (1995), Astrophys. J. Suppl., arXiv:astro-ph/9506072 — perturbation equations.
+2. Related repository: Morales Souhail, *stochastic-dark-energy-ou* — DESI residual bounds and amplifier audit.
+3. Maus et al., arXiv:2505.20656 — published slip $\gamma=\Phi/\Psi$ (used only as floor scale).
 4. Sakr et al., arXiv:2501.07477 — indicative $\eta$ forecast floors.

@@ -11,7 +11,7 @@ stochastic-dark-energy-ou          empirical claims (DESI nulls, bounds, amplifi
 measurable-stochastic-vacuum       theory + checked kinematics  (this repo)
         │  does not pull exploratory optics in as cosmology
         ▼
-stochastic-de-exploratory-notes    wrong-scale pedagogy only
+stochastic-de-exploratory-notes    wrong-scale method notes only
 ```
 
 | Allowed here | Not allowed here |
@@ -23,5 +23,5 @@ stochastic-de-exploratory-notes    wrong-scale pedagogy only
 | CF4 matter kinematics (block net, collapse relief) | reading CF4 $V_{\mathrm{pec}}$ as a DE residual detection |
 | conditional uniqueness under named axioms | claiming SM realises $\chi$ without a derivation |
 
-Short paper map: [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).  
+Short paper map: [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).
 Hard results: [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md). CF4 notes are matter kinematics only.

@@ -1,9 +1,9 @@
 # The 8–12 Mpc decade (vs NP-A $2.06\,\mathrm{Mpc}$)
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 July 2026
 
-Programme steering note. Not a derivation of $\ell_{\ast}$.  
+Programme steering note. Not a derivation of $\ell_{\ast}$.
 Depends on: [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md) · [`r1-open-kernel.md`](r1-open-kernel.md) · [`ell-star-external-scales.md`](../closed_walls/ell-star-external-scales.md)
 
 ---
@@ -42,8 +42,8 @@ What physical principle, stated before looking at $R_8$, $r_0$, or the DESI ceil
 
 If such a principle is derived:
 
-- $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L_H)^{3/2}$ is a downstream prediction near the residual-ceiling decade;  
-- DESI $\sigma_X$ and $r_0$ enter only a posteriori;  
+- $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L_H)^{3/2}$ is a downstream prediction near the residual-ceiling decade;
+- DESI $\sigma_X$ and $r_0$ enter only a posteriori;
 - scope remains residual / slip ($10^{-4}$–$10^{-3}$), not the $9\%\,H_0$ tension (already excluded at safe amplitude).
 
 ---
@@ -72,9 +72,9 @@ Not claimed: $\ell_{\ast}=R_8$ or $\ell_{\ast}=r_0$ derived; three anchors prove
 
 ## First candidate principle
 
-**P$_\mathrm{nl}$:** $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ from matter $\sigma_8$ only.  
-Predicts $\sim 8$–$10\,\mathrm{Mpc}$ a priori; a posteriori overlaps the decade.  
-Write-up: [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md).  
+**P$_\mathrm{nl}$:** $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ from matter $\sigma_8$ only.
+Predicts $\sim 8$–$10\,\mathrm{Mpc}$ a priori; a posteriori overlaps the decade.
+Write-up: [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md).
 Still not a completed microphysical derivation.
 
 Best open lead: a blind reason for an 8–12 Mpc cell. P$_\mathrm{nl}$ is the first principle-shaped attempt at that decade, not a finished answer.

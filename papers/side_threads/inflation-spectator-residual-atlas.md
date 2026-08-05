@@ -1,11 +1,11 @@
 # Finding the gap: spectator inflation seed vs residual band (modern $r$)
 
-**Author:** Jesús Morales Souhail  
-**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-**Date:** July 2026  
-**Status:** OOM atlas + experimental door — not a DESI detection  
-**Builds on:** [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md) · sister [`amplification-gap.md`](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/amplification-gap.md)  
-**Code:** [`scripts/side/inflation_spectator_residual_atlas.py`](../../scripts/side/inflation_spectator_residual_atlas.py) · `pytest`  
+**Author:** Jesús Morales Souhail
+**ORCID / web:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+**Date:** July 2026
+**Status:** OOM atlas + experimental door — not a DESI detection
+**Builds on:** [`inflation-spectator-seed-gordon-wands.md`](inflation-spectator-seed-gordon-wands.md) · sister [`amplification-gap.md`](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/amplification-gap.md)
+**Code:** [`scripts/side/inflation_spectator_residual_atlas.py`](../../scripts/side/inflation_spectator_residual_atlas.py) · `pytest`
 
 ---
 
@@ -23,8 +23,8 @@ $$
 \frac{\delta Q}{M_p}\sim 3\times 10^{-6}.
 $$
 
-A frozen, very flat DE potential ($\varepsilon_Q\sim 10^{-4}$) still sits **orders below** $10^{-5}$.  
-But **$A\sim 45$** (Gordon–Wands roll) **and** a mild $\varepsilon_Q\sim 0.05$ land $\sigma_\rho$ in the **$10^{-5}$–$10^{-4}$** decade — the same decade as the sister DESI ceiling and Euclid residual targets — **without any $10^{56}$ dial**.
+A frozen, very flat DE potential ($\varepsilon_Q\sim 10^{-4}$) still sits **orders below** $10^{-5}$.
+But **$A\sim 45$** (Gordon–Wands roll) **and** a mild $\varepsilon_Q\sim 0.05$ land $\sigma_\rho$ in the **$10^{-5}$–$10^{-4}$** decade — the same decade as the related DESI ceiling and Euclid residual targets — **without any $10^{56}$ dial**.
 
 That is the **gap that experiments can close**: measure $r$ (ceiling on $\delta Q$), constrain $\varepsilon_Q$ / $w_Q$ (slope), and test residuals $\sigma_X$ a posteriori. It is **not** a claim that DESI has seen spectator DE, and **not** a fit of $\varepsilon_Q$ or $A$ to DESI.
 
@@ -58,8 +58,8 @@ $$
 
 with post-inflation field growth $A=\delta Q_f/\delta Q_i$ (Gordon & Wands: $A>45$ for *their* target).
 
-**Modern $r$ anchors (95% CL class, literature):**  
-BICEP/Keck + Planck combinations often quote $r\lesssim 0.036$; I also show $r=0.056$ and a low-scale $r=10^{-3}$.  
+**Modern $r$ anchors (95% CL class, literature):**
+BICEP/Keck + Planck combinations often quote $r\lesssim 0.036$; I also show $r=0.056$ and a low-scale $r=10^{-3}$.
 Refs.: BK15/BK18 + Planck analyses (e.g. $r<0.036$ at 95% CL class); energy scale $V_*^{1/4}\lesssim 1.4\times 10^{16}\,\mathrm{GeV}$ for $r\sim 0.036$.
 
 ---
@@ -93,9 +93,9 @@ At $r=0.036$:
 | **45** | **$0.05$** | $\mathbf{\sim 4\times 10^{-5}}$ | **in decade** | under DESI ceiling |
 | 45 | $1$ (not DE-like today) | $\sim 2\times 10^{-4}$ | above Euclid target | near/above DESI ceiling |
 
-**Reading:**  
-- Flat frozen spectator **alone** does **not** hit residual band at modern $r$.  
-- **$A\sim 45$ + mild slope $\varepsilon_Q\sim\mathrm{few}\times 10^{-2}$** **can** sit in $10^{-5}$–$10^{-4}$ **without** $10^{56}$.  
+**Reading:**
+- Flat frozen spectator **alone** does **not** hit residual band at modern $r$.
+- **$A\sim 45$ + mild slope $\varepsilon_Q\sim\mathrm{few}\times 10^{-2}$** **can** sit in $10^{-5}$–$10^{-4}$ **without** $10^{56}$.
 - $\varepsilon_Q\sim 1$ at late times is **in tension** with $w_Q\approx -1$; mild $\varepsilon_Q$ is the honest window to discuss, not $\varepsilon_Q=1$.
 
 ### 3.3 Contrast with Sorkin
@@ -119,7 +119,7 @@ This is the gap that is **not** a free parameter:
 | **Sister $\sigma_X$ bound** | A posteriori: if a derived $(r,A,\varepsilon_Q)$ predicts $\sigma_\rho>\sigma_X^{\mathrm{DESI}}$, that corner dies. |
 | **DE isocurvature / CMB** | Gordon–Wands original target; independent of BAO residual kernel. |
 
-**Excluded (BOUNDARY):** choose $A$ and $\varepsilon_Q$ after looking at DESI to land in band.  
+**Excluded (BOUNDARY):** choose $A$ and $\varepsilon_Q$ after looking at DESI to land in band.
 **Legal:** derive $A$ from a potential (as G&W try), take $r$ from tensors, take $\varepsilon_Q$ from DE dynamics, **then** compare to $\sigma_X$.
 
 ---
@@ -170,5 +170,5 @@ cd measurable-stochastic-vacuum
 pytest -q
 python scripts/side/gordon_wands_factor45.py
 python scripts/side/inflation_spectator_residual_atlas.py
-python scripts/gap_two_targets.py  # sister repo: Sorkin contrast
+python scripts/gap_two_targets.py  # related repository: Sorkin contrast
 ```

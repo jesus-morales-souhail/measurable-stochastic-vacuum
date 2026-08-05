@@ -1,10 +1,10 @@
 # T1.1 / T1.2 computations: averaging domain and nonlinear mask
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Quantitative Tier-1 machinery. Still not an action-level derivation of decoherence.*
 
-Code: [`scripts/r1/r1_t1_mechanisms_compute.py`](../../scripts/r1/r1_t1_mechanisms_compute.py)  
+Code: [`scripts/r1/r1_t1_mechanisms_compute.py`](../../scripts/r1/r1_t1_mechanisms_compute.py)
 Depends on: [`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py) · [`r1-mechanism-candidates.md`](r1-mechanism-candidates.md)
 
 ---
@@ -132,7 +132,7 @@ T1.1 and T1.2 are consistent with each other at the decade level: both point to 
 
 ## 5. BBKS refinement + derivation sketch
 
-Peak curvature $R_{\ast}\approx 1.58\,\mathrm{Mpc}$ vs domain $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$: see [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md).  
+Peak curvature $R_{\ast}\approx 1.58\,\mathrm{Mpc}$ vs domain $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$: see [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md).
 Derivation sketch (postulates P0–P1 + standard S1 $\Rightarrow$ coarse-graining $\ell_{\ast}\sim R_{\mathrm{nl}}$) in the same note.
 
 ---

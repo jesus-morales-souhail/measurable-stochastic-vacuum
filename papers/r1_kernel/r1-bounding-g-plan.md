@@ -1,11 +1,11 @@
 # Plan to bound the coupling $g$ (residual $\chi$–matter)
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026 · not peer reviewed
+Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
 *Analysis plan and OOM bounds. Not a finished MCMC paper.*
 
-Code: [`scripts/r1/r1_bound_g_oom.py`](../../scripts/r1/r1_bound_g_oom.py)  
-Depends on: [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) · sister DESI $\sigma_X$ · [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md)
+Code: [`scripts/r1/r1_bound_g_oom.py`](../../scripts/r1/r1_bound_g_oom.py)
+Depends on: [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) · related DESI $\sigma_X$ · [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-real-data.md)
 
 ---
 
@@ -17,7 +17,7 @@ Depends on: [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) · 
 | $R_{\ast}$ | $\approx 1.58\,\mathrm{Mpc}$ | Peak tip (BBKS); substructure |
 | $\ell_{\mathrm{sep}}$ | $\approx 15.9\,\mathrm{Mpc}$ | Packing of $\delta>1$ patches |
 | $\sigma_{\mathrm{count}}$ ($d=3$, $\ell_{\ast}=R_{\mathrm{nl}}$) | $\approx 8.5\times 10^{-5}$ | Free residual amplitude from counting |
-| DESI residual ceiling | $\sigma_X<1.5\times 10^{-4}$ (95% CL) | A posteriori bound (sister repo) |
+| DESI residual ceiling | $\sigma_X<1.5\times 10^{-4}$ (95% CL) | A posteriori bound (related repository) |
 
 Free parameter to bound: coupling strength between residual field $\chi$ and matter contrast $\delta_m$.
 
@@ -38,7 +38,7 @@ $$
 - $\lambda=0$: no induced residual (pure free grain).
 - $\lvert\lambda\rvert\sim 1$: residual tracks matter 1:1 (ruled out by BAO smoothness).
 
-**Relation to action $g$:** once the normalization of $\chi$ is fixed (e.g. $\langle\chi^2\rangle^{1/2}=\sigma_{\mathrm{count}}$),  
+**Relation to action $g$:** once the normalization of $\chi$ is fixed (e.g. $\langle\chi^2\rangle^{1/2}=\sigma_{\mathrm{count}}$),
 $\lambda = g\times\text{(normalisation factor)}$. Bounding $\lambda$ bounds $g$ up to that convention — state the convention in any paper.
 
 ### 2.2 Free residual $\sigma_{\mathrm{free}}$ (secondary, already OOM-fixed)
@@ -63,7 +63,7 @@ At $R_{\mathrm{nl}}$, $\sigma_\delta=1$ by definition, so the induced piece has 
 
 ### Stage 0 — OOM inequality (now; script)
 
-**Observable:** sister DESI BAO residual bound under OU/QNM kernel.  
+**Observable:** related DESI BAO residual bound under OU/QNM kernel.
 **Method:** algebraic, no MCMC.
 
 $$
@@ -94,7 +94,7 @@ Executable now. Does not replace a full likelihood; freezes the ceiling.
 
 | | |
 |:--|:--|
-| Data | Public DESI DR2 BAO summary stats + covariance (sister repo pipelines) |
+| Data | Public DESI DR2 BAO summary stats + covariance (related repository pipelines) |
 | Model | Flat $\Lambda$CDM background + residual kernel with $\sigma_{\mathrm{res}}(\lambda)=\sqrt{\sigma_{\mathrm{free}}^2+\lambda^2}$ (or linear response template correlated with $\delta_m$ if implemented) |
 | Parameters | $\lambda$ (and optionally $\sigma_{\mathrm{free}}$ with prior around $8.5\times 10^{-5}$ if testing P$_\mathrm{nl}$); not $\ell_{\ast}$ free |
 | Method | Nested sampling / MCMC (emcee or existing sister Cobaya/custom OU likelihood) on public BAO only first; then multi-probe only a posteriori |

@@ -1,26 +1,23 @@
 # measurable-stochastic-vacuum
 
-Jesús Morales Souhail  
-[ORCID 0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)  
-July 2026 · independent work · not peer reviewed
+Jesús Morales Souhail
+[ORCID 0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
+July 2026 · independent work
 
 I keep theory notes and small scripts here. The question is simple to state and hard to finish:
 
 Can a late-time residual in dark energy (or the vacuum) be large enough for surveys to care about, without inventing free amplification factors of order $10^{56}$ from a Planck-scale seed?
 
-I do the data side in a sister repo. This one is the map of what is closed, what is still open, and the numbers that do not move when you re-run the tests.
+I do the data side in a related repository. This one is the map of what is closed, what is still open, and the numbers that do not move when you re-run the tests.
 
 | | |
 |:--|:--|
 | [`START_HERE.md`](START_HERE.md) | how to read the folder |
-| [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md) | if I wrote a short paper, what goes in |
-| [`papers/INDEX.md`](papers/INDEX.md) | full list of notes |
-| [`BOUNDARY.md`](BOUNDARY.md) | what this repo is not allowed to claim |
+| [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md) | outline for a short paper |
+| [`papers/INDEX.md`](papers/INDEX.md) | list of notes |
+| [`BOUNDARY.md`](BOUNDARY.md) | claims that are out of scope |
 
-**Sisters**
-
-- Data / DESI: [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)  
-- Scratch / pedagogy: [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes)
+Related repositories: [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) (DESI data), [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) (exploratory only).
 
 ---
 
@@ -53,10 +50,10 @@ tests/  results/  data/
 
 ## Where the work sits right now
 
-Mean expansion: flat $\Lambda$CDM.  
+Mean expansion: flat $\Lambda$CDM.
 Residual amplitude under counting: $\sigma=(\ell_{\ast}/L_H)^{3/2}$.
 
-If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) from the sister analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that and closed it on purpose.
+If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) from the related analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that and closed it on purpose.
 
 On public Cosmicflows-4 I also looked at local **matter** kinematics (block residual velocities and collapse-peak relief). That is context for gravity vs expansion near $R_{\mathrm{nl}}$. It is **not** a dark-energy residual map.
 
