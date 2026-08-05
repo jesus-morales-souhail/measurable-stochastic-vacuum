@@ -14,7 +14,7 @@ I have spent a long time trying not to invent extra machinery. $\Lambda$ already
 | | Cosmological constant $\Lambda$ | This programme (reduced) |
 |:--|:--------------------------------|:-------------------------|
 | Background expansion | **One** number ($\Lambda$ or $\Omega_\Lambda$) | **Same** — keep $\Lambda$CDM |
-| Einstein equation | $G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G T_{\mu\nu}$ | **Unchanged** for the mean |
+| Einstein equation | $ G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G T_{\mu\nu}$ | **Unchanged** for the mean |
 | Extra physics | None | **One** grain parameter $\sigma$ |
 | Extra prediction | None | One light-path number $\mathrm{RMS}$ |
 | Free amplification $10^{-61}\to 10^{-5}$ | Not needed | **Excluded** (already killed) |

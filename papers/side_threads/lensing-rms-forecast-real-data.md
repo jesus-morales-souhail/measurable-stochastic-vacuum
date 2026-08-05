@@ -15,7 +15,7 @@
 I compare the programme’s **hand-placed** path-integrated slip RMS at DESI-safe corners (NP-A / NP-B) to **published** gravitational-slip and modified-gravity constraints and to Stage-IV **shear-calibration** requirements from the literature. All external numbers are taken from named papers (arXiv IDs below). The conclusion is quantitative and non-binary:
 
 1. Current mean-slip precision (Maus et al.) is $\mathcal{O}(0.1)$ on $\gamma=\Phi/\Psi$.
-2. Euclid-like + DESI-like **forecasts** for constant anisotropic stress $\eta$ reach $\sim 5\%$ (Sakr et al.); free $(z,k)$ remains $\gtrsim 30\%$.
+2. Euclid-like + DESI-like **forecasts** for constant anisotropic stress $\eta$ reach $\sim 5\%$(Sakr et al.); free $ (z,k)$ remains $\gtrsim 30\%$.
 3. DESI full-shape MG constraints on the lensing parameter $\Sigma_0$ are still $\mathcal{O}(0.05)$.
 4. Programme NP-B path RMS is $\sim 4\times 10^{-3}$; NP-A is $\sim 3.5\times 10^{-4}$.
 5. Therefore published / forecast **mean** slip precision sits **roughly $10$–$30\times$** (Sakr constant $\eta$) to **$\sim 25\times$** (Maus) above NP-B, and far above NP-A — **before** equating operators.
@@ -29,7 +29,7 @@ I do **not** claim discovery, model death, or that Euclid/LSST “reach $10^{-3}
 
 | Side | Quantity | Status |
 |:-----|:---------|:-------|
-| **This programme** | $\mathrm{RMS}_{\mathrm{path}}=\lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}$ for iid patches | Verified **kinematics** for hand-placed $\sigma_0,r$ ([`NARROW_PATH.md`](../core/NARROW_PATH.md)) |
+| **This programme** | $\mathrm{RMS}_{\mathrm{path}}=\lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}$ for iid patches | Verified **kinematics** for hand-placed $\sigma_0,r$([`NARROW_PATH.md`](../core/NARROW_PATH.md)) |
 | **Maus / DESI×κ** | Mean gravitational slip $\gamma=\Phi/\Psi$ | **Measured** |
 | **Sakr et al.** | Model-independent anisotropic stress $\eta$ | **Forecast** (Euclid-like ± DESI-like) |
 | **DESI MG** | $\mu_0$, $\Sigma_0$ (clustering / lensing MG) | **Measured** (DESI 2024 FS era) |
@@ -64,8 +64,8 @@ pytest -q
 | | |
 |:--|:--|
 | **Reference** | Maus, White, Sailer et al., arXiv:[2505.20656](https://arxiv.org/abs/2505.20656) (v3); JCAP 11 (2025) 077 |
-| **Definition** | $\gamma=\Phi/\Psi$ (GR: $1$) |
-| **Result** | $\gamma = 1.17 \pm 0.11$ ($\sim 1.5\sigma$ from GR; authors note possible projection effects) |
+| **Definition** | $\gamma=\Phi/\Psi$(GR: $1$) |
+| **Result** | $\gamma = 1.17 \pm 0.11$($\sim 1.5\sigma$ from GR; authors note possible projection effects) |
 | **Data** | DESI DR1 BGS+LRG full-shape + recon; Planck PR4 + ACT DR6 $\kappa$; Legacy photometry |
 | **Also** | $\sigma_8=0.803\pm 0.017$, $S_8=0.808\pm 0.017$ |
 
@@ -78,7 +78,7 @@ pytest -q
 | **Reference** | Sakr et al., arXiv:[2501.07477](https://arxiv.org/abs/2501.07477); MNRAS 2025 |
 | **Definition** | Model-independent effective anisotropic stress $\eta$ from spectro clustering + photo lensing/clustering (no assumed $P(k)$ shape / bias / expansion beyond observables) |
 | **Survey model** | Euclid-like photometric ± DESI-like spectroscopic |
-| **Forecast (abstract)** | free $(z,k)$: **at least $\sim 30\%$**; $z$-only: **$<10\%$** average; **constant $\eta$: $\sim 5\%$** |
+| **Forecast (abstract)** | free $ (z,k)$: **at least $\sim 30\%$**; $z$-only: **$<10\%$** average; **constant $\eta$: $\sim 5\%$** |
 
 **Use here:** best Stage-IV-class **mean** $\eta$ precision in the constant case $\sim 0.05$ absolute if $\eta\sim 1$.
 
@@ -87,7 +87,7 @@ pytest -q
 | | |
 |:--|:--|
 | **Reference** | DESI Collaboration / Ishak et al., arXiv:[2411.12026](https://arxiv.org/abs/2411.12026) |
-| **Result (ΛCDM bg, DESI FS+BAO + CMB + DESY3 + DESY5-SN)** | $\mu_0=0.05\pm 0.22$, $\Sigma_0=0.008\pm 0.045$ (GR-compatible) |
+| **Result (ΛCDM bg, DESI FS+BAO + CMB + DESY3 + DESY5-SN)** | $\mu_0=0.05\pm 0.22$, $\Sigma_0=0.008\pm 0.045$(GR-compatible) |
 | **Note** | $\mu,\Sigma$ are **not** identical to Maus $\gamma$, but they are correct-scale RSD+lensing MG operators |
 
 **Use here:** $\sigma(\Sigma_0)\sim 0.045$ as a current lensing-sector MG error bar.
@@ -125,9 +125,9 @@ $\mathcal{R}\gg 1$ means the external precision is still **coarser** than the pr
 |:---------------|:------|:-----------------------------------------------------|:-----------------------------------------------------|
 | Maus $\sigma(\gamma)$ | $0.11$ | $\sim 25\times$ | $\sim 310\times$ |
 | Sakr constant $\eta\sim 5\%$ | $0.05$ | $\sim 11\times$ | $\sim 140\times$ |
-| Sakr free $(z,k)\gtrsim 30\%$ | $0.30$ | $\sim 68\times$ | $\sim 860\times$ |
+| Sakr free $ (z,k)\gtrsim 30\%$ | $0.30$ | $\sim 68\times$ | $\sim 860\times$ |
 | DESI MG $\sigma(\Sigma_0)$ | $0.045$ | $\sim 10\times$ | $\sim 130\times$ |
-| Stage-IV $m$-bias OOM | $2\times 10^{-3}$ | $\sim 0.5\times$ (**wrong operator**) | $\sim 6\times$ |
+| Stage-IV $m$-bias OOM | $2\times 10^{-3}$ | $\sim 0.5\times$(**wrong operator**) | $\sim 6\times$ |
 | Historical prog. mean-slip floor | $0.03$ | $\sim 7\times$ | $\sim 85\times$ |
 
 Numbers from `python scripts/side/lensing_rms_real_data_compare.py` (may differ at $\sim 10\%$ relative if evaluation $z$ choices change; order is stable).
@@ -135,7 +135,7 @@ Numbers from `python scripts/side/lensing_rms_real_data_compare.py` (may differ 
 ### 4.1 Reading (calibrated)
 
 1. **Today (Maus):** mean slip is measured at $\mathcal{O}(0.1)$. NP-B path RMS is $\sim 25\times$ smaller even before systematics and operator mismatch. A claim that “deep lensing already tests NP-B” is **false**.
-2. **Stage-IV mean $\eta$ (Sakr, constant):** $\sim 5\%$ is the optimistic homogeneous case — still $\sim 10\times$ above NP-B path RMS if one naively equates $\lvert\eta-1\rvert$ with path RMS. Free $(z,k)$ is worse ($\gtrsim 30\%$).
+2. **Stage-IV mean $\eta$(Sakr, constant):** $\sim 5\%$ is the optimistic homogeneous case — still $\sim 10\times$ above NP-B path RMS if one naively equates $\lvert\eta-1\rvert$ with path RMS. Free $ (z,k)$ is worse ($\gtrsim 30\%$).
 3. **$m\sim 10^{-3}$:** looks numerically near NP-B, but it is **shear calibration**, not stochastic DE texture. Using it as a detection threshold is the category error §5.1 of [`NARROW_PATH.md`](../core/NARROW_PATH.md) forbids.
 4. **Null / excess:** same binary lock — excess needs baryons / photo-$z$ / IA control; null excludes the **tested corner**, not the open kernel.
 

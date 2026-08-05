@@ -33,7 +33,7 @@ This note freezes that filter, restores the correct status of $\sigma_X$ (tempor
 | Map $\Gamma_{\mathrm{phys}}(z)=\theta H(z)$, $\gamma\leftrightarrow\theta H_0$ | Programme continuity | sister desqueezing note |
 | H0-running as **active literature** | Real (contested) | Krishnan, Dainotti, Wong/H0LiCOW |
 | DESI residual bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) | Measured | related OU analysis |
-| BAO-only free $(w_0,w_a)$: $w_0\approx -0.99$, $w_a\approx -0.02$ | Measured (BAO-only baseline) | `results/eos_cpl_desi_dr2/eos_cpl_summary.txt` |
+| BAO-only free $ (w_0,w_a)$: $w_0\approx -0.99$, $w_a\approx -0.02$ | Measured (BAO-only baseline) | `results/eos_cpl_desi_dr2/eos_cpl_summary.txt` |
 
 ---
 
@@ -63,7 +63,7 @@ The residual amplitude $\sigma_X$ is the stationary scale of fluctuations along 
 Consequences:
 
 1. Any claim that a temporal DE drift of order $8\%$ in $H_0$ is “orthogonal” to $\sigma_X$ is **wrong**.
-2. The BAO-only free-$(w_0,w_a)$ fit already asked whether the **mean** DE history needs strong time dependence: it prefers nearly $\Lambda$ ($w_0\approx -0.99$, $w_a\approx -0.02$). Nested $(\sigma,\theta)$ is not preferred ($\Delta\mathrm{AIC}=+4$).
+2. The BAO-only free-$ (w_0,w_a)$ fit already asked whether the **mean** DE history needs strong time dependence: it prefers nearly $\Lambda$($w_0\approx -0.99$, $w_a\approx -0.02$). Nested $ (igma,\theta)$ is not preferred ($\Delta\mathrm{AIC}=+4$).
 3. Stochastic residual $\sigma_X$ is an **additional** bound on fluctuations about that mean.
 
 ---
@@ -147,7 +147,7 @@ From related DESI paper abstract (multi-probe CPL, **not** this note’s H0-runn
 | F2 | $\sigma_X$ is defined on $x=\ln a$ (temporal e-folds) |
 | F3 | $\lvert\delta H/H\rvert\lesssim\sigma_X<1.5\times 10^{-4}\ll 0.083$ under residual identification |
 | F4 | Hand-tuned $\theta\sim 0.47$ is rejected |
-| F5 | BAO-only $(w_0,w_a)\approx(-0.99,-0.02)$ |
+| F5 | BAO-only $ (w_0,w_a)\approx(-0.99,-0.02)$ |
 
 ---
 

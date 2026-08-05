@@ -158,7 +158,7 @@ T2 kills the sandwich scale claim if any hold:
 
 | Non-goal | Why |
 |:---------|:----|
-| Explain $H_0\sim 8\%$ | Short by $\sim 30$–$10^{3}\times$ (T5) |
+| Explain $H_0\sim 8\%$ | Short by $\sim 30$–$10^{3}\times$(T5) |
 | Claim Stage-IV detection today | Floors still coarse for path RMS |
 | Replace T1 BAO amplitude gate | T1 remains primary for $\sigma$ |
 | Fit $g$ from T2 alone | $g$ from Line A + DESI a posteriori |
@@ -171,7 +171,7 @@ T2 kills the sandwich scale claim if any hold:
 |:-----|:---------------------|:---------|:---------|
 | $R_{\mathrm{nl}}$ fixed | $8.61\,\mathrm{Mpc}$ | — | — |
 | $\sigma_{\mathrm{res}}$ (T1) | $\le 1.5\times 10^{-4}$ | | |
-| $r_e$ (S1) | $[4.3,25.8]\,\mathrm{Mpc}$ | | |
+| $r_e$(S1) | $[4.3,25.8]\,\mathrm{Mpc}$ | | |
 | Sign $\xi_{rm}$ (S2) | $>0$ in band | | |
 | Random mask (S4) | null | | |
 | $\ell_{\ast}$ floated? | No | | |

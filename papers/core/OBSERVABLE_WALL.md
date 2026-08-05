@@ -11,7 +11,7 @@
 
 ## Abstract
 
-The only **fully derived** map from the stochastic dark-energy amplitude $\sigma_X$ (Morales residual sector) to a large-scale structure observable **without undeclared free parameters** is the sub-horizon **gravitational-slip wall**
+The only **fully derived** map from the stochastic dark-energy amplitude $\sigma_X$(Morales residual sector) to a large-scale structure observable **without undeclared free parameters** is the sub-horizon **gravitational-slip wall**
 
 
 \lvert\gamma-1\rvert = 2 \varepsilon \sigma_X \frac{\rho_X}{\rho_m \lvert\delta_m\rvert} = 2 \varepsilon \sigma_X \frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^3 \lvert\delta_m\rvert}.
@@ -128,7 +128,7 @@ With $\lvert\gamma-1\rvert_{\max}\sim(2$–$7)\times 10^{-4}$ and
 | Experiment | $\sigma_{\mathrm{exp}}(\gamma)$ (indicative) | Factor $\sigma_{\mathrm{exp}}/S_{\mathrm{pred}}$ (how many× below) |
 |:-----------|:-----------------------------------------------|:--------------------------------------------------------------------|
 | DESI-era slip (Maus $\sigma(\gamma)\sim 0.11$) | $\sim 0.1$ | $\sim 150$–$500\times$ |
-| Euclid-like mean-slip floor (programme OOM) | $\sim 0.03$ | $\sim 50$–$150\times$ ($\sim 300\times$ at mid-range $10^{-4}/0.03$) |
+| Euclid-like mean-slip floor (programme OOM) | $\sim 0.03$ | $\sim 50$–$150\times$($\sim 300\times$ at mid-range $10^{-4}/0.03$) |
 
 **Interpretation:** under Einstein+(M1) and the BAO residual ceiling, the model **predicts a local slip signal the experiment cannot reach**. That is experimental self-shielding of this channel — not a failure of the derivation. (Path accumulation softens but does not erase this wall for DESI-safe amplitudes; see [`PAST_LIGHT_CONE_INTEGRATION.md`](PAST_LIGHT_CONE_INTEGRATION.md).)
 
@@ -209,7 +209,7 @@ Trying to amplify a present-day Planck seed ($10^{-61}$) with soft open maps or 
 |:---|:-------|
 | Measure $\gamma(z)$ / shear along the past light cone | Invent $\xi=\sigma_X$ for GRBs without derivation |
 | Use (W)+(S)+(D) as the quantitative wall | Fit $\ell_{\ast}$ to evade DESI |
-| Keep background $=\Lambda$CDM (bulk) | Expect isotropic BAO residual detection first |
+| Keep background $=\Lambda$ CDM (bulk) | Expect isotropic BAO residual detection first |
 
 Even path accumulation only multiplies by $\sqrt{N}=\mathcal{O}(10$–$10^{2})$ — it does **not** cancel the wall of equation (W) under the DESI ceiling; it slightly softens it (see [`NARROW_PATH.md`](NARROW_PATH.md) NP-A/B).
 
@@ -271,7 +271,7 @@ Past null-cone measurements still face (S) unless new *derived* physics raises $
 
 | $\Lambda$-simple language | Wall language |
 |:--------------------------|:--------------|
-| Bulk $=\Lambda$CDM | Mean potentials with $\Phi=\Psi$ at leading order |
+| Bulk $=\Lambda$ CDM | Mean potentials with $\Phi=\Psi$ at leading order |
 | Edge grain $\sigma$ | $\sigma_X$ in (M1) |
 | $\mathrm{RMS}\sim\sigma^{2/3}$ | Path form of (W)+(P) after counting |
 | DESI bound | Input to (S) and (D) |

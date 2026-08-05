@@ -105,7 +105,7 @@ Still open for upgrade: true $\mathrm{Var}(Q)$ from N-body / constrained realisa
 
 ## 5. Parallel SDiff edge estimate
 
-Volume fraction of edges $f\sim 0.16$ ($\delta>1$). If residual anisotropic stress lives only on edges,
+Volume fraction of edges $f\sim 0.16$($\delta>1$). If residual anisotropic stress lives only on edges,
 
 
 \sigma_{\mathrm{edge}}\sim \sigma_{\mathrm{free}}/\sqrt{f}
@@ -120,6 +120,6 @@ or support-weighted $\sigma\sim\sigma_{\mathrm{free}}\sqrt{f}$ depending on norm
 | ID | Claim | Status |
 |:---|:------|:-------|
 | GA1 | $g_{\mathrm{eff}}\sim\mathcal{O}(1)$ from averaging residual OOM | sketch |
-| GA2 | Gaussian proxy: $g_{\mathrm{eff}}\approx 0.5$–$1.4$ (P1–P0) | executed |
+| GA2 | Gaussian proxy: $g_{\mathrm{eff}}\approx 0.5$–$1.4$(P1–P0) | executed |
 | GA3 | Matches DESI working bound order | consistency |
 | GA4 | Full $Q$ variance from N-body | open |

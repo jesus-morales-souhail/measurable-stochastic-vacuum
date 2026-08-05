@@ -44,7 +44,7 @@ I write the causal chain carefully here (not as a naive product of three ad hoc 
 N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_{\ast}}{L_H}\right)^{d/2}, \qquad \ell_{\ast} = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
 
 
-**For $\sigma_{0,\mathrm{eff}}=10^{-5}$ and $L_H=c/H_0$ ($H_0=67.4$):**
+**For $\sigma_{0,\mathrm{eff}}=10^{-5}$ and $L_H=c/H_0$($H_0=67.4$):**
 
 | $d$ | $\ell_{\ast}$ |
 |:----|:---------|
@@ -78,7 +78,7 @@ It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual 
 
 ### 2.3 R2 — Project on gravitational slip + short optical path
 
-**Do not** force the signal into global $H(z)$ (BAO residual bound is already tight).
+**Do not** force the signal into global $H(z)$(BAO residual bound is already tight).
 Source anisotropic stress and read light:
 
 

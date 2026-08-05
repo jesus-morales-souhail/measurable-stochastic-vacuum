@@ -184,7 +184,7 @@ YES: integrate observables along the past null cone
 
 **Experimental programme consistent with self-shielding**
 
-1. Keep bulk $=\Lambda$CDM (no large isotropic BAO residual).
+1. Keep bulk $=\Lambda$ CDM (no large isotropic BAO residual).
 2. Bound $\sigma_{\mathrm{res}}$ from DESI (already $\lt 1.5\times 10^{-4}$).
 3. Measure **path-integrated** slip / shear tomography / RSD×lensing deep in $z$.
 4. Compare to $\mathrm{RMS}_{\mathrm{path}}$ from the master formula — not to local $\lvert\gamma-1\rvert$ alone.

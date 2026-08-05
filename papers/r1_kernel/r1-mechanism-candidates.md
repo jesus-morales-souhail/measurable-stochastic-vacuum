@@ -2,7 +2,7 @@
 
 Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail) · July 2026
 
-*Literature map for the open microphysics under P$_\mathrm{nl}$. Not a derivation.*
+*Literature map for the open microphysics under P $_\mathrm{nl}$. Not a derivation.*
 
 Context: $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ is well computed ([`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md)); the missing piece is *why* a vacuum residual grain would inherit that length.
 
@@ -41,7 +41,7 @@ Below: tiers by weight. “Serious” ≠ “correct.”
 | | |
 |:--|:--|
 | Idea | Isotropic vacuum stress is projected out (programme SDiff / unimodular notes); the only residual channel lives at boundaries / shear / edges of structure — hence a grain $\sim$ size of nonlinear patches. |
-| Why it fits | Already the programme’s bulk–edge language ([`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md)); P$_\mathrm{nl}$ is the quantitative version of “edge scale = $R_{\mathrm{nl}}$.” |
+| Why it fits | Already the programme’s bulk–edge language ([`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md)); P $_\mathrm{nl}$ is the quantitative version of “edge scale = $R_{\mathrm{nl}}$.” |
 | Key literature | Unimodular gravity / SDiff corpus in related DESI repo; condensed-matter edge analogy is method notes only. |
 | Status | Structural zero for isotropic vacuum is a programme claim; the step “edge width = $R_{\mathrm{nl}}$” is still hypothesis. |
 | What to compute next | Write the residual operator supported only on regions with $\delta_m\sim\mathcal{O}(1)$; predict $\ell_{\ast}$ from the two-point structure of that mask — a priori from $P(k)$, a posteriori vs $8.61\,\mathrm{Mpc}$. |

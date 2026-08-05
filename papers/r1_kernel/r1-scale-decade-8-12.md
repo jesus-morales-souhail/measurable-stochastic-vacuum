@@ -22,11 +22,11 @@ NP-A remains clean counting arithmetic for $\sigma=10^{-5}$, $d=3$. It is not th
 
 ## Three anchors near 8–12 Mpc
 
-At $H_0=67.4$ ($h=0.674$):
+At $H_0=67.4$($h=0.674$):
 
 | Anchor | Value [Mpc] | Independence |
 |:-------|:------------|:-------------|
-| Galaxy 2PCF $r_0(L_*)$ | $\sim 7.4$–$8.9$ ($5$–$6\,h^{-1}\mathrm{Mpc}$) | SDSS clustering (Zehavi et al.) |
+| Galaxy 2PCF $r_0(L_*)$ | $\sim 7.4$–$8.9$($5$–$6\,h^{-1}\mathrm{Mpc}$) | SDSS clustering (Zehavi et al.) |
 | $R_8=8/h$ | $\approx 11.87$ | definition of nonlinear structure scale |
 | DESI residual ceiling, $d=3$: $\ell_{\ast}=L_H\sigma^{2/3}$ with $\sigma=1.5\times 10^{-4}$ | $\approx 12.56$ | a posteriori DESI bound + counting inverse |
 
@@ -72,9 +72,9 @@ Not claimed: $\ell_{\ast}=R_8$ or $\ell_{\ast}=r_0$ derived; three anchors prove
 
 ## First candidate principle
 
-**P$_\mathrm{nl}$:** $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ from matter $\sigma_8$ only.
+**P $_\mathrm{nl}$:** $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ from matter $\sigma_8$ only.
 Predicts $\sim 8$–$10\,\mathrm{Mpc}$ a priori; a posteriori overlaps the decade.
 Write-up: [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md).
 Still not a completed microphysical derivation.
 
-Best open lead: a blind reason for an 8–12 Mpc cell. P$_\mathrm{nl}$ is the first principle-shaped attempt at that decade, not a finished answer.
+Best open lead: a blind reason for an 8–12 Mpc cell. P $_\mathrm{nl}$ is the first principle-shaped attempt at that decade, not a finished answer.

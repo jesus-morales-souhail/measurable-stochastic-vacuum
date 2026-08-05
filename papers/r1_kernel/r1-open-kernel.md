@@ -27,7 +27,7 @@ This note separates two kinds of incompleteness in the stochastic vacuum program
 
  That question is declared absent, not “tried and failed.”
 
-I record criteria for what would count as a principle, list hypothesis classes R1a–R1d (including a nonlinear structure scale class R1d that sits numerically near the existing landscape), state excluded moves (no DESI-tuned $\ell_{\ast}$; no S$_8$-tuned $\ell_{\ast}$), and give a posteriori falsifiers. I do not claim that $\ell_{\ast}$ is $R_8$, that S$_8$ is explained, or that any R1 class is derived.
+I record criteria for what would count as a principle, list hypothesis classes R1a–R1d (including a nonlinear structure scale class R1d that sits numerically near the existing landscape), state excluded moves (no DESI-tuned $\ell_{\ast}$; no S $_8$-tuned $\ell_{\ast}$), and give a posteriori falsifiers. I do not claim that $\ell_{\ast}$ is $R_8$, that S$_8$ is explained, or that any R1 class is derived.
 
 ---
 
@@ -85,7 +85,7 @@ Sorkin is the special case $d=2$, $\ell_{\ast}=L_P$, $L=L_H$: $\sigma_0\sim 10^{
 
 ### 4.2 Landscape (verified inverse)
 
-With $L=L_H=c/H_0$ ($H_0=67.4\,\mathrm{km\,s^{-1}Mpc^{-1}}$) and target $\sigma_{0,\mathrm{eff}}=10^{-5}$:
+With $L=L_H=c/H_0$($H_0=67.4\,\mathrm{km\,s^{-1}Mpc^{-1}}$) and target $\sigma_{0,\mathrm{eff}}=10^{-5}$:
 
 | $d$ | $\ell_{\ast}$ | Character |
 |:------|:-----------|:----------|
@@ -103,7 +103,7 @@ Telescope-band residuals from counting alone require a mesoscopic DE counting ce
 
 **R1 status (updated July 2026):** landscape derived.
 **Form of the principle under axioms A0–A4:** closed by sandwich uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ — see [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md).
-**Still open as postulates:** existence of residual sector $\chi$ and local coupling to $\delta_m$ (A0–A1).
+**Still open as postulates:** existence of residual sector $\chi$ and local coupling to $\delta_m$(A0–A1).
 Closing WP1 as a *nature claim* still requires A0–A1 (or equivalent) from microphysics; the *scale choice* is no longer free once those hold.
 
 ---
@@ -115,7 +115,7 @@ A candidate $P$ closes the open kernel only if it satisfies all of:
 | # | Requirement |
 |:--|:------------|
 | P1 | $P$ predicts $\ell_{\ast}$ or $N_{\mathrm{eff}}$ (or a sharp prior band) from stated microphysics / symmetry / IR dynamics |
-| P2 | The prediction is independent of DESI residual likelihoods and of S$_8$ tension papers used as targets |
+| P2 | The prediction is independent of DESI residual likelihoods and of S $_8$ tension papers used as targets |
 | P3 | $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L)^{d/2}$ is then a downstream number, not an input |
 | P4 | Structural zeros are stated: Planck cell $\Rightarrow$ null under soft dynamics; $\ell_{\ast}\sim L_H\Rightarrow\sigma\sim 1$ (absurd for BAO smoothness) |
 | P5 | DESI $\sigma_X$ and growth/S$_8$ enter only a posteriori (compatible / null / tension) |
@@ -138,7 +138,7 @@ R1d is singled out only because its natural scale sits in the same mesoscopic ba
 
 ### 6.0 Adjacent door (not R1 counting): inflationary spectator seed
 
-Different category from R1a–R1d. Gordon & Wands (2005), arXiv:astro-ph/0504132, start from a light DE field during inflation with $\delta Q\sim H_{\mathrm{inf}}/(2\pi)$, not from $\sigma_0\sim 10^{-61}$. Frozen evolution is insufficient for *their* CMB-isocurvature target under *their* tensor bound; they need $\delta Q_f/\delta Q_i>45$ (Mexican-hat roll) — order $10^{1}$–$10^{2}$, not $10^{56}$.
+Different category from R1a–R1d. Gordon & Wands (2005), arXiv:astro-ph/0504132, start from a light DE field during inflation with $\delta Q\sim H_{\mathrm{inf}}/(2\pi)$, not from $\sigma_0\sim 10^{-61}$. Frozen evolution is insufficient for *their* CMB-isocurvature target under *their* tensor bound; they need $\delta Q_f/\delta Q_i>45$(Mexican-hat roll) — order $10^{1}$–$10^{2}$, not $10^{56}$.
 
 That is not “the same wall with a new name.” It is: *change the UV seed physics so the holographic count is not the starting point.* Full programme note: [`inflation-spectator-seed-gordon-wands.md`](../side_threads/inflation-spectator-seed-gordon-wands.md). Not claimed: automatic DESI residual prediction without map + covariance re-derivation.
 
@@ -147,7 +147,7 @@ That is not “the same wall with a new name.” It is: *change the UV seed phys
 **Statement (conditional):**
 *If* the effective counting cell of the DE residual sector is set by the scale at which cosmic structure becomes nonlinear — denoted $R_{\mathrm{nl}}$ and often summarised by $R_8\equiv 8\,h^{-1}\mathrm{Mpc}$ — *then* $\sigma_{0,\mathrm{eff}}$ is fixed once $d$ and $L$ are chosen, without soft amplification of a Planck seed.
 
-Not claimed: that DE “knows” about galaxies; that S$_8$ is solved; that $d=3$ is mandatory.
+Not claimed: that DE “knows” about galaxies; that S $_8$ is solved; that $d=3$ is mandatory.
 
 ### 6.2 Scale table (verified arithmetic, fiducial $H_0=67.4$)
 
@@ -185,21 +185,21 @@ Under pattern hygiene: the coincidence has an equation (counting), units (Mpc vs
 Legitimate use of the table: motivate *which* principle classes are worth deriving (those that land $\ell_{\ast}$ near Mpc–tens of Mpc), with $d$-fragility kept visible.
 Illegitimate use: pick the single near row ($d=3$, DESI ceiling) and call it a principle.
 
-### 6.3 S$_8$ / growth (shared target, not a claim)
+### 6.3 S $_8$ / growth (shared target, not a claim)
 
-The S$_8$ tension lives at the same class of scales as the mesoscopic counting landscape. That is a reason to *investigate* a joint physical map; it is not a map.
+The S $_8$ tension lives at the same class of scales as the mesoscopic counting landscape. That is a reason to *investigate* a joint physical map; it is not a map.
 
 A a positive claim would require at least:
 
 1. a principle $P$ fixing $\ell_{\ast}$ (or a transfer function) without tension data as input;
 2. an operator from residual grain $\sigma$ to $P(k)$ or to the growth function;
-3. a posteriori comparison to S$_8$ and to $\sigma_X$.
+3. a posteriori comparison to S $_8$ and to $\sigma_X$.
 
-Until (1)–(2) exist, S$_8$ is not a claim of this repository. Two open questions may share a scale; they do not yet share a theory.
+Until (1)–(2) exist, S $_8$ is not a claim of this repository. Two open questions may share a scale; they do not yet share a theory.
 
 **Open question.** What principle, stated without targeting $R_8$ or the DESI ceiling, would predict a DE residual cell of order 8–12 Mpc? In that decade sit, independently: galaxy $r_0(L_*)\sim 7.4$–$8.9\,\mathrm{Mpc}$, $R_8\approx 11.9\,\mathrm{Mpc}$, and the DESI-ceiling $d=3$ counting cell $\approx 12.6\,\mathrm{Mpc}$. See [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md). External checks of NP-A $2.06\,\mathrm{Mpc}$ (MW–Andromeda, Virgo, circular “2.01”, $r_0\equiv 2.06$) failed: [`ell-star-external-scales.md`](../closed_walls/ell-star-external-scales.md), [`ell-star-r0-peculiar-scales.md`](../closed_walls/ell-star-r0-peculiar-scales.md).
 
-**Candidate:** P$_\mathrm{nl}$: $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ (matter $\sigma_8$ only) $\Rightarrow\sim 8$–$10\,\mathrm{Mpc}$.
+**Candidate:** P $_\mathrm{nl}$: $\ell_{\ast}=R_{\mathrm{nl}}$ with $\sigma(R_{\mathrm{nl}})=1$ (matter $\sigma_8$ only) $\Rightarrow\sim 8$–$10\,\mathrm{Mpc}$.
 See [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md). Microphysics still open.
 
 H0-running path depth: [`h0-running-brachistochrone-bridge.md`](../closed_walls/h0-running-brachistochrone-bridge.md). Shared late-time language is not an $H_0$ solution (amplitude short).
@@ -252,13 +252,13 @@ That channel does not close R1: it does not fix $\ell_{\ast}$ for the DE residua
 |:---------------------------|:--------------------------------|
 | Walls of §3 with measured heights | “Soft amplification can still reach Euclid from Sorkin” without a new derived map |
 | Counting landscape and structural zeros (§4) | “$\ell_{\ast}$ is galactic” as a derived fact |
-| Criteria P1–P6 and excluded moves | DESI- or S$_8$-tuned $\ell_{\ast}$ |
-| R1d as a hypothesis class with scale table (§6) | “S$_8$ explained by stochastic DE” |
+| Criteria P1–P6 and excluded moves | DESI- or S $_8$-tuned $\ell_{\ast}$ |
+| R1d as a hypothesis class with scale table (§6) | “S $_8$ explained by stochastic DE” |
 | Declared open kernel sentence | Closure of WP1 without a principle |
 
 For referees, in one line: soft amplifiers of a Planck counting seed are closed by measurement; the remaining soft-regime question is whether a mesoscopic DE counting cell is fixed by a principle — a question the programme states and has not answered as a nature claim (though the form under A0–A4 is now the sandwich).
 
-This note is not an answer, but the sharpest open question the soft-regime map currently admits — with the lock that neither DESI nor S$_8$ may be used to *derive* $\ell_{\ast}$, and with the $d=3$-specificity of the $R_8$ proximity stated so it cannot be misread as multi-angle robustness.
+This note is not an answer, but the sharpest open question the soft-regime map currently admits — with the lock that neither DESI nor S $_8$ may be used to *derive* $\ell_{\ast}$, and with the $d=3$-specificity of the $R_8$ proximity stated so it cannot be misread as multi-angle robustness.
 
 ---
 

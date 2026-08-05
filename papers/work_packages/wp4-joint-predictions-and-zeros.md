@@ -52,7 +52,7 @@ DESI OU bound $\sigma_X<1.5\times 10^{-4}$ (95% CL); Maus $\lvert \gamma-1 \rver
 | Weak lensing shear / convergence | Line-of-sight Weyl potential | Path-integrated wrinkles | Local lab EM diffraction |
 | Global $H(z)$ only | Background expansion | Mean DE density | Stochastic shear at fixed mean |
 
-**Design rule:** a complete model predicts **both** residual and slip from the same $(\sigma_{\mathrm{res}},\varepsilon)$, or states which is zero and why.
+**Design rule:** a complete model predicts **both** residual and slip from the same $ (igma_{\mathrm{res}},\varepsilon)$, or states which is zero and why.
 
 ---
 

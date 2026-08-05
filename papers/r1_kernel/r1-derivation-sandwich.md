@@ -33,7 +33,7 @@ Under A0–A4, $\ell_{\ast}\sim R_{\mathrm{nl}}$ is the unique free residual cou
 | **A3** | After environment-induced decoherence, free residual DOF are those not monitored by the classical matter record; they are counted as volume cells of size $\ell_{\ast}$ in a Hubble volume: $\sigma=(\ell_{\ast}/L_H)^{d/2}$. | Programme counting hypothesis |
 | **A4** | No free soft gain $10^{56}$ from a pure Planck seed. Amplitude is the counting result, not a dial. | Measured wall |
 
-**Notation.** $R_{\mathrm{nl}}$ is defined only by the matter variance integral $\sigma(R_{\mathrm{nl}})=1$ ([`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py)). DESI residual likelihoods do not enter the definition of $R_{\mathrm{nl}}$.
+**Notation.** $R_{\mathrm{nl}}$ is defined only by the matter variance integral $\sigma(R_{\mathrm{nl}})=1$([`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py)). DESI residual likelihoods do not enter the definition of $R_{\mathrm{nl}}$.
 
 ---
 
@@ -138,9 +138,9 @@ For couplings of order the working DESI bound ($\lvert g\rvert\sim\mathcal{O}(1)
 | $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ from $\sigma(R)=1$ | Computed (matter geometry) |
 | $r_{e,\mathrm{mask}}\approx 1.1\,R_{\mathrm{nl}}$ | Computed |
 | $\sigma_{d=3}\approx 8.5\times 10^{-5}$ under DESI ceiling | Computed (counting) |
-| Existence of $\chi$ (A0) | Postulate |
-| Coupling $g\chi\delta_m$ (A1) | Postulate (strength bounded) |
-| Matter classicality at $\sigma\ge 1$ (A2) | Standard input |
+| Existence of $\chi$(A0) | Postulate |
+| Coupling $g\chi\delta_m$(A1) | Postulate (strength bounded) |
+| Matter classicality at $\sigma\ge 1$(A2) | Standard input |
 | Full QFT on exact inhomogeneous metric | Open (rigorous upgrade path) |
 | $H_0$ tension from residual | Excluded at safe amplitude |
 
@@ -170,7 +170,7 @@ The open problem is narrower: it is no longer “any mesoscopic scale could do�
 
 | If… | Then… |
 |:----|:------|
-| Residual is purely gravitational with no local coupling to $\delta_m$ (A1 false) | UV/IR lemmas do not apply; grain scale undetermined by this argument |
+| Residual is purely gravitational with no local coupling to $\delta_m$(A1 false) | UV/IR lemmas do not apply; grain scale undetermined by this argument |
 | Matter never becomes classical on $R_{\mathrm{nl}}$ (A2 false) | Pointer basis missing; decoherence argument fails |
 | Free residual measured with correlation length $\ll 1\,\mathrm{Mpc}$ or $\gg 100\,\mathrm{Mpc}$ at $\sigma\sim 10^{-4}$ | Tension with uniqueness band |
 | Only way to fit data is to float $\ell_{\ast}$ away from matter $R_{\mathrm{nl}}$ after looking at DESI | Excluded under BOUNDARY; reject as free dial |

@@ -13,18 +13,18 @@ Steering: [`r1-scale-decade-8-12.md`](r1-scale-decade-8-12.md) · [`r1-open-kern
 
 I state a blind candidate hypothesis (not an action principle) for the open R1 kernel:
 
-> **(P$_\mathrm{nl}$)** The effective counting / correlation cell $\ell_{\ast}$ of the stochastic DE residual sector is the scale at which matter density fluctuations become order unity, $\sigma(R_{\mathrm{nl}})=1$, *if* residual grain / decoherence is sourced where structure collapses.
+> **(P $_\mathrm{nl}$)** The effective counting / correlation cell $\ell_{\ast}$ of the stochastic DE residual sector is the scale at which matter density fluctuations become order unity, $\sigma(R_{\mathrm{nl}})=1$, *if* residual grain / decoherence is sourced where structure collapses.
 
 Two layers, kept separate:
 
 1. **Hypothesis (unproven):** vacuum residual grain $\leftrightarrow$ matter nonlinear patch. This is a physical conjecture, not derived from a Lagrangian or open-system calculation of decoherence.
-2. **Geometry of $R_{\mathrm{nl}}$:** once P$_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is a standard matter observable. The evaluation I prefer is the full integral
+2. **Geometry of $R_{\mathrm{nl}}$:** once P $_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is a standard matter observable. The evaluation I prefer is the full integral
 
 
 \sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),
 
 
- with a $\Lambda$CDM-like $P(k)$ normalized to $\sigma_8$, not only a single-index power-law shortcut $\sigma(R)\propto R^{-(n_{\mathrm{eff}}+3)/2}$.
+ with a $\Lambda$CDM-like $ P(k)$ normalized to $\sigma_8$, not only a single-index power-law shortcut $\sigma(R)\propto R^{-(n_{\mathrm{eff}}+3)/2}$.
 
 Full integral (this repo): $R_{\mathrm{nl}}\approx 5.80\,h^{-1}\mathrm{Mpc}\approx 8.61\,\mathrm{Mpc}$ ($\sigma_8=0.81$, $h=0.674$).
 Power-law shortcut: $\sim 7.8$–$9.6\,\mathrm{Mpc}$ (same decade; coarser).
@@ -42,7 +42,7 @@ Not claimed: derivation of decoherence; $\ell_{\ast}=R_{\mathrm{nl}}$ proven; $H
 3. **Hypothesis (not derived):** the DE residual sector does not count Planck cells; it inherits a grain set by the matter nonlinear patch, *if* residual isotropy / SDiff leakage / decoherence is tied to collapsed structure.
  **Missing step:** an explicit decoherence or effective-action calculation that *forces* $\ell_{\ast}=R_{\mathrm{nl}}$ rather than merely allowing it.
 
-Once P$_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is fixed by $\sigma_8$ and $P(k)$ — that part is geometry, not a free dial. The *identification* $\ell_{\ast}=R_{\mathrm{nl}}$ remains the open physical claim.
+Once P $_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is fixed by $\sigma_8$ and $P(k)$ — that part is geometry, not a free dial. The *identification* $\ell_{\ast}=R_{\mathrm{nl}}$ remains the open physical claim.
 
 ### 1.2 What is not input
 
@@ -103,7 +103,7 @@ python scripts/r1/r1_principle_Rnl.py # shortcut only
 | Quantity | Value [Mpc] | Relation to full $R_{\mathrm{nl}}\approx 8.61$ |
 |:---------|:------------|:------------------------------------------------|
 | $R_{\mathrm{nl}}$ full integral | $8.61$ | prediction (geometry under P$_\mathrm{nl}$) |
-| $r_0(L_*)$ (Zehavi class) | $7.4$–$8.9$ | very close; clustering length ≠ variance scale |
+| $r_0(L_*)$(Zehavi class) | $7.4$–$8.9$ | very close; clustering length ≠ variance scale |
 | $R_8=8/h$ | $11.87$ | same decade ($\sim 38\%$ larger) |
 | DESI-ceiling cell $d=3$, $\sigma=1.5\times 10^{-4}$ | $12.56$ | same decade; counting inverse a posteriori |
 | NP-A cell $\sigma=10^{-5}$, $d=3$ | $2.06$ | different row — not the lead |
@@ -147,7 +147,7 @@ Not the $\sim 9\%H_0$ tension (amplitude still short under DESI-safe residual).
 
 | ID | Claim | Status |
 |:---|:------|:-------|
-| P1 | Hypothesis P$_\mathrm{nl}$ stated without DESI $\sigma_X$ as input | this note |
+| P1 | Hypothesis P $_\mathrm{nl}$ stated without DESI $\sigma_X$ as input | this note |
 | P2 | Full $\sigma(R)$ integral $\Rightarrow R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ | `scripts/r1/r1_sigma_R_full.py` |
 | P3 | Power-law shortcut is same decade, coarser | `scripts/r1/r1_principle_Rnl.py` |
 | P4 | A posteriori overlap with $r_0$, $R_8$, ceiling cell decade | comparison |

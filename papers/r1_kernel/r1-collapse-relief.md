@@ -109,13 +109,13 @@ python scripts/r1/r1_collapse_relief_cf4.py
 
 **Peak vs void (catalog $V_{\mathrm{pec}}$):**
 
-- peak $/$ void rms$(V_{\mathrm{pec}})\approx 0.37$
+- peak $/$ void rms $(V_{\mathrm{pec}})\approx 0.37$
 - peak_strong $/$ void $\approx 0.31$
 - med $\eta_{\mathrm{pec}}$ is **similar** peak vs void ($\sim 0.045$); the big contrast is in **scatter**, not median residual fraction.
 
 ### Relief curve (six equal-count bins of $n_{10}$)
 
-As local density rises, **catalog** rms$(V_{\mathrm{pec}})$ falls from $\sim 790\,\mathrm{km\,s^{-1}}$ (emptiest bin) to $\sim 390\,\mathrm{km\,s^{-1}}$ (densest).
+As local density rises, **catalog** rms $(V_{\mathrm{pec}})$ falls from $\sim 790\,\mathrm{km\,s^{-1}}$ (emptiest bin) to $\sim 390\,\mathrm{km\,s^{-1}}$ (densest).
 Internal vrms stays of order $90$–$120\,\mathrm{km\,s^{-1}}$ for systems that have members; the **high-multiplicity** cut is where internal relief jumps ($\mathrm{med}\sim 255\,\mathrm{km\,s^{-1}}$).
 
 That pattern is consistent with: **voids / singles** → noisier individual $V_{\mathrm{pec}}$; **collapsed multi-member systems** → shared flow + real internal dispersion from gravity.
@@ -123,7 +123,7 @@ That pattern is consistent with: **voids / singles** → noisier individual $V_{
 ### Distance shells (selection control)
 
 Median $n_{10}$ is huge only nearby ($d<20\,\mathrm{Mpc}$: med $n_{10}\sim 286$) and falls with distance as the CF4 galaxy sampling thins.
-rms$(V_{\mathrm{pec}})$ **rises** with distance (distance-error contribution grows with $H_0 d$).
+rms $(V_{\mathrm{pec}})$ **rises** with distance (distance-error contribution grows with $H_0 d$).
 So the densest peaks on the top-list are **local Supercluster / Virgo-class** volume — where the catalog is densest — not a claim that collapse only happens nearby.
 
 ### Top multi-member collapse sites (highest $n_{10}$)

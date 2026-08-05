@@ -162,7 +162,7 @@ N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \l
 | N10 | Null lensing at $\sim 10^{-3}$ does **not** kill the whole model — only the tested $(\ell_{\ast},G_O,\varepsilon)$ corner |
 | N11 | Stage-IV sensitivity to **this** path-RMS statistic at $10^{-3}$ is **not** claimed established |
 | N12 | Gordon & Wands (2005) is **not** “the same $10^{56}$ wall”; factor $\sim 45$ for **their** target; **not** automatic DESI claim |
-| N13 | Atlas windows $(r,A,\varepsilon_Q)$ are **not** DESI fits; $\sigma_\rho\not\equiv\sigma_X$ without map |
+| N13 | Atlas windows $ (r,A,\varepsilon_Q)$ are **not** DESI fits; $\sigma_\rho\not\equiv\sigma_X$ without map |
 | N14 | Brachistochrone / H0-running note does **not** solve Hubble tension or derive $\ell_{\ast}$ |
 | N15 | Coherent $\delta D/D\propto N$ is not an $H_0$ fix under the amplifier rules of this programme |
 | N16 | $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ with $\theta$ fit to $z\sim 0.5$–$0.7$ is **not** a result |

@@ -23,7 +23,7 @@ I then ask, without fitting, whether the programme’s **mesoscopic grain** ($\e
 |:--|:---------|:---------------------------|
 | **1. What travels?** | Photons follow **null geodesics** (Fermat-type stationarity of arrival time in a static lens, not Bernoulli sliding under $g$). Classical brachistochrone = massive particle, uniform $g$, cycloid. **Not** a direct translation to light. Closest real physics: **multiple lensed images** of one quasar, **different paths, different arrival times** (time-delay cosmography). |
 | **2. “Fixed gravity”** | **Local regime** $z\ll 1$: $H(z)\approx H_0$ constant, $v=H_0 d$. That *is* the definition of the local $H_0$ ladder. Not a Newtonian $g=\mathrm{const}$ along a wire. |
-| **3. Short vs long path** | **Short / fast (local):** SN Ia + Cepheids / TRGB, $z\lesssim 0.15$ (SH0ES-class). **Long / early:** CMB last-scattering $z\sim 1100$ (Planck-class under $\Lambda$CDM). Intermediate: BAO, lens redshifts $z_d\sim 0.3$–$0.8$, SN bins. |
+| **3. Short vs long path** | **Short / fast (local):** SN Ia + Cepheids / TRGB, $z\lesssim 0.15$(SH0ES-class). **Long / early:** CMB last-scattering $z\sim 1100$(Planck-class under $\Lambda$CDM). Intermediate: BAO, lens redshifts $ z_d\sim 0.3$–$0.8$, SN bins. |
 | **4. What number?** | Tension ratio **observed**: $H_0^{\mathrm{local}}/H_0^{\mathrm{CMB}}\approx 73.0/67.4\approx\mathbf{1.083}$ (order $9\%$). Any mechanism *claim* must eventually predict this ratio (or a trend $H_0^{\mathrm{inf}}(z)$) **before** fitting it. This note does **not** claim that prediction yet. |
 
 ---
@@ -32,7 +32,7 @@ I then ask, without fitting, whether the programme’s **mesoscopic grain** ($\e
 
 ### 2.1 Absolute anchors (standard tension)
 
-| Probe | $H_0$ [km s$^{-1}$ Mpc$^{-1}$] | Ref. class |
+| Probe | $H_0$ [km s$^{-1}$ Mpc $^{-1}$] | Ref. class |
 |:------|:-------------------------------------|:-----------|
 | Planck CMB ($\Lambda$CDM) | $67.4\pm 0.5$ | Planck 2018 |
 | SH0ES local ladder | $\sim 73$–$74$ | Riess et al. series |
@@ -73,12 +73,12 @@ Literature “running” claims aim to connect high-$H_0$ at low $z$ to low-$H_0
 
 ## 3. Geometry in this programme (no free dial)
 
-Fiducial flat $\Lambda$CDM: $H_0=67.4$, $\Omega_m=0.315$, $\Omega_\Lambda=0.685$.
+Fiducial flat $\Lambda$CDM: $ H_0=67.4$, $\Omega_m=0.315$, $\Omega_\Lambda=0.685$.
 Reproduce: `python scripts/closed/h0_running_geometry.py`.
 
 ### 3.1 Cosmic path length and patch counts
 
-| $z$ | $\chi(z)$ [Mpc] | $\chi/L_H$ | $N=\chi/R_8$ ($R_8\approx 11.87$ Mpc) | $\sqrt{N}$ |
+| $z$ | $\chi(z)$ [Mpc] | $\chi/L_H$ | $N=\chi/R_8$($R_8\approx 11.87$ Mpc) | $\sqrt{N}$ |
 |:------|:------------------|:-------------|:------------------------------------------|:-------------|
 | 0.15 (local ladder depth) | $\sim 640$ | 0.14 | $\sim 54$ | $\sim 7$ |
 | 0.30 ($\approx z_{\mathrm{eq}}$) | $\sim 1240$ | 0.28 | $\sim 104$ | $\sim 10$ |

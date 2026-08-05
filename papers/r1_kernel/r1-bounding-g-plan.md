@@ -47,7 +47,7 @@ $\lambda = g\times\text{(normalisation factor)}$. Bounding $\lambda$ bounds $g$ 
 \sigma_{\mathrm{free}}\equiv\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5}
 
 
-under P$_\mathrm{nl}$+counting $d=3$. Not a free MCMC parameter unless P$_\mathrm{nl}$ is abandoned.
+under P $_\mathrm{nl}$+counting $d=3$. Not a free MCMC parameter unless P$_\mathrm{nl}$ is abandoned.
 
 ### 2.3 Effective residual for DESI / slip
 
@@ -96,7 +96,7 @@ Executable now. Does not replace a full likelihood; freezes the ceiling.
 |:--|:--|
 | Data | Public DESI DR2 BAO summary stats + covariance (related repository pipelines) |
 | Model | Flat $\Lambda$CDM background + residual kernel with $\sigma_{\mathrm{res}}(\lambda)=\sqrt{\sigma_{\mathrm{free}}^2+\lambda^2}$ (or linear response template correlated with $\delta_m$ if implemented) |
-| Parameters | $\lambda$ (and optionally $\sigma_{\mathrm{free}}$ with prior around $8.5\times 10^{-5}$ if testing P$_\mathrm{nl}$); not $\ell_{\ast}$ free |
+| Parameters | $\lambda$ (and optionally $\sigma_{\mathrm{free}}$ with prior around $8.5\times 10^{-5}$ if testing P $_\mathrm{nl}$); not $\ell_{\ast}$ free |
 | Method | Nested sampling / MCMC (emcee or existing sister Cobaya/custom OU likelihood) on public BAO only first; then multi-probe only a posteriori |
 | Output | Posterior $p(\lambda\mid\mathrm{BAO})$; 95% upper limit $\lambda_{95}$ |
 | Excluded | Refit $\ell_{\ast}$ or $R_{\mathrm{nl}}$ to improve the limit |
@@ -137,7 +137,7 @@ Role: not the tightest bound on $\lambda$, but the right operator (anisotropic r
 |:--|:--|
 | Sampler | Nested sampling (dynesty/ultranest) or emcee |
 | Likelihood | Sister OU-BAO + optional slip; fixed $R_{\mathrm{nl}}$ from $\sigma(R)=1$ |
-| Priors | $\lambda\sim\mathrm{Uniform}(-10^{-3},10^{-3})$ or log-uniform on $\lvert\lambda\rvert$; $\sigma_{\mathrm{free}}$ delta or narrow prior at $8.5\times 10^{-5}$ under P$_\mathrm{nl}$ |
+| Priors | $\lambda\sim\mathrm{Uniform}(-10^{-3},10^{-3})$ or log-uniform on $\lvert\lambda\rvert$; $\sigma_{\mathrm{free}}$ delta or narrow prior at $8.5\times 10^{-5}$ under P $_\mathrm{nl}$ |
 | Systematics | OU kernel hyperparameters as in related paper; no free $10^{56}$ |
 | Success metric | $\lambda_{95}$ reported with $\ell_{\ast}$ not varied |
 
@@ -148,7 +148,7 @@ Role: not the tightest bound on $\lambda$, but the right operator (anisotropic r
 | Observable | Sensitivity to $\lambda$ today | Role |
 |:-----------|:---------------------------------|:-----|
 | DESI BAO residual $\sigma_X$ | Strongest (ceiling $1.5\times 10^{-4}$) | Primary bound |
-| Slip $\gamma$ (Maus) | Weak (error $\sim 0.1$) | Operator sanity |
+| Slip $\gamma$(Maus) | Weak (error $\sim 0.1$) | Operator sanity |
 | Path RMS / Stage-IV lensing | Future | Tighten anisotropic channel |
 | Clusters / $r_0$ | Scale geometry, weak on $\lambda$ alone | T1.2 structure test |
 
@@ -202,12 +202,12 @@ Order-unity dimensionless $g$ is already at the edge of the DESI residual ceilin
  - Artefact: `results/r1_lambda_profile/`.
 3. Full 13×13 DESI DR2 covariance, fractional residual (`scripts/r1/r1_profile_lambda_fullcov.py`).
  - Residual $r_i=\mathrm{data}_i/\mathrm{theory}_i-1$, $C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})$.
- - $\chi^2_{\Lambda\mathrm{CDM}}\approx 29$ (13 dof); mean fractional offset $\sim 1\%$.
+ - $\chi^2_{\Lambda\mathrm{CDM}}\approx 29$(13 dof); mean fractional offset $\sim 1\%$.
  - Formal free $\sigma_{\mathrm{res}}$: best $\approx 1.7\times 10^{-2}$, 95% $\in[5\times 10^{-3},\,0.17]$; zero excluded at 95% only because cov inflation absorbs background tension — not a 1e−4 grain detection.
  - At programme amplitudes ($\sigma_{\mathrm{free}}$, $1.5\times 10^{-4}$): $\Delta\ln\mathcal{L}\approx 0$ vs pure $\Lambda$CDM.
  - `formal_informative_for_1e-4_grain = False`. `primary_bound = working`.
  - Artefact: `results/r1_lambda_fullcov/`.
-4. Slip OOM / Maus consistency on working $\lambda$ — predicted $\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11$ ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).
+4. Slip OOM / Maus consistency on working $\lambda$ — predicted $\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11$([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).
 5. F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).
 6. Optional: joint background+$\sigma_{\mathrm{res}}$ (float $r_d$ or $\Omega_m$); cluster mask test; influence-functional rate beyond OOM.
 

@@ -91,8 +91,7 @@ up to $\mathcal{O}(1)$ factors from the same filtered matter field (density corr
 
 ## 4. Geometry and amplitude
 
-### 4.1 $R_{\mathrm{nl}}$
-\sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),\qquad W_{\mathrm{TH}}(x)=\frac{3(\sin x-x\cos x)}{x^3}.
+### 4.1 $R_{\mathrm{nl}}$\sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),\qquad W_{\mathrm{TH}}(x)=\frac{3(\sin x-x\cos x)}{x^3}.
 
 
 With EH-style $P(k)$, $n_s=0.965$, $\Omega_m=0.315$, $h=0.674$, $\sigma_8=0.81$:

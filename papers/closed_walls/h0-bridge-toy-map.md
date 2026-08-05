@@ -28,7 +28,7 @@ with $\ell_{\ast}$ **fixed** from the R1 landscape (NP-A or $R_8$-class) and $s_
 | Symbol | Value | Source |
 |:-------|:------|:-------|
 | $\ell_{\ast}^{\mathrm{NP\text{-}A}}$ | $\approx 2.07\,\mathrm{Mpc}$ | $d=3$, $\sigma=10^{-5}$ counting inverse |
-| $\ell_{\ast}^{R_8}$ | $\approx 11.87\,\mathrm{Mpc}$ | $R_8=8/h$ (R1d **class**, not derived) |
+| $\ell_{\ast}^{R_8}$ | $\approx 11.87\,\mathrm{Mpc}$ | $R_8=8/h$(R1d **class**, not derived) |
 | $s_{\mathrm{loc}}$ | $\lvert\gamma-1\rvert(\sigma_X=1.5\times 10^{-4},\varepsilon=1,z=0.5)$ | wall formula |
 | $H_0^{\mathrm{true}}$ | $67.4$ | Planck-class fiducial for toy |
 | Observed ratio | $73/67.4\approx 1.083$ | literature anchor only |

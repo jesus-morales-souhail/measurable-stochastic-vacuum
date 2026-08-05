@@ -45,7 +45,7 @@ Exact numbers are written to `results/r1_falsifiers/`.
 | F1 | BAO residual $\sigma_{\mathrm{res}}$ | $\sigma_{\mathrm{free}}\sim 8.5\times 10^{-5}$ | DESI $\sigma_X<1.5\times 10^{-4}$ (95% CL) (sister) | Measured residual $\gg 1.5\times 10^{-4}$ at fixed $\ell_{\ast}=R_{\mathrm{nl}}$ with no derived damping | Residual stays under ceiling with $\ell_{\ast}$ locked |
 | F2 | Residual correlation length $\ell_{\ast}$ | $\sim R_{\mathrm{nl}}$ (band $\mathcal{O}(1)$) | — (requires residual detection) | Free residual $\xi$ at $\sigma\sim 10^{-4}$ measured $\ll 1\,\mathrm{Mpc}$ or $\gg 100\,\mathrm{Mpc}$ | Measured $\ell_{\ast}\in[0.5,3]R_{\mathrm{nl}}$ |
 | F3a | Local $\lvert\gamma-1\rvert$ | $\sim 10^{-4}$ | Maus $\sigma(\gamma)=0.11$ | Required mean slip $\gg 0.1$ for $\varepsilon\sim 1$ at DESI-safe $\sigma$ (would need huge $\varepsilon$) | Predicted $\ll$ Maus (today: automatic consistency) |
-| F3b | Path $\mathrm{RMS}$ | $\sim 10^{-3}$ | Sakr constant $\eta\sim 0.05$; free $(z,k)\sim 0.3$ | Stochastic path-RMS proxy measured far above prediction without systematics budget | Remains below mean-$\eta$ floors |
+| F3b | Path $\mathrm{RMS}$ | $\sim 10^{-3}$ | Sakr constant $\eta\sim 0.05$; free $ (z,k)\sim 0.3$ | Stochastic path-RMS proxy measured far above prediction without systematics budget | Remains below mean-$\eta$ floors |
 | F4 | Method integrity | — | — | Post-hoc $\ell_{\ast}$ fit to DESI; free $10^{56}$; equate Stage-IV $m\sim 10^{-3}$ with path-RMS detection | Self-shielding axioms held |
 
 Today: F1 is compatible (working bound). F3 is automatically consistent (floors $\gg$ prediction). F2 is the decisive geometric test but requires a residual detection or a well-defined residual two-point analysis. F4 is continuous discipline.
@@ -56,7 +56,7 @@ Today: F1 is compatible (working bound). F3 is automatically consistent (floors 
 
 | Claim | Status |
 |:------|:-------|
-| Stage-IV tightens BAO / residual $\sigma_X$ (F1 deeper) | Yes — primary path |
+| Stage-IV tightens BAO / residual $\sigma_X$(F1 deeper) | Yes — primary path |
 | Stage-IV mean $\eta$ / $\gamma$ reaches sandwich path-RMS | Not established — Sakr constant $\eta\sim 5\%$ still $\gg 10^{-3}$ path-RMS if naively equated |
 | Stage-IV $m$-bias $\sim 10^{-3}$ = detection of residual texture | False (wrong operator) |
 | Euclid residual band $\sim 10^{-5}$ | Can confirm free-grain OOM or deepen null under fixed $\ell_{\ast}=R_{\mathrm{nl}}$ |

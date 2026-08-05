@@ -13,7 +13,7 @@
 
 I record three families of **verified** relations relevant to whether late-time stochastic dark-energy noise can be telescope-measurable. These are identities and numbers I have checked in code; they are not a detection claim.
 
-1. **Counting seeds (R1 kinematics):** under the hypothesis $N_{\mathrm{eff}}=(L/\ell_{\ast})^d$, one has $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L)^{d/2}$ exactly. The holographic Sorkin case $(d=2,\ell_{\ast}=L_P)$ gives $\sigma_0=L_P/L_H\sim 10^{-61}$. Inverting for a target $\sigma=10^{-5}$ forces $\ell_{\ast}$ at the **$0.04$–$14 \mathrm{Mpc}$** scale depending on $d\in\{2,3,4\}$.
+1. **Counting seeds (R1 kinematics):** under the hypothesis $N_{\mathrm{eff}}=(L/\ell_{\ast})^d$, one has $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L)^{d/2}$ exactly. The holographic Sorkin case $ (d=2,\ell_{\ast}=L_P)$ gives $\sigma_0=L_P/L_H\sim 10^{-61}$. Inverting for a target $\sigma=10^{-5}$ forces $\ell_{\ast}$ at the **$0.04$–$14 \mathrm{Mpc}$** scale depending on $d\in\{2,3,4\}$.
 
 2. **Soft open gain (R3 kinematics):** a squeeze factor $e^{2r}$ with $r=\mathcal{O}(1)$ yields $G_O=\mathcal{O}(10)$. Lifting Sorkin $\sigma_0$ to $10^{-5}$ would require $r\sim 64$, i.e. a **new scale**, not a soft open map.
 
@@ -177,11 +177,11 @@ If a line of sight crosses $N_{\mathrm{pat}}=\chi/\ell_{\ast}$ independent patch
 
 Comoving distance $\chi(1.5)\approx 4.5\times 10^{3} \mathrm{Mpc}$ (trapezoidal integral of $c/H(z)$; convergence tested).
 
-| Seed | Local $\|\gamma-1\|$ ($\varepsilon=\delta_m=1$, $z\sim 0.8$) | $\sqrt{N}$ (example $\ell_{\ast}$) | Path RMS |
+| Seed | Local $\|\gamma-1\|$($\varepsilon=\delta_m=1$, $z\sim 0.8$) | $\sqrt{N}$ (example $\ell_{\ast}$) | Path RMS |
 |:-----|:--------------------------------------------------------------|:------------------------------|:---------|
-| Sorkin | $\sim 10^{-61}$ | $\sim 67$ ($\ell_{\ast}=1 \mathrm{Mpc}$) | $\sim 10^{-60}$ |
+| Sorkin | $\sim 10^{-61}$ | $\sim 67$($\ell_{\ast}=1 \mathrm{Mpc}$) | $\sim 10^{-60}$ |
 | $\sigma=10^{-5}$, $\ell_{\ast}=2.1 \mathrm{Mpc}$ | $\sim 7\times 10^{-6}$ | $\sim 46$ | $\sim 3\times 10^{-4}$ |
-| $\sigma=1.5\times 10^{-4}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$ ($\ell_{\ast}=10 \mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
+| $\sigma=1.5\times 10^{-4}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$($\ell_{\ast}=10 \mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
 
 To lift Sorkin local slip to a floor $\lvert \gamma-1 \rvert\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_{\ast}=1 \mathrm{Mpc}$.
 
@@ -238,7 +238,7 @@ If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1
 |:---------------------------|:----------|
 | $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) | A posteriori scale only |
 | Tachyonic rank-1 exclusion | Forbids one hard amplifier class |
-| Freeze-out gain $\approx 1$ (Route 2 scans) | Supports $G_F=1$ default |
+| Freeze-out gain $\approx 1$(Route 2 scans) | Supports $G_F=1$ default |
 | Soft desqueezing $\mathcal{O}(10)$ | Supports $G_O$ ceiling used above |
 
 This note **does not re-derive** the DESI likelihood. It consumes those results as external bounds.

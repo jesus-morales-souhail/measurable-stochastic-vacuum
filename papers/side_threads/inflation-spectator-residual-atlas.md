@@ -56,7 +56,7 @@ Potential-dominated fractional density contrast (OOM, flat gauge):
 \sigma_\rho\equiv\left| \frac{\delta\rho_Q}{\rho_Q}\right| \approx\sqrt{2\varepsilon_Q}\;A\;\frac{\delta Q_i}{M_p}, \qquad \varepsilon_Q=\frac{M_p^2}{2}\left(\frac{V_Q'}{V_Q}\right)^2,
 
 
-with post-inflation field growth $A=\delta Q_f/\delta Q_i$ (Gordon & Wands: $A>45$ for *their* target).
+with post-inflation field growth $A=\delta Q_f/\delta Q_i$(Gordon & Wands: $A>45$ for *their* target).
 
 **Modern $r$ anchors (95% CL class, literature):**
 BICEP/Keck + Planck combinations often quote $r\lesssim 0.036$; I also show $r=0.056$ and a low-scale $r=10^{-3}$.
@@ -76,7 +76,7 @@ python scripts/side/inflation_spectator_residual_atlas.py
 |:------|:----------|:------------------------------|
 | $0.001$ | $\sim 3.2\times 10^{-6}$ | $\sim 5.1\times 10^{-7}$ |
 | $0.01$ | $\sim 1.0\times 10^{-5}$ | $\sim 1.6\times 10^{-6}$ |
-| $0.036$ (BK-class edge) | $\sim 1.9\times 10^{-5}$ | $\sim 3.1\times 10^{-6}$ |
+| $0.036$(BK-class edge) | $\sim 1.9\times 10^{-5}$ | $\sim 3.1\times 10^{-6}$ |
 | $0.056$ | $\sim 2.4\times 10^{-5}$ | $\sim 3.8\times 10^{-6}$ |
 
 Already **fifty-five decades above** Sorkin $\sigma_0\sim 10^{-61}$ — because the seed was never holographic counting.
@@ -85,7 +85,7 @@ Already **fifty-five decades above** Sorkin $\sigma_0\sim 10^{-61}$ — because 
 
 At $r=0.036$:
 
-| $A$ | $\varepsilon_Q$ | $\sigma_\rho$ (OOM) | vs $10^{-5}$ | vs $1.5\times 10^{-4}$ |
+| $A$ | $\varepsilon_Q$ | $\sigma_\rho$(OOM) | vs $10^{-5}$ | vs $1.5\times 10^{-4}$ |
 |:------|:------------------|:---------------------|:---------------|:------------------------|
 | 1 (frozen) | $10^{-4}$ (very flat) | $\sim 4\times 10^{-8}$ | short $\times\sim 250$ | short $\times\sim 4000$ |
 | 1 | $0.05$ (mild) | $\sim 1\times 10^{-6}$ | short $\times\sim 10$ | short $\times\sim 150$ |
@@ -116,7 +116,7 @@ This is the gap that is **not** a free parameter:
 | **Tighter upper bound on $r$** (CMB-S4, LiteBIRD, …) | Lowers max $\delta Q\propto\sqrt{r}$. If $r\ll 10^{-3}$, even $A\sim 100$ + mild $\varepsilon_Q$ falls below $10^{-5}$. |
 | **Detection of $r>0$** near current edge | Keeps $\delta Q/M_p\sim\mathrm{few}\times 10^{-6}$ available. |
 | **$w_Q$ / $\varepsilon_Q$** from BAO+SN+CMB | Caps how large $\sqrt{2\varepsilon_Q}$ can be while remaining DE-like. |
-| **Sister $\sigma_X$ bound** | A posteriori: if a derived $(r,A,\varepsilon_Q)$ predicts $\sigma_\rho>\sigma_X^{\mathrm{DESI}}$, that corner dies. |
+| **Sister $\sigma_X$ bound** | A posteriori: if a derived $ (r,A,\varepsilon_Q)$ predicts $\sigma_\rho>\sigma_X^{\mathrm{DESI}}$, that corner dies. |
 | **DE isocurvature / CMB** | Gordon–Wands original target; independent of BAO residual kernel. |
 
 **Excluded (BOUNDARY):** choose $A$ and $\varepsilon_Q$ after looking at DESI to land in band.
