@@ -18,12 +18,12 @@ No new free parameters. No DESI dial.
 
 ## 2. Master map (verified chain)
 
-$$
+
 \sigma_{0,\mathrm{eff}} = \left(\frac{\ell_{\ast}}{L}\right)^{d/2} \quad\xrightarrow{ G_O=e^{2r} } \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}} \quad\xrightarrow{ \pi_T=\varepsilon\sigma_{\mathrm{res}}\rho_X } \lvert \gamma-1 \rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m\lvert \delta_m \rvert} \quad\xrightarrow{ \mathrm{iid path} } \mathrm{RMS}_{\mathrm{path}} = \lvert \gamma-1 \rvert_{\mathrm{loc}}\sqrt{\frac{\chi}{\ell_{\ast}}}.
-$$
+
 
 **Defaults used for soft regime (stated, not fitted):**
-$G_U=1$, $G_F=1$, $r\le 1.5$ $\Rightarrow$ $G_O\le e^{3}\approx 20$, $\varepsilon\le 1$, $\delta_m\sim 1$, $L=L_H=c/H_0$.
+$G_U=1$, $G_F=1$, $r\le 1.5\RightarrowG_O\le e^{3}\approx 20$, $\varepsilon\le 1$, $\delta_m\sim 1$, $L=L_H=c/H_0$.
 
 ---
 

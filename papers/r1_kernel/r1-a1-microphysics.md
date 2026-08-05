@@ -12,9 +12,9 @@ Depends on: [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) · [`r1-mec
 
 The sandwich uniqueness theorem needs A1: a local coupling between residual sector $\chi$ and matter contrast $\delta_m$,
 
-$$
+
 \mathcal{L}_{\mathrm{int}}=g\,\chi\,\delta_m \quad\text{(or density form }g\,\chi\,\rho_m\text{)}.
-$$
+
 
 This note asks the only remaining microphysical question at the same level of seriousness:
 
@@ -123,9 +123,9 @@ Do not invent $\chi$ *and* set $\ell_{\ast}$ by hand *and* amplify from Planck.
 
 ```
 1) Prefer emergent χ (M1 averaging residual) or SDiff edge residual (M2)
-   → A1 is structural, not a new particle
+ → A1 is structural, not a new particle
 2) Write influence-functional / master-equation form (M3)
-   → makes Lemma UV quantitative beyond OOM
+ → makes Lemma UV quantitative beyond OOM
 3) If χ must be fundamental, use EFT operator language (M5) + screening (M6)
 4) Spectator seed (M4) only for UV history, not as substitute for A1 locality
 ```

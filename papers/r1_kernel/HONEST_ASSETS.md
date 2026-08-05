@@ -11,7 +11,7 @@ Jesús Morales Souhail · July 2026
 - $\sigma_8$, $\Omega_m$, $n_s$, $h$: standard Planck-class values.
 - Buchert, slip, Stage-IV forecasts: literature.
 - **Cosmicflows-4** (Tully et al. 2023, ApJ 944, 94), CDS `J/ApJ/944/94`.
-  Local files: `data/real_velocity_net/table2.dat`, `table4.dat`, ReadMe.
+ Local files: `data/real_velocity_net/table2.dat`, `table4.dat`, ReadMe.
 
 I do not have private DESI spectra or private CF4 reductions.
 

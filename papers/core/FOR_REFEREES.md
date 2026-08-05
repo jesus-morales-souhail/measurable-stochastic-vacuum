@@ -73,51 +73,51 @@ CF4 notes: matter $v_{\mathrm{pec}}$ only — not $\sigma_X$ or $g$.
 
 ### 3.1 Background (identical to flat $\Lambda$CDM)
 
-$$
+
 H^{2}(z)=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr].
-$$
+
 
 ### 3.2 Counting seed (hypothesis $d=3$)
 
-$$
+
 N_{\mathrm{eff}}=\Bigl(\frac{L_{H}}{\ell_{*}}\Bigr)^{3}, \qquad \sigma=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}, \qquad \ell_{*}=L_{H} \sigma^{2/3},
-$$
+
 
 with $L_{H}=c/H_{0}$.
 
 ### 3.3 Holographic Sorkin seed (special case $d=2$, $\ell_{*}=L_{P}$)
 
-$$
+
 \sigma_{0}=\frac{L_{P}}{L_{H}}\sim 1.18\times 10^{-61} \quad(H_{0}=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
-$$
+
 
 ### 3.4 Soft open map (optional, bounded)
 
-$$
+
 G_{O}=e^{2r}, \qquad \sigma_{\mathrm{res}}=G_{O} \sigma \quad(r=\mathcal{O}(1);\ e.g.\ r=1.5\Rightarrow G_{O}\approx 20.09).
-$$
+
 
 **DESI-safe constraint (a posteriori):** $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$.
 
 ### 3.5 Local gravitational slip (sub-horizon GR)
 
-$$
+
 \pi_{T}=\varepsilon \sigma_{\mathrm{res}} \rho_{X}, \qquad \lvert\gamma-1\rvert = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_{X}}{\rho_{m}\lvert\delta_{m}\rvert}.
-$$
+
 
 Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_{T}$.
 
 ### 3.6 Light-path accumulation (iid patches)
 
-$$
+
 N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}}.
-$$
+
 
 ### 3.7 Simplified presentation reduction ($d=3$, $\chi\sim L_{H}$, $\alpha\sim\mathcal{O}(1)$)
 
-$$
+
 \mathrm{RMS}_{\mathrm{path}} \sim \alpha \sigma\sqrt{\frac{L_{H}}{\ell_{*}}} = \alpha \sigma^{2/3}.
-$$
+
 
 **Warning:** $\sigma\times G_{O}\times\sqrt{N}\neq\mathrm{RMS}_{\mathrm{path}}$ in general (prefactor $\alpha$ and operator order).
 
@@ -144,7 +144,7 @@ $$
 | C13 | Gordon & Wands: seed $H_{\mathrm{inf}}/2\pi$; growth factor $\sim 45$ (not $10^{56}$); distinct from Sorkin soft gap | `inflation-spectator-seed-gordon-wands.md` + `scripts/side/gordon_wands_factor45.py` |
 | C14 | At $r\sim 0.036$, $\delta Q/M_p\sim 3\times 10^{-6}$; with $A\sim 45$, $\varepsilon_Q\sim 0.05$ get $\sigma_\rho\sim\mathrm{few}\times 10^{-5}$ (OOM) | `inflation-spectator-residual-atlas.md` + script + tests |
 | C15 | DESI-safe path-RMS toy: $H_0(0.15)/H_0(1.5)\approx 1.006$, not $1.083$; $\beta$ short $\times 16$–$38$ | `h0-bridge-toy-map.md` + script + tests |
-| C16 | Residual amplitude $\sigma_X<1.5\times 10^{-4}$ cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ excluded | `h0-desqueezing-filter.md` + script + tests |
+| C16 | Residual amplitude $\sigma_X<1.5\times 10^{-4}$ (95% CL) cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ excluded | `h0-desqueezing-filter.md` + script + tests |
 
 ### 4.2 Not claimed
 
@@ -156,7 +156,7 @@ $$
 | N4 | No detection of stochastic DE or of slip |
 | N5 | Cosmos is **not** asserted to be a fractional Hall bar (analogy only) |
 | N6 | Entropy of the universe does **not** “stop”; only local backscattering of a protected channel is suppressed (analogy) |
-| N7 | Not peer reviewed |
+| N7 | Preprint status |
 | N8 | $\ell_{\ast}=R_8$ is **not** derived; S$_8$ is **not** explained; $d=3$ proximity is **tolerated**, not preferred by fit |
 | N9 | NP-B is **not** a derived prediction; detection of $\mathrm{RMS}\sim 10^{-3}$ is **not** automatic DE texture |
 | N10 | Null lensing at $\sim 10^{-3}$ does **not** kill the whole model — only the tested $(\ell_{\ast},G_O,\varepsilon)$ corner |
@@ -194,7 +194,7 @@ python scripts/r1/r1_open_kernel_scales.py
 
 [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) is **pedagogy**:
 
-- bulk $\leftrightarrow$ $\Lambda$ (smooth mean),
+- bulk $\leftrightarrow\Lambda$ (smooth mean),
 - edge $\leftrightarrow$ grain $\sigma$ (shear / light),
 - no backscattering $\leftrightarrow$ unphysical amplification channels closed.
 

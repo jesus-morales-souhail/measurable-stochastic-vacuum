@@ -2,7 +2,7 @@
 
 **Programme:** measurable-stochastic-vacuum
 **Author:** Jesús Morales Souhail · July 2026
-**Status:** Independent research — **not peer reviewed**
+**Status:** Independent research — **preprint status**
 
 These are the admission rules I use for this repository. They grew out of mistakes I made earlier — wrong scale, wrong operator, free amplifiers dressed as physics. I keep them short so I can check a claim against them before it enters a note.
 
@@ -14,7 +14,7 @@ These are the admission rules I use for this repository. They grew out of mistak
 |:-----------|:-------------------|
 | DESI residual bound / model kill | `stochastic-dark-energy-ou` |
 | Derived counting / open map / slip OOM | **this repo** |
-| Lab wrong-scale pedagogy | `stochastic-de-exploratory-notes` |
+| Lab wrong scale pedagogy | `stochastic-de-exploratory-notes` |
 
 ---
 

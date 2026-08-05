@@ -5,13 +5,13 @@ Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/
 I keep three places for three jobs:
 
 ```
-stochastic-dark-energy-ou          empirical claims (DESI nulls, bounds, amplification gap)
-        │  cited here only a posteriori
-        ▼
-measurable-stochastic-vacuum       theory + checked kinematics  (this repo)
-        │  does not pull exploratory optics in as cosmology
-        ▼
-stochastic-de-exploratory-notes    wrong-scale method notes only
+stochastic-dark-energy-ou empirical claims (DESI nulls, bounds, amplification gap)
+ │ cited here only a posteriori
+ ▼
+measurable-stochastic-vacuum theory + checked kinematics (this repo)
+ │ does not pull exploratory optics in as cosmology
+ ▼
+stochastic-de-exploratory-notes wrong scale method notes only
 ```
 
 | Allowed here | Not allowed here |

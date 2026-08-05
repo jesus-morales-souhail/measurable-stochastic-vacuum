@@ -2,7 +2,7 @@
 
 **Author:** Jesús Morales Souhail · ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 **Date:** July 2026
-**Status:** Minimal public model — independent research, **not peer reviewed**
+**Status:** Minimal public model — independent research, **preprint status**
 **Gate:** `pytest -q` (34 tests) · `scripts/core/lib_verified.py` · [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · [`FOR_REFEREES.md`](FOR_REFEREES.md)
 
 ---
@@ -29,7 +29,7 @@ I keep that mean and add the **simplest possible correction** that $\Lambda$ can
 
 | Folder / repo | Role after simplification |
 |:--------------|:--------------------------|
-| `stochastic-dark-energy-ou` | **Data:** null residual $\Rightarrow$ mean is $\Lambda$-like; $\sigma_X<1.5\times 10^{-4}$ |
+| `stochastic-dark-energy-ou` | **Data:** null residual $\Rightarrow$ mean is $\Lambda$-like; $\sigma_X<1.5\times 10^{-4}$ (95% CL) |
 | `measurable-stochastic-vacuum` | **Theory:** only the equations below |
 | `stochastic-de-exploratory-notes` | **Ignore** for the minimal model (hygiene only) |
 | `proyecto_unificacion` | Separate pipeline; not required here |
@@ -43,17 +43,17 @@ Everything else is commentary, audits, or open research.
 
 ### Line A — Background (identical to $\Lambda$CDM)
 
-$$
+
 H^2(z) = H_0^2\Bigl[\Omega_m(1+z)^3 + \Omega_\Lambda\Bigr].
-$$
+
 
 No new expansion history. DESI residual analysis prefers this smoothness.
 
 ### Line B — One grain parameter (replaces Planck mythology)
 
-$$
+
 \sigma = \left(\frac{\ell_{\ast}}{L_H}\right)^{3/2} \quad\Leftrightarrow\quad \ell_{\ast} = L_H \sigma^{2/3}.
-$$
+
 
 - $\sigma$: dimensionless noise amplitude of the dark-energy sector (our only extra constant, like $\Omega_\Lambda$ is the only vacuum constant in flat $\Lambda$CDM).
 - $\ell_{\ast}$: correlation / counting length (derived from $\sigma$, not free).
@@ -61,25 +61,25 @@ $$
 - Exponent $3/2$: spatial 3D counting ($d=3$).
 
 **Drop** Sorkin $\sigma\sim 10^{-61}$ as a target for telescopes.
-If you measure something, $\sigma$ is mesoscopic: $\sigma\sim 10^{-6}$–$10^{-5}$ $\Rightarrow$ $\ell_{\ast}\sim$ Mpc.
+If you measure something, $\sigma$ is mesoscopic: $\sigma\sim 10^{-6}$–$10^{-5}\Rightarrow\ell_{\ast}\sim$ Mpc.
 
 ### Line C — What light sees (one prediction)
 
-$$
+
 \mathrm{RMS} = \sigma\sqrt{\frac{L_H}{\ell_{\ast}}} = \sigma^{2/3} \qquad\text{(order of magnitude; }d=3\text{)}.
-$$
+
 
 More carefully (same content, one prefactor $\mathcal{O}(1)$):
 
-$$
+
 \mathrm{RMS}(\lvert \gamma-1 \rvert) \approx \alpha \sigma\sqrt{\frac{\chi}{\ell_{\ast}}}, \qquad \alpha \equiv 2\varepsilon\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}\sim\mathcal{O}(1).
-$$
+
 
 With $\ell_{\ast}=L_H\sigma^{2/3}$ and $\chi\sim L_H$:
 
-$$
+
 \mathrm{RMS} \sim \alpha \sigma^{2/3}.
-$$
+
 
 Minimal content at $\Lambda$-level simplicity:
 
@@ -95,33 +95,33 @@ Minimal content at $\Lambda$-level simplicity:
 
 ### Cosmological constant
 
-$$
+
 G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}.
-$$
+
 
 Parameters: $\Lambda$ (or $\Omega_\Lambda$).
 Prediction: $H(z)$ as above.
 
 ### Grainy vacuum (minimal)
 
-$$
+
 \text{mean: same }\Lambda\text{CDM} \sigma=\text{one grain amplitude} \mathrm{RMS}(\lvert \gamma-1 \rvert)\sim \sigma^{2/3}
-$$
+
 
 Parameters: $\sigma$ (plus shared $\Omega_m,H_0$).
 Prediction: small gravitational slip along the line of sight; **not** a new $H(z)$.
 
 Optional soft open factor (still simple):
 
-$$
+
 \sigma_{\mathrm{res}} = G \sigma, \qquad G\sim 1\text{–}20 \quad(r=\mathcal{O}(1)),
-$$
+
 
 with **constraint** from data:
 
-$$
+
 \sigma_{\mathrm{res}} < 1.5\times 10^{-4} \quad\text{(DESI residual ceiling)}.
-$$
+
 
 Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha \sigma_{\mathrm{res}}\sqrt{\chi/\ell_{\ast}}$ with $\ell_{\ast}$ from Line B using $\sigma$ (seed) or using $\sigma_{\mathrm{res}}$ if grain is read after open map — see NP-A / NP-B in [`NARROW_PATH.md`](NARROW_PATH.md).
 
@@ -133,7 +133,7 @@ Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha 
 |:-------|:---------|:-----------------|:-------------------------------|:--------------|
 | Planck mythology | $10^{-61}$ | $L_P$ | $\sim 10^{-41}$ (invisible) | trivially OK |
 | Minimal NP-A | $10^{-5}$ | $\approx 2.07 \mathrm{Mpc}$ | $\sim 4.6\times 10^{-4}$ (simple); path $\sim 3.5\times 10^{-4}$ | OK |
-| NP-B soft $G\approx 20$ | seed $5\times 10^{-6}$ $\to$ $\sigma_{\mathrm{res}}=10^{-4}$ | $\approx 1.30 \mathrm{Mpc}$ | $\sim 2\times 10^{-3}$ (simple); path $\sim 4.4\times 10^{-3}$ | OK ($\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$) |
+| NP-B soft $G\approx 20$ | seed $5\times 10^{-6}\to\sigma_{\mathrm{res}}=10^{-4}$ | $\approx 1.30 \mathrm{Mpc}$ | $\sim 2\times 10^{-3}$ (simple); path $\sim 4.4\times 10^{-3}$ | OK ($\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$) |
 
 Exact path formula (verified library) gives the same **order**: few $\times 10^{-4}$ to few $\times 10^{-3}$ in the DESI-safe window — not $0.1$ and not $10^{-60}$.
 
@@ -224,7 +224,7 @@ PY
 | R1 counting | Line B: $\sigma=(\ell_{\ast}/L_H)^{3/2}$ |
 | R3 soft open | Optional $G\sim 1$–$20$ with DESI clip |
 | R2 slip + path | Line C: $\mathrm{RMS}\sim\sigma^{2/3}$ |
-| Self-shielding zeros | Planck $\sigma$ $\Rightarrow$ RMS invisible |
+| Self-shielding zeros | Planck $\sigma\Rightarrow$ RMS invisible |
 | WP1–WP5 papers | Appendices |
 
 ---

@@ -3,7 +3,7 @@
 **Author:** Jesús Morales Souhail
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 **Date:** July 2026
-**Status:** Technical note — **only claims that are algebraically or numerically verified in-repo** · independent research, **not peer reviewed**
+**Status:** Technical note — **only claims that are algebraically or numerically verified in-repo** · independent research, **preprint status**
 **Code:** `scripts/core/lib_verified.py` · **Tests:** `tests/test_verified.py` (`pytest -q` must pass)
 **Related empirical corpus:** [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
@@ -43,17 +43,17 @@ Library: `scripts/core/lib_verified.py`.
 
 Assume the DE residual sector admits a counting of effective degrees of freedom in a region of size $L$ with cell $\ell_{\ast}>0$ and dimension $d>0$:
 
-$$
+
 N_{\mathrm{eff}} = \left(\frac{L}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_{\ast}}{L}\right)^{d/2}.
-$$
+
 
 **Status:** exact given the counting hypothesis (not a theorem of GR).
 
 ### 2.2 Inversion
 
-$$
+
 \ell_{\ast} = L \sigma_{0,\mathrm{eff}}^{2/d}.
-$$
+
 
 **Status:** exact inverse of §2.1 (tested for $d\in\{2,3,4\}$ and several $\sigma$).
 
@@ -61,11 +61,11 @@ $$
 
 Take $d=2$, $\ell_{\ast}=L_P$, $L=L_H=c/H_0$:
 
-$$
-N_{\mathrm{BH}} = \left(\frac{L_H}{L_P}\right)^{2}, \qquad \sigma_0 = \frac{L_P}{L_H} \sim 1.2\times 10^{-61} \quad (H_0=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
-$$
 
-**Status:** identity under that count. Matches the “Sorkin/Bekenstein” seed used as UV motivation in the sister corpus.
+N_{\mathrm{BH}} = \left(\frac{L_H}{L_P}\right)^{2}, \qquad \sigma_0 = \frac{L_P}{L_H} \sim 1.2\times 10^{-61} \quad (H_0=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
+
+
+**Status:** identity under that count. Matches the “Sorkin/Bekenstein” seed used as UV motivation in the related corpus.
 
 ### 2.4 Landscape for a target $\sigma=10^{-5}$
 
@@ -112,9 +112,9 @@ Programme discussion: [`r1-open-kernel.md`](../r1_kernel/r1-open-kernel.md) · `
 
 For a single-mode squeeze parameter $r\ge 0$,
 
-$$
+
 G_O = e^{2r}.
-$$
+
 
 At $r=1.5$, $G_O = e^{3}\approx 20.086$ (exact).
 
@@ -123,9 +123,9 @@ At $r=1.5$, $G_O = e^{3}\approx 20.086$ (exact).
 
 ### 3.2 Soft residual map (definition used in programme)
 
-$$
+
 \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}},
-$$
+
 
 with defaults $G_F=1$ (freeze-out preserves amplitude; consistent with sister-repo OU freeze scans) and $G_U=1$ (late-time $\Delta x=\mathcal{O}(1)$ stretch is not $e^{60}$).
 
@@ -134,9 +134,9 @@ with defaults $G_F=1$ (freeze-out preserves amplitude; consistent with sister-re
 For $\sigma_0\sim 10^{-61}$ and any $r\le 10$, $\sigma_{\mathrm{res}}\ll 10^{-50}$.
 To reach $10^{-5}$ from Sorkin via $G_O$ alone:
 
-$$
+
 r = \frac12\ln\!\left(\frac{10^{-5}}{\sigma_0}\right) \approx 64.4.
-$$
+
 
 **Verified:** the number $r\sim 64$.
 **Not verified / not claimed:** a horizon-bath derivation of $r\sim 64$ (would be a new scale claim).
@@ -149,15 +149,15 @@ $$
 
 In Newtonian gauge, sub-horizon, with
 
-$$
+
 k^{2}\Psi = -4\pi G a^{2}\rho_m\delta_m, \qquad k^{2}(\Phi-\Psi)=8\pi G a^{2}\pi_T, \qquad \pi_T = \varepsilon \sigma \rho_X,
-$$
+
 
 one obtains
 
-$$
+
 \lvert \gamma-1 \rvert = \left| \frac{\Phi}{\Psi}-1\right| = 2\varepsilon\sigma\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}.
-$$
+
 
 **Status:** standard consequence of the anisotropy equation under the listed assumptions (Ma & Bertschinger form; same as sister `slip_bridge.py`).
 **Not verified:** value of $\varepsilon$ from first principles; full $k,z$-dependent Boltzmann solution.
@@ -166,9 +166,9 @@ $$
 
 If a line of sight crosses $N_{\mathrm{pat}}=\chi/\ell_{\ast}$ independent patches and each contributes an iid zero-mean wrinkle of RMS $s$, then
 
-$$
+
 \mathrm{RMS}_{\mathrm{path}} = s\sqrt{N_{\mathrm{pat}}}.
-$$
+
 
 **Status:** exact for the iid model (Monte Carlo checked to $\sim 3\%$).
 **Not verified:** Gaussianity or independence of real DE stress along the LOS.
@@ -194,7 +194,7 @@ To lift Sorkin local slip to a floor $\lvert \gamma-1 \rvert\sim 0.05$ by $\sqrt
 
 - Correct: noise need not change global $H(z)$; $\pi_T$ wrinkles $\Phi,\Psi$; light integrates.
 - Correct analogy limit: primordial structure used $\zeta\sim 10^{-5}$ after inflation, not late Sorkin $10^{-61}$.
-- Incorrect: “photons travel for Gyr $\Rightarrow$ $10^{-61}$ becomes $10^{-5}$.”
+- Incorrect: “photons travel for Gyr $\Rightarrow10^{-61}$ becomes $10^{-5}$.”
 
 ---
 
@@ -202,9 +202,9 @@ To lift Sorkin local slip to a floor $\lvert \gamma-1 \rvert\sim 0.05$ by $\sqrt
 
 If Sorkin rescues are discarded, the only coherent soft-regime architecture is:
 
-$$
+
 \ell_{\ast}\sim\mathrm{Mpc} \Rightarrow \sigma_{0,\mathrm{eff}}\sim 10^{-6}\text{–}10^{-5} \xrightarrow{G_O=e^{2r}, r=\mathcal{O}(1)} \sigma_{\mathrm{res}}\le 1.5\times 10^{-4} \xrightarrow{\pi_T} \mathrm{RMS}_{\mathrm{path}}(\lvert \gamma-1 \rvert)\sim 10^{-4}\text{–}10^{-3}.
-$$
+
 
 | Label | Definition | Residual vs DESI ceiling | Path RMS (OOM, $d=3$, $\varepsilon=1$) |
 |:------|:-----------|:-------------------------|:----------------------------------------|
@@ -222,9 +222,9 @@ Full write-up: [`NARROW_PATH.md`](NARROW_PATH.md).
 
 Define the soft residual after open kinematics and before/with path geometry as appropriate. Then:
 
-$$
+
 \sigma_{\mathrm{res}}^{\mathrm{(soft)}} = e^{2r}\sigma_{0,\mathrm{eff}} \quad (r=\mathcal{O}(1)), \qquad \mathrm{RMS}_{\gamma}^{\mathrm{(path)}} \sim \lvert \gamma-1 \rvert(\sigma_{\mathrm{res}}) \sqrt{\chi/\ell_{\ast}}.
-$$
+
 
 **Theorem (soft regime, in-repo):**
 If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1)$, then both residual BAO-scale amplitudes and path-integrated slip remain many tens of orders of magnitude below $10^{-5}$ and below $\lvert \gamma-1 \rvert\sim 0.05$.

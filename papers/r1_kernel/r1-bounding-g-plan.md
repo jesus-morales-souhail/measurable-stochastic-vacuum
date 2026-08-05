@@ -31,9 +31,9 @@ The sketch used $\mathcal{L}_{\mathrm{int}}=g\,\chi\,\delta_m$. For bounds I use
 
 On the filter scale $R_{\mathrm{nl}}$,
 
-$$
+
 \Bigl(\frac{\delta\rho_X}{\rho_X}\Bigr)_{\mathrm{ind}} =\lambda\,\delta_m\big|_{R_{\mathrm{nl}}} +\text{(free residual orthogonal to }\delta_m\text{)}.
-$$
+
 
 - $\lambda=0$: no induced residual (pure free grain).
 - $\lvert\lambda\rvert\sim 1$: residual tracks matter 1:1 (ruled out by BAO smoothness).
@@ -43,17 +43,17 @@ $\lambda = g\times\text{(normalisation factor)}$. Bounding $\lambda$ bounds $g$ 
 
 ### 2.2 Free residual $\sigma_{\mathrm{free}}$ (secondary, already OOM-fixed)
 
-$$
+
 \sigma_{\mathrm{free}}\equiv\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5}
-$$
+
 
 under P$_\mathrm{nl}$+counting $d=3$. Not a free MCMC parameter unless P$_\mathrm{nl}$ is abandoned.
 
 ### 2.3 Effective residual for DESI / slip
 
-$$
+
 \sigma_{\mathrm{res}}^2 \simeq \sigma_{\mathrm{free}}^2 +\lambda^2\,\sigma_\delta^2(R_{\mathrm{nl}}) +\cdots
-$$
+
 
 At $R_{\mathrm{nl}}$, $\sigma_\delta=1$ by definition, so the induced piece has RMS $\lvert\lambda\rvert$ if $\delta_m$ is order-unity on that scale.
 
@@ -66,21 +66,21 @@ At $R_{\mathrm{nl}}$, $\sigma_\delta=1$ by definition, so the induced piece has 
 **Observable:** related DESI BAO residual bound under OU/QNM kernel.
 **Method:** algebraic, no MCMC.
 
-$$
+
 \sigma_{\mathrm{res}}\le \sigma_X^{\mathrm{DESI}}=1.5\times 10^{-4}.
-$$
+
 
 Optimistic induced-only bound ($\sigma_{\mathrm{free}}=0$):
 
-$$
+
 \lvert\lambda\rvert\lesssim 1.5\times 10^{-4}.
-$$
+
 
 With free grain included (independent, Gaussian add in quadrature):
 
-$$
+
 \lvert\lambda\rvert \lesssim \sqrt{ \bigl(\sigma_X^{\mathrm{DESI}}\bigr)^2-\sigma_{\mathrm{free}}^2 } \approx 1.24\times 10^{-4} \quad(\sigma_{\mathrm{free}}=8.5\times 10^{-5}).
-$$
+
 
 ```bash
 python scripts/r1/r1_bound_g_oom.py
@@ -138,7 +138,7 @@ Role: not the tightest bound on $\lambda$, but the right operator (anisotropic r
 | Sampler | Nested sampling (dynesty/ultranest) or emcee |
 | Likelihood | Sister OU-BAO + optional slip; fixed $R_{\mathrm{nl}}$ from $\sigma(R)=1$ |
 | Priors | $\lambda\sim\mathrm{Uniform}(-10^{-3},10^{-3})$ or log-uniform on $\lvert\lambda\rvert$; $\sigma_{\mathrm{free}}$ delta or narrow prior at $8.5\times 10^{-5}$ under P$_\mathrm{nl}$ |
-| Systematics | OU kernel hyperparameters as in sister paper; no free $10^{56}$ |
+| Systematics | OU kernel hyperparameters as in related paper; no free $10^{56}$ |
 | Success metric | $\lambda_{95}$ reported with $\ell_{\ast}$ not varied |
 
 ---
@@ -160,21 +160,21 @@ Plan in one line: bound $\lambda$ (hence $g$) primarily with BAO residual likeli
 
 Fix residual field normalisation so that free variance matches counting:
 
-$$
+
 \langle\chi^2\rangle^{1/2}_{\mathrm{free}}=\sigma_{\mathrm{free}}.
-$$
+
 
 If the induced contrast is $\delta\rho_X/\rho_X=\kappa\,g\,\chi\,\delta_m$ with $\kappa$ fixed by the action convention ($\kappa=1$ if $\chi$ already dimensionless contrast), then
 
-$$
+
 \lambda=\kappa\,g\,\langle\chi^2\rangle^{1/2} \quad\Rightarrow\quad g=\frac{\lambda}{\kappa\,\sigma_{\mathrm{free}}}.
-$$
+
 
 With $\kappa=1$, $\sigma_{\mathrm{free}}=8.5\times 10^{-5}$, $\lvert\lambda\rvert\lesssim 1.2\times 10^{-4}$:
 
-$$
+
 \lvert g\rvert\lesssim\frac{1.2\times 10^{-4}}{8.5\times 10^{-5}}\sim\mathcal{O}(1).
-$$
+
 
 Order-unity dimensionless $g$ is already at the edge of the DESI residual ceiling once $\chi$ is normalized to the free grain — so BAO is informative, not empty.
 
@@ -197,16 +197,16 @@ Order-unity dimensionless $g$ is already at the edge of the DESI residual ceilin
 
 1. Stage 0 OOM (`scripts/r1/r1_bound_g_oom.py`).
 2. Profile likelihood on DESI DR2 BAO diagonal (`scripts/r1/r1_profile_lambda_bao.py`).
-   - Formal 95% (diag 7 bins): $\lvert\lambda\rvert\le 2.5\times 10^{-2}$ (weak, same as sister $\sigma_X$ profile).
-   - Working map from programme ceiling $\sigma_X<1.5\times 10^{-4}$: $\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}$, $\lvert g\rvert\lesssim 1.45$.
-   - Artefact: `results/r1_lambda_profile/`.
+ - Formal 95% (diag 7 bins): $\lvert\lambda\rvert\le 2.5\times 10^{-2}$ (weak, same as sister $\sigma_X$ profile).
+ - Working map from programme ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL): $\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}$, $\lvert g\rvert\lesssim 1.45$.
+ - Artefact: `results/r1_lambda_profile/`.
 3. Full 13×13 DESI DR2 covariance, fractional residual (`scripts/r1/r1_profile_lambda_fullcov.py`).
-   - Residual $r_i=\mathrm{data}_i/\mathrm{theory}_i-1$, $C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})$.
-   - $\chi^2_{\Lambda\mathrm{CDM}}\approx 29$ (13 dof); mean fractional offset $\sim 1\%$.
-   - Formal free $\sigma_{\mathrm{res}}$: best $\approx 1.7\times 10^{-2}$, 95% $\in[5\times 10^{-3},\,0.17]$; zero excluded at 95% only because cov inflation absorbs background tension — not a 1e−4 grain detection.
-   - At programme amplitudes ($\sigma_{\mathrm{free}}$, $1.5\times 10^{-4}$): $\Delta\ln\mathcal{L}\approx 0$ vs pure $\Lambda$CDM.
-   - `formal_informative_for_1e-4_grain = False`. `primary_bound = working`.
-   - Artefact: `results/r1_lambda_fullcov/`.
+ - Residual $r_i=\mathrm{data}_i/\mathrm{theory}_i-1$, $C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})$.
+ - $\chi^2_{\Lambda\mathrm{CDM}}\approx 29$ (13 dof); mean fractional offset $\sim 1\%$.
+ - Formal free $\sigma_{\mathrm{res}}$: best $\approx 1.7\times 10^{-2}$, 95% $\in[5\times 10^{-3},\,0.17]$; zero excluded at 95% only because cov inflation absorbs background tension — not a 1e−4 grain detection.
+ - At programme amplitudes ($\sigma_{\mathrm{free}}$, $1.5\times 10^{-4}$): $\Delta\ln\mathcal{L}\approx 0$ vs pure $\Lambda$CDM.
+ - `formal_informative_for_1e-4_grain = False`. `primary_bound = working`.
+ - Artefact: `results/r1_lambda_fullcov/`.
 4. Slip OOM / Maus consistency on working $\lambda$ — predicted $\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11$ ([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).
 5. F1–F4 falsifiers + A1 microphysics map + short paper draft (`NOTE_uniqueness_residual_grain.md`).
 6. Optional: joint background+$\sigma_{\mathrm{res}}$ (float $r_d$ or $\Omega_m$); cluster mask test; influence-functional rate beyond OOM.

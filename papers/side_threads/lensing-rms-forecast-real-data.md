@@ -115,17 +115,17 @@ pytest -q
 
 Define
 
-$$
+
 \mathcal{R} \equiv \frac{\text{published or forecast error scale}}{\mathrm{RMS}_{\mathrm{path}}(\mathrm{NP})}.
-$$
+
 
 $\mathcal{R}\gg 1$ means the external precision is still **coarser** than the programme corner (under the imperfect operator identification).
 
 | External scale | Value | $\mathcal{R}$ vs NP-B ($\sim 4.4\times 10^{-3}$) | $\mathcal{R}$ vs NP-A ($\sim 3.5\times 10^{-4}$) |
 |:---------------|:------|:-----------------------------------------------------|:-----------------------------------------------------|
 | Maus $\sigma(\gamma)$ | $0.11$ | $\sim 25\times$ | $\sim 310\times$ |
-| Sakr constant $\eta$ $\sim 5\%$ | $0.05$ | $\sim 11\times$ | $\sim 140\times$ |
-| Sakr free $(z,k)$ $\gtrsim 30\%$ | $0.30$ | $\sim 68\times$ | $\sim 860\times$ |
+| Sakr constant $\eta\sim 5\%$ | $0.05$ | $\sim 11\times$ | $\sim 140\times$ |
+| Sakr free $(z,k)\gtrsim 30\%$ | $0.30$ | $\sim 68\times$ | $\sim 860\times$ |
 | DESI MG $\sigma(\Sigma_0)$ | $0.045$ | $\sim 10\times$ | $\sim 130\times$ |
 | Stage-IV $m$-bias OOM | $2\times 10^{-3}$ | $\sim 0.5\times$ (**wrong operator**) | $\sim 6\times$ |
 | Historical prog. mean-slip floor | $0.03$ | $\sim 7\times$ | $\sim 85\times$ |
@@ -187,7 +187,7 @@ Until then, this note is the **gate**: real data say mean-slip / MG precision is
 | N-L1 | Euclid/LSST **will** detect $\mathrm{RMS}_{\mathrm{path}}\sim 10^{-3}$ |
 | N-L2 | Detection $\Rightarrow$ texture of dark energy |
 | N-L3 | Null $\Rightarrow$ full programme death |
-| N-L4 | $m\sim 10^{-3}$ $\equiv$ slip path-RMS sensitivity |
+| N-L4 | $m\sim 10^{-3}\equiv$ slip path-RMS sensitivity |
 | N-L5 | Operator equality $\gamma\equiv\eta\equiv\Sigma\equiv\mathrm{RMS}_{\mathrm{path}}$ |
 
 ---

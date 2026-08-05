@@ -13,17 +13,17 @@ MW–Andromeda / Virgo tables: [`ell-star-external-scales.md`](ell-star-external
 
 NP-A gives the arithmetic value
 
-$$
+
 \ell_{\ast}^{\mathrm{NP\text{-}A}}=2.0646\,\mathrm{Mpc} \quad(d=3,\ \sigma=10^{-5},\ H_0=67.4).
-$$
+
 
 I compare it to independent galaxy clustering and peculiar-velocity scales, without fitting them to $2.06\,\mathrm{Mpc}$.
 
 Standard $L_*$ correlation lengths are
 
-$$
+
 r_0(L_*)\sim 5\text{–}6\,h^{-1}\mathrm{Mpc} \approx 7.4\text{–}8.9\,\mathrm{Mpc} \quad(h=0.674),
-$$
+
 
 a factor $\sim 3.5$–$4.3$ above NP-A. Mean inter-galaxy separation $n_*^{-1/3}$ is $\sim 6.9\,\mathrm{Mpc}$. Peculiar-velocity coherence scales are tens to hundreds of $h^{-1}\mathrm{Mpc}$. None of these equals $2.06\,\mathrm{Mpc}$.
 
@@ -74,9 +74,9 @@ $r_0(L_*)$ is not $\approx 2.06\,\mathrm{Mpc}$. It is several times larger, in t
 
 For $n_*\sim 0.01\,h^{3}\mathrm{Mpc}^{-3}$ (order of $L_*$ space density),
 
-$$
+
 n_*^{-1/3}\approx 4.64\,h^{-1}\mathrm{Mpc}\approx 6.89\,\mathrm{Mpc}.
-$$
+
 
 | vs NP-A | vs $R_8$ |
 |:--------|:-----------|

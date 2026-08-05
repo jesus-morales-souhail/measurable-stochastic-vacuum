@@ -17,7 +17,7 @@ Gordon & Wands (2005) is a serious PRD calculation of **dark-energy isocurvature
 **Verified from the paper (not from memory of the word “tachyonic”):**
 
 1. **Seed is not Sorkin.** For a light canonical field during inflation they use
-   $\mathcal{P}_Q^{1/2}=H_{\mathrm{inf}}/(2\pi)$ [their Eq. (12)], not $\sigma_0=L_P/L_H\sim 10^{-61}$.
+ $\mathcal{P}_Q^{1/2}=H_{\mathrm{inf}}/(2\pi)$ [their Eq. (12)], not $\sigma_0=L_P/L_H\sim 10^{-61}$.
 2. **Frozen case is insufficient *for their target*** (large DE density contrast for the low CMB quadrupole), not “insufficient by $10^{56}$.”
 3. **Growth factor needed after inflation:** $\delta Q_f/\delta Q_i>45$ [Eq. (27)], equivalently $\phi_f/\phi_i>45$ [Eq. (32)] in their Mexican-hat construction — **order forty-five**, not $10^{56}$.
 4. The factor $\sim 45$ follows from the tension between the inflation energy needed for a frozen light field to meet their amplitude [Eq. (25)] and the **then-current** tensor bound [Eq. (26)].
@@ -48,15 +48,15 @@ Equating the two “tachyonic” words was a **category error** (same name, diff
 
 If the quintessence is light,
 
-$$
+
 \frac{\partial^2 V_Q}{\partial Q^2}\ll H_{\mathrm{inf}}^2,
-$$
+
 
 it acquires the standard spectrum [Eq. (12)]
 
-$$
+
 \mathcal{P}_Q^{1/2}(k)=\frac{H_{\mathrm{inf}}}{2\pi}.
-$$
+
 
 This is the **same structural mechanism** that seeds adiabatic curvature for the CMB when the inflaton fluctuates — textbook, not an ad hoc late-time dial.
 
@@ -64,15 +64,15 @@ This is the **same structural mechanism** that seeds adiabatic curvature for the
 
 From the low-quadrupole motivation and adiabatic violation they work with a large fractional DE density contrast of order [Eq. (15)]
 
-$$
+
 \frac{1}{\rho_Q}\mathcal{P}_{\rho_Q}^{1/2}=6\times 10^{-4}.
-$$
+
 
 Under slow-roll / potential domination this becomes a lower bound on field perturbations during DE domination [Eq. (24)]
 
-$$
+
 \mathcal{P}_Q^{1/2}>4\times 10^{-4}\,M_p
-$$
+
 
 (for $\epsilon_Q<1$).
 
@@ -80,15 +80,15 @@ $$
 
 If $\delta Q$ is constant from inflation to DE domination, Eqs. (24)+(12) force a **high** inflation scale [Eq. (25)]
 
-$$
+
 V_{\mathrm{inf}}^{1/4}>7\times 10^{-2}\,M_p,
-$$
+
 
 while then-current tensor limits gave [Eq. (26)]
 
-$$
-V_{\mathrm{inf}}^{1/4}<10^{-2}\,M_p\quad(95% CL).
-$$
+
+V_{\mathrm{inf}}^{1/4}<10^{-2}\,M_p.
+
 
 Hence frozen inflationary DE perturbations are **not of sufficient size for their quadrupole target without either high $H_{\mathrm{inf}}$ (excluded then) or post-inflation growth**.
 
@@ -96,15 +96,15 @@ Hence frozen inflationary DE perturbations are **not of sufficient size for thei
 
 Because $\delta Q\sim H_{\mathrm{inf}}/(2\pi)$ and $H\sim V^{1/2}/(\sqrt{3}M_p)$, the ratio of energy-scale bounds $\sim 7$ becomes a field-perturbation ratio of order $7^2\sim 50$. The paper states explicitly [Eq. (27)]
 
-$$
+
 \frac{\delta Q_f}{\delta Q_i}>45,
-$$
+
 
 and with $Q=\phi\theta$, $\delta\theta$ frozen [Eq. (32)]
 
-$$
+
 \frac{\phi_f}{\phi_i}>45.
-$$
+
 
 **Reproduce:** `python scripts/side/gordon_wands_factor45.py`.
 
@@ -112,7 +112,7 @@ $$
 
 Complex field; radial $\phi$ in a Mexican-hat potential [Eq. (37)]; trapped near the top during inflation; rolls to the minimum after inflation, amplifying angular / quintessence perturbations. DE today is a PNGB-like angular direction.
 
-This is a **derived** post-inflation map of $\mathcal{O}(10^{1}$–$10^{2})$ growth — not a free $10^{56}$ dial, and **not** the sister-repo excluded coherent GPE residual on BAO.
+This is a **derived** post-inflation map of $\mathcal{O}(10^{1}$–$10^{2})$ growth — not a free $10^{56}$ dial, and **not** the related-repo excluded coherent GPE residual on BAO.
 
 They also discuss difficulties (radial field as inflaton produces uncorrelated curvature; variable-decay reheating for anti-correlation). Those caveats are **in the paper**; I do not paper over them.
 
@@ -144,7 +144,7 @@ This note does **not** claim the checklist is done.
 | I2 | Fix or bound $H_{\mathrm{inf}}$ from tensors / $r$ (modern limits, not only 2005) | **Open** (science has not measured $H_{\mathrm{inf}}$) |
 | I3 | Map $\delta Q\to\delta\rho_Q/\rho_Q\to$ **BAO residual kernel** $\sigma_X$ (not only CMB isocurvature) | **Not done here** |
 | I4 | Covariance on DESI BAO distances under that map; re-run sister likelihood | **Not done** |
-| I5 | Check DESI ceiling $\sigma_X<1.5\times 10^{-4}$ a posteriori | Only after I3–I4 |
+| I5 | Check DESI ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) a posteriori | Only after I3–I4 |
 | I6 | Do **not** reintroduce Sorkin $\sigma_0$ back in as the seed | Label rule |
 
 Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DESI claim of this repo.
@@ -193,7 +193,7 @@ Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DE
 ```bash
 cd measurable-stochastic-vacuum
 python scripts/side/gordon_wands_factor45.py
-pytest -q  # includes factor-45 arithmetic test
+pytest -q # includes factor-45 arithmetic test
 ```
 
 **Paper PDF:** https://arxiv.org/pdf/astro-ph/0504132

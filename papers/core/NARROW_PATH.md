@@ -3,7 +3,7 @@
 **Author:** Jesús Morales Souhail
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 **Date:** July 2026
-**Status:** Architecture note grounded in verified identities · independent research, **not peer reviewed**
+**Status:** Architecture note grounded in verified identities · independent research, **preprint status**
 **Documented results / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)
 **Related empirical bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
@@ -17,7 +17,7 @@ If one discards “ad hoc” rescues of the Planck/Sorkin seed $\sigma_0\sim 10^
 2. **R3 — modest open gain** $G_O=e^{2r}$ with $r=\mathcal{O}(1)$ (e.g. $r=1.5\Rightarrow G_O\approx 20$);
 3. **R2 — anisotropic stress + light-path accumulation** $\mathrm{RMS}=\lvert \gamma-1 \rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}$, not a change of global $H(z)$.
 
-I write the causal chain carefully here (not as a naive product of three ad hoc factors), give **machine-checked numbers**, and isolate the **DESI-safe window** where the isotropic residual stays under the sister bound while the light-path slip RMS sits near $10^{-3}$.
+I write the causal chain carefully here (not as a naive product of three ad hoc factors), give **machine-checked numbers**, and isolate the **DESI-safe window** where the isotropic residual stays under the related bound while the light-path slip RMS sits near $10^{-3}$.
 
 ---
 
@@ -40,9 +40,9 @@ I write the causal chain carefully here (not as a naive product of three ad hoc 
 
 **Identity (exact under the counting hypothesis):**
 
-$$
+
 N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_{\ast}}{L_H}\right)^{d/2}, \qquad \ell_{\ast} = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
-$$
+
 
 **For $\sigma_{0,\mathrm{eff}}=10^{-5}$ and $L_H=c/H_0$ ($H_0=67.4$):**
 
@@ -61,9 +61,9 @@ $$
 
 **Identity:** $G_O=e^{2r}$. For $r=1.5$, $G_O=e^{3}\approx 20.086$.
 
-$$
+
 \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}} \quad\text{with soft defaults }G_U=G_F=1.
-$$
+
 
 | $\sigma_{0,\mathrm{eff}}$ | $r$ | $\sigma_{\mathrm{res}}$ |
 |:--------------------------|:----|:------------------------|
@@ -81,15 +81,15 @@ It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual 
 **Do not** force the signal into global $H(z)$ (BAO residual bound is already tight).
 Source anisotropic stress and read light:
 
-$$
+
 \pi_T = \varepsilon \sigma_{\mathrm{res}} \rho_X, \qquad \lvert \gamma-1 \rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m\lvert \delta_m \rvert} \quad (k\gg aH, \mu=1).
-$$
+
 
 **Path accumulation (iid patches):**
 
-$$
+
 N_{\mathrm{pat}} = \frac{\chi(z_s)}{\ell_{\ast}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert \gamma-1 \rvert_{\mathrm{loc}} \sqrt{N_{\mathrm{pat}}}.
-$$
+
 
 For $z_s=1.5$, $\chi\approx 4482 \mathrm{Mpc}$ (fiducial cosmology).
 
@@ -113,9 +113,9 @@ ell_* → sigma_0,eff (R1 counting)
 
 ### 3.2 Invalid shorthand
 
-$$
+
 \underbrace{10^{-5}}_{\text{seed}} \times \underbrace{20}_{G_O} \times \underbrace{46}_{\sqrt{N}} \not= \mathrm{RMS}_{\mathrm{path}}.
-$$
+
 
 That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch**, which is already $\propto\sigma_{\mathrm{res}}=G_O\sigma_0$, and the prefactor $2\varepsilon(\rho_X/\rho_m)/\lvert \delta_m \rvert$ is $\mathcal{O}(0.1$–$1)$, not $1$.
 
@@ -136,7 +136,7 @@ That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch
 
 ## 4. DESI-safe window (critical for coherence with null residual)
 
-The sister OU bound is $\sigma_X < 1.5\times 10^{-4}$ (95% CL) on the **isotropic residual** kernel.
+The related OU bound is $\sigma_X < 1.5\times 10^{-4}$ (95% CL) on the **isotropic residual** kernel.
 
 If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 
@@ -166,15 +166,15 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 
 **If** a principle fixes $\ell_{\ast}$ so that $\sigma_{0,\mathrm{eff}}$ lies in the DESI-safe mesoscopic window, **and** soft open gain is at most $G_O\sim\mathcal{O}(10)$, **and** $\varepsilon\sim\mathcal{O}(1)$, then:
 
-$$
+
 \mathrm{RMS}_{\mathrm{path}}(\lvert \gamma-1 \rvert) \sim 10^{-3}\text{–}10^{-4} \quad\text{at }z_s\sim 1.5,
-$$
+
 
 while the isotropic BAO residual remains
 
-$$
+
 \sigma_{\mathrm{res}} \le 1.5\times 10^{-4} \quad\text{(sister bound)}.
-$$
+
 
 That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_{\ast}$.
 
@@ -204,7 +204,7 @@ Same care as the $d=3$–specificity lock: no over-read of a positive coincidenc
 | Path RMS at NP-B (this repo, kinematics) | $\sim 4\times 10^{-3}$ at $z_s=1.5$ | `lib_verified` / light-cone atlas |
 | Path RMS at NP-A | $\sim 3.5\times 10^{-4}$ | same |
 | Indicative mean-slip floor used earlier in programme | $\sigma_{\mathrm{exp}}\sim 0.03$ | Option 0 / wall notes (order-of-magnitude) |
-| Current published DESI-era slip (Maus et al.) | $\gamma=1.17\pm 0.11$ $\Rightarrow$ $\lvert\gamma-1\rvert$ uncertainty $\mathcal{O}(0.1)$ | arXiv:2505.20656 |
+| Current published DESI-era slip (Maus et al.) | $\gamma=1.17\pm 0.11\Rightarrow\lvert\gamma-1\rvert$ uncertainty $\mathcal{O}(0.1)$ | arXiv:2505.20656 |
 
 **Reading:** $\mathcal{O}(10^{-3})$ path RMS is **far below** current published slip errors ($\mathcal{O}(0.1)$). Stage-IV surveys (Euclid, LSST/Rubin) aim at percent-level growth/lensing and multiplicative-bias control near $10^{-3}$ in **shear calibration**, but that is **not** the same statement as “the survey measures *this* path-RMS statistic of stochastic slip wrinkles at $10^{-3}$.”
 

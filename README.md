@@ -37,13 +37,13 @@ If `pytest` is green, the algebraic identities I rely on still hold.
 ## Layout
 
 ```
-papers/core/           stable notes
-papers/r1_kernel/      residual scale, coupling, CF4 kinematics
-papers/closed_walls/   routes I already killed with numbers
-papers/side_threads/   digressions
-papers/work_packages/  longer notes
+papers/core/ stable notes
+papers/r1_kernel/ residual scale, coupling, CF4 kinematics
+papers/closed_walls/ routes I already killed with numbers
+papers/side_threads/ digressions
+papers/work_packages/ longer notes
 scripts/core|r1|closed|side
-tests/  results/  data/
+tests/ results/ data/
 ```
 
 ---

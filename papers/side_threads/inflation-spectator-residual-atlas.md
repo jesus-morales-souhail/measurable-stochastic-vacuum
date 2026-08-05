@@ -19,9 +19,9 @@ This note answers the next question for **this** programme:
 
 **Result (verified arithmetic):** at the BK-class edge $r\sim 0.036$,
 
-$$
+
 \frac{\delta Q}{M_p}\sim 3\times 10^{-6}.
-$$
+
 
 A frozen, very flat DE potential ($\varepsilon_Q\sim 10^{-4}$) still sits **orders below** $10^{-5}$.
 But **$A\sim 45$** (Gordon–Wands roll) **and** a mild $\varepsilon_Q\sim 0.05$ land $\sigma_\rho$ in the **$10^{-5}$–$10^{-4}$** decade — the same decade as the related DESI ceiling and Euclid residual targets — **without any $10^{56}$ dial**.
@@ -46,15 +46,15 @@ If there is a crack, it is here — **change the seed physics**, then ask which 
 
 Scalar amplitude $A_s\simeq 2.1\times 10^{-9}$ (Planck-class). Tensor-to-scalar ratio $r$. In reduced Planck units,
 
-$$
+
 \frac{H_{\mathrm{inf}}}{M_p}=\pi\sqrt{\frac{r A_s}{2}},\qquad \frac{\delta Q}{M_p}=\frac{H_{\mathrm{inf}}}{2\pi M_p}=\sqrt{\frac{r A_s}{8}}.
-$$
+
 
 Potential-dominated fractional density contrast (OOM, flat gauge):
 
-$$
+
 \sigma_\rho\equiv\left| \frac{\delta\rho_Q}{\rho_Q}\right| \approx\sqrt{2\varepsilon_Q}\;A\;\frac{\delta Q_i}{M_p}, \qquad \varepsilon_Q=\frac{M_p^2}{2}\left(\frac{V_Q'}{V_Q}\right)^2,
-$$
+
 
 with post-inflation field growth $A=\delta Q_f/\delta Q_i$ (Gordon & Wands: $A>45$ for *their* target).
 
@@ -128,7 +128,7 @@ This is the gap that is **not** a free parameter:
 
 | Gap in the theory chain | Status |
 |:------------------------|:-------|
-| Map $\sigma_\rho\to$ **BAO distance residual kernel** used in sister OU likelihood | **Not derived** — largest remaining theory step |
+| Map $\sigma_\rho\to$ **BAO distance residual kernel** used in related OU likelihood | **Not derived** — largest remaining theory step |
 | Covariance of stochastic residual from inflationary spectator | **Not derived** |
 | Modern update of G&W tensor arithmetic (2005 $V^{1/4}$ numbers → current $r$) | **Done at OOM** in this atlas for $\delta Q$; full G&W quadrupole re-fit not done |
 | Proof that DE was light during inflation | Assumption |
@@ -170,5 +170,5 @@ cd measurable-stochastic-vacuum
 pytest -q
 python scripts/side/gordon_wands_factor45.py
 python scripts/side/inflation_spectator_residual_atlas.py
-python scripts/gap_two_targets.py  # related repository: Sorkin contrast
+python scripts/gap_two_targets.py # related repository: Sorkin contrast
 ```

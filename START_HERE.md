@@ -3,7 +3,7 @@
 Jesús Morales Souhail · July 2026
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-This folder is dense. You do not need to open everything.
+This folder is large; start with the table below.
 
 I split the programme into three repos so claims do not get mixed:
 
@@ -17,7 +17,7 @@ The scientific question: can vacuum / dark-energy noise sit near $10^{-5}$–$10
 On the data side I already have $\sigma_X < 1.5\times 10^{-4}$ (95% CL).
 On the theory side the working picture is $\ell_{\ast}\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ under a few axioms I write down explicitly.
 
-If I sat down to write a short paper, this is what I would use:
+Short-paper outline:
 [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).
 
 ---
@@ -29,15 +29,15 @@ START_HERE.md
 README.md
 BOUNDARY.md
 papers/
-  what-i-would-put-in-a-paper.md
-  INDEX.md
-  core/
-  r1_kernel/
-  closed_walls/
-  side_threads/
-  work_packages/
+ what-i-would-put-in-a-paper.md
+ INDEX.md
+ core/
+ r1_kernel/
+ closed_walls/
+ side_threads/
+ work_packages/
 scripts/...
-tests/  results/  data/
+tests/ results/ data/
 ```
 
 ## Reading paths

@@ -14,14 +14,13 @@ Code: [`scripts/r1/r1_t12_bbks_peaks.py`](../../scripts/r1/r1_t12_bbks_peaks.py)
 
 For a Gaussian field smoothed with window $W(kR)$:
 
-$$
-\sigma_j^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,k^{2j}\,W^2(kR)
-$$
 
-$$
+\sigma_j^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,k^{2j}\,W^2(kR)
+
+
 \gamma_{\mathrm{BBKS}}=\frac{\sigma_1^2}{\sigma_0\sigma_2},\qquad
 R_{\ast}=\sqrt{3}\,\frac{\sigma_1}{\sigma_2}.
-$$
+
 
 $R_{\ast}$ is the curvature radius of peaks (scale of the peak tip), not the filter radius $R$.
 
@@ -60,9 +59,9 @@ For residual counting of independent domains, $R_{\mathrm{nl}}$ (or $\ell_{\math
 
 Goal: derive, as far as honesty allows,
 
-$$
+
 \ell_{\ast}\sim R_{\mathrm{nl}}
-$$
+
 
 for a residual vacuum sector, without fitting DESI.
 
@@ -74,9 +73,9 @@ Introduce a residual scalar sector $\chi$ (the programme’s stochastic residual
 
 ### B.2 Coupling to matter (postulate P1)
 
-$$
+
 \mathcal{L}_{\mathrm{int}}=g\,\chi\,\delta_m \quad\text{(or }g\,\chi\,\rho_m\text{ density coupling).}
-$$
+
 
 Not derived here: value of $g$. Only the scale structure of the interaction is used.
 
@@ -89,9 +88,9 @@ Input, not re-derived: the classical pointer basis for late-time matter is organ
 
 If $\delta_m$ is classical and only coherent inside patches of size $R_{\mathrm{nl}}$, the interaction Hamiltonian for $\chi$ is a sum of nearly independent contributions from each patch:
 
-$$
+
 H_{\mathrm{int}}\sim g\sum_{p}\chi_p\,m_p,
-$$
+
 
 where $\chi_p$ is the mean of $\chi$ on patch $p$ and $m_p$ is the matter content of that patch.
 
@@ -100,15 +99,15 @@ coherences of $\chi$ between configurations that differ within a single patch fa
 
 Thus the effective residual free field after decoherence is the patch-averaged field
 
-$$
+
 \chi_{\mathrm{eff}}(p)=\frac{1}{V_p}\int_{p}\chi,
-$$
+
 
 i.e. an IR description with cell size
 
-$$
+
 \ell_{\ast}\sim R_{\mathrm{nl}}.
-$$
+
 
 This step is the closest thing to a derivation available without a full QFT-on-inhomogeneous-background calculation:
 *if* $\chi$ couples to classical $\delta_m$ structured on $R_{\mathrm{nl}}$, *then* the residual that remains quantum/stochastic at late times is coarse-grained at $R_{\mathrm{nl}}$.
@@ -117,9 +116,9 @@ This step is the closest thing to a derivation available without a full QFT-on-i
 
 With one residual degree of freedom per patch in a Hubble volume,
 
-$$
+
 N=\Bigl(\frac{L_H}{R_{\mathrm{nl}}}\Bigr)^{3},\qquad \sigma=\frac{1}{\sqrt{N}}=\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5},
-$$
+
 
 under the DESI ceiling (T1.1 numbers).
 

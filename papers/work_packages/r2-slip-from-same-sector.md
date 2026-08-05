@@ -24,9 +24,9 @@ This is the correct **operator** for the SDiff gap (shear not cancelled by $T_{\
 
 ## 2. Local map (standard sub-horizon GR)
 
-$$
+
 \pi_T = \varepsilon \sigma \rho_X, \qquad \lvert \gamma-1 \rvert = 2\varepsilon\sigma\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}.
-$$
+
 
 Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_T$ amplitude.
 
@@ -34,9 +34,9 @@ Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_T$ ampli
 
 ## 3. Path accumulation
 
-$$
+
 N_{\mathrm{pat}}=\frac{\chi}{\ell_{\ast}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert \gamma-1 \rvert_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}} \quad\text{(iid zero-mean patches)}.
-$$
+
 
 For $z_s=1.5$, $\chi\sim 4.5\times 10^{3} \mathrm{Mpc}$, Mpc-scale cells give $\sqrt{N}=\mathcal{O}(10$–$10^{2})$.
 

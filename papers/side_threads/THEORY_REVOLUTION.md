@@ -88,7 +88,7 @@ Anisotropic stress $\pi_T$ wrinkles $\Phi,\Psi$; photons accumulate lensing/ISW-
 |:-----------|:-----|
 | [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) | Empirical claim set (nulls, bounds) |
 | **this repo** | Theory package + verified kinematics |
-| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Wrong-scale method notes only |
+| [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | Wrong scale method notes only |
 
 ---
 

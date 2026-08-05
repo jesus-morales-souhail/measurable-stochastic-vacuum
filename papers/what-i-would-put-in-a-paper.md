@@ -52,7 +52,7 @@ Main note: [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_unique
 
 | Number | Caveat |
 |:-------|:-------|
-| $\sigma_X<1.5\times 10^{-4}$ | related analysis, their kernel |
+| $\sigma_X<1.5\times 10^{-4}$ (95% CL) | related analysis, their kernel |
 | $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ | stated $P(k)$, $\sigma_8$, $h$ |
 | $\sigma_{\mathrm{free}}\approx 8.5\times 10^{-5}$ | if $\ell_{\ast}=R_{\mathrm{nl}}$, $d=3$ |
 | $\lvert g\rvert\lesssim 1.45$ | from ceiling / $\sigma_{\mathrm{free}}$ |

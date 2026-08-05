@@ -16,9 +16,9 @@ Documented results: [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) (gated 
 
 Under the counting hypothesis for the DE residual sector,
 
-$$
+
 N_{\mathrm{eff}}=\left(\frac{L}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}}=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\left(\frac{\ell_{\ast}}{L}\right)^{d/2}.
-$$
+
 
 The excluded Sorkin seed is the special case $\ell_{\ast}=L_P$, $d=2$ (holographic count on the Hubble sphere): $\sigma_0\sim 10^{-61}$.
 

@@ -20,12 +20,12 @@ This note separates two kinds of incompleteness in the stochastic vacuum program
 1. **Measured walls.** Candidate mechanisms that start from a Planck / Sorkin seed $\sigma_0\sim 10^{-61}$ and try to reach telescope-band residuals $\sim 10^{-5}$–$10^{-4}$ have been audited with numbers: soft squeeze requires $r\sim 64$; geometric path accumulation supplies only $\sqrt{N}=\mathcal{O}(10$–$10^{2})$; soft avalanche gains are $\mathcal{O}(1)$. These channels are not “still open.” They are insufficient by measured factors.
 
 2. **Open kernel (load-bearing).** Under the counting hypothesis
-   $N_{\mathrm{eff}}=(L/\ell_{\ast})^d$, $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L)^{d/2}$,
-   a residual already in the $10^{-5}$ band requires a mesoscopic cell $\ell_{\ast}\sim 0.04$–$14\,\mathrm{Mpc}$ ($d\in\{2,3,4\}$), not $L_P$. The programme states, and does not fill:
+ $N_{\mathrm{eff}}=(L/\ell_{\ast})^d$, $\sigma_{0,\mathrm{eff}}=(\ell_{\ast}/L)^{d/2}$,
+ a residual already in the $10^{-5}$ band requires a mesoscopic cell $\ell_{\ast}\sim 0.04$–$14\,\mathrm{Mpc}$ ($d\in\{2,3,4\}$), not $L_P$. The programme states, and does not fill:
 
-   > What principle fixes a galactic/mesoscopic counting cell for the DE sector, distinct from the Planck/holographic cell?
+ > What principle fixes a galactic/mesoscopic counting cell for the DE sector, distinct from the Planck/holographic cell?
 
-   That question is declared absent, not “tried and failed.”
+ That question is declared absent, not “tried and failed.”
 
 I record criteria for what would count as a principle, list hypothesis classes R1a–R1d (including a nonlinear structure scale class R1d that sits numerically near the existing landscape), state excluded moves (no DESI-tuned $\ell_{\ast}$; no S$_8$-tuned $\ell_{\ast}$), and give a posteriori falsifiers. I do not claim that $\ell_{\ast}$ is $R_8$, that S$_8$ is explained, or that any R1 class is derived.
 
@@ -57,7 +57,7 @@ These are not two incomplete answers to the same question. They are different qu
 
 ## 3. Walls already measured (not open)
 
-All entries below are verified algebraically or numerically in-repo or in the sister amplification-route scans. Full identities: [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md); sister Act III: `papers/amplification-gap.md`.
+All entries below are verified algebraically or numerically in-repo or in the related amplification-route scans. Full identities: [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md); sister amplification: `papers/amplification-gap.md`.
 
 | Candidate rescue of a pure Sorkin seed | What was checked | Result |
 |:---------------------------------------|:-----------------|:-------|
@@ -77,9 +77,9 @@ Each row is a wall with measured height. Publishing “maybe soft amplification 
 
 ### 4.1 Counting hypothesis (verified kinematics)
 
-$$
+
 N_{\mathrm{eff}}=\Bigl(\frac{L}{\ell_{\ast}}\Bigr)^{d},\qquad \sigma_{0,\mathrm{eff}}=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{\ast}}{L}\Bigr)^{d/2},\qquad \ell_{\ast}=L\,\sigma_{0,\mathrm{eff}}^{2/d}.
-$$
+
 
 Sorkin is the special case $d=2$, $\ell_{\ast}=L_P$, $L=L_H$: $\sigma_0\sim 10^{-61}$.
 

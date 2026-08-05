@@ -3,7 +3,7 @@
 **Author:** Jesús Morales Souhail
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 **Date:** July 2026
-**Status:** Derivation + verified numerical atlas · independent research, **not peer reviewed**
+**Status:** Derivation + verified numerical atlas · independent research, **preprint status**
 **Code:** `scripts/core/lib_verified.py` · `scripts/core/light_cone_atlas.py`
 **Data:** [`results/light_cone_integration_table.csv`](../../results/light_cone_integration_table.csv)
 **Figure:** [`figures/past_light_cone_rms.png`](../../figures/past_light_cone_rms.png)
@@ -15,17 +15,17 @@
 
 The Minimal Model keeps a $\Lambda$CDM bulk and a mesoscopic grain $\sigma$. Local slip from Einstein + Morales sits at
 
-$$
+
 \lvert\gamma-1\rvert_{\mathrm{loc}}\sim 10^{-4}
-$$
+
 
 under the DESI residual ceiling — deep in the self-shielding regime relative to $\sigma_{\mathrm{exp}}\sim 0.03$.
 
 The **only** amplification allowed by GR + statistics without undeclared free parameters is **incoherent accumulation along the past null cone**:
 
-$$
+
 \mathrm{RMS}_{\mathrm{path}} = C \cdot \lvert\gamma-1\rvert_{\mathrm{loc}} \sqrt{\frac{\chi}{\ell_{\ast}}} \qquad (C=1\ \mathrm{for\ iid\ patches}).
-$$
+
 
 For $\chi\sim(3$–$6)\times 10^{3} \mathrm{Mpc}$ and $\ell_{*}\sim 1$–$2 \mathrm{Mpc}$, $\sqrt{N}=\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$70)$.
 Native $\sim 10^{-5}$–$10^{-4}$ becomes path $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ — at the **edge** of deep weak-lensing / RSD×lensing precision, **not** a unphysical breakthrough of the wall, and **not** a rescue of $\sigma\sim 10^{-61}$.
@@ -36,9 +36,9 @@ Native $\sim 10^{-5}$–$10^{-4}$ becomes path $\mathrm{RMS}\sim 10^{-4}$–$10^
 
 ### 1.1 Native slip (local cell) — from Einstein + Morales
 
-$$
+
 \lvert\gamma-1\rvert_{\mathrm{loc}} = 2 \varepsilon \sigma_{\mathrm{res}} \frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^{3} \lvert\delta_{m}\rvert}. \tag{W}
-$$
+
 
 With $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$, $\varepsilon=1$, $\lvert\delta_{m}\rvert=1$:
 
@@ -51,39 +51,39 @@ With $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$, $\varepsilon=1$, $\lvert\delt
 
 **Local-only measurement** hits the self-shielding wall (S):
 
-$$
+
 \lvert\gamma-1\rvert_{\mathrm{loc}} \ll \sigma_{\mathrm{exp}}(\gamma)\sim 0.03\text{–}0.1.
-$$
+
 
 ### 1.2 Accumulation factor — pure path statistics
 
 Photons from source redshift $z_s$ travel comoving distance $\chi(z_s)$.
 If the grain correlation length is $\ell_{*}$, the number of independent patches is
 
-$$
+
 N_{\mathrm{pat}}=\frac{\chi(z_s)}{\ell_{*}}.
-$$
+
 
 If each patch adds an independent zero-mean wrinkle of RMS $s=\lvert\gamma-1\rvert_{\mathrm{loc}}$, then
 
-$$
+
 \mathrm{Var}\Bigl(\sum_{i=1}^{N} x_i\Bigr) = N s^{2} \quad\Rightarrow\quad \mathrm{RMS}_{\mathrm{path}} = s\sqrt{N} = \lvert\gamma-1\rvert_{\mathrm{loc}} \sqrt{\frac{\chi}{\ell_{*}}}.
-$$
+
 
 Hence **$C=1$** when $s$ is already the per-patch RMS.
 $C\neq 1$ only if one redefines what “per-patch amplitude” means (window functions, redshift weighting, survey mask). Those are $\mathcal{O}(1)$ survey factors, not $10^{56}$.
 
 ### 1.3 Grain–seed link (Minimal Model, $d=3$)
 
-$$
+
 \sigma=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}, \qquad \ell_{*}=L_{H} \sigma^{2/3}, \qquad L_{H}=c/H_{0}.
-$$
+
 
 Optional soft open map (still not free amplification):
 
-$$
+
 \sigma_{\mathrm{res}}=G_{O} \sigma,\qquad G_{O}=e^{2r},\quad r=\mathcal{O}(1),
-$$
+
 
 with **DESI-safe** $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$.
 
@@ -91,11 +91,11 @@ with **DESI-safe** $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$.
 
 ## 2. Master formula (Minimal Model + past light cone)
 
-$$
+
 \sigma_{\mathrm{res}} = G_O \sigma,\quad G_O\in[1,20],\quad \sigma_{\mathrm{res}}\le 1.5\times 10^{-4}.
 \lvert\gamma-1\rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\Omega_{\Lambda 0}}{\Omega_{m0}(1+z)^3\lvert\delta_m\rvert}.
 \mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\frac{\chi(z_s)}{\ell_{\ast}(\sigma)}}.
-$$
+
 
 **Unphysical constructions**
 
@@ -133,7 +133,7 @@ Full table: `results/light_cone_integration_table.csv` (64 rows).
 
 ### 3.3 End-to-end $\mathrm{RMS}_{\mathrm{path}}$ (the detection window)
 
-| Scenario | $\sigma_{\mathrm{res}}$ | DESI residual OK? | $z_s=1.5$ $\mathrm{RMS}_{\mathrm{path}}$ | vs $\sigma_{\mathrm{exp}}\sim 0.03$ |
+| Scenario | $\sigma_{\mathrm{res}}$ | DESI residual OK? | $z_s=1.5\mathrm{RMS}_{\mathrm{path}}$ | vs $\sigma_{\mathrm{exp}}\sim 0.03$ |
 |:---------|:------------------------|:------------------|:----------------------------------------|:-----------------------------------|
 | Sorkin | $\sim 10^{-61}$ | yes | $\ll 10^{-50}$ | invisible |
 | **NP-A** | $10^{-5}$ | yes | $\mathbf{3.5\times 10^{-4}}$ | still $\sim 100\times$ below $0.03$ |

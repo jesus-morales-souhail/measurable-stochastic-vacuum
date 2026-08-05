@@ -30,18 +30,18 @@ Deviations from the plan should be stated explicitly in any application to DESI 
 **H1 (scale).**
 The two-point structure of a residual field $\chi$ (or a residual proxy correlated with anisotropic stress / BAO residual template) has correlation length
 
-$$
+
 \ell_{\ast}\in [0.5,\,3]\,R_{\mathrm{nl}}\approx [4.3,\,25.8]\,\mathrm{Mpc}
-$$
+
 
 when the residual amplitude is in the programme window $\sigma\sim 10^{-5}$–$1.5\times 10^{-4}$.
 
 **H2 (matter lock).**
 $\chi$ is positively correlated with a nonlinear mask built only from matter:
 
-$$
+
 m=\mathbf{1}\{\delta_m(R_{\mathrm{nl}})>\delta_c\},\qquad \delta_c\in\{1.0,\,1.5\}
-$$
+
 
 (pre-registered defaults: $\delta_c=1.0$ primary; $1.5$ robustness).
 
@@ -192,7 +192,7 @@ $r = g\,\sigma_{\mathrm{free}}\,\delta + \mathrm{noise}$.
 | Cross residual×mask positive | Yes — $\approx +0.60$ |
 | Cross residual×random mask | Null — $\sim 0$ |
 | White residual control | $r_e$ small; cross $\sim 0$ |
-| Wrong-scale (100 Mpc) injection | $r_e\sim 96\,\mathrm{Mpc}$ outside allowed band |
+| Wrong scale (100 Mpc) injection | $r_e\sim 96\,\mathrm{Mpc}$ outside allowed band |
 | Ensemble fraction meeting criteria | 12/12 |
 | Pipeline validation | estimators and kill/support logic work on mock |
 

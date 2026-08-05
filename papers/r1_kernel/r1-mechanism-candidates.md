@@ -106,12 +106,12 @@ Below: tiers by weight. “Serious” ≠ “correct.”
 ## Recommended order of attack
 
 ```
-1) T1.1  Averaging domain L_av := R_nl (from sigma(R)=1 only)
-         → residual variance on that domain vs sigma_X ceiling
-2) T1.2  Residual operator supported where |δ_m| ~ O(1)
-         → correlation length of that mask from P(k)
-3) T1.3  Only if (1)–(2) need an IR-cutoff language
-4) T2.*  Methods borrow, not primary claims
+1) T1.1 Averaging domain L_av := R_nl (from sigma(R)=1 only)
+ → residual variance on that domain vs sigma_X ceiling
+2) T1.2 Residual operator supported where |δ_m| ~ O(1)
+ → correlation length of that mask from P(k)
+3) T1.3 Only if (1)–(2) need an IR-cutoff language
+4) T2.* Methods borrow, not primary claims
 ```
 
 Each step: blind length from matter, then a posteriori DESI / $r_0$ / $R_8$.

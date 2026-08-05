@@ -57,9 +57,9 @@ I do not compete with early DE for $H_0$. I work on residual amplitude and scale
 ## Priority
 
 ```
-A  g from averaging / edge
-B  residual × structure tests   (parallel with A)
-C  information metric           (later)
+A g from averaging / edge
+B residual × structure tests (parallel with A)
+C information metric (later)
 ```
 
 **Matter kinematics already done (not residual detection):**

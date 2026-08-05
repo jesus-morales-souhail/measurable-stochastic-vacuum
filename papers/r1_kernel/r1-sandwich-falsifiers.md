@@ -24,7 +24,7 @@ Primary gates: (F1) BAO residual amplitude at fixed $\ell_{\ast}=R_{\mathrm{nl}}
 |:---------|:------|:-------|
 | $R_{\mathrm{nl}}$ | $\approx 8.61\,\mathrm{Mpc}$ | $\sigma(R)=1$ matter integral |
 | $\sigma_{\mathrm{free}}$ | $\approx 8.5\times 10^{-5}$ | $d=3$ counting |
-| $\lvert\lambda\rvert_{\mathrm{work}}$ | $\lesssim 1.24\times 10^{-4}$ | DESI $\sigma_X<1.5\times 10^{-4}$ map |
+| $\lvert\lambda\rvert_{\mathrm{work}}$ | $\lesssim 1.24\times 10^{-4}$ | DESI $\sigma_X<1.5\times 10^{-4}$ (95% CL) map |
 | $\lvert g\rvert_{\mathrm{work}}$ | $\lesssim 1.45$ | $\lambda=g\sigma_{\mathrm{free}}$ |
 | $\lvert\gamma-1\rvert_{\mathrm{loc}}$ (free / work) | $\sim 4\times 10^{-4}$ / $\sim 6\times 10^{-4}$ | slip wall, $\varepsilon=1$, $z=0.8$ |
 | $\mathrm{RMS}_{\mathrm{path}}$ (free / work) | $\sim$ few $\times 10^{-3}$ | path accumulation $z_s=1.5$ |
@@ -42,7 +42,7 @@ Exact numbers are written to `results/r1_falsifiers/`.
 
 | ID | Observable | Prediction | External floor | Kills sandwich-band if… | Supports if… |
 |:---|:-----------|:-----------|:---------------|:------------------------|:-------------|
-| F1 | BAO residual $\sigma_{\mathrm{res}}$ | $\sigma_{\mathrm{free}}\sim 8.5\times 10^{-5}$ | DESI $\sigma_X<1.5\times 10^{-4}$ (sister) | Measured residual $\gg 1.5\times 10^{-4}$ at fixed $\ell_{\ast}=R_{\mathrm{nl}}$ with no derived damping | Residual stays under ceiling with $\ell_{\ast}$ locked |
+| F1 | BAO residual $\sigma_{\mathrm{res}}$ | $\sigma_{\mathrm{free}}\sim 8.5\times 10^{-5}$ | DESI $\sigma_X<1.5\times 10^{-4}$ (95% CL) (sister) | Measured residual $\gg 1.5\times 10^{-4}$ at fixed $\ell_{\ast}=R_{\mathrm{nl}}$ with no derived damping | Residual stays under ceiling with $\ell_{\ast}$ locked |
 | F2 | Residual correlation length $\ell_{\ast}$ | $\sim R_{\mathrm{nl}}$ (band $\mathcal{O}(1)$) | — (requires residual detection) | Free residual $\xi$ at $\sigma\sim 10^{-4}$ measured $\ll 1\,\mathrm{Mpc}$ or $\gg 100\,\mathrm{Mpc}$ | Measured $\ell_{\ast}\in[0.5,3]R_{\mathrm{nl}}$ |
 | F3a | Local $\lvert\gamma-1\rvert$ | $\sim 10^{-4}$ | Maus $\sigma(\gamma)=0.11$ | Required mean slip $\gg 0.1$ for $\varepsilon\sim 1$ at DESI-safe $\sigma$ (would need huge $\varepsilon$) | Predicted $\ll$ Maus (today: automatic consistency) |
 | F3b | Path $\mathrm{RMS}$ | $\sim 10^{-3}$ | Sakr constant $\eta\sim 0.05$; free $(z,k)\sim 0.3$ | Stochastic path-RMS proxy measured far above prediction without systematics budget | Remains below mean-$\eta$ floors |
@@ -69,13 +69,13 @@ See [`lensing-rms-forecast-real-data.md`](../side_threads/lensing-rms-forecast-r
 
 ```
 A0–A1 true (residual χ couples locally to δ_m)?
-  NO  → sandwich N/A; scale undetermined
-  YES → ell_* ~ R_nl (theorem)
-        │
-        ├─ residual ξ ≪ 1 Mpc or ≫ 100 Mpc at σ~1e-4? → F2 KILL
-        ├─ σ_res ≫ 1.5e-4 at fixed ell_*=R_nl, no damping? → F1 KILL
-        ├─ slip/path far above Maus/Sakr without systematics? → F3 tension
-        └─ all gates green → package lives; Euclid residual is next precision
+ NO → sandwich N/A; scale undetermined
+ YES → ell_* ~ R_nl (theorem)
+ │
+ ├─ residual ξ ≪ 1 Mpc or ≫ 100 Mpc at σ~1e-4? → F2 KILL
+ ├─ σ_res ≫ 1.5e-4 at fixed ell_*=R_nl, no damping? → F1 KILL
+ ├─ slip/path far above Maus/Sakr without systematics? → F3 tension
+ └─ all gates green → package lives; Euclid residual is next precision
 ```
 
 Levels aligned with [`wp5-falsification.md`](../work_packages/wp5-falsification.md): F1/F2 failures are L2 (candidate death for this principle form), not L0 identity failure.

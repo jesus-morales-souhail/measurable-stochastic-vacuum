@@ -45,9 +45,9 @@ Under A1–A2, residual field configurations of $\chi$ that differ *within* a si
 
 The *effective free residual* after decoherence is therefore the patch-averaged field
 
-$$
+
 \chi_{\mathrm{eff}}(p)=\frac{1}{V_p}\int_p\chi\,.
-$$
+
 
 A counting cell $\ell_{\ast}\ll R_{\mathrm{nl}}$ does not describe free residual DOF — those modes are decohered or absorbed into the classical matter record.
 
@@ -57,9 +57,9 @@ A counting cell $\ell_{\ast}\ll R_{\mathrm{nl}}$ does not describe free residual
 
 Suppose one claims a free residual cell $\ell\gg R_{\mathrm{nl}}$. Under A1, the interaction on that super-cell is a sum of nearly independent contributions from $N_p=(\ell/R_{\mathrm{nl}})^d$ nonlinear patches. The residual DOF that couple independently are therefore the patch modes, not a single coherent super-cell mode. Averaging independent patch residuals gives
 
-$$
+
 \sigma_{\mathrm{eff}}(\ell) =\frac{\sigma(R_{\mathrm{nl}})}{\sqrt{N_p}} =\sigma_{\mathrm{count}}(R_{\mathrm{nl}})\cdot\Bigl(\frac{R_{\mathrm{nl}}}{\ell}\Bigr)^{d/2},
-$$
+
 
 which is exactly the counting result as if the cell were $R_{\mathrm{nl}}$ (the naive $\sigma_{\mathrm{count}}(\ell)$ overcounts free residual variance).
 
@@ -69,9 +69,9 @@ which is exactly the counting result as if the cell were $R_{\mathrm{nl}}$ (the 
 
 Under A0–A4:
 
-$$
+
 \boxed{\ell_{\ast}\sim R_{\mathrm{nl}}\qquad\text{(unique free residual counting scale up to $\mathcal{O}(1)$ geometry).}}
-$$
+
 
 Order-unity geometric factors come from the *same* filtered matter field (not free dials):
 

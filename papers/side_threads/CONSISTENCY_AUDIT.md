@@ -13,7 +13,7 @@
 |:-----|:-----|:--------------------|
 | **stochastic-dark-energy-ou** | DESI BAO residuals, $\sigma_X$ bound, model kills, amplifier audit | **Yes** (empirical) |
 | **measurable-stochastic-vacuum** | Minimal Model, wall, light-cone path, unit-tested theory | **Yes** (theory kinematics) |
-| **stochastic-de-exploratory-notes** | Optics / wrong-scale pedagogy | **No** |
+| **stochastic-de-exploratory-notes** | Optics / wrong scale pedagogy | **No** |
 
 I keep these three roles separate on purpose. Mixing them is how overclaims start.
 
@@ -37,9 +37,9 @@ I keep these three roles separate on purpose. Mixing them is how overclaims star
 
 ## 3. Canonical equations (single chain)
 
-$$
+
 \begin{aligned} &(E1)\quad k^{2}\Psi=-4\pi G a^{2}\rho_m\delta_m\\ &(E2)\quad k^{2}(\Phi-\Psi)=8\pi G a^{2}\pi_T\\ &(M1)\quad \pi_T=\varepsilon\sigma_X\rho_X\\ &(W)\quad \lvert\gamma-1\rvert=2\varepsilon\sigma_X\frac{\rho_X}{\rho_m\lvert\delta_m\rvert}\\ &(P)\quad \mathrm{RMS}_{\mathrm{path}}=\lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}\\ &(B)\quad \sigma=(\ell_{\ast}/L_H)^{3/2}\quad(d=3)\\ &(G)\quad \sigma_{\mathrm{res}}=e^{2r}\sigma,\quad r=\mathcal{O}(1) \end{aligned}
-$$
+
 
 **Invalid identities** (I have seen these slip into drafts):
 
@@ -54,7 +54,7 @@ $$
 | Fix | Action |
 |:----|:-------|
 | GitHub KaTeX thin spaces ` ` | Removed across all three repos |
-| Multi-line `$$` with lone `=` | Collapsed to single-line displays |
+| Multi-line `` with lone `=` | Collapsed to single-line displays |
 | Broken `\boxed{...}` after cleanup | Removed; equations left plain |
 | Broken `\tag{W}}` | Fixed to `\tag{W}` |
 | Brace mismatches in display math | Balanced in theory papers |
