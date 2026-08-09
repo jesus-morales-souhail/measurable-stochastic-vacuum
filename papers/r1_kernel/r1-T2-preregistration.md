@@ -179,6 +179,8 @@ T2 kills the sandwich scale claim if any hold:
 ---
 
 ## 9. End-to-end real-data application (DESI multipoles + CF4)
+**Covariance note:** figure5 multipole tables publish per-bin $\xi_\ell$ errors only (no full RascalC multipole covariance in that text product). Residual $\chi^2$ therefore uses those diagonal $\xi$ errors. For BAO $\alpha$ residual pipelines in the sister repo, see `covariance-desi-dr2-full.md` (official 13×13 Gaussian BAO cov).
+
 
 Code: [`scripts/r1/r1_T2_real_pipeline.py`](../../scripts/r1/r1_T2_real_pipeline.py)
 Results: `results/r1_T2_real/`
