@@ -1,6 +1,6 @@
 T2 REAL-DATA PIPELINE (no synthetic mock fields)
 =======================================================
-DESI multipoles: /home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/stochastic-dark-energy-ou/data/desi_dr2_local/dr2_data/dr2-bao-zenodo/figure5
+DESI multipoles: dr2-bao-zenodo/figure5
 tracers: 8
 sum chi2 residual (xi0+xi2): 98.6  (ndof~368)
 
@@ -30,4 +30,3 @@ FLAGS:
   note: DESI multipole residuals test data-minus-theory clustering, not a 3D residual density map at R_nl. CF4 tests real peculiar-velocity coherence.
 
 This replaces the synthetic T2 mock. No injected Gaussian fields.
-

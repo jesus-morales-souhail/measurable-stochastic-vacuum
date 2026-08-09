@@ -194,9 +194,9 @@ $r = g\,\sigma_{\mathrm{free}}\,\delta + \mathrm{noise}$.
 | White residual control | $r_e$ small; cross $\sim 0$ |
 | Wrong scale (100 Mpc) injection | $r_e\sim 96\,\mathrm{Mpc}$ outside allowed band |
 | Ensemble fraction meeting criteria | 12/12 |
-| Pipeline validation | estimators and kill/support logic work on mock |
+| Pipeline validation | runs on real DESI multipoles + CF4 (no synthetic fields) |
 
-This shows the estimators and kill/support logic work when the hypothesis is true in the mock. It does not prove nature realises the residual.
+This shows the estimators run end-to-end on public data. It does not prove nature realises a residual density field at $R_{\mathrm{nl}}$. Multipole residuals are data-minus-theory clustering; CF4 is peculiar-velocity structure only.
 
 ```bash
 python scripts/r1/r1_T2_real_pipeline.py

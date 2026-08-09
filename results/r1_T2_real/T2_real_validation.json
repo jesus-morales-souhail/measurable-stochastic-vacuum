@@ -5,7 +5,7 @@
     4.305,
     25.83
   ],
-  "desi_multipoles_dir": "/home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/stochastic-dark-energy-ou/data/desi_dr2_local/dr2_data/dr2-bao-zenodo/figure5",
+  "desi_multipoles_dir": "dr2-bao-zenodo/figure5",
   "multipole_tracers": [
     {
       "tracer": "BGS_BRIGHT-21.35_0.1_0.4",

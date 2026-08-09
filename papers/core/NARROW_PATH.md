@@ -182,7 +182,7 @@ That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin)
 
 **Do not write or imply:**
 
-> If deep lensing finds $\mathrm{RMS}_{\mathrm{path}}\sim 10^{-3}$, we have discovered the texture of dark energy; if not, the model is mathematically discarded with no excuses.
+> If deep lensing finds $\mathrm{RMS}_{\mathrm{path}}\sim 10^{-3}$, we would have a residual signal worth a dedicated paper; that is a conditional, not a claim of detection; if not, the model is mathematically discarded with no excuses.
 
 That sentence fails on **both** sides. I have caught myself wanting to write versions of it; both readings are wrong.
 

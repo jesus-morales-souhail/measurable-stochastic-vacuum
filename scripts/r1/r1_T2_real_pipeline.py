@@ -29,6 +29,19 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "results" / "r1_T2_real"
+
+def _rel_public_path(p: Path) -> str:
+    """Repo-relative path for public logs (no absolute home paths)."""
+    try:
+        return str(p.resolve().relative_to(ROOT.resolve()))
+    except Exception:
+        # outside this repo: keep only a short tail
+        parts = Path(p).parts
+        if "dr2-bao-zenodo" in parts:
+            i = parts.index("dr2-bao-zenodo")
+            return str(Path(*parts[i:]))
+        return Path(p).name
+
 OUT.mkdir(parents=True, exist_ok=True)
 
 # DESI DR2 multipoles live in the data repo (sibling or env)
@@ -350,7 +363,7 @@ def main() -> int:
         "protocol": "T2 real-data application",
         "R_nl_Mpc": R_NL,
         "allowed_ell_band_Mpc": list(ALLOWED),
-        "desi_multipoles_dir": str(mp_dir),
+        "desi_multipoles_dir": _rel_public_path(Path(mp_dir)),
         "multipole_tracers": multi,
         "cf4": cf4,
         "flags": flags,
@@ -360,7 +373,7 @@ def main() -> int:
     lines = [
         "T2 REAL-DATA PIPELINE (no synthetic mock fields)",
         "=" * 55,
-        f"DESI multipoles: {mp_dir}",
+        f"DESI multipoles: {_rel_public_path(Path(mp_dir))}",
         f"tracers: {len(multi)}",
         f"sum chi2 residual (xi0+xi2): {chi2_tot:.1f}  (ndof~{ndof})",
         "",
