@@ -212,3 +212,4 @@ Order-unity dimensionless $g$ is already at the edge of the DESI residual ceilin
 6. Optional: joint background+$\sigma_{\mathrm{res}}$ (float $r_d$ or $\Omega_m$); cluster mask test; influence-functional rate beyond OOM.
 
 I bound the dimensionless response $\lambda$ (and $g$ under fixed $\chi$-normalisation) first with the DESI BAO residual likelihood at fixed $\ell_{\ast}=R_{\mathrm{nl}}$; use slip/lensing as operator checks and clusters only for nonlinear-mask geometry. Stage-0 already implies $\lvert\lambda\rvert\lesssim 10^{-4}$ and $\lvert g\rvert\lesssim\mathcal{O}(1)$.
+

@@ -5,3 +5,4 @@ Formal 95% |lambda| <= 2.506316e-02
 Working |lambda| <= 1.234801e-04 (from sigma_X < 1.5e-4)
 Working |g| <= 1.4499 (lambda = g * sigma_free)
 See papers/r1-bounding-g-plan.md
+

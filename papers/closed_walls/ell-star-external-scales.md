@@ -80,3 +80,4 @@ If any of these, computed without targeting $2.0646$, lands near NP-A or near th
 | Mesoscopic grain principle | still open |
 
 Not claimed: $\ell_{\ast}$ is the MW–Andromeda distance; Virgo proves the counting cell; mesoscopic grain solves $H_0$.
+

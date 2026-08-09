@@ -27,3 +27,4 @@ G_total soft                    : 20.086
 
 VERDICT: R3 soft = O(10) multiplier. Measurability ⇔ R1 mesoscopic seed
          (or a future derived hard-open map — not invented here).
+

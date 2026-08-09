@@ -159,3 +159,4 @@ Not the $\sim 9\%H_0$ tension (amplitude still short under DESI-safe residual).
 | N-P2 | $\ell_{\ast}=R_{\mathrm{nl}}$ proven |
 | N-P3 | $H_0$ tension explained |
 | N-P4 | EH transfer = final CAMB-precision $P(k)$ |
+

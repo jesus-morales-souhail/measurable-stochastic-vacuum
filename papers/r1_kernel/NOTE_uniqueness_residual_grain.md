@@ -208,3 +208,4 @@ Also useful: `r1-derivation-sandwich.md`, `r1-a1-microphysics.md`, `r1-sandwich-
 4. M. Maus et al., arXiv:2505.20656.
 5. Z. Sakr, Y. Zheng, S. Casas, arXiv:2501.07477.
 6. J. Morales Souhail, stochastic-dark-energy-ou and measurable-stochastic-vacuum (2026).
+

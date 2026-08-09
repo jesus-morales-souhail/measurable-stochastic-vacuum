@@ -74,3 +74,4 @@ Remaining variables (honest list — see JSON remaining_variables):
 
 Non-claims: matter kinematics only; no DE residual / Omega / H0 solution.
 Wrote results/r1_collapse_relief
+

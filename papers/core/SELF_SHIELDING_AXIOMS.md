@@ -76,3 +76,4 @@ Any “avoids black holes” claim needs effective volume, probe energy density,
 ## Citation rule
 
 Hard numerical/algebraic claims must appear in [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) and remain green under `pytest -q`.
+

@@ -63,7 +63,7 @@ Manuscript: `manuscript/PREPRINT.md`
 | 6 | [`TOPOLOGICAL_EDGE_ANALOGY.md`](../side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | analogy only |
 | 7 | Sister `PREPRINT.md` | empirical $\sigma_X$ bound |
 
-Not hard results: `THEORY_REVOLUTION.md`, exploratory optics sister, long WP discussion unless it restates verified identities.
+Not hard results: `minimal-theory-package.md`, exploratory optics sister, long WP discussion unless it restates verified identities.
 `r1-open-kernel.md`: walls vs kernel and scale arithmetic — not a derivation of $\ell_{\ast}=R_8$.
 CF4 notes: matter $v_{\mathrm{pec}}$ only — not $\sigma_X$ or $g$.
 
@@ -218,3 +218,4 @@ It is **not** a condensed-matter derivation of dark energy. I use it only as a p
 
 **Jesús Morales Souhail** · jmskjym@gmail.com · ORCID 0009-0000-7637-1818
 github.com/jesus-morales-souhail
+

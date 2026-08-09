@@ -274,3 +274,4 @@ python scripts/core/lib_verified.py
 
 Related documents:
 [`r1-counting-principle.md`](r1-counting-principle.md) · [`NARROW_PATH.md`](../core/NARROW_PATH.md) · [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) · [`wp5-falsification.md`](../work_packages/wp5-falsification.md) · [`FOR_REFEREES.md`](../core/FOR_REFEREES.md) · sister `papers/amplification-gap.md`
+

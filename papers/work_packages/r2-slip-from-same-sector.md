@@ -70,3 +70,4 @@ Full Boltzmann (hi_class/MGCAMB) only after $\sigma$ and $\varepsilon$ are princ
 | Local slip formula | **Closed** (under stated assumptions) |
 | $\sqrt{N}$ path | **Closed** (+ MC) |
 | Microscopic $\varepsilon$ | **Absent (declared)** |
+

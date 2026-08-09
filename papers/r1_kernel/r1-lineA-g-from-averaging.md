@@ -123,3 +123,4 @@ or support-weighted $\sigma\sim\sigma_{\mathrm{free}}\sqrt{f}$ depending on norm
 | GA2 | Gaussian proxy: $g_{\mathrm{eff}}\approx 0.5$–$1.4$(P1–P0) | executed |
 | GA3 | Matches DESI working bound order | consistency |
 | GA4 | Full $Q$ variance from N-body | open |
+

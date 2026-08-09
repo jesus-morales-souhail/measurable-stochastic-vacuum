@@ -63,3 +63,4 @@ Until derived, $r\sim 64$ is excluded as a free parameter (A3, A5).
 |:------|:-------|
 | Soft $G_O$ bound | **Closed** |
 | Hard bath | **Absent (declared)** |
+

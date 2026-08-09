@@ -18,3 +18,4 @@ THEOREM (under A0–A4): free residual counting cell ℓ_* is unique up to O(1):
 
 PRIMARY BOUND still: working |λ|≲1.24e-4, |g|≲1.45 (DESI σ_X).
 See papers/r1-derivation-sandwich.md
+

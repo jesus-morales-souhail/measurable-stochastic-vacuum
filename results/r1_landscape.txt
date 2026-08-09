@@ -21,3 +21,4 @@ mesoscopic/galactic (~kpc-Mpc), not Planck, for the residual to be
 telescope-measurable. The R1 programme's load-bearing question is:
   WHAT PRINCIPLE fixes a galactic-scale DE counting cell, distinct
   from the Planck/holographic one?  (Sorkin = L_P -> null by theorem.)
+

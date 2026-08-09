@@ -25,3 +25,4 @@ stochastic-de-exploratory-notes wrong scale method notes only
 
 Short paper map: [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).
 Hard results: [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md). CF4 notes are matter kinematics only.
+

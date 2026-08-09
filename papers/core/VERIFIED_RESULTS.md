@@ -284,3 +284,4 @@ python scripts/core/r2_light_path_accumulation.py
 2. Related repository: Morales Souhail, *stochastic-dark-energy-ou* — DESI residual bounds and amplifier audit.
 3. Maus et al., arXiv:2505.20656 — published slip $\gamma=\Phi/\Psi$ (used only as floor scale).
 4. Sakr et al., arXiv:2501.07477 — indicative $\eta$ forecast floors.
+

@@ -166,3 +166,4 @@ If I continue: cross-match top `1PGC` to named structures (labels only); optiona
 4. H. M. Courtois et al., A&A **670**, L15 (2023).
 5. R. B. Tully et al., ApJ **676**, 184 (2008).
 6. E. J. Shaya et al., ApJ **850**, 207 (2017).
+

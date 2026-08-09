@@ -20,3 +20,4 @@ READING:
   Upgrade path: N-body / constrained realisations for true Var(Q).
 
 See papers/r1_kernel/r1-lineA-g-from-averaging.md
+

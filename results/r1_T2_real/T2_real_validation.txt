@@ -30,3 +30,4 @@ FLAGS:
   note: DESI multipole residuals test data-minus-theory clustering, not a 3D residual density map at R_nl. CF4 tests real peculiar-velocity coherence.
 
 This replaces the synthetic T2 mock. No injected Gaussian fields.
+

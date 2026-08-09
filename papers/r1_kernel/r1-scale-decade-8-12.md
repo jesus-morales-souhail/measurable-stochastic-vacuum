@@ -78,3 +78,4 @@ Write-up: [`r1-principle-nonlinear-matter.md`](r1-principle-nonlinear-matter.md)
 Still not a completed microphysical derivation.
 
 Best open lead: a blind reason for an 8–12 Mpc cell. P $_\mathrm{nl}$ is the first principle-shaped attempt at that decade, not a finished answer.
+

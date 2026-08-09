@@ -77,3 +77,4 @@ Where peculiar motion competes with expansion near $R_{\mathrm{nl}}$. Does not r
 - Each formula is either derived, order-of-magnitude, or a postulate — labelled as such.
 
 Open work: better $g$ from averaging/SDiff, and residual–structure tests when residual maps exist.
+

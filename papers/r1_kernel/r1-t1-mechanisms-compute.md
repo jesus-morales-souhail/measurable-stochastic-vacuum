@@ -158,3 +158,4 @@ Geometry is viable. The sketch derives coarse-graining under stated postulates; 
 | N-M1 | Buchert explains $\Lambda$ |
 | N-M2 | Action-level decoherence derived |
 | N-M3 | $H_0$ tension solved |
+

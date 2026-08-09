@@ -99,3 +99,4 @@ Anisotropic stress $\pi_T$ wrinkles $\Phi,\Psi$; photons accumulate lensing/ISW-
 ---
 
 Cite [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) for documented results.
+

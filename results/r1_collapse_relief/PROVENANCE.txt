@@ -7,3 +7,4 @@ H0 convention: 75 km/s/Mpc (CF residual scale, not fitted)
 R_nl (repo geometry): 8.61 Mpc
 Neighbor radius: 10 Mpc
 Non-claims: not DE residual; not Omega; not free H0; not T2 residual x structure
+

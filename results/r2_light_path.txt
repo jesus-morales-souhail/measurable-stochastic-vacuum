@@ -55,3 +55,4 @@ VERDICT:
   Geometric gain ~ √N = O(10–100) for Mpc cells over Gpc paths.
   Measurable wrinkles still require WP1 mesoscopic σ_0,eff (or hard R3).
   Act IV inheritance confirmed with path integral language.
+

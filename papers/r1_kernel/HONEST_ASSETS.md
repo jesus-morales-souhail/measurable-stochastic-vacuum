@@ -35,3 +35,4 @@ I do not have private DESI spectra or private CF4 reductions.
 Independent research on public catalogs and public BAO products.
 No privileged data access. No residual detection claimed.
 CF4: published distances and redshifts; block and peak definitions are mine and are written in the notes.
+

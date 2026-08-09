@@ -122,3 +122,4 @@ After the fact, selecting a rare faint subsample with $r_0\sim 1.4\,h^{-1}\mathr
 | R0-2 | factor $\times 3.5$–$4.3$ above NP-A |
 | R0-3 | $n_*^{-1/3}\sim 6.9\,\mathrm{Mpc}$ ≠ NP-A |
 | R0-4 | $v_{\mathrm{pec}}$ coherence ≫ NP-A |
+

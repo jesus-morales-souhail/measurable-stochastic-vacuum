@@ -88,3 +88,4 @@ Until (1) is done, the only the solid positives are the **theorems of absence** 
 ## 7. Summary sentence
 
 > Jointly, the verified maps imply: isotropic residual and light-path slip are two faces of the same amplitude; soft open dynamics and geometric $\sqrt{N}$ are at most decades, not $10^{56}$; Sorkin counting remains a structural null; mesoscopic counting is the only soft-regime door to observability, and it is not yet derived from a principle.
+

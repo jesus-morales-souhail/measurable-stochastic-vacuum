@@ -19,3 +19,4 @@ Definitions:
 
 Non-claims: not DE residual; not Omega; not H0 solution; no free dials.
 Wrote results/r1_real_velocity_net/cf4_block_net.json
+

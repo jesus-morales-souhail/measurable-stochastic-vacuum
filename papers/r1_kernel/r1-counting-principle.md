@@ -84,3 +84,4 @@ Never tune $\ell_{\ast}$ to $R_8$ after inspecting S$_8$ either (same dial class
 
 WP2 takes $\sigma_{0,\mathrm{eff}}$ as input ([`r3-open-horizon-map.md`](../work_packages/r3-open-horizon-map.md)).
 Closing WP1 as a nature claim requires A0–A1 (or equivalent) from microphysics under criteria P1–P6 in [`r1-open-kernel.md`](r1-open-kernel.md); the scale form under those axioms is already the sandwich.
+

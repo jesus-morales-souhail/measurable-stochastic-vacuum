@@ -173,3 +173,4 @@ So A1 does not open a free $g\sim 10^{2}$ window: BAO residual already forces $\
 | N-A1 | Proof that Buchert $Q$ is dark energy |
 | N-A2 | Detection of $\chi$ |
 | N-A3 | Unique microphysics selected by data |
+

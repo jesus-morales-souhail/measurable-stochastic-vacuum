@@ -86,3 +86,4 @@ I keep these three roles separate on purpose. Mixing them is how overclaims star
 ---
 
 Regenerate numbers: `pytest -q && python scripts/core/light_cone_atlas.py && python scripts/core/simple_as_lambda.py`
+

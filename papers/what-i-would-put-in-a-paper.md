@@ -63,3 +63,4 @@ Main note: [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_unique
 ## Still open
 
 Microphysics of $\chi$ and $g$. Residual × structure on survey residual maps. CF4 is line-of-sight only. $R_{\mathrm{nl}}$ with a Boltzmann $P(k)$ is a refinement in the same decade.
+
