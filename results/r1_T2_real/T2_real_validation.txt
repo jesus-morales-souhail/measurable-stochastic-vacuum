@@ -1,0 +1,32 @@
+T2 REAL-DATA PIPELINE (no synthetic mock fields)
+=======================================================
+DESI multipoles: /home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/stochastic-dark-energy-ou/data/desi_dr2_local/dr2_data/dr2-bao-zenodo/figure5
+tracers: 8
+sum chi2 residual (xi0+xi2): 98.6  (ndof~368)
+
+Per tracer (xi0 residual):
+  BGS_BRIGHT-21.35_0.1_0.4: chi2_0=2.9 r_e0=83.98317732898107 cross=0.567 p_null=0.010
+  ELG_LOPnotqso_0.8_1.1: chi2_0=4.0 r_e0=89.02036758263773 cross=-0.164 p_null=0.185
+  ELG_LOPnotqso_1.1_1.6: chi2_0=22.3 r_e0=74.39192137745725 cross=-0.188 p_null=0.190
+  LRG+ELG_LOPnotqso_0.8_1.1: chi2_0=4.2 r_e0=104.45416896052448 cross=-0.025 p_null=0.410
+  LRG_0.4_0.6: chi2_0=2.3 r_e0=107.81616731414756 cross=0.133 p_null=0.285
+  LRG_0.6_0.8: chi2_0=2.7 r_e0=117.08194846127776 cross=0.089 p_null=0.290
+  LRG_0.8_1.1: chi2_0=10.7 r_e0=95.89777712925775 cross=0.076 p_null=0.360
+  QSO_0.8_2.1: chi2_0=9.9 r_e0=84.66980395149652 cross=0.076 p_null=0.360
+
+CF4 peculiar-velocity blocks:
+  n_gal=12000 n_blocks=1071
+  r_e(v_pec)=19.5 Mpc
+  allowed band [4.3, 25.8] Mpc
+  in_band=True
+
+FLAGS:
+  used_synthetic_fields: False
+  used_desi_dr2_multipoles: True
+  used_cf4_table2: True
+  multipole_residual_chi2_total: 98.62787299257121
+  multipole_residual_ndof: 368
+  cf4_r_e_in_R_nl_band: True
+  note: DESI multipole residuals test data-minus-theory clustering, not a 3D residual density map at R_nl. CF4 tests real peculiar-velocity coherence.
+
+This replaces the synthetic T2 mock. No injected Gaussian fields.

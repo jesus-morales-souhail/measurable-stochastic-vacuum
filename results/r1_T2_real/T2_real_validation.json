@@ -1,0 +1,253 @@
+{
+  "protocol": "T2 real-data application",
+  "R_nl_Mpc": 8.61,
+  "allowed_ell_band_Mpc": [
+    4.305,
+    25.83
+  ],
+  "desi_multipoles_dir": "/home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/stochastic-dark-energy-ou/data/desi_dr2_local/dr2_data/dr2-bao-zenodo/figure5",
+  "multipole_tracers": [
+    {
+      "tracer": "BGS_BRIGHT-21.35_0.1_0.4",
+      "n_bins": 23,
+      "s_min": 62.04065523703916,
+      "s_max": 150.01527904468193,
+      "chi2_xi0_residual": 2.867624317781108,
+      "chi2_xi2_residual": 4.865814986893448,
+      "r_e_residual_xi0_Mpc_h": 83.98317732898107,
+      "r_e_residual_xi2_Mpc_h": 109.71136246354348,
+      "cross_r0_x_xi0": {
+        "cross_obs": 0.5672722859715229,
+        "cross_null_mean": 0.005868350551818469,
+        "cross_null_std": 0.2023555355290197,
+        "p_shuffle": 0.01
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": 0.02284840281619153,
+        "cross_null_mean": -0.010793456372903725,
+        "cross_null_std": 0.19702161248561495,
+        "p_shuffle": 0.46
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    },
+    {
+      "tracer": "ELG_LOPnotqso_0.8_1.1",
+      "n_bins": 23,
+      "s_min": 62.041010680190155,
+      "s_max": 150.0156962660609,
+      "chi2_xi0_residual": 3.9959824524628504,
+      "chi2_xi2_residual": 4.81346841242138,
+      "r_e_residual_xi0_Mpc_h": 89.02036758263773,
+      "r_e_residual_xi2_Mpc_h": 97.30212408037616,
+      "cross_r0_x_xi0": {
+        "cross_obs": -0.16424969736085976,
+        "cross_null_mean": 0.031081988982751642,
+        "cross_null_std": 0.21396764957081166,
+        "p_shuffle": 0.185
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": 0.18252014775020398,
+        "cross_null_mean": 0.02276785849448843,
+        "cross_null_std": 0.20840080954599566,
+        "p_shuffle": 0.27
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    },
+    {
+      "tracer": "ELG_LOPnotqso_1.1_1.6",
+      "n_bins": 23,
+      "s_min": 62.041515494207694,
+      "s_max": 150.01630393747092,
+      "chi2_xi0_residual": 22.290645646117305,
+      "chi2_xi2_residual": 9.37247872754165,
+      "r_e_residual_xi0_Mpc_h": 74.39192137745725,
+      "r_e_residual_xi2_Mpc_h": 104.60432014598328,
+      "cross_r0_x_xi0": {
+        "cross_obs": -0.18822124905427315,
+        "cross_null_mean": -0.004614304654341577,
+        "cross_null_std": 0.21614437004847142,
+        "p_shuffle": 0.19
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": 0.09938149861257858,
+        "cross_null_mean": -0.0008811097059250528,
+        "cross_null_std": 0.2051212564198303,
+        "p_shuffle": 0.34
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    },
+    {
+      "tracer": "LRG+ELG_LOPnotqso_0.8_1.1",
+      "n_bins": 23,
+      "s_min": 62.04101526655396,
+      "s_max": 150.01574103651666,
+      "chi2_xi0_residual": 4.1745785324518065,
+      "chi2_xi2_residual": 2.095286049310455,
+      "r_e_residual_xi0_Mpc_h": 104.45416896052448,
+      "r_e_residual_xi2_Mpc_h": 83.66316104742445,
+      "cross_r0_x_xi0": {
+        "cross_obs": -0.024929030083318787,
+        "cross_null_mean": 0.014870701807230302,
+        "cross_null_std": 0.19735575677239847,
+        "p_shuffle": 0.41
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": 0.2306854233559435,
+        "cross_null_mean": 0.01689193326204088,
+        "cross_null_std": 0.21749573826604177,
+        "p_shuffle": 0.16
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    },
+    {
+      "tracer": "LRG_0.4_0.6",
+      "n_bins": 23,
+      "s_min": 62.040382324733606,
+      "s_max": 150.01511944517452,
+      "chi2_xi0_residual": 2.3089241260275406,
+      "chi2_xi2_residual": 3.842634898946117,
+      "r_e_residual_xi0_Mpc_h": 107.81616731414756,
+      "r_e_residual_xi2_Mpc_h": 85.1373719319545,
+      "cross_r0_x_xi0": {
+        "cross_obs": 0.1327216156319328,
+        "cross_null_mean": -0.004341641510712491,
+        "cross_null_std": 0.20929731580125127,
+        "p_shuffle": 0.285
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": 0.018385959915415383,
+        "cross_null_mean": -0.009471713065321968,
+        "cross_null_std": 0.2201911951948018,
+        "p_shuffle": 0.43
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    },
+    {
+      "tracer": "LRG_0.6_0.8",
+      "n_bins": 23,
+      "s_min": 62.04027171573317,
+      "s_max": 150.01504739237686,
+      "chi2_xi0_residual": 2.7378781638782983,
+      "chi2_xi2_residual": 1.4678660394158358,
+      "r_e_residual_xi0_Mpc_h": 117.08194846127776,
+      "r_e_residual_xi2_Mpc_h": 101.6303255535987,
+      "cross_r0_x_xi0": {
+        "cross_obs": 0.08869351149251649,
+        "cross_null_mean": -0.014545973204148726,
+        "cross_null_std": 0.202642790457826,
+        "p_shuffle": 0.29
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": -0.022518279657440094,
+        "cross_null_mean": 0.010280163418205843,
+        "cross_null_std": 0.19732366529721054,
+        "p_shuffle": 0.46
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    },
+    {
+      "tracer": "LRG_0.8_1.1",
+      "n_bins": 23,
+      "s_min": 62.041111103409655,
+      "s_max": 150.01575047567394,
+      "chi2_xi0_residual": 10.705038911439576,
+      "chi2_xi2_residual": 4.405435898111251,
+      "r_e_residual_xi0_Mpc_h": 95.89777712925775,
+      "r_e_residual_xi2_Mpc_h": 80.61226368658416,
+      "cross_r0_x_xi0": {
+        "cross_obs": 0.07623514373434262,
+        "cross_null_mean": -0.00475500322951721,
+        "cross_null_std": 0.19701601695606152,
+        "p_shuffle": 0.36
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": 0.226601742812176,
+        "cross_null_mean": 0.0009340072665277044,
+        "cross_null_std": 0.21481329396575227,
+        "p_shuffle": 0.13
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    },
+    {
+      "tracer": "QSO_0.8_2.1",
+      "n_bins": 23,
+      "s_min": 62.042058708515725,
+      "s_max": 150.01700813483944,
+      "chi2_xi0_residual": 9.909000247632338,
+      "chi2_xi2_residual": 8.775215582140252,
+      "r_e_residual_xi0_Mpc_h": 84.66980395149652,
+      "r_e_residual_xi2_Mpc_h": 89.08308155572125,
+      "cross_r0_x_xi0": {
+        "cross_obs": 0.07599810842712983,
+        "cross_null_mean": 0.010453878617739767,
+        "cross_null_std": 0.20845078493568334,
+        "p_shuffle": 0.36
+      },
+      "cross_r2_x_xi2": {
+        "cross_obs": 0.16885302518040612,
+        "cross_null_mean": -0.02214418787603799,
+        "cross_null_std": 0.20665768522776543,
+        "p_shuffle": 0.19
+      },
+      "note": "Multipole residual scale is set by BAO/clustering scales in the file (tens of Mpc/h), not the R_nl galaxy-density sandwich band."
+    }
+  ],
+  "cf4": {
+    "catalog": "Cosmicflows-4 table2",
+    "n_galaxies_used": 12000,
+    "n_blocks": 1071,
+    "block_side_Mpc": 20.0,
+    "H0_km_s_Mpc": 75.0,
+    "vpec_rms_km_s": 1608.933413290459,
+    "r_e_vpec_block_Mpc": 19.5,
+    "R_nl_Mpc": 8.61,
+    "allowed_band_Mpc": [
+      4.305,
+      25.83
+    ],
+    "r_e_in_allowed_band": true,
+    "C_of_r_centers_Mpc": [
+      9.833333333333332,
+      19.5,
+      29.166666666666664,
+      38.83333333333333,
+      48.5,
+      58.166666666666664,
+      67.83333333333333,
+      77.5,
+      87.16666666666666,
+      96.83333333333333,
+      106.5,
+      116.16666666666666,
+      125.83333333333333,
+      135.5,
+      145.16666666666666
+    ],
+    "C_over_C0": [
+      null,
+      0.18929949036213622,
+      0.1446121488101591,
+      0.057053580476356856,
+      0.07854771967707101,
+      0.04344330984489916,
+      0.039053117901101865,
+      0.06054329652308156,
+      0.032395843868794724,
+      0.009708144565056174,
+      0.014510728267185932,
+      0.00894311960318832,
+      0.008265697044471911,
+      0.021711623487745756,
+      -0.011587861987556885
+    ]
+  },
+  "flags": {
+    "used_synthetic_fields": false,
+    "used_desi_dr2_multipoles": true,
+    "used_cf4_table2": true,
+    "multipole_residual_chi2_total": 98.62787299257121,
+    "multipole_residual_ndof": 368,
+    "cf4_r_e_in_R_nl_band": true,
+    "note": "DESI multipole residuals test data-minus-theory clustering, not a 3D residual density map at R_nl. CF4 tests real peculiar-velocity coherence."
+  }
+}

@@ -5,7 +5,7 @@ Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/
 *Pre-registered protocol for a residual–matter cross test. Not a claim of Stage-IV detection.*
 
 Related: [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md), [`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)
-Code: [`scripts/r1/r1_stage4_test_design.py`](../../scripts/r1/r1_stage4_test_design.py), [`scripts/r1/r1_T2_mock_pipeline.py`](../../scripts/r1/r1_T2_mock_pipeline.py)
+Code: [`scripts/r1/r1_stage4_test_design.py`](../../scripts/r1/r1_stage4_test_design.py), [`scripts/r1/r1_T2_real_pipeline.py`](../../scripts/r1/r1_T2_real_pipeline.py)
 
 ---
 
@@ -178,9 +178,9 @@ T2 kills the sandwich scale claim if any hold:
 
 ---
 
-## 9. End-to-end mock validation (pipeline proof)
+## 9. End-to-end real-data application (DESI multipoles + CF4)
 
-Code: [`scripts/r1/r1_T2_mock_pipeline.py`](../../scripts/r1/r1_T2_mock_pipeline.py)
+Code: [`scripts/r1/r1_T2_real_pipeline.py`](../../scripts/r1/r1_T2_real_pipeline.py)
 Results: `results/r1_T2_mock/`
 
 Synthetic 2D Gaussian matter field with corr $\sim R_{\mathrm{nl}}$; residual injected as

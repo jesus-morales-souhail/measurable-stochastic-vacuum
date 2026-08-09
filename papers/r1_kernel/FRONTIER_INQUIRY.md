@@ -48,7 +48,7 @@ I do not compete with early DE for $H_0$. I work on residual amplitude and scale
 | SDiff edge residual | same order if $\varepsilon\sim\mathcal{O}(1)$ |
 | influence functional with matter bath | still to formalise beyond OOM $\Gamma$ |
 
-**Survey fingerprint.** Residual correlated with nonlinear structure near $R_{\mathrm{nl}}$ (roughly 4–26 Mpc). Protocol: `r1-T2-preregistration.md`. Synthetic mock: `scripts/r1/r1_T2_mock_pipeline.py`.
+**Survey fingerprint.** Residual correlated with nonlinear structure near $R_{\mathrm{nl}}$ (roughly 4–26 Mpc). Protocol: `r1-T2-preregistration.md`. Real-data T2: `scripts/r1/r1_T2_real_pipeline.py`.
 
 **Information on the light cone.** Path RMS $s\sqrt{N}$ is solid kinematics. Shannon / von Neumann language needs a defined ensemble; later.
 

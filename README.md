@@ -61,7 +61,7 @@ Main write-up: [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_
 
 ```bash
 python scripts/r1/r1_sandwich_derivation.py
-python scripts/r1/r1_T2_mock_pipeline.py
+python scripts/r1/r1_T2_real_pipeline.py
 python scripts/r1/r1_real_velocity_block_net.py
 python scripts/r1/r1_collapse_relief_cf4.py
 ```
