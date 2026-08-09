@@ -110,9 +110,10 @@ python scripts/r1/r1_collapse_relief_cf4.py
 | [`side_threads/inflation-spectator-seed-gordon-wands.md`](side_threads/inflation-spectator-seed-gordon-wands.md) | inflation spectator |
 | [`side_threads/inflation-spectator-residual-atlas.md`](side_threads/inflation-spectator-residual-atlas.md) | residual windows |
 | [`side_threads/lensing-rms-forecast-real-data.md`](side_threads/lensing-rms-forecast-real-data.md) | path RMS vs Maus/Sakr |
-| [`side_threads/TOPOLOGICAL_EDGE_ANALOGY.md`](side_threads/TOPOLOGICAL_EDGE_ANALOGY.md) | pedagogy |
-| [`side_threads/THEORY_REVOLUTION.md`](side_threads/THEORY_REVOLUTION.md) | manifesto (not hard claims) |
+| [`side_threads/THEORY_REVOLUTION.md`](side_threads/THEORY_REVOLUTION.md) | theory package note (not hard claims) |
 | [`side_threads/CONSISTENCY_AUDIT.md`](side_threads/CONSISTENCY_AUDIT.md) | cross-repo check |
+
+Pedagogy only (other repo): [TOPOLOGICAL_EDGE_ANALOGY](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes/blob/main/papers/TOPOLOGICAL_EDGE_ANALOGY.md)
 
 ---
 
