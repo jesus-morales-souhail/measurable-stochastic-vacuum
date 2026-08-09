@@ -39,17 +39,38 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 from lib_verified import hubble_radius_mpc, sigma_from_count  # noqa: E402
 from r1_sigma_R_full import H, SIGMA8, find_R_nl, make_Pk_unnorm, normalize_A  # noqa: E402
+def _load_desi_alpha():
+    """Load real DESI DR2 alpha from sibling data pack if present."""
+    cand = [
+        ROOT.parent / "stochastic-dark-energy-ou" / "scripts" / "desi_dr2_data.py",
+    ]
+    for c in cand:
+        if c.is_file():
+            import importlib.util
+            spec = importlib.util.spec_from_file_location("desi_dr2_data", c)
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            d = mod.load_alpha_dv(prefer_file=True)
+            print("r1_profile_lambda data:", d["source"])
+            return d["z"], d["alpha"], d["sigma"], d["S_z"]
+    # published table fallback (real DESI numbers, not mock draws)
+    z = np.array([0.295, 0.510, 0.706, 0.934, 1.321, 1.484, 2.330])
+    a = np.array([1.0030, 0.9947, 1.0016, 0.9960, 1.0020, 0.9963, 1.0008])
+    s = np.array([0.0097, 0.0072, 0.0057, 0.0049, 0.0063, 0.0088, 0.0120])
+    sz = np.array([-0.284, -0.462, -0.595, -0.719, -0.870, -0.917, -1.070])
+    print("r1_profile_lambda data: published DR2 table fallback")
+    return z, a, s, sz
 
-# DESI DR2 BAO (public summary, same as sister repo)
-Z_EFF = np.array([0.295, 0.510, 0.706, 0.934, 1.321, 1.484, 2.330])
-ALPHA = np.array([1.0030, 0.9947, 1.0016, 0.9960, 1.0020, 0.9963, 1.0008])
-SIGMA_OBS = np.array([0.0097, 0.0072, 0.0057, 0.0049, 0.0063, 0.0088, 0.0120])
-S_Z = np.array([-0.284, -0.462, -0.595, -0.719, -0.870, -0.917, -1.070])
+
+
+Z_EFF, ALPHA, SIGMA_OBS, S_Z = _load_desi_alpha()
 RES = ALPHA - 1.0
 X = np.log(1.0 + Z_EFF)
 N = len(Z_EFF)
 
 DESI_WORKING = 1.5e-4  # programme working 95% ceiling (paper)
+
+
 
 
 def sigma_free_from_Rnl() -> tuple[float, float]:

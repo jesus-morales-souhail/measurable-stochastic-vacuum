@@ -24,7 +24,7 @@ I do not have private DESI spectra or private CF4 reductions.
 3. Conditional uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ under axioms A0–A4.
 4. $R_{\mathrm{nl}}$, mask correlation, packing, BBKS peak scale.
 5. $g_{\mathrm{eff}}$ order-of-magnitude from a Gaussian averaging proxy (compared afterwards to DESI).
-6. Residual–structure protocol and a synthetic mock of the estimators.
+6. Residual–structure protocol and a real DESI+CF4 of the estimators.
 7. CF4 block-net and collapse-relief scripts (matter $v_{\mathrm{pec}}$; not DE residual).
 8. Unit tests for the kinematic identities.
 

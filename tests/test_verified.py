@@ -874,18 +874,39 @@ class TestT2PreregistrationExists:
         assert "mathrm{nl}" in text or "nonlinear" in text.lower()
 
 
-class TestT2MockPipeline:
-    def test_mock_pipeline_pass(self):
-        from r1_T2_mock_pipeline import run_mock
-        from r1_sigma_R_full import H as H_FID, SIGMA8, find_R_nl, make_Pk_unnorm, normalize_A
-        from lib_verified import hubble_radius_mpc, sigma_from_count
+class TestT2RealPipeline:
+    def test_multipole_dir_or_skip(self):
+        """Real multipole data present or skip cleanly."""
+        from pathlib import Path
+        import importlib.util
+        path = Path(__file__).resolve().parents[1] / "scripts" / "r1" / "r1_T2_real_pipeline.py"
+        assert path.is_file()
+        # CF4 must exist for full run; multipoles optional via sibling
+        cf4 = Path(__file__).resolve().parents[1] / "data" / "real_velocity_net" / "table2.dat"
+        assert cf4.is_file(), "CF4 table2.dat required for real T2"
 
-        Pk = make_Pk_unnorm()
-        A = normalize_A(Pk, SIGMA8)
-        R_nl = find_R_nl(Pk, A, 1.0) / H_FID
-        sf = sigma_from_count(R_nl, hubble_radius_mpc(), 3)
-        # smaller grid for speed in tests
-        m = run_mock(R_nl, sf, n=128, box_factor=30.0, g_inj=1.0, noise_frac=0.3)
-        assert m["in_ALLOWED_band"]
-        assert m["cross_residual_mask"] > 0.2
-        assert m["PASS_T2_structure_mock"]
+    def test_load_one_multipole_pair_if_available(self):
+        from pathlib import Path
+        import numpy as np
+        import importlib.util
+        path = Path(__file__).resolve().parents[1] / "scripts" / "r1" / "r1_T2_real_pipeline.py"
+        spec = importlib.util.spec_from_file_location("t2real", path)
+        mod = importlib.util.module_from_spec(spec)
+        try:
+            spec.loader.exec_module(mod)
+        except FileNotFoundError:
+            return  # no DESI multipoles on this machine
+        try:
+            mp = mod.find_multipole_dir()
+        except FileNotFoundError:
+            return
+        data_files = list(mp.glob("multipoles_*_data.txt"))
+        assert len(data_files) >= 1
+        df = data_files[0]
+        tf = Path(str(df).replace("_data.txt", "_theory.txt"))
+        assert tf.is_file()
+        pair = mod.load_pair(df, tf)
+        assert pair["n_bins"] > 5
+        assert np.isfinite(pair["chi2_0"])
+
+

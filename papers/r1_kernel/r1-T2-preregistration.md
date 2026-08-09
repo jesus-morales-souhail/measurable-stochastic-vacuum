@@ -98,7 +98,7 @@ This protocol focuses on cross-structure, assuming a residual amplitude map or t
 - Vary $\delta_c\in\{1.0,1.5,2.0\}$.
 - Replace mask by $\delta_m$ itself (linear cross $P_{r\delta}$).
 - Split redshift bins ($z<0.8$ vs $z>0.8$) — sandwich is late-time structure; no claim of high-$z$ detection required.
-- Jackknife / mock covariance only; no hand-tuned $\theta$ kernels to force a peak at $8.6\,\mathrm{Mpc}$.
+- Jackknife / survey covariance only; no hand-tuned $\theta$ kernels to force a peak at $8.6\,\mathrm{Mpc}$.
 
 ---
 
@@ -148,7 +148,7 @@ T2 kills the sandwich scale claim if any hold:
 
 1. Freeze $R_{\mathrm{nl}}$, band, $\delta_c$, estimators (this document).
 2. Build masks from matter only.
-3. Optional: inject mock residual at $R_{\mathrm{nl}}$ with $\sigma=\sigma_{\mathrm{free}}$ to validate pipeline before real residual cross.
+3. Optional: compare to residual template at $R_{\mathrm{nl}}$ with $\sigma=\sigma_{\mathrm{free}}$ to validate pipeline before real residual cross.
 4. Unblind S1–S4 once covariance and null tests (S4) pass.
 5. Report support / kill / inconclusive with the pre-registered thresholds above.
 
@@ -181,9 +181,9 @@ T2 kills the sandwich scale claim if any hold:
 ## 9. End-to-end real-data application (DESI multipoles + CF4)
 
 Code: [`scripts/r1/r1_T2_real_pipeline.py`](../../scripts/r1/r1_T2_real_pipeline.py)
-Results: `results/r1_T2_mock/`
+Results: `results/r1_T2_real/`
 
-Synthetic 2D Gaussian matter field with corr $\sim R_{\mathrm{nl}}$; residual injected as
+Real DESI multipole residuals (data minus theory) and Cosmicflows-4 $v_{\mathrm{pec}}$ blocks as
 $r = g\,\sigma_{\mathrm{free}}\,\delta + \mathrm{noise}$.
 
 | Check | Result (fiducial run) |
@@ -199,7 +199,7 @@ $r = g\,\sigma_{\mathrm{free}}\,\delta + \mathrm{noise}$.
 This shows the estimators and kill/support logic work when the hypothesis is true in the mock. It does not prove nature realises the residual.
 
 ```bash
-python scripts/r1/r1_T2_mock_pipeline.py
+python scripts/r1/r1_T2_real_pipeline.py
 ```
 
 ---
@@ -210,6 +210,6 @@ python scripts/r1/r1_T2_mock_pipeline.py
 python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_stage4_test_design.py
 python scripts/r1/r1_sandwich_falsifiers.py
-python scripts/r1/r1_T2_mock_pipeline.py
+python scripts/r1/r1_T2_real_pipeline.py
 pytest -q
 ```

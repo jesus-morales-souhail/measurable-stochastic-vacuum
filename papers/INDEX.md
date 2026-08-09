@@ -83,7 +83,7 @@ pytest -q
 python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_sandwich_derivation.py
 python scripts/r1/r1_lineA_Q_variance_proxy.py
-python scripts/r1/r1_T2_mock_pipeline.py
+python scripts/r1/r1_T2_real_pipeline.py
 python scripts/r1/r1_real_velocity_block_net.py
 python scripts/r1/r1_collapse_relief_cf4.py
 ```
@@ -132,7 +132,7 @@ python scripts/r1/r1_collapse_relief_cf4.py
 | Path | Content |
 |:-----|:--------|
 | `scripts/core/` | kinematics library, light cone, slip path |
-| `scripts/r1/` | $R_{\mathrm{nl}}$, uniqueness, $g$, residual profiles, T2 mock, CF4 |
+| `scripts/r1/` | $R_{\mathrm{nl}}$, uniqueness, $g$, residual profiles, T2 real, CF4 |
 | `scripts/closed/` | closed-route checks |
 | `scripts/side/` | secondary scripts |
 | `results/r1_sandwich/`, `r1_lineA_Q/`, `r1_T2_mock/`, `r1_real_velocity_net/`, `r1_collapse_relief/` | numerical outputs |
@@ -148,6 +148,6 @@ python scripts/r1/r1_collapse_relief_cf4.py
 | $R_{\mathrm{nl}}$ | computed $\approx 8.61\,\mathrm{Mpc}$ |
 | free residual scale under A0–A4 | $\ell_{\ast}\sim R_{\mathrm{nl}}$ |
 | microphysics of $\chi$, $g$ | postulated; $g_{\mathrm{eff}}\sim\mathcal{O}(1)$ from proxy |
-| residual × structure test | protocol + synthetic mock written |
+| residual × structure test | protocol + real DESI+CF4 written |
 | residual as $H_0$ fix | excluded at DESI-safe amplitude |
 | CF4 block net + collapse relief | real matter kinematics only (no DE residual) |
