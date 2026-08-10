@@ -71,10 +71,14 @@ The remaining work is a **principle** that picks \(R_{\mathrm{nl}}\) (or another
 
 ## 4. Next after *this* lock (ordered)
 
-1. **Bootstrap CF4 \(r_e/R_{\mathrm{nl}}\)** with jackknife errors (tighten G2).  
+1. ~~Bootstrap CF4 \(r_e/R_{\mathrm{nl}}\) with jackknife~~ **done** (§5; primary L=20 holds).  
 2. **Path-RMS vs published slip floors** with sandwich \(\ell_\ast\) fixed (Maus/Sakr; already OOM in falsifiers).  
 3. **Refuse** to retune \(\ell_\ast\) to DESI or \(S_8\) after the fact (illegal move; see open-kernel note).  
 4. Only then: hunt a principle (R1a–d) that *derives* the cell.
+
+```bash
+python scripts/r1/r1_cf4_re_jackknife.py
+```
 
 ---
 
