@@ -68,9 +68,7 @@ So the open kernel is no longer floating: it has a **single preferred decade** a
 
 The remaining work is a **principle** that picks \(R_{\mathrm{nl}}\) (or another Mpc cell) without circularity — not another soft amplifier.
 
-**G1 is already the observational-compatibility statement:** \(\sigma_{\mathrm{free}}\approx 8.5\times 10^{-5}\ll 2.5\times 10^{-2}\). Do not rebrand that fact as a new theorem by inserting \(\sqrt{\sigma^2/2\theta}\) with an ad hoc \(\theta\sim 1\), or by identifying \(\sigma_{\mathrm{free}}\) with the SDE diffusion coefficient. Counting amplitude and pipeline \(\sigma_X\) are compared as residual amplitudes of the same kind.
-
-**Not this thread:** VLBI / EHT / photon sphere; baryon density \(\omega_b\). Separation note in the sister empirical repo: [operator-scale-separation.md](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/operator-scale-separation.md).
+G1 already says the counting amplitude sits under the DESI residual ceiling. I do not turn that into a new theorem by dividing again by \(\sqrt{2\theta}\). VLBI and \(\omega_b\) are other problems; see the sister note [scope-and-mixups.md](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/scope-and-mixups.md).
 
 ---
 
