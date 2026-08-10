@@ -7,3 +7,6 @@ results/*.pyc
 data/real_velocity_net/try.dat
 data/real_velocity_net/*.dat.gz
 data/real_velocity_net/table3.dat
+
+# large O3 open-data strain (download via scripts/gw/download_o3_long.py)
+data/gw_public/o3/*.hdf5

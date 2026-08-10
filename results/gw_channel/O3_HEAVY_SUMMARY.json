@@ -1,0 +1,54 @@
+{
+  "data": {
+    "files": [
+      "H-H1_GWOSC_4KHZ_R1-1242440920-4096.hdf5",
+      "L-L1_GWOSC_4KHZ_R1-1242440920-4096.hdf5"
+    ],
+    "event_window": "GW190521 4096 s open data (O3)",
+    "gps_start": 1242440920,
+    "duration_s": 4096.0,
+    "fs_Hz": 4096.0,
+    "baseline": "H1\u2013L1 ~3000 km laser interferometers",
+    "source": "GWOSC"
+  },
+  "measurements": {
+    "n_welch_segments": 127,
+    "segment_s": 64.0,
+    "ASD_H1_100Hz": 1.3945261512882822e-23,
+    "ASD_L1_100Hz": 3.541634633469811e-24,
+    "mean_coherence_20_90Hz": 0.008065930070547308,
+    "rms_highpass_H1": 8.416759205888507e-21,
+    "rms_highpass_L1": 1.4440517475490693e-21,
+    "Omega_GW_hat_this_stretch": 8.653344961272856e-08,
+    "Omega_GW_noise_scale_this_stretch": 9.70986102538511e-07,
+    "Omega_SNR_proxy": 0.08911914329823942,
+    "Omega_band_Hz": [
+      20.0,
+      90.0
+    ]
+  },
+  "literature": {
+    "O3_Omega_GW_upper_OOM": 5.8e-09,
+    "O3_f_ref_Hz": 25.0,
+    "O3_arxiv": "2101.12130",
+    "extra_polarisations": "LVK O3: no evidence for non-tensor polarisations in catalogued events (see e.g. arXiv:2112.06861 and follow-ups). This script does not re-run those searches.",
+    "polarisation_arxiv": "2112.06861",
+    "PTA_hc_OOM": 2.4e-15,
+    "PTA_arxiv": "2306.16213"
+  },
+  "catalog": {
+    "n_events_GWTC3_confident_json": 35,
+    "median_network_SNR": 10.4,
+    "max_network_SNR": 26.8
+  },
+  "sister_residual_NOT_same_operator": {
+    "sigma_free": 8.5e-05,
+    "sigma_X_DESI": 0.025,
+    "note": "Do not equate with Omega_GW or strain."
+  },
+  "verdict": {
+    "this_stretch_Omega_consistent_with_noise": true,
+    "full_O3_limit_stronger_by_factor_OOM": 167.41139698939847,
+    "point": "Tensor channel is open and measured; isotropic DE residual is a different operator. SDiff does not cancel TT GW. Extra polarisations remain a literature null, not re-derived here."
+  }
+}

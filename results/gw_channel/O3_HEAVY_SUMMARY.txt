@@ -1,0 +1,23 @@
+O3 H1–L1 cross-correlation (real GWOSC open data)
+=======================================================
+Files: H-H1_GWOSC_4KHZ_R1-1242440920-4096.hdf5
+       L-L1_GWOSC_4KHZ_R1-1242440920-4096.hdf5
+Duration: 4096 s @ 4096 Hz  segments: 127 × 64 s
+ASD @ 100 Hz: H1=1.395e-23  L1=3.542e-24  1/sqrt(Hz)
+Mean coherence 20–90 Hz: 0.0081
+
+Crude isotropic Ω_GW estimator (this stretch only):
+  Ω_hat        = 8.653e-08
+  noise scale  = 9.710e-07
+  SNR proxy    = 0.09  (|SNR|<3 ⇒ noise-like)
+  Full O3 published Ω ≲ 5.8e-09 @ 25.0 Hz  [arXiv:2101.12130]
+  This stretch weaker by ~167× (expected)
+
+Extra polarisations: LVK O3: no evidence for non-tensor polarisations in catalogued events (see e.g. arXiv:2112.06861 and follow-ups). This script does not re-run those searches.
+PTA h_c ~ 2.4e-15  [arXiv:2306.16213]
+
+GWTC-3 catalog events in local JSON: 35
+  median network SNR: 10.4
+
+NOT sigma_X. NOT ell_*. Tensor interferometry, long baseline H1–L1.
+Wrote /home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/measurable-stochastic-vacuum/results/gw_channel/O3_HEAVY_SUMMARY.json
