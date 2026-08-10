@@ -68,7 +68,10 @@ So the open kernel is no longer floating: it has a **single preferred decade** a
 
 The remaining work is a **principle** that picks \(R_{\mathrm{nl}}\) (or another Mpc cell) without circularity — not another soft amplifier.
 
-G1 already says the counting amplitude sits under the DESI residual ceiling. I do not turn that into a new theorem by dividing again by \(\sqrt{2\theta}\). VLBI and \(\omega_b\) are other problems; see the sister note [scope-and-mixups.md](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/scope-and-mixups.md).
+G1 already says the counting amplitude sits under the DESI residual ceiling. I do not turn that into a new theorem by dividing again by \(\sqrt{2\theta}\). VLBI and \(\omega_b\) are other problems.
+
+Plain map (microscope, grain, open R1, next calc): [`grain-and-microscope.md`](grain-and-microscope.md).  
+Sister mix-ups: [scope-and-mixups.md](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/scope-and-mixups.md).
 
 ---
 

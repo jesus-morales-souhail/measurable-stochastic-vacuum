@@ -16,6 +16,8 @@ Paper map: [`../what-i-would-put-in-a-paper.md`](../what-i-would-put-in-a-paper.
 | [`r1-real-velocity-block-net.md`](r1-real-velocity-block-net.md) | CF4 block net (matter) |
 | [`r1-collapse-relief.md`](r1-collapse-relief.md) | CF4 peaks (matter) |
 | [`FRONTIER_INQUIRY.md`](FRONTIER_INQUIRY.md) | open work |
+| [`NEXT_QUESTION.md`](NEXT_QUESTION.md) | three-gate and ordered next steps |
+| [`grain-and-microscope.md`](grain-and-microscope.md) | plain map: G1 vs open R1 |
 | [`HONEST_ASSETS.md`](HONEST_ASSETS.md) | public data vs analysis |
 
 CF4 measures matter $v_{\mathrm{pec}}$, not $\sigma_X$ or $g$.
