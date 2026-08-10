@@ -64,10 +64,13 @@ Together with the sandwich counting identity it says something sharper:
 2. Counting at \(R_{\mathrm{nl}}\) *predicts* \(\sim 8.5\times 10^{-5}\).  
 3. CF4 shows matter velocity structure *lives* in that same few-Mpc decade.
 
-So the open kernel is no longer floating: it has a **single preferred decade** and **two real-data anchors** (DESI ceiling, CF4 \(r_e\)).  
-$$
+So the open kernel is no longer floating: it has a **single preferred decade** and **two real-data anchors** (DESI ceiling, CF4 \(r_e\)).
+
 The remaining work is a **principle** that picks \(R_{\mathrm{nl}}\) (or another Mpc cell) without circularity — not another soft amplifier.
-$$
+
+**G1 is already the observational-compatibility statement:** \(\sigma_{\mathrm{free}}\approx 8.5\times 10^{-5}\ll 2.5\times 10^{-2}\). Do not rebrand that fact as a new theorem by inserting \(\sqrt{\sigma^2/2\theta}\) with an ad hoc \(\theta\sim 1\), or by identifying \(\sigma_{\mathrm{free}}\) with the SDE diffusion coefficient. Counting amplitude and pipeline \(\sigma_X\) are compared as residual amplitudes of the same kind.
+
+**Not this thread:** VLBI / EHT / photon sphere; baryon density \(\omega_b\). Separation note in the sister empirical repo: [operator-scale-separation.md](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou/blob/main/papers/operator-scale-separation.md).
 
 ---
 
