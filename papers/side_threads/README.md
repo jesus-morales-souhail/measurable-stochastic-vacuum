@@ -9,6 +9,7 @@ Inflation spectators, lensing floors, programme notes. Not the main residual-sca
 | `inflation-spectator-seed-gordon-wands.md` | Literature revalidation (Gordon & Wands 2005) |
 | `inflation-spectator-residual-atlas.md` | OOM atlas vs modern \(r\) |
 | `lensing-rms-forecast-real-data.md` | Path-RMS vs published slip / shear floors |
+| `gw-tensor-channel-real-data.md` | Real LIGO open strain (tensor channel; not $\sigma_X$) |
 | `minimal-theory-package.md` | Minimal theory package note |
 | `CONSISTENCY_AUDIT.md` | Cross-repo role audit |
 

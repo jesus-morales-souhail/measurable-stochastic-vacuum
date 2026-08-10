@@ -110,6 +110,7 @@ python scripts/r1/r1_collapse_relief_cf4.py
 | [`side_threads/inflation-spectator-seed-gordon-wands.md`](side_threads/inflation-spectator-seed-gordon-wands.md) | inflation spectator |
 | [`side_threads/inflation-spectator-residual-atlas.md`](side_threads/inflation-spectator-residual-atlas.md) | residual windows |
 | [`side_threads/lensing-rms-forecast-real-data.md`](side_threads/lensing-rms-forecast-real-data.md) | path RMS vs Maus/Sakr |
+| [`side_threads/gw-tensor-channel-real-data.md`](side_threads/gw-tensor-channel-real-data.md) | LIGO open data, tensor channel |
 | [`side_threads/minimal-theory-package.md`](side_threads/minimal-theory-package.md) | theory package note (not hard claims) |
 | [`side_threads/CONSISTENCY_AUDIT.md`](side_threads/CONSISTENCY_AUDIT.md) | cross-repo check |
 

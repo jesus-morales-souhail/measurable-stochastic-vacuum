@@ -80,6 +80,12 @@ Feedback, WHIM, cluster gas, and kSZ can bias large-scale structure and distance
 
 ---
 
+## Tensor channel (separate)
+
+Laser interferometers (LIGO open data, H1–L1 baseline) measure **tensor strain**, not DESI $\sigma_X$. SDiff kills isotropic vacuum stress; it does not remove TT gravitational waves. First public-data run: [`../side_threads/gw-tensor-channel-real-data.md`](../side_threads/gw-tensor-channel-real-data.md).
+
+---
+
 ## One line
 
-G1 says: sand grain fits under the microscope. R1 asks: why sand grain? Next: fix the grain, compute slip / path-RMS, compare honestly to published floors — then, only then, hunt a principle.
+G1 says: sand grain fits under the microscope. R1 asks: why sand grain? Next on residual grain: slip / path-RMS with the grain fixed. Separate measurable crack: tensor / anisotropic channels (GW, slip), not another soft gain on $\sigma_0$.

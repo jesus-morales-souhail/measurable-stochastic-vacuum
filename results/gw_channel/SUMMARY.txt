@@ -1,0 +1,24 @@
+GW channel — real LIGO open data (GWOSC)
+==================================================
+Event: GW150914  GPS start 1126259447  fs=4096 Hz  N=131072
+Baseline: H1–L1 laser interferometers (~3000 km)
+
+ASD @ 100 Hz [1/sqrt(Hz)]:
+  H1  6.367e-24
+  L1  6.730e-24
+Band RMS 20–300 Hz: H1=1.519e-21  L1=2.155e-21
+Peak |strain| near merger: H1=3.442e-21  L1=2.400e-21
+Mean coherence H1–L1 (40–200 Hz): 0.0484
+
+Literature (not from this 32 s stretch):
+  O3 isotropic SGWB Ω_GW ≲ 5.0e-09 near 25.0 Hz  [arXiv:2101.12130]
+  PTA h_c ~ 1e-15 at ~1/yr                   [arXiv:2306.16213]
+
+Sister residual map (DIFFERENT operator):
+  sigma_free (ell_*=R_nl) ~ 8.50e-05
+  DESI sigma_X ceiling   ~ 2.50e-02
+  path-RMS free          ~ 1.45e-03
+
+Non-claims: no sigma_X from LIGO; no ell_* from ASD; no scalar mode search.
+SDiff cancels isotropic vacuum stress; TT GW remain a separate measurable channel.
+Wrote /home/ashpokemon/Proyectos/01_Fisica_y_Cosmologia/measurable-stochastic-vacuum/results/gw_channel/SUMMARY.json and ASD/coherence tables.

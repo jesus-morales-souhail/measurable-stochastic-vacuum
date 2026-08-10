@@ -1,0 +1,45 @@
+{
+  "data": {
+    "source": "GWOSC open data",
+    "event": "GW150914",
+    "gps_start": 1126259447,
+    "duration_s": 32.0,
+    "sample_rate_hz": 4096.0,
+    "detectors": [
+      "H1",
+      "L1"
+    ],
+    "baseline": "Hanford\u2013Livingston ~3000 km (laser interferometers)",
+    "doi": "https://doi.org/10.7935/82H3-HH23"
+  },
+  "measurements_this_run": {
+    "ASD_H1_at_100Hz_strain_per_sqrtHz": 6.366989730069246e-24,
+    "ASD_L1_at_100Hz_strain_per_sqrtHz": 6.729877452577096e-24,
+    "ASD_H1_at_25Hz": 8.859466628657561e-23,
+    "ASD_L1_at_25Hz": 9.101129141675344e-23,
+    "band_RMS_20_300Hz_H1": 1.5185265486714496e-21,
+    "band_RMS_20_300Hz_L1": 2.1551662622252805e-21,
+    "peak_abs_strain_near_event_H1_band_35_350Hz": 3.441867163056273e-21,
+    "peak_abs_strain_near_event_L1_band_35_350Hz": 2.400283206052649e-21,
+    "mean_coherence_H1L1_40_200Hz": 0.04837890760891612
+  },
+  "literature_anchors": {
+    "O3_Omega_GW_OOM": 5e-09,
+    "O3_f_ref_Hz": 25.0,
+    "O3_arxiv": "2101.12130",
+    "PTA_hc_OOM": 1e-15,
+    "PTA_arxiv": "2306.16213"
+  },
+  "sister_residual_programme_NOT_same_operator": {
+    "sigma_free_if_ell_star_R_nl": 8.5e-05,
+    "sigma_X_DESI_ceiling": 0.025,
+    "RMS_path_free_OOM": 0.00145,
+    "warning": "Do not equate sigma_X or sigma_free with LIGO strain. Isotropic DE residual \u2260 TT tensor h."
+  },
+  "interpretation": {
+    "channel": "tensor interferometer strain (GW)",
+    "baseline": "Earth-scale (H1\u2013L1), not VLBI radio; same idea: long baseline interferometry",
+    "SDiff": "Kills isotropic T~g_\u03bc\u03bd vacuum noise, not TT gravitational waves",
+    "this_run": "Characterises real public strain and H1\u2013L1 coherence; does not measure BAO residual amplitude."
+  }
+}
