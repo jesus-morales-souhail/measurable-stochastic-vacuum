@@ -11,7 +11,7 @@ Cell scale ell_* required for measurability sigma ~ 1e-05:
   d=3: ell_* = 2.07 Mpc   (NOT Planck; galactic / mesoscopic)
   d=4: ell_* = 14.08 Mpc   (NOT Planck; galactic / mesoscopic)
 
-Reachable band [1e-5, 1.5e-4] needs ell_* >> L_P by:
+Reachable band [1e-5, 2.5e-2] needs ell_* >> L_P by:
   d=2: ell_*/L_P = 8.50e+55
   d=3: ell_*/L_P = 3.95e+57
   d=4: ell_*/L_P = 2.69e+58

@@ -29,7 +29,7 @@ from lib_verified import (  # noqa: E402
     sorkin_holographic,
 )
 
-DESI_CEILING = 1.5e-4
+DESI_CEILING = 2.5e-2
 SIGMA_TARGET = 1e-5
 
 

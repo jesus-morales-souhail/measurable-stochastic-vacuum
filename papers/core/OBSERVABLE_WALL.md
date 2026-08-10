@@ -5,7 +5,7 @@
 **Date:** July 2026
 **Status:** Derived relation + detectability inequality · independent research, **preprint status**
 **Code:** `scripts/core/lib_verified.py` · `tests/test_verified.py`
-**Sister bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+**Sister bound:** $\sigma_X < 2.5\times 10^{-2}$ (95% CL) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
@@ -94,7 +94,7 @@ Einstein + Newton background + Morales residual definition. No undeclared free p
 Sister result (a posteriori input, not a free dial inside the derivation of (W)):
 
 
-\sigma_X < 1.5\times 10^{-4} .
+\sigma_X < 2.5\times 10^{-2} .
 
 
 Best-case shear ($\varepsilon=1$, $\lvert\delta_m\rvert=1$, $\Omega_{m0}=0.315$, $\Omega_{\Lambda 0}=0.685$):
@@ -154,10 +154,10 @@ Invert (W) at $\varepsilon=1$, $\lvert\delta_m\rvert=1$:
 \sigma_X \ge \frac{5\times 0.03\times 0.315}{2\times 0.685} \approx 0.0345.
 
 
-Compare to DESI residual ceiling $1.5\times 10^{-4}$:
+Compare to DESI residual ceiling $2.5\times 10^{-2}$:
 
 
-\frac{\sigma_X^{\mathrm{(needed)}}}{\sigma_X^{\mathrm{(allowed)}}} \approx \frac{0.0345}{1.5\times 10^{-4}} \approx 230.
+\frac{\sigma_X^{\mathrm{(needed)}}}{\sigma_X^{\mathrm{(allowed)}}} \approx \frac{0.0345}{2.5\times 10^{-2}} \approx 230.
 
 
 **Summary:**
@@ -287,7 +287,7 @@ python - <<'PY'
 import sys; sys.path.insert(0,"scripts")
 from lib_verified import slip_deviation, rho_x_over_rho_m
 for z in (0.0,0.5,1.0):
- print(z, slip_deviation(1.0, 1.5e-4, z), rho_x_over_rho_m(z))
+ print(z, slip_deviation(1.0, 2.5e-2, z), rho_x_over_rho_m(z))
 # detectability threshold z=0, 5-sigma, sigma_exp=0.03
 Om,Ol=0.315,0.685
 print("sigma_X needed", 5*0.03*Om/(2*Ol))

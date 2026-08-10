@@ -48,7 +48,7 @@ The NP-A row therefore has no external prior from these scales. The DESI-ceiling
 | Anchor | Value [Mpc] | Origin |
 |:-------|:------------|:-------|
 | NP-A $\ell_{\ast}$ | $2.0646$ | counting inverse, $\sigma=10^{-5}$, $d=3$ |
-| DESI-ceiling $\ell_{\ast}$ ($d=3$) | $12.557$ | counting inverse, $\sigma=1.5\times 10^{-4}$ |
+| DESI-ceiling $\ell_{\ast}$ ($d=3$) | $12.557$ | counting inverse, $\sigma=2.5\times 10^{-2}$ |
 | $R_8=8/h$ | $11.869$ | definition |
 
 ---

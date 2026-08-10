@@ -17,7 +17,7 @@ Depends on: [`r1-t12-bbks-and-derivation.md`](r1-t12-bbks-and-derivation.md) · 
 | $R_{\ast}$ | $\approx 1.58\,\mathrm{Mpc}$ | Peak tip (BBKS); substructure |
 | $\ell_{\mathrm{sep}}$ | $\approx 15.9\,\mathrm{Mpc}$ | Packing of $\delta>1$ patches |
 | $\sigma_{\mathrm{count}}$ ($d=3$, $\ell_{\ast}=R_{\mathrm{nl}}$) | $\approx 8.5\times 10^{-5}$ | Free residual amplitude from counting |
-| DESI residual ceiling | $\sigma_X<1.5\times 10^{-4}$ (95% CL) | A posteriori bound (related repository) |
+| DESI residual ceiling | $\sigma_X<2.5\times 10^{-2}$ (95% CL) | A posteriori bound (related repository) |
 
 Free parameter to bound: coupling strength between residual field $\chi$ and matter contrast $\delta_m$.
 
@@ -67,13 +67,13 @@ At $R_{\mathrm{nl}}$, $\sigma_\delta=1$ by definition, so the induced piece has 
 **Method:** algebraic, no MCMC.
 
 
-\sigma_{\mathrm{res}}\le \sigma_X^{\mathrm{DESI}}=1.5\times 10^{-4}.
+\sigma_{\mathrm{res}}\le \sigma_X^{\mathrm{DESI}}=2.5\times 10^{-2}.
 
 
 Optimistic induced-only bound ($\sigma_{\mathrm{free}}=0$):
 
 
-\lvert\lambda\rvert\lesssim 1.5\times 10^{-4}.
+\lvert\lambda\rvert\lesssim 2.5\times 10^{-2}.
 
 
 With free grain included (independent, Gaussian add in quadrature):
@@ -147,7 +147,7 @@ Role: not the tightest bound on $\lambda$, but the right operator (anisotropic r
 
 | Observable | Sensitivity to $\lambda$ today | Role |
 |:-----------|:---------------------------------|:-----|
-| DESI BAO residual $\sigma_X$ | Strongest (ceiling $1.5\times 10^{-4}$) | Primary bound |
+| DESI BAO residual $\sigma_X$ | Strongest (ceiling $2.5\times 10^{-2}$) | Primary bound |
 | Slip $\gamma$(Maus) | Weak (error $\sim 0.1$) | Operator sanity |
 | Path RMS / Stage-IV lensing | Future | Tighten anisotropic channel |
 | Clusters / $r_0$ | Scale geometry, weak on $\lambda$ alone | T1.2 structure test |
@@ -198,13 +198,13 @@ Order-unity dimensionless $g$ is already at the edge of the DESI residual ceilin
 1. Stage 0 OOM (`scripts/r1/r1_bound_g_oom.py`).
 2. Profile likelihood on DESI DR2 BAO diagonal (`scripts/r1/r1_profile_lambda_bao.py`).
  - Formal 95% (diag 7 bins): $\lvert\lambda\rvert\le 2.5\times 10^{-2}$ (weak, same as sister $\sigma_X$ profile).
- - Working map from programme ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL): $\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}$, $\lvert g\rvert\lesssim 1.45$.
+ - Working map from programme ceiling $\sigma_X<2.5\times 10^{-2}$ (95% CL): $\lvert\lambda\rvert\lesssim 1.24\times 10^{-4}$, $\lvert g\rvert\lesssim 1.45$.
  - Artefact: `results/r1_lambda_profile/`.
 3. Full 13×13 DESI DR2 covariance, fractional residual (`scripts/r1/r1_profile_lambda_fullcov.py`).
  - Residual $r_i=\mathrm{data}_i/\mathrm{theory}_i-1$, $C_{\mathrm{frac}}=C/(\mathrm{th}\otimes\mathrm{th})$.
  - $\chi^2_{\Lambda\mathrm{CDM}}\approx 29$(13 dof); mean fractional offset $\sim 1\%$.
  - Formal free $\sigma_{\mathrm{res}}$: best $\approx 1.7\times 10^{-2}$, 95% $\in[5\times 10^{-3},\,0.17]$; zero excluded at 95% only because cov inflation absorbs background tension — not a 1e−4 grain detection.
- - At programme amplitudes ($\sigma_{\mathrm{free}}$, $1.5\times 10^{-4}$): $\Delta\ln\mathcal{L}\approx 0$ vs pure $\Lambda$CDM.
+ - At programme amplitudes ($\sigma_{\mathrm{free}}$, $2.5\times 10^{-2}$): $\Delta\ln\mathcal{L}\approx 0$ vs pure $\Lambda$CDM.
  - `formal_informative_for_1e-4_grain = False`. `primary_bound = working`.
  - Artefact: `results/r1_lambda_fullcov/`.
 4. Slip OOM / Maus consistency on working $\lambda$ — predicted $\lvert\gamma-1\rvert\sim 10^{-4}\ll 0.11$([`r1-sandwich-falsifiers.md`](r1-sandwich-falsifiers.md)).

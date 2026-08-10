@@ -2,7 +2,7 @@
 WP1 / R1 — counting principle for the stochastic-DE seed.
 
 Derive sigma_{0,eff} = 1/sqrt(N_eff) from a counting principle, WITHOUT using
-the DESI number 1.5e-4 as a dial (axiom A5). The seed is set by an effective
+the DESI number 2.5e-2 as a dial (axiom A5). The seed is set by an effective
 cell scale ell_* and a counting dimensionality d of the DE-residual sector.
 
 Sorkin (the excluded seed) corresponds to the holographic count:
@@ -45,7 +45,7 @@ for d in (2,3,4):
 print()
 
 # Cross-check: with ell = L_P the whole measurable band is unreachable for all d
-print("Reachable band [1e-5, 1.5e-4] needs ell_* >> L_P by:")
+print("Reachable band [1e-5, 2.5e-2] needs ell_* >> L_P by:")
 for d in (2,3,4):
     ell = L_H * sigma_target**(2.0/d)
     print(f"  d={d}: ell_*/L_P = {ell/L_P:.2e}")

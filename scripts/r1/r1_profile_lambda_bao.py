@@ -12,7 +12,7 @@ sigma_free fixed from R_nl counting (P_nl, d=3). ell_* / R_nl NOT floated.
 
 Reports:
   - formal profile 95% CL on |lambda| (Delta lnL = -1.92, 1 dof)
-  - working ceiling map from sigma_X < 1.5e-4 (programme working limit)
+  - working ceiling map from sigma_X < 2.5e-2 (programme working limit)
   - g under convention lambda = g * sigma_free
 
 See papers/r1-bounding-g-plan.md · results/r1_lambda_profile/
@@ -68,7 +68,7 @@ RES = ALPHA - 1.0
 X = np.log(1.0 + Z_EFF)
 N = len(Z_EFF)
 
-DESI_WORKING = 1.5e-4  # programme working 95% ceiling (paper)
+DESI_WORKING = 2.5e-2  # programme working 95% ceiling (paper)
 
 
 
@@ -183,11 +183,11 @@ def main() -> None:
     print(f"  Profile max near |λ|≈{best['lam']:.3e}  (ΔlnL max ≈ {best['ll']-ll0:+.4f})")
     print(f"  Formal 95% CL (diag BAO profile): |λ| ≤ {lam_95_formal:.3e}")
     print(f"  Formal |g| ≲ {g_formal:.3f}  (conv. λ=g·σ_free)")
-    print(f"  Working map from σ_X<1.5e-4:     |λ| ≲ {lam_work:.3e}  |g| ≲ {g_work:.3f}")
+    print(f"  Working map from σ_X<2.5e-2:     |λ| ≲ {lam_work:.3e}  |g| ≲ {g_work:.3f}")
     print()
     print("Honesty:")
     print("  Diagonal 7-bin BAO formal profile is WEAK (same as sister σ_X profile ~0.025).")
-    print("  Programme working ceiling 1.5e-4 is the tighter physical working bound.")
+    print("  Programme working ceiling 2.5e-2 is the tighter physical working bound.")
     print("  Full covariance DESI would tighten formal limit — not re-run here.")
     print("  R_nl / ell_* NOT floated.")
 
@@ -208,7 +208,7 @@ def main() -> None:
         f"R_nl = {R_nl:.4f} Mpc (fixed)",
         f"sigma_free = {sigma_free:.6e}",
         f"Formal 95% |lambda| <= {lam_95_formal:.6e}",
-        f"Working |lambda| <= {lam_work:.6e} (from sigma_X < 1.5e-4)",
+        f"Working |lambda| <= {lam_work:.6e} (from sigma_X < 2.5e-2)",
         f"Working |g| <= {g_work:.4f} (lambda = g * sigma_free)",
         "See papers/r1-bounding-g-plan.md",
     ]

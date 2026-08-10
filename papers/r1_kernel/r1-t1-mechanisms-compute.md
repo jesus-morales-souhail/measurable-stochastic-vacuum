@@ -16,7 +16,7 @@ I execute the first two Tier-1 work items with numbers:
 1. **T1.1** — Set the averaging domain $L_{\mathrm{av}}:=R_{\mathrm{nl}}$ from the full $\sigma(R)=1$ integral only. Count effective residual DOF as $N=(L_H/L_{\mathrm{av}})^d$.
 2. **T1.2** — Model nonlinear “edge” regions as the Gaussian excursion set $\delta>\delta_c$ on a field with $\sigma(R_{\mathrm{nl}})=1$; report volume fraction and packing separation.
 
-Results (fiducial run): $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$; $d=3$ counting gives $\sigma\approx 8.5\times 10^{-5}$ (under DESI ceiling $1.5\times 10^{-4}$); nonlinear volume fraction at $\delta_c=1$ is $f\approx 0.16$; inter-patch separation $\sim R_{\mathrm{nl}}f^{-1/3}\approx 16\,\mathrm{Mpc}$ (same decade as $R_8$ / DESI-ceiling cell).
+Results (fiducial run): $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$; $d=3$ counting gives $\sigma\approx 8.5\times 10^{-5}$ (under DESI ceiling $2.5\times 10^{-2}$); nonlinear volume fraction at $\delta_c=1$ is $f\approx 0.16$; inter-patch separation $\sim R_{\mathrm{nl}}f^{-1/3}\approx 16\,\mathrm{Mpc}$ (same decade as $R_8$ / DESI-ceiling cell).
 
 Still open: why the vacuum residual must live on that domain (master equation / action). These steps only show that *if* it does, lengths and amplitudes are DESI-compatible without $10^{56}$.
 
@@ -58,7 +58,7 @@ This is the same algebra as R1 counting with $\ell_{\ast}=R_{\mathrm{nl}}$ — n
 
 ### 2.2 Numbers
 
-| $d$ | $N_{\mathrm{eff}}$ | $\sigma_{0,\mathrm{eff}}$ | vs DESI $1.5\times 10^{-4}$ |
+| $d$ | $N_{\mathrm{eff}}$ | $\sigma_{0,\mathrm{eff}}$ | vs DESI $2.5\times 10^{-2}$ |
 |:------|:---------------------|:----------------------------|:-----------------------------|
 | 2 | $\sim 2.7\times 10^{5}$ | $\sim 1.9\times 10^{-3}$ | above (not the default $d$) |
 | 3 | $\sim 1.4\times 10^{8}$ | $\sim 8.5\times 10^{-5}$ | under |
@@ -148,7 +148,7 @@ Geometry is viable. The sketch derives coarse-graining under stated postulates; 
 | ID | Claim | Evidence |
 |:---|:------|:---------|
 | M1 | $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ from full $\sigma(R)$ | `r1_sigma_R_full` |
-| M2 | $d=3$ counting on $L_{\mathrm{av}}=R_{\mathrm{nl}}\Rightarrow\sigma\approx 8.5\times 10^{-5}<1.5\times 10^{-4}$ | script |
+| M2 | $d=3$ counting on $L_{\mathrm{av}}=R_{\mathrm{nl}}\Rightarrow\sigma\approx 8.5\times 10^{-5}<2.5\times 10^{-2}$ | script |
 | M3 | $f(\delta>1)\approx 0.159$ for unit Gaussian | erfc identity |
 | M4 | $\ell_{\mathrm{sep}}(\delta_c=1)\approx 16\,\mathrm{Mpc}$ packing OOM | script |
 | M5 | Microphysics still open | this note |

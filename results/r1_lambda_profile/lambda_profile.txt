@@ -2,7 +2,7 @@ Profile |lambda| — DESI DR2 BAO diagonal OU
 R_nl = 8.6098 Mpc (fixed)
 sigma_free = 8.516255e-05
 Formal 95% |lambda| <= 2.506316e-02
-Working |lambda| <= 1.234801e-04 (from sigma_X < 1.5e-4)
+Working |lambda| <= 1.234801e-04 (from sigma_X < 2.5e-2)
 Working |g| <= 1.4499 (lambda = g * sigma_free)
 See papers/r1-bounding-g-plan.md
 

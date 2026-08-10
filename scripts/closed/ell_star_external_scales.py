@@ -24,7 +24,7 @@ from lib_verified import ell_mpc_for_sigma, r8_mpc  # noqa: E402
 
 # Programme anchors (code)
 ELL_NPA = ell_mpc_for_sigma(1e-5, 3)
-ELL_DESI_D3 = ell_mpc_for_sigma(1.5e-4, 3)
+ELL_DESI_D3 = ell_mpc_for_sigma(2.5e-2, 3)
 R8 = r8_mpc()
 
 # Literature / standard OOM anchors (not fitted)

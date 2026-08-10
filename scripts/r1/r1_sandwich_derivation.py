@@ -316,7 +316,7 @@ def main() -> None:
 
     # Decoherence OOM for working g and order-unity g
     sigma_free = sigma_from_count(R_nl, L_H, 3)
-    lam_work = math.sqrt(max((1.5e-4) ** 2 - sigma_free**2, 0.0))
+    lam_work = math.sqrt(max((2.5e-2) ** 2 - sigma_free**2, 0.0))
     g_work = lam_work / sigma_free if sigma_free > 0 else float("nan")
     dec_g1 = decoherence_oom(1.0, R_nl)
     dec_gwork = decoherence_oom(g_work, R_nl)

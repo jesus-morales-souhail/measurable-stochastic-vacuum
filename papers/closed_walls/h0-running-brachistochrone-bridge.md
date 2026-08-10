@@ -113,7 +113,7 @@ Matter–DE equality: $z_{\mathrm{eq}}=(\Omega_\Lambda/\Omega_m)^{1/3}-1\approx\
 | Derive map $\ell_{\ast}\to\delta H_0(z)$ or $\delta D(z)$ | **Absent** |
 | Predict ratio $\approx 1.083$ a priori | **Absent** |
 | Predict transition near $z\sim 0.5$–$0.7$ | **Only scale-class coincidence** with $z_{\mathrm{eq}}$ and path $N(R_8)$ |
-| Survive BAO residual ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) | Must be checked a posteriori |
+| Survive BAO residual ceiling $\sigma_X<2.5\times 10^{-2}$ (95% CL) | Must be checked a posteriori |
 | Fit $\ell_{\ast}$ to SH0ES–Planck gap | **Forbidden** (BOUNDARY) |
 
 This is the same pattern as R1d $\leftrightarrow R_8$: **shared scale language**, not a fitted solution.

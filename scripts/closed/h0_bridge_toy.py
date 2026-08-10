@@ -13,7 +13,7 @@ Toy a priori bridge: path depth → fractional distance bias shape.
   R1d-class R_8     → ℓ_* ≈ 11.87 Mpc
 
 s_loc from Einstein+Morales wall at DESI ceiling (a posteriori ceiling, not a dial):
-  s_loc = |γ-1|(σ_X=1.5e-4, ε=1, z_eval=0.5, δ_m=1)
+  s_loc = |γ-1|(σ_X=2.5e-2, ε=1, z_eval=0.5, δ_m=1)
 
 Illegal: fit ℓ_* or s_loc to make H0_local/H0_CMB = 1.083.
 Legal: predict shape f(z); report amplitude shortfall vs 9% tension.
@@ -46,7 +46,7 @@ ELL_NPA = ell_mpc_for_sigma(1e-5, 3)  # ~2.07 Mpc
 ELL_R8 = r8_mpc()
 
 # Local slip amplitude at DESI residual ceiling (wall formula)
-S_LOC = slip_deviation(1.0, 1.5e-4, 0.5, 1.0)
+S_LOC = slip_deviation(1.0, 2.5e-2, 0.5, 1.0)
 
 # Literature anchors
 H0_CMB = 67.4
@@ -153,7 +153,7 @@ def main() -> None:
     print("=== H0 bridge toy map (a priori ℓ_*, no H0 fit) ===")
     print(f"  ℓ_* NP-A (d=3,σ=1e-5) = {ELL_NPA:.4f} Mpc")
     print(f"  ℓ_* R8 class           = {ELL_R8:.4f} Mpc")
-    print(f"  s_loc = |γ−1|(σ_X=1.5e-4,z=0.5) = {S_LOC:.6e}")
+    print(f"  s_loc = |γ−1|(σ_X=2.5e-2,z=0.5) = {S_LOC:.6e}")
     print(f"  Observed ratio SH0ES/Planck OOM = {RATIO_OBS:.4f} (δ~{DELTA_OBS:.4f})")
     print()
 

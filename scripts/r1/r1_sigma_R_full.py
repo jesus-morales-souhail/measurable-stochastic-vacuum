@@ -206,9 +206,9 @@ def main() -> None:
     sig_count = (R_nl_mpc / L) ** 1.5
     print("A posteriori (not used in R_nl solve):")
     print(f"  R_8 = {r8_mpc():.3f} Mpc")
-    print(f"  DESI-ceil d=3 cell = {ell_mpc_for_sigma(1.5e-4, 3):.3f} Mpc")
+    print(f"  DESI-ceil d=3 cell = {ell_mpc_for_sigma(2.5e-2, 3):.3f} Mpc")
     print(f"  r0(L*) class ≈ {5/H:.2f}–{6/H:.2f} Mpc")
-    print(f"  If ell_*=R_nl full: sigma_count d=3 = {sig_count:.3e}  (DESI ceil 1.5e-4)")
+    print(f"  If ell_*=R_nl full: sigma_count d=3 = {sig_count:.3e}  (DESI ceil 2.5e-2)")
     print()
     print("Still open: why vacuum residual grain = R_nl (hypothesis, not action principle)")
     print("See papers/r1-principle-nonlinear-matter.md")

@@ -135,7 +135,7 @@ def main() -> None:
     print("A posteriori:")
     print(f"  r0(L*) ≈ {5/H:.2f}–{6/H:.2f} Mpc")
     print(f"  R_8 = {r8_mpc():.3f} Mpc")
-    print(f"  DESI-ceil d=3 = {ell_mpc_for_sigma(1.5e-4, 3):.3f} Mpc")
+    print(f"  DESI-ceil d=3 = {ell_mpc_for_sigma(2.5e-2, 3):.3f} Mpc")
     print()
     print("BBKS splits scales: R_* (peak tip) << R_nl (filter/domain).")
     print("  Counting cell for residual domains → R_nl; R_* is substructure.")

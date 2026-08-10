@@ -28,7 +28,7 @@ At $H_0=67.4$($h=0.674$):
 |:-------|:------------|:-------------|
 | Galaxy 2PCF $r_0(L_*)$ | $\sim 7.4$–$8.9$($5$–$6\,h^{-1}\mathrm{Mpc}$) | SDSS clustering (Zehavi et al.) |
 | $R_8=8/h$ | $\approx 11.87$ | definition of nonlinear structure scale |
-| DESI residual ceiling, $d=3$: $\ell_{\ast}=L_H\sigma^{2/3}$ with $\sigma=1.5\times 10^{-4}$ | $\approx 12.56$ | a posteriori DESI bound + counting inverse |
+| DESI residual ceiling, $d=3$: $\ell_{\ast}=L_H\sigma^{2/3}$ with $\sigma=2.5\times 10^{-2}$ | $\approx 12.56$ | a posteriori DESI bound + counting inverse |
 
 Three quantities of different origin sit in the same ~8–12 Mpc neighbourhood. That is a better lead than further searches for confirmation of $2.06\,\mathrm{Mpc}$. It became clear after the NP-A external matches failed.
 
@@ -62,7 +62,7 @@ NP-A ($\sigma=10^{-5}$) remains the Euclid-aspirational arithmetic row; it is no
 |:--|:--|
 | $r_0(L_*)\sim 7.4$–$8.9\,\mathrm{Mpc}$ | literature + conversion |
 | $R_8\approx 11.87\,\mathrm{Mpc}$ | definition |
-| Ceiling cell $d=3$, $\sigma=1.5\times 10^{-4}$: $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | counting inverse |
+| Ceiling cell $d=3$, $\sigma=2.5\times 10^{-2}$: $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | counting inverse |
 | NP-A galaxy matches | failed |
 | Principle for $\ell_{\ast}$ | still open |
 

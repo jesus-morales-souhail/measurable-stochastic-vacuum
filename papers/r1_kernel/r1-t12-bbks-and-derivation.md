@@ -157,7 +157,7 @@ SDiff projection removes the isotropic mean; $\sigma$ is the residual fluctuatio
 |:---|:------|:---------|
 | B1 | At $R_{\mathrm{nl}}$, $\sigma_0=1$, $R_{\ast}\approx 1.58\,\mathrm{Mpc}$, $\gamma_{\mathrm{BBKS}}\approx 0.18$ | script |
 | B2 | Domain cell $R_{\mathrm{nl}}$ remains the counting scale under B.4 | derivation sketch |
-| B3 | $\sigma(d=3,R_{\mathrm{nl}})\approx 8.5\times 10^{-5}<1.5\times 10^{-4}$ | T1.1 |
+| B3 | $\sigma(d=3,R_{\mathrm{nl}})\approx 8.5\times 10^{-5}<2.5\times 10^{-2}$ | T1.1 |
 | B4 | Coarse-graining step assumes P0–P1+S1 | this note |
 
 ---

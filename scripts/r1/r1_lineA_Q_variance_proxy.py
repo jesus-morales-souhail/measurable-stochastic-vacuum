@@ -49,7 +49,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 from lib_verified import hubble_radius_mpc, sigma_from_count  # noqa: E402
 from r1_sigma_R_full import H as H_FID, SIGMA8, find_R_nl, make_Pk_unnorm, normalize_A  # noqa: E402
 
-DESI_G_WORK = 1.45  # |g| working from σ_X < 1.5e-4
+DESI_G_WORK = 1.45  # |g| working from σ_X < 2.5e-2
 OM0 = 0.315
 RNG = np.random.default_rng(42)
 

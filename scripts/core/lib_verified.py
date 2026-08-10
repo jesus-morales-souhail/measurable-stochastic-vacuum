@@ -197,7 +197,7 @@ def amplification_gap(target: float, H0_km_s_mpc: float = H0_KM_S_MPC) -> float:
     G = target / sigma_0 with holographic Sorkin sigma_0 = L_P/L_H.
 
     Use target=1e-5  → G_Euclid ~ 8.5e55  (label ~10^56)
-    Use target=1.5e-4 → G_DESI  ~ 1.27e57 (label ~10^57)
+    Use target=2.5e-2 → G_DESI  ~ 1.27e57 (label ~10^57)
     Do not mix labels.
     """
     _, _, s0 = sorkin_holographic(H0_km_s_mpc)
@@ -258,7 +258,7 @@ if __name__ == "__main__":
     print(f"  ell(d=2, sigma=1e-5) / Mpc = {ell_for_target_sigma(1e-5, L_H, 2)/MPC_M:.4f}")
     print(f"  R_8 = {r8_mpc():.4f} Mpc")
     print(f"  sigma(ell=R_8, d=3) = {sigma_for_cell_mpc(r8_mpc(), 3):.6e}")
-    print(f"  slip(eps=1, sigma=1.5e-4, z=0.5) = {slip_deviation(1.0, 1.5e-4, 0.5):.6e}")
+    print(f"  slip(eps=1, sigma=2.5e-2, z=0.5) = {slip_deviation(1.0, 2.5e-2, 0.5):.6e}")
     print(f"  chi(1.5) Mpc = {comoving_distance_mpc(1.5):.1f}")
     print(f"  G_O(r=1.5) = {soft_squeeze_gain(1.5):.6f}")
     print("  OK")

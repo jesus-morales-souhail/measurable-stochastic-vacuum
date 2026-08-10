@@ -7,7 +7,7 @@ ORCID [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818) · jmskjym@gm
 July 2026 · draft note
 
 Code for the numbers: [measurable-stochastic-vacuum](https://github.com/jesus-morales-souhail/measurable-stochastic-vacuum)
-DESI residual bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) lives in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+DESI residual bound $\sigma_X<2.5\times 10^{-2}$ (95% CL) lives in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
@@ -121,7 +121,7 @@ With $\ell_{\ast}=R_{\mathrm{nl}}$, $d=3$, $L_H=c/H_0$:
 \sigma_{\mathrm{free}}=\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5},
 
 
-under the related DESI ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL, OU/QNM).
+under the related DESI ceiling $\sigma_X<2.5\times 10^{-2}$ (95% CL, OU/QNM).
 
 ### 4.4 Coupling
 
@@ -145,7 +145,7 @@ $\Gamma\sim g^2\sigma_\delta^2/\tau_c$ with $\sigma_\delta=1$. For $g\sim 1$, $\
 
 | | Exclusion |
 |:--|:----------|
-| F1 | $\sigma_{\mathrm{res}}\gg 1.5\times 10^{-4}$ at fixed $\ell_{\ast}=R_{\mathrm{nl}}$, no damping |
+| F1 | $\sigma_{\mathrm{res}}\gg 2.5\times 10^{-2}$ at fixed $\ell_{\ast}=R_{\mathrm{nl}}$, no damping |
 | F2 | residual correlation length at $\sigma\sim 10^{-4}$ clearly $\ll 1\,\mathrm{Mpc}$ or $\gg 100\,\mathrm{Mpc}$ |
 | F3 | path slip RMS forced way above published mean-slip floors without systematics |
 | F4 | $\ell_{\ast}$ fitted after looking at residual data; free $10^{56}$; shear $m$-bias sold as residual texture |

@@ -20,7 +20,7 @@ This atlas answers:
   reach *if* ε_Q and A are given — without ever using Sorkin σ_0 ~ 1e-61?
 
 Illegal: fit ε_Q or A to DESI. Legal: show which (r, A, ε_Q) windows
-hit 1e-5 / 1.5e-4 a posteriori.
+hit 1e-5 / 2.5e-2 a posteriori.
 
 See papers/inflation-spectator-residual-atlas.md
 """
@@ -43,7 +43,7 @@ R_LOW = 0.001
 
 # Programme residual anchors
 SIGMA_EUCLID = 1e-5
-SIGMA_DESI = 1.5e-4
+SIGMA_DESI = 2.5e-2
 
 # Gordon & Wands growth factor (their Eq. 27) — for *their* target; here a scan param
 A_GW = 45.0
@@ -99,7 +99,7 @@ def scan_table() -> List[Dict]:
 
 
 def windows_hitting_band() -> List[Dict]:
-    """(r,A,eps) that land sigma in [1e-5, 1.5e-4] without tuning claim."""
+    """(r,A,eps) that land sigma in [1e-5, 2.5e-2] without tuning claim."""
     hits = []
     for row in scan_table():
         if SIGMA_EUCLID <= row["sigma"] <= SIGMA_DESI:
@@ -128,7 +128,7 @@ def main() -> None:
     print()
 
     print("Residual σ_ρ ≈ √(2ε_Q)·A·(δQ/M_p)  [potential-dominated OOM]")
-    print(f"{'r':>6} {'A':>6} {'ε_Q':>8} {'σ_ρ':>10} {'/1e-5':>10} {'/1.5e-4':>10}  band?")
+    print(f"{'r':>6} {'A':>6} {'ε_Q':>8} {'σ_ρ':>10} {'/1e-5':>10} {'/2.5e-2':>10}  band?")
     for row in scan_table():
         # only print a readable subset
         if row["eps_Q"] not in (1e-4, 0.05, 1.0):
@@ -147,7 +147,7 @@ def main() -> None:
     print()
 
     hits = windows_hitting_band()
-    print(f"Scan points in [1e-5, 1.5e-4]: {len(hits)} / {len(scan_table())}")
+    print(f"Scan points in [1e-5, 2.5e-2]: {len(hits)} / {len(scan_table())}")
     if hits:
         print("  Examples (not fits — a posteriori windows):")
         for row in hits[:12]:

@@ -69,7 +69,7 @@ OL0 = 1.0 - OM0
 H0 = 67.4  # km/s/Mpc
 C_KMS = 299792.458
 RD = 147.09  # Mpc, DESI/Planck-class sound horizon (fixed convention; cancels in frac)
-DESI_WORKING = 1.5e-4  # programme working 95% ceiling (sister paper)
+DESI_WORKING = 2.5e-2  # programme working 95% ceiling (sister paper)
 
 
 def E(z: float, Om: float = OM0, Ol: float = OL0) -> float:
@@ -337,7 +337,7 @@ def main() -> None:
     lam_lo = min(p["lambda"] for p in ok_l)
     lam_hi = max(p["lambda"] for p in ok_l)
 
-    # Working ceiling from programme sigma_X < 1.5e-4
+    # Working ceiling from programme sigma_X < 2.5e-2
     if sigma_free < DESI_WORKING:
         lam_work = math.sqrt(DESI_WORKING**2 - sigma_free**2)
     else:
@@ -359,7 +359,7 @@ def main() -> None:
     print(f"  Formal 95% σ_res ∈ [{s_lo:.3e}, {s_hi:.3e}]  zero_excl={zero_excluded}")
     print(f"  Best |λ| ≈ {best['lam']:.3e}  95% |λ| ∈ [{lam_lo:.3e}, {lam_hi:.3e}]")
     print(f"  Working (σ_X<{DESI_WORKING:.1e}) |λ| ≲ {lam_work:.3e}  |g| ≲ {g_work:.3f}")
-    print(f"  ΔlnL(σ_free)={ll_sf-ll0:+.4f}  ΔlnL(1.5e-4)={ll_wk-ll0:+.4f}")
+    print(f"  ΔlnL(σ_free)={ll_sf-ll0:+.4f}  ΔlnL(2.5e-2)={ll_wk-ll0:+.4f}")
     print(f"  formal_informative_for_1e-4_grain = {formal_informative_for_1e4}")
     print(f"  primary_bound = working")
     print()
@@ -400,7 +400,7 @@ def main() -> None:
             "Formal profile prefers sigma_res ~ O(1%) because chi2_LCDM~29 "
             "is absorbed by covariance inflation; this is NOT a detection of "
             "the microscopic free grain. Working bound from sister alpha-OU "
-            "sigma_X<1.5e-4 remains the programme ceiling for lambda/g."
+            "sigma_X<2.5e-2 remains the programme ceiling for lambda/g."
         ),
         "profile_lambda": profile,
         "profile_sigma_res": sig_profile,
@@ -424,11 +424,11 @@ FORMAL profile (free sigma_res; full 13x13):
   zero residual excluded at 95%? {zero_excluded}
   best |lambda| ~ {best['lam']:.4e}   95% |lambda| in [{lam_lo:.4e}, {lam_hi:.4e}]
 
-WORKING (programme primary — sister sigma_X < 1.5e-4):
+WORKING (programme primary — sister sigma_X < 2.5e-2):
   |lambda| <= {lam_work:.6e}
   |g|      <= {g_work:.4f}   (convention lambda = g * sigma_free)
   Delta lnL at sigma_free  = {ll_sf-ll0:+.4f}
-  Delta lnL at 1.5e-4      = {ll_wk-ll0:+.4f}
+  Delta lnL at 2.5e-2      = {ll_wk-ll0:+.4f}
 
 HONEST INTERPRETATION:
   Formal preference for ~1-2% residual amplitude absorbs LCDM chi2 tension

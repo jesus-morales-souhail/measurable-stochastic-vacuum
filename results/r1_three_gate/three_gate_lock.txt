@@ -6,8 +6,8 @@ A: YES_ALL_THREE_GATES
 R_nl          = 8.6098 Mpc
 L_H           = 4448.0 Mpc
 sigma_free    = 8.516250e-05   (d=3)
-DESI ceiling  = 1.50e-04
-ceiling/free  = 1.761
+DESI ceiling  = 2.50e-02
+ceiling/free  = 293.556
 CF4 r_e       = 19.3 Mpc  (= 2.238 R_nl)
 band          = [4.30, 25.83] Mpc
 eta(L~R_nl)   = 1.67

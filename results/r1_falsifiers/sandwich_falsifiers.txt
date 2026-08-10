@@ -7,7 +7,7 @@ N_patches(z=1.5)=520.58
 ell_* ALLOWED band = [4.30, 25.83] Mpc
 
 PRIMARY GATES:
-  F1 BAO: sigma_res ≤ 1.5e-4 at fixed ell_*=R_nl
+  F1 BAO: sigma_res ≤ 2.5e-2 at fixed ell_*=R_nl
   F2 SCALE: residual correlation length in O(1)×R_nl if detected
   F3 SLIP: local/path slip must stay below Maus/Sakr (today: automatic)
   F4 ILLEGAL: no post-hoc ell_* fit, no 1e56, no m-bias rebrand

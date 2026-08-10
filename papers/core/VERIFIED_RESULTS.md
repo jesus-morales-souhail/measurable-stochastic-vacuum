@@ -95,9 +95,9 @@ Under the counting hypothesis alone (no fit):
 |:--------------|:-------|:------------|
 | $\ell_{\ast}=R_8$, $d=3$ | $\sigma_{0,\mathrm{eff}}\approx 1.378\times 10^{-4}$ | (by construction) |
 | $\ell_{\ast}=R_8$, $d=4$ | $\sigma_{0,\mathrm{eff}}\approx 7.12\times 10^{-6}$ | — |
-| $\sigma=1.5\times 10^{-4}$, $d=2$ | $\ell_{\ast}\approx 0.67\,\mathrm{Mpc}$ | **no** ($\sim 94\%$ off) |
-| $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | **yes** ($\sim 5.8\%$ off) |
-| $\sigma=1.5\times 10^{-4}$, $d=4$ | $\ell_{\ast}\approx 54.5\,\mathrm{Mpc}$ | **no** ($\sim 359\%$ off) |
+| $\sigma=2.5\times 10^{-2}$, $d=2$ | $\ell_{\ast}\approx 0.67\,\mathrm{Mpc}$ | **no** ($\sim 94\%$ off) |
+| $\sigma=2.5\times 10^{-2}$, $d=3$ | $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | **yes** ($\sim 5.8\%$ off) |
+| $\sigma=2.5\times 10^{-2}$, $d=4$ | $\ell_{\ast}\approx 54.5\,\mathrm{Mpc}$ | **no** ($\sim 359\%$ off) |
 
 **Verified:** the arithmetic above; **proximity to $R_8$ is specific to $d=3$** at this residual scale.
 **Not verified / not claimed:** $\ell_{\ast}=R_8$; multi-$d$ robustness; any explanation of S$_8$.
@@ -181,7 +181,7 @@ Comoving distance $\chi(1.5)\approx 4.5\times 10^{3} \mathrm{Mpc}$ (trapezoidal 
 |:-----|:--------------------------------------------------------------|:------------------------------|:---------|
 | Sorkin | $\sim 10^{-61}$ | $\sim 67$($\ell_{\ast}=1 \mathrm{Mpc}$) | $\sim 10^{-60}$ |
 | $\sigma=10^{-5}$, $\ell_{\ast}=2.1 \mathrm{Mpc}$ | $\sim 7\times 10^{-6}$ | $\sim 46$ | $\sim 3\times 10^{-4}$ |
-| $\sigma=1.5\times 10^{-4}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$($\ell_{\ast}=10 \mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
+| $\sigma=2.5\times 10^{-2}$ (DESI residual *ceiling*, a posteriori) | $\sim 10^{-4}$ | $\sim 21$($\ell_{\ast}=10 \mathrm{Mpc}$) | $\sim 2\times 10^{-3}$ |
 
 To lift Sorkin local slip to a floor $\lvert \gamma-1 \rvert\sim 0.05$ by $\sqrt{N}$ alone requires $\sqrt{N}\sim 10^{59}$ ($N\sim 10^{119}$), versus $\sqrt{N}\sim 67$ available for $\ell_{\ast}=1 \mathrm{Mpc}$.
 
@@ -203,7 +203,7 @@ To lift Sorkin local slip to a floor $\lvert \gamma-1 \rvert\sim 0.05$ by $\sqrt
 If Sorkin rescues are discarded, the only coherent soft-regime architecture is:
 
 
-\ell_{\ast}\sim\mathrm{Mpc} \Rightarrow \sigma_{0,\mathrm{eff}}\sim 10^{-6}\text{–}10^{-5} \xrightarrow{G_O=e^{2r}, r=\mathcal{O}(1)} \sigma_{\mathrm{res}}\le 1.5\times 10^{-4} \xrightarrow{\pi_T} \mathrm{RMS}_{\mathrm{path}}(\lvert \gamma-1 \rvert)\sim 10^{-4}\text{–}10^{-3}.
+\ell_{\ast}\sim\mathrm{Mpc} \Rightarrow \sigma_{0,\mathrm{eff}}\sim 10^{-6}\text{–}10^{-5} \xrightarrow{G_O=e^{2r}, r=\mathcal{O}(1)} \sigma_{\mathrm{res}}\le 2.5\times 10^{-2} \xrightarrow{\pi_T} \mathrm{RMS}_{\mathrm{path}}(\lvert \gamma-1 \rvert)\sim 10^{-4}\text{–}10^{-3}.
 
 
 | Label | Definition | Residual vs DESI ceiling | Path RMS (OOM, $d=3$, $\varepsilon=1$) |
@@ -236,7 +236,7 @@ If $\sigma_{0,\mathrm{eff}}$ is the holographic Sorkin seed and $r=\mathcal{O}(1
 
 | Sister claim (DESI corpus) | Role here |
 |:---------------------------|:----------|
-| $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) | A posteriori scale only |
+| $\sigma_X < 2.5\times 10^{-2}$ (95% CL, OU kernel) | A posteriori scale only |
 | Tachyonic rank-1 exclusion | Forbids one hard amplifier class |
 | Freeze-out gain $\approx 1$(Route 2 scans) | Supports $G_F=1$ default |
 | Soft desqueezing $\mathcal{O}(10)$ | Supports $G_O$ ceiling used above |

@@ -68,7 +68,7 @@ $P(k)=A\,k^{n_s}T^2(k)$ with Eisenstein–Hu–style transfer (shape $\Gamma_{\m
 | Result | Value |
 |:-------|:------|
 | $R_{\mathrm{nl}}$ | $5.803\,h^{-1}\mathrm{Mpc}=8.610\,\mathrm{Mpc}$ |
-| Downstream $\sigma=(\ell_{\ast}/L_H)^{3/2}$ if $\ell_{\ast}=R_{\mathrm{nl}}$, $d=3$ | $\approx 8.5\times 10^{-5}$ (under DESI ceiling $1.5\times 10^{-4}$) |
+| Downstream $\sigma=(\ell_{\ast}/L_H)^{3/2}$ if $\ell_{\ast}=R_{\mathrm{nl}}$, $d=3$ | $\approx 8.5\times 10^{-5}$ (under DESI ceiling $2.5\times 10^{-2}$) |
 
 ```bash
 python scripts/r1/r1_sigma_R_full.py
@@ -105,7 +105,7 @@ python scripts/r1/r1_principle_Rnl.py # shortcut only
 | $R_{\mathrm{nl}}$ full integral | $8.61$ | prediction (geometry under P$_\mathrm{nl}$) |
 | $r_0(L_*)$(Zehavi class) | $7.4$–$8.9$ | very close; clustering length ≠ variance scale |
 | $R_8=8/h$ | $11.87$ | same decade ($\sim 38\%$ larger) |
-| DESI-ceiling cell $d=3$, $\sigma=1.5\times 10^{-4}$ | $12.56$ | same decade; counting inverse a posteriori |
+| DESI-ceiling cell $d=3$, $\sigma=2.5\times 10^{-2}$ | $12.56$ | same decade; counting inverse a posteriori |
 | NP-A cell $\sigma=10^{-5}$, $d=3$ | $2.06$ | different row — not the lead |
 
 Downstream residual if $\ell_{\ast}=R_{\mathrm{nl}}^{\mathrm{(full)}}\approx 8.61\,\mathrm{Mpc}$, $d=3$:
@@ -114,7 +114,7 @@ Downstream residual if $\ell_{\ast}=R_{\mathrm{nl}}^{\mathrm{(full)}}\approx 8.6
 \sigma_{0,\mathrm{eff}}=\Bigl(\frac{\ell_{\ast}}{L_H}\Bigr)^{3/2} \approx 8.5\times 10^{-5},
 
 
-under the related DESI ceiling $1.5\times 10^{-4}$ — compatibility, not a fit.
+under the related DESI ceiling $2.5\times 10^{-2}$ — compatibility, not a fit.
 
 ---
 
@@ -124,7 +124,7 @@ under the related DESI ceiling $1.5\times 10^{-4}$ — compatibility, not a fit.
 |:----|:------|
 | $\sigma_8$ and $P(k)$ imply $R_{\mathrm{nl}}\ll 3\,\mathrm{Mpc}$ or $\gg 30\,\mathrm{Mpc}$ under standard growth | Principle still well-defined but leaves the 8–12 decade coincidence |
 | Microphysics forces DE grain = $L_P$ | Soft null; telescope residual not from this channel |
-| Derived $\ell_{\ast}=R_{\mathrm{nl}}$ but BAO residual $\gg 1.5\times 10^{-4}$ without damping | Tension with sister bound |
+| Derived $\ell_{\ast}=R_{\mathrm{nl}}$ but BAO residual $\gg 2.5\times 10^{-2}$ without damping | Tension with sister bound |
 | Only way to hit data is to retune $R_{\mathrm{nl}}$ after seeing DESI | Excluded under BOUNDARY |
 
 Still missing for a full theory claim: an explicit calculation — from an action, open-system master equation, or equivalent — showing *why* the vacuum residual grain must sit at $R_{\mathrm{nl}}$ rather than $L_P$, $r_0$, or another IR scale. Until that exists, P$_\mathrm{nl}$ is a motivated hypothesis with a clean length, not a derivation.

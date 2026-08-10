@@ -65,7 +65,7 @@ class TestR1Counting:
         # use metres consistently
         L_m = hubble_radius_m()
         for d in (2, 3, 4):
-            for sigma in (1e-5, 1.5e-4, 1e-6):
+            for sigma in (1e-5, 2.5e-2, 1e-6):
                 ell = ell_for_target_sigma(sigma, L_m, d)
                 assert sigma_from_count(ell, L_m, d) == pytest.approx(sigma, rel=1e-10)
 
@@ -120,8 +120,8 @@ class TestR2Slip:
         assert a == pytest.approx(b, rel=1e-12)
 
     def test_desi_ceiling_amplitude_starved_vs_maus(self):
-        """|γ-1| with σ=1.5e-4, ε=1, δ_m=1 at z=0.5 is O(1e-4) ≪ 0.17."""
-        s = slip_deviation(1.0, 1.5e-4, 0.5, 1.0)
+        """|γ-1| with σ=2.5e-2, ε=1, δ_m=1 at z=0.5 is O(1e-4) ≪ 0.17."""
+        s = slip_deviation(1.0, 2.5e-2, 0.5, 1.0)
         assert s < 5e-4
         assert s < 0.17 / 100  # >100× below Maus-scale |γ-1|~0.17
 
@@ -218,7 +218,7 @@ class TestNoFreeLunchCombined:
 
     def test_mesoscopic_seed_with_soft_open_reaches_band(self):
         s1 = residual_soft_map(1e-5, r=0.0)  # G=1
-        assert 1e-5 <= s1 <= 1.5e-4 or s1 == pytest.approx(1e-5)
+        assert 1e-5 <= s1 <= 2.5e-2 or s1 == pytest.approx(1e-5)
         s20 = residual_soft_map(1e-5, r=1.5)
         # e^{3}*1e-5 ~ 2e-4, near DESI ceiling
         assert 1e-4 < s20 < 5e-4
@@ -248,7 +248,7 @@ class TestPastLightCone:
         ell = ell_for_target_sigma(s0, L_H, 3) / mpc
         slip = slip_deviation(1.0, sres, 0.8)
         rms = rms_incoherent(slip, n_patches(comoving_distance_mpc(1.5), ell))
-        assert sres <= 1.5e-4
+        assert sres <= 2.5e-2
         assert 1e-3 < rms < 1e-2
         assert rms < 0.03  # still below indicative Euclid floor
 
@@ -266,14 +266,14 @@ class TestObservableWall:
     """Einstein + Morales slip wall and detectability inverse."""
 
     def test_wall_formula_z0(self):
-        # |g-1| = 2*1.5e-4*(0.685/0.315) = 2*1.5e-4*2.1746...
-        s = slip_deviation(1.0, 1.5e-4, 0.0, 1.0)
-        expected = 2.0 * 1.5e-4 * (0.685 / 0.315)
+        # |g-1| = 2*2.5e-2*(0.685/0.315) = 2*2.5e-2*2.1746...
+        s = slip_deviation(1.0, 2.5e-2, 0.0, 1.0)
+        expected = 2.0 * 2.5e-2 * (0.685 / 0.315)
         assert s == pytest.approx(expected, rel=1e-12)
         assert 6e-4 < s < 7e-4
 
     def test_wall_decreases_with_z(self):
-        assert slip_deviation(1.0, 1.5e-4, 0.0) > slip_deviation(1.0, 1.5e-4, 1.0)
+        assert slip_deviation(1.0, 2.5e-2, 0.0) > slip_deviation(1.0, 2.5e-2, 1.0)
 
     def test_detectability_threshold_exceeds_desi_ceiling(self):
         # sigma_X needed for |g-1| = 5*0.03 at z=0, eps=1, dm=1
@@ -281,10 +281,10 @@ class TestObservableWall:
         ratio = 0.685 / 0.315
         sx_need = S / (2.0 * ratio)
         assert sx_need > 0.03
-        assert sx_need / 1.5e-4 > 200  # shielding factor
+        assert sx_need / 2.5e-2 > 200  # shielding factor
 
     def test_self_shielding_inequality_euclid_floor(self):
-        s_max = slip_deviation(1.0, 1.5e-4, 0.0)
+        s_max = slip_deviation(1.0, 2.5e-2, 0.0)
         sigma_exp = 0.03
         assert s_max < sigma_exp / 10  # strongly shielded
 
@@ -321,9 +321,9 @@ class TestNarrowPath:
         assert 1.5 < ell_mpc < 3.0
 
     def test_user_chain_r15_exceeds_desi_ceiling(self):
-        """sigma0=1e-5 and r=1.5 => sigma_res > 1.5e-4 (must be clipped to NP-B)."""
+        """sigma0=1e-5 and r=1.5 => sigma_res > 2.5e-2 (must be clipped to NP-B)."""
         sres = residual_soft_map(1e-5, r=1.5)
-        assert sres > 1.5e-4
+        assert sres > 2.5e-2
 
 
 class TestR1T12BBKS:
@@ -370,7 +370,7 @@ class TestR1T1Mechanisms:
         A = normalize_A(Pk, 0.81)
         R_nl = find_R_nl(Pk, A, 1.0) / H
         s = sigma_from_count(R_nl, hubble_radius_mpc(), 3)
-        assert s < 1.5e-4
+        assert s < 2.5e-2
         assert s > 1e-5
 
     def test_t12_gaussian_fraction_delta_c_1(self):
@@ -465,7 +465,7 @@ class TestEllStarExternalScales:
 
     def test_desi_ceiling_d3_near_r8_not_npa(self):
         """Different σ row: ceiling cell ~12 Mpc near R8, not NP-A."""
-        ell_c = ell_mpc_for_sigma(1.5e-4, 3)
+        ell_c = ell_mpc_for_sigma(2.5e-2, 3)
         R8 = r8_mpc()
         assert abs(ell_c / R8 - 1.0) < 0.15
         assert ell_c > 5 * ell_mpc_for_sigma(1e-5, 3)
@@ -557,7 +557,7 @@ class TestInflationSpectatorResidualAtlas:
         from inflation_spectator_residual_atlas import sigma_rho  # noqa: E402
 
         s = sigma_rho(0.036, 0.05, 45.0)
-        assert 1e-5 < s < 1.5e-4
+        assert 1e-5 < s < 2.5e-2
 
     def test_frozen_very_flat_below_euclid(self):
         from inflation_spectator_residual_atlas import sigma_rho  # noqa: E402
@@ -605,17 +605,17 @@ class TestTwoAmplificationGaps:
         assert math.log10(g) == pytest.approx(55.93, abs=0.05)
 
     def test_desi_gap_is_about_10_to_57(self):
-        g = amplification_gap(1.5e-4)
+        g = amplification_gap(2.5e-2)
         assert 5e56 < g < 3e57
         assert math.log10(g) == pytest.approx(57.10, abs=0.05)
 
     def test_desi_over_euclid_is_exactly_15(self):
-        assert amplification_gap(1.5e-4) / amplification_gap(1e-5) == pytest.approx(15.0)
+        assert amplification_gap(2.5e-2) / amplification_gap(1e-5) == pytest.approx(15.0)
 
     def test_slip_decreases_with_z_at_fixed_delta(self):
         """(1+z)^3 is in the denominator of (W)."""
-        s0 = slip_deviation(1.0, 1.5e-4, 0.0, 1.0)
-        s1 = slip_deviation(1.0, 1.5e-4, 1.0, 1.0)
+        s0 = slip_deviation(1.0, 2.5e-2, 0.0, 1.0)
+        s1 = slip_deviation(1.0, 2.5e-2, 1.0, 1.0)
         assert s0 > s1
         assert s0 == pytest.approx(6.52e-4, rel=0.02)
 
@@ -699,7 +699,7 @@ class TestR1OpenKernelScales:
 
     def test_ell_for_desi_ceiling_d3_near_r8(self):
         """d=3 inverse at DESI ceiling lands near R_8 (scale coincidence)."""
-        ell = ell_mpc_for_sigma(1.5e-4, 3)
+        ell = ell_mpc_for_sigma(2.5e-2, 3)
         R8 = r8_mpc()
         assert ell == pytest.approx(12.557, rel=0.01)
         assert abs(ell / R8 - 1.0) < 0.10  # ~5.8%
@@ -708,7 +708,7 @@ class TestR1OpenKernelScales:
         """Honesty lock: d=2 and d=4 at DESI ceiling are FAR from R_8."""
         R8 = r8_mpc()
         for d, min_frac in ((2, 0.5), (4, 1.0)):
-            ell = ell_mpc_for_sigma(1.5e-4, d)
+            ell = ell_mpc_for_sigma(2.5e-2, d)
             assert abs(ell / R8 - 1.0) > min_frac
 
     def test_ell_for_1e_5_d4_order_of_structure_scale(self):
@@ -723,11 +723,11 @@ class TestR1OpenKernelScales:
         assert sigma_for_cell_mpc(r8_mpc(), 3) / s0 > 1e50
 
     def test_np_b_on_desi_ceiling(self):
-        """sigma0 = 1.5e-4 / e^{3} keeps residual on the DESI ceiling."""
+        """sigma0 = 2.5e-2 / e^{3} keeps residual on the DESI ceiling."""
         g = soft_squeeze_gain(1.5)
-        s0 = 1.5e-4 / g
+        s0 = 2.5e-2 / g
         sres = residual_soft_map(s0, r=1.5)
-        assert sres == pytest.approx(1.5e-4, rel=1e-10)
+        assert sres == pytest.approx(2.5e-2, rel=1e-10)
 
     def test_np_a_path_rms_order(self):
         """G_O=1, sigma0=1e-5, d=3 cell: path RMS ~ few x 10^{-4}."""
@@ -748,7 +748,7 @@ class TestR1OpenKernelScales:
         s0 = 1.0e-4 / g  # residual 1e-4 < ceiling
         ell_mpc = ell_for_target_sigma(s0, L_H, 3) / mpc
         sres = residual_soft_map(s0, r=1.5)
-        assert sres <= 1.5e-4
+        assert sres <= 2.5e-2
         slip = slip_deviation(1.0, sres, 0.8)
         rms = rms_incoherent(slip, n_patches(comoving_distance_mpc(1.5), ell_mpc))
         assert 1e-3 < rms < 1e-2
@@ -764,7 +764,7 @@ class TestR1OpenKernelScales:
         rms = rms_incoherent(slip, n)
         naive = s0 * soft_squeeze_gain(r) * math.sqrt(n)
         assert rms != pytest.approx(naive, rel=0.01)
-        assert rms < naive  # prefactor 2(ρX/ρm)/δm < 1 at z=0.8 typically... actually ~1.5e-4*sqrtN vs 2e-4*sqrtN
+        assert rms < naive  # prefactor 2(ρX/ρm)/δm < 1 at z=0.8 typically... actually ~2.5e-2*sqrtN vs 2e-4*sqrtN
 
 
 class TestSandwichDerivation:

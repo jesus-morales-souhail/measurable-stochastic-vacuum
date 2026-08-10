@@ -5,7 +5,7 @@
 **Date:** July 2026
 **Status:** Architecture note grounded in verified identities · independent research, **preprint status**
 **Documented results / tests:** [`VERIFIED_RESULTS.md`](VERIFIED_RESULTS.md) · `pytest -q` · [`scripts/core/lib_verified.py`](../../scripts/core/lib_verified.py)
-**Related empirical bound:** $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+**Related empirical bound:** $\sigma_X < 2.5\times 10^{-2}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
@@ -136,7 +136,7 @@ That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch
 
 ## 4. DESI-safe window (critical for coherence with null residual)
 
-The related OU bound is $\sigma_X < 1.5\times 10^{-4}$ (95% CL) on the **isotropic residual** kernel.
+The related OU bound is $\sigma_X < 2.5\times 10^{-2}$ (95% CL) on the **isotropic residual** kernel.
 
 If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 
@@ -154,7 +154,7 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 |:------|:-----------|:-----|
 | **NP-A** | Mesoscopic seed, $G_O=1$, $\sigma_0\sim 10^{-5}$ | Safest vs DESI residual; path RMS $\sim$ few $\times 10^{-4}$ |
 | **NP-B** | Mesoscopic seed + soft $r\sim 1.5$ with $\sigma_0\lesssim 7.5\times 10^{-6}$ | **Illustrative** DESI-safe branch; path RMS $\sim$ few $\times 10^{-3}$ |
-| **NP-C** | Same residual $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ but $\varepsilon<1$ | Reduces slip RMS proportionally; needs $\varepsilon$ from theory |
+| **NP-C** | Same residual $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$ but $\varepsilon<1$ | Reduces slip RMS proportionally; needs $\varepsilon$ from theory |
 
 **NP-user sketch** ($\sigma_0=10^{-5}$, $r=1.5$) is the right *shape* of the narrow path but must be **clipped** into NP-B (or NP-A) to stay consistent with the DESI residual null/ceiling.
 
@@ -173,7 +173,7 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 while the isotropic BAO residual remains
 
 
-\sigma_{\mathrm{res}} \le 1.5\times 10^{-4} \quad\text{(sister bound)}.
+\sigma_{\mathrm{res}} \le 2.5\times 10^{-2} \quad\text{(sister bound)}.
 
 
 That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_{\ast}$.
@@ -245,7 +245,7 @@ R1 mesoscopic cell
  ▼
 R3 soft open map (optional, bounded)
  r = O(1) → G_O ~ 1–20
- with sigma_res = G_O * sigma_0 ≤ 1.5e-4 (DESI-safe)
+ with sigma_res = G_O * sigma_0 ≤ 2.5e-2 (DESI-safe)
  │
  ▼
 R2 anisotropic stress → light

@@ -3,7 +3,7 @@
   "sigma_free": 8.516255298808623e-05,
   "lambda_work": 0.00012348011811037194,
   "g_work": 1.449934434535401,
-  "sigma_work_ceiling": 0.00015,
+  "sigma_work_ceiling": 0.025,
   "slip_local_free": 6.350986216913695e-05,
   "slip_local_work": 0.00011186230322032788,
   "RMS_path_free": 0.0014490560030054878,
@@ -18,11 +18,11 @@
       "id": "T1_BAO_residual",
       "observable": "DESI/Euclid BAO residual \u03c3_X (OU/QNM)",
       "prediction": 8.516255298808623e-05,
-      "ceiling": 0.00015,
-      "floor_now": 0.00015,
+      "ceiling": 0.025,
+      "floor_now": 0.025,
       "unique_fingerprint": "Amplitude only; lock ell_*=R_nl (no float)",
       "stage4_action": "Tighten \u03c3_X with DR3/Euclid BAO; pre-register ell_*=R_nl",
-      "kills_if": "\u03c3_X >> 1.5e-4 at fixed R_nl with no damping",
+      "kills_if": "\u03c3_X >> 2.5e-2 at fixed R_nl with no damping",
       "supports_if": "\u03c3_X stays under ceiling; optional detection near free grain"
     },
     {

@@ -32,7 +32,7 @@ from lib_verified import H0_KM_S_MPC, ell_mpc_for_sigma, r8_mpc  # noqa: E402
 
 H = H0_KM_S_MPC / 100.0  # 0.674
 ELL_NPA = ell_mpc_for_sigma(1e-5, 3)
-ELL_CEIL = ell_mpc_for_sigma(1.5e-4, 3)
+ELL_CEIL = ell_mpc_for_sigma(2.5e-2, 3)
 R8 = r8_mpc()
 
 

@@ -55,7 +55,7 @@ Below: tiers by weight. “Serious” ≠ “correct.”
 | Why it fits | Directly sets $\ell_{\ast}\sim R_{\mathrm{nl}}$ by definition of the cutoff; amplitude $\sim (L_P/L_{\mathrm{IR}})^p$ or $1/\sqrt{N_{\mathrm{cell}}}$ can be checked against $\sigma_X$. |
 | Key literature | Holographic DE / IR–UV relations (e.g. CKN-type bounds for mean $\Lambda$); structure-scale cutoffs appear in averaging and coarse-graining papers more than in classic HDE. |
 | Status | Choosing $L_{\mathrm{IR}}=R_{\mathrm{nl}}$ is still a postulate unless derived from coarse-graining of QFT on an inhomogeneous background. |
-| What to compute next | Given $L_{\mathrm{IR}}=R_{\mathrm{nl}}$ from $\sigma(R)=1$, predict $\sigma_{0,\mathrm{eff}}$ under $d=3$ counting; require it $\le 1.5\times 10^{-4}$ a posteriori (already true at $8.61\,\mathrm{Mpc}$). The hard part remains *why* that IR cutoff. |
+| What to compute next | Given $L_{\mathrm{IR}}=R_{\mathrm{nl}}$ from $\sigma(R)=1$, predict $\sigma_{0,\mathrm{eff}}$ under $d=3$ counting; require it $\le 2.5\times 10^{-2}$ a posteriori (already true at $8.61\,\mathrm{Mpc}$). The hard part remains *why* that IR cutoff. |
 | Risk | Easy to reinvent free $L_{\mathrm{IR}}$ as a dial; must stay locked to matter $\sigma(R)$. |
 
 ---

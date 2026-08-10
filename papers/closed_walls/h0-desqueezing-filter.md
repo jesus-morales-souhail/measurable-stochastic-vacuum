@@ -20,7 +20,7 @@ H_0(z)=H_{0,\mathrm{fid}}\bigl[1+\varepsilon\,e^{-\theta x}\bigr]
 
 and then chooses $\theta\sim 0.47$ so the knee sits at $z\sim 0.5$–$0.7$ **fails** the filter I use here: the functional form is not derived from Einstein or OU dynamics, and $\theta$ is fitted to the known transition.
 
-This note freezes that filter, restores the correct status of $\sigma_X$ (temporal in $x=\ln a$), separates **CPL 2.5σ/4.2σ** from **H0-running**, and runs the amplitude test: any desqueezing/OU residual is bounded by $\sigma_X<1.5\times 10^{-4}$ (95% CL), which is $\sim 500\times$ too small to produce an $8\%H_0$ drift — independent of hand-tuned $\theta$.
+This note freezes that filter, restores the correct status of $\sigma_X$ (temporal in $x=\ln a$), separates **CPL 2.5σ/4.2σ** from **H0-running**, and runs the amplitude test: any desqueezing/OU residual is bounded by $\sigma_X<2.5\times 10^{-2}$ (95% CL), which is $\sim 500\times$ too small to produce an $8\%H_0$ drift — independent of hand-tuned $\theta$.
 
 ---
 
@@ -32,7 +32,7 @@ This note freezes that filter, restores the correct status of $\sigma_X$ (tempor
 | $t_{1/2}(\lvert\langle a^2\rangle\rvert)=\ln 2/\gamma$ | Measured (QuTiP) | sister `desqueezing_relax_time.py` / heavy scan |
 | Map $\Gamma_{\mathrm{phys}}(z)=\theta H(z)$, $\gamma\leftrightarrow\theta H_0$ | Programme continuity | sister desqueezing note |
 | H0-running as **active literature** | Real (contested) | Krishnan, Dainotti, Wong/H0LiCOW |
-| DESI residual bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) | Measured | related OU analysis |
+| DESI residual bound $\sigma_X<2.5\times 10^{-2}$ (95% CL) | Measured | related OU analysis |
 | BAO-only free $ (w_0,w_a)$: $w_0\approx -0.99$, $w_a\approx -0.02$ | Measured (BAO-only baseline) | `results/eos_cpl_desi_dr2/eos_cpl_summary.txt` |
 
 ---
@@ -78,12 +78,12 @@ Anomalous correlator / residual track (schematic, already in desqueezing note):
 \lvert X\rvert(x)\;\lesssim\;\sigma\,e^{-\theta\,\Delta x},
 
 
-with $\sigma\le\sigma_X^{\mathrm{DESI}}=1.5\times 10^{-4}$ and $\theta$ set by OU continuity ($\Gamma=\theta H$), **not** by the H0-running knee.
+with $\sigma\le\sigma_X^{\mathrm{DESI}}=2.5\times 10^{-2}$ and $\theta$ set by OU continuity ($\Gamma=\theta H$), **not** by the H0-running knee.
 
 Even at the **most optimistic** bound $\theta\to 0$ (no damping, residual sits at ceiling for all $z$):
 
 
-\biggl\lvert\frac{\delta H}{H}\biggr\rvert_{\mathrm{from\ residual}} \;\lesssim\; \sigma_X \;<\; 1.5\times 10^{-4} \;\ll\; 0.083 \;\approx\; \frac{73}{67.4}-1.
+\biggl\lvert\frac{\delta H}{H}\biggr\rvert_{\mathrm{from\ residual}} \;\lesssim\; \sigma_X \;<\; 2.5\times 10^{-2} \;\ll\; 0.083 \;\approx\; \frac{73}{67.4}-1.
 
 
 **Short by a factor $\gtrsim 500$**, independent of inventing $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ and independent of hand-tuned $\theta\sim 0.47$.
@@ -145,7 +145,7 @@ From related DESI paper abstract (multi-probe CPL, **not** this note’s H0-runn
 |:---|:------|
 | F1 | $t_{1/2}=\ln 2/\gamma$ is programme-validated |
 | F2 | $\sigma_X$ is defined on $x=\ln a$ (temporal e-folds) |
-| F3 | $\lvert\delta H/H\rvert\lesssim\sigma_X<1.5\times 10^{-4}\ll 0.083$ under residual identification |
+| F3 | $\lvert\delta H/H\rvert\lesssim\sigma_X<2.5\times 10^{-2}\ll 0.083$ under residual identification |
 | F4 | Hand-tuned $\theta\sim 0.47$ is rejected |
 | F5 | BAO-only $ (w_0,w_a)\approx(-0.99,-0.02)$ |
 

@@ -35,7 +35,7 @@ from lib_verified import (  # noqa: E402
 )
 from r1_sigma_R_full import H as H_FID, SIGMA8, find_R_nl, make_Pk_unnorm, normalize_A  # noqa: E402
 
-DESI_X = 1.5e-4
+DESI_X = 2.5e-2
 MAUS = 0.11
 SAKR = 0.05
 H0_TENSION = 0.08  # ~8% local vs CMB class
@@ -75,7 +75,7 @@ def main() -> None:
             "floor_now": DESI_X,
             "unique_fingerprint": "Amplitude only; lock ell_*=R_nl (no float)",
             "stage4_action": "Tighten σ_X with DR3/Euclid BAO; pre-register ell_*=R_nl",
-            "kills_if": "σ_X >> 1.5e-4 at fixed R_nl with no damping",
+            "kills_if": "σ_X >> 2.5e-2 at fixed R_nl with no damping",
             "supports_if": "σ_X stays under ceiling; optional detection near free grain",
         },
         {

@@ -53,7 +53,7 @@ tests/ results/ data/
 Mean expansion: flat $\Lambda$CDM.
 Residual amplitude under counting: $\sigma=(\ell_{\ast}/L_H)^{3/2}$.
 
-If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) from the related analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that and closed it on purpose.
+If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X<2.5\times 10^{-2}$ (95% CL) from the related analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that and closed it on purpose.
 
 On public Cosmicflows-4 I also looked at local **matter** kinematics (block residual velocities and collapse-peak relief). That is context for gravity vs expansion near $R_{\mathrm{nl}}$. It is **not** a dark-energy residual map.
 

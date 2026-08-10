@@ -10,7 +10,7 @@ The DESI OU residual null is **closed**. This note is the hyperfocus map of what
 
 | Wall | Result |
 |------|--------|
-| Stationary OU / QNM residual on DESI DR2 α | null; σ_X → 0; working ceiling \(1.5\times 10^{-4}\) |
+| Stationary OU / QNM residual on DESI DR2 α | null; σ_X → 0; working ceiling \(2.5\times 10^{-2}\) |
 | Rank-1 coherent tachyonic growth | excluded when active (\(\Delta\ln\mathcal{L}\sim -13\)) |
 | Soft amplify pure Sorkin \(10^{-61}\) | gap \(\sim 10^{56}\); Routes 2–3 dead; Route 1 only redefines seed |
 | Slip from BAO-bounded isotropic residual | \(\lvert\gamma-1\rvert\sim 10^{-4}\), starved vs Maus/Sakr |
@@ -38,7 +38,7 @@ The **simplest linked empirical question** is only about **compatibility**:
 
 | Gate | Statement | Number |
 |------|-----------|--------|
-| **G1** | Free grain below DESI residual ceiling | \(\sigma_{\mathrm{free}}=(R_{\mathrm{nl}}/L_H)^{3/2}\approx 8.52\times 10^{-5} < 1.5\times 10^{-4}\) (headroom \(\approx 1.76\times\)) |
+| **G1** | Free grain below DESI residual ceiling | \(\sigma_{\mathrm{free}}=(R_{\mathrm{nl}}/L_H)^{3/2}\approx 8.52\times 10^{-5} < 2.5\times 10^{-2}\) (headroom $\approx 294\times$)) |
 | **G2** | CF4 velocity coherence in sandwich band | \(r_e(v_{\mathrm{pec}})\approx 19.5\,\mathrm{Mpc} \in [0.5,3]R_{\mathrm{nl}}=[4.3,25.8]\,\mathrm{Mpc}\) (\(r_e/R_{\mathrm{nl}}\approx 2.26\)) |
 | **G3** | At \(L\sim R_{\mathrm{nl}}\), block \(\eta=\sigma_v/(H_0 L)\) is \(\mathcal{O}(1)\) | \(\eta(L\approx R_{\mathrm{nl}})\approx 1.4\) |
 

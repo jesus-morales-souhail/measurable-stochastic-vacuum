@@ -14,7 +14,7 @@ I split the programme into three repos so claims do not get mixed:
 | [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes) | analogies and scale checks (not cosmology claims) |
 
 The scientific question: can vacuum / dark-energy noise sit near $10^{-5}$–$10^{-4}$ without a free $10^{56}$ boost from Planck?
-On the data side I already have $\sigma_X < 1.5\times 10^{-4}$ (95% CL).
+On the data side I already have $\sigma_X < 2.5\times 10^{-2}$ (95% CL).
 On the theory side the working picture is $\ell_{\ast}\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ under a few axioms I write down explicitly.
 
 Short-paper outline:

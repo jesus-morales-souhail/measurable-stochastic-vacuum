@@ -34,7 +34,7 @@ The two-point structure of a residual field $\chi$ (or a residual proxy correlat
 \ell_{\ast}\in [0.5,\,3]\,R_{\mathrm{nl}}\approx [4.3,\,25.8]\,\mathrm{Mpc}
 
 
-when the residual amplitude is in the programme window $\sigma\sim 10^{-5}$–$1.5\times 10^{-4}$.
+when the residual amplitude is in the programme window $\sigma\sim 10^{-5}$–$2.5\times 10^{-2}$.
 
 **H2 (matter lock).**
 $\chi$ is positively correlated with a nonlinear mask built only from matter:
@@ -57,7 +57,7 @@ Residual is spatially white on survey scales, or correlated only on $\ll 1\,\mat
 | $R_{\mathrm{nl}}$ | $\approx 8.61\,\mathrm{Mpc}$ | $\sigma(R)=1$, EH-like $P(k)$, $\sigma_8=0.81$ |
 | Counting $d$ | $3$ | programme default |
 | $\sigma_{\mathrm{free}}$ | $\approx 8.5\times 10^{-5}$ | $(R_{\mathrm{nl}}/L_H)^{3/2}$ |
-| Residual ceiling | $\sigma_X<1.5\times 10^{-4}$ (95%) | related DESI OU |
+| Residual ceiling | $\sigma_X<2.5\times 10^{-2}$ (95%) | related DESI OU |
 | Allowed $\ell_{\ast}$ band | $[0.5,3]R_{\mathrm{nl}}$ | sandwich $\mathcal{O}(1)$ |
 | $k_{\mathrm{nl}}$ pivot | $\sim 0.17\,h\,\mathrm{Mpc}^{-1}$ | $\sim 1/(R_{\mathrm{nl}}h)$ OOM |
 | $\ell_{\mathrm{sep}}$ (packing) | $\approx 15.9\,\mathrm{Mpc}$ | $f(\delta>1)\approx 0.16$ |
@@ -108,7 +108,7 @@ This protocol focuses on cross-structure, assuming a residual amplitude map or t
 
 T2 supports the sandwich scale lock if all hold:
 
-1. T1 amplitude still $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$ (or updated public ceiling) at fixed $\ell_{\ast}=R_{\mathrm{nl}}$.
+1. T1 amplitude still $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$ (or updated public ceiling) at fixed $\ell_{\ast}=R_{\mathrm{nl}}$.
 2. S1: $r_e\in[0.5,3]R_{\mathrm{nl}}$ at $\ge 2\sigma$ preference over white / Gpc-scale alternatives **or** upper limits still allow the band.
 3. S2: $\xi_{rm}$ or $P_{rm}$ positive in the $R_{\mathrm{nl}}$ band at $\ge 2\sigma$ vs S4 random mask.
 4. No excluded $\ell_{\ast}$ refit.
@@ -122,7 +122,7 @@ T2 kills the sandwich scale claim if any hold:
 | K1 | Best-fit residual correlation length $\lt 1\,\mathrm{Mpc}$ or $\gt 100\,\mathrm{Mpc}$ at $\sigma\sim 10^{-4}$ with $\Delta\mathrm{ln}L\ge 1.92$ against the allowed band |
 | K2 | Residual significantly anti-correlated with nonlinear mask in all $\delta_c$ with no derived sign mechanism |
 | K3 | Only way to pass S1–S2 is to float $\ell_{\ast}$ after unblinding residual maps |
-| K4 | Amplitude required for a T2 detection forces $\sigma_{\mathrm{res}}\gg 1.5\times 10^{-4}$ without damping |
+| K4 | Amplitude required for a T2 detection forces $\sigma_{\mathrm{res}}\gg 2.5\times 10^{-2}$ without damping |
 
 ### 4.3 Inconclusive (default today)
 
@@ -170,7 +170,7 @@ T2 kills the sandwich scale claim if any hold:
 | Item | Pre-registered value | Measured | Support? |
 |:-----|:---------------------|:---------|:---------|
 | $R_{\mathrm{nl}}$ fixed | $8.61\,\mathrm{Mpc}$ | — | — |
-| $\sigma_{\mathrm{res}}$ (T1) | $\le 1.5\times 10^{-4}$ | | |
+| $\sigma_{\mathrm{res}}$ (T1) | $\le 2.5\times 10^{-2}$ | | |
 | $r_e$(S1) | $[4.3,25.8]\,\mathrm{Mpc}$ | | |
 | Sign $\xi_{rm}$ (S2) | $>0$ in band | | |
 | Random mask (S4) | null | | |

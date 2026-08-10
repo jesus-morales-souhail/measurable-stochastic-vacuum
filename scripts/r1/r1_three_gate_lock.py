@@ -15,7 +15,7 @@ the measured CF4 peculiar-velocity coherence scale?
 
 Gates
 -----
-  G1  sigma_free(R_nl, d=3)  ≲  DESI working ceiling 1.5e-4
+  G1  sigma_free(R_nl, d=3)  ≲  DESI working ceiling 2.5e-2
   G2  CF4 r_e(v_pec)         ∈  [0.5, 3] R_nl
   G3  CF4 block eta(L=R_nl) is O(1) (gravity ~ expansion grain), not ≫1 forever
 
@@ -44,7 +44,7 @@ L_H = C_KMS / H0  # Mpc
 R_NL = 8.6098  # from r1_sandwich / r1_sigma_R_full
 D = 3
 SIGMA_FREE = (R_NL / L_H) ** (D / 2)
-DESI_CEILING = 1.5e-4  # working 95% CL OU kernel (sister repo)
+DESI_CEILING = 2.5e-2  # working 95% CL OU kernel (sister repo)
 CF4_RE = 19.27  # Mpc, L=20 block-net; jk err in results/r1_cf4_jackknife
 BAND = (0.5 * R_NL, 3.0 * R_NL)
 

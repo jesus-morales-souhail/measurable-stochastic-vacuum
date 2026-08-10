@@ -69,11 +69,11 @@ Publication-oriented expansion (walls vs kernel, R1d scale table, falsifiers):
 
 ## 5. A posteriori DESI use (A5)
 
-Sister bound $\sigma_X<1.5\times 10^{-4}$ (95% CL) is a test only:
+Sister bound $\sigma_X<2.5\times 10^{-2}$ (95% CL) is a test only:
 
-- derived $\sigma_{0,\mathrm{eff}}$ in $[10^{-5},1.5\times 10^{-4}]$ → compatible, Euclid can decide;
+- derived $\sigma_{0,\mathrm{eff}}$ in $[10^{-5},2.5\times 10^{-2}]$ → compatible, Euclid can decide;
 - $\ll 10^{-5}$ → predict null;
-- $\gg 1.5\times 10^{-4}$ without damping → tension.
+- $\gg 2.5\times 10^{-2}$ without damping → tension.
 
 Never tune $\ell_{\ast}$ to that number.
 Never tune $\ell_{\ast}$ to $R_8$ after inspecting S$_8$ either (same dial class; see open-kernel note §7).

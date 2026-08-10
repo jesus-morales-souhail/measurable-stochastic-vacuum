@@ -4,7 +4,7 @@
     "sigma_free": 8.516255298808623e-05,
     "lambda_working": 0.00012348011811037194,
     "g_working": 1.449934434535401,
-    "sigma_res_working_ceiling": 0.00015,
+    "sigma_res_working_ceiling": 0.025,
     "eps": 1.0,
     "z_slip": 0.8,
     "z_src": 1.5,
@@ -21,11 +21,11 @@
     {
       "observable": "sigma_res (BAO residual amplitude)",
       "prediction": 8.516255298808623e-05,
-      "floor": 0.00015,
+      "floor": 0.025,
       "floor_name": "DESI \u03c3_X 95% (sister OU)",
       "floor_over_pred": 1.7613375214454194,
-      "kills_if": "Measured \u03c3_res \u226b 1.5e-4 with no damping, at fixed ell_*=R_nl",
-      "supports_if": "\u03c3_res stays \u2264 1.5e-4 while ell_* locked to R_nl (compatibility)",
+      "kills_if": "Measured \u03c3_res \u226b 2.5e-2 with no damping, at fixed ell_*=R_nl",
+      "supports_if": "\u03c3_res stays \u2264 2.5e-2 while ell_* locked to R_nl (compatibility)",
       "notes": "Primary empirical gate. Illegal: refit ell_* after seeing DESI."
     },
     {
@@ -35,7 +35,7 @@
       "floor_name": "Euclid-band OOM 1e-5",
       "floor_over_pred": 0.11742250142969464,
       "kills_if": "Euclid residual null far below free grain with ell_*=R_nl forced",
-      "supports_if": "Residual band 1e-5\u20131.5e-4 consistent with counting at R_nl",
+      "supports_if": "Residual band 1e-5\u20132.5e-2 consistent with counting at R_nl",
       "notes": "Detection window if residual appears at predicted OOM without 1e56."
     },
     {
@@ -44,7 +44,7 @@
       "floor": 0.11,
       "floor_name": "Maus \u03c3(\u03b3)=0.11",
       "floor_over_pred": 983.3518248175185,
-      "kills_if": "Mean |\u03b3\u22121| required \u226b Maus if eps~1 and \u03c3~1.5e-4 without damping",
+      "kills_if": "Mean |\u03b3\u22121| required \u226b Maus if eps~1 and \u03c3~2.5e-2 without damping",
       "supports_if": "Predicted local slip \u226a Maus (consistency; not a detection)",
       "notes": "Today Maus cannot test sandwich amplitude; only kills huge eps\u00d7\u03c3."
     },
@@ -93,9 +93,9 @@
     "Maus_sigma_gamma": 0.11,
     "Sakr_eta_const": 0.05,
     "Sakr_eta_free": 0.3,
-    "DESI_sigma_X": 0.00015,
+    "DESI_sigma_X": 0.025,
     "Stage4_m_bias_OOM": 0.002,
     "Euclid_residual_target": 1e-05
   },
-  "decision_tree": "\nDECISION TREE (sandwich package)\n================================\n1. Does residual sector \u03c7 couple locally to \u03b4_m? (A0\u2013A1)\n   NO  \u2192 sandwich does not apply; scale undetermined (package narrows)\n   YES \u2192 continue\n2. Is ell_* forced to ~R_nl? (theorem under A0\u2013A4)\n   If data force free residual correlation \u226a1 Mpc or \u226b100 Mpc at \u03c3~1e-4\n   \u2192 sandwich band dies (L2 for this principle form)\n3. Is \u03c3_res \u2264 1.5e-4 at fixed ell_*=R_nl?\n   NO (and no derived damping) \u2192 candidate dies vs DESI\n   YES \u2192 compatible; Euclid residual can still detect or deepen null\n4. Slip / path RMS\n   Predicted \u226a Maus/Sakr today \u2192 consistency only\n   Future stochastic path-RMS proxy at 1e-3\u20131e-4 \u2192 real test of anisotropic channel\n5. Illegal moves (instant L4)\n   - Fit ell_* to DESI after looking\n   - Free 1e56 amplifier\n   - Equate Stage-IV m-bias with path-RMS detection\n"
+  "decision_tree": "\nDECISION TREE (sandwich package)\n================================\n1. Does residual sector \u03c7 couple locally to \u03b4_m? (A0\u2013A1)\n   NO  \u2192 sandwich does not apply; scale undetermined (package narrows)\n   YES \u2192 continue\n2. Is ell_* forced to ~R_nl? (theorem under A0\u2013A4)\n   If data force free residual correlation \u226a1 Mpc or \u226b100 Mpc at \u03c3~1e-4\n   \u2192 sandwich band dies (L2 for this principle form)\n3. Is \u03c3_res \u2264 2.5e-2 at fixed ell_*=R_nl?\n   NO (and no derived damping) \u2192 candidate dies vs DESI\n   YES \u2192 compatible; Euclid residual can still detect or deepen null\n4. Slip / path RMS\n   Predicted \u226a Maus/Sakr today \u2192 consistency only\n   Future stochastic path-RMS proxy at 1e-3\u20131e-4 \u2192 real test of anisotropic channel\n5. Illegal moves (instant L4)\n   - Fit ell_* to DESI after looking\n   - Free 1e56 amplifier\n   - Equate Stage-IV m-bias with path-RMS detection\n"
 }

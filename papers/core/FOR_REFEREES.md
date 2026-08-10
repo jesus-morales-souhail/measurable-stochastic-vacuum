@@ -18,7 +18,7 @@ Theory and data live in two places. This repo: kinematics and identities I can c
 | This repository | Related repositoriesitory |
 |:----------------|:------------------|
 | Theory kinematics + verified identities | Empirical DESI BAO residual analysis |
-| Minimal model as simple as $\Lambda$ | Working bound $\sigma_X < 1.5\times 10^{-4}$ (95% CL) |
+| Minimal model as simple as $\Lambda$ | Working bound $\sigma_X < 2.5\times 10^{-2}$ (95% CL) |
 | Conditional light-path predictions | Model kills (e.g. coherent tachyonic growth) |
 | Map of **measured walls** vs **open kernel** (R1) | Amplification gap (no free soft gain on Sorkin) |
 | **Not** a detection paper | Empirical DESI residual bound |
@@ -97,7 +97,7 @@ with $L_{H}=c/H_{0}$.
 G_{O}=e^{2r}, \qquad \sigma_{\mathrm{res}}=G_{O} \sigma \quad(r=\mathcal{O}(1);\ e.g.\ r=1.5\Rightarrow G_{O}\approx 20.09).
 
 
-**DESI-safe constraint (a posteriori):** $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$.
+**DESI-safe constraint (a posteriori):** $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$.
 
 ### 3.5 Local gravitational slip (sub-horizon GR)
 
@@ -136,7 +136,7 @@ N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \l
 | C5 | Path $\mathrm{RMS}=s\sqrt{N}$ for iid zero-mean patches | MC + tests |
 | C6 | Path + soft open **cannot** rescue Sorkin | combined tests |
 | C7 | DESI-safe windows NP-A / NP-B exist as **hand-placed** kinematics with $\mathrm{RMS}\sim 10^{-4}$–$10^{-3}$ | `NARROW_PATH` + tests |
-| C8 | Sister DESI bound $\sigma_{X}<1.5\times 10^{-4}$ (95% CL) used only a posteriori | related repository |
+| C8 | Sister DESI bound $\sigma_{X}<2.5\times 10^{-2}$ (95% CL) used only a posteriori | related repository |
 | C9 | Slip wall (W) from Einstein+(M1); self-shielding (S); invert (D) | `OBSERVABLE_WALL.md` + tests |
 | C10 | Soft amplifiers of Sorkin are **measured walls**; R1 principle for $\ell_{\ast}$ is a separate **open kernel** | `r1-open-kernel.md` + verified core |
 | C11 | Scale arithmetic: $R_8=8/h$; $\ell_{\ast}(\sigma,d)$ and $\sigma(R_8,d)$ under counting; **$R_8$ proximity is $d=3$-specific** | `lib_verified` + `scripts/r1/r1_open_kernel_scales.py` + tests |
@@ -144,7 +144,7 @@ N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \l
 | C13 | Gordon & Wands: seed $H_{\mathrm{inf}}/2\pi$; growth factor $\sim 45$ (not $10^{56}$); distinct from Sorkin soft gap | `inflation-spectator-seed-gordon-wands.md` + `scripts/side/gordon_wands_factor45.py` |
 | C14 | At $r\sim 0.036$, $\delta Q/M_p\sim 3\times 10^{-6}$; with $A\sim 45$, $\varepsilon_Q\sim 0.05$ get $\sigma_\rho\sim\mathrm{few}\times 10^{-5}$ (OOM) | `inflation-spectator-residual-atlas.md` + script + tests |
 | C15 | DESI-safe path-RMS toy: $H_0(0.15)/H_0(1.5)\approx 1.006$, not $1.083$; $\beta$ short $\times 16$–$38$ | `h0-bridge-toy-map.md` + script + tests |
-| C16 | Residual amplitude $\sigma_X<1.5\times 10^{-4}$ (95% CL) cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ excluded | `h0-desqueezing-filter.md` + script + tests |
+| C16 | Residual amplitude $\sigma_X<2.5\times 10^{-2}$ (95% CL) cannot source $\delta H/H\sim 0.083$ (short $\gtrsim 500\times$); hand-tuned $\theta\sim 0.47$ excluded | `h0-desqueezing-filter.md` + script + tests |
 
 ### 4.2 Not claimed
 

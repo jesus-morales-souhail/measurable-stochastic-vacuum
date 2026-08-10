@@ -49,13 +49,13 @@ def main() -> None:
     print()
 
     print("--- Measurable band needs WP1 mesoscopic seed ---")
-    targets = [1e-6, 1e-5, 5e-5, 1.5e-4]
+    targets = [1e-6, 1e-5, 5e-5, 2.5e-2]
     print(f"{'sigma_0,eff':>14}  {'G_O=1':>12}  {'G_O=20':>12}  note")
     for s0 in targets:
         a1 = sigma_res(s0, 1.0)
         a20 = sigma_res(s0, G_O_SOFT)
         note = ""
-        if a20 > 1.5e-4:
+        if a20 > 2.5e-2:
             note = "above DESI 95% ceiling (a posteriori tension if no damping)"
         elif a1 >= 1e-5:
             note = "already in Euclid-ish band at G=1"

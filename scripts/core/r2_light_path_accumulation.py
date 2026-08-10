@@ -39,7 +39,7 @@ MPC_M = 3.085677581e22
 L_P_M = 1.616e-35
 
 # Observational floors (a posteriori tests only)
-DESI_SIGMA_X = 1.5e-4
+DESI_SIGMA_X = 2.5e-2
 MAUS_SLIP = 0.17  # |γ-1| ~ 0.17 for γ=1.17
 SAKR_FLOOR = 0.05
 # Weak lensing / shear: order-of-magnitude rms sensitivity ~ 1e-2 to few 1e-3

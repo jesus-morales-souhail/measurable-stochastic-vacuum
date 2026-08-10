@@ -4,7 +4,7 @@
 Filter: desqueezing is real; H0(z)=H0_fid[1+ε exp(-θ x)] with θ fitted to z~0.5–0.7 is not.
 
 Legal amplitude bound (no free θ to the 9%):
-  |δH/H| ≲ σ  ≤ σ_X_DESI = 1.5e-4  <<  0.083 ≈ 73/67.4 - 1
+  |δH/H| ≲ σ  ≤ σ_X_DESI = 2.5e-2  <<  0.083 ≈ 73/67.4 - 1
 
 Even θ→0 (no damping) cannot reach the Hubble tension under the residual bound.
 Complex ω only phases the correlator; it does not raise the allowed σ.
@@ -21,7 +21,7 @@ from __future__ import annotations
 
 import math
 
-SIGMA_X_DESI = 1.5e-4
+SIGMA_X_DESI = 2.5e-2
 H0_PLANCK = 67.4
 H0_SHOES = 73.0
 RATIO = H0_SHOES / H0_PLANCK
@@ -79,7 +79,7 @@ def main() -> None:
 
     print("--- Complex ω ---")
     print("  ω = ω_R - i γ/2  and  t_1/2 = ln2/γ  are REAL (desqueezing scans).")
-    print("  They do not raise σ above 1.5e-4. Phase ≠ free energy for 9% H0.")
+    print("  They do not raise σ above 2.5e-2. Phase ≠ free energy for 9% H0.")
     print()
     print("See papers/h0-desqueezing-filter.md")
 

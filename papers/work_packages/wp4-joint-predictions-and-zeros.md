@@ -35,11 +35,11 @@ $G_U=1$, $G_F=1$, $r\le 1.5\RightarrowG_O\le e^{3}\approx 20$, $\varepsilon\le 1
 | Sorkin + soft open | $\sim 10^{-61}$ | 20 | $\sim 10^{-60}$ | $\sim 10^{-60}$ | 1 Mpc | $\sim 67$ | $\sim 10^{-59}$ | **Structural null** |
 | Mesoscopic count $d=2$, $\sigma=10^{-5}$ | $10^{-5}$ | 1 | $10^{-5}$ | $\sim 7\times 10^{-6}$ | $\sim 0.04$ Mpc | $\sim 335$ | $\sim 2\times 10^{-3}$ | Measurable *if* $\ell_{\ast}$ derived |
 | Mesoscopic $d=3$, $\sigma=10^{-5}$ | $10^{-5}$ | 1 | $10^{-5}$ | $\sim 7\times 10^{-6}$ | $\sim 2.1$ Mpc | $\sim 46$ | $\sim 3\times 10^{-4}$ | Same |
-| Mesoscopic + soft open | $10^{-5}$ | 20 | $\sim 2\times 10^{-4}$ | $\sim 1.5\times 10^{-4}$ | $\sim 2$ Mpc | $\sim 46$ | $\sim 10^{-3}$ | Near DESI residual ceiling (a posteriori) |
-| DESI residual ceiling (external bound) | — | — | $<1.5\times 10^{-4}$ | $\lesssim 10^{-4}$ | model-dep. | $\mathcal{O}(10$–$10^{2})$ | $\lesssim$ few $\times 10^{-3}$ | Sister-repo limit, not a detection |
+| Mesoscopic + soft open | $10^{-5}$ | 20 | $\sim 2\times 10^{-4}$ | $\sim 2.5\times 10^{-2}$ | $\sim 2$ Mpc | $\sim 46$ | $\sim 10^{-3}$ | Near DESI residual ceiling (a posteriori) |
+| DESI residual ceiling (external bound) | — | — | $<2.5\times 10^{-2}$ | $\lesssim 10^{-4}$ | model-dep. | $\mathcal{O}(10$–$10^{2})$ | $\lesssim$ few $\times 10^{-3}$ | Sister-repo limit, not a detection |
 
 **A posteriori scales (not inputs):**
-DESI OU bound $\sigma_X<1.5\times 10^{-4}$ (95% CL); Maus $\lvert \gamma-1 \rvert\sim 0.17$; Sakr-like floor $\sim 0.05$; schematic shear $\sim 10^{-3}$.
+DESI OU bound $\sigma_X<2.5\times 10^{-2}$ (95% CL); Maus $\lvert \gamma-1 \rvert\sim 0.17$; Sakr-like floor $\sim 0.05$; schematic shear $\sim 10^{-3}$.
 
 ---
 

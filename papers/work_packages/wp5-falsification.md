@@ -35,11 +35,11 @@ Once a principle $P$ predicts $\ell_{\ast}$ or $N_{\mathrm{eff}}$:
 | Outcome | Verdict |
 |:--------|:--------|
 | $P\Rightarrow \ell_{\ast}\sim L_P$ | Predicts structural null; **confirmed** if residual stays null; **does not** yield detection claims |
-| $P\Rightarrow \sigma_{0,\mathrm{eff}}\in[10^{-5},1.5\times 10^{-4}]$ | A posteriori compatible with related DESI ceiling; Euclid residual can falsify |
-| $P\Rightarrow \sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ with no damping mechanism | **Tension** with DESI residual bound (related repository) → candidate dies unless $\theta$-damping derived |
+| $P\Rightarrow \sigma_{0,\mathrm{eff}}\in[10^{-5},2.5\times 10^{-2}]$ | A posteriori compatible with related DESI ceiling; Euclid residual can falsify |
+| $P\Rightarrow \sigma_{0,\mathrm{eff}}\gg 2.5\times 10^{-2}$ with no damping mechanism | **Tension** with DESI residual bound (related repository) → candidate dies unless $\theta$-damping derived |
 | $P$ contradicts local Lorentz tests **that actually constrain that sector** | Candidate dies |
 
-**Do not:** change $\ell_{\ast}$ after seeing DESI to sit under $1.5\times 10^{-4}$.
+**Do not:** change $\ell_{\ast}$ after seeing DESI to sit under $2.5\times 10^{-2}$.
 
 ---
 

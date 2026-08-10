@@ -39,7 +39,7 @@ def main() -> None:
         ("Sorkin", sorkin, 0.0, 2, None),
         ("NP-A", 1e-5, 0.0, 3, None),
         ("NP-B", 5e-6, 1.5, 3, None),
-        ("DESI_ceil", 1.5e-4, 0.0, 3, 1.5e-4),
+        ("DESI_ceil", 2.5e-2, 0.0, 3, 2.5e-2),
     ]
     for z_s in (0.5, 1.0, 1.5, 2.0, 3.0):
         chi = comoving_distance_mpc(z_s)
@@ -68,7 +68,7 @@ def main() -> None:
                         "N_pat": n,
                         "sqrtN": math.sqrt(n_use),
                         "RMS_path": rms,
-                        "DESI_res_OK": bool(sres <= 1.5e-4 + 1e-15),
+                        "DESI_res_OK": bool(sres <= 2.5e-2 + 1e-15),
                         "boost": math.sqrt(n_use),
                     }
                 )

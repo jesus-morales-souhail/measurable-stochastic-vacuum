@@ -29,7 +29,7 @@ I keep that mean and add the **simplest possible correction** that $\Lambda$ can
 
 | Folder / repo | Role after simplification |
 |:--------------|:--------------------------|
-| `stochastic-dark-energy-ou` | **Data:** null residual $\Rightarrow$ mean is $\Lambda$-like; $\sigma_X<1.5\times 10^{-4}$ (95% CL) |
+| `stochastic-dark-energy-ou` | **Data:** null residual $\Rightarrow$ mean is $\Lambda$-like; $\sigma_X<2.5\times 10^{-2}$ (95% CL) |
 | `measurable-stochastic-vacuum` | **Theory:** only the equations below |
 | `stochastic-de-exploratory-notes` | **Ignore** for the minimal model (hygiene only) |
 | `proyecto_unificacion` | Separate pipeline; not required here |
@@ -120,7 +120,7 @@ Optional soft open factor (still simple):
 with **constraint** from data:
 
 
-\sigma_{\mathrm{res}} < 1.5\times 10^{-4} \quad\text{(DESI residual ceiling)}.
+\sigma_{\mathrm{res}} < 2.5\times 10^{-2} \quad\text{(DESI residual ceiling)}.
 
 
 Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha \sigma_{\mathrm{res}}\sqrt{\chi/\ell_{\ast}}$ with $\ell_{\ast}$ from Line B using $\sigma$ (seed) or using $\sigma_{\mathrm{res}}$ if grain is read after open map — see NP-A / NP-B in [`NARROW_PATH.md`](NARROW_PATH.md).
@@ -133,7 +133,7 @@ Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha 
 |:-------|:---------|:-----------------|:-------------------------------|:--------------|
 | Planck mythology | $10^{-61}$ | $L_P$ | $\sim 10^{-41}$ (invisible) | trivially OK |
 | Minimal NP-A | $10^{-5}$ | $\approx 2.07 \mathrm{Mpc}$ | $\sim 4.6\times 10^{-4}$ (simple); path $\sim 3.5\times 10^{-4}$ | OK |
-| NP-B soft $G\approx 20$ | seed $5\times 10^{-6}\to\sigma_{\mathrm{res}}=10^{-4}$ | $\approx 1.30 \mathrm{Mpc}$ | $\sim 2\times 10^{-3}$ (simple); path $\sim 4.4\times 10^{-3}$ | OK ($\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$) |
+| NP-B soft $G\approx 20$ | seed $5\times 10^{-6}\to\sigma_{\mathrm{res}}=10^{-4}$ | $\approx 1.30 \mathrm{Mpc}$ | $\sim 2\times 10^{-3}$ (simple); path $\sim 4.4\times 10^{-3}$ | OK ($\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$) |
 
 Exact path formula (verified library) gives the same **order**: few $\times 10^{-4}$ to few $\times 10^{-3}$ in the DESI-safe window — not $0.1$ and not $10^{-60}$.
 

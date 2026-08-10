@@ -107,7 +107,7 @@ pytest -q
 | | |
 |:--|:--|
 | **DESI DR2 BAO** | arXiv:[2503.14738](https://arxiv.org/abs/2503.14738) |
-| **Sister bound** | $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) — [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) |
+| **Sister bound** | $\sigma_X < 2.5\times 10^{-2}$ (95% CL, OU kernel) — [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou) |
 
 ---
 

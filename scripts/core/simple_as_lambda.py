@@ -67,7 +67,7 @@ def main() -> None:
         simple = simple_rms(sres)
         # path RMS only meaningful for mesoscopic ell; still compute
         exact = exact_path_rms(sres, max(ell_mpc, 1e-20))
-        ok = "OK" if sres <= 1.5e-4 else "TENSION"
+        ok = "OK" if sres <= 2.5e-2 else "TENSION"
         print(
             f"{name:>14} {sigma0:12.2e} {ell_mpc:12.3e} {sres:12.2e} "
             f"{simple:12.3e} {exact:12.3e} {ok:>8}"

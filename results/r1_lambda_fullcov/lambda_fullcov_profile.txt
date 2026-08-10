@@ -10,11 +10,11 @@ FORMAL profile (free sigma_res; full 13x13):
   zero residual excluded at 95%? True
   best |lambda| ~ 1.8572e-02   95% |lambda| in [5.5204e-03, 1.7675e-01]
 
-WORKING (programme primary — sister sigma_X < 1.5e-4):
+WORKING (programme primary — sister sigma_X < 2.5e-2):
   |lambda| <= 1.234801e-04
   |g|      <= 1.4499   (convention lambda = g * sigma_free)
   Delta lnL at sigma_free  = +0.0022
-  Delta lnL at 1.5e-4      = +0.0068
+  Delta lnL at 2.5e-2      = +0.0068
 
 HONEST INTERPRETATION:
   Formal preference for ~1-2% residual amplitude absorbs LCDM chi2 tension

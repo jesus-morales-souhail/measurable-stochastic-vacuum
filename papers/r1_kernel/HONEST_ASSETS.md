@@ -19,7 +19,7 @@ I do not have private DESI spectra or private CF4 reductions.
 
 ## What I built on top of that
 
-1. Related repository: residual analysis under an OU/QNM kernel, $\sigma_X<1.5\times 10^{-4}$ (95% CL), soft-amplification gap for a pure Sorkin seed.
+1. Related repository: residual analysis under an OU/QNM kernel, $\sigma_X<2.5\times 10^{-2}$ (95% CL), soft-amplification gap for a pure Sorkin seed.
 2. Check that this residual does not explain $\sim 8\%\,H_0$ at DESI-safe amplitude.
 3. Conditional uniqueness $\ell_{\ast}\sim R_{\mathrm{nl}}$ under axioms A0–A4.
 4. $R_{\mathrm{nl}}$, mask correlation, packing, BBKS peak scale.

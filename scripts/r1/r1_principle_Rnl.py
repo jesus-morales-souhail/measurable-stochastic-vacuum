@@ -78,7 +78,7 @@ def main() -> None:
 
     # A posteriori neighbours (comparison only)
     r8 = r8_mpc()
-    ell_ceil = ell_mpc_for_sigma(1.5e-4, 3)
+    ell_ceil = ell_mpc_for_sigma(2.5e-2, 3)
     ell_npa = ell_mpc_for_sigma(1e-5, 3)
     r0_lo = 5.0 / H
     r0_hi = 6.0 / H

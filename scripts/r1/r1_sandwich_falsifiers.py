@@ -43,7 +43,7 @@ from r1_sigma_R_full import H as H_FID, SIGMA8, find_R_nl, make_Pk_unnorm, norma
 MAUS_SIGMA_GAMMA = 0.11  # arXiv:2505.20656
 SAKR_ETA_CONST = 0.05  # arXiv:2501.07477 optimistic constant η
 SAKR_ETA_FREE = 0.30  # free (z,k) OOM
-DESI_SIGMA_X = 1.5e-4  # sister OU/QNM residual 95%
+DESI_SIGMA_X = 2.5e-2  # sister OU/QNM residual 95%
 STAGE4_M_BIAS = 2e-3  # calibration requirement, wrong operator for path-RMS
 EUCLID_RESIDUAL_TARGET = 1e-5  # programme telescope-band reference
 
@@ -128,8 +128,8 @@ def falsifier_table(pred: dict) -> list:
         pred["sigma_free"],
         DESI_SIGMA_X,
         "DESI σ_X 95% (sister OU)",
-        "Measured σ_res ≫ 1.5e-4 with no damping, at fixed ell_*=R_nl",
-        "σ_res stays ≤ 1.5e-4 while ell_* locked to R_nl (compatibility)",
+        "Measured σ_res ≫ 2.5e-2 with no damping, at fixed ell_*=R_nl",
+        "σ_res stays ≤ 2.5e-2 while ell_* locked to R_nl (compatibility)",
         "Primary empirical gate. Illegal: refit ell_* after seeing DESI.",
     )
     add(
@@ -138,7 +138,7 @@ def falsifier_table(pred: dict) -> list:
         EUCLID_RESIDUAL_TARGET,
         "Euclid-band OOM 1e-5",
         "Euclid residual null far below free grain with ell_*=R_nl forced",
-        "Residual band 1e-5–1.5e-4 consistent with counting at R_nl",
+        "Residual band 1e-5–2.5e-2 consistent with counting at R_nl",
         "Detection window if residual appears at predicted OOM without 1e56.",
     )
     add(
@@ -146,7 +146,7 @@ def falsifier_table(pred: dict) -> list:
         pred["slip_local_working"],
         MAUS_SIGMA_GAMMA,
         "Maus σ(γ)=0.11",
-        "Mean |γ−1| required ≫ Maus if eps~1 and σ~1.5e-4 without damping",
+        "Mean |γ−1| required ≫ Maus if eps~1 and σ~2.5e-2 without damping",
         "Predicted local slip ≪ Maus (consistency; not a detection)",
         "Today Maus cannot test sandwich amplitude; only kills huge eps×σ.",
     )
@@ -199,7 +199,7 @@ DECISION TREE (sandwich package)
 2. Is ell_* forced to ~R_nl? (theorem under A0–A4)
    If data force free residual correlation ≪1 Mpc or ≫100 Mpc at σ~1e-4
    → sandwich band dies (L2 for this principle form)
-3. Is σ_res ≤ 1.5e-4 at fixed ell_*=R_nl?
+3. Is σ_res ≤ 2.5e-2 at fixed ell_*=R_nl?
    NO (and no derived damping) → candidate dies vs DESI
    YES → compatible; Euclid residual can still detect or deepen null
 4. Slip / path RMS
@@ -260,7 +260,7 @@ def main() -> None:
         f"ell_* ALLOWED band = [{pred['ell_star_band_lo_Mpc']:.2f}, {pred['ell_star_band_hi_Mpc']:.2f}] Mpc",
         "",
         "PRIMARY GATES:",
-        "  F1 BAO: sigma_res ≤ 1.5e-4 at fixed ell_*=R_nl",
+        "  F1 BAO: sigma_res ≤ 2.5e-2 at fixed ell_*=R_nl",
         "  F2 SCALE: residual correlation length in O(1)×R_nl if detected",
         "  F3 SLIP: local/path slip must stay below Maus/Sakr (today: automatic)",
         "  F4 ILLEGAL: no post-hoc ell_* fit, no 1e56, no m-bias rebrand",

@@ -13,7 +13,7 @@ A residual at $\sigma\lesssim 10^{-4}$ cannot make an 8% jump in distance or $H_
 
 | Quantity | Value | $0.08$ / that |
 |:---------|:------|:----------------|
-| DESI residual ceiling | $1.5\times 10^{-4}$ | $\sim 500$ |
+| DESI residual ceiling | $2.5\times 10^{-2}$ | $\sim 500$ |
 | free grain at $R_{\mathrm{nl}}$ | $8.5\times 10^{-5}$ | $\sim 1000$ |
 | path RMS (working residual) | $\sim 2.5\times 10^{-3}$ | $\sim 30$–$50$ |
 

@@ -15,7 +15,7 @@ The related DESI corpus has already established, under stated pipelines:
 
 | Result | Implication |
 |:-------|:------------|
-| $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) | Bound on **effective** residual amplitude |
+| $\sigma_X < 2.5\times 10^{-2}$ (95% CL, OU kernel) | Bound on **effective** residual amplitude |
 | Coherent tachyonic growth excluded | One hard amplifier class is dead |
 | Soft amplifiers fail by many decades | No free amplification from $\sigma_0\sim 10^{-61}$ to $10^{-5}$ |
 | Slip with BAO-scale $\sigma$ is amplitude-starved | Right operator, insufficient amplitude |

@@ -17,7 +17,7 @@ This is a private map of the folder. When I write something short, I use the num
 - $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ (`r1_sigma_R_full.py`)
 - residual too small for $\sim 8\%\,H_0$ at the DESI-safe amplitude
 - no free soft gain of $10^{56}$ under the maps I checked
-- $\sigma_X<1.5\times 10^{-4}$ (95% CL) from the related DESI analysis
+- $\sigma_X<2.5\times 10^{-2}$ (95% CL) from the related DESI analysis
 - Cosmicflows-4 block net and collapse peaks: matter $v_{\mathrm{pec}}$ only
 
 ```bash
@@ -52,7 +52,7 @@ Main note: [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_unique
 
 | Number | Caveat |
 |:-------|:-------|
-| $\sigma_X<1.5\times 10^{-4}$ (95% CL) | related analysis, their kernel |
+| $\sigma_X<2.5\times 10^{-2}$ (95% CL) | related analysis, their kernel |
 | $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ | stated $P(k)$, $\sigma_8$, $h$ |
 | $\sigma_{\mathrm{free}}\approx 8.5\times 10^{-5}$ | if $\ell_{\ast}=R_{\mathrm{nl}}$, $d=3$ |
 | $\lvert g\rvert\lesssim 1.45$ | from ceiling / $\sigma_{\mathrm{free}}$ |

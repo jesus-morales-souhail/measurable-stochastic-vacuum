@@ -23,12 +23,12 @@ I keep these three roles separate on purpose. Mixing them is how overclaims star
 
 | Quantity | Value | Source of truth |
 |:---------|:------|:----------------|
-| DESI residual ceiling | $\sigma_X < 1.5\times 10^{-4}$ (95% CL) | DESI repo `resume.txt` / PREPRINT |
+| DESI residual ceiling | $\sigma_X < 2.5\times 10^{-2}$ (95% CL) | DESI repo `resume.txt` / PREPRINT |
 | Sorkin holographic seed | $\sigma_0 = L_P/L_H \approx 1.18\times 10^{-61}$ | `lib_verified.sorkin_holographic` |
 | Soft open $r=1.5$ | $G_O=e^{3}\approx 20.086$ | `lib_verified.soft_squeeze_gain` |
 | $r$ to lift Sorkin to $10^{-5}$ | $\approx 64.4$ | algebra |
 | $\ell_{\ast}$ for $\sigma=10^{-5}$, $d=3$ | $\approx 2.065 \mathrm{Mpc}$ | `ell_for_target_sigma` |
-| Slip wall $z=0$, $\varepsilon=1$, $\sigma_X=1.5\times 10^{-4}$ | $\lvert\gamma-1\rvert\approx 6.52\times 10^{-4}$ | `slip_deviation` |
+| Slip wall $z=0$, $\varepsilon=1$, $\sigma_X=2.5\times 10^{-2}$ | $\lvert\gamma-1\rvert\approx 6.52\times 10^{-4}$ | `slip_deviation` |
 | Path RMS NP-A $z_s=1.5$ | $\approx 3.5\times 10^{-4}$ | light-cone atlas |
 | Path RMS NP-B $z_s=1.5$ | $\approx 4.4\times 10^{-3}$ | light-cone atlas |
 | Path boost NP-A $z_s=1.5$ | $\sqrt{N}\approx 46.6$ | $\chi/\ell_{\ast}$ |

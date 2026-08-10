@@ -85,7 +85,7 @@ Already **fifty-five decades above** Sorkin $\sigma_0\sim 10^{-61}$ — because 
 
 At $r=0.036$:
 
-| $A$ | $\varepsilon_Q$ | $\sigma_\rho$(OOM) | vs $10^{-5}$ | vs $1.5\times 10^{-4}$ |
+| $A$ | $\varepsilon_Q$ | $\sigma_\rho$(OOM) | vs $10^{-5}$ | vs $2.5\times 10^{-2}$ |
 |:------|:------------------|:---------------------|:---------------|:------------------------|
 | 1 (frozen) | $10^{-4}$ (very flat) | $\sim 4\times 10^{-8}$ | short $\times\sim 250$ | short $\times\sim 4000$ |
 | 1 | $0.05$ (mild) | $\sim 1\times 10^{-6}$ | short $\times\sim 10$ | short $\times\sim 150$ |
@@ -100,7 +100,7 @@ At $r=0.036$:
 
 ### 3.3 Contrast with Sorkin
 
-| Seed | Gap to $10^{-5}$ | Gap to $1.5\times 10^{-4}$ |
+| Seed | Gap to $10^{-5}$ | Gap to $2.5\times 10^{-2}$ |
 |:-----|:-------------------|:----------------------------|
 | Sorkin $\sigma_0\sim 10^{-61}$ | $\sim 10^{56}$ | $\sim 10^{57}$ |
 | Spectator at $r=0.036$, $A=45$, $\varepsilon_Q=0.05$ | $\mathcal{O}(1)$ (in band) | under ceiling |

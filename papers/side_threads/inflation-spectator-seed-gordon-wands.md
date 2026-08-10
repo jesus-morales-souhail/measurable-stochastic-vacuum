@@ -144,7 +144,7 @@ This note does **not** claim the checklist is done.
 | I2 | Fix or bound $H_{\mathrm{inf}}$ from tensors / $r$ (modern limits, not only 2005) | **Open** (science has not measured $H_{\mathrm{inf}}$) |
 | I3 | Map $\delta Q\to\delta\rho_Q/\rho_Q\to$ **BAO residual kernel** $\sigma_X$ (not only CMB isocurvature) | **Not done here** |
 | I4 | Covariance on DESI BAO distances under that map; re-run sister likelihood | **Not done** |
-| I5 | Check DESI ceiling $\sigma_X<1.5\times 10^{-4}$ (95% CL) a posteriori | Only after I3–I4 |
+| I5 | Check DESI ceiling $\sigma_X<2.5\times 10^{-2}$ (95% CL) a posteriori | Only after I3–I4 |
 | I6 | Do **not** reintroduce Sorkin $\sigma_0$ back in as the seed | Label rule |
 
 Until I3–I4 exist, Gordon & Wands is a **validated literature door**, not a DESI claim of this repo.

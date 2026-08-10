@@ -40,13 +40,13 @@ Native $\sim 10^{-5}$–$10^{-4}$ becomes path $\mathrm{RMS}\sim 10^{-4}$–$10^
 \lvert\gamma-1\rvert_{\mathrm{loc}} = 2 \varepsilon \sigma_{\mathrm{res}} \frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^{3} \lvert\delta_{m}\rvert}. \tag{W}
 
 
-With $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$, $\varepsilon=1$, $\lvert\delta_{m}\rvert=1$:
+With $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$, $\varepsilon=1$, $\lvert\delta_{m}\rvert=1$:
 
 | $z$ | $\lvert\gamma-1\rvert_{\mathrm{loc}}^{\max}$ |
 |:----|:---------------------------------------------|
 | 0.0 | $6.52\times 10^{-4}$ |
 | 0.5 | $1.93\times 10^{-4}$ |
-| 0.8 | $1.12\times 10^{-4}$ (for $\sigma_{\mathrm{res}}=1.5\times 10^{-4}$) |
+| 0.8 | $1.12\times 10^{-4}$ (for $\sigma_{\mathrm{res}}=2.5\times 10^{-2}$) |
 | 0.8 | $7.46\times 10^{-6}$ (for $\sigma_{\mathrm{res}}=10^{-5}$, NP-A) |
 
 **Local-only measurement** hits the self-shielding wall (S):
@@ -85,14 +85,14 @@ Optional soft open map (still not free amplification):
 \sigma_{\mathrm{res}}=G_{O} \sigma,\qquad G_{O}=e^{2r},\quad r=\mathcal{O}(1),
 
 
-with **DESI-safe** $\sigma_{\mathrm{res}}\le 1.5\times 10^{-4}$.
+with **DESI-safe** $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$.
 
 ---
 
 ## 2. Master formula (Minimal Model + past light cone)
 
 
-\sigma_{\mathrm{res}} = G_O \sigma,\quad G_O\in[1,20],\quad \sigma_{\mathrm{res}}\le 1.5\times 10^{-4}.
+\sigma_{\mathrm{res}} = G_O \sigma,\quad G_O\in[1,20],\quad \sigma_{\mathrm{res}}\le 2.5\times 10^{-2}.
 \lvert\gamma-1\rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\Omega_{\Lambda 0}}{\Omega_{m0}(1+z)^3\lvert\delta_m\rvert}.
 \mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\frac{\chi(z_s)}{\ell_{\ast}(\sigma)}}.
 
@@ -138,7 +138,7 @@ Full table: `results/light_cone_integration_table.csv` (64 rows).
 | Sorkin | $\sim 10^{-61}$ | yes | $\ll 10^{-50}$ | invisible |
 | **NP-A** | $10^{-5}$ | yes | $\mathbf{3.5\times 10^{-4}}$ | still $\sim 100\times$ below $0.03$ |
 | **NP-B** | $10^{-4}$ | yes | $\mathbf{4.4\times 10^{-3}}$ | $\sim 7\times$ below $0.03$ |
-| DESI ceiling residual | $1.5\times 10^{-4}$ | on ceiling | $\mathbf{2.1\times 10^{-3}}$ | $\sim 14\times$ below $0.03$ |
+| DESI ceiling residual | $2.5\times 10^{-2}$ | on ceiling | $\mathbf{2.1\times 10^{-3}}$ | $\sim 14\times$ below $0.03$ |
 
 ### 3.4 How much does the light cone “save”?
 
@@ -185,7 +185,7 @@ YES: integrate observables along the past null cone
 **Experimental programme consistent with self-shielding**
 
 1. Keep bulk $=\Lambda$ CDM (no large isotropic BAO residual).
-2. Bound $\sigma_{\mathrm{res}}$ from DESI (already $\lt 1.5\times 10^{-4}$).
+2. Bound $\sigma_{\mathrm{res}}$ from DESI (already $\lt 2.5\times 10^{-2}$).
 3. Measure **path-integrated** slip / shear tomography / RSD×lensing deep in $z$.
 4. Compare to $\mathrm{RMS}_{\mathrm{path}}$ from the master formula — not to local $\lvert\gamma-1\rvert$ alone.
 

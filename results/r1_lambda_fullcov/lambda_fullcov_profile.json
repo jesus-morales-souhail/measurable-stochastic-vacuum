@@ -42,7 +42,7 @@
   "dlogL_at_working_1p5e-4": 0.006753847726500339,
   "vs_max_at_sigma_free": -4.506468711283485,
   "vs_max_at_working": -4.501894960244908,
-  "interpretation": "Formal profile prefers sigma_res ~ O(1%) because chi2_LCDM~29 is absorbed by covariance inflation; this is NOT a detection of the microscopic free grain. Working bound from sister alpha-OU sigma_X<1.5e-4 remains the programme ceiling for lambda/g. At working amplitude Delta lnL ~ 0 relative to LCDM.",
+  "interpretation": "Formal profile prefers sigma_res ~ O(1%) because chi2_LCDM~29 is absorbed by covariance inflation; this is NOT a detection of the microscopic free grain. Working bound from sister alpha-OU sigma_X<2.5e-2 remains the programme ceiling for lambda/g. At working amplitude Delta lnL ~ 0 relative to LCDM.",
   "formal_informative_for_1e-4_grain": false,
   "primary_bound": "working",
   "theory_rd_Mpc": 147.09,

@@ -9,7 +9,7 @@ Programme: [measurable-stochastic-vacuum](https://github.com/jesus-morales-souha
 
 Verified kinematics: [`VERIFIED_RESULTS.md`](../core/VERIFIED_RESULTS.md) · `pytest -q`
 Parent WP1 note: [`r1-counting-principle.md`](r1-counting-principle.md)
-Related empirical bound: $\sigma_X < 1.5\times 10^{-4}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
+Related empirical bound: $\sigma_X < 2.5\times 10^{-2}$ (95% CL, OU kernel) in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou)
 
 ---
 
@@ -33,7 +33,7 @@ I record criteria for what would count as a principle, list hypothesis classes R
 
 ## 1. Why this distinction matters
 
-The related DESI corpus closes empirical statements: null residual under the stated OU/QNM kernel, $\sigma_X < 1.5\times 10^{-4}$ (95% CL), coherent tachyonic growth excluded, linear amplification of a pure Sorkin seed closed as an amplification gap.
+The related DESI corpus closes empirical statements: null residual under the stated OU/QNM kernel, $\sigma_X < 2.5\times 10^{-2}$ (95% CL), coherent tachyonic growth excluded, linear amplification of a pure Sorkin seed closed as an amplification gap.
 
 The theory repository closes kinematics: counting inversion, soft open gain bounds, local slip under stated GR assumptions, path $\mathrm{RMS}=s\sqrt{N}$. Tests: `pytest -q`.
 
@@ -93,7 +93,7 @@ With $L=L_H=c/H_0$($H_0=67.4\,\mathrm{km\,s^{-1}Mpc^{-1}}$) and target $\sigma_{
 | 3 | $\approx 2.07\,\mathrm{Mpc}$ | group / small-cluster scale |
 | 4 | $\approx 14.1\,\mathrm{Mpc}$ | large-scale structure scale |
 
-For the a-posteriori DESI residual ceiling $\sigma=1.5\times 10^{-4}$ at $d=3$: $\ell_{\ast}\approx 12.6\,\mathrm{Mpc}$.
+For the a-posteriori DESI residual ceiling $\sigma=2.5\times 10^{-2}$ at $d=3$: $\ell_{\ast}\approx 12.6\,\mathrm{Mpc}$.
 
 Telescope-band residuals from counting alone require a mesoscopic DE counting cell, not a Planck cell. The ratio $\ell_{\ast}/L_P\sim 10^{56}$ is not a free multiplier; it is the statement that the two cells are different counting objects.
 
@@ -158,9 +158,9 @@ Define the conventional length $R_8=8/h\,\mathrm{Mpc}$ with $h=H_0/100$, so $R_8
 | Fix $\sigma=10^{-5}$, $d=2$ | $\ell_{\ast}\approx 0.044\,\mathrm{Mpc}$ | $\sim 99.6\%$ off $R_8$ |
 | Fix $\sigma=10^{-5}$, $d=3$ | $\ell_{\ast}\approx 2.07\,\mathrm{Mpc}$ | $\sim 83\%$ off $R_8$ |
 | Fix $\sigma=10^{-5}$, $d=4$ | $\ell_{\ast}\approx 14.1\,\mathrm{Mpc}$ | $\sim 18\%$ off $R_8$ |
-| Fix $\sigma=1.5\times 10^{-4}$, $d=2$ | $\ell_{\ast}\approx 0.67\,\mathrm{Mpc}$ | $\sim 94\%$ off $R_8$ |
-| Fix $\sigma=1.5\times 10^{-4}$, $d=3$ | $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | $\sim 5.8\%$ of $R_8$ (near) |
-| Fix $\sigma=1.5\times 10^{-4}$, $d=4$ | $\ell_{\ast}\approx 54.5\,\mathrm{Mpc}$ | $\sim 359\%$ off $R_8$ |
+| Fix $\sigma=2.5\times 10^{-2}$, $d=2$ | $\ell_{\ast}\approx 0.67\,\mathrm{Mpc}$ | $\sim 94\%$ off $R_8$ |
+| Fix $\sigma=2.5\times 10^{-2}$, $d=3$ | $\ell_{\ast}\approx 12.56\,\mathrm{Mpc}$ | $\sim 5.8\%$ of $R_8$ (near) |
+| Fix $\sigma=2.5\times 10^{-2}$, $d=4$ | $\ell_{\ast}\approx 54.5\,\mathrm{Mpc}$ | $\sim 359\%$ off $R_8$ |
 | Fix $\ell_{\ast}=R_8$, $d=3$ | $\sigma\approx 1.378\times 10^{-4}$ | DESI-ceiling order |
 | Fix $\ell_{\ast}=R_8$, $d=2$ | $\sigma\approx 2.67\times 10^{-3}$ | Far above residual band |
 | Fix $\ell_{\ast}=R_8$, $d=4$ | $\sigma\approx 7.12\times 10^{-6}$ | Near $10^{-5}$ band only |
@@ -172,7 +172,7 @@ Reproducible: `python scripts/r1/r1_open_kernel_scales.py` · identities in `scr
 The near-coincidence with $R_8$ is specific to $d=3$ at the a-posteriori DESI residual ceiling.
 It does not survive a change of counting exponent:
 
-| $d$ at $\sigma=1.5\times 10^{-4}$ | $\lvert\ell_{\ast}/R_8-1\rvert$ | Reads as |
+| $d$ at $\sigma=2.5\times 10^{-2}$ | $\lvert\ell_{\ast}/R_8-1\rvert$ | Reads as |
 |:-------------------------------------|:----------------------------|:---------|
 | 2 | $\sim 0.94$ | no proximity |
 | 3 | $\sim 0.058$ | proximity |
@@ -218,9 +218,9 @@ H0-running path depth: [`h0-running-brachistochrone-bridge.md`](../closed_walls/
 
 **A posteriori use:** given a derived $\sigma_{0,\mathrm{eff}}$,
 
-- in $[10^{-5},\,1.5\times 10^{-4}]$ → compatible band; Euclid can decide;
+- in $[10^{-5},\,2.5\times 10^{-2}]$ → compatible band; Euclid can decide;
 - $\ll 10^{-5}$ → predict structural null under soft dynamics;
-- $\gg 1.5\times 10^{-4}$ without damping → tension with sister bound.
+- $\gg 2.5\times 10^{-2}$ without damping → tension with sister bound.
 
 ---
 
@@ -232,7 +232,7 @@ From [`wp5-falsification.md`](../work_packages/wp5-falsification.md), specialise
 |:----------------------------|:------|
 | $\ell_{\ast}\sim L_P$ | Soft-regime telescope null is a theorem; no detection claim |
 | $\ell_{\ast}\sim L_H$ | $\sigma\sim 1$: excluded by BAO smoothness |
-| Fixed $\ell_{\ast}$ with $\sigma_{0,\mathrm{eff}}\gg 1.5\times 10^{-4}$ and no damping | Tension with related DESI bound |
+| Fixed $\ell_{\ast}$ with $\sigma_{0,\mathrm{eff}}\gg 2.5\times 10^{-2}$ and no damping | Tension with related DESI bound |
 | Fixed $\ell_{\ast}$ in the mesoscopic band | Residual amplitude is a prediction; Euclid/DESI test a posteriori |
 | Any of R1a–R1d only after seeing data | Reject under self-shielding axioms (overclaim death) |
 

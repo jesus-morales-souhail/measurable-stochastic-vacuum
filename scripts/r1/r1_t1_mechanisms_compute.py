@@ -44,7 +44,7 @@ from r1_sigma_R_full import (  # noqa: E402
     sigma_R,
 )
 
-DESI_CEIL = 1.5e-4
+DESI_CEIL = 2.5e-2
 SIGMA_EUCLID = 1e-5
 
 
