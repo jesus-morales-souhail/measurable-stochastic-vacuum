@@ -15,7 +15,7 @@
 
 Theory and data live in two places. This repo: kinematics and identities I can check with code. Related repository: DESI residual analysis.
 
-| This repository | Related repositoriesitory |
+| This repository | Related repository |
 |:----------------|:------------------|
 | Theory kinematics + verified identities | Empirical DESI BAO residual analysis |
 | Minimal model as simple as $\Lambda$ | Working bound $\sigma_X < 2.5\times 10^{-2}$ (95% CL) |

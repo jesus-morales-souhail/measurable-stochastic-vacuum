@@ -1,66 +1,67 @@
-# What I would put in a paper (and what I would leave out)
+# Draft outline for a short paper
 
-Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
-July 2026
+Jesús Morales Souhail · July 2026  
+[github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-This is a private map of the folder. When I write something short, I use the numbers I can re-run, state the axioms when a claim needs them, and leave closed routes in an appendix or out.
-
-[`../README.md`](../README.md) · [`INDEX.md`](INDEX.md)
+I keep this note so I know what belongs in a short paper and what stays in the repository only. Everything below is independent work on public data and code I can re-run.
 
 ---
 
-## Content that can go in
+## What I would include
 
-**Reproducible numbers** (`pytest` or a named script):
+Results I can reproduce with a script or with `pytest`:
 
-- identities in [`core/VERIFIED_RESULTS.md`](core/VERIFIED_RESULTS.md)
-- $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ (`r1_sigma_R_full.py`)
-- residual too small for $\sim 8\%\,H_0$ at the DESI-safe amplitude
-- no free soft gain of $10^{56}$ under the maps I checked
-- $\sigma_X<2.5\times 10^{-2}$ (95% CL) from the related DESI analysis
-- Cosmicflows-4 block net and collapse peaks: matter $v_{\mathrm{pec}}$ only
+- kinematic identities listed in [`core/VERIFIED_RESULTS.md`](core/VERIFIED_RESULTS.md)
+- nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ from the full $\sigma(R)$ integral (`scripts/r1/r1_sigma_R_full.py`)
+- residual amplitude far below what would be needed for an $\sim 8\%$ shift in $H_0$, once the DESI residual ceiling is taken seriously
+- no free soft gain of order $10^{56}$ under the amplification maps I checked
+- sister DESI bound $\sigma_X < 2.5\times 10^{-2}$ (95% CL), cited as an external input to this theory map
+- Cosmicflows-4 block velocities and collapse peaks as **matter** kinematics near that scale, not as a dark-energy residual detection
 
 ```bash
 pytest -q
 python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_sandwich_derivation.py
+python scripts/r1/r1_three_gate_lock.py
 python scripts/r1/r1_real_velocity_block_net.py
 python scripts/r1/r1_collapse_relief_cf4.py
 ```
 
-**Conditional on A0–A4** (say the *if*): sandwich $\ell_{\ast}\sim R_{\mathrm{nl}}$, falsifiers, $g$ at order of magnitude, T2 protocol. Not a residual detection.
-Main note: [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_uniqueness_residual_grain.md).
-
-**Leave for appendix or offline:** `closed_walls/`, long work packages, side analogies, exploratory related repository.
+Under axioms A0–A4 I can state a conditional result: if residual modes couple locally to nonlinear matter, then $\ell_{\ast}\sim R_{\mathrm{nl}}$. That is not a residual detection. The main write-up is [`r1_kernel/NOTE_uniqueness_residual_grain.md`](r1_kernel/NOTE_uniqueness_residual_grain.md). Plain summary of what is closed and what is open: [`r1_kernel/grain-and-microscope.md`](r1_kernel/grain-and-microscope.md).
 
 ---
 
-## Outline
+## What I would leave out of the main text
 
-1. Question: residual $\sim 10^{-5}$–$10^{-4}$ without free $10^{56}$?
-2. DESI bound (sister).
-3. Minimal equations — [`core/SIMPLE_AS_LAMBDA.md`](core/SIMPLE_AS_LAMBDA.md).
-4. $R_{\mathrm{nl}}$, sandwich under A0–A4, falsifiers.
-5. Not a solution of the $H_0$ tension.
-6. Optional: CF4 matter kinematics near that scale.
-7. Open: microphysics of $g$, residual×structure on real residual maps.
-8. Short table of closed routes.
+Closed wrong routes (`closed_walls/`), long work packages, side analogies, and anything that belongs only in the exploratory repository. Those can sit in an appendix or stay offline.
 
 ---
 
-## Numbers and caveats
+## Section order I would use
+
+1. Question: can a residual of order $10^{-5}$–$10^{-4}$ exist without a free factor $10^{56}$ from a Planck seed?
+2. DESI residual bound from the sister analysis.
+3. Minimal equations ([`core/SIMPLE_AS_LAMBDA.md`](core/SIMPLE_AS_LAMBDA.md)).
+4. $R_{\mathrm{nl}}$, the sandwich under A0–A4, and the falsifiers.
+5. Explicit statement that this does not solve the $H_0$ tension.
+6. Optional: CF4 matter kinematics near $R_{\mathrm{nl}}$.
+7. Open problems: microphysics of the residual sector and residual×structure on real residual maps.
+8. Short table of closed amplification routes.
+
+---
+
+## Numbers I would quote, with caveats
 
 | Number | Caveat |
 |:-------|:-------|
-| $\sigma_X<2.5\times 10^{-2}$ (95% CL) | related analysis, their kernel |
+| $\sigma_X < 2.5\times 10^{-2}$ (95% CL) | sister DESI analysis, their residual kernel |
 | $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ | stated $P(k)$, $\sigma_8$, $h$ |
-| $\sigma_{\mathrm{free}}\approx 8.5\times 10^{-5}$ | if $\ell_{\ast}=R_{\mathrm{nl}}$, $d=3$ |
-| $\lvert g\rvert\lesssim 1.45$ | from ceiling / $\sigma_{\mathrm{free}}$ |
-| CF4 $\eta(L)$ | $H_0=75$ CF convention; distance noise included |
+| $\sigma_{\mathrm{free}}\approx 8.5\times 10^{-5}$ | only if $\ell_{\ast}=R_{\mathrm{nl}}$ and $d=3$ |
+| $\lvert g\rvert\lesssim 1.45$ | from ceiling divided by $\sigma_{\mathrm{free}}$ |
+| CF4 $\eta(L)$ | CF $H_0=75$ convention; distance noise included |
 
 ---
 
 ## Still open
 
-Microphysics of $\chi$ and $g$. Residual × structure on survey residual maps. CF4 is line-of-sight only. $R_{\mathrm{nl}}$ with a Boltzmann $P(k)$ is a refinement in the same decade.
-
+I do not yet have a microphysical derivation of the residual field or of the coupling $g$. Residual×structure on survey residual maps is not done. CF4 here is line-of-sight velocities only. Replacing the fitting-function $P(k)$ with a Boltzmann code would refine $R_{\mathrm{nl}}$ inside the same decade; it would not change the logic of the outline.
