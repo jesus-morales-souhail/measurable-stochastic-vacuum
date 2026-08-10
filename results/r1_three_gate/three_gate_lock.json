@@ -1,0 +1,46 @@
+{
+  "question": "If the free residual cell is R_nl, is it DESI-safe and CF4-scale-consistent?",
+  "answer_now": "YES_ALL_THREE_GATES",
+  "all_gates_pass": true,
+  "inputs": {
+    "R_nl_Mpc": 8.6098,
+    "L_H_Mpc": 4447.959317507418,
+    "d": 3,
+    "sigma_free": 8.516249671669185e-05,
+    "N_eff": 137880620.63001534,
+    "DESI_sigma_X_working_ceiling": 0.00015,
+    "CF4_r_e_Mpc": 19.5,
+    "RMS_path_free_OOM": 0.0014490560030054878
+  },
+  "gates": {
+    "G1_sigma_free_below_DESI_ceiling": {
+      "pass": true,
+      "sigma_free": 8.516249671669185e-05,
+      "DESI_ceiling": 0.00015,
+      "ceiling_over_free": 1.7613386852548674,
+      "meaning": "Counting at R_nl does not overshoot the DESI residual null."
+    },
+    "G2_CF4_re_in_sandwich_band": {
+      "pass": true,
+      "CF4_r_e_Mpc": 19.5,
+      "R_nl_Mpc": 8.6098,
+      "r_e_over_R_nl": 2.264860972380311,
+      "band_Mpc": [
+        4.3049,
+        25.8294
+      ],
+      "meaning": "Matter velocity coherence lives in the same decade as R_nl."
+    },
+    "G3_eta_O1_at_R_nl": {
+      "pass": true,
+      "eta_interp_at_R_nl": 1.6708203999999998,
+      "meaning": "At L~R_nl, block v_pec rms is order Hubble flow on that grain."
+    }
+  },
+  "next_hard_question_still_open": "What principle fixes ell_* = R_nl (or any mesoscopic cell) for the DE sector? Gates only show compatibility, not derivation.",
+  "non_claims": [
+    "No DE residual detection",
+    "No proof that ell_* must equal R_nl",
+    "Multipole residual r_e is not a residual-grain measurement"
+  ]
+}

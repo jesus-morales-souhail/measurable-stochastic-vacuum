@@ -86,6 +86,8 @@ Public data vs my analysis: [`papers/r1_kernel/HONEST_ASSETS.md`](papers/r1_kern
 
 ```bash
 pytest -q
+
+Beyond OU null: `papers/r1_kernel/NEXT_QUESTION.md` · `python scripts/r1/r1_three_gate_lock.py`
 python scripts/r1/r1_sigma_R_full.py
 python scripts/r1/r1_sandwich_derivation.py
 python scripts/r1/r1_lineA_Q_variance_proxy.py

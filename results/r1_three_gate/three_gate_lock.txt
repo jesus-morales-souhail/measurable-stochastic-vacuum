@@ -1,0 +1,24 @@
+THREE-GATE LOCK (beyond OU null)
+==================================================
+Q: If free residual cell = R_nl, is it DESI-safe and CF4-consistent?
+A: YES_ALL_THREE_GATES
+
+R_nl          = 8.6098 Mpc
+L_H           = 4448.0 Mpc
+sigma_free    = 8.516250e-05   (d=3)
+DESI ceiling  = 1.50e-04
+ceiling/free  = 1.761
+CF4 r_e       = 19.5 Mpc  (= 2.265 R_nl)
+band          = [4.30, 25.83] Mpc
+eta(L~R_nl)   = 1.67
+RMS_path free ≈ 1.4491e-03  (OOM slip path)
+
+GATES:
+  [PASS] G1_sigma_free_below_DESI_ceiling: Counting at R_nl does not overshoot the DESI residual null.
+  [PASS] G2_CF4_re_in_sandwich_band: Matter velocity coherence lives in the same decade as R_nl.
+  [PASS] G3_eta_O1_at_R_nl: At L~R_nl, block v_pec rms is order Hubble flow on that grain.
+
+STILL OPEN (not answered by this lock):
+  What principle fixes ell_* = R_nl (or any mesoscopic cell) for the DE sector? Gates only show compatibility, not derivation.
+
+Non-claims: No DE residual detection; No proof that ell_* must equal R_nl; Multipole residual r_e is not a residual-grain measurement
