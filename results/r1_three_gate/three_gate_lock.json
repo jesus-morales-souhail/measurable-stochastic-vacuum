@@ -9,7 +9,7 @@
     "sigma_free": 8.516249671669185e-05,
     "N_eff": 137880620.63001534,
     "DESI_sigma_X_working_ceiling": 0.00015,
-    "CF4_r_e_Mpc": 19.5,
+    "CF4_r_e_Mpc": 19.27,
     "RMS_path_free_OOM": 0.0014490560030054878
   },
   "gates": {
@@ -22,9 +22,9 @@
     },
     "G2_CF4_re_in_sandwich_band": {
       "pass": true,
-      "CF4_r_e_Mpc": 19.5,
+      "CF4_r_e_Mpc": 19.27,
       "R_nl_Mpc": 8.6098,
-      "r_e_over_R_nl": 2.264860972380311,
+      "r_e_over_R_nl": 2.238147227577876,
       "band_Mpc": [
         4.3049,
         25.8294

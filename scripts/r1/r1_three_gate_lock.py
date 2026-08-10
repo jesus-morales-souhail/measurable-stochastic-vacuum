@@ -45,7 +45,7 @@ R_NL = 8.6098  # from r1_sandwich / r1_sigma_R_full
 D = 3
 SIGMA_FREE = (R_NL / L_H) ** (D / 2)
 DESI_CEILING = 1.5e-4  # working 95% CL OU kernel (sister repo)
-CF4_RE = 19.5  # Mpc, r1_T2_real / block-net scale of interest
+CF4_RE = 19.27  # Mpc, L=20 block-net; jk err in results/r1_cf4_jackknife
 BAND = (0.5 * R_NL, 3.0 * R_NL)
 
 # CF4 block-net eta at L near R_nl (from cf4_block_net.txt: L=10 → eta=1.39)

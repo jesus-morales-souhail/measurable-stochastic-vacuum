@@ -136,7 +136,7 @@ Pedagogy only (other repo): [TOPOLOGICAL_EDGE_ANALOGY](https://github.com/jesus-
 | `scripts/r1/` | $R_{\mathrm{nl}}$, uniqueness, $g$, residual profiles, T2 real, CF4 |
 | `scripts/closed/` | closed-route checks |
 | `scripts/side/` | secondary scripts |
-| `results/r1_sandwich/`, `r1_lineA_Q/`, `r1_T2_real/, `r1_three_gate/``, `r1_real_velocity_net/`, `r1_collapse_relief/` | numerical outputs |
+| `results/r1_sandwich/`, `r1_lineA_Q/`, `r1_T2_real/, `r1_three_gate/, `r1_cf4_jackknife/```, `r1_real_velocity_net/`, `r1_collapse_relief/` | numerical outputs |
 | `data/real_velocity_net/` | Cosmicflows-4 local copy (public CDS) |
 
 ---

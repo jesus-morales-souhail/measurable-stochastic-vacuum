@@ -1,0 +1,13 @@
+CF4 r_e JACKKNIFE (real Cosmicflows-4 table2)
+==================================================
+Q: Is r_e in sandwich band after jackknife error?
+A: YES_G2_HOLDS
+R_nl = 8.6098 Mpc  band = [4.30, 25.83] Mpc
+N_gal = 18011
+
+L=15.0 Mpc: r_e = 14.92 ± 0.77 Mpc = (1.73 ± 0.09) R_nl | in_band=True 1σ_overlap=True fully_in=True
+L=20.0 Mpc: r_e = 19.27 ± 1.14 Mpc = (2.24 ± 0.13) R_nl | in_band=True 1σ_overlap=True fully_in=True
+L=30.0 Mpc: r_e = 30.51 ± 2.86 Mpc = (3.54 ± 0.33) R_nl | in_band=False 1σ_overlap=False fully_in=False
+
+Primary L=20.0: G2 pass = True
+Non-claims: Not a DE residual detection; Not a derivation of ell_*=R_nl; Jackknife is spatial along SG-X; not a full survey covariance

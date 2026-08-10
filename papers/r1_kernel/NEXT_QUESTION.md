@@ -87,3 +87,24 @@ python scripts/r1/r1_sandwich_derivation.py
 python scripts/r1/r1_T2_real_pipeline.py
 python scripts/r1/r1_real_velocity_block_net.py
 ```
+
+---
+
+---
+
+## 5. Jackknife update (real CF4, run in-repo)
+
+Script: `scripts/r1/r1_cf4_re_jackknife.py` → `results/r1_cf4_jackknife/`.
+
+Spatial leave-one-region-out jackknife along SG-X (48 regions, N=18011 galaxies).
+
+| Block side L | r_e (Mpc) | r_e / R_nl | Point in band | 1σ fully inside band |
+|-------------:|----------:|-----------:|:-------------:|:--------------------:|
+| 15 | 14.92 ± 0.77 | 1.73 ± 0.09 | yes | yes |
+| 20 (primary) | 19.27 ± 1.14 | 2.24 ± 0.13 | yes | yes |
+| 30 | 30.51 ± 2.86 | 3.54 ± 0.33 | **no** | **no** |
+
+**G2 after errors:** holds at the primary L=20 Mpc scale used in T2/three-gate.
+
+**Honest edge:** at L=30 Mpc the measured r_e leaves the sandwich band — the gate is scale-dependent by construction of the block filter, not a free retune of R_nl.
+
