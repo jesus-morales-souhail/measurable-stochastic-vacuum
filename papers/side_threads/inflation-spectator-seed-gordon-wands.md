@@ -49,13 +49,17 @@ Equating the two “tachyonic” words was a **category error** (same name, diff
 If the quintessence is light,
 
 
+$$
 \frac{\partial^2 V_Q}{\partial Q^2}\ll H_{\mathrm{inf}}^2,
+$$
 
 
 it acquires the standard spectrum [Eq. (12)]
 
 
+$$
 \mathcal{P}_Q^{1/2}(k)=\frac{H_{\mathrm{inf}}}{2\pi}.
+$$
 
 
 This is the **same structural mechanism** that seeds adiabatic curvature for the CMB when the inflaton fluctuates — textbook, not an ad hoc late-time dial.
@@ -65,13 +69,17 @@ This is the **same structural mechanism** that seeds adiabatic curvature for the
 From the low-quadrupole motivation and adiabatic violation they work with a large fractional DE density contrast of order [Eq. (15)]
 
 
+$$
 \frac{1}{\rho_Q}\mathcal{P}_{\rho_Q}^{1/2}=6\times 10^{-4}.
+$$
 
 
 Under slow-roll / potential domination this becomes a lower bound on field perturbations during DE domination [Eq. (24)]
 
 
+$$
 \mathcal{P}_Q^{1/2}>4\times 10^{-4}\,M_p
+$$
 
 
 (for $\epsilon_Q<1$).
@@ -81,13 +89,17 @@ Under slow-roll / potential domination this becomes a lower bound on field pertu
 If $\delta Q$ is constant from inflation to DE domination, Eqs. (24)+(12) force a **high** inflation scale [Eq. (25)]
 
 
+$$
 V_{\mathrm{inf}}^{1/4}>7\times 10^{-2}\,M_p,
+$$
 
 
 while then-current tensor limits gave [Eq. (26)]
 
 
+$$
 V_{\mathrm{inf}}^{1/4}<10^{-2}\,M_p.
+$$
 
 
 Hence frozen inflationary DE perturbations are **not of sufficient size for their quadrupole target without either high $H_{\mathrm{inf}}$ (excluded then) or post-inflation growth**.
@@ -97,13 +109,17 @@ Hence frozen inflationary DE perturbations are **not of sufficient size for thei
 Because $\delta Q\sim H_{\mathrm{inf}}/(2\pi)$ and $H\sim V^{1/2}/(\sqrt{3}M_p)$, the ratio of energy-scale bounds $\sim 7$ becomes a field-perturbation ratio of order $7^2\sim 50$. The paper states explicitly [Eq. (27)]
 
 
+$$
 \frac{\delta Q_f}{\delta Q_i}>45,
+$$
 
 
 and with $Q=\phi\theta$, $\delta\theta$ frozen [Eq. (32)]
 
 
+$$
 \frac{\phi_f}{\phi_i}>45.
+$$
 
 
 **Reproduce:** `python scripts/side/gordon_wands_factor45.py`.

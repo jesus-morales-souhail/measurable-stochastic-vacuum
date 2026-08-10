@@ -31,7 +31,9 @@ Deviations from the plan should be stated explicitly in any application to DESI 
 The two-point structure of a residual field $\chi$ (or a residual proxy correlated with anisotropic stress / BAO residual template) has correlation length
 
 
+$$
 \ell_{\ast}\in [0.5,\,3]\,R_{\mathrm{nl}}\approx [4.3,\,25.8]\,\mathrm{Mpc}
+$$
 
 
 when the residual amplitude is in the programme window $\sigma\sim 10^{-5}$–$2.5\times 10^{-2}$.
@@ -40,7 +42,9 @@ when the residual amplitude is in the programme window $\sigma\sim 10^{-5}$–$2
 $\chi$ is positively correlated with a nonlinear mask built only from matter:
 
 
+$$
 m=\mathbf{1}\{\delta_m(R_{\mathrm{nl}})>\delta_c\},\qquad \delta_c\in\{1.0,\,1.5\}
+$$
 
 
 (pre-registered defaults: $\delta_c=1.0$ primary; $1.5$ robustness).

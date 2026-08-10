@@ -32,7 +32,9 @@ If you start from a pure Planck / Sorkin seed $\sigma_0\sim 10^{-61}$ and want $
 The other door is the counting cell. If residual degrees of freedom are counted on a mesoscopic length $\ell_{\ast}$ instead of $L_P$,
 
 
+$$
 \sigma=\Bigl(\frac{\ell_{\ast}}{L_H}\Bigr)^{d/2}
+$$
 
 
 can already sit near $10^{-5}$–$10^{-4}$. Then the real question is: what fixes $\ell_{\ast}$?
@@ -62,7 +64,9 @@ Everything below is *if A0–A4*. Existence of $\chi$ and the coupling in A1 are
 If $\chi$ couples locally to classical $\delta_m$ coherent on patches of size $R_{\mathrm{nl}}$, then configurations of $\chi$ that differ *inside* one patch share the same classical record. Open-system reasoning kills those coherences unless $g\sigma_\delta$ is tiny. What survives as free residual is the patch average
 
 
+$$
 \chi_{\mathrm{eff}}(p)=\frac{1}{V_p}\int_p\chi.
+$$
 
 
 So free residual cells with $\ell\ll R_{\mathrm{nl}}$ are not really free.
@@ -72,7 +76,9 @@ So free residual cells with $\ell\ll R_{\mathrm{nl}}$ are not really free.
 If someone claims a free cell $\ell\gg R_{\mathrm{nl}}$, local coupling means that cell is a sum of $N_p=(\ell/R_{\mathrm{nl}})^d$ independent nonlinear patches. The independent modes are the patch ones. Averaging them gives
 
 
+$$
 \sigma_{\mathrm{eff}}(\ell)=\frac{\sigma(R_{\mathrm{nl}})}{\sqrt{N_p}},
+$$
 
 
 i.e. the same counting as if the cell were $R_{\mathrm{nl}}$. Big cells renormalize down.
@@ -82,7 +88,9 @@ i.e. the same counting as if the cell were $R_{\mathrm{nl}}$. Big cells renormal
 Under A0–A4,
 
 
+$$
 \ell_{\ast}\sim R_{\mathrm{nl}}
+$$
 
 
 up to $\mathcal{O}(1)$ factors from the same filtered matter field (density correlation length, mask correlation length, packing of $\delta>1$ regions; BBKS peak curvature $R_{\ast}$ is substructure *inside* the domain, not a separate free residual cell under the UV argument).
@@ -97,7 +105,9 @@ up to $\mathcal{O}(1)$ factors from the same filtered matter field (density corr
 With EH-style $P(k)$, $n_s=0.965$, $\Omega_m=0.315$, $h=0.674$, $\sigma_8=0.81$:
 
 
+$$
 R_{\mathrm{nl}}\approx 5.80\,h^{-1}\mathrm{Mpc}\approx 8.61\,\mathrm{Mpc}.
+$$
 
 
 No DESI residual fit goes into this number.
@@ -107,7 +117,9 @@ No DESI residual fit goes into this number.
 For $m=\mathbf{1}\{\delta>1\}$ at filter $R_{\mathrm{nl}}$,
 
 
+$$
 r_{e,\mathrm{mask}}\approx 9.53\,\mathrm{Mpc}\approx 1.11\,R_{\mathrm{nl}}.
+$$
 
 
 Density correlation length $\approx 14.6\,\mathrm{Mpc}\approx 1.69\,R_{\mathrm{nl}}$.
@@ -118,7 +130,9 @@ Packing separation of $\delta>1$ patches $\approx 15.9\,\mathrm{Mpc}$.
 With $\ell_{\ast}=R_{\mathrm{nl}}$, $d=3$, $L_H=c/H_0$:
 
 
+$$
 \sigma_{\mathrm{free}}=\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5},
+$$
 
 
 under the related DESI ceiling $\sigma_X<2.5\times 10^{-2}$ (95% CL, OU/QNM).
@@ -128,7 +142,9 @@ under the related DESI ceiling $\sigma_X<2.5\times 10^{-2}$ (95% CL, OU/QNM).
 With $\sigma_{\mathrm{res}}^2=\sigma_{\mathrm{free}}^2+\lambda^2$ and $\lambda=g\sigma_{\mathrm{free}}$,
 
 
+$$
 \lvert\lambda\rvert\lesssim 1.24\times 10^{-4},\qquad \lvert g\rvert\lesssim 1.45
+$$
 
 
 from the working DESI map. Full-covariance profiles on absolute $D/r_d$ at fixed background thrash at the $10^{-4}$ level (large $\chi^2$ gets eaten by residual variance). I keep the working ceiling as the primary bound.
@@ -176,7 +192,9 @@ Possible non-ad-hoc routes to A1: residual about spatial averages on nonlinear d
 Under residual sector + local coupling to classical nonlinear matter + post-decoherence counting,
 
 
+$$
 \ell_{\ast}\sim R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc},
+$$
 
 
 with $\sigma\sim 8.5\times 10^{-5}$ under present DESI residual limits and $\lvert g\rvert\lesssim\mathcal{O}(1)$. Conditional, quantitative, falsifiable. No free soft Planck amplification. No $H_0$ solution.

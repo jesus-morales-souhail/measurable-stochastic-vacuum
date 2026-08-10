@@ -14,7 +14,9 @@ July 2026 · data note
 A concrete version of the “cast a net, split into blocks, measure means and covariances” idea — **only on real galaxy data**, with a documented public catalog.
 
 This measures **matter** line-of-sight residual velocities relative to a pure Hubble flow.
+$$
 It does **not** measure dark-energy residuals, \(\Omega_\Lambda\), or a work origin for vacuum energy.
+$$
 
 ---
 
@@ -41,34 +43,43 @@ Columns used (from ReadMe):
 
 **Distance** from distance modulus (standard):
 \[
-d = 10^{({\rm DM}-25)/5}\quad[\mathrm{Mpc}].
-\]
+$$
+d = 10^{({\rm DM}-25)/5}\quad[\mathrm{Mpc}]. \]
+$$
 
 **Line-of-sight residual velocity** (pure Hubble subtraction at fixed \(H_0\)):
 \[
-v_{\mathrm{pec}} = V_{\mathrm{cmb}} - H_0\, d.
-\]
+$$
+v_{\mathrm{pec}} = V_{\mathrm{cmb}} - H_0\, d. \]
+$$
 
+$$
 **\(H_0 = 75\,\mathrm{km\,s^{-1}Mpc^{-1}}\)**
+$$
 This is the conventional Cosmicflows residual scale for converting distance to Hubble velocity.
 It is **not** fitted in this script and is **not** a claim about the true cosmic \(H_0\).
 
+$$
 **Coordinates:** supergalactic Cartesian \((x,y,z)\) from \((d,\mathrm{SGL},\mathrm{SGB})\).
+$$
 
 **Blocks:** cubes of side \(L\) Mpc; keep blocks with \(\ge 3\) galaxies.
+$$
 Per block: mean \(v_{\mathrm{pec}}\), internal rms, galaxy count.
+$$
 
 **Correlation:** for block means demeaned,
 \[
-C(r)=\langle v_i v_j\rangle
-\]
+$$
+C(r)=\langle v_i v_j\rangle \]
+$$
 in separation bins; \(r_e\) = first separation where \(C(r)/C(0)\le 1/e\).
 
 **Expansion comparison at block scale:**
 \[
-v_H(L)=H_0 L,\qquad
-\eta(L)=\frac{\mathrm{std}(\text{block-mean }v_{\mathrm{pec}})}{v_H(L)}.
-\]
+$$
+v_H(L)=H_0 L,\qquad \eta(L)=\frac{\mathrm{std}(\text{block-mean }v_{\mathrm{pec}})}{v_H(L)}. \]
+$$
 If \(\eta>1\), block-to-block residual-velocity scatter exceeds pure Hubble across one block side (at this \(H_0\) convention).
 
 ---
@@ -116,13 +127,21 @@ python scripts/r1/r1_real_velocity_block_net.py
 
 ## Interpretation
 
+$$
 Block-mean residual velocities relative to \(v=H_0 d\) (CF \(H_0\) convention) scatter by \(\sim 900\)–\(1100\) km/s depending on \(L\). \(\eta(L)\) falls with \(L\): at \(L\sim 5\)–\(10\,\mathrm{Mpc}\), block-mean residual scatter exceeds \(H_0 L\); at \(L\sim 30\)–\(40\,\mathrm{Mpc}\), expansion across the block wins — for this estimator and this \(H_0\). The pair scale \(r_e\) grows with block size in this simple estimator; treat it as descriptive, not a fixed constant.
+$$
 
+$$
 Median \(e_{\mathrm{DM}}\approx 0.43\) mag. Roughly \(\delta d/d \sim (\ln 10/5)\,e_{\mathrm{DM}}\sim 0.2\), so distance error alone contributes of order \(H_0 d \times 0.2\) to \(v_{\mathrm{pec}}\). Global rms \(1608\) km/s mixes signal and noise; block means help but do not remove Malmquist / selection systematics (Tully+2023).
+$$
 
+$$
 This is matter kinematics from published distances and redshifts. It is not a DE residual measurement, not \(\Omega_m/\Omega_\Lambda\), not an \(H_0\) solution, and \(L\) is only a scan grid (not a fit of \(\ell_*\)).
+$$
 
+$$
 Method: cover CF4 volume \(d<200\,\mathrm{Mpc}\), cubic blocks of side \(L\), mean residual velocity per block, then scatter and pair correlation of block means.
+$$
 
 ---
 

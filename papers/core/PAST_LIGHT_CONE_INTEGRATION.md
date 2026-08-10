@@ -16,7 +16,9 @@
 The Minimal Model keeps a $\Lambda$CDM bulk and a mesoscopic grain $\sigma$. Local slip from Einstein + Morales sits at
 
 
+$$
 \lvert\gamma-1\rvert_{\mathrm{loc}}\sim 10^{-4}
+$$
 
 
 under the DESI residual ceiling — deep in the self-shielding regime relative to $\sigma_{\mathrm{exp}}\sim 0.03$.
@@ -24,7 +26,9 @@ under the DESI residual ceiling — deep in the self-shielding regime relative t
 The **only** amplification allowed by GR + statistics without undeclared free parameters is **incoherent accumulation along the past null cone**:
 
 
+$$
 \mathrm{RMS}_{\mathrm{path}} = C \cdot \lvert\gamma-1\rvert_{\mathrm{loc}} \sqrt{\frac{\chi}{\ell_{\ast}}} \qquad (C=1\ \mathrm{for\ iid\ patches}).
+$$
 
 
 For $\chi\sim(3$–$6)\times 10^{3} \mathrm{Mpc}$ and $\ell_{*}\sim 1$–$2 \mathrm{Mpc}$, $\sqrt{N}=\sqrt{\chi/\ell_{*}}=\mathcal{O}(10$–$70)$.
@@ -37,7 +41,9 @@ Native $\sim 10^{-5}$–$10^{-4}$ becomes path $\mathrm{RMS}\sim 10^{-4}$–$10^
 ### 1.1 Native slip (local cell) — from Einstein + Morales
 
 
+$$
 \lvert\gamma-1\rvert_{\mathrm{loc}} = 2 \varepsilon \sigma_{\mathrm{res}} \frac{\Omega_{\Lambda 0}}{\Omega_{m0} (1+z)^{3} \lvert\delta_{m}\rvert}. \tag{W}
+$$
 
 
 With $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$, $\varepsilon=1$, $\lvert\delta_{m}\rvert=1$:
@@ -52,7 +58,9 @@ With $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$, $\varepsilon=1$, $\lvert\delt
 **Local-only measurement** hits the self-shielding wall (S):
 
 
+$$
 \lvert\gamma-1\rvert_{\mathrm{loc}} \ll \sigma_{\mathrm{exp}}(\gamma)\sim 0.03\text{–}0.1.
+$$
 
 
 ### 1.2 Accumulation factor — pure path statistics
@@ -61,13 +69,17 @@ Photons from source redshift $z_s$ travel comoving distance $\chi(z_s)$.
 If the grain correlation length is $\ell_{*}$, the number of independent patches is
 
 
+$$
 N_{\mathrm{pat}}=\frac{\chi(z_s)}{\ell_{*}}.
+$$
 
 
 If each patch adds an independent zero-mean wrinkle of RMS $s=\lvert\gamma-1\rvert_{\mathrm{loc}}$, then
 
 
+$$
 \mathrm{Var}\Bigl(\sum_{i=1}^{N} x_i\Bigr) = N s^{2} \quad\Rightarrow\quad \mathrm{RMS}_{\mathrm{path}} = s\sqrt{N} = \lvert\gamma-1\rvert_{\mathrm{loc}} \sqrt{\frac{\chi}{\ell_{*}}}.
+$$
 
 
 Hence **$C=1$** when $s$ is already the per-patch RMS.
@@ -76,13 +88,17 @@ $C\neq 1$ only if one redefines what “per-patch amplitude” means (window fun
 ### 1.3 Grain–seed link (Minimal Model, $d=3$)
 
 
+$$
 \sigma=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}, \qquad \ell_{*}=L_{H} \sigma^{2/3}, \qquad L_{H}=c/H_{0}.
+$$
 
 
 Optional soft open map (still not free amplification):
 
 
+$$
 \sigma_{\mathrm{res}}=G_{O} \sigma,\qquad G_{O}=e^{2r},\quad r=\mathcal{O}(1),
+$$
 
 
 with **DESI-safe** $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$.
@@ -92,9 +108,9 @@ with **DESI-safe** $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$.
 ## 2. Master formula (Minimal Model + past light cone)
 
 
-\sigma_{\mathrm{res}} = G_O \sigma,\quad G_O\in[1,20],\quad \sigma_{\mathrm{res}}\le 2.5\times 10^{-2}.
-\lvert\gamma-1\rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\Omega_{\Lambda 0}}{\Omega_{m0}(1+z)^3\lvert\delta_m\rvert}.
-\mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\frac{\chi(z_s)}{\ell_{\ast}(\sigma)}}.
+$$
+\sigma_{\mathrm{res}} = G_O \sigma,\quad G_O\in[1,20],\quad \sigma_{\mathrm{res}}\le 2.5\times 10^{-2}. \lvert\gamma-1\rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\Omega_{\Lambda 0}}{\Omega_{m0}(1+z)^3\lvert\delta_m\rvert}. \mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\frac{\chi(z_s)}{\ell_{\ast}(\sigma)}}.
+$$
 
 
 **Unphysical constructions**

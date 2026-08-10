@@ -44,7 +44,9 @@ Everything else is commentary, audits, or open research.
 ### Line A — Background (identical to $\Lambda$CDM)
 
 
+$$
 H^2(z) = H_0^2\Bigl[\Omega_m(1+z)^3 + \Omega_\Lambda\Bigr].
+$$
 
 
 No new expansion history. DESI residual analysis prefers this smoothness.
@@ -52,7 +54,9 @@ No new expansion history. DESI residual analysis prefers this smoothness.
 ### Line B — One grain parameter (replaces Planck mythology)
 
 
+$$
 \sigma = \left(\frac{\ell_{\ast}}{L_H}\right)^{3/2} \quad\Leftrightarrow\quad \ell_{\ast} = L_H \sigma^{2/3}.
+$$
 
 
 - $\sigma$: dimensionless noise amplitude of the dark-energy sector (our only extra constant, like $\Omega_\Lambda$ is the only vacuum constant in flat $\Lambda$CDM).
@@ -66,19 +70,25 @@ If you measure something, $\sigma$ is mesoscopic: $\sigma\sim 10^{-6}$–$10^{-5
 ### Line C — What light sees (one prediction)
 
 
+$$
 \mathrm{RMS} = \sigma\sqrt{\frac{L_H}{\ell_{\ast}}} = \sigma^{2/3} \qquad\text{(order of magnitude; }d=3\text{)}.
+$$
 
 
 More carefully (same content, one prefactor $\mathcal{O}(1)$):
 
 
+$$
 \mathrm{RMS}(\lvert \gamma-1 \rvert) \approx \alpha \sigma\sqrt{\frac{\chi}{\ell_{\ast}}}, \qquad \alpha \equiv 2\varepsilon\frac{\rho_X}{\rho_m\lvert \delta_m \rvert}\sim\mathcal{O}(1).
+$$
 
 
 With $\ell_{\ast}=L_H\sigma^{2/3}$ and $\chi\sim L_H$:
 
 
+$$
 \mathrm{RMS} \sim \alpha \sigma^{2/3}.
+$$
 
 
 Minimal content at $\Lambda$-level simplicity:
@@ -96,7 +106,9 @@ Minimal content at $\Lambda$-level simplicity:
 ### Cosmological constant
 
 
+$$
 G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}.
+$$
 
 
 Parameters: $\Lambda$ (or $\Omega_\Lambda$).
@@ -105,7 +117,9 @@ Prediction: $H(z)$ as above.
 ### Grainy vacuum (minimal)
 
 
+$$
 \text{mean: same }\Lambda\text{CDM} \sigma=\text{one grain amplitude} \mathrm{RMS}(\lvert \gamma-1 \rvert)\sim \sigma^{2/3}
+$$
 
 
 Parameters: $\sigma$ (plus shared $\Omega_m,H_0$).
@@ -114,13 +128,17 @@ Prediction: small gravitational slip along the line of sight; **not** a new $H(z
 Optional soft open factor (still simple):
 
 
+$$
 \sigma_{\mathrm{res}} = G \sigma, \qquad G\sim 1\text{–}20 \quad(r=\mathcal{O}(1)),
+$$
 
 
 with **constraint** from data:
 
 
+$$
 \sigma_{\mathrm{res}} < 2.5\times 10^{-2} \quad\text{(DESI residual ceiling)}.
+$$
 
 
 Then $\mathrm{RMS}\sim(\sigma_{\mathrm{res}})^{2/3}$ or $\mathrm{RMS}\sim\alpha \sigma_{\mathrm{res}}\sqrt{\chi/\ell_{\ast}}$ with $\ell_{\ast}$ from Line B using $\sigma$ (seed) or using $\sigma_{\mathrm{res}}$ if grain is read after open map — see NP-A / NP-B in [`NARROW_PATH.md`](NARROW_PATH.md).

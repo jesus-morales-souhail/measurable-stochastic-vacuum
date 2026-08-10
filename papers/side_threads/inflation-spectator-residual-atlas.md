@@ -20,7 +20,9 @@ This note answers the next question for **this** programme:
 **Result (verified arithmetic):** at the BK-class edge $r\sim 0.036$,
 
 
+$$
 \frac{\delta Q}{M_p}\sim 3\times 10^{-6}.
+$$
 
 
 A frozen, very flat DE potential ($\varepsilon_Q\sim 10^{-4}$) still sits **orders below** $10^{-5}$.
@@ -47,13 +49,17 @@ If there is a crack, it is here — **change the seed physics**, then ask which 
 Scalar amplitude $A_s\simeq 2.1\times 10^{-9}$ (Planck-class). Tensor-to-scalar ratio $r$. In reduced Planck units,
 
 
+$$
 \frac{H_{\mathrm{inf}}}{M_p}=\pi\sqrt{\frac{r A_s}{2}},\qquad \frac{\delta Q}{M_p}=\frac{H_{\mathrm{inf}}}{2\pi M_p}=\sqrt{\frac{r A_s}{8}}.
+$$
 
 
 Potential-dominated fractional density contrast (OOM, flat gauge):
 
 
+$$
 \sigma_\rho\equiv\left| \frac{\delta\rho_Q}{\rho_Q}\right| \approx\sqrt{2\varepsilon_Q}\;A\;\frac{\delta Q_i}{M_p}, \qquad \varepsilon_Q=\frac{M_p^2}{2}\left(\frac{V_Q'}{V_Q}\right)^2,
+$$
 
 
 with post-inflation field growth $A=\delta Q_f/\delta Q_i$(Gordon & Wands: $A>45$ for *their* target).

@@ -64,7 +64,9 @@ Active (and debated) line:
 ### 2.4 Number (point 4)
 
 
+$$
 \frac{H_0^{\mathrm{SH0ES}}}{H_0^{\mathrm{Planck}}}\approx\frac{73}{67.4}\approx 1.083.
+$$
 
 
 Literature “running” claims aim to connect high-$H_0$ at low $z$ to low-$H_0$ at high $z$ in a continuous way. **I do not re-fit SN bins here.**

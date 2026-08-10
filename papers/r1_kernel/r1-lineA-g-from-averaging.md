@@ -33,7 +33,9 @@ I want to replace “$g$ is free until DESI bounds it” with something better:
 Buchert kinematical backreaction (schematic):
 
 
+$$
 Q=\tfrac{2}{3}\bigl(\langle\theta^2\rangle-\langle\theta\rangle^2\bigr)-2\langle\sigma^2\rangle
+$$
 
 
 on domain $D$ of size $L_{\mathrm{av}}$.
@@ -41,31 +43,41 @@ on domain $D$ of size $L_{\mathrm{av}}$.
 At the onset of nonlinearity, expansion and shear fluctuations are set by the density field with $\sigma_\delta(R_{\mathrm{nl}})=1$. OOM:
 
 
+$$
 \frac{\sqrt{\mathrm{Var}(Q)}}{H^2} \sim \mathcal{O}(1)\times \sigma_\delta^2 \sim \mathcal{O}(1) \quad\text{on a single nonlinear domain.}
+$$
 
 
 After coarse-graining over $N=(L_H/R_{\mathrm{nl}})^3$ domains, the Hubble-volume residual of a dimensionless averaged source is
 
 
+$$
 \sigma_Q \sim \frac{\mathcal{O}(1)}{\sqrt{N}} =\mathcal{O}(1)\times\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2} \sim \mathcal{O}(\sigma_{\mathrm{free}}) \sim 10^{-4}.
+$$
 
 
 I identify residual contrast with programme $\chi$ (normalised so free RMS $=\sigma_{\mathrm{free}}$):
 
 
+$$
 \chi \sim \frac{\delta Q/H^2}{\sigma_Q}\cdot\sigma_{\mathrm{free}} \quad\Rightarrow\quad \text{order-unity field in patch units.}
+$$
 
 
 Coupling to matter: on the same domain, $\delta_m\sim\mathcal{O}(1)$. The induced residual response
 
 
+$$
 \lambda \sim \frac{\partial(\delta\rho_X/\rho_X)}{\partial\delta_m} \sim \frac{\sigma_Q}{\sigma_\delta} \sim \sigma_{\mathrm{free}} \quad(\sigma_\delta=1)
+$$
 
 
 gives, under $\lambda=g\sigma_{\mathrm{free}}$,
 
 
+$$
 \boxed{g_{\mathrm{eff}}\sim\mathcal{O}(1)}.
+$$
 
 
 Averaging residual naturally lands $g_{\mathrm{eff}}$ at the same order as the DESI working bound $\lvert g\rvert\lesssim 1.45$ — without dialing $g$ to DESI first. DESI then becomes an a posteriori consistency check, not the definition of $g$.
@@ -108,7 +120,9 @@ Still open for upgrade: true $\mathrm{Var}(Q)$ from N-body / constrained realisa
 Volume fraction of edges $f\sim 0.16$($\delta>1$). If residual anisotropic stress lives only on edges,
 
 
+$$
 \sigma_{\mathrm{edge}}\sim \sigma_{\mathrm{free}}/\sqrt{f}
+$$
 
 
 or support-weighted $\sigma\sim\sigma_{\mathrm{free}}\sqrt{f}$ depending on normalisation — both stay $\mathcal{O}(10^{-4})$. Mapping to $g$ via slip wall again yields $\lvert g\rvert\sim\mathcal{O}(1)$ if $\varepsilon\sim\mathcal{O}(1)$.

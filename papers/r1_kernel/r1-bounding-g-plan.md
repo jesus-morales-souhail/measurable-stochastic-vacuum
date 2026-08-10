@@ -32,7 +32,9 @@ The sketch used $\mathcal{L}_{\mathrm{int}}=g\,\chi\,\delta_m$. For bounds I use
 On the filter scale $R_{\mathrm{nl}}$,
 
 
+$$
 \Bigl(\frac{\delta\rho_X}{\rho_X}\Bigr)_{\mathrm{ind}} =\lambda\,\delta_m\big|_{R_{\mathrm{nl}}} +\text{(free residual orthogonal to }\delta_m\text{)}.
+$$
 
 
 - $\lambda=0$: no induced residual (pure free grain).
@@ -44,7 +46,9 @@ $\lambda = g\times\text{(normalisation factor)}$. Bounding $\lambda$ bounds $g$ 
 ### 2.2 Free residual $\sigma_{\mathrm{free}}$ (secondary, already OOM-fixed)
 
 
+$$
 \sigma_{\mathrm{free}}\equiv\Bigl(\frac{R_{\mathrm{nl}}}{L_H}\Bigr)^{3/2}\approx 8.5\times 10^{-5}
+$$
 
 
 under P $_\mathrm{nl}$+counting $d=3$. Not a free MCMC parameter unless P$_\mathrm{nl}$ is abandoned.
@@ -52,7 +56,9 @@ under P $_\mathrm{nl}$+counting $d=3$. Not a free MCMC parameter unless P$_\math
 ### 2.3 Effective residual for DESI / slip
 
 
+$$
 \sigma_{\mathrm{res}}^2 \simeq \sigma_{\mathrm{free}}^2 +\lambda^2\,\sigma_\delta^2(R_{\mathrm{nl}}) +\cdots
+$$
 
 
 At $R_{\mathrm{nl}}$, $\sigma_\delta=1$ by definition, so the induced piece has RMS $\lvert\lambda\rvert$ if $\delta_m$ is order-unity on that scale.
@@ -67,19 +73,25 @@ At $R_{\mathrm{nl}}$, $\sigma_\delta=1$ by definition, so the induced piece has 
 **Method:** algebraic, no MCMC.
 
 
+$$
 \sigma_{\mathrm{res}}\le \sigma_X^{\mathrm{DESI}}=2.5\times 10^{-2}.
+$$
 
 
 Optimistic induced-only bound ($\sigma_{\mathrm{free}}=0$):
 
 
+$$
 \lvert\lambda\rvert\lesssim 2.5\times 10^{-2}.
+$$
 
 
 With free grain included (independent, Gaussian add in quadrature):
 
 
+$$
 \lvert\lambda\rvert \lesssim \sqrt{ \bigl(\sigma_X^{\mathrm{DESI}}\bigr)^2-\sigma_{\mathrm{free}}^2 } \approx 1.24\times 10^{-4} \quad(\sigma_{\mathrm{free}}=8.5\times 10^{-5}).
+$$
 
 
 ```bash
@@ -161,19 +173,25 @@ Plan in one line: bound $\lambda$ (hence $g$) primarily with BAO residual likeli
 Fix residual field normalisation so that free variance matches counting:
 
 
+$$
 \langle\chi^2\rangle^{1/2}_{\mathrm{free}}=\sigma_{\mathrm{free}}.
+$$
 
 
 If the induced contrast is $\delta\rho_X/\rho_X=\kappa\,g\,\chi\,\delta_m$ with $\kappa$ fixed by the action convention ($\kappa=1$ if $\chi$ already dimensionless contrast), then
 
 
+$$
 \lambda=\kappa\,g\,\langle\chi^2\rangle^{1/2} \quad\Rightarrow\quad g=\frac{\lambda}{\kappa\,\sigma_{\mathrm{free}}}.
+$$
 
 
 With $\kappa=1$, $\sigma_{\mathrm{free}}=8.5\times 10^{-5}$, $\lvert\lambda\rvert\lesssim 1.2\times 10^{-4}$:
 
 
+$$
 \lvert g\rvert\lesssim\frac{1.2\times 10^{-4}}{8.5\times 10^{-5}}\sim\mathcal{O}(1).
+$$
 
 
 Order-unity dimensionless $g$ is already at the edge of the DESI residual ceiling once $\chi$ is normalized to the free grain — so BAO is informative, not empty.

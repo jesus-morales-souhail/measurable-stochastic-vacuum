@@ -76,8 +76,9 @@ Repo geometry (not refit to CF4): $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$ fr
 At CF $H_0=75$:
 
 \[
-v_H(R_{\mathrm{nl}})=H_0 R_{\mathrm{nl}}\approx 646\,\mathrm{km\,s^{-1}}.
-\]
+$$
+v_H(R_{\mathrm{nl}})=H_0 R_{\mathrm{nl}}\approx 646\,\mathrm{km\,s^{-1}}. \]
+$$
 
 | Symbol | Definition | Meaning |
 |:-------|:-----------|:--------|

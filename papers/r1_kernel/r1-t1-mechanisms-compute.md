@@ -27,7 +27,9 @@ Still open: why the vacuum residual must live on that domain (master equation / 
 From [`scripts/r1/r1_sigma_R_full.py`](../../scripts/r1/r1_sigma_R_full.py):
 
 
+$$
 R_{\mathrm{nl}}\approx 5.803\,h^{-1}\mathrm{Mpc}\approx 8.610\,\mathrm{Mpc} \quad(\sigma_8=0.81,\ h=0.674).
+$$
 
 
 No DESI residual number enters this solve.
@@ -45,13 +47,17 @@ python scripts/r1/r1_t1_mechanisms_compute.py
 In Buchert-type language, cosmological equations are averaged on a domain of size $L_{\mathrm{av}}$. I identify
 
 
+$$
 L_{\mathrm{av}}:=R_{\mathrm{nl}}
+$$
 
 
 as the natural domain once structure is nonlinear (Tier-1 candidate T1.1). Residual stochastic freedom is then counted as one effective mode per domain:
 
 
+$$
 N_{\mathrm{eff}}=\Bigl(\frac{L_H}{L_{\mathrm{av}}}\Bigr)^{d},\qquad \sigma_{0,\mathrm{eff}}=\Bigl(\frac{L_{\mathrm{av}}}{L_H}\Bigr)^{d/2}.
+$$
 
 
 This is the same algebra as R1 counting with $\ell_{\ast}=R_{\mathrm{nl}}$ — now motivated as averaging-domain size, still not derived from vacuum QFT.
@@ -81,19 +87,25 @@ Programme default $d=3$: residual amplitude from domain counting is DESI-safe an
 SDiff / edge language: residual support lives where matter is nonlinear. Model the linear field as Gaussian with $\sigma(R_{\mathrm{nl}})=1$. Nonlinear mask:
 
 
+$$
 m=\mathbf{1}\{\delta>\delta_c\}.
+$$
 
 
 Volume fraction (exact for Gaussian):
 
 
+$$
 f=\tfrac12\,\mathrm{erfc}\Bigl(\frac{\delta_c}{\sqrt{2}\,\sigma}\Bigr),\qquad\sigma=1.
+$$
 
 
 Packing OOM for separation of nonlinear blobs of size $\sim R_{\mathrm{nl}}$:
 
 
+$$
 \ell_{\mathrm{sep}}\sim R_{\mathrm{nl}}\,f^{-1/3}.
+$$
 
 
 Blob size / mask correlation scale $\sim R_{\mathrm{nl}}$ (filter scale; full BBKS peak theory is a refinement).

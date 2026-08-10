@@ -15,7 +15,9 @@ Complex frequency $\omega=\omega_R-i\gamma/2$ and half-life $t_{1/2}=\ln 2/\gamm
 A draft construction that writes
 
 
+$$
 H_0(z)=H_{0,\mathrm{fid}}\bigl[1+\varepsilon\,e^{-\theta x}\bigr]
+$$
 
 
 and then chooses $\theta\sim 0.47$ so the knee sits at $z\sim 0.5$–$0.7$ **fails** the filter I use here: the functional form is not derived from Einstein or OU dynamics, and $\theta$ is fitted to the known transition.
@@ -55,7 +57,9 @@ This note freezes that filter, restores the correct status of $\sigma_X$ (tempor
 In the OU corpus,
 
 
+$$
 X(x)\equiv \delta\Omega_\Lambda(x),\qquad x=\ln a=-\ln(1+z).
+$$
 
 
 The residual amplitude $\sigma_X$ is the stationary scale of fluctuations along **e-fold time**, not a purely spatial grain label.
@@ -75,7 +79,9 @@ Consequences:
 Anomalous correlator / residual track (schematic, already in desqueezing note):
 
 
+$$
 \lvert X\rvert(x)\;\lesssim\;\sigma\,e^{-\theta\,\Delta x},
+$$
 
 
 with $\sigma\le\sigma_X^{\mathrm{DESI}}=2.5\times 10^{-2}$ and $\theta$ set by OU continuity ($\Gamma=\theta H$), **not** by the H0-running knee.
@@ -83,7 +89,9 @@ with $\sigma\le\sigma_X^{\mathrm{DESI}}=2.5\times 10^{-2}$ and $\theta$ set by O
 Even at the **most optimistic** bound $\theta\to 0$ (no damping, residual sits at ceiling for all $z$):
 
 
+$$
 \biggl\lvert\frac{\delta H}{H}\biggr\rvert_{\mathrm{from\ residual}} \;\lesssim\; \sigma_X \;<\; 2.5\times 10^{-2} \;\ll\; 0.083 \;\approx\; \frac{73}{67.4}-1.
+$$
 
 
 **Short by a factor $\gtrsim 500$**, independent of inventing $H_0(z)=H_{0,\mathrm{fid}}[1+\varepsilon e^{-\theta x}]$ and independent of hand-tuned $\theta\sim 0.47$.

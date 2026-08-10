@@ -13,7 +13,9 @@ Depends on: [`r1-derivation-sandwich.md`](r1-derivation-sandwich.md) · [`r1-mec
 The sandwich uniqueness theorem needs A1: a local coupling between residual sector $\chi$ and matter contrast $\delta_m$,
 
 
+$$
 \mathcal{L}_{\mathrm{int}}=g\,\chi\,\delta_m \quad\text{(or density form }g\,\chi\,\rho_m\text{)}.
+$$
 
 
 This note asks the only remaining microphysical question at the same level of seriousness:

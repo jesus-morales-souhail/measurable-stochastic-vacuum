@@ -21,7 +21,9 @@ Two layers, kept separate:
 2. **Geometry of $R_{\mathrm{nl}}$:** once P $_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is a standard matter observable. The evaluation I prefer is the full integral
 
 
+$$
 \sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),
+$$
 
 
  with a $\Lambda$CDM-like $ P(k)$ normalized to $\sigma_8$, not only a single-index power-law shortcut $\sigma(R)\propto R^{-(n_{\mathrm{eff}}+3)/2}$.
@@ -60,7 +62,9 @@ Once P $_\mathrm{nl}$ is *assumed*, $R_{\mathrm{nl}}$ is fixed by $\sigma_8$ and
 ### 2.1 Full integral (primary)
 
 
+$$
 \sigma^2(R)=\int_0^\infty\frac{\mathrm{d}k}{k}\,\Delta^2(k)\,W_{\mathrm{TH}}^2(kR),\qquad \Delta^2(k)=\frac{k^3 P(k)}{2\pi^2},\qquad W_{\mathrm{TH}}(x)=\frac{3(\sin x-x\cos x)}{x^3}.
+$$
 
 
 $P(k)=A\,k^{n_s}T^2(k)$ with Eisenstein–Hu–style transfer (shape $\Gamma_{\mathrm{eff}}$), $n_s=0.965$, $\Omega_m=0.315$, $\Omega_b=0.049$, $h=0.674$, normalized so $\sigma(8\,h^{-1}\mathrm{Mpc})=\sigma_8=0.81$. Solve $\sigma(R_{\mathrm{nl}})=1$.
@@ -81,7 +85,9 @@ Caveat on $P(k)$: this is a fitting-function transfer, not CAMB/CLASS Boltzmann 
 Near the $8\,h^{-1}\mathrm{Mpc}$ pivot only,
 
 
+$$
 \sigma(R)\approx\sigma_8\left(\frac{R_8}{R}\right)^{\alpha},\qquad \alpha=\frac{n_{\mathrm{eff}}+3}{2} \quad\Rightarrow\quad R_{\mathrm{nl}}=R_8\,\sigma_8^{1/\alpha}.
+$$
 
 
 | $n_{\mathrm{eff}}$ | $R_{\mathrm{nl}}$ [Mpc] |
@@ -111,7 +117,9 @@ python scripts/r1/r1_principle_Rnl.py # shortcut only
 Downstream residual if $\ell_{\ast}=R_{\mathrm{nl}}^{\mathrm{(full)}}\approx 8.61\,\mathrm{Mpc}$, $d=3$:
 
 
+$$
 \sigma_{0,\mathrm{eff}}=\Bigl(\frac{\ell_{\ast}}{L_H}\Bigr)^{3/2} \approx 8.5\times 10^{-5},
+$$
 
 
 under the related DESI ceiling $2.5\times 10^{-2}$ — compatibility, not a fit.

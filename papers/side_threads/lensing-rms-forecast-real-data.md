@@ -116,7 +116,9 @@ pytest -q
 Define
 
 
+$$
 \mathcal{R} \equiv \frac{\text{published or forecast error scale}}{\mathrm{RMS}_{\mathrm{path}}(\mathrm{NP})}.
+$$
 
 
 $\mathcal{R}\gg 1$ means the external precision is still **coarser** than the programme corner (under the imperfect operator identification).

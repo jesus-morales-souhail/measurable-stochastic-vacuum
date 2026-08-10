@@ -65,7 +65,9 @@ Together with the sandwich counting identity it says something sharper:
 3. CF4 shows matter velocity structure *lives* in that same few-Mpc decade.
 
 So the open kernel is no longer floating: it has a **single preferred decade** and **two real-data anchors** (DESI ceiling, CF4 \(r_e\)).  
+$$
 The remaining work is a **principle** that picks \(R_{\mathrm{nl}}\) (or another Mpc cell) without circularity — not another soft amplifier.
+$$
 
 ---
 

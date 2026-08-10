@@ -38,7 +38,9 @@ I keep these three roles separate on purpose. Mixing them is how overclaims star
 ## 3. Canonical equations (single chain)
 
 
+$$
 \begin{aligned} &(E1)\quad k^{2}\Psi=-4\pi G a^{2}\rho_m\delta_m\\ &(E2)\quad k^{2}(\Phi-\Psi)=8\pi G a^{2}\pi_T\\ &(M1)\quad \pi_T=\varepsilon\sigma_X\rho_X\\ &(W)\quad \lvert\gamma-1\rvert=2\varepsilon\sigma_X\frac{\rho_X}{\rho_m\lvert\delta_m\rvert}\\ &(P)\quad \mathrm{RMS}_{\mathrm{path}}=\lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{\chi/\ell_{\ast}}\\ &(B)\quad \sigma=(\ell_{\ast}/L_H)^{3/2}\quad(d=3)\\ &(G)\quad \sigma_{\mathrm{res}}=e^{2r}\sigma,\quad r=\mathcal{O}(1) \end{aligned}
+$$
 
 
 **Invalid identities** (I have seen these slip into drafts):

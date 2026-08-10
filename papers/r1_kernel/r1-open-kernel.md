@@ -78,7 +78,9 @@ Each row is a wall with measured height. Publishing “maybe soft amplification 
 ### 4.1 Counting hypothesis (verified kinematics)
 
 
+$$
 N_{\mathrm{eff}}=\Bigl(\frac{L}{\ell_{\ast}}\Bigr)^{d},\qquad \sigma_{0,\mathrm{eff}}=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{\ast}}{L}\Bigr)^{d/2},\qquad \ell_{\ast}=L\,\sigma_{0,\mathrm{eff}}^{2/d}.
+$$
 
 
 Sorkin is the special case $d=2$, $\ell_{\ast}=L_P$, $L=L_H$: $\sigma_0\sim 10^{-61}$.

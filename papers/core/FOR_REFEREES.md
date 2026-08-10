@@ -74,13 +74,17 @@ CF4 notes: matter $v_{\mathrm{pec}}$ only — not $\sigma_X$ or $g$.
 ### 3.1 Background (identical to flat $\Lambda$CDM)
 
 
+$$
 H^{2}(z)=H_{0}^{2}\bigl[\Omega_{m}(1+z)^{3}+\Omega_{\Lambda}\bigr].
+$$
 
 
 ### 3.2 Counting seed (hypothesis $d=3$)
 
 
+$$
 N_{\mathrm{eff}}=\Bigl(\frac{L_{H}}{\ell_{*}}\Bigr)^{3}, \qquad \sigma=\frac{1}{\sqrt{N_{\mathrm{eff}}}}=\Bigl(\frac{\ell_{*}}{L_{H}}\Bigr)^{3/2}, \qquad \ell_{*}=L_{H} \sigma^{2/3},
+$$
 
 
 with $L_{H}=c/H_{0}$.
@@ -88,13 +92,17 @@ with $L_{H}=c/H_{0}$.
 ### 3.3 Holographic Sorkin seed (special case $d=2$, $\ell_{*}=L_{P}$)
 
 
+$$
 \sigma_{0}=\frac{L_{P}}{L_{H}}\sim 1.18\times 10^{-61} \quad(H_{0}=67.4 \mathrm{km s^{-1} Mpc^{-1}}).
+$$
 
 
 ### 3.4 Soft open map (optional, bounded)
 
 
+$$
 G_{O}=e^{2r}, \qquad \sigma_{\mathrm{res}}=G_{O} \sigma \quad(r=\mathcal{O}(1);\ e.g.\ r=1.5\Rightarrow G_{O}\approx 20.09).
+$$
 
 
 **DESI-safe constraint (a posteriori):** $\sigma_{\mathrm{res}}\le 2.5\times 10^{-2}$.
@@ -102,7 +110,9 @@ G_{O}=e^{2r}, \qquad \sigma_{\mathrm{res}}=G_{O} \sigma \quad(r=\mathcal{O}(1);\
 ### 3.5 Local gravitational slip (sub-horizon GR)
 
 
+$$
 \pi_{T}=\varepsilon \sigma_{\mathrm{res}} \rho_{X}, \qquad \lvert\gamma-1\rvert = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_{X}}{\rho_{m}\lvert\delta_{m}\rvert}.
+$$
 
 
 Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_{T}$.
@@ -110,13 +120,17 @@ Assumptions: Newtonian gauge, $k\gg aH$, $\mu=1$, phenomenological $\pi_{T}$.
 ### 3.6 Light-path accumulation (iid patches)
 
 
+$$
 N_{\mathrm{pat}}=\frac{\chi}{\ell_{*}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert\gamma-1\rvert_{\mathrm{loc}}\sqrt{N_{\mathrm{pat}}}.
+$$
 
 
 ### 3.7 Simplified presentation reduction ($d=3$, $\chi\sim L_{H}$, $\alpha\sim\mathcal{O}(1)$)
 
 
+$$
 \mathrm{RMS}_{\mathrm{path}} \sim \alpha \sigma\sqrt{\frac{L_{H}}{\ell_{*}}} = \alpha \sigma^{2/3}.
+$$
 
 
 **Warning:** $\sigma\times G_{O}\times\sqrt{N}\neq\mathrm{RMS}_{\mathrm{path}}$ in general (prefactor $\alpha$ and operator order).

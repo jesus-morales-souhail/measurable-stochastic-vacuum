@@ -21,7 +21,9 @@ Given $\sigma_{0,\mathrm{eff}}$ from R1, can open-horizon dynamics produce a tel
 ## 2. Residual definition
 
 
+$$
 \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}}, \qquad G_O = e^{2r}.
+$$
 
 
 Defaults in the soft regime: $G_F=1$ (freeze preserves), $G_U=1$ (late $\Delta x=\mathcal{O}(1)$ is not inflation’s $e^{60}$).

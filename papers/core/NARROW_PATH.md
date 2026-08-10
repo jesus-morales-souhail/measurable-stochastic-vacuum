@@ -41,7 +41,9 @@ I write the causal chain carefully here (not as a naive product of three ad hoc 
 **Identity (exact under the counting hypothesis):**
 
 
+$$
 N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\mathrm{eff}} = \frac{1}{\sqrt{N_{\mathrm{eff}}}} = \left(\frac{\ell_{\ast}}{L_H}\right)^{d/2}, \qquad \ell_{\ast} = L_H \sigma_{0,\mathrm{eff}}^{2/d}.
+$$
 
 
 **For $\sigma_{0,\mathrm{eff}}=10^{-5}$ and $L_H=c/H_0$($H_0=67.4$):**
@@ -62,7 +64,9 @@ N_{\mathrm{eff}} = \left(\frac{L_H}{\ell_{\ast}}\right)^{d}, \qquad \sigma_{0,\m
 **Identity:** $G_O=e^{2r}$. For $r=1.5$, $G_O=e^{3}\approx 20.086$.
 
 
+$$
 \sigma_{\mathrm{res}} = G_U G_F G_O \sigma_{0,\mathrm{eff}} \quad\text{with soft defaults }G_U=G_F=1.
+$$
 
 
 | $\sigma_{0,\mathrm{eff}}$ | $r$ | $\sigma_{\mathrm{res}}$ |
@@ -82,13 +86,17 @@ It does not save Sorkin; it can push a mesoscopic seed toward the DESI residual 
 Source anisotropic stress and read light:
 
 
+$$
 \pi_T = \varepsilon \sigma_{\mathrm{res}} \rho_X, \qquad \lvert \gamma-1 \rvert_{\mathrm{loc}} = 2\varepsilon\sigma_{\mathrm{res}}\frac{\rho_X}{\rho_m\lvert \delta_m \rvert} \quad (k\gg aH, \mu=1).
+$$
 
 
 **Path accumulation (iid patches):**
 
 
+$$
 N_{\mathrm{pat}} = \frac{\chi(z_s)}{\ell_{\ast}}, \qquad \mathrm{RMS}_{\mathrm{path}} = \lvert \gamma-1 \rvert_{\mathrm{loc}} \sqrt{N_{\mathrm{pat}}}.
+$$
 
 
 For $z_s=1.5$, $\chi\approx 4482 \mathrm{Mpc}$ (fiducial cosmology).
@@ -114,7 +122,9 @@ ell_* → sigma_0,eff (R1 counting)
 ### 3.2 Invalid shorthand
 
 
+$$
 \underbrace{10^{-5}}_{\text{seed}} \times \underbrace{20}_{G_O} \times \underbrace{46}_{\sqrt{N}} \not= \mathrm{RMS}_{\mathrm{path}}.
+$$
 
 
 That product double-counts structure: $\sqrt{N}$ multiplies the **slip per patch**, which is already $\propto\sigma_{\mathrm{res}}=G_O\sigma_0$, and the prefactor $2\varepsilon(\rho_X/\rho_m)/\lvert \delta_m \rvert$ is $\mathcal{O}(0.1$–$1)$, not $1$.
@@ -167,13 +177,17 @@ If $\sigma_{\mathrm{res}}$ is identified with that residual amplitude:
 **If** a principle fixes $\ell_{\ast}$ so that $\sigma_{0,\mathrm{eff}}$ lies in the DESI-safe mesoscopic window, **and** soft open gain is at most $G_O\sim\mathcal{O}(10)$, **and** $\varepsilon\sim\mathcal{O}(1)$, then:
 
 
+$$
 \mathrm{RMS}_{\mathrm{path}}(\lvert \gamma-1 \rvert) \sim 10^{-3}\text{–}10^{-4} \quad\text{at }z_s\sim 1.5,
+$$
 
 
 while the isotropic BAO residual remains
 
 
+$$
 \sigma_{\mathrm{res}} \le 2.5\times 10^{-2} \quad\text{(sister bound)}.
+$$
 
 
 That is a **conditional** OOM for weak lensing / slip programmes (Euclid, Rubin), **not** a detection claim and **not** a derivation of $\ell_{\ast}$.
