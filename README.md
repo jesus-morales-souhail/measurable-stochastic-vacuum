@@ -6,7 +6,7 @@ July 2026 · independent work
 
 Theory notes and small scripts. The question is simple to state and hard to finish:
 
-Can a late-time residual in dark energy (or the vacuum) be large enough for surveys to care about, without inventing free amplification factors of order \(10^{56}\) from a Planck-scale seed?
+Can a late-time residual in dark energy (or the vacuum) be large enough for surveys to care about, without inventing free amplification factors of order $10^{56}$ from a Planck-scale seed?
 
 The data side lives in [stochastic-dark-energy-ou](https://github.com/jesus-morales-souhail/stochastic-dark-energy-ou).  
 Exploratory method notes only: [stochastic-de-exploratory-notes](https://github.com/jesus-morales-souhail/stochastic-de-exploratory-notes).
@@ -18,20 +18,26 @@ Exploratory method notes only: [stochastic-de-exploratory-notes](https://github.
 1. [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md) — short-paper outline  
 2. [`papers/r1_kernel/NOTE_uniqueness_residual_grain.md`](papers/r1_kernel/NOTE_uniqueness_residual_grain.md) — main residual-scale argument  
 3. [`papers/r1_kernel/NEXT_QUESTION.md`](papers/r1_kernel/NEXT_QUESTION.md) — three-gate and what is still open  
-4. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md) — identities checked by tests  
-5. [`BOUNDARY.md`](BOUNDARY.md) — what does not belong here  
-6. [`papers/INDEX.md`](papers/INDEX.md) — full list of notes  
+4. [`papers/r1_kernel/grain-and-microscope.md`](papers/r1_kernel/grain-and-microscope.md) — plain map of G1 vs open R1  
+5. [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md) — identities checked by tests  
+6. [`BOUNDARY.md`](BOUNDARY.md) — what does not belong here  
+7. [`papers/INDEX.md`](papers/INDEX.md) — full list of notes  
 
 ---
 
 ## Where the work sits
 
-Mean expansion: flat \(\Lambda\)CDM.  
-Residual amplitude under counting: \(\sigma=(\ell_{\ast}/L_H)^{3/2}\).
+Mean expansion: flat ΛCDM.
 
-If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale \(R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}\). That gives \(\sigma\sim 8.5\times 10^{-5}\), under the DESI residual ceiling \(\sigma_X<2.5\times 10^{-2}\) (95% CL) from the related analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the \(\sim 8\%\) Hubble tension — I checked that on purpose.
+Residual amplitude under counting ($d=3$):
 
-On public Cosmicflows-4 I also looked at local **matter** kinematics (block residual velocities and collapse-peak relief). That is context near \(R_{\mathrm{nl}}\). It is **not** a dark-energy residual map.
+$$
+\sigma = \left(\frac{\ell_{\ast}}{L_H}\right)^{3/2}.
+$$
+
+If free residual modes couple locally to classical nonlinear matter, the natural cell is the matter nonlinear scale $R_{\mathrm{nl}}\approx 8.61\,\mathrm{Mpc}$. That gives $\sigma\sim 8.5\times 10^{-5}$, under the DESI residual ceiling $\sigma_X < 2.5\times 10^{-2}$ (95% CL) from the related analysis. A dimensionless coupling of order one is then allowed. The same residual is far too small to fix the $\sim 8\%$ Hubble tension — I checked that on purpose.
+
+On public Cosmicflows-4 I also looked at local **matter** kinematics (block residual velocities and collapse-peak relief). That is context near $R_{\mathrm{nl}}$. It is **not** a dark-energy residual map.
 
 ```bash
 pip install -r requirements.txt
