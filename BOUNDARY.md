@@ -4,25 +4,13 @@ Jesús Morales Souhail · [github.com/jesus-morales-souhail](https://github.com/
 
 I keep three places for three jobs:
 
-```
-stochastic-dark-energy-ou empirical claims (DESI nulls, bounds, amplification gap)
- │ cited here only a posteriori
- ▼
-measurable-stochastic-vacuum theory + checked kinematics (this repo)
- │ does not pull exploratory optics in as cosmology
- ▼
-stochastic-de-exploratory-notes wrong scale method notes only
-```
+- **stochastic-dark-energy-ou** — empirical DESI claims (nulls, bounds, amplification gap). Cited here only after the fact.
+- **this repo** — theory and checked kinematics.
+- **stochastic-de-exploratory-notes** — wrong-scale method notes only.
 
-| Allowed here | Not allowed here |
-|:-------------|:-----------------|
-| identities I can test with `pytest` | free factors of $10^{56}$ |
-| soft no-gain statements with numbers | re-running a full BAO MCMC as if it lived here |
-| structural zeros (Planck cell → null residual under soft maps) | lab wavefront demos sold as cosmology |
-| comparing a posteriori to DESI ceilings | fitting $\ell_{\ast}$ or squeeze $r$ to DESI after looking |
-| CF4 matter kinematics (block net, collapse relief) | reading CF4 $V_{\mathrm{pec}}$ as a DE residual detection |
-| conditional uniqueness under named axioms | claiming SM realises $\chi$ without a derivation |
+What belongs here: identities I can test with `pytest`, soft no-gain statements with numbers, structural zeros (Planck cell → null under soft maps), a posteriori comparison to DESI ceilings, CF4 matter kinematics as context, conditional uniqueness under named axioms.
 
-Short paper map: [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).
-Hard results: [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md). CF4 notes are matter kinematics only.
+What does not: free factors of \(10^{56}\), re-running a full BAO MCMC as if it lived here, lab wavefront demos sold as cosmology, fitting \(\ell_\ast\) or squeeze \(r\) to DESI after looking, reading CF4 \(V_{\mathrm{pec}}\) as a DE residual detection, claiming the Standard Model realises \(\chi\) without a derivation.
 
+Short paper map: [`papers/what-i-would-put-in-a-paper.md`](papers/what-i-would-put-in-a-paper.md).  
+Hard results: [`papers/core/VERIFIED_RESULTS.md`](papers/core/VERIFIED_RESULTS.md).

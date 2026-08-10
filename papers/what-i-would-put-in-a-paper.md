@@ -5,7 +5,7 @@ July 2026
 
 This is a private map of the folder. When I write something short, I use the numbers I can re-run, state the axioms when a claim needs them, and leave closed routes in an appendix or out.
 
-[`../START_HERE.md`](../START_HERE.md) · [`INDEX.md`](INDEX.md)
+[`../README.md`](../README.md) · [`INDEX.md`](INDEX.md)
 
 ---
 

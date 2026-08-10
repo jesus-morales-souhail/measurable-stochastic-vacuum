@@ -3,7 +3,7 @@
 Jesús Morales Souhail · July 2026
 [github.com/jesus-morales-souhail](https://github.com/jesus-morales-souhail)
 
-If you just landed: [`../START_HERE.md`](../START_HERE.md).
+If you just landed: the repo [`README.md`](../README.md).  
 If I wrote a short paper: [`what-i-would-put-in-a-paper.md`](what-i-would-put-in-a-paper.md).
 
 | Other repo | Role |
