@@ -1,5 +1,13 @@
 # Verified results: counting seeds, soft open gain, and light-path slip
 
+> **Notice (November 2026): under review.** The bound "σ_X < 2.5×10⁻² (95 % CL)"
+> quoted in these notes is under revision. An independent audit found that it
+> measures consistency with the background expansion (a shift of Ω_m), not a bound on
+> a stochastic fluctuation, and that its confidence label is not 95 %. See the audit
+> in the repository stochastic-dark-energy-ou (`analisis_cmb/auditoria_v23/` and
+> `manuscript/ERRATAS_V3.md`). Do not rely on this number until the corrected
+> version 3.0 of that paper.
+
 **Author:** Jesús Morales Souhail
 **ORCID:** [0009-0000-7637-1818](https://orcid.org/0009-0000-7637-1818)
 **Date:** July 2026
